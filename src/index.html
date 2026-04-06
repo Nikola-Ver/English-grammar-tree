@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Grammar Tree — A1→C2</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0f14;--bg2:#131620;--bg3:#1a1e2a;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --text:#e8eaf0;--muted:#6b7080;--muted2:#8b92a8;
+  --a1:#4ade80;--a1bg:rgba(74,222,128,0.09);
+  --a2:#34d399;--a2bg:rgba(52,211,153,0.09);
+  --b1:#38bdf8;--b1bg:rgba(56,189,248,0.09);
+  --b2:#818cf8;--b2bg:rgba(129,140,248,0.09);
+  --c1:#f472b6;--c1bg:rgba(244,114,182,0.09);
+  --c2:#fb923c;--c2bg:rgba(251,146,60,0.09);
+  --yt:#ff4444;--ru:#5b9cf6;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(ellipse 60% 40% at 15% 20%,rgba(129,140,248,0.05) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 85% 80%,rgba(251,146,60,0.04) 0%,transparent 60%);pointer-events:none;z-index:0;}
+.wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:2rem 1.25rem 6rem;}
+
+/* Header */
+header{margin-bottom:2rem;}
+.header-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;}
+.title-block h1{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:400;line-height:1.1;letter-spacing:-0.02em;}
+.title-block h1 span{font-style:italic;color:var(--b2);}
+.title-block p{color:var(--muted2);font-size:13px;margin-top:6px;font-weight:300;line-height:1.5;}
+.overall-progress{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:1rem 1.25rem;min-width:170px;text-align:center;flex-shrink:0;}
+.overall-num{font-family:'DM Mono',monospace;font-size:1.9rem;font-weight:500;color:var(--b2);line-height:1;}
+.overall-label{font-size:11px;color:var(--muted);margin-top:3px;text-transform:uppercase;letter-spacing:0.07em;}
+.overall-bar-bg{height:4px;background:var(--border2);border-radius:2px;margin-top:8px;overflow:hidden;}
+.overall-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--b1),var(--b2));transition:width 0.5s ease;}
+.stats-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.25rem;}
+.stat-chip{background:var(--bg2);border:1px solid var(--border);border-radius:9px;padding:6px 12px;font-size:12px;color:var(--muted2);display:flex;align-items:center;gap:5px;}
+.stat-chip strong{color:var(--text);font-weight:500;}
+
+/* Search */
+.search-wrap{position:relative;margin-bottom:1.5rem;}
+.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:14px;pointer-events:none;}
+.search-input{width:100%;background:var(--bg2);border:1px solid var(--border);border-radius:11px;padding:10px 14px 10px 38px;font-size:14px;color:var(--text);font-family:'Outfit',sans-serif;outline:none;transition:border-color 0.2s;}
+.search-input:focus{border-color:var(--border2);}
+.search-input::placeholder{color:var(--muted);}
+
+/* Level blocks */
+.level-path{display:flex;flex-direction:column;gap:0;}
+.level-block{position:relative;margin-bottom:24px;}
+.level-block:not(:last-child)::after{content:'';position:absolute;left:20px;bottom:-24px;width:2px;height:24px;background:var(--border2);z-index:2;}
+.level-header{display:flex;align-items:center;gap:12px;padding:1rem 1.15rem;background:var(--bg2);border:1px solid var(--border);border-radius:13px;cursor:pointer;transition:border-color 0.2s,background 0.2s;position:relative;z-index:3;user-select:none;}
+.level-header:hover{border-color:var(--border2);background:var(--bg3);}
+.level-dot{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'DM Mono',monospace;font-size:12px;font-weight:500;flex-shrink:0;border:2px solid;transition:all 0.3s;}
+.level-info{flex:1;min-width:0;}
+.level-name{font-size:15px;font-weight:500;}
+.level-sub{font-size:12px;color:var(--muted2);margin-top:1px;font-weight:300;}
+.level-stats{text-align:right;flex-shrink:0;}
+.level-frac{font-family:'DM Mono',monospace;font-size:17px;font-weight:500;}
+.level-pct{font-size:11px;color:var(--muted);margin-top:1px;}
+.level-toggle{color:var(--muted);font-size:15px;transition:transform 0.3s;flex-shrink:0;}
+.level-block.open .level-toggle{transform:rotate(180deg);}
+.level-progress-bar{height:3px;background:var(--border);border-radius:0 0 13px 13px;overflow:hidden;margin-top:-3px;position:relative;z-index:3;}
+.level-progress-fill{height:100%;border-radius:2px;transition:width 0.4s ease;}
+
+/* Content */
+.level-content{display:none;padding:0 0 4px 50px;position:relative;z-index:2;}
+.level-block.open .level-content{display:block;}
+.level-content::before{content:'';position:absolute;left:19px;top:0;bottom:4px;width:2px;background:var(--border2);}
+.category{margin-top:16px;position:relative;}
+.category::before{content:'';position:absolute;left:-31px;top:12px;width:12px;height:2px;background:var(--border2);}
+.category-title{font-size:10px;text-transform:uppercase;letter-spacing:0.13em;color:var(--muted);font-weight:600;margin-bottom:7px;}
+.rules-grid{display:flex;flex-direction:column;gap:5px;}
+
+/* Rule item */
+.rule-item{border-radius:9px;border:1px solid var(--border);background:var(--bg);transition:border-color 0.15s,background 0.15s;overflow:hidden;}
+.rule-item:hover{border-color:var(--border2);}
+.rule-item.done{border-color:transparent;background:transparent;}
+.rule-item.hidden-search{display:none;}
+.rule-top{display:flex;align-items:flex-start;gap:9px;padding:9px 11px;cursor:pointer;}
+.rule-check{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--border2);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;font-size:10px;}
+.rule-main{flex:1;min-width:0;}
+.rule-text{font-size:13.5px;line-height:1.5;color:var(--text);font-weight:400;}
+.rule-item.done .rule-text{color:var(--muted2);text-decoration:line-through;text-decoration-color:var(--muted);}
+.rule-note{font-size:11.5px;color:var(--muted);margin-top:2px;display:block;font-style:italic;}
+.rule-actions{display:flex;align-items:center;gap:5px;flex-shrink:0;padding-top:1px;}
+.info-btn{background:none;border:1px solid var(--border);border-radius:5px;color:var(--muted);font-size:10px;padding:2px 7px;cursor:pointer;font-family:'Outfit',sans-serif;transition:all 0.15s;white-space:nowrap;line-height:1.4;}
+.info-btn:hover{border-color:var(--border2);color:var(--muted2);}
+.info-btn.open{border-color:var(--b2);color:var(--b2);}
+
+/* Explanation panel */
+.rule-exp{display:none;margin:0 11px 11px;padding:11px 13px;background:var(--bg2);border-radius:8px;border:1px solid var(--border);font-size:13px;line-height:1.75;color:var(--muted2);}
+.rule-exp.open{display:block;}
+.rule-exp strong{color:var(--text);font-weight:500;}
+.rule-exp em{color:var(--b1);font-style:normal;}
+.rule-exp .ex-list{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:3px;}
+.rule-exp .ex-list li{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted2);padding:4px 8px;background:var(--bg3);border-radius:5px;}
+.rule-exp .ex-list li .tr{color:var(--muted);font-style:italic;font-family:'Outfit',sans-serif;font-size:11px;display:block;margin-top:1px;}
+.exc-block{margin-top:8px;padding:8px 10px;background:rgba(251,146,60,0.07);border-radius:6px;border-left:2px solid var(--c2);font-size:12px;color:var(--muted2);}
+.exc-block strong{color:var(--c2);}
+.tip-block{margin-top:8px;padding:8px 10px;background:rgba(56,189,248,0.07);border-radius:6px;border-left:2px solid var(--b1);font-size:12px;color:var(--muted2);}
+.tip-block strong{color:var(--b1);}
+
+/* Links */
+.link-row{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px;}
+.lnk{font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid var(--border2);color:var(--muted2);text-decoration:none;transition:all 0.15s;white-space:nowrap;display:inline-flex;align-items:center;gap:4px;}
+.lnk:hover{color:var(--text);border-color:var(--muted2);}
+.lnk.yt{border-color:rgba(255,68,68,0.3);color:#ff8888;}
+.lnk.yt:hover{border-color:var(--yt);color:var(--yt);}
+.lnk.ru{border-color:rgba(91,156,246,0.3);color:#8ab4f8;}
+.lnk.ru:hover{border-color:var(--ru);color:var(--ru);}
+.lnk-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.yt .lnk-dot{background:var(--yt);}
+.ru .lnk-dot{background:var(--ru);}
+
+@keyframes pop{0%{transform:scale(0.5);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+.celebrate{animation:pop 0.35s cubic-bezier(0.34,1.56,0.64,1);}
+
+.reset-btn{background:none;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:'Outfit',sans-serif;transition:all 0.15s;margin-top:2rem;}
+.reset-btn:hover{border-color:var(--border2);color:var(--text);}
+.no-results{text-align:center;padding:3rem 1rem;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="header-top">
+    <div class="title-block">
+      <h1>English <span>Grammar</span> Tree</h1>
+      <p>Нажми правило — отметить выученное · ℹ️ — объяснение, примеры и ссылки<br>🔴 YouTube · 🔵 Упражнения на русском · ⬜ Упражнения на английском</p>
+    </div>
+    <div class="overall-progress">
+      <div class="overall-num" id="total-done">0</div>
+      <div class="overall-label">из <span id="total-all">0</span> правил</div>
+      <div class="overall-bar-bg"><div class="overall-bar-fill" id="overall-bar" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="stats-row" id="stats-row"></div>
+</header>
+
+<div class="search-wrap">
+  <span class="search-icon">🔍</span>
+  <input class="search-input" type="text" placeholder="Поиск по теме..." id="search" oninput="doSearch(this.value)">
+</div>
+
+<div class="level-path" id="level-path"></div>
+<div class="no-results" id="no-results" style="display:none">Ничего не найдено по запросу</div>
+<button class="reset-btn" onclick="confirmReset()">↺ Сбросить прогресс</button>
+</div>
+
+<script>
+// link helpers: [label, url, type]  type: 'yt'=youtube ru='russian text' en='english exercises'
+var YT='yt', RU='ru', EN='en';
+
+var DATA=[
+{id:'A1',name:'A1 — Начальный',sub:'Beginner · 2–3 месяца',color:'var(--a1)',colorBg:'var(--a1bg)',
+categories:[
+{name:'Глагол to be',rules:[
+{id:'a1_01',text:'am / is / are — формы глагола to be',note:'I am, he is, they are',
+exp:`<strong>to be</strong> — самый важный глагол английского языка, аналог русского «быть/являться».
+<br><br>Три формы: <em>am</em> — только с <em>I</em>; <em>is</em> — с he, she, it; <em>are</em> — с you, we, they.
+<br><br>⚠️ Важное отличие от русского: в английском глагол <strong>нельзя пропустить</strong>. По-русски говорим «Я студент», а по-английски обязательно: <em>I <u>am</u> a student</em>.`,
+ex:[['I am hungry.','Я голоден.'],['She is a doctor.','Она врач.'],['They are ready.','Они готовы.'],['It is cold today.','Сегодня холодно.']],
+exc:'Сокращённые формы: I\'m, you\'re, he\'s, she\'s, it\'s, we\'re, they\'re. В кратких ответах сокращение запрещено: <em>Yes, I am.</em> (не ~~Yes, I\'m~~)',
+links:[['OK English: глагол to be (видео на рус.)','https://ok-english.ru/blue-murphy-videos/',YT],['Skyeng: упражнения','https://skyeng.ru/exercises/verb-to-be/',RU],['Perfect English Grammar','https://www.perfect-english-grammar.com/verb-be.html',EN]]},
+
+{id:'a1_02',text:"Отрицание: am not / isn't / aren't",note:"I'm not tired. He isn't here. They aren't ready.",
+exp:`Отрицание строится добавлением <em>not</em>: <em>am not, is not, are not</em>.
+<br>Краткие формы: <em>isn't</em> (= is not), <em>aren't</em> (= are not). Только <em>am not</em> не сокращается в <em>amn't</em> — исключение!`,
+ex:[["I'm not a student.","Я не студент."],["He isn't tired.","Он не устал."],["We aren't ready.","Мы не готовы."]],
+links:[['Упражнения на отрицание','https://www.perfect-english-grammar.com/verb-be-exercise-1.html',EN],['englex.ru: объяснение','https://englex.ru/verb-to-be-in-english/',RU]]},
+
+{id:'a1_03',text:'Вопросы с to be: Am I? / Is she? / Are they?',note:'Is she a teacher? Are you cold? Am I late?',
+exp:`В вопросах глагол <em>to be</em> выносится <strong>перед подлежащим</strong>: <em>She is → Is she?</em>
+<br><br>Специальные вопросы: вопросительное слово + to be + подлежащее: <em>Where is he? What is this?</em>
+<br><br>Краткие ответы: <em>Yes, I am. / No, she isn't.</em>`,
+ex:[['Are you a student?','Ты студент?'],['Is it expensive?','Это дорого?'],['Where are they?','Где они?']],
+links:[['Упражнения','https://www.perfect-english-grammar.com/verb-be-exercise-2.html',EN]]},
+
+{id:'a1_04',text:'Краткие ответы: Yes, I am. / No, she isn\'t.',note:'Только полная форма — нельзя: "Yes, I\'m"',
+exp:`В кратких ответах местоимение + <em>to be</em>. <strong>Нельзя сокращать</strong> форму глагола в утвердительном ответе.
+<br><em>Are you tired? — Yes, I am.</em> ✓ &nbsp;&nbsp; <em>Yes, I'm.</em> ✗`,
+ex:[["Is she ready? — Yes, she is.","Она готова? — Да."],["Are they your friends? — No, they aren't.","Они твои друзья? — Нет."]],
+links:[['British Council: to be exercises','https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar/the-verb-be',EN]]}
+]},
+
+{name:'Артикли',rules:[
+{id:'a1_05',text:'Артикль a / an — неопределённый',note:'a dog, an apple, an hour, a university',
+exp:`<em>a</em> и <em>an</em> — неопределённый артикль, ставится перед <strong>впервые упоминаемым</strong> предметом в единственном числе.
+<br><br>Выбор зависит от <strong>звука</strong>, а не буквы:
+<br>• <em>a</em> — перед согласным звуком: <em>a book, a car, a university</em> [ju...]
+<br>• <em>an</em> — перед гласным звуком: <em>an apple, an hour</em> [aʊ...], <em>an honest man</em>`,
+ex:[['I saw a cat in the garden.','Я увидел кошку в саду.'],['She is an engineer.','Она инженер.'],['It took an hour.','Это заняло час.']],
+exc:'<em>a university, a European</em> — хотя начинаются на гласную букву, начальный звук [j], поэтому <em>a</em>. <em>an hour, an honest</em> — h немая, начальный звук гласный.',
+links:[['Perfect English Grammar: articles','https://www.perfect-english-grammar.com/articles.html',EN],['Skyeng: артикли упражнения','https://skyeng.ru/exercises/articles/',RU]]},
+
+{id:'a1_06',text:'Артикль the — определённый',note:'the sun, the door, the book on the table',
+exp:`<em>the</em> используется когда говорящий и слушающий <strong>знают</strong>, о чём речь.
+<br><br>Когда ставим <em>the</em>:
+<br>1. Предмет уже упоминался: <em>I saw a cat. The cat was black.</em>
+<br>2. Единственный в своём роде: <em>the sun, the moon, the earth</em>
+<br>3. Понятно из контекста: <em>Close the window, please.</em>
+<br>4. Превосходная степень: <em>the best, the biggest</em>`,
+ex:[['The film we saw was amazing.','Фильм, который мы смотрели, был потрясающим.'],['Could you pass the salt?','Не мог бы ты передать соль?']],
+exc:'Произношение: <em>the</em> [ðə] перед согласными, [ði] перед гласными. В устной речи часто [ðɪ] для эмфазы.',
+links:[['Объяснение the','https://www.perfect-english-grammar.com/the.html',EN],['engblog.ru: артикли','https://engblog.ru/articles',RU]]},
+
+{id:'a1_07',text:'Нулевой артикль — когда артикль не нужен',note:'I like music. She plays tennis. He is from Russia.',
+exp:`Артикль <strong>не ставится</strong> перед:
+<br>• Именами собственными: <em>John, London, Russia</em>
+<br>• Языками и национальностями: <em>English, Russian</em>
+<br>• Видами спорта и играми: <em>football, chess</em>
+<br>• Едой/напитками в общем смысле: <em>I love coffee</em>
+<br>• Абстрактными понятиями в общем: <em>Life is short. Love is blind.</em>
+<br>• Множественным числом в общем смысле: <em>Dogs are friendly.</em>`,
+ex:[['She speaks Spanish.','Она говорит по-испански.'],['He plays basketball every day.','Он играет в баскетбол каждый день.']],
+links:[['Zero article','https://www.perfect-english-grammar.com/zero-article.html',EN]]},
+]},
+
+{name:'Present Simple',rules:[
+{id:'a1_08',text:'Present Simple — утвердительные предложения',note:'I work. He works. She goes. It runs.',
+exp:`<strong>Present Simple</strong> используется для: привычек и регулярных действий, фактов и общих истин, расписаний.
+<br><br>Формула: I/you/we/they + инфинитив; he/she/it + инфинитив+<em>s/es</em>
+<br><br>Правила написания окончания <em>-s</em>/-<em>es</em>:
+<br>• Большинство глаголов: + <em>s</em> → <em>works, plays</em>
+<br>• Оканчиваются на -o, -ch, -sh, -ss, -x: + <em>es</em> → <em>goes, watches, washes</em>
+<br>• Оканчиваются на согласную + -y: -y → <em>ies</em> → <em>studies, tries</em>`,
+ex:[['I drink coffee every morning.','Я пью кофе каждое утро.'],['She works in a hospital.','Она работает в больнице.'],['The Earth goes round the Sun.','Земля вращается вокруг Солнца.']],
+exc:'Исключения: <em>have → has, be → is, do → does, go → goes</em>',
+tip:'Маркеры времени: always, usually, often, sometimes, rarely, never, every day/week.',
+links:[['OK English: Present Simple (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Skyeng: упражнения','https://skyeng.ru/exercises/present-simple/',RU],['Perfect English Grammar','https://www.perfect-english-grammar.com/present-simple.html',EN]]},
+
+{id:'a1_09',text:"Present Simple — отрицание: don't / doesn't",note:"I don't like. He doesn't like. (не: he don't)",
+exp:`Отрицание строится с помощью вспомогательного глагола <em>do/does</em> + <em>not</em>:
+<br>• I/you/we/they + <em>don't</em> + инфинитив
+<br>• he/she/it + <em>doesn't</em> + инфинитив
+<br><br>⚠️ После <em>doesn't</em> основной глагол <strong>без -s</strong>! <em>She doesn't like</em> (не ~~likes~~).`,
+ex:[["I don't eat meat.","Я не ем мясо."],["He doesn't speak French.","Он не говорит по-французски."],["They don't work here.","Они здесь не работают."]],
+links:[['Упражнения на отрицание','https://www.perfect-english-grammar.com/present-simple-exercise-3.html',EN]]},
+
+{id:'a1_10',text:'Present Simple — вопросы: Do you? / Does she?',note:'Do you like pizza? Does he work here? Where do they live?',
+exp:`Вопросы: <em>Do/Does</em> + подлежащее + инфинитив?
+<br>• I/you/we/they: <em>Do you...?</em>
+<br>• he/she/it: <em>Does she...?</em>
+<br><br>Специальные вопросы: вопросительное слово + do/does + подлежащее + инфинитив:
+<br><em>Where does she live? What do they do?</em>
+<br><br>⚠️ Исключение: вопрос «Кто?» без <em>do</em>: <em>Who likes ice cream?</em>`,
+ex:[['Do you speak Russian?','Ты говоришь по-русски?'],['Does she live nearby?','Она живёт рядом?'],['Where do you work?','Где ты работаешь?']],
+links:[['Вопросы Present Simple','https://www.perfect-english-grammar.com/present-simple-exercise-5.html',EN],['engfairy.com упражнения','https://engfairy.com/present-simple-tense-uprazhneniya/',RU]]},
+
+{id:'a1_11',text:'Stative verbs — глаголы, не употребляемые в Continuous',note:'I know, not: I am knowing. I love, not: I am loving.',
+exp:`Некоторые глаголы описывают <strong>состояние</strong>, а не действие — они не используются в Continuous временах.
+<br><br>Основные группы:
+<br>• Мнения: <em>know, believe, think, understand, remember, forget</em>
+<br>• Чувства: <em>love, hate, like, want, need, prefer</em>
+<br>• Восприятие: <em>see, hear, smell, taste, look</em>
+<br>• Бытие: <em>be, exist, belong, contain, seem, appear</em>`,
+ex:[['I understand you. (не: I am understanding)','Я тебя понимаю.'],['She loves chocolate. (не: is loving)','Она любит шоколад.']],
+exc:'<em>think/have/see/taste</em> могут использоваться в Continuous, но со другим значением: <em>I think</em> (мнение) vs <em>I\'m thinking</em> (размышляю прямо сейчас).',
+links:[['Stative verbs','https://www.perfect-english-grammar.com/stative-verbs.html',EN]]},
+]},
+
+{name:'Местоимения',rules:[
+{id:'a1_12',text:'Личные местоимения: I, you, he, she, it, we, they',note:'Всегда нужно явное подлежащее — нельзя пропустить I',
+exp:`В отличие от русского, в английском <strong>подлежащее всегда обязательно</strong>.
+<br>По-русски: «Иду домой». По-английски: <em>I am going home.</em>
+<br><br>Объектные формы (после глагола или предлога): <em>me, you, him, her, it, us, them</em>.`,
+ex:[['She is a teacher.','Она учитель.'],['Tell him the truth.','Скажи ему правду.'],['Can you help me?','Можешь мне помочь?']],
+links:[['British Council: pronouns','https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar/subject-and-object-pronouns',EN]]},
+
+{id:'a1_13',text:'Притяжательные прилагательные: my, your, his, her, its, our, their',note:'my book, her car, their house — не изменяются по числу',
+exp:`Притяжательные прилагательные показывают принадлежность и стоят <strong>перед существительным</strong>.
+<br>Важно: <em>its</em> (без апострофа) = принадлежность; <em>it's</em> (с апострофом) = it is.
+<br><br>Не изменяются по роду и числу: <em>my friend / my friends</em> — одинаково.`,
+ex:[['This is my phone.','Это мой телефон.'],['Their dog is cute.','Их собака милая.'],['The cat hurt its paw.','Кошка поранила лапу.']],
+links:[['Упражнения','https://www.englisch-hilfen.de/en/exercises/pronouns/possessive_pronouns.htm',EN]]},
+
+{id:'a1_14',text:'Множественное число существительных',note:'cats, boxes, knives, children, men, sheep',
+exp:`Основное правило: добавить <em>-s</em>.
+<br><br>Особые случаи:
+<br>• -s, -ss, -sh, -ch, -x, -o: + <em>es</em> → <em>boxes, watches, tomatoes</em>
+<br>• гласная + -y: + <em>s</em> → <em>boys, days</em>
+<br>• согласная + -y: -y → <em>ies</em> → <em>cities, babies</em>
+<br>• -f/-fe: → <em>ves</em> → <em>knives, leaves, wives</em>
+<br><br>Неправильные: <em>child→children, man→men, woman→women, tooth→teeth, foot→feet, mouse→mice, person→people, fish→fish, sheep→sheep</em>`,
+ex:[['one bus → two buses','один автобус → два автобуса'],['one child → many children','один ребёнок → много детей']],
+links:[['Plurals rules','https://www.perfect-english-grammar.com/plurals.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/nouns/',RU]]},
+
+{id:'a1_15',text:'This / that / these / those',note:'this/these — рядом; that/those — далеко',
+exp:`<em>this</em> (этот) — единственное число + рядом
+<br><em>these</em> (эти) — множественное число + рядом
+<br><em>that</em> (тот) — единственное число + далеко или уже известное
+<br><em>those</em> (те) — множественное число + далеко
+<br><br>Также используются о времени: <em>this week</em> (эта неделя), <em>that year</em> (тот год).`,
+ex:[['This is my bag.','Это моя сумка.'],['Those shoes are expensive.','Те туфли дорогие.'],['What is that?','Что это такое?']],
+links:[['British Council: this/that','https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar/this-these-that-those',EN]]},
+]},
+
+{name:'Базовые структуры',rules:[
+{id:'a1_16',text:'There is / there are — существование',note:'There is a park. There are five rooms.',
+exp:`Конструкция <em>there is/are</em> означает «существует/существуют», «есть».
+<br>• <em>There is</em> + существительное в ед. числе
+<br>• <em>There are</em> + существительное во мн. числе
+<br><br>Отрицание: <em>There isn't / There aren't</em>
+<br>Вопрос: <em>Is there...? / Are there...?</em>
+<br><br>⚠️ Не путать с <em>it is</em>! <em>There is a book on the table</em> (книга существует там) vs <em>It is a good book</em> (характеристика).`,
+ex:[['There is a cinema near here.','Рядом есть кинотеатр.'],["Are there any shops nearby? — Yes, there are.",'Есть ли магазины рядом? — Да.']],
+links:[['Perfect English Grammar: there is/are','https://www.perfect-english-grammar.com/there-is-there-are.html',EN]]},
+
+{id:'a1_17',text:'Предлоги места: in, on, at, under, next to, behind, between',note:'in the box, on the table, at the station',
+exp:`Три главных предлога:
+<br>• <em>in</em> = внутри чего-либо: <em>in the box, in the city, in bed</em>
+<br>• <em>on</em> = на поверхности: <em>on the table, on the wall, on the left</em>
+<br>• <em>at</em> = в конкретной точке: <em>at the station, at home, at school</em>
+<br><br>Другие: <em>under</em> (под), <em>next to/beside</em> (рядом), <em>behind</em> (за), <em>in front of</em> (перед), <em>between</em> (между), <em>opposite</em> (напротив)`,
+ex:[['The keys are on the table.','Ключи на столе.'],['She is in the kitchen.','Она на кухне.'],['Meet me at the entrance.','Встретимся у входа.']],
+links:[['Предлоги места','https://www.perfect-english-grammar.com/prepositions-of-place.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/prepositions/',RU]]},
+
+{id:'a1_18',text:'Повелительное наклонение',note:'Open your books. Don\'t run. Please sit down.',
+exp:`Повелительное наклонение = базовая форма глагола без подлежащего.
+<br>Отрицание: <em>Don't + инфинитив</em>
+<br><em>Please</em> делает просьбу вежливее (в начале или конце).
+<br><br>Для включения говорящего: <em>Let's + инфинитив</em> → <em>Let's go! Let's eat!</em>`,
+ex:[['Turn left at the crossroads.','Поверни налево на перекрёстке.'],["Don't touch that!",'Не трогай это!'],["Let's have a break.",'Давайте сделаем перерыв.']],
+links:[['Imperative','https://www.perfect-english-grammar.com/imperative.html',EN]]},
+
+{id:'a1_19',text:'can / can\'t — умение и разрешение',note:'I can swim. She can\'t drive. Can I help you?',
+exp:`<em>can</em> — модальный глагол, выражает:
+<br>1. Умение/способность: <em>I can play the guitar</em>
+<br>2. Возможность: <em>It can be dangerous</em>
+<br>3. Разрешение (разговорный): <em>Can I use your phone?</em>
+<br><br>⚠️ <em>can</em> никогда не изменяется: <em>he can</em> (не ~~he cans~~). После него — инфинитив без <em>to</em>.`,
+ex:[['I can speak three languages.','Я говорю на трёх языках.'],["She can't come today.",'Она не может прийти сегодня.'],['Can you help me, please?','Не могли бы вы мне помочь?']],
+links:[['Can / could','https://www.perfect-english-grammar.com/can.html',EN]]},
+
+{id:'a1_20',text:'Вопросительные слова: what, where, who, when, how, why, which, whose, how much/many',note:'What is this? Where do you live? How old are you?',
+exp:`Вопросительные слова стоят в <strong>начале</strong> вопроса, после них — вспомогательный глагол перед подлежащим.
+<br><br>• <em>what</em> = что/какой
+<br>• <em>where</em> = где/куда
+<br>• <em>who</em> = кто (вопрос без do: <em>Who lives here?</em>)
+<br>• <em>when</em> = когда
+<br>• <em>why</em> = почему
+<br>• <em>how</em> = как; <em>how much</em> = сколько (несчисл.); <em>how many</em> = сколько (счисл.); <em>how old</em> = сколько лет; <em>how long</em> = как долго`,
+ex:[['Where does she work?','Где она работает?'],['What time is it?','Который час?'],['How many brothers do you have?','Сколько у тебя братьев?']],
+links:[['Question words','https://www.perfect-english-grammar.com/question-words.html',EN],['englex.ru вопросы','https://englex.ru/question-words-in-english/',RU]]},
+]}
+]},
+
+{id:'A2',name:'A2 — Элементарный',sub:'Elementary · 3–4 месяца',color:'var(--a2)',colorBg:'var(--a2bg)',
+categories:[
+{name:'Past Simple',rules:[
+{id:'a2_01',text:'Past Simple — правильные глаголы: +ed',note:'work→worked, play→played, stop→stopped, study→studied',
+exp:`<strong>Past Simple</strong> — завершённое действие в прошлом с конкретным временем или без.
+<br><br>Правила написания окончания <em>-ed</em>:
+<br>• Большинство глаголов: + <em>ed</em> → <em>worked, played</em>
+<br>• Оканчиваются на -e: + <em>d</em> → <em>loved, used</em>
+<br>• Согласная + -y: -y → <em>ied</em> → <em>studied, tried</em>
+<br>• Одна гласная + одна согласная (краткий ударный слог): удвоить согласную → <em>stopped, planned</em>`,
+ex:[['She worked all day yesterday.','Она работала весь день вчера.'],['They played tennis last Sunday.','Они играли в теннис в прошлое воскресенье.']],
+tip:'Маркеры: yesterday, last week/year, ago, in 2010, at 5 o\'clock.',
+links:[['OK English: Past Simple (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['engfairy: упражнения','https://engfairy.com/past-simple-tense-uprazhneniya/',RU],['Perfect English Grammar','https://www.perfect-english-grammar.com/past-simple.html',EN]]},
+
+{id:'a2_02',text:'Past Simple — неправильные глаголы (таблица)',note:'go→went, see→saw, have→had, come→came, buy→bought',
+exp:`Около 200 неправильных глаголов нужно учить наизусть. Самые частотные 50 покрывают ~90% употреблений.
+<br><br>Группы по схожести изменений:
+<br>• AAA (не меняются): <em>cut, put, hit, set, let</em>
+<br>• ABA (возврат к началу): <em>run→ran→run, come→came→come</em>
+<br>• ABC (все разные): <em>go→went→gone, be→was/were→been</em>`,
+ex:[['I went to Paris last summer.','Я ездил в Париж прошлым летом.'],['She saw a great film.','Она посмотрела отличный фильм.'],['We had a meeting at 9.','У нас была встреча в 9.']],
+links:[['Таблица неправильных глаголов','https://www.perfect-english-grammar.com/irregular-verbs.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/past-simple/',RU]]},
+
+{id:'a2_03',text:"Past Simple — отрицание: didn't + инфинитив",note:"She didn't go (не: didn't went). I didn't see him.",
+exp:`Отрицание: <em>didn't</em> (= did not) + инфинитив для <strong>всех лиц</strong>.
+<br>⚠️ После <em>didn't</em> — <strong>базовая форма</strong> глагола (не прошедшее время!): <em>She didn't go</em> (не ~~went~~).`,
+ex:[["I didn't see him yesterday.","Я не видел его вчера."],["She didn't come to work.","Она не пришла на работу."]],
+links:[['Упражнения на отрицание','https://www.perfect-english-grammar.com/past-simple-exercise-3.html',EN]]},
+
+{id:'a2_04',text:'Past Simple — вопросы: Did you? Where did she go?',note:'Did they arrive? What did he say?',
+exp:`Вопрос: <em>Did + подлежащее + инфинитив?</em>
+<br>Специальные вопросы: <em>Where/When/What + did + подлежащее + инфинитив?</em>
+<br><br>⚠️ Исключение: вопрос «Кто совершил действие?» строится без did: <em>Who called? Who broke the vase?</em>`,
+ex:[['Did you enjoy the film?','Тебе понравился фильм?'],['Where did they go?','Куда они пошли?'],['Who told you that?','Кто тебе это сказал?']],
+links:[['Вопросы в Past Simple','https://www.perfect-english-grammar.com/past-simple-exercise-5.html',EN]]},
+
+{id:'a2_05',text:'was / were — глагол to be в прошлом',note:'I/he/she/it was. You/we/they were.',
+exp:`Прошедшее время глагола <em>to be</em>:
+<br>• <em>was</em> — с I, he, she, it
+<br>• <em>were</em> — с you, we, they
+<br><br>Отрицание: <em>wasn't / weren't</em>
+<br>Вопрос: <em>Was she...? Were they...?</em>`,
+ex:[['I was very tired last night.','Я был очень уставшим вчера вечером.'],['They were at home all day.','Они были дома весь день.'],['Was it expensive?','Это было дорого?']],
+links:[['was/were упражнения','https://www.perfect-english-grammar.com/was-or-were-exercise.html',EN]]},
+]},
+
+{name:'Future',rules:[
+{id:'a2_06',text:'will — предсказания и спонтанные решения',note:"I'll call you back. It will rain tomorrow. I'll have the pasta.",
+exp:`<em>will</em> используется для:
+<br>1. <strong>Спонтанных решений</strong> (принятых в момент речи): <em>I'll help you with that.</em>
+<br>2. <strong>Предсказаний</strong> без конкретного плана: <em>I think it will rain.</em>
+<br>3. <strong>Обещаний</strong>: <em>I won't tell anyone.</em>
+<br>4. <strong>Просьб</strong>: <em>Will you open the window?</em>
+<br><br>Сокращение: <em>'ll</em>. Отрицание: <em>won't</em> (= will not).`,
+ex:[["The phone is ringing. — I'll get it!",'Телефон звонит. — Я отвечу!'],['It will be cold tomorrow.','Завтра будет холодно.']],
+links:[['OK English: will (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Will future','https://www.perfect-english-grammar.com/will-future.html',EN]]},
+
+{id:'a2_07',text:'going to — намерения и очевидные предсказания',note:"I'm going to visit Paris. Look out — you're going to fall!",
+exp:`<em>going to</em> используется для:
+<br>1. <strong>Заранее принятых решений и намерений</strong>: <em>I'm going to start a diet next week.</em>
+<br>2. <strong>Предсказаний с видимыми признаками</strong>: <em>Look at those clouds — it's going to rain!</em>
+<br><br>Форма: <em>am/is/are + going to + инфинитив</em>`,
+ex:[["I'm going to study medicine.",'Я собираюсь изучать медицину.'],["She's going to have a baby.",'Она ждёт ребёнка.']],
+exc:'<em>will vs going to</em>: <em>"I\'ll have coffee"</em> — решаю прямо сейчас; <em>"I\'m going to have coffee"</em> — уже решил раньше.',
+links:[['Will vs going to','https://www.perfect-english-grammar.com/will-or-going-to.html',EN],['Skyeng: упражнения','https://skyeng.ru/exercises/future/',RU]]},
+]},
+
+{name:'Present Continuous',rules:[
+{id:'a2_08',text:'Present Continuous: am/is/are + V-ing',note:'She is reading now. They are playing outside.',
+exp:`<strong>Present Continuous</strong> — действие, происходящее <strong>прямо сейчас</strong> или <strong>временно</strong> в этот период.
+<br><br>Форма: <em>am/is/are + глагол + -ing</em>
+<br><br>Правила написания <em>-ing</em>:
+<br>• Большинство: просто + <em>ing</em> → <em>working, playing</em>
+<br>• Оканчивается на -e: убрать -e + <em>ing</em> → <em>making, coming</em>
+<br>• Краткий ударный слог: удвоить последнюю согласную → <em>running, sitting</em>`,
+ex:[['I am studying English right now.','Я сейчас изучаю английский.'],["She's working from home this month.",'Она работает из дома в этом месяце.']],
+tip:'Маркеры: now, at the moment, currently, this week/month.',
+links:[['OK English: Present Continuous (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Skyeng упражнения','https://skyeng.ru/exercises/present-continuous/',RU],['Perfect English Grammar','https://www.perfect-english-grammar.com/present-continuous.html',EN]]},
+
+{id:'a2_09',text:'Present Continuous для запланированного будущего',note:"I'm meeting Tom tomorrow. We're flying to Rome on Friday.",
+exp:`Present Continuous используется для <strong>конкретных договорённостей</strong> в будущем — когда время и место уже определены.
+<br><br>Разница:
+<br>• <em>I'm meeting Alice tomorrow</em> — встреча договорена (конкретный план)
+<br>• <em>I'll meet Alice tomorrow</em> — намерение или предложение`,
+ex:[["I'm having dinner with Alex tonight.",'Я ужинаю с Алексом сегодня вечером.'],["They're getting married in June.",'Они женятся в июне.']],
+links:[['Present Continuous for future','https://www.perfect-english-grammar.com/present-continuous-for-future.html',EN]]},
+
+{id:'a2_10',text:'Present Simple vs Present Continuous — разница',note:'I drink coffee (привычка) vs I am drinking coffee (прямо сейчас)',
+exp:`<strong>Present Simple:</strong> привычки, факты, расписания, общие истины.
+<br><strong>Present Continuous:</strong> то, что происходит прямо сейчас или временно.
+<br><br>Сравни:
+<br>• <em>She speaks French.</em> — знает язык (всегда)
+<br>• <em>She is speaking French.</em> — говорит прямо сейчас
+<br><br>⚠️ Stative verbs (know, love, want, understand...) — только Present Simple!`,
+ex:[['Water boils at 100°C. (факт)','Вода кипит при 100°C.'],["I'm reading a great book this week. (временно)",'Я читаю отличную книгу на этой неделе.']],
+links:[['Simple vs Continuous','https://www.perfect-english-grammar.com/present-simple-or-present-continuous.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/present-simple-vs-present-continuous/',RU]]},
+]},
+
+{name:'Модальные глаголы',rules:[
+{id:'a2_11',text:'should / shouldn\'t — совет и рекомендация',note:'You should see a doctor. You shouldn\'t eat so much.',
+exp:`<em>should</em> выражает мягкий совет или личное мнение. Слабее <em>must</em>.
+<br>После <em>should</em> — инфинитив без <em>to</em>.
+<br><br>Также используется для критики или сожаления: <em>You should have called</em> (надо было позвонить).`,
+ex:[['You should exercise more.','Тебе стоит больше заниматься спортом.'],["She shouldn't work so hard.",'Ей не следует так много работать.']],
+links:[['Should','https://www.perfect-english-grammar.com/should.html',EN]]},
+
+{id:'a2_12',text:'must / mustn\'t — обязанность и строгий запрет',note:'You must wear a seatbelt. You mustn\'t smoke here.',
+exp:`<em>must</em> — сильная обязанность (часто внутренняя) или категорическое требование.
+<br><em>mustn't</em> — строгий <strong>запрет</strong> (категорически нельзя!).
+<br><br>⚠️ Важное отличие: <em>mustn't</em> ≠ <em>don't have to</em>!
+<br>• <em>mustn't</em> = запрещено
+<br>• <em>don't have to</em> = не обязательно, но можно`,
+ex:[['You must show your passport.','Вы должны предъявить паспорт.'],['You mustn\'t smoke here.','Здесь нельзя курить.']],
+links:[['Must','https://www.perfect-english-grammar.com/must.html',EN]]},
+
+{id:'a2_13',text:'have to — внешняя необходимость',note:"I have to work late. She doesn't have to come.",
+exp:`<em>have to</em> — необходимость из-за внешних правил, обстоятельств или чужих требований.
+<br><br>Отличие от <em>must</em>:
+<br>• <em>must</em> — внутренняя необходимость: <em>I must call her</em> (я сам считаю нужным)
+<br>• <em>have to</em> — внешняя: <em>I have to wear a uniform</em> (правило)
+<br><br><em>don't have to</em> = не обязательно (нет необходимости, но разрешено).`,
+ex:[["I have to finish this report by Friday.",'Я должен сдать отчёт к пятнице.'],["You don't have to come if you don't want to.",'Тебе не обязательно приходить.']],
+links:[['Must or have to','https://www.perfect-english-grammar.com/must-or-have-to.html',EN]]},
+
+{id:'a2_14',text:'could — прошлое умение и вежливые просьбы',note:'She could swim when she was 5. Could you help me?',
+exp:`<em>could</em> — прошедшее время от <em>can</em>. Два основных значения:
+<br>1. <strong>Умение в прошлом</strong>: <em>I could read at 4 years old.</em>
+<br>2. <strong>Вежливые просьбы</strong> (вежливее <em>can</em>): <em>Could you pass the salt, please?</em>
+<br><br>Также для возможности в настоящем: <em>It could be true.</em>`,
+ex:[['She could play the violin as a child.','Она умела играть на скрипке в детстве.'],['Could you speak more slowly, please?','Не могли бы вы говорить помедленнее?']],
+links:[['Could','https://www.perfect-english-grammar.com/could.html',EN]]},
+]},
+
+{name:'Прилагательные и количество',rules:[
+{id:'a2_15',text:'Сравнительная степень прилагательных',note:'bigger, more interesting, better, worse',
+exp:`Односложные и двусложные на <em>-y</em>: + <em>er</em> (fast→faster, happy→happier).
+<br>Многосложные: <em>more</em> + прилагательное.
+<br><br>Правила написания: <em>-e</em> → + <em>r</em> (nice→nicer); краткий ударный слог: удвоить (big→bigger); -y → ier (heavy→heavier).
+<br><br>Неправильные: <em>good→better, bad→worse, far→further/farther, much/many→more</em>
+<br>После сравнительной — <em>than</em>: <em>She is taller than her sister.</em>`,
+ex:[['This film is more interesting than that one.','Этот фильм интереснее того.'],['Today is worse than yesterday.','Сегодня хуже, чем вчера.']],
+links:[['Comparatives','https://www.perfect-english-grammar.com/comparatives.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/degrees-of-comparison/',RU]]},
+
+{id:'a2_16',text:'Превосходная степень прилагательных',note:'the biggest, the most beautiful, the best',
+exp:`Односложные: <em>the + -est</em>. Многосложные: <em>the most</em>.
+<br>Правила написания те же, что и у сравнительной степени.
+<br><br>Неправильные: <em>good→the best, bad→the worst, far→the furthest, much/many→the most</em>
+<br><br>⚠️ Всегда с артиклем <em>the</em>! После превосходной степени часто <em>in</em> или <em>of</em>: <em>the tallest girl in the class.</em>`,
+ex:[['This is the most expensive restaurant in the city.','Это самый дорогой ресторан в городе.'],['He is the best player on the team.','Он лучший игрок в команде.']],
+links:[['Superlatives','https://www.perfect-english-grammar.com/superlatives.html',EN]]},
+
+{id:'a2_17',text:'some / any — неопределённое количество',note:'I have some money. Do you have any? I don\'t have any.',
+exp:`<em>some</em> — в утвердительных предложениях и в предложениях/просьбах.
+<br><em>any</em> — в вопросах и отрицаниях.
+<br><br>Исключение: <em>some</em> в вопросах, когда ожидаем утвердительный ответ или предлагаем что-то: <em>Would you like some tea? Can I have some water?</em>`,
+ex:[["I bought some bread and some milk.",'Я купил хлеба и молока.'],["Is there any milk in the fridge?",'В холодильнике есть молоко?'],["I don't have any cash on me.",'У меня нет наличных с собой.']],
+links:[['Some or any','https://www.perfect-english-grammar.com/some-or-any.html',EN]]},
+
+{id:'a2_18',text:'much / many / a lot of / a few / a little',note:'much water (несчисл.), many people (счисл.), a lot of — везде',
+exp:`<em>much</em> — с несчисляемыми (much water, much time, much money).
+<br><em>many</em> — со счисляемыми (many people, many books, many times).
+<br><em>a lot of / lots of</em> — с обоими, разговорный стиль.
+<br><br><em>a few</em> — немного (счисляемые, нейтрально/позитивно).
+<br><em>few</em> — мало, почти нет (счисляемые, негативно).
+<br><em>a little</em> — немного (несчисляемые, нейтрально).
+<br><em>little</em> — мало, почти нет (несчисляемые, негативно).`,
+ex:[["I don't have much time.",'У меня мало времени.'],['She has a few friends in London.','У неё есть несколько друзей в Лондоне.'],['There is a little sugar left.','Осталось немного сахара.']],
+links:[['Much/many/a lot of','https://www.perfect-english-grammar.com/much-or-many.html',EN]]},
+
+{id:'a2_19',text:'Счисляемые и несчисляемые существительные',note:'water, information, advice — нельзя: a water, two advices',
+exp:`<strong>Счисляемые</strong>: можно посчитать, есть мн. число: <em>a book, two books</em>.
+<br><strong>Несчисляемые</strong>: нельзя посчитать напрямую — нет мн. числа, нет неопределённого артикля.
+<br><br>Типичные несчисляемые: <em>water, milk, bread, rice, money, information, advice, news, weather, luggage, furniture, hair, music, work</em>
+<br><br>Для обозначения порций: <em>a glass of water, a piece of advice, a loaf of bread, a bag of rice</em>`,
+ex:[["Can I have some information, please?",'Можно мне узнать кое-что?'],['She gave me very useful advice.','Она дала мне очень полезный совет.']],
+links:[['Countable/uncountable','https://www.perfect-english-grammar.com/countable-and-uncountable-nouns.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/nouns/',RU]]},
+]},
+
+{name:'Предлоги времени',rules:[
+{id:'a2_20',text:'Предлоги in / on / at для времени',note:'in March, in 2024, in winter; on Monday, on 5 June; at 3pm, at night',
+exp:`<em>at</em> → точное время: <em>at 6 o'clock, at noon, at midnight, at night, at the weekend (BrE)</em>
+<br><em>on</em> → дни и даты: <em>on Monday, on 5 March, on my birthday, on New Year's Day</em>
+<br><em>in</em> → периоды: <em>in July, in 2023, in the morning/afternoon/evening, in summer, in the 21st century</em>
+<br><br>Без предлога: <em>this/last/next + время: this morning, last week, next year</em>`,
+ex:[["The meeting is at half past three.",'Встреча в половине четвёртого.'],['She was born on the 12th of April.','Она родилась 12 апреля.'],['I started this job in October.','Я начал эту работу в октябре.']],
+links:[['In/On/At time','https://www.perfect-english-grammar.com/in-on-at-time.html',EN]]},
+
+{id:'a2_21',text:'for / since / ago — продолжительность и начало',note:'for three years, since 2020, three years ago',
+exp:`<em>for</em> — продолжительность (как долго): <em>for two hours, for a week, for years</em>. Используется с разными временами.
+<br><em>since</em> — начальный момент (с тех пор как): <em>since Monday, since 2019, since I was a child</em>. Используется с Present Perfect.
+<br><em>ago</em> — время назад от сейчас: <em>three days ago, a month ago</em>. Только с Past Simple.`,
+ex:[[`I've been here for six months.`,'Я здесь уже шесть месяцев.'],["She's worked here since 2020.",'Она работает здесь с 2020 года.'],['I saw him two days ago.','Я видел его два дня назад.']],
+links:[['For/since/ago','https://www.perfect-english-grammar.com/for-since-and-ago.html',EN]]},
+]},
+
+{name:'Разное A2',rules:[
+{id:'a2_22',text:'Вопросы-хвостики: ...isn\'t it? / ...do you? / ...haven\'t they?',note:'It\'s cold, isn\'t it? You like jazz, don\'t you?',
+exp:`Вопросы-хвостики (tag questions) используются для подтверждения или уточнения.
+<br><br>Правило: утвердительное предложение → отрицательный хвостик, и наоборот.
+<br>Вспомогательный глагол в хвостике = время основного предложения.
+<br><br>Интонация: ↘ (понижающаяся) = подтверждение; ↗ (повышающаяся) = реальный вопрос.`,
+ex:[["It's a nice day, isn't it?",'Хороший день, правда?'],["You don't like horror films, do you?",'Ты же не любишь фильмы ужасов, правда?'],["She can swim, can't she?",'Она умеет плавать, не так ли?']],
+links:[['Tag questions','https://www.perfect-english-grammar.com/tag-questions.html',EN],['Упражнения','https://skyeng.ru/exercises/tag-questions/',RU]]},
+]}
+]},
+
+{id:'B1',name:'B1 — Средний',sub:'Intermediate · 4–6 месяцев',color:'var(--b1)',colorBg:'var(--b1bg)',
+categories:[
+{name:'Present Perfect',rules:[
+{id:'b1_01',text:'Present Perfect — форма и значение',note:'I have seen it. She has gone. They have arrived.',
+exp:`<strong>Present Perfect</strong> = have/has + V3 (третья форма глагола).
+<br><br>Три основных значения:
+<br>1. <strong>Жизненный опыт</strong> (без указания времени): <em>I have visited Tokyo.</em>
+<br>2. <strong>Результат в настоящем</strong>: <em>I have lost my keys.</em> (сейчас нет ключей)
+<br>3. <strong>Незавершённое действие</strong>, продолжающееся сейчас: <em>She has lived here for 5 years.</em>
+<br><br>V3 правильных глаголов = Past Simple (worked, played). Неправильные нужно знать отдельно.`,
+ex:[['Have you ever eaten sushi?','Ты когда-нибудь ел суши?'],["I've just finished my homework.",'Я только что закончил домашнее задание.'],["She hasn't called yet.",'Она ещё не позвонила.']],
+tip:'Маркеры: ever, never, already, yet, just, recently, lately, so far.',
+links:[['OK English: Present Perfect (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Skyeng: упражнения PP','https://skyeng.ru/exercises/present-perfect-present-perfect-continuous/',RU],['Perfect English Grammar','https://www.perfect-english-grammar.com/present-perfect.html',EN]]},
+
+{id:'b1_02',text:'ever / never / already / yet / just — маркеры Present Perfect',note:'Have you ever...? I\'ve never... I\'ve already... Not yet. I\'ve just...',
+exp:`<em>ever</em> — когда-нибудь (в вопросах об опыте). Место: перед V3.
+<br><em>never</em> — никогда (отрицательное значение). Место: перед V3.
+<br><em>already</em> — уже (раньше ожидаемого). Место: перед V3 или в конце.
+<br><em>yet</em> — уже/ещё. В вопросах (Have you finished yet?) и отрицаниях (I haven't finished yet). Место: конец предложения.
+<br><em>just</em> — только что. Место: перед V3.`,
+ex:[['Have you ever been to Scotland?','Ты бывал в Шотландии?'],["I've never eaten snails.",'Я никогда не ел улиток.'],["I've already seen that film.",'Я уже видел этот фильм.'],["She hasn't replied yet.",'Она ещё не ответила.']],
+links:[['already/yet/just','https://www.perfect-english-grammar.com/present-perfect-already-yet-just.html',EN]]},
+
+{id:'b1_03',text:'Present Perfect vs Past Simple — ключевая разница',note:'I\'ve been to Paris (опыт) vs I went to Paris in 2019 (конкретное время)',
+exp:`Это одна из самых важных разниц в английской грамматике.
+<br><br><strong>Present Perfect</strong> — связь с настоящим, время НЕ указывается:
+<br><em>I've lost my wallet.</em> (сейчас нет кошелька — это важно)
+<br><br><strong>Past Simple</strong> — завершённое прошлое, время указывается или подразумевается:
+<br><em>I lost my wallet yesterday.</em> (вчера — конкретное время)
+<br><br>⚠️ С конкретными временными маркерами (yesterday, last week, in 2020, ago) → только Past Simple!`,
+ex:[["I've met the new director. (он сейчас здесь, это актуально)",'Я познакомился с новым директором.'],["I met him last Tuesday. (конкретное время)",'Я встретил его в прошлый вторник.']],
+links:[['OK English: PP vs Past Simple (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Skyeng: тест PP vs PS','https://skyeng.ru/testy-po-anglijskomu-yazyku/past-simple-ili-present-perfect/',RU],['Perfect English Grammar','https://www.perfect-english-grammar.com/present-perfect-or-past-simple.html',EN]]},
+
+{id:'b1_04',text:'Present Perfect с for и since',note:'I\'ve lived here for 5 years / since 2019.',
+exp:`<em>for</em> — продолжительность: <em>for two days, for a year, for a long time, for ages</em>
+<br><em>since</em> — начальная точка: <em>since Monday, since I was a child, since 2015</em>
+<br><br>Вопрос «Как долго?» — How long + Present Perfect: <em>How long have you known her?</em>`,
+ex:[["She's worked here for ten years.",'Она работает здесь десять лет.'],["I've known him since university.",'Я знаю его со времён университета.']],
+links:[['For and since','https://www.perfect-english-grammar.com/present-perfect-with-for-and-since.html',EN]]},
+
+{id:'b1_05',text:'Present Perfect Continuous: have been + V-ing',note:'I have been waiting for an hour. She has been studying all day.',
+exp:`<strong>Present Perfect Continuous</strong> = have/has been + V-ing
+<br><br>Акцент на <strong>продолжительности</strong> или незавершённости действия. Отвечает на вопрос «Как долго?»
+<br>Часто объясняет видимый результат в настоящем: <em>You look tired — have you been running?</em>
+<br><br>Разница с Present Perfect Simple:
+<br>• <em>I've read 50 pages.</em> — результат, завершённость
+<br>• <em>I've been reading all evening.</em> — акцент на процессе`,
+ex:[["I've been learning English for two years.",'Я учу английский уже два года.'],['Why are your hands dirty? — I\'ve been fixing the car.','Почему у тебя грязные руки? — Чинил машину.']],
+links:[['OK English: PPC (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Perfect English Grammar','https://www.perfect-english-grammar.com/present-perfect-continuous.html',EN]]},
+]},
+
+{name:'Прошедшие времена',rules:[
+{id:'b1_06',text:'Past Continuous: was/were + V-ing',note:'I was reading at 8pm. They were talking all evening.',
+exp:`<strong>Past Continuous</strong> = was/were + V-ing
+<br><br>Значения:
+<br>1. Действие в <strong>процессе</strong> в конкретный момент прошлого: <em>At 9pm I was having dinner.</em>
+<br>2. <strong>Фоновое действие</strong>, прерванное другим: <em>I was walking when it started to rain.</em>
+<br>3. Параллельные действия: <em>While she was cooking, he was watching TV.</em>`,
+ex:[['It was raining when I left home.','Когда я выходил из дома, шёл дождь.'],['What were you doing at 7 yesterday?','Что ты делал вчера в 7?']],
+links:[['OK English: Past Continuous (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Perfect English Grammar','https://www.perfect-english-grammar.com/past-continuous.html',EN]]},
+
+{id:'b1_07',text:'Past Simple vs Past Continuous — фон и событие',note:'While I was cooking, he called. I was walking when it started to rain.',
+exp:`Типичная конструкция: длинное фоновое действие (Past Continuous) + короткое событие (Past Simple).
+<br><br>Союзы:
+<br>• <em>when</em> — используется с Past Simple для события: <em>She was sleeping when the alarm went off.</em>
+<br>• <em>while/as</em> — используется с Past Continuous для фона: <em>While I was watching TV, the power went out.</em>`,
+ex:[['She was having a bath when the phone rang.','Она принимала ванну, когда зазвонил телефон.'],['While he was giving his speech, someone fell asleep.','Пока он произносил речь, кто-то заснул.']],
+links:[['Past Simple vs Continuous','https://www.perfect-english-grammar.com/past-simple-or-past-continuous.html',EN]]},
+]},
+
+{name:'Условные предложения',rules:[
+{id:'b1_08',text:'0-й тип: If + Present, Present — факты и законы',note:'If you heat water to 100°C, it boils.',
+exp:`Нулевой тип — для научных фактов, законов природы, общих истин. Оба действия всегда происходят вместе.
+<br><br>Форма: <em>If + Present Simple, Present Simple</em>
+<br>Вместо <em>if</em> можно <em>when</em>: <em>When you mix red and blue, you get purple.</em>`,
+ex:[['If you heat ice, it melts.','Если нагреть лёд, он тает.'],["If it rains, the streets get wet.",'Если идёт дождь, улицы намокают.']],
+links:[['Conditionals overview','https://www.perfect-english-grammar.com/conditionals.html',EN],['Skyeng: условные предложения','https://skyeng.ru/exercises/conditionals/',RU]]},
+
+{id:'b1_09',text:'1-й тип: If + Present Simple, will — реальное будущее',note:'If it rains tomorrow, I\'ll stay home.',
+exp:`Реальная, вероятная ситуация в будущем.
+<br><br>Форма: <em>If + Present Simple, will + инфинитив</em>
+<br>⚠️ В <em>if</em>-части — НИКОГДА не Future! Только Present Simple.
+<br><br>Вместо <em>will</em> в главной части можно: <em>can, may, might, should</em>.
+<br>Части можно поменять: <em>I'll stay home if it rains.</em> (без запятой)`,
+ex:[["If she studies hard, she'll pass the exam.",'Если она будет хорошо учиться, она сдаст экзамен.'],["If you need help, I can come.",'Если нужна помощь, я могу прийти.']],
+links:[['OK English: 1st conditional (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['First conditional','https://www.perfect-english-grammar.com/first-conditional.html',EN]]},
+
+{id:'b1_10',text:'2-й тип: If + Past Simple, would — нереальное настоящее',note:'If I had a car, I would drive to work. If I were you...',
+exp:`Нереальная или маловероятная ситуация в настоящем или будущем.
+<br><br>Форма: <em>If + Past Simple, would + инфинитив</em>
+<br>⚠️ Глагол в <em>if</em>-части — Past Simple, но значение — <strong>настоящее/будущее</strong>!
+<br>⚠️ <em>were</em> используется для всех лиц: <em>If I were you, If she were here</em> — это стандарт формального языка.`,
+ex:[['If I won the lottery, I would travel the world.','Если бы я выиграл в лотерею, я бы объездил мир.'],["If I were taller, I'd play basketball.",'Если бы я был выше, я бы играл в баскетбол.']],
+links:[['OK English: 2nd conditional (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Second conditional','https://www.perfect-english-grammar.com/second-conditional.html',EN]]},
+
+{id:'b1_11',text:'1-й тип vs 2-й тип: реальное vs маловероятное',note:'If I win (1st, реально) vs If I won (2nd, вряд ли)',
+exp:`Выбор типа отражает <strong>твою уверенность</strong> в реальности ситуации.
+<br><br>• <em>If I see her</em> (1-й тип) — я ожидаю её увидеть
+<br>• <em>If I saw her</em> (2-й тип) — маловероятно или я просто фантазирую
+<br><br>Это не разница в грамматике, а разница в отношении говорящего.`,
+ex:[["If it rains tomorrow, I'll take an umbrella. (реально возможно)",'Если завтра будет дождь, я возьму зонт.'],["If it rained every day, I'd move to Spain. (маловероятная фантазия)",'Если бы шёл дождь каждый день, я переехал бы в Испанию.']],
+links:[['1st vs 2nd conditional','https://www.perfect-english-grammar.com/first-or-second-conditional.html',EN]]},
+]},
+
+{name:'Страдательный залог (Passive)',rules:[
+{id:'b1_12',text:'Passive Voice — Present Simple: is/are + V3',note:'Coffee is grown in Brazil. The car is made in Germany.',
+exp:`<strong>Страдательный залог</strong> используется, когда:
+<br>• Важно само действие, а не тот, кто его совершает
+<br>• Исполнитель неизвестен или очевиден
+<br><br>Форма Present Simple Passive: <em>am/is/are + V3</em>
+<br>Исполнитель (если нужен) добавляется с <em>by</em>: <em>The window was broken by the ball.</em>`,
+ex:[['English is spoken in many countries.','На английском говорят во многих странах.'],['The letter is written in French.','Письмо написано по-французски.']],
+links:[['OK English: Passive Voice (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Passive Voice overview','https://www.perfect-english-grammar.com/passive.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/passive/',RU]]},
+
+{id:'b1_13',text:'Passive Voice — Past Simple: was/were + V3',note:'The bridge was built in 1890. They were arrested.',
+exp:`Past Simple Passive: <em>was/were + V3</em>
+<br>• <em>was</em> — ед. число
+<br>• <em>were</em> — мн. число
+<br><br>Активный → Пассивный: <em>Someone stole my car.</em> → <em>My car was stolen.</em>`,
+ex:[['The Eiffel Tower was built in 1889.','Эйфелева башня была построена в 1889 году.'],['Three people were injured in the accident.','В аварии пострадали три человека.']],
+links:[['Past Passive exercise','https://www.perfect-english-grammar.com/passive-exercise-1.html',EN]]},
+
+{id:'b1_14',text:'Passive Voice — Present Perfect: has/have been + V3',note:'The car has been repaired. All invitations have been sent.',
+exp:`Present Perfect Passive: <em>has/have been + V3</em>
+<br><br>Используется когда важен результат в настоящем, а не то, когда именно это произошло.`,
+ex:[['The project has been completed.','Проект завершён.'],['All the guests have been informed.','Всех гостей уведомили.']],
+links:[['Perfect Passive exercise','https://www.perfect-english-grammar.com/passive-exercise-2.html',EN]]},
+]},
+
+{name:'Косвенная речь',rules:[
+{id:'b1_15',text:'Reported Speech — сдвиг времён',note:'"I am tired." → He said he was tired.',
+exp:`При переводе в косвенную речь времена «сдвигаются» назад:
+<br>• Present Simple → Past Simple: <em>"I work" → he said he worked</em>
+<br>• Past Simple → Past Perfect: <em>"I went" → she said she had gone</em>
+<br>• Present Perfect → Past Perfect: <em>"I've seen" → he said he had seen</em>
+<br>• will → would; can → could; is → was; am going → was going`,
+ex:[["She said: 'I am leaving.' → She said she was leaving.",'Она сказала, что уходит.'],["He told me: 'I can't come.' → He told me he couldn't come.",'Он сказал, что не может прийти.']],
+links:[['OK English: Reported Speech (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Reported Speech','https://www.perfect-english-grammar.com/reported-speech.html',EN]]},
+
+{id:'b1_16',text:'Reported questions — косвенные вопросы',note:'"Where do you live?" → She asked where I lived.',
+exp:`В косвенных вопросах:
+<br>1. <strong>Нет инверсии</strong> (порядок слов как в утверждении)
+<br>2. <strong>Нет вспомогательного do/did</strong>
+<br>3. Общие вопросы (Yes/No) → <em>if/whether + подлежащее + глагол</em>`,
+ex:[['"Where do you work?" → She asked where I worked.','Она спросила, где я работаю.'],['"Are you married?" → He wanted to know if I was married.','Он хотел знать, женат ли я.']],
+links:[['Reported questions','https://www.perfect-english-grammar.com/reported-questions.html',EN]]},
+
+{id:'b1_17',text:'say vs tell в косвенной речи',note:'He said that... / He told me that... — после tell нужно лицо!',
+exp:`<em>say</em> — без обязательного дополнения: <em>She said she was tired.</em>
+<br><em>tell</em> — ВСЕГДА с дополнением (кому сказано): <em>She told me she was tired.</em>
+<br><br>❌ ~~He told that he was late.~~ ✓ <em>He said that he was late.</em>`,
+ex:[['She said she needed help.','Она сказала, что ей нужна помощь.'],['He told us the meeting was cancelled.','Он сообщил нам, что встреча отменена.']],
+links:[['Say or tell','https://www.perfect-english-grammar.com/say-or-tell.html',EN]]},
+]},
+
+{name:'Герундий и инфинитив',rules:[
+{id:'b1_18',text:'Глаголы + герундий (V-ing)',note:'I enjoy reading. She finished writing. He avoided making mistakes.',
+exp:`Эти глаголы требуют после себя герундий (V-ing):
+<br><em>enjoy, finish, avoid, mind, suggest, keep, consider, deny, imagine, miss, practise, risk, admit, delay, dislike, fancy, give up, involve, put off, recommend, resist</em>
+<br><br>Приём для запоминания: если можно заменить «процессом» — скорее всего герундий.`,
+ex:[["I enjoy swimming in the sea.",'Мне нравится купаться в море.'],["She's considering moving abroad.",'Она думает о переезде за рубеж.'],['He avoided making eye contact.','Он избегал зрительного контакта.']],
+links:[['Gerunds after verbs','https://www.perfect-english-grammar.com/gerunds.html',EN],['Skyeng упражнения','https://skyeng.ru/exercises/gerund-infinitive/',RU]]},
+
+{id:'b1_19',text:'Глаголы + инфинитив (to + V)',note:'I want to go. She decided to stay. He managed to finish.',
+exp:`Эти глаголы требуют инфинитив с <em>to</em>:
+<br><em>want, decide, hope, plan, manage, agree, promise, refuse, fail, expect, offer, learn, need, afford, arrange, attempt, choose, claim, demand, deserve, help, pretend, tend, threaten</em>`,
+ex:[['She decided to quit her job.','Она решила уволиться.'],["I hope to see you soon.",'Надеюсь скоро увидеться.'],["He failed to answer.",'Он не смог ответить.']],
+links:[['Infinitives after verbs','https://www.perfect-english-grammar.com/infinitives.html',EN]]},
+
+{id:'b1_20',text:'Глаголы с обоими (like, love, hate, start, begin)',note:'I like reading = I like to read — небольшая разница',
+exp:`После <em>like/love/hate/prefer</em> оба варианта возможны:
+<br>• V-ing — говорим о действии в целом: <em>I love cooking.</em> (мне вообще нравится готовить)
+<br>• to-inf — говорим о конкретном случае: <em>I'd like to cook tonight.</em>
+<br><br>После <em>start/begin/continue/cease</em> — разницы практически нет.`,
+ex:[['I love travelling / to travel.','Мне нравится путешествовать.'],['She started working / to work here in May.','Она начала работать здесь в мае.']],
+links:[['Gerund or infinitive','https://www.perfect-english-grammar.com/gerund-or-infinitive.html',EN]]},
+
+{id:'b1_21',text:'used to — прошлые привычки и состояния',note:'I used to play football. She used to have long hair.',
+exp:`<em>used to</em> — регулярные действия или состояния в прошлом, которые уже прекратились.
+<br><br>Форма: <em>used to + инфинитив</em>
+<br>Отрицание: <em>didn't use to</em>
+<br>Вопрос: <em>Did you use to...?</em>
+<br><br>⚠️ Нет формы настоящего времени! Нельзя: ~~I use to~~ для настоящего.
+<br>Отличие от <em>be used to</em>: <em>I am used to waking up early</em> = я привык (сейчас).`,
+ex:[['I used to smoke, but I stopped.','Я раньше курил, но бросил.'],['Did you use to play an instrument?','Ты раньше играл на инструменте?']],
+links:[['OK English: used to (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Used to','https://www.perfect-english-grammar.com/used-to.html',EN]]},
+]},
+
+{name:'Придаточные предложения',rules:[
+{id:'b1_22',text:'Относительные придаточные: who, which, that, where, whose',note:'The man who called. The book that I read. The place where we met.',
+exp:`<em>who</em> — для людей: <em>The woman who called is my sister.</em>
+<br><em>which</em> — для предметов и животных: <em>The book which I borrowed was great.</em>
+<br><em>that</em> — для людей и предметов (в определяющих придаточных): <em>The car that he bought is new.</em>
+<br><em>where</em> — для мест: <em>The café where we met is closed.</em>
+<br><em>whose</em> — принадлежность: <em>The girl whose bag was stolen...</em>
+<br><br>В разговорной речи местоимение часто опускается, если оно — дополнение: <em>The film (that) I saw...</em>`,
+ex:[['The man who lives next door is very friendly.','Мужчина, который живёт по соседству, очень дружелюбный.'],['The hotel where we stayed had a pool.','Отель, в котором мы жили, был с бассейном.']],
+links:[['Relative clauses','https://www.perfect-english-grammar.com/relative-clauses.html',EN]]},
+
+{id:'b1_23',text:'Союзы контраста: although, however, despite, in spite of, whereas',note:'Although it was raining, we went out. Despite the rain, we went.',
+exp:`<em>although / even though / though</em> + придаточное предложение.
+<br><em>despite / in spite of</em> + существительное / герундий (НЕ придаточное!).
+<br><em>however</em> + новое предложение (после точки или точки с запятой).
+<br><em>whereas</em> — противопоставление двух фактов.`,
+ex:[['Although she was tired, she kept working.','Хотя она устала, она продолжала работать.'],['Despite the rain, he cycled to work.','Несмотря на дождь, он поехал на работу на велосипеде.'],["It was expensive. However, it was worth it.",'Это было дорого. Тем не менее оно того стоило.']],
+links:[['Although/despite/however','https://www.perfect-english-grammar.com/although-despite-however.html',EN]]},
+]}
+]},
+
+{id:'B2',name:'B2 — Выше среднего',sub:'Upper-Intermediate · 5–8 месяцев',color:'var(--b2)',colorBg:'var(--b2bg)',
+categories:[
+{name:'Past Perfect',rules:[
+{id:'b2_01',text:'Past Perfect Simple: had + V3',note:'By the time she arrived, he had already left.',
+exp:`<strong>Past Perfect</strong> — действие, завершившееся <strong>до</strong> другого момента или события в прошлом.
+<br><br>Форма: <em>had + V3</em> для всех лиц.
+<br>Отрицание: <em>hadn't + V3</em>
+<br>Вопрос: <em>Had + подлежащее + V3?</em>
+<br><br>Типичные союзы: <em>before, after, when, by the time, already, just, never</em>`,
+ex:[['When I arrived, she had already left.','Когда я приехал, она уже ушла.'],['He had never seen snow before that winter.','Он никогда раньше не видел снег до той зимы.']],
+links:[['OK English: Past Perfect (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Past Perfect','https://www.perfect-english-grammar.com/past-perfect.html',EN]]},
+
+{id:'b2_02',text:'Past Perfect Continuous: had been + V-ing',note:'He had been waiting for two hours when she arrived.',
+exp:`<strong>Past Perfect Continuous</strong> = had been + V-ing
+<br>Акцент на <strong>продолжительности</strong> действия, которое происходило до другого момента в прошлом.
+<br>Часто объясняет причину или видимый результат в прошлом.`,
+ex:[["She was exhausted — she'd been working all night.",'Она была измотана — она работала всю ночь.'],['How long had you been waiting before she arrived?','Как долго ты ждал до её прихода?']],
+links:[['Past Perfect Continuous','https://www.perfect-english-grammar.com/past-perfect-continuous.html',EN]]},
+]},
+
+{name:'Модальные для прошлого',rules:[
+{id:'b2_03',text:'must have + V3 — уверенный вывод о прошлом',note:'She must have forgotten. — я уверен, это единственное объяснение',
+exp:`<em>must have + V3</em> = я уверен, что это произошло (единственное логичное объяснение).
+<br><br>Шкала уверенности:
+<br>• <em>must have done</em> — почти наверняка случилось
+<br>• <em>should have done</em> — ожидалось, что случится
+<br>• <em>may/might have done</em> — возможно случилось
+<br>• <em>can't have done</em> — наверняка не случилось`,
+ex:[["You must have been exhausted after that journey.",'Ты, должно быть, очень устал после этой поездки.'],["She must have left early — her coat is gone.",'Она, видимо, ушла рано — её пальто пропало.']],
+links:[['OK English: модальные прошлого (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Modals of deduction past','https://www.perfect-english-grammar.com/modals-of-deduction-past.html',EN]]},
+
+{id:'b2_04',text:"can't have + V3 — невозможность в прошлом",note:"She can't have said that! He can't have been there.",
+exp:`<em>can't have + V3</em> = я уверен, что этого <strong>не произошло</strong> (это невозможно).
+<br>Противоположность <em>must have done</em>.`,
+ex:[["He can't have seen her — she was abroad.",'Он не мог её видеть — она была за границей.'],["That can't have been the right address.",'Это не мог быть правильный адрес.']],
+links:[["Can't have done",'https://www.perfect-english-grammar.com/modals-of-deduction-past.html',EN]]},
+
+{id:'b2_05',text:'should have + V3 — упрёк и сожаление',note:'I should have called. You shouldn\'t have said that.',
+exp:`<em>should have + V3</em> = было бы правильно сделать, но не сделал (сожаление, упрёк).
+<br><em>shouldn't have + V3</em> = не следовало делать.
+<br><br>Это очень употребительная конструкция для выражения сожаления и критики.`,
+ex:[["I should have brought an umbrella.",'Надо было взять зонт.'],["She shouldn't have told him the secret.",'Ей не следовало говорить ему секрет.']],
+links:[['Should have done','https://www.perfect-english-grammar.com/should-have-done.html',EN]]},
+
+{id:'b2_06',text:'might / could have + V3 — возможность в прошлом',note:'She might have forgotten. It could have been worse.',
+exp:`<em>might/could have + V3</em> = возможно это произошло (мы не знаем точно).
+<br><br>Также: <em>could have done</em> = мог бы сделать (но не сделал): <em>I could have won if I had tried harder.</em>`,
+ex:[["She might have forgotten about the meeting.",'Возможно, она забыла о встрече.'],["He could have left through the back door.",'Он мог выйти через заднюю дверь.']],
+links:[['Might have done','https://www.perfect-english-grammar.com/modals-of-deduction-past.html',EN]]},
+]},
+
+{name:'3-й тип условного и смешанные',rules:[
+{id:'b2_07',text:'3-й тип условного: If + Past Perfect, would have + V3',note:'If I had studied harder, I would have passed.',
+exp:`Нереальная ситуация в <strong>прошлом</strong> — говорим о том, чего не случилось.
+<br><br>Форма: <em>If + Past Perfect, would have + V3</em>
+<br><br>Оба элемента нереальны:
+<br>• Условие не выполнилось
+<br>• Результата тоже не было`,
+ex:[["If she had taken the medicine, she would have recovered.",'Если бы она приняла лекарство, она бы выздоровела.'],["If he hadn't left early, he would have met her.",'Если бы он не ушёл рано, он бы встретил её.']],
+links:[['OK English: 3rd conditional (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Third conditional','https://www.perfect-english-grammar.com/third-conditional.html',EN]]},
+
+{id:'b2_08',text:'Смешанные условные (mixed conditionals)',note:'If I had studied, I would be fluent now. (прошлое → настоящее)',
+exp:`Смешанные условные соединяют разные временные планы:
+<br><br>1. <strong>Прошлое условие → настоящий результат</strong>:
+<br><em>If + Past Perfect, would + инфинитив</em>
+<br><em>If I had taken that job, I would be in New York now.</em>
+<br><br>2. <strong>Настоящее условие → прошлый результат</strong>:
+<br><em>If + Past Simple, would have + V3</em>
+<br><em>If she were more careful, she wouldn't have broken it.</em>`,
+ex:[['If I had studied medicine, I would be a doctor now.','Если бы я учился на врача, я был бы врачом сейчас.']],
+links:[['Mixed conditionals','https://www.perfect-english-grammar.com/mixed-conditionals.html',EN]]},
+]},
+
+{name:'Страдательный залог — продвинутый',rules:[
+{id:'b2_09',text:'Future Passive и Passive с модальными',note:'It will be done. It must be fixed. It should be checked.',
+exp:`Модальный + Passive: <em>modal + be + V3</em>
+<br>• <em>will be done</em> — будет сделано
+<br>• <em>must be done</em> — должно быть сделано
+<br>• <em>should be done</em> — следует сделать
+<br>• <em>can be done</em> — может быть сделано`,
+ex:[['The report will be published tomorrow.','Отчёт будет опубликован завтра.'],['This mistake must be corrected immediately.','Эта ошибка должна быть немедленно исправлена.']],
+links:[['Passive with modals','https://www.perfect-english-grammar.com/passive.html',EN]]},
+
+{id:'b2_10',text:'Causative have/get: have something done',note:'I had my hair cut. She got her car fixed.',
+exp:`<em>have/get + объект + V3</em> — вы заказываете услугу или кто-то делает что-то за вас.
+<br><br>Сравни:
+<br>• <em>I cut my hair.</em> — я сам подстриг (что нетипично)
+<br>• <em>I had my hair cut.</em> — подстрижен парикмахером
+<br><br><em>get</em> чуть более разговорный, <em>have</em> чуть формальнее.`,
+ex:[['I need to have my teeth checked.','Мне нужно проверить зубы у врача.'],['She had her house painted last spring.','Прошлой весной она покрасила дом (наняв рабочих).']],
+links:[['Have something done','https://www.perfect-english-grammar.com/have-something-done.html',EN]]},
+
+{id:'b2_11',text:'Passive reporting verbs: It is said that... / He is believed to...',note:'It is thought that prices will rise. She is known to be honest.',
+exp:`Два варианта конструкции с глаголами <em>say, think, believe, report, know, expect, consider</em>:
+<br><br>1. <em>It + passive + that + придаточное</em>: <em>It is believed that...</em>
+<br>2. <em>Подлежащее + is + V3 + to-infinitive</em>: <em>She is believed to be...</em>
+<br><br>Используется в новостях и официальных текстах.`,
+ex:[['It is reported that three people were injured.','Сообщается, что три человека получили ранения.'],['He is thought to have left the country.','Считается, что он покинул страну.']],
+links:[['Passive reporting verbs','https://www.perfect-english-grammar.com/passive-reporting-verbs.html',EN]]},
+]},
+
+{name:'Герундий — нюансы',rules:[
+{id:'b2_12',text:'remember / forget + V-ing vs to-inf — разница в значении',note:'I remember locking it (факт прошлого) vs Remember to lock it (задача)',
+exp:`<em>remember/forget + V-ing</em> — о прошлом событии, которое помним/забыли.
+<br><em>remember/forget + to-inf</em> — о задаче: не забыть сделать что-то в будущем.`,
+ex:[['I remember meeting her at a conference. (это было)','Я помню, что встретил её на конференции.'],['Remember to call your mother! (нужно сделать)','Не забудь позвонить маме!'],["I forgot to buy milk. (не сделал)",'Я забыл купить молоко.']],
+links:[['Remember/forget','https://www.perfect-english-grammar.com/gerund-or-infinitive-exercise-1.html',EN]]},
+
+{id:'b2_13',text:'stop / regret / mean + V-ing vs to-inf',note:'She stopped smoking (бросила) vs She stopped to smoke (остановилась, чтобы)',
+exp:`<em>stop + V-ing</em> — прекратить действие.
+<br><em>stop + to-inf</em> — остановиться, чтобы сделать что-то другое.
+<br><br><em>regret + V-ing</em> — сожалеть о прошлом.
+<br><em>regret + to-inf</em> — с сожалением сообщать (формально): <em>I regret to inform you...</em>
+<br><br><em>mean + V-ing</em> — означать: <em>This means working harder.</em>
+<br><em>mean + to-inf</em> — намереваться: <em>I meant to call you.</em>`,
+ex:[['He stopped smoking last year.','Он бросил курить в прошлом году.'],['She stopped to look at the view.','Она остановилась, чтобы полюбоваться видом.']],
+links:[['Stop/regret/mean','https://www.perfect-english-grammar.com/gerund-or-infinitive.html',EN]]},
+]},
+
+{name:'Wish и сослагательное',rules:[
+{id:'b2_14',text:'wish + Past Simple — желание изменить настоящее',note:'I wish I knew the answer. I wish I had more time.',
+exp:`<em>wish + Past Simple</em> — о нереальном желании в настоящем.
+<br>Форма такая же, как в 2-м типе условного. Для <em>to be</em> — <em>were</em> (формально), хотя <em>was</em> тоже используется.`,
+ex:[['I wish I spoke better English.','Жаль, что я не говорю по-английски лучше.'],['She wishes she lived in a warmer country.','Ей бы хотелось жить в более тёплой стране.']],
+links:[['OK English: wish (видео)','https://ok-english.ru/blue-murphy-videos/',YT],['Wish','https://www.perfect-english-grammar.com/wish.html',EN]]},
+
+{id:'b2_15',text:'wish + Past Perfect — сожаление о прошлом',note:'I wish I had studied harder. I wish I hadn\'t said that.',
+exp:`<em>wish + Past Perfect</em> — сожаление о прошлых событиях, которые уже нельзя изменить. Форма как в 3-м типе условного.`,
+ex:[["I wish I hadn't eaten so much.",'Жаль, что я так много съел.'],["She wishes she had taken that job offer.",'Ей жаль, что она не приняла то предложение о работе.']],
+links:[['Wish + Past Perfect','https://www.perfect-english-grammar.com/wish.html',EN]]},
+
+{id:'b2_16',text:'wish + would — желание изменить чужое поведение',note:'I wish you would stop talking. I wish it would warm up.',
+exp:`<em>wish + would</em> — раздражение из-за чужого поведения или желание изменить ситуацию.
+<br>⚠️ Нельзя использовать о себе: ~~I wish I would~~ — только о других лицах или погоде/ситуации.`,
+ex:[['I wish you would listen to me.','Я бы хотел, чтобы ты меня слушал.'],['I wish it would stop raining.','Хотелось бы, чтобы дождь прекратился.']],
+links:[['Wish + would','https://www.perfect-english-grammar.com/wish.html',EN]]},
+]}
+]},
+
+{id:'C1',name:'C1 — Продвинутый',sub:'Advanced · 8–12 месяцев',color:'var(--c1)',colorBg:'var(--c1bg)',
+categories:[
+{name:'Инверсия (Inversion)',rules:[
+{id:'c1_01',text:'Инверсия с отрицательными наречиями',note:'Never have I seen this. Rarely does she complain.',
+exp:`Для эмфазы отрицательное наречие/выражение выносится в начало → вспомогательный глагол перед подлежащим (порядок слов как в вопросе).
+<br><br>Слова, запускающие инверсию: <em>never, rarely, seldom, little, hardly, scarcely, barely, not only, only, no sooner</em>`,
+ex:[['Never have I seen anything so beautiful.','Никогда я не видел ничего столь прекрасного.'],['Rarely does she make a mistake.','Она редко ошибается.'],['Little did I know what was coming.','Я и не подозревал, что меня ждёт.']],
+links:[['Inversion','https://www.perfect-english-grammar.com/inversion.html',EN],['British Council: inversion','https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion',EN]]},
+
+{id:'c1_02',text:'Not only... but also с инверсией',note:'Not only did he apologise, but he also offered to help.',
+exp:`<em>Not only + инверсия в первой части</em>, вторая часть — обычный порядок.
+<br>Используется для усиления: выражает, что что-то пошло дальше ожидаемого.`,
+ex:[['Not only is she talented, but she is also very hard-working.','Она не только талантлива, но и очень трудолюбива.'],["Not only did they arrive late, but they also forgot the documents.",'Они не только опоздали, но и забыли документы.']],
+links:[['Not only but also','https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion',EN]]},
+
+{id:'c1_03',text:'Hardly / Scarcely / No sooner + инверсия',note:'Hardly had I sat down when the phone rang.',
+exp:`Конструкции немедленной последовательности:
+<br>• <em>Hardly/Scarcely + had + подлежащее + V3 + when/before + Past Simple</em>
+<br>• <em>No sooner + had + подлежащее + V3 + than + Past Simple</em>`,
+ex:[['Hardly had she arrived when it started to rain.','Она едва приехала, как начался дождь.'],['No sooner had I sat down than someone knocked at the door.','Я только сел, как кто-то постучал в дверь.']],
+links:[['Hardly/Scarcely','https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion',EN]]},
+
+{id:'c1_04',text:'Инверсия в условных: Had / Were / Should',note:'Had I known (= If I had known). Were I you (= If I were you).',
+exp:`Формальный стиль — исключает <em>if</em>, использует инверсию:
+<br>• <em>Had + подлежащее + V3</em> = If + Past Perfect (3-й тип)
+<br>• <em>Were + подлежащее (+ to + инфинитив)</em> = If + Past Simple (2-й тип)
+<br>• <em>Should + подлежащее + инфинитив</em> = If (маловероятное, 1-й тип)`,
+ex:[['Had she told me, I would have helped.','Скажи она мне, я бы помог.'],['Were I in your position, I would accept.','На вашем месте я бы согласился.'],['Should you need assistance, please call us.','Если вам потребуется помощь, позвоните нам.']],
+links:[['Inversion in conditionals','https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion',EN]]},
+]},
+
+{name:'Клефт-предложения',rules:[
+{id:'c1_05',text:'It-cleft: It was John who called.',note:'Для выделения любого члена предложения',
+exp:`Структура: <em>It + to be + выделяемый элемент + who/that/which + остальное</em>
+<br>Переносит фокус внимания на выделяемый элемент.
+<br><br>• Для людей — <em>who</em>; для вещей/обстоятельств — <em>that/which</em>.`,
+ex:[['It was the noise that woke me up. (не шум вообще, именно этот)','Именно шум разбудил меня.'],['It is hard work that leads to success.','Именно упорный труд ведёт к успеху.']],
+links:[['Cleft sentences','https://www.perfect-english-grammar.com/cleft-sentences.html',EN],['British Council: cleft','https://learnenglish.britishcouncil.org/grammar/c1-grammar/cleft-sentences',EN]]},
+
+{id:'c1_06',text:'Wh-cleft: What surprised me was the price.',note:'What I need is rest. What she said shocked everyone.',
+exp:`Структура: <em>What + придаточное + to be + выделяемый элемент</em>
+<br>Подчёркивает важность элемента, вводимого в конце.`,
+ex:[['What I love about London is the diversity.','Больше всего в Лондоне мне нравится разнообразие.'],["What he did was completely unexpected.",'То, что он сделал, было совершенно неожиданным.']],
+links:[['Cleft sentences','https://learnenglish.britishcouncil.org/grammar/c1-grammar/cleft-sentences',EN]]},
+]},
+
+{name:'Сослагательное наклонение',rules:[
+{id:'c1_07',text:'Формальное сослагательное после глаголов требования',note:'I suggest he leave. It is vital that she be informed.',
+exp:`После <em>suggest, recommend, insist, demand, propose, request, require, ask, advise, order + that</em> — базовая форма глагола для <strong>всех лиц</strong> (без <em>-s</em>, без <em>was</em>).
+<br><br>Британский вариант часто использует <em>should</em> вместо сослагательного: <em>I suggest that he should leave.</em>
+<br>Американский — чаще чистое сослагательное.`,
+ex:[['I recommend that he see a doctor.','Я рекомендую ему обратиться к врачу.'],['It is essential that all students attend the meeting.','Крайне важно, чтобы все студенты присутствовали на собрании.']],
+links:[['Subjunctive','https://www.perfect-english-grammar.com/subjunctive.html',EN],['British Council: subjunctive','https://learnenglish.britishcouncil.org/grammar/c1-grammar/subjunctive',EN]]},
+
+{id:'c1_08',text:'It\'s high time + Past Simple',note:'It\'s high time you went to bed. It\'s time we left.',
+exp:`<em>It's (high/about) time + подлежащее + Past Simple</em>
+<br>Значение: настоящее/будущее — говорим о том, что давно нужно было сделать.
+<br><em>high time</em> — ещё сильнее: уже давно пора!`,
+ex:[["It's time she found a new job.",'Ей давно пора найти новую работу.'],["It's high time you apologised.",'Уже давно пора извиниться.']],
+links:[['It\'s time','https://www.perfect-english-grammar.com/subjunctive.html',EN]]},
+
+{id:'c1_09',text:'as if / as though + сослагательное',note:'She talks as if she knew everything. He looked as though he had seen a ghost.',
+exp:`<em>as if / as though + Past Simple</em> — нереальное сравнение в настоящем.
+<br><em>as if / as though + Past Perfect</em> — нереальное сравнение о прошлом.`,
+ex:[['He spends money as if he were a millionaire.','Он тратит деньги, как будто он миллионер.'],['She spoke as though she had met him before.','Она говорила так, как будто уже встречала его раньше.']],
+links:[['As if / as though','https://www.perfect-english-grammar.com/subjunctive.html',EN]]},
+]},
+
+{name:'Эллипсис и замещение',rules:[
+{id:'c1_10',text:'So / Neither + вспомогательный глагол + подлежащее',note:'So do I. Neither does she. So am I.',
+exp:`<em>So + вспомогательный + подлежащее</em> — согласие с утвердительным.
+<br><em>Neither/Nor + вспомогательный + подлежащее</em> — согласие с отрицательным.
+<br>Вспомогательный глагол должен совпадать со временем исходного предложения.`,
+ex:[["I love jazz. So does she.",'Я люблю джаз. Она тоже.'],["I haven't been to Rome. Neither have I.",'Я не был в Риме. Я тоже.']],
+links:[['So / Neither','https://www.perfect-english-grammar.com/so-neither.html',EN]]},
+
+{id:'c1_11',text:'I think so / I hope so / I\'m afraid so',note:'Will it rain? — I think so. / I hope not.',
+exp:`<em>so</em> заменяет придаточное предложение после: <em>think, hope, suppose, expect, believe, imagine, be afraid</em>.
+<br>Отрицательная форма: <em>not</em> (не <em>so not</em>!).`,
+ex:[["Will he come? — I think so. / I don't think so.",'Он придёт? — Думаю, да. / Не думаю.'],['Is it expensive? — I\'m afraid so.','Это дорого? — Боюсь, что да.'],['Is it closed? — I hope not.','Закрыто? — Надеюсь, что нет.']],
+links:[['I think so / I hope so','https://www.perfect-english-grammar.com/so-not.html',EN]]},
+]},
+
+{name:'Придаточные — продвинутый',rules:[
+{id:'c1_12',text:'Включающие vs невключающие придаточные',note:'The man who called is my brother. VS My brother, who called, is a doctor.',
+exp:`<strong>Включающее (defining)</strong>: уточняет, о ком/чём речь — без запятых. <em>that</em> можно. Местоимение можно опустить если оно дополнение.
+<br><br><strong>Невключающее (non-defining)</strong>: добавляет информацию — обязательны запятые. Только <em>who/which</em> (не <em>that</em>!). Местоимение нельзя опускать.`,
+ex:[['The film that won the Oscar was brilliant. (определяет, о каком фильме речь)','Фильм, который выиграл Оскар, был великолепен.'],['Avatar, which came out in 2009, was a huge hit. (доп. факт о и так известном фильме)','Аватар, вышедший в 2009, стал большим хитом.']],
+links:[['Defining vs non-defining','https://www.perfect-english-grammar.com/defining-and-non-defining-relative-clauses.html',EN],['British Council','https://learnenglish.britishcouncil.org/grammar/c1-grammar/relative-clauses-advanced',EN]]},
+
+{id:'c1_13',text:'Предлог + which/whom в формальном стиле',note:'The company for which I work. The person with whom I spoke.',
+exp:`Формальный стиль: <em>предлог + which/whom</em> перед относительным местоимением.
+<br>Неформальный эквивалент: предлог в конец предложения.
+<br><em>whom</em> — формальная объектная форма <em>who</em>.`,
+ex:[['The report to which I referred is attached. (формально)','Упомянутый мной отчёт прилагается.'],['The report which I referred to is attached. (нейтрально)',''],['The report I referred to is attached. (разговорно)','']],
+links:[['Relative clauses advanced','https://learnenglish.britishcouncil.org/grammar/c1-grammar/relative-clauses-advanced',EN]]},
+]},
+
+{name:'Номинализация',rules:[
+{id:'c1_14',text:'Номинализация — основы',note:'decide→decision, discover→discovery, improve→improvement',
+exp:`Номинализация — преобразование глаголов/прилагательных в существительные. Признак академического и делового стиля.
+<br><br>Основные суффиксы:
+<br>• <em>-tion/-sion</em>: decide→decision, discuss→discussion
+<br>• <em>-ment</em>: improve→improvement, develop→development
+<br>• <em>-ance/-ence</em>: appear→appearance, differ→difference
+<br>• <em>-ity</em>: complex→complexity, able→ability
+<br>• <em>-ness</em>: happy→happiness, aware→awareness`,
+ex:[['She decided to expand. → Our decision to expand the company...','Наше решение о расширении...'],['He discovered that... → His discovery of the error...','Его открытие ошибки...']],
+links:[['Nominalisation','https://learnenglish.britishcouncil.org/grammar/c1-grammar/nominalisation',EN]]},
+
+{id:'c1_15',text:'Номинализация в академическом тексте',note:'The fact that prices increased → The increase in prices...',
+exp:`Номинализация позволяет:
+<br>1. Сжать информацию: <em>There was a significant increase in prices.</em>
+<br>2. Добавить определения: <em>The rapid increase in house prices...</em>
+<br>3. Создать формальный, безличный тон.`,
+ex:[['There has been a significant improvement in air quality.','Качество воздуха значительно улучшилось.'],['His refusal to comment surprised everyone.','Его отказ комментировать удивил всех.']],
+links:[['Academic writing nominalisation','https://learnenglish.britishcouncil.org/grammar/c1-grammar/nominalisation',EN]]},
+]}
+]},
+
+{id:'C2',name:'C2 — Мастерство',sub:'Proficiency · 1–2+ года',color:'var(--c2)',colorBg:'var(--c2bg)',
+categories:[
+{name:'Условные — полная система',rules:[
+{id:'c2_01',text:'Условные с unless / provided / as long as / on condition that',note:'Unless you study, you\'ll fail. As long as you\'re honest, I\'ll help.',
+exp:`<em>unless</em> = if not (но нельзя использовать с отрицанием!): <em>Unless you hurry</em> = <em>If you don't hurry</em>
+<br><em>provided/providing (that)</em> = if and only if (строгое условие)
+<br><em>as long as</em> = при условии, что (допущение)
+<br><em>on condition that</em> = на условии, что (формально)
+<br><em>in case</em> = на случай, если`,
+ex:[["I'll lend you money, as long as you pay me back.",'Я одолжу тебе деньги, при условии что ты вернёшь.'],["You can use my laptop, provided you don't download anything.",'Можешь использовать мой ноутбук, при условии что ничего не скачаешь.']],
+links:[['Advanced conditionals','https://www.perfect-english-grammar.com/conditionals-advanced.html',EN]]},
+
+{id:'c2_02',text:'Suppose / supposing / what if',note:'Suppose you won the lottery — what would you do?',
+exp:`<em>Suppose/Supposing</em> — используются как <em>if</em> в гипотетических вопросах.
+<br><em>What if</em> — неформальный аналог.
+<br><br>С Past Simple — ситуация маловероятная или воображаемая.`,
+ex:[['Supposing you had to choose — which would you pick?','Представь, что тебе нужно выбрать — что бы ты выбрал?'],['What if nobody comes? What should we do?','А вдруг никто не придёт? Что нам делать?']],
+links:[['Suppose/supposing','https://www.perfect-english-grammar.com/conditionals-advanced.html',EN]]},
+]},
+
+{name:'Инверсия — полная система',rules:[
+{id:'c2_03',text:'Only + обстоятельство + инверсия',note:'Only when I left did I realise. Only then did he understand.',
+exp:`<em>Only + when/after/if/then/by/in/on</em> — вся группа выносится в начало → инверсия.
+<br><br>Это один из самых мощных риторических приёмов в письменной и ораторской речи.`,
+ex:[['Only when you experience it can you truly understand.','Только пережив это, можно по-настоящему понять.'],['Only after years of practice did she master the skill.','Лишь после многих лет практики она овладела навыком.']],
+links:[['Advanced inversion','https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion',EN]]},
+
+{id:'c2_04',text:'So + прилагательное/наречие + инверсия',note:'So great was his relief that he wept. Such was her talent...',
+exp:`Книжный и ораторский стиль.
+<br><em>So + adj/adv + be/aux + подлежащее</em>
+<br><em>Such + was/were + подлежащее</em>`,
+ex:[['So rapid was the change that nobody could adapt.','Изменения происходили так быстро, что никто не мог приспособиться.'],['Such was her talent that she was offered a scholarship.','Настолько велик был её талант, что ей предложили стипендию.']],
+links:[['So/Such inversion','https://learnenglish.britishcouncil.org/grammar/c1-grammar/inversion',EN]]},
+]},
+
+{name:'Модальность в академическом тексте',rules:[
+{id:'c2_05',text:'Хеджинг: appear to, seem to, tend to, be likely to',note:'Prices appear to be rising. This tends to occur when...',
+exp:`Хеджинг (hedging) — намеренное смягчение утверждений для выражения научной скромности.
+<br><br>Основные конструкции:
+<br>• <em>appear/seem to</em> — по всей видимости
+<br>• <em>tend to</em> — как правило, имеют тенденцию
+<br>• <em>be likely/unlikely to</em> — вероятно/маловероятно
+<br>• <em>be thought/considered to be</em> — считается, что`,
+ex:[['The results appear to suggest a correlation.','Результаты, по всей видимости, указывают на корреляцию.'],['Companies tend to underestimate implementation costs.','Компании, как правило, недооценивают затраты на внедрение.']],
+links:[['Hedging in academic writing','https://learnenglish.britishcouncil.org/grammar/c1-grammar/hedging',EN]]},
+
+{id:'c2_06',text:'Дискурсивные маркеры в академическом тексте',note:'Furthermore, Nevertheless, Conversely, In light of, With regard to',
+exp:`Маркеры структурируют и связывают академический текст:
+<br><br>• <strong>Добавление</strong>: Moreover, Furthermore, In addition, Additionally
+<br>• <strong>Контраст</strong>: However, Nevertheless, Nonetheless, Conversely, On the other hand
+<br>• <strong>Результат</strong>: Therefore, Consequently, As a result, Hence, Thus
+<br>• <strong>Пояснение</strong>: In other words, That is to say, Namely
+<br>• <strong>Уступка</strong>: Admittedly, While it is true that, Despite this`,
+ex:[['The experiment failed. Nevertheless, the findings were instructive.','Эксперимент не удался. Тем не менее результаты были поучительными.'],['Furthermore, the data suggests a strong correlation.','Более того, данные свидетельствуют о сильной корреляции.']],
+links:[['Discourse markers','https://learnenglish.britishcouncil.org/grammar/b2-c1-grammar/discourse-markers',EN]]},
+]},
+
+{name:'Регистры и лексическая точность',rules:[
+{id:'c2_07',text:'Регистры речи: формальный, нейтральный, разговорный',note:'I would like to enquire... vs I\'d like to ask... vs Can I ask...',
+exp:`Регистр определяется целью, аудиторией и контекстом.
+<br><br><strong>Формальный</strong>: пассив, номинализация, сложные союзы, полные формы, глаголы латинского происхождения (<em>commence, terminate, assist</em>).
+<br><strong>Нейтральный</strong>: стандартная грамматика, без сленга, умеренные сокращения.
+<br><strong>Неформальный</strong>: эллипсис, фразовые глаголы (<em>put off = postpone</em>), сокращения, разговорные выражения.`,
+ex:[['Formal: I wish to draw your attention to a discrepancy.',''],['Neutral: I want to point out a mistake.',''],['Informal: Just wanted to flag something up.','']],
+links:[['Register in English','https://learnenglish.britishcouncil.org/grammar/c1-grammar',EN]]},
+
+{id:'c2_08',text:'Коннотации синонимов — оттенки значения',note:'thin/slim/slender/skinny/gaunt: позитивное→нейтральное→негативное',
+exp:`Синонимы различаются коннотацией (эмоциональной окраской) и регистром.
+<br><br>Примеры шкал:
+<br>• <em>slim</em> (+) → <em>thin</em> (0) → <em>skinny</em> (-) → <em>scrawny/gaunt</em> (--)
+<br>• <em>determined</em> (+) → <em>firm</em> (0) → <em>stubborn/pig-headed</em> (-)
+<br>• <em>thrifty</em> (+) → <em>economical</em> (0) → <em>stingy/tight-fisted</em> (-)
+<br>• <em>confident</em> (+) → <em>assertive</em> (0) → <em>arrogant</em> (-)`,
+ex:[['She is slim. (+) / She is thin. (0) / She is skinny. (-)','Одно и то же — но разное отношение.']],
+links:[['Word connotations','https://www.bbc.co.uk/learningenglish/english/features/vocabulary',EN]]},
+
+{id:'c2_09',text:'Риторические приёмы: анафора, хиазм, триколон',note:'"We shall fight on the beaches, we shall fight on the landing grounds..." — анафора',
+exp:`<strong>Анафора</strong>: повторение слов в начале последовательных предложений. <em>"I have a dream... I have a dream..."</em>
+<br><strong>Хиазм</strong>: перекрёстная структура AB-BA. <em>"Ask not what your country can do for you, but what you can do for your country."</em>
+<br><strong>Триколон</strong>: три параллельных элемента. <em>"Veni, vidi, vici." / "Government of the people, by the people, for the people."</em>
+<br><br>Эти приёмы используются в ораторских речах, эссе и публицистике.`,
+ex:[['Friends, Romans, countrymen, lend me your ears. (триколон)',''],['The more you learn, the more you earn. (хиазм в народной мудрости)','']],
+links:[['Rhetorical devices','https://www.bbc.co.uk/learningenglish',EN]]},
+
+{id:'c2_10',text:'Точные коллокации в академическом тексте',note:'conduct research, draw conclusions, reach a consensus, address an issue',
+exp:`На C2 важно использовать «правильный» глагол с каждым существительным.
+<br><br>Академические коллокации:
+<br>• <em>conduct/carry out</em> research (не ~~make/do~~)
+<br>• <em>draw/reach</em> a conclusion
+<br>• <em>raise/address/tackle</em> an issue
+<br>• <em>reach/achieve</em> a consensus
+<br>• <em>make</em> significant progress
+<br>• <em>pose/present</em> a challenge`,
+ex:[['Researchers conducted extensive interviews.','Исследователи провели обширные интервью.'],['The committee failed to reach a consensus.','Комитету не удалось прийти к консенсусу.']],
+links:[['Academic collocations','https://learnenglish.britishcouncil.org/grammar/c1-grammar',EN]]},
+]}
+]}
+];
+
+var SK='eng_v3';
+function loadD(){try{return JSON.parse(localStorage.getItem(SK)||'{}')}catch(e){return{}}}
+function saveD(d){localStorage.setItem(SK,JSON.stringify(d))}
+var done=loadD();
+
+function countL(lvl){var t=0,c=0;lvl.categories.forEach(function(cat){cat.rules.forEach(function(r){t++;if(done[r.id])c++;});});return{total:t,checked:c};}
+function countAll(){var t=0,c=0;DATA.forEach(function(lvl){var x=countL(lvl);t+=x.total;c+=x.checked;});return{total:t,checked:c};}
+
+function updAll(){
+  var c=countAll();
+  document.getElementById('total-done').textContent=c.checked;
+  document.getElementById('total-all').textContent=c.total;
+  var pct=c.total?Math.round(c.checked/c.total*100):0;
+  document.getElementById('overall-bar').style.width=pct+'%';
+  var row=document.getElementById('stats-row');
+  var comp=DATA.filter(function(lvl){var x=countL(lvl);return x.checked===x.total&&x.total>0;});
+  var html='<div class="stat-chip">Прогресс: <strong>'+pct+'%</strong></div>';
+  html+='<div class="stat-chip">Осталось: <strong>'+(c.total-c.checked)+'</strong> правил</div>';
+  if(comp.length)html+='<div class="stat-chip">✓ Завершены: <strong>'+comp.map(function(l){return l.id;}).join(', ')+'</strong></div>';
+  row.innerHTML=html;
+}
+
+function updLvl(lvlKey){
+  var lvl=DATA.find(function(l){return l.id.toLowerCase()===lvlKey;});
+  if(!lvl)return;
+  var c=countL(lvl);
+  var pct=c.total?Math.round(c.checked/c.total*100):0;
+  var f=document.getElementById('lf-'+lvlKey);var p=document.getElementById('lp-'+lvlKey);var b=document.getElementById('lb-'+lvlKey);
+  if(f)f.textContent=c.checked+'/'+c.total;
+  if(p)p.textContent=pct+'%';
+  if(b)b.style.width=pct+'%';
+}
+
+function toggleRule(id){
+  done[id]=!done[id];saveD(done);
+  var el=document.getElementById('ri-'+id);if(!el)return;
+  var chk=el.querySelector('.rule-check');
+  var lvlKey=id.split('_')[0];
+  var lvl=DATA.find(function(l){return l.id.toLowerCase()===lvlKey;});
+  if(done[id]){
+    el.classList.add('done','celebrate');
+    setTimeout(function(){el.classList.remove('celebrate');},400);
+    chk.textContent='✓';
+    if(lvl){chk.style.background=lvl.color;chk.style.borderColor=lvl.color;chk.style.color='#000';}
+  }else{
+    el.classList.remove('done');
+    chk.textContent='';chk.style.background='';chk.style.borderColor='var(--border2)';chk.style.color='';
+  }
+  updLvl(lvlKey);updAll();
+}
+
+function toggleExp(id,btn,e){
+  if(e)e.stopPropagation();
+  var el=document.getElementById('exp-'+id);if(!el)return;
+  var open=el.classList.toggle('open');
+  btn.classList.toggle('open',open);
+  btn.textContent=open?'▲ скрыть':'ℹ info';
+}
+
+function toggleLevel(k){var b=document.getElementById('level-'+k);if(b)b.classList.toggle('open');}
+
+function doSearch(val){
+  var v=val.trim().toLowerCase();
+  var any=false;
+  DATA.forEach(function(lvl){
+    lvl.categories.forEach(function(cat){
+      cat.rules.forEach(function(r){
+        var el=document.getElementById('ri-'+r.id);if(!el)return;
+        if(!v){el.classList.remove('hidden-search');any=true;return;}
+        var match=(r.text+' '+(r.note||'')+' '+(r.exp||'')).toLowerCase().indexOf(v)>=0;
+        el.classList.toggle('hidden-search',!match);
+        if(match){any=true;var b=document.getElementById('level-'+r.id.split('_')[0]);if(b&&!b.classList.contains('open'))b.classList.add('open');}
+      });
+    });
+  });
+  document.getElementById('no-results').style.display=any?'none':'block';
+}
+
+function renderAll(){
+  var path=document.getElementById('level-path');path.innerHTML='';
+  DATA.forEach(function(lvl,idx){
+    var c=countL(lvl);var pct=c.total?Math.round(c.checked/c.total*100):0;
+    var k=lvl.id.toLowerCase();
+    var block=document.createElement('div');
+    block.className='level-block'+(idx===0?' open':'');
+    block.id='level-'+k;
+
+    var hh='<div class="level-header" onclick="toggleLevel(\''+k+'\')">';
+    hh+='<div class="level-dot" style="color:'+lvl.color+';border-color:'+lvl.color+';background:'+lvl.colorBg+'">'+lvl.id+'</div>';
+    hh+='<div class="level-info"><div class="level-name">'+lvl.name+'</div><div class="level-sub">'+lvl.sub+'</div></div>';
+    hh+='<div class="level-stats"><div class="level-frac" id="lf-'+k+'" style="color:'+lvl.color+'">'+c.checked+'/'+c.total+'</div><div class="level-pct" id="lp-'+k+'">'+pct+'%</div></div>';
+    hh+='<div class="level-toggle">▾</div></div>';
+    hh+='<div class="level-progress-bar"><div class="level-progress-fill" id="lb-'+k+'" style="background:'+lvl.color+';width:'+pct+'%"></div></div>';
+
+    var ch='<div class="level-content">';
+    lvl.categories.forEach(function(cat){
+      ch+='<div class="category"><div class="category-title">'+cat.name+'</div><div class="rules-grid">';
+      cat.rules.forEach(function(r){
+        var isDone=done[r.id];
+        var ck=isDone?'background:'+lvl.color+';border-color:'+lvl.color+';color:#000':'border-color:var(--border2)';
+        ch+='<div class="rule-item'+(isDone?' done':'')+'" id="ri-'+r.id+'">';
+        ch+='<div class="rule-top" onclick="toggleRule(\''+r.id+'\')">';
+        ch+='<div class="rule-check" style="'+ck+'">'+(isDone?'✓':'')+'</div>';
+        ch+='<div class="rule-main"><div class="rule-text">'+r.text+'</div>';
+        if(r.note)ch+='<span class="rule-note">'+r.note+'</span>';
+        ch+='</div>';
+        if(r.exp){ch+='<div class="rule-actions"><button class="info-btn" onclick="toggleExp(\''+r.id+'\',this,event)">ℹ info</button></div>';}
+        ch+='</div>';
+        if(r.exp){
+          ch+='<div class="rule-exp" id="exp-'+r.id+'">';
+          ch+=r.exp;
+          if(r.ex&&r.ex.length){
+            ch+='<ul class="ex-list">';
+            r.ex.forEach(function(e){ch+='<li>'+e[0]+(e[1]?'<span class="tr">'+e[1]+'</span>':'')+'</li>';});
+            ch+='</ul>';
+          }
+          if(r.exc)ch+='<div class="exc-block"><strong>⚠️ Исключения:</strong> '+r.exc+'</div>';
+          if(r.tip)ch+='<div class="tip-block"><strong>💡 Совет:</strong> '+r.tip+'</div>';
+          if(r.links&&r.links.length){
+            ch+='<div class="link-row">';
+            r.links.forEach(function(l){
+              var t=l[2]||EN;
+              var icon=t===YT?'▶':t===RU?'RU':'EN';
+              ch+='<a class="lnk '+t+'" href="'+l[1]+'" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="lnk-dot"></span>'+icon+' '+l[0]+'</a>';
+            });
+            ch+='</div>';
+          }
+          ch+='</div>';
+        }
+        ch+='</div>';
+      });
+      ch+='</div></div>';
+    });
+    ch+='</div>';
+    block.innerHTML=hh+ch;
+    path.appendChild(block);
+  });
+  updAll();
+}
+
+function confirmReset(){if(confirm('Сбросить весь прогресс?')){done={};saveD(done);renderAll();}}
+renderAll();
+</script>
+</body>
+</html>
