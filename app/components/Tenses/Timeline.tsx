@@ -57,8 +57,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
       ctx.fillStyle = t === 0 ? C_MUTED2 : C_MUTED;
       ctx.font = `${t === 0 ? '600 ' : ''}10px Outfit,sans-serif`;
       ctx.textAlign = 'center';
-      const lbl = t === 0 ? 'СЕЙЧАС' : '';
-      if (t === 0 || t === -10 || t === 10 || t === -5 || t === 5) ctx.fillText(lbl, x, PAD_T - 4);
+      if (t === 0 || t === -10 || t === 10 || t === -5 || t === 5) ctx.fillText('', x, PAD_T - 4);
     });
 
     const pastEnd = xOf(0) - 1,
@@ -216,7 +215,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     ctx.fillStyle = 'rgba(255,255,255,0.8)';
     ctx.font = 'bold 10px Outfit,sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('▼ NOW', nowX, PAD_T - 16);
+    ctx.fillText('▼ Сейчас', nowX, PAD_T - 16);
   }
 
   useEffect(() => {
