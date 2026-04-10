@@ -38,12 +38,12 @@ export function Header({ done, searchQuery, onSearchChange }: Props) {
       alert('Сначала отметь хотя бы одно правило как изученное!');
       return;
     }
-    const orig = btn.textContent;
+    const orig = btn.innerHTML;
     const prompt = buildGlobalTestPrompt(doneRules);
     await copyToClipboard(prompt);
     btn.textContent = '✓ Скопировано!';
     setTimeout(() => {
-      if (btn) btn.textContent = orig;
+      if (btn) btn.innerHTML = orig;
     }, 2000);
   }
 

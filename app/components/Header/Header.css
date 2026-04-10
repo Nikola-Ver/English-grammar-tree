@@ -152,6 +152,7 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
+  line-height: 1.5;
 }
 
 .global-test-btn:hover {
@@ -163,7 +164,4 @@ header {
 
 .global-test-btn:active {
   transform: scale(0.98);
-}
-.global-test-btn .btn-icon {
-  font-size: 15px;
 }
