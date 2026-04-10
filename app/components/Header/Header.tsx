@@ -2,8 +2,6 @@ import './Header.css';
 import { DATA } from '../../data/grammar';
 import type { DoneMap } from '../../hooks/useProgress';
 import { countAll, countLevel } from '../../hooks/useProgress';
-import { copyToClipboard } from '../../utils/clipboard';
-import { buildGlobalTestPrompt } from '../../utils/prompts';
 
 interface Props {
   done: DoneMap;
@@ -19,33 +17,6 @@ export function Header({ done, searchQuery, onSearchChange }: Props) {
     const { checked: c, total: t } = countLevel(lvl, done);
     return c === t && t > 0;
   });
-
-  async function handleGlobalTest(e: React.MouseEvent<HTMLButtonElement>) {
-    const btn = e.currentTarget;
-    const doneRules: {
-      rule: import('../../data/grammar').Rule;
-      level: import('../../data/grammar').Level;
-      category: import('../../data/grammar').Category;
-    }[] = [];
-    DATA.forEach((lvl) => {
-      lvl.categories.forEach((cat) => {
-        cat.rules.forEach((rule) => {
-          if (done[rule.id]) doneRules.push({ rule, level: lvl, category: cat });
-        });
-      });
-    });
-    if (doneRules.length === 0) {
-      alert('Сначала отметь хотя бы одно правило как изученное!');
-      return;
-    }
-    const orig = btn.innerHTML;
-    const prompt = buildGlobalTestPrompt(doneRules);
-    await copyToClipboard(prompt);
-    btn.textContent = '✓ Скопировано!';
-    setTimeout(() => {
-      if (btn) btn.innerHTML = orig;
-    }, 2000);
-  }
 
   return (
     <header>
@@ -65,15 +36,6 @@ export function Header({ done, searchQuery, onSearchChange }: Props) {
             />
           </div>
         </div>
-        <div className="overall-progress">
-          <div className="overall-num">{checked}</div>
-          <div className="overall-label">
-            из <span>{total}</span> правил
-          </div>
-          <div className="overall-bar-bg">
-            <div className="overall-bar-fill" style={{ width: `${pct}%` }} />
-          </div>
-        </div>
       </div>
       <div className="header-container">
         <div className="stats-row">
@@ -89,9 +51,6 @@ export function Header({ done, searchQuery, onSearchChange }: Props) {
             </div>
           )}
         </div>
-        <button className="global-test-btn" onClick={handleGlobalTest}>
-          <span className="btn-icon">🧠</span> Тест по изученным правилам
-        </button>
       </div>
     </header>
   );

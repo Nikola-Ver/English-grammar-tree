@@ -1,0 +1,84 @@
+.murphy-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+}
+
+.murphy-progress-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.murphy-progress-nums {
+  font-family: "DM Mono", monospace;
+}
+
+.murphy-checked {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--c1);
+  line-height: 1;
+}
+
+.murphy-total {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.murphy-bar-bg {
+  height: 4px;
+  width: 120px;
+  background: var(--border2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.murphy-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--a1), var(--b1), var(--c1));
+  transition: width 0.5s ease;
+}
+
+.murphy-pct {
+  font-size: 12px;
+  color: var(--muted2);
+}
+
+.murphy-test-btn {
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.12), rgba(56, 189, 248, 0.08));
+  border: 1px solid rgba(244, 114, 182, 0.4);
+  border-radius: 10px;
+  color: var(--c1);
+  font-size: 13px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  transition: all 0.2s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.murphy-test-btn:hover {
+  border-color: var(--c1);
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.2), rgba(56, 189, 248, 0.12));
+  color: #f9a8d4;
+  box-shadow: 0 0 18px rgba(244, 114, 182, 0.15);
+}
+
+.murphy-test-btn:active {
+  transform: scale(0.98);
+}

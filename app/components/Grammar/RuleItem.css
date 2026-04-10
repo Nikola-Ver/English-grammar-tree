@@ -77,6 +77,18 @@
   font-weight: 400;
 }
 
+a.rule-unit-link {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.15s;
+}
+
+a.rule-unit-link:hover {
+  color: var(--b1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .rule-item.done .rule-text {
   color: var(--muted2);
   text-decoration: line-through;

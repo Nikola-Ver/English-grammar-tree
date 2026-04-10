@@ -1,7 +1,7 @@
 import { useCallback, useRef } from 'react';
 import './RuleItem.css';
 import { useState } from 'react';
-import type { Level, Rule } from '../../data/grammar';
+import type { Category, Level, Rule } from '../../data/grammar';
 import { copyToClipboard } from '../../utils/clipboard';
 import { spawnParticles } from '../../utils/particles';
 import { buildRulePrompt } from '../../utils/prompts';
@@ -15,6 +15,7 @@ interface Props {
   animDelay: number;
   onToggle: (id: string) => void;
   searchHidden: boolean;
+  promptBuilder?: (rule: Rule, level: Level, cat: Category) => string;
 }
 
 const SVG_CHK = (
@@ -29,7 +30,15 @@ const SVG_CHK = (
   </svg>
 );
 
-export function RuleItem({ rule, level, isDone, animDelay, onToggle, searchHidden }: Props) {
+export function RuleItem({
+  rule,
+  level,
+  isDone,
+  animDelay,
+  onToggle,
+  searchHidden,
+  promptBuilder,
+}: Props) {
   const [expOpen, setExpOpen] = useState(false);
   const checkRef = useRef<HTMLDivElement>(null);
 
@@ -62,7 +71,8 @@ export function RuleItem({ rule, level, isDone, animDelay, onToggle, searchHidde
     const orig = btn.textContent;
     const cat = level.categories.find((c) => c.rules.some((r) => r.id === rule.id));
     if (!cat) return;
-    const prompt = buildRulePrompt(rule, level, cat);
+    const build = promptBuilder ?? buildRulePrompt;
+    const prompt = build(rule, level, cat);
     await copyToClipboard(prompt);
     btn.textContent = '✓ Скопировано!';
     btn.classList.add('copied');
@@ -78,6 +88,20 @@ export function RuleItem({ rule, level, isDone, animDelay, onToggle, searchHidde
     ? { background: level.color, borderColor: level.color, color: '#000' }
     : { borderColor: 'var(--border2)' };
 
+  const titleNode = rule.unitUrl ? (
+    <a
+      className="rule-text rule-unit-link"
+      href={rule.unitUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {rule.text}
+    </a>
+  ) : (
+    <div className="rule-text">{rule.text}</div>
+  );
+
   return (
     <div
       className={`rule-item${isDone ? ' done' : ''}${searchHidden ? ' hidden-search' : ''}`}
@@ -89,7 +113,7 @@ export function RuleItem({ rule, level, isDone, animDelay, onToggle, searchHidde
           {isDone && SVG_CHK}
         </div>
         <div className="rule-main">
-          <div className="rule-text">{rule.text}</div>
+          {titleNode}
           {rule.note && <span className="rule-note">{rule.note}</span>}
         </div>
         {rule.exp && (

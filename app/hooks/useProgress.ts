@@ -4,18 +4,18 @@ import { DATA } from '../data/grammar';
 
 export type DoneMap = Record<string, boolean>;
 
-const SK = 'eng_v4';
+const DEFAULT_SK = 'eng_v4';
 
-function loadDone(): DoneMap {
+function loadDone(sk: string): DoneMap {
   try {
-    return JSON.parse(localStorage.getItem(SK) || '{}');
+    return JSON.parse(localStorage.getItem(sk) || '{}');
   } catch {
     return {};
   }
 }
 
-function saveDone(d: DoneMap) {
-  localStorage.setItem(SK, JSON.stringify(d));
+function saveDone(d: DoneMap, sk: string) {
+  localStorage.setItem(sk, JSON.stringify(d));
 }
 
 export function countLevel(lvl: Level, done: DoneMap) {
@@ -30,10 +30,10 @@ export function countLevel(lvl: Level, done: DoneMap) {
   return { total, checked };
 }
 
-export function countAll(done: DoneMap) {
+export function countAll(done: DoneMap, data: Level[] = DATA) {
   let total = 0,
     checked = 0;
-  DATA.forEach((lvl) => {
+  data.forEach((lvl) => {
     const x = countLevel(lvl, done);
     total += x.total;
     checked += x.checked;
@@ -41,12 +41,12 @@ export function countAll(done: DoneMap) {
   return { total, checked };
 }
 
-export function useProgress() {
-  const [done, setDone] = useState<DoneMap>(loadDone);
+export function useProgress(storageKey = DEFAULT_SK) {
+  const [done, setDone] = useState<DoneMap>(() => loadDone(storageKey));
 
   useEffect(() => {
-    saveDone(done);
-  }, [done]);
+    saveDone(done, storageKey);
+  }, [done, storageKey]);
 
   function toggleRule(id: string) {
     setDone((prev) => {

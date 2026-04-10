@@ -22,6 +22,7 @@ export interface Rule {
   links?: RuleLink[];
   mistakes?: string[];
   markers?: Markers;
+  unitUrl?: string;
 }
 
 export interface Category {

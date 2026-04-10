@@ -2,31 +2,43 @@ import { useState } from 'react';
 import './styles/base.css';
 import { GrammarTab } from './components/Grammar/GrammarTab';
 import { Header } from './components/Header/Header';
+import { MurphyTab } from './components/Murphy/MurphyTab';
 import { Tabs } from './components/Tabs';
 import { TensesTab } from './components/Tenses/TensesTab';
 import { useProgress } from './hooks/useProgress';
 
-type Tab = 'grammar' | 'tenses';
+type Tab = 'grammar' | 'murphy' | 'tenses';
 
 export function App() {
   const [activeTab, setActiveTab] = useState<Tab>('grammar');
   const [searchQuery, setSearchQuery] = useState('');
-  const { done, toggleRule, resetAll } = useProgress();
+  const grammarProgress = useProgress('eng_v4');
+  const murphyProgress = useProgress('murphy_v1');
 
   return (
     <div className="wrap">
-      <Header done={done} searchQuery={searchQuery} onSearchChange={setSearchQuery} />
+      <Header
+        done={grammarProgress.done}
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+      />
       <Tabs activeTab={activeTab} onSwitch={setActiveTab} />
-      {activeTab === 'grammar' ? (
+      {activeTab === 'grammar' && (
         <GrammarTab
-          done={done}
-          onToggleRule={toggleRule}
-          onReset={resetAll}
+          done={grammarProgress.done}
+          onToggleRule={grammarProgress.toggleRule}
+          onReset={grammarProgress.resetAll}
           searchQuery={searchQuery}
         />
-      ) : (
-        <TensesTab />
       )}
+      {activeTab === 'murphy' && (
+        <MurphyTab
+          done={murphyProgress.done}
+          onToggleRule={murphyProgress.toggleRule}
+          onReset={murphyProgress.resetAll}
+        />
+      )}
+      {activeTab === 'tenses' && <TensesTab />}
     </div>
   );
 }

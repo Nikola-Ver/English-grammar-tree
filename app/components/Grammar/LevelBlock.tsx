@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import './LevelBlock.css';
-import type { Level } from '../../data/grammar';
+import type { Category, Level, Rule } from '../../data/grammar';
 import type { DoneMap } from '../../hooks/useProgress';
 import { countLevel } from '../../hooks/useProgress';
 import { RuleItem } from './RuleItem';
@@ -11,9 +11,17 @@ interface Props {
   onToggleRule: (id: string) => void;
   searchQuery: string;
   forceOpen: boolean;
+  promptBuilder?: (rule: Rule, level: Level, cat: Category) => string;
 }
 
-export function LevelBlock({ level, done, onToggleRule, searchQuery, forceOpen }: Props) {
+export function LevelBlock({
+  level,
+  done,
+  onToggleRule,
+  searchQuery,
+  forceOpen,
+  promptBuilder,
+}: Props) {
   const [isOpen, setIsOpen] = useState(false);
   // Once true, children stay mounted so closing animates and reopening is instant
   const [everOpened, setEverOpened] = useState(false);
@@ -130,6 +138,7 @@ export function LevelBlock({ level, done, onToggleRule, searchQuery, forceOpen }
                         animDelay={delay}
                         onToggle={onToggleRule}
                         searchHidden={searchHidden}
+                        promptBuilder={promptBuilder}
                       />
                     );
                   })}

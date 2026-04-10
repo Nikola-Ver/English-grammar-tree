@@ -221,6 +221,62 @@
 }
 
 /* Grammar tab */
+.grammar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+}
+
+.grammar-progress-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.grammar-progress-nums {
+  font-family: "DM Mono", monospace;
+}
+
+.grammar-checked {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--b2);
+  line-height: 1;
+}
+
+.grammar-total {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.grammar-bar-bg {
+  height: 4px;
+  width: 120px;
+  background: var(--border2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.grammar-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--a1), var(--b1), var(--c1));
+  transition: width 0.5s ease;
+}
+
+.grammar-pct {
+  font-size: 12px;
+  color: var(--muted2);
+}
+
 .no-results {
   text-align: center;
   padding: 3rem 1rem;
@@ -237,7 +293,6 @@
   cursor: pointer;
   font-family: "Outfit", sans-serif;
   transition: all 0.15s;
-  margin-top: 2rem;
 }
 
 .reset-btn:hover {
