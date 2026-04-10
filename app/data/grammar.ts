@@ -60,7 +60,7 @@ export const DATA: Level[] = [
               ['They are ready.', 'Они готовы.'],
               ['It is cold today.', 'Сегодня холодно.'],
             ],
-            exc: `Сокращённые формы: I'm, you're, he's, she's, it's, we're, they're. В кратких ответах сокращение запрещено: <em>Yes, I am.</em> (не ~~Yes, I'm~~)`,
+            exc: `Сокращённые формы: I'm, you're, he's, she's, it's, we're, they're. В кратких ответах сокращение запрещено: <em>Yes, I am.</em> (не <s>Yes, I'm</s>)`,
             links: [
               {
                 label: 'OK English: глагол to be (видео на рус.)',
@@ -84,9 +84,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She be a teacher~~ → She <em>is</em> a teacher',
-              '~~I is hungry~~ → I <em>am</em> hungry',
-              'Пропуск to be: ~~I student~~ → I <em>am</em> a student',
+              '<s>She be a teacher</s> → She <em>is</em> a teacher',
+              '<s>I is hungry</s> → I <em>am</em> hungry',
+              'Пропуск to be: <s>I student</s> → I <em>am</em> a student',
             ],
           },
           {
@@ -117,9 +117,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I amn't tired~~ → I'm <em>not</em> tired (amn't не существует!)",
-              "~~He don't tired~~ → He <em>isn't</em> tired",
-              "~~She is not = shes not~~ — только <em>she's not</em> или <em>she isn't</em>",
+              "<s>I amn't tired</s> → I'm <em>not</em> tired (amn't не существует!)",
+              "<s>He don't tired</s> → He <em>isn't</em> tired",
+              "<s>She is not = shes not</s> — только <em>she's not</em> или <em>she isn't</em>",
             ],
           },
           {
@@ -145,9 +145,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Is you cold?~~ → <em>Are</em> you cold?',
-              '~~She is late?~~ — вопрос без инверсии: <em>Is she late?</em>',
-              '~~Where he is?~~ → Where <em>is he?</em>',
+              '<s>Is you cold?</s> → <em>Are</em> you cold?',
+              '<s>She is late?</s> — вопрос без инверсии: <em>Is she late?</em>',
+              '<s>Where he is?</s> → Where <em>is he?</em>',
             ],
           },
           {
@@ -172,8 +172,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~Yes, I'm~~ → Yes, I <em>am</em> (нельзя сокращать в утвердительном ответе)",
-              "~~No, she is'nt~~ → No, she <em>isn't</em>",
+              "<s>Yes, I'm</s> → Yes, I <em>am</em> (нельзя сокращать в утвердительном ответе)",
+              "<s>No, she is'nt</s> → No, she <em>isn't</em>",
             ],
           },
         ],
@@ -210,9 +210,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~an university~~ → <em>a</em> university (звук [j])',
-              '~~a apple~~ → <em>an</em> apple',
-              '~~a honest man~~ → <em>an</em> honest man (h немая)',
+              '<s>an university</s> → <em>a</em> university (звук [j])',
+              '<s>a apple</s> → <em>an</em> apple',
+              '<s>a honest man</s> → <em>an</em> honest man (h немая)',
             ],
           },
           {
@@ -239,9 +239,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I like the music~~ → I like music (общий смысл — без артикля)',
-              '~~The life is short~~ → Life is short',
-              '~~He is the doctor~~ → He is <em>a</em> doctor (первое упоминание)',
+              '<s>I like the music</s> → I like music (общий смысл — без артикля)',
+              '<s>The life is short</s> → Life is short',
+              '<s>He is the doctor</s> → He is <em>a</em> doctor (первое упоминание)',
             ],
           },
           {
@@ -266,9 +266,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I play the tennis~~ → I play tennis',
-              '~~She speaks the Spanish~~ → She speaks Spanish',
-              '~~the Russia~~ → Russia (страны без артикля, кроме The USA, The UK)',
+              '<s>I play the tennis</s> → I play tennis',
+              '<s>She speaks the Spanish</s> → She speaks Spanish',
+              '<s>the Russia</s> → Russia (страны без артикля, кроме The USA, The UK)',
             ],
           },
         ],
@@ -311,9 +311,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She work~~ → She <em>works</em> (забыли -s для 3 лица)',
-              '~~He go~~ → He <em>goes</em> (go → goes)',
-              '~~She studys~~ → She <em>studies</em> (согласная + y → ies)',
+              '<s>She work</s> → She <em>works</em> (забыли -s для 3 лица)',
+              '<s>He go</s> → He <em>goes</em> (go → goes)',
+              '<s>She studys</s> → She <em>studies</em> (согласная + y → ies)',
             ],
             markers: {
               tags: [
@@ -346,7 +346,7 @@ export const DATA: Level[] = [
             id: 'a1_09',
             text: "Present Simple — отрицание: don't / doesn't",
             note: "I don't like. He doesn't like. (не: he don't)",
-            exp: `Отрицание строится с помощью вспомогательного глагола <em>do/does</em> + <em>not</em>:<br>• I/you/we/they + <em>don't</em> + инфинитив<br>• he/she/it + <em>doesn't</em> + инфинитив<br><br>⚠️ После <em>doesn't</em> основной глагол <strong>без -s</strong>! <em>She doesn't like</em> (не ~~likes~~).`,
+            exp: `Отрицание строится с помощью вспомогательного глагола <em>do/does</em> + <em>not</em>:<br>• I/you/we/they + <em>don't</em> + инфинитив<br>• he/she/it + <em>doesn't</em> + инфинитив<br><br>⚠️ После <em>doesn't</em> основной глагол <strong>без -s</strong>! <em>She doesn't like</em> (не <s>likes</s>).`,
             ex: [
               ["I don't eat meat.", 'Я не ем мясо.'],
               ["He doesn't speak French.", 'Он не говорит по-французски.'],
@@ -365,9 +365,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~She doesn't likes~~ → She doesn't <em>like</em> (после doesn't — базовая форма!)",
-              "~~He don't work~~ → He <em>doesn't</em> work",
-              "~~I not like~~ → I <em>don't</em> like",
+              "<s>She doesn't likes</s> → She doesn't <em>like</em> (после doesn't — базовая форма!)",
+              "<s>He don't work</s> → He <em>doesn't</em> work",
+              "<s>I not like</s> → I <em>don't</em> like",
             ],
             markers: {
               tags: [
@@ -413,9 +413,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Does she likes?~~ → Does she <em>like?</em>',
-              '~~Do he work?~~ → <em>Does</em> he work?',
-              '~~Where she lives?~~ → Where does she live?',
+              '<s>Does she likes?</s> → Does she <em>like?</em>',
+              '<s>Do he work?</s> → <em>Does</em> he work?',
+              '<s>Where she lives?</s> → Where does she live?',
             ],
             markers: {
               tags: [
@@ -455,9 +455,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I am knowing~~ → I <em>know</em>',
-              '~~She is loving him~~ → She <em>loves</em> him',
-              '~~He is wanting a coffee~~ → He <em>wants</em> a coffee',
+              '<s>I am knowing</s> → I <em>know</em>',
+              '<s>She is loving him</s> → She <em>loves</em> him',
+              '<s>He is wanting a coffee</s> → He <em>wants</em> a coffee',
             ],
           },
         ],
@@ -488,9 +488,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Is cold today~~ → <em>It</em> is cold (нельзя опустить подлежащее)',
-              '~~Me like pizza~~ → <em>I</em> like pizza',
-              '~~She told to him~~ → She told <em>him</em>',
+              '<s>Is cold today</s> → <em>It</em> is cold (нельзя опустить подлежащее)',
+              '<s>Me like pizza</s> → <em>I</em> like pizza',
+              '<s>She told to him</s> → She told <em>him</em>',
             ],
           },
           {
@@ -516,9 +516,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~Its a big house~~ → <em>It's</em> a big house (it's = it is)",
-              "~~The cat hurt it's paw~~ → hurt <em>its</em> paw (its = принадлежность)",
-              '~~Their friends is nice~~ → Their friends <em>are</em> nice',
+              "<s>Its a big house</s> → <em>It's</em> a big house (it's = it is)",
+              "<s>The cat hurt it's paw</s> → hurt <em>its</em> paw (its = принадлежность)",
+              '<s>Their friends is nice</s> → Their friends <em>are</em> nice',
             ],
           },
           {
@@ -544,9 +544,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~two childs~~ → two <em>children</em>',
-              '~~three mans~~ → three <em>men</em>',
-              '~~boxs~~ → <em>boxes</em> (добавляем -es)',
+              '<s>two childs</s> → two <em>children</em>',
+              '<s>three mans</s> → three <em>men</em>',
+              '<s>boxs</s> → <em>boxes</em> (добавляем -es)',
             ],
           },
           {
@@ -572,9 +572,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~These is my pen~~ → <em>This</em> is my pen',
-              '~~Those are that books~~ → Those are <em>those/the</em> books',
-              '~~That book over here~~ — <em>this</em> (рядом), <em>that</em> (далеко)',
+              '<s>These is my pen</s> → <em>This</em> is my pen',
+              '<s>Those are that books</s> → Those are <em>those/the</em> books',
+              '<s>That book over here</s> — <em>this</em> (рядом), <em>that</em> (далеко)',
             ],
           },
         ],
@@ -659,7 +659,7 @@ export const DATA: Level[] = [
             id: 'a1_19',
             text: "can / can't — умение и разрешение",
             note: "I can swim. She can't drive. Can I help you?",
-            exp: '<em>can</em> — модальный глагол, выражает:<br>1. Умение/способность: <em>I can play the guitar</em><br>2. Возможность: <em>It can be dangerous</em><br>3. Разрешение (разговорный): <em>Can I use your phone?</em><br><br>⚠️ <em>can</em> никогда не изменяется: <em>he can</em> (не ~~he cans~~). После него — инфинитив без <em>to</em>.',
+            exp: '<em>can</em> — модальный глагол, выражает:<br>1. Умение/способность: <em>I can play the guitar</em><br>2. Возможность: <em>It can be dangerous</em><br>3. Разрешение (разговорный): <em>Can I use your phone?</em><br><br>⚠️ <em>can</em> никогда не изменяется: <em>he can</em> (не <s>he cans</s>). После него — инфинитив без <em>to</em>.',
             ex: [
               ['I can speak three languages.', 'Я говорю на трёх языках.'],
               ["She can't come today.", 'Она не может прийти сегодня.'],
@@ -678,9 +678,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Can you to help me?~~ → Can you <em>help</em> (без to)',
-              '~~She cans do it~~ → She <em>can</em> do it (can не изменяется)',
-              '~~I can to speak French~~ → I can speak French',
+              '<s>Can you to help me?</s> → Can you <em>help</em> (без to)',
+              '<s>She cans do it</s> → She <em>can</em> do it (can не изменяется)',
+              '<s>I can to speak French</s> → I can speak French',
             ],
           },
           {
@@ -863,9 +863,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She is going to school every day~~ → She <em>goes</em> (привычка = Present Simple)',
-              "~~I am going to the cinema tomorrow~~ — возможно, но <em>I'm going to see a film</em> точнее с намерением",
-              '~~He is wanting~~ → He <em>wants</em> (stative verb)',
+              '<s>She is going to school every day</s> → She <em>goes</em> (привычка = Present Simple)',
+              "<s>I am going to the cinema tomorrow</s> — возможно, но <em>I'm going to see a film</em> точнее с намерением",
+              '<s>He is wanting</s> → He <em>wants</em> (stative verb)',
             ],
             markers: {
               tags: [
@@ -923,9 +923,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She goed~~ → She <em>went</em>',
-              '~~I buyed~~ → I <em>bought</em>',
-              "~~They didn't went~~ → They didn't <em>go</em> (после did — базовая форма)",
+              '<s>She goed</s> → She <em>went</em>',
+              '<s>I buyed</s> → I <em>bought</em>',
+              "<s>They didn't went</s> → They didn't <em>go</em> (после did — базовая форма)",
             ],
             markers: {
               tags: [
@@ -944,7 +944,7 @@ export const DATA: Level[] = [
             id: 'a2_03',
             text: "Past Simple — отрицание: didn't + инфинитив",
             note: "She didn't go (не: didn't went). I didn't see him.",
-            exp: `Отрицание: <em>didn't</em> (= did not) + инфинитив для <strong>всех лиц</strong>.<br>⚠️ После <em>didn't</em> — <strong>базовая форма</strong> глагола (не прошедшее время!): <em>She didn't go</em> (не ~~went~~).`,
+            exp: `Отрицание: <em>didn't</em> (= did not) + инфинитив для <strong>всех лиц</strong>.<br>⚠️ После <em>didn't</em> — <strong>базовая форма</strong> глагола (не прошедшее время!): <em>She didn't go</em> (не <s>went</s>).`,
             ex: [
               ["I didn't see him yesterday.", 'Я не видел его вчера.'],
               ["She didn't come to work.", 'Она не пришла на работу.'],
@@ -962,11 +962,11 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I didn't went~~ → I didn't <em>go</em>",
-              "~~She didn't came~~ → She didn't <em>come</em>",
-              '~~Did she played?~~ → Did she <em>play</em>?',
-              "~~She didn't came~~ → She didn't <em>come</em>",
-              '~~What he did?~~ → What <em>did he do?</em>',
+              "<s>I didn't went</s> → I didn't <em>go</em>",
+              "<s>She didn't came</s> → She didn't <em>come</em>",
+              '<s>Did she played?</s> → Did she <em>play</em>?',
+              "<s>She didn't came</s> → She didn't <em>come</em>",
+              '<s>What he did?</s> → What <em>did he do?</em>',
             ],
           },
           {
@@ -992,9 +992,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I will to go~~ → I <em>will go</em> (без to)',
-              '~~She wills come~~ → She will come (will не изменяется)',
-              '~~I think she go tomorrow~~ → she <em>will go</em>',
+              '<s>I will to go</s> → I <em>will go</em> (без to)',
+              '<s>She wills come</s> → She will come (will не изменяется)',
+              '<s>I think she go tomorrow</s> → she <em>will go</em>',
             ],
             markers: {
               tags: [
@@ -1043,9 +1043,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I am going to will do~~ — только одно: <em>I'm going to do</em>",
-              '~~She is going to does~~ → she is going to <em>do</em>',
-              '~~He gonna do~~ — разговорная форма, в письменной неприемлема',
+              "<s>I am going to will do</s> — только одно: <em>I'm going to do</em>",
+              '<s>She is going to does</s> → she is going to <em>do</em>',
+              '<s>He gonna do</s> — разговорная форма, в письменной неприемлема',
             ],
             markers: {
               tags: [
@@ -1093,8 +1093,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I will to go~~ → I <em>will go</em> (без to)',
-              '~~She wills come~~ → She will come (will не изменяется)',
+              '<s>I will to go</s> → I <em>will go</em> (без to)',
+              '<s>She wills come</s> → She will come (will не изменяется)',
             ],
           },
           {
@@ -1125,8 +1125,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She is going to does~~ → She is going to <em>do</em>',
-              '~~I am going to will do~~ — нельзя два будущих',
+              '<s>She is going to does</s> → She is going to <em>do</em>',
+              '<s>I am going to will do</s> — нельзя два будущих',
             ],
           },
         ],
@@ -1167,9 +1167,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I was visit~~ → I was <em>visiting</em>',
-              '~~She were working~~ → She <em>was</em> working (she/he/it → was)',
-              '~~At 8 I was work~~ → I was <em>working</em>',
+              '<s>I was visit</s> → I was <em>visiting</em>',
+              '<s>She were working</s> → She <em>was</em> working (she/he/it → was)',
+              '<s>At 8 I was work</s> → I was <em>working</em>',
             ],
             markers: {
               tags: [
@@ -1214,8 +1214,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I'm meeting Tom in next week~~ → meeting Tom <em>next week</em> (без in)",
-              '~~We are flying to Rome on the Friday~~ → on <em>Friday</em>',
+              "<s>I'm meeting Tom in next week</s> → meeting Tom <em>next week</em> (без in)",
+              '<s>We are flying to Rome on the Friday</s> → on <em>Friday</em>',
             ],
             markers: {
               tags: [
@@ -1263,9 +1263,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I am drink coffee every morning~~ → I <em>drink</em> (привычка)',
-              '~~She knowing French~~ → She <em>knows</em> French',
-              '~~Water is boiling at 100°C~~ → Water <em>boils</em> (факт)',
+              '<s>I am drink coffee every morning</s> → I <em>drink</em> (привычка)',
+              '<s>She knowing French</s> → She <em>knows</em> French',
+              '<s>Water is boiling at 100°C</s> → Water <em>boils</em> (факт)',
             ],
             markers: {
               tags: [
@@ -1304,9 +1304,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~You should to see a doctor~~ → should <em>see</em> (без to)',
-              '~~She should goes~~ → She should <em>go</em>',
-              '~~I should have went~~ → I should have <em>gone</em>',
+              '<s>You should to see a doctor</s> → should <em>see</em> (без to)',
+              '<s>She should goes</s> → She should <em>go</em>',
+              '<s>I should have went</s> → I should have <em>gone</em>',
             ],
           },
           {
@@ -1331,9 +1331,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~You mustn't to smoke~~ → mustn't <em>smoke</em>",
-              '~~I must to do this~~ → I <em>must</em> do this (без to)',
-              '~~You mustn\'t come~~ ≠ "тебе не нужно" — это "тебе нельзя!" Для "не нужно": <em>don\'t have to</em>',
+              "<s>You mustn't to smoke</s> → mustn't <em>smoke</em>",
+              '<s>I must to do this</s> → I <em>must</em> do this (без to)',
+              '<s>You mustn\'t come</s> ≠ "тебе не нужно" — это "тебе нельзя!" Для "не нужно": <em>don\'t have to</em>',
             ],
           },
           {
@@ -1358,9 +1358,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I have to can do this~~ — нельзя два модальных подряд',
-              "~~She doesn't have to don't come~~ → She <em>doesn't have to</em> come",
-              "~~You must not to come~~ → mustn't come",
+              '<s>I have to can do this</s> — нельзя два модальных подряд',
+              "<s>She doesn't have to don't come</s> → She <em>doesn't have to</em> come",
+              "<s>You must not to come</s> → mustn't come",
             ],
           },
           {
@@ -1385,9 +1385,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She could to swim~~ → She could <em>swim</em> (без to)',
-              '~~Can I when I was a child~~ → <em>I could</em> when I was a child',
-              '~~Could you to speak slowly?~~ → Could you speak slowly?',
+              '<s>She could to swim</s> → She could <em>swim</em> (без to)',
+              '<s>Can I when I was a child</s> → <em>I could</em> when I was a child',
+              '<s>Could you to speak slowly?</s> → Could you speak slowly?',
             ],
           },
         ],
@@ -1422,9 +1422,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She is more tall than~~ → She is <em>taller</em> than',
-              '~~He is more better~~ → He is <em>better</em>',
-              '~~She is tallest in class~~ → She is <em>the</em> tallest',
+              '<s>She is more tall than</s> → She is <em>taller</em> than',
+              '<s>He is more better</s> → He is <em>better</em>',
+              '<s>She is tallest in class</s> → She is <em>the</em> tallest',
             ],
           },
           {
@@ -1452,9 +1452,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~He is most clever~~ → He is <em>the most</em> clever / <em>the cleverest</em>',
-              '~~She is the most best~~ → She is <em>the best</em>',
-              '~~This is most interesting film~~ → <em>the most interesting</em> film (нужен the)',
+              '<s>He is most clever</s> → He is <em>the most</em> clever / <em>the cleverest</em>',
+              '<s>She is the most best</s> → She is <em>the best</em>',
+              '<s>This is most interesting film</s> → <em>the most interesting</em> film (нужен the)',
             ],
           },
           {
@@ -1480,9 +1480,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I have some money? (вопрос)~~ → Do I have <em>any</em> money?',
-              "~~I don't have some cash~~ → I don't have <em>any</em> cash",
-              '~~Would you like any tea?~~ → Would you like <em>some</em> tea? (предложение)',
+              '<s>I have some money? (вопрос)</s> → Do I have <em>any</em> money?',
+              "<s>I don't have some cash</s> → I don't have <em>any</em> cash",
+              '<s>Would you like any tea?</s> → Would you like <em>some</em> tea? (предложение)',
             ],
           },
           {
@@ -1508,9 +1508,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Much people~~ → <em>Many</em> people (счисляемое)',
-              '~~Many money~~ → <em>Much</em> money (несчисляемое)',
-              '~~A few water~~ → <em>A little</em> water',
+              '<s>Much people</s> → <em>Many</em> people (счисляемое)',
+              '<s>Many money</s> → <em>Much</em> money (несчисляемое)',
+              '<s>A few water</s> → <em>A little</em> water',
             ],
           },
           {
@@ -1536,9 +1536,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Two advices~~ → Two pieces of <em>advice</em> (advice несчисляемое)',
-              '~~An information~~ → <em>Some information</em>',
-              '~~Three furnitures~~ → Three pieces of <em>furniture</em>',
+              '<s>Two advices</s> → Two pieces of <em>advice</em> (advice несчисляемое)',
+              '<s>An information</s> → <em>Some information</em>',
+              '<s>Three furnitures</s> → Three pieces of <em>furniture</em>',
             ],
           },
         ],
@@ -1569,10 +1569,10 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~at Monday~~ → <em>on</em> Monday',
-              "~~in 8 o'clock~~ → <em>at</em> 8 o'clock",
-              '~~on the morning~~ → <em>in</em> the morning',
-              '~~in my birthday~~ → <em>on</em> my birthday',
+              '<s>at Monday</s> → <em>on</em> Monday',
+              "<s>in 8 o'clock</s> → <em>at</em> 8 o'clock",
+              '<s>on the morning</s> → <em>in</em> the morning',
+              '<s>in my birthday</s> → <em>on</em> my birthday',
             ],
           },
           {
@@ -1598,9 +1598,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I've been here since three years~~ → for three years",
-              '~~I saw him since Monday~~ → I saw him <em>on</em> Monday (ago с Past Simple, не since!)',
-              '~~Three days before~~ → Three days <em>ago</em>',
+              "<s>I've been here since three years</s> → for three years",
+              '<s>I saw him since Monday</s> → I saw him <em>on</em> Monday (ago с Past Simple, не since!)',
+              '<s>Three days before</s> → Three days <em>ago</em>',
             ],
           },
         ],
@@ -1636,9 +1636,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~It's cold, isn't he?~~ → isn't <em>it</em>",
-              "~~She can swim, can't he?~~ → can't <em>she</em>",
-              "~~You don't like it, don't you?~~ → <em>do</em> you? (отрицательное предложение → положительный хвостик)",
+              "<s>It's cold, isn't he?</s> → isn't <em>it</em>",
+              "<s>She can swim, can't he?</s> → can't <em>she</em>",
+              "<s>You don't like it, don't you?</s> → <em>do</em> you? (отрицательное предложение → положительный хвостик)",
             ],
           },
         ],
@@ -1669,8 +1669,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I've got a car in 2010~~ → I <em>bought</em> a car in 2010 (have got только настоящее)",
-              '~~She had got a dog~~ → She <em>had</em> a dog (прошлое — только had)',
+              "<s>I've got a car in 2010</s> → I <em>bought</em> a car in 2010 (have got только настоящее)",
+              '<s>She had got a dog</s> → She <em>had</em> a dog (прошлое — только had)',
             ],
           },
         ],
@@ -1682,7 +1682,7 @@ export const DATA: Level[] = [
             id: 'a2_24',
             text: 'Наречия образа действия: quickly, carefully, well, hard, fast',
             note: 'She sings beautifully. He works hard. She drives fast.',
-            exp: 'Большинство наречий образуется из прилагательных + <em>-ly</em>: <em>quick → quickly, careful → carefully, slow → slowly</em>.<br><br>Особые случаи:<br>• <em>good → well</em> (не ~~goodly~~)<br>• <em>fast → fast</em> (не ~~fastly~~)<br>• <em>hard → hard</em> (не ~~hardly~~ — это другое слово: «едва»)<br>• <em>late → late</em> (не ~~lately~~ — это «в последнее время»)<br><br>Место: обычно после глагола/дополнения: <em>She speaks English well.</em>',
+            exp: 'Большинство наречий образуется из прилагательных + <em>-ly</em>: <em>quick → quickly, careful → carefully, slow → slowly</em>.<br><br>Особые случаи:<br>• <em>good → well</em> (не <s>goodly</s>)<br>• <em>fast → fast</em> (не <s>fastly</s>)<br>• <em>hard → hard</em> (не <s>hardly</s> — это другое слово: «едва»)<br>• <em>late → late</em> (не <s>lately</s> — это «в последнее время»)<br><br>Место: обычно после глагола/дополнения: <em>She speaks English well.</em>',
             ex: [
               ['He explained it clearly.', 'Он объяснил это ясно.'],
               ['She ran fast.', 'Она бежала быстро.'],
@@ -1701,9 +1701,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She sings beautiful~~ → She sings <em>beautifully</em>',
-              '~~He works hardly~~ → He works <em>hard</em> (hardly = едва)',
-              '~~She drives fastly~~ → She drives <em>fast</em>',
+              '<s>She sings beautiful</s> → She sings <em>beautifully</em>',
+              '<s>He works hardly</s> → He works <em>hard</em> (hardly = едва)',
+              '<s>She drives fastly</s> → She drives <em>fast</em>',
             ],
           },
           {
@@ -1729,9 +1729,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She always is late~~ → She is <em>always</em> late (after to be)',
-              '~~He drinks always coffee~~ → He <em>always</em> drinks coffee (перед основным глаголом)',
-              '~~She has never been always on time~~ — два наречия вместе неуместны',
+              '<s>She always is late</s> → She is <em>always</em> late (after to be)',
+              '<s>He drinks always coffee</s> → He <em>always</em> drinks coffee (перед основным глаголом)',
+              '<s>She has never been always on time</s> — два наречия вместе неуместны',
             ],
           },
         ],
@@ -1761,8 +1761,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~a wooden French old small bag~~ → порядок: размер → возраст → происхождение → материал',
-              '~~a beautiful Italian big car~~ → big <em>beautiful</em> Italian car (размер перед мнением — нет)',
+              '<s>a wooden French old small bag</s> → порядок: размер → возраст → происхождение → материал',
+              '<s>a beautiful Italian big car</s> → big <em>beautiful</em> Italian car (размер перед мнением — нет)',
             ],
           },
         ],
@@ -1818,9 +1818,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I have seen him yesterday~~ → I <em>saw</em> him yesterday (вчера = Past Simple!)',
-              '~~She has went~~ → She has <em>gone</em>',
-              '~~I have been to Rome last year~~ → I <em>went</em> to Rome last year',
+              '<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday (вчера = Past Simple!)',
+              '<s>She has went</s> → She has <em>gone</em>',
+              '<s>I have been to Rome last year</s> → I <em>went</em> to Rome last year',
             ],
             markers: {
               tags: [
@@ -1879,9 +1879,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Have you ever been to Paris yet?~~ → <em>ever</em> в вопросе, <em>yet</em> в конце',
-              "~~I've already not finished~~ → I <em>haven't</em> finished <em>yet</em>",
-              '~~I just have eaten~~ → I <em>have just</em> eaten (just перед V3)',
+              '<s>Have you ever been to Paris yet?</s> → <em>ever</em> в вопросе, <em>yet</em> в конце',
+              "<s>I've already not finished</s> → I <em>haven't</em> finished <em>yet</em>",
+              '<s>I just have eaten</s> → I <em>have just</em> eaten (just перед V3)',
             ],
             markers: {
               tags: [
@@ -1939,9 +1939,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I have seen him last week~~ → I <em>saw</em> him last week (конкретное время = Past Simple)',
-              '~~Did you ever eat sushi?~~ → <em>Have</em> you ever eaten sushi?',
-              '~~I met him and he has told me~~ → he <em>told</em> me (в одном контексте прошлого)',
+              '<s>I have seen him last week</s> → I <em>saw</em> him last week (конкретное время = Past Simple)',
+              '<s>Did you ever eat sushi?</s> → <em>Have</em> you ever eaten sushi?',
+              '<s>I met him and he has told me</s> → he <em>told</em> me (в одном контексте прошлого)',
             ],
             markers: {
               tags: [
@@ -1977,9 +1977,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I've lived here since five years~~ → <em>for</em> five years",
-              "~~She's known him for 2019~~ → she's known him <em>since</em> 2019",
-              '~~How long did you live here?~~ → How long <em>have</em> you lived here? (продолжается сейчас)',
+              "<s>I've lived here since five years</s> → <em>for</em> five years",
+              "<s>She's known him for 2019</s> → she's known him <em>since</em> 2019",
+              '<s>How long did you live here?</s> → How long <em>have</em> you lived here? (продолжается сейчас)',
             ],
             markers: {
               tags: [
@@ -2035,9 +2035,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I've been learning since three hours~~ → <em>for</em> three hours",
-              "~~I've been read all evening~~ → I've been <em>reading</em>",
-              "~~I've been know her for years~~ → know — stative verb, используем Present Perfect Simple",
+              "<s>I've been learning since three hours</s> → <em>for</em> three hours",
+              "<s>I've been read all evening</s> → I've been <em>reading</em>",
+              "<s>I've been know her for years</s> → know — stative verb, используем Present Perfect Simple",
             ],
             markers: {
               tags: [
@@ -2092,9 +2092,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She was walk~~ → She was <em>walking</em>',
-              '~~They was talking~~ → They <em>were</em> talking',
-              '~~I was work at 9pm~~ → I was <em>working</em>',
+              '<s>She was walk</s> → She was <em>walking</em>',
+              '<s>They was talking</s> → They <em>were</em> talking',
+              '<s>I was work at 9pm</s> → I was <em>working</em>',
             ],
             markers: {
               tags: [
@@ -2144,8 +2144,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~While I cooked, he called~~ → While I <em>was cooking</em>, he called (фон = Continuous)',
-              '~~I was walking when it was starting to rain~~ → when it <em>started</em> (событие = Past Simple)',
+              '<s>While I cooked, he called</s> → While I <em>was cooking</em>, he called (фон = Continuous)',
+              '<s>I was walking when it was starting to rain</s> → when it <em>started</em> (событие = Past Simple)',
             ],
             markers: {
               tags: ['while', 'as', 'when', 'at the moment when', 'just as', 'during'],
@@ -2186,8 +2186,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~If you heat water, it will boil~~ → it <em>boils</em> (нулевой тип — Present + Present)',
-              '~~When you mix them, you will get~~ → you <em>get</em>',
+              '<s>If you heat water, it will boil</s> → it <em>boils</em> (нулевой тип — Present + Present)',
+              '<s>When you mix them, you will get</s> → you <em>get</em>',
             ],
           },
           {
@@ -2224,8 +2224,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~If it will rain~~ → If it <em>rains</em> (в if-части НЕТ will!)',
-              '~~If she will study hard, she passes~~ → If she studies, she <em>will pass</em>',
+              '<s>If it will rain</s> → If it <em>rains</em> (в if-части НЕТ will!)',
+              '<s>If she will study hard, she passes</s> → If she studies, she <em>will pass</em>',
             ],
           },
           {
@@ -2264,9 +2264,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~If I would have a car~~ → If I <em>had</em> a car',
-              '~~If I was you~~ → If I <em>were</em> you (формально)',
-              '~~I would can do it~~ → I <em>could</em> do it (нельзя два модальных)',
+              '<s>If I would have a car</s> → If I <em>had</em> a car',
+              '<s>If I was you</s> → If I <em>were</em> you (формально)',
+              '<s>I would can do it</s> → I <em>could</em> do it (нельзя два модальных)',
             ],
           },
           {
@@ -2301,7 +2301,7 @@ export const DATA: Level[] = [
             ],
             mistakes: [
               'Путаница 1-го и 2-го типа: <em>If I win</em> (реально) vs <em>If I won</em> (маловероятно)',
-              '~~If I won, I will buy~~ → нельзя смешивать: <em>would buy</em>',
+              '<s>If I won, I will buy</s> → нельзя смешивать: <em>would buy</em>',
             ],
           },
         ],
@@ -2345,9 +2345,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Coffee is grew in Brazil~~ → Coffee is <em>grown</em>',
-              '~~The letter wrote in French~~ → The letter <em>is written</em>',
-              '~~English spoke here~~ → English <em>is spoken</em>',
+              '<s>Coffee is grew in Brazil</s> → Coffee is <em>grown</em>',
+              '<s>The letter wrote in French</s> → The letter <em>is written</em>',
+              '<s>English spoke here</s> → English <em>is spoken</em>',
             ],
           },
           {
@@ -2375,9 +2375,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The bridge was build in 1890~~ → was <em>built</em>',
-              '~~They was arrested~~ → They <em>were</em> arrested',
-              '~~The car stolen~~ → The car <em>was</em> stolen',
+              '<s>The bridge was build in 1890</s> → was <em>built</em>',
+              '<s>They was arrested</s> → They <em>were</em> arrested',
+              '<s>The car stolen</s> → The car <em>was</em> stolen',
             ],
           },
           {
@@ -2403,9 +2403,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The project has been complete~~ → has been <em>completed</em>',
-              '~~It have been sent~~ → It <em>has</em> been sent',
-              '~~All guests have been inform~~ → have been <em>informed</em>',
+              '<s>The project has been complete</s> → has been <em>completed</em>',
+              '<s>It have been sent</s> → It <em>has</em> been sent',
+              '<s>All guests have been inform</s> → have been <em>informed</em>',
             ],
           },
         ],
@@ -2447,9 +2447,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~He said he is tired~~ → He said he <em>was</em> tired (сдвиг времени)',
-              '~~She told that she was late~~ → She told <em>me/us/him</em> that... (tell требует объект)',
-              '~~He said me that~~ → He <em>told me</em> that / He <em>said</em> that',
+              '<s>He said he is tired</s> → He said he <em>was</em> tired (сдвиг времени)',
+              '<s>She told that she was late</s> → She told <em>me/us/him</em> that... (tell требует объект)',
+              '<s>He said me that</s> → He <em>told me</em> that / He <em>said</em> that',
             ],
           },
           {
@@ -2480,9 +2480,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She asked where do I live~~ → she asked where I <em>lived</em> (нет инверсии!)',
-              '~~He asked me what was I doing~~ → what I <em>was doing</em>',
-              '~~She asked if was I tired~~ → if I <em>was</em> tired',
+              '<s>She asked where do I live</s> → she asked where I <em>lived</em> (нет инверсии!)',
+              '<s>He asked me what was I doing</s> → what I <em>was doing</em>',
+              '<s>She asked if was I tired</s> → if I <em>was</em> tired',
             ],
           },
           {
@@ -2491,7 +2491,7 @@ export const DATA: Level[] = [
             note: 'He said that... / He told me that... — после tell нужно лицо!',
             exp: `<em>say</em> — без обязательного дополнения: <em>She said she was tired.</em>
 <br><em>tell</em> — ВСЕГДА с дополнением (кому сказано): <em>She told me she was tired.</em>
-<br><br>❌ ~~He told that he was late.~~ ✓ <em>He said that he was late.</em>`,
+<br><br>❌ <s>He told that he was late.</s> ✓ <em>He said that he was late.</em>`,
             ex: [
               ['She said she needed help.', 'Она сказала, что ей нужна помощь.'],
               ['He told us the meeting was cancelled.', 'Он сообщил нам, что встреча отменена.'],
@@ -2509,9 +2509,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~He told that he was late~~ → He <em>said</em> that / He <em>told me</em> that',
-              '~~She said me the news~~ → She <em>told</em> me the news',
-              '~~They told about the problem~~ → They <em>talked</em> about it / <em>said</em> something about it',
+              '<s>He told that he was late</s> → He <em>said</em> that / He <em>told me</em> that',
+              '<s>She said me the news</s> → She <em>told</em> me the news',
+              '<s>They told about the problem</s> → They <em>talked</em> about it / <em>said</em> something about it',
             ],
           },
         ],
@@ -2549,9 +2549,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I enjoy to swim~~ → I enjoy <em>swimming</em>',
-              '~~She finished to write~~ → She finished <em>writing</em>',
-              '~~He avoided to make~~ → He avoided <em>making</em>',
+              '<s>I enjoy to swim</s> → I enjoy <em>swimming</em>',
+              '<s>She finished to write</s> → She finished <em>writing</em>',
+              '<s>He avoided to make</s> → He avoided <em>making</em>',
             ],
           },
           {
@@ -2578,9 +2578,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She decided going~~ → She decided <em>to go</em>',
-              '~~He wants going out~~ → He wants <em>to go</em> out',
-              '~~I hope seeing you~~ → I hope <em>to see</em> you',
+              '<s>She decided going</s> → She decided <em>to go</em>',
+              '<s>He wants going out</s> → He wants <em>to go</em> out',
+              '<s>I hope seeing you</s> → I hope <em>to see</em> you',
             ],
           },
           {
@@ -2608,8 +2608,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I'd like cooking tonight~~ → I'd like <em>to cook</em> tonight (конкретный случай)",
-              '~~She started to working~~ → She started <em>working</em> или <em>to work</em>',
+              "<s>I'd like cooking tonight</s> → I'd like <em>to cook</em> tonight (конкретный случай)",
+              '<s>She started to working</s> → She started <em>working</em> или <em>to work</em>',
             ],
           },
           {
@@ -2620,7 +2620,7 @@ export const DATA: Level[] = [
 <br><br>Форма: <em>used to + инфинитив</em>
 <br>Отрицание: <em>didn't use to</em>
 <br>Вопрос: <em>Did you use to...?</em>
-<br><br>⚠️ Нет формы настоящего времени! Нельзя: ~~I use to~~ для настоящего.
+<br><br>⚠️ Нет формы настоящего времени! Нельзя: <s>I use to</s> для настоящего.
 <br>Отличие от <em>be used to</em>: <em>I am used to waking up early</em> = я привык (сейчас).`,
             ex: [
               ['I used to smoke, but I stopped.', 'Я раньше курил, но бросил.'],
@@ -2644,9 +2644,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I use to play football~~ → I <em>used to</em> play',
-              '~~Did you used to...?~~ → Did you <em>use to</em>...? (после did — базовая форма)',
-              '~~I used to living there~~ → I used to <em>live</em> (инфинитив без to+ing)',
+              '<s>I use to play football</s> → I <em>used to</em> play',
+              '<s>Did you used to...?</s> → Did you <em>use to</em>...? (после did — базовая форма)',
+              '<s>I used to living there</s> → I used to <em>live</em> (инфинитив без to+ing)',
             ],
           },
         ],
@@ -2687,9 +2687,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The man which called~~ → the man <em>who</em> called (who для людей)',
-              '~~The place who we met~~ → the place <em>where</em> we met',
-              "~~The girl who's bag~~ → the girl <em>whose</em> bag",
+              '<s>The man which called</s> → the man <em>who</em> called (who для людей)',
+              '<s>The place who we met</s> → the place <em>where</em> we met',
+              "<s>The girl who's bag</s> → the girl <em>whose</em> bag",
             ],
           },
           {
@@ -2727,8 +2727,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Despite it was raining~~ → Despite <em>the rain</em> / Despite <em>raining</em> (существительное/герундий!)',
-              '~~Although the rain, we went~~ → Although <em>it was raining</em> (although + предложение)',
+              '<s>Despite it was raining</s> → Despite <em>the rain</em> / Despite <em>raining</em> (существительное/герундий!)',
+              '<s>Although the rain, we went</s> → Although <em>it was raining</em> (although + предложение)',
             ],
           },
         ],
@@ -2765,8 +2765,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I'll be work at 9~~ → I'll be <em>working</em>",
-              '~~She will working~~ → She <em>will be working</em>',
+              "<s>I'll be work at 9</s> → I'll be <em>working</em>",
+              '<s>She will working</s> → She <em>will be working</em>',
             ],
             markers: {
               tags: [
@@ -2809,8 +2809,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~By Friday I will finish~~ → I <em>will have finished</em> (завершится к сроку = Future Perfect)',
-              "~~I'll have finish by Sunday~~ → I'll have <em>finished</em>",
+              '<s>By Friday I will finish</s> → I <em>will have finished</em> (завершится к сроку = Future Perfect)',
+              "<s>I'll have finish by Sunday</s> → I'll have <em>finished</em>",
             ],
             markers: {
               tags: [
@@ -2838,7 +2838,7 @@ export const DATA: Level[] = [
             note: 'I study hard to pass. She left early so that she could catch the train.',
             exp: `<em>to / in order to / so as to</em> + инфинитив — цель. <em>In order to</em> и <em>so as to</em> чуть формальнее.
 <br><em>so that</em> + подлежащее + глагол — цель с другим подлежащим или с модальным.
-<br><br>⚠️ Отрицание: <em>in order not to / so as not to</em> (не ~~to not~~).`,
+<br><br>⚠️ Отрицание: <em>in order not to / so as not to</em> (не <s>to not</s>).`,
             ex: [
               [
                 'She studies hard in order to get a scholarship.',
@@ -2862,9 +2862,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I study hard for passing~~ → I study hard <em>to pass</em>',
-              '~~She left early for that she could catch the train~~ → <em>so that</em> she could',
-              '~~In order to not upset him~~ → <em>in order not to</em> upset him',
+              '<s>I study hard for passing</s> → I study hard <em>to pass</em>',
+              '<s>She left early for that she could catch the train</s> → <em>so that</em> she could',
+              '<s>In order to not upset him</s> → <em>in order not to</em> upset him',
             ],
           },
           {
@@ -2909,8 +2909,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She gave up to smoke~~ → She gave up <em>smoking</em>',
-              '~~I looked up the word in~~ → I looked <em>it</em> up (местоимение между глаголом и частицей)',
+              '<s>She gave up to smoke</s> → She gave up <em>smoking</em>',
+              '<s>I looked up the word in</s> → I looked <em>it</em> up (местоимение между глаголом и частицей)',
             ],
           },
         ],
@@ -2961,9 +2961,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~When I arrived, she already left~~ → she <em>had already left</em>',
-              '~~He had never see snow~~ → He had never <em>seen</em> snow',
-              '~~I had went~~ → I had <em>gone</em>',
+              '<s>When I arrived, she already left</s> → she <em>had already left</em>',
+              '<s>He had never see snow</s> → He had never <em>seen</em> snow',
+              '<s>I had went</s> → I had <em>gone</em>',
             ],
             markers: {
               tags: [
@@ -3016,8 +3016,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She was exhausted — she had been work~~ → she had been <em>working</em>',
-              '~~How long had you waiting?~~ → How long had you <em>been waiting</em>?',
+              '<s>She was exhausted — she had been work</s> → she had been <em>working</em>',
+              '<s>How long had you waiting?</s> → How long had you <em>been waiting</em>?',
             ],
             markers: {
               tags: [
@@ -3078,9 +3078,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She must forgot~~ → She must <em>have forgotten</em>',
-              '~~He must have leave early~~ → He must have <em>left</em>',
-              '~~You must be exhausted yesterday~~ — для прошлого: <em>must have been</em>',
+              '<s>She must forgot</s> → She must <em>have forgotten</em>',
+              '<s>He must have leave early</s> → He must have <em>left</em>',
+              '<s>You must be exhausted yesterday</s> — для прошлого: <em>must have been</em>',
             ],
           },
           {
@@ -3109,8 +3109,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~She can't forgot that~~ → She can't <em>have forgotten</em>",
-              "~~He couldn't have been there~~ — это правильно! can't have = невозможность; couldn't have = возможность",
+              "<s>She can't forgot that</s> → She can't <em>have forgotten</em>",
+              "<s>He couldn't have been there</s> — это правильно! can't have = невозможность; couldn't have = возможность",
             ],
           },
           {
@@ -3137,9 +3137,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I should called her~~ → I should <em>have called</em>',
-              "~~She shouldn't have went~~ → She shouldn't have <em>gone</em>",
-              '~~You should have study~~ → You should have <em>studied</em>',
+              '<s>I should called her</s> → I should <em>have called</em>',
+              "<s>She shouldn't have went</s> → She shouldn't have <em>gone</em>",
+              '<s>You should have study</s> → You should have <em>studied</em>',
             ],
           },
           {
@@ -3165,8 +3165,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She might forgot~~ → She might <em>have forgotten</em>',
-              '~~He could have win~~ → He could have <em>won</em>',
+              '<s>She might forgot</s> → She might <em>have forgotten</em>',
+              '<s>He could have win</s> → He could have <em>won</em>',
             ],
           },
         ],
@@ -3211,8 +3211,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~If I studied harder, I would have passed~~ → If I <em>had studied</em>... (3-й тип — Past Perfect!)',
-              '~~If she had taken medicine, she would recovered~~ → she would <em>have recovered</em>',
+              '<s>If I studied harder, I would have passed</s> → If I <em>had studied</em>... (3-й тип — Past Perfect!)',
+              '<s>If she had taken medicine, she would recovered</s> → she would <em>have recovered</em>',
             ],
           },
           {
@@ -3245,8 +3245,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~If I had studied, I would be fluent yesterday~~ — смешанный тип о прошлом→настоящему, не прошлому',
-              "~~If she were careful, she didn't break it~~ → she <em>wouldn't have broken</em> it",
+              '<s>If I had studied, I would be fluent yesterday</s> — смешанный тип о прошлом→настоящему, не прошлому',
+              "<s>If she were careful, she didn't break it</s> → she <em>wouldn't have broken</em> it",
             ],
           },
         ],
@@ -3283,9 +3283,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The report will published~~ → will <em>be</em> published',
-              '~~It must done~~ → It must <em>be done</em>',
-              '~~It should be do~~ → It should be <em>done</em>',
+              '<s>The report will published</s> → will <em>be</em> published',
+              '<s>It must done</s> → It must <em>be done</em>',
+              '<s>It should be do</s> → It should be <em>done</em>',
             ],
           },
           {
@@ -3317,8 +3317,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I cut my hair at the hairdresser~~ → I <em>had</em> my hair cut',
-              '~~She got her car to fix~~ → She got her car <em>fixed</em>',
+              '<s>I cut my hair at the hairdresser</s> → I <em>had</em> my hair cut',
+              '<s>She got her car to fix</s> → She got her car <em>fixed</em>',
             ],
           },
           {
@@ -3349,8 +3349,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~It is said that prices will risen~~ → will <em>rise</em>',
-              '~~He is believed to being honest~~ → He is believed <em>to be</em> honest',
+              '<s>It is said that prices will risen</s> → will <em>rise</em>',
+              '<s>He is believed to being honest</s> → He is believed <em>to be</em> honest',
             ],
           },
         ],
@@ -3385,9 +3385,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I remember to lock it~~ (если факт прошлого) → I remember <em>locking</em> it',
-              '~~Remember locking it!~~ (задача) → Remember <em>to lock</em> it!',
-              '~~I forgot doing the homework~~ (если не сделал) → I forgot <em>to do</em> the homework',
+              '<s>I remember to lock it</s> (если факт прошлого) → I remember <em>locking</em> it',
+              '<s>Remember locking it!</s> (задача) → Remember <em>to lock</em> it!',
+              '<s>I forgot doing the homework</s> (если не сделал) → I forgot <em>to do</em> the homework',
             ],
           },
           {
@@ -3417,8 +3417,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She stopped to smoke~~ (если бросила) → She stopped <em>smoking</em>',
-              '~~She stopped smoking to answer~~ (остановилась чтобы) → She stopped <em>to answer</em>',
+              '<s>She stopped to smoke</s> (если бросила) → She stopped <em>smoking</em>',
+              '<s>She stopped smoking to answer</s> (остановилась чтобы) → She stopped <em>to answer</em>',
             ],
           },
         ],
@@ -3457,9 +3457,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I wish I know the answer~~ → I wish I <em>knew</em>',
-              '~~I wish I was taller~~ — возможно, но формально: <em>I wish I were taller</em>',
-              '~~I wish I would know~~ — с would только о других: <em>I wish you would listen</em>',
+              '<s>I wish I know the answer</s> → I wish I <em>knew</em>',
+              '<s>I wish I was taller</s> — возможно, но формально: <em>I wish I were taller</em>',
+              '<s>I wish I would know</s> — с would только о других: <em>I wish you would listen</em>',
             ],
           },
           {
@@ -3487,8 +3487,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I wish I didn't say that~~ → I wish I <em>hadn't said</em> (сожаление о прошлом = Past Perfect)",
-              '~~I wish she had took that job~~ → she had <em>taken</em>',
+              "<s>I wish I didn't say that</s> → I wish I <em>hadn't said</em> (сожаление о прошлом = Past Perfect)",
+              '<s>I wish she had took that job</s> → she had <em>taken</em>',
             ],
           },
           {
@@ -3496,7 +3496,7 @@ export const DATA: Level[] = [
             text: 'wish + would — желание изменить чужое поведение',
             note: 'I wish you would stop talking. I wish it would warm up.',
             exp: `<em>wish + would</em> — раздражение из-за чужого поведения или желание изменить ситуацию.
-<br>⚠️ Нельзя использовать о себе: ~~I wish I would~~ — только о других лицах или погоде/ситуации.`,
+<br>⚠️ Нельзя использовать о себе: <s>I wish I would</s> — только о других лицах или погоде/ситуации.`,
             ex: [
               ['I wish you would listen to me.', 'Я бы хотел, чтобы ты меня слушал.'],
               ['I wish it would stop raining.', 'Хотелось бы, чтобы дождь прекратился.'],
@@ -3514,8 +3514,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I wish I would stop~~ (о себе) → нельзя! Используй: <em>I wish I could stop</em>',
-              '~~I wish you stop talking~~ → I wish you <em>would stop</em>',
+              '<s>I wish I would stop</s> (о себе) → нельзя! Используй: <em>I wish I could stop</em>',
+              '<s>I wish you stop talking</s> → I wish you <em>would stop</em>',
             ],
           },
         ],
@@ -3553,8 +3553,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~My brother, that called, is a doctor~~ → My brother, <em>who</em> called (в неопределяющем нельзя that)',
-              '~~The man who lives next door, is very kind~~ → без запятой (определяющее придаточное)',
+              '<s>My brother, that called, is a doctor</s> → My brother, <em>who</em> called (в неопределяющем нельзя that)',
+              '<s>The man who lives next door, is very kind</s> → без запятой (определяющее придаточное)',
             ],
           },
           {
@@ -3584,8 +3584,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The house which I grew up in it~~ → лишнее <em>it</em>',
-              '~~The person which I spoke~~ → the person I spoke <em>to</em>',
+              '<s>The house which I grew up in it</s> → лишнее <em>it</em>',
+              '<s>The person which I spoke</s> → the person I spoke <em>to</em>',
             ],
           },
         ],
@@ -3623,8 +3623,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~It was so cold that we stayed~~ — правильно! Но: ~~It was such cold that~~ → It was such <em>a cold day</em>',
-              '~~Such was great his relief~~ → So great was his relief (с прилагательным — so)',
+              '<s>It was so cold that we stayed</s> — правильно! Но: <s>It was such cold that</s> → It was such <em>a cold day</em>',
+              '<s>Such was great his relief</s> → So great was his relief (с прилагательным — so)',
             ],
           },
           {
@@ -3656,8 +3656,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I'm used to wake up early~~ → I'm used to <em>waking</em> up (be used to + V-ing)",
-              '~~I get used to woke up~~ → I get used to <em>waking</em> up',
+              "<s>I'm used to wake up early</s> → I'm used to <em>waking</em> up (be used to + V-ing)",
+              '<s>I get used to woke up</s> → I get used to <em>waking</em> up',
             ],
           },
         ],
@@ -3688,8 +3688,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She said she will come~~ → She said she <em>would</em> come (сдвиг времени)',
-              '~~He was going to called~~ → He was going to <em>call</em>',
+              '<s>She said she will come</s> → She said she <em>would</em> come (сдвиг времени)',
+              '<s>He was going to called</s> → He was going to <em>call</em>',
             ],
           },
           {
@@ -3715,8 +3715,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~You be to submit~~ → You <em>are</em> to submit',
-              '~~She was be never to meet~~ → She was <em>never</em> to meet',
+              '<s>You be to submit</s> → You <em>are</em> to submit',
+              '<s>She was be never to meet</s> → She was <em>never</em> to meet',
             ],
           },
           {
@@ -3746,8 +3746,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~You ought apologise~~ → You ought <em>to</em> apologise (ought всегда с to!)',
-              '~~She ought have told us~~ → She ought <em>to have</em> told us',
+              '<s>You ought apologise</s> → You ought <em>to</em> apologise (ought всегда с to!)',
+              '<s>She ought have told us</s> → She ought <em>to have</em> told us',
             ],
           },
           {
@@ -3774,8 +3774,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~You needn't to worry~~ → You needn't worry (модальный needn't без to)",
-              '~~She need come~~ → She <em>needs</em> to come (обычный need + to)',
+              "<s>You needn't to worry</s> → You needn't worry (модальный needn't без to)",
+              '<s>She need come</s> → She <em>needs</em> to come (обычный need + to)',
             ],
           },
           {
@@ -3801,8 +3801,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~How dare you to say~~ → How dare you say (после dare без to)',
-              '~~I dare say it~~ — это нормально; <em>I dare say</em> = пожалуй',
+              '<s>How dare you to say</s> → How dare you say (после dare без to)',
+              '<s>I dare say it</s> — это нормально; <em>I dare say</em> = пожалуй',
             ],
           },
         ],
@@ -3835,9 +3835,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She taught her to play~~ (если сама себя) → She taught <em>herself</em> to play',
-              '~~They enjoyed themself~~ → They enjoyed <em>themselves</em>',
-              '~~I did it by my own~~ → I did it <em>by myself</em>',
+              '<s>She taught her to play</s> (если сама себя) → She taught <em>herself</em> to play',
+              '<s>They enjoyed themself</s> → They enjoyed <em>themselves</em>',
+              '<s>I did it by my own</s> → I did it <em>by myself</em>',
             ],
           },
           {
@@ -3863,8 +3863,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The police is here~~ → The police <em>are</em> here (мн. число в BrE)',
-              '~~The team is playing well~~ — верно в AmE; <em>are</em> верно в BrE',
+              '<s>The police is here</s> → The police <em>are</em> here (мн. число в BrE)',
+              '<s>The team is playing well</s> — верно в AmE; <em>are</em> верно в BrE',
             ],
           },
           {
@@ -3893,9 +3893,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Two third of students~~ → Two <em>thirds</em> of students',
-              '~~3,14~~ → 3<em>.</em>14 (точка, не запятая)',
-              '~~25 percents~~ → 25 <em>percent</em> (без s)',
+              '<s>Two third of students</s> → Two <em>thirds</em> of students',
+              '<s>3,14</s> → 3<em>.</em>14 (точка, не запятая)',
+              '<s>25 percents</s> → 25 <em>percent</em> (без s)',
             ],
           },
           {
@@ -3918,9 +3918,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She sings more beautiful~~ → She sings more <em>beautifully</em>',
-              '~~He runs more fast~~ → He runs <em>faster</em>',
-              '~~She works most hardly~~ → She works <em>hardest</em>',
+              '<s>She sings more beautiful</s> → She sings more <em>beautifully</em>',
+              '<s>He runs more fast</s> → He runs <em>faster</em>',
+              '<s>She works most hardly</s> → She works <em>hardest</em>',
             ],
           },
         ],
@@ -3969,8 +3969,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Never I have seen~~ → Never <em>have I seen</em> (инверсия: вспомогательный перед подлежащим)',
-              '~~Rarely she complains~~ → Rarely <em>does she</em> complain',
+              '<s>Never I have seen</s> → Never <em>have I seen</em> (инверсия: вспомогательный перед подлежащим)',
+              '<s>Rarely she complains</s> → Rarely <em>does she</em> complain',
             ],
           },
           {
@@ -4002,8 +4002,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Not only he apologised~~ → Not only <em>did he</em> apologise',
-              '~~Not only she is talented but also is hardworking~~ → but <em>she</em> is also hardworking (вторая часть — обычный порядок)',
+              '<s>Not only he apologised</s> → Not only <em>did he</em> apologise',
+              '<s>Not only she is talented but also is hardworking</s> → but <em>she</em> is also hardworking (вторая часть — обычный порядок)',
             ],
           },
           {
@@ -4036,8 +4036,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Hardly I had sat~~ → Hardly <em>had I</em> sat',
-              '~~No sooner I sat than~~ → No sooner <em>had I sat</em> than',
+              '<s>Hardly I had sat</s> → Hardly <em>had I</em> sat',
+              '<s>No sooner I sat than</s> → No sooner <em>had I sat</em> than',
             ],
           },
           {
@@ -4069,8 +4069,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Have I known, I would have helped~~ → <em>Had</em> I known',
-              '~~Should you need help, please to call~~ → please <em>call</em> (без to после please)',
+              '<s>Have I known, I would have helped</s> → <em>Had</em> I known',
+              '<s>Should you need help, please to call</s> → please <em>call</em> (без to после please)',
             ],
           },
         ],
@@ -4110,8 +4110,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~It was John who he called~~ → It was John who called (лишнее he)',
-              '~~It was the noise which woke me~~ — правильно, но <em>that</em> предпочтительнее для вещей',
+              '<s>It was John who he called</s> → It was John who called (лишнее he)',
+              '<s>It was the noise which woke me</s> — правильно, но <em>that</em> предпочтительнее для вещей',
             ],
           },
           {
@@ -4143,8 +4143,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~What I love it is London~~ → What I love <em>is</em> London (лишнее it)',
-              '~~What surprised me were the price~~ → What surprised me <em>was</em> the price (ед. число)',
+              '<s>What I love it is London</s> → What I love <em>is</em> London (лишнее it)',
+              '<s>What surprised me were the price</s> → What surprised me <em>was</em> the price (ед. число)',
             ],
           },
         ],
@@ -4184,8 +4184,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I suggest that he leaves~~ → I suggest that he <em>leave</em> (сослагательное — без -s!)',
-              '~~It is essential that she is informed~~ → that she <em>be</em> informed',
+              '<s>I suggest that he leaves</s> → I suggest that he <em>leave</em> (сослагательное — без -s!)',
+              '<s>It is essential that she is informed</s> → that she <em>be</em> informed',
             ],
           },
           {
@@ -4212,8 +4212,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~It's high time you will go~~ → It's high time you <em>went</em> (Past Simple!)",
-              "~~It's high time for you go~~ → It's high time <em>you went</em>",
+              "<s>It's high time you will go</s> → It's high time you <em>went</em> (Past Simple!)",
+              "<s>It's high time for you go</s> → It's high time <em>you went</em>",
             ],
           },
           {
@@ -4245,8 +4245,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She talks as if she knows everything~~ (нереальная ситуация) → as if she <em>knew</em>',
-              '~~He looked as if he seen a ghost~~ → as if he <em>had seen</em>',
+              '<s>She talks as if she knows everything</s> (нереальная ситуация) → as if she <em>knew</em>',
+              '<s>He looked as if he seen a ghost</s> → as if he <em>had seen</em>',
             ],
           },
         ],
@@ -4278,9 +4278,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~So I do~~ → <em>So do I</em> (вспомогательный перед подлежащим)',
-              '~~Neither she does~~ → <em>Neither does she</em>',
-              '~~I love jazz. So she does too~~ → <em>So does she</em>',
+              '<s>So I do</s> → <em>So do I</em> (вспомогательный перед подлежащим)',
+              '<s>Neither she does</s> → <em>Neither does she</em>',
+              '<s>I love jazz. So she does too</s> → <em>So does she</em>',
             ],
           },
           {
@@ -4310,8 +4310,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I think so not~~ → I don't think so",
-              '~~I hope so not~~ → I hope <em>not</em>',
+              "<s>I think so not</s> → I don't think so",
+              '<s>I hope so not</s> → I hope <em>not</em>',
             ],
           },
         ],
@@ -4353,8 +4353,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The film that won the Oscar, was brilliant~~ → без запятой (определяющее придаточное)',
-              '~~Avatar, that came out in 2009~~ → Avatar, <em>which</em> came out (в неопределяющем нельзя that!)',
+              '<s>The film that won the Oscar, was brilliant</s> → без запятой (определяющее придаточное)',
+              '<s>Avatar, that came out in 2009</s> → Avatar, <em>which</em> came out (в неопределяющем нельзя that!)',
             ],
           },
           {
@@ -4385,8 +4385,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~The company which I work for it~~ → лишнее it',
-              '~~The person who I spoke~~ → the person I spoke <em>to</em> / to <em>whom</em> I spoke',
+              '<s>The company which I work for it</s> → лишнее it',
+              '<s>The person who I spoke</s> → the person I spoke <em>to</em> / to <em>whom</em> I spoke',
             ],
           },
         ],
@@ -4425,8 +4425,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I made a decision to expand~~ → корректно, но стиль слабее: <em>Our decision to expand</em> (номинализация)',
-              '~~Он discovered an error~~ → His <em>discovery of</em> the error',
+              '<s>I made a decision to expand</s> → корректно, но стиль слабее: <em>Our decision to expand</em> (номинализация)',
+              '<s>Он discovered an error</s> → His <em>discovery of</em> the error',
             ],
           },
           {
@@ -4460,8 +4460,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~There was a significantly increase~~ → a <em>significant</em> increase (прилагательное перед существительным)',
-              "~~The prices' increase~~ → <em>The increase in prices</em>",
+              '<s>There was a significantly increase</s> → a <em>significant</em> increase (прилагательное перед существительным)',
+              "<s>The prices' increase</s> → <em>The increase in prices</em>",
             ],
           },
         ],
@@ -4477,7 +4477,7 @@ export const DATA: Level[] = [
 <br>• Одновременность: <em>Walking home, I noticed something strange.</em> (= While I was walking home)
 <br>• Причина: <em>Knowing the answer, she raised her hand.</em> (= Because she knew)
 <br><br>⚠️ Субъект причастного оборота ДОЛЖЕН совпадать с подлежащим главного предложения!
-<br>Ошибка: ~~Walking down the street, the rain started.~~ (дождь не шёл по улице)`,
+<br>Ошибка: <s>Walking down the street, the rain started.</s> (дождь не шёл по улице)`,
             ex: [
               [
                 'Arriving at the airport, he realised he had forgotten his passport.',
@@ -4506,8 +4506,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Walking down the street, the rain started~~ → субъект оборота ≠ подлежащее. Правильно: <em>Walking down the street, I got wet.</em>',
-              '~~Knowing the answer, her hand was raised~~ → субъект должен совпадать: <em>Knowing the answer, she raised her hand.</em>',
+              '<s>Walking down the street, the rain started</s> → субъект оборота ≠ подлежащее. Правильно: <em>Walking down the street, I got wet.</em>',
+              '<s>Knowing the answer, her hand was raised</s> → субъект должен совпадать: <em>Knowing the answer, she raised her hand.</em>',
             ],
           },
           {
@@ -4540,8 +4540,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Having read the report, the meeting was called~~ → кто читал? Должно быть: <em>Having read the report, he called a meeting.</em>',
-              '~~Surprised by the news, she was sat down~~ → она сама: <em>she sat down</em>',
+              '<s>Having read the report, the meeting was called</s> → кто читал? Должно быть: <em>Having read the report, he called a meeting.</em>',
+              '<s>Surprised by the news, she was sat down</s> → она сама: <em>she sat down</em>',
             ],
           },
         ],
@@ -4590,8 +4590,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~Unless you don't study~~ → Unless you study (unless = if not, двойное отрицание ненужно)",
-              "~~As long as you'll be honest~~ → As long as you <em>are</em> honest",
+              "<s>Unless you don't study</s> → Unless you study (unless = if not, двойное отрицание ненужно)",
+              "<s>As long as you'll be honest</s> → As long as you <em>are</em> honest",
             ],
           },
           {
@@ -4624,7 +4624,7 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Suppose you would win~~ → Suppose you <em>won</em> (Past Simple для гипотезы)',
+              '<s>Suppose you would win</s> → Suppose you <em>won</em> (Past Simple для гипотезы)',
             ],
           },
         ],
@@ -4661,8 +4661,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Only when I left, I realised~~ → Only when I left <em>did I</em> realise (инверсия!)',
-              '~~Only after years of practice, she mastered~~ → ... <em>did she master</em>',
+              '<s>Only when I left, I realised</s> → Only when I left <em>did I</em> realise (инверсия!)',
+              '<s>Only after years of practice, she mastered</s> → ... <em>did she master</em>',
             ],
           },
           {
@@ -4695,8 +4695,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~So great his relief was that~~ → So great <em>was</em> his relief',
-              '~~Such great was her talent~~ → Such <em>was</em> her talent / <em>So great was</em> her talent',
+              '<s>So great his relief was that</s> → So great <em>was</em> his relief',
+              '<s>Such great was her talent</s> → Such <em>was</em> her talent / <em>So great was</em> her talent',
             ],
           },
         ],
@@ -4737,8 +4737,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Prices appear rising~~ → Prices appear <em>to be rising</em>',
-              '~~Results seem suggest~~ → Results seem <em>to suggest</em>',
+              '<s>Prices appear rising</s> → Prices appear <em>to be rising</em>',
+              '<s>Results seem suggest</s> → Results seem <em>to suggest</em>',
             ],
           },
           {
@@ -4775,7 +4775,7 @@ export const DATA: Level[] = [
             ],
             mistakes: [
               'Путаница furthermore/moreover — оба добавляют, но moreover сильнее',
-              '~~Conversely, this shows the same~~ — conversely вводит контраст, не подтверждение',
+              '<s>Conversely, this shows the same</s> — conversely вводит контраст, не подтверждение',
             ],
           },
         ],
@@ -4810,7 +4810,7 @@ export const DATA: Level[] = [
             ],
             mistakes: [
               'Смешение регистров: формальное начало и разговорное окончание в одном тексте',
-              '~~I would like to ask about this thing~~ → <em>this matter</em> (формальный регистр)',
+              '<s>I would like to ask about this thing</s> → <em>this matter</em> (формальный регистр)',
             ],
           },
           {
@@ -4842,7 +4842,7 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She is very thin~~ (нейтрально) vs намеренное <em>slim</em> (+) или <em>skinny</em> (−)',
+              '<s>She is very thin</s> (нейтрально) vs намеренное <em>slim</em> (+) или <em>skinny</em> (−)',
               'Использование слова с неверной коннотацией при комплименте: <em>stubborn</em> вместо <em>determined</em>',
             ],
           },
@@ -4881,7 +4881,7 @@ export const DATA: Level[] = [
             note: 'conduct research, draw conclusions, reach a consensus, address an issue',
             exp: `На C2 важно использовать «правильный» глагол с каждым существительным.
 <br><br>Академические коллокации:
-<br>• <em>conduct/carry out</em> research (не ~~make/do~~)
+<br>• <em>conduct/carry out</em> research (не <s>make/do</s>)
 <br>• <em>draw/reach</em> a conclusion
 <br>• <em>raise/address/tackle</em> an issue
 <br>• <em>reach/achieve</em> a consensus
@@ -4910,9 +4910,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~make research~~ → <em>conduct/carry out</em> research',
-              '~~do a conclusion~~ → <em>draw/reach</em> a conclusion',
-              '~~make an issue~~ → <em>raise/address</em> an issue',
+              '<s>make research</s> → <em>conduct/carry out</em> research',
+              '<s>do a conclusion</s> → <em>draw/reach</em> a conclusion',
+              '<s>make an issue</s> → <em>raise/address</em> an issue',
             ],
           },
         ],
@@ -4954,8 +4954,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Weather permitting, the picnic will be had by us~~ → избыточный пассив',
-              '~~Her eyes filling with tears, she left~~ — допустимо, но <em>Her eyes filled</em> точнее для завершённого факта',
+              '<s>Weather permitting, the picnic will be had by us</s> → избыточный пассив',
+              '<s>Her eyes filling with tears, she left</s> — допустимо, но <em>Her eyes filled</em> точнее для завершённого факта',
             ],
           },
         ],
@@ -4991,8 +4991,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~I wanted to go but didn't want to~~ → <em>but didn't</em> (опускаем want to)",
-              "~~She said she'd call and she said~~ → <em>and she did</em> (замещение через do)",
+              "<s>I wanted to go but didn't want to</s> → <em>but didn't</em> (опускаем want to)",
+              "<s>She said she'd call and she said</s> → <em>and she did</em> (замещение через do)",
             ],
           },
           {
@@ -5024,9 +5024,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I saw her to leave~~ → I saw her <em>leave</em> (после see без to)',
-              '~~She was made to leave~~ — правильно! В пассиве — с to',
-              '~~I want that she stays~~ → I want <em>her to stay</em>',
+              '<s>I saw her to leave</s> → I saw her <em>leave</em> (после see без to)',
+              '<s>She was made to leave</s> — правильно! В пассиве — с to',
+              '<s>I want that she stays</s> → I want <em>her to stay</em>',
             ],
           },
         ],
@@ -5064,8 +5064,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~By next year I will been studying~~ → I will <em>have been</em> studying',
-              '~~She will have been work~~ → She will have been <em>working</em>',
+              '<s>By next year I will been studying</s> → I will <em>have been</em> studying',
+              '<s>She will have been work</s> → She will have been <em>working</em>',
             ],
           },
           {
@@ -5097,8 +5097,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She said that water is boiling~~ (факт) → water <em>boils</em>',
-              '~~He said he seen it~~ → He said he <em>had seen</em> it',
+              '<s>She said that water is boiling</s> (факт) → water <em>boils</em>',
+              '<s>He said he seen it</s> → He said he <em>had seen</em> it',
             ],
           },
         ],
@@ -5131,8 +5131,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~She was tired, yet kept working~~ — верно без «she» во второй части',
-              "~~She didn't call nor she wrote~~ → nor <em>did she</em> write (инверсия!)",
+              '<s>She was tired, yet kept working</s> — верно без «she» во второй части',
+              "<s>She didn't call nor she wrote</s> → nor <em>did she</em> write (инверсия!)",
             ],
           },
           {
@@ -5164,8 +5164,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~Although the rain, we went~~ → Although <em>it was raining</em>',
-              '~~Seeing that the deadline passed~~ → had passed (Past Perfect перед другим прошлым)',
+              '<s>Although the rain, we went</s> → Although <em>it was raining</em>',
+              '<s>Seeing that the deadline passed</s> → had passed (Past Perfect перед другим прошлым)',
             ],
           },
         ],
@@ -5202,8 +5202,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~However she decided to stay~~ → However<em>,</em> she decided',
-              '~~She was tired; and she went to bed~~ → без союза после точки с запятой: <em>She was tired; she went to bed.</em>',
+              '<s>However she decided to stay</s> → However<em>,</em> she decided',
+              '<s>She was tired; and she went to bed</s> → без союза после точки с запятой: <em>She was tired; she went to bed.</em>',
             ],
           },
           {
@@ -5234,9 +5234,9 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              "~~Its a big house~~ → <em>It's</em> a big house",
-              "~~The cats tail~~ → The cat<em>'s</em> tail",
-              "~~Her's book~~ → <em>Her</em> book (у притяжательных местоимений нет апострофа)",
+              "<s>Its a big house</s> → <em>It's</em> a big house",
+              "<s>The cats tail</s> → The cat<em>'s</em> tail",
+              "<s>Her's book</s> → <em>Her</em> book (у притяжательных местоимений нет апострофа)",
             ],
           },
           {
@@ -5262,8 +5262,8 @@ export const DATA: Level[] = [
               },
             ],
             mistakes: [
-              '~~I wonder what does the data show~~ → what the data <em>shows</em> (нет инверсии в косвенном вопросе)',
-              '~~The question is whether does he know~~ → whether he <em>knows</em>',
+              '<s>I wonder what does the data show</s> → what the data <em>shows</em> (нет инверсии в косвенном вопросе)',
+              '<s>The question is whether does he know</s> → whether he <em>knows</em>',
             ],
           },
         ],
