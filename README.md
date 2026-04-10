@@ -15,6 +15,10 @@ An interactive web application for learning English grammar rules and verb tense
 - Each rule includes explanation, examples with translations, common mistakes, tips, and reference links (YouTube, Russian/English sources)
 - Expandable cards — click a rule to read the full explanation
 
+![Opened rule card](screenshots/rules.png)
+
+> The screenshot above shows the A1 level expanded with the first rule open ("am / is / are — формы глагола to be"). Each rule card contains: the rule explanation, usage examples with Russian translations, exceptions, common mistakes, and reference links (YouTube, Russian/English articles).
+
 ### Progress Tracking
 - Mark rules as done/undone — saved automatically to localStorage
 - Dashboard shows overall progress %, completed rule count, and completed levels
