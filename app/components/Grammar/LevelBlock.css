@@ -1,0 +1,247 @@
+.level-path {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.level-block {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.level-block:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -24px;
+  width: 2px;
+  height: 28px;
+  background: var(--border2);
+  z-index: 2;
+}
+
+.level-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem 1.15rem;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: none;
+  cursor: pointer;
+  transition:
+    border-color 0.25s,
+    background 0.25s,
+    box-shadow 0.25s;
+  position: relative;
+  z-index: 3;
+  user-select: none;
+}
+
+.level-block.open .level-header {
+  border-color: var(--border2);
+}
+.level-header:hover {
+  border-color: var(--border2);
+  background: var(--bg3);
+}
+.level-header:active {
+  transform: scale(0.995);
+}
+
+.level-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  flex-shrink: 0;
+  border: 2px solid;
+  transition: all 0.3s;
+}
+
+.level-block.open .level-dot {
+  animation: dotPulse 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes dotPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18) rotate(8deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.level-info {
+  flex: 1;
+  min-width: 0;
+}
+.level-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.level-sub {
+  font-size: 12px;
+  color: var(--muted2);
+  margin-top: 1px;
+  font-weight: 300;
+}
+
+.level-stats {
+  text-align: right;
+  flex-shrink: 0;
+}
+.level-frac {
+  font-family: "DM Mono", monospace;
+  font-size: 17px;
+  font-weight: 500;
+}
+.level-pct {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+.level-toggle {
+  color: var(--muted);
+  font-size: 15px;
+  transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1);
+  flex-shrink: 0;
+}
+
+.level-block.open .level-toggle {
+  transform: rotate(180deg);
+}
+
+.level-progress-bar {
+  height: 3px;
+  background: var(--border);
+  border-radius: 0 0 13px 13px;
+  overflow: hidden;
+  margin-top: -3px;
+  position: relative;
+  z-index: 3;
+}
+
+.level-progress-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.level-content {
+  padding: 0 0 4px 50px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-content::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -16px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--border2);
+}
+
+.category {
+  margin-top: 16px;
+  position: relative;
+}
+
+.category::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 5.5px;
+  width: 20px;
+  height: 2px;
+  background: var(--border2);
+}
+
+.category-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.rules-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Entrance animations when level opens */
+.level-block.open .rules-grid .rule-item {
+  animation: ruleItemEnter 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes ruleItemEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.level-block.open .category {
+  animation: categoryFade 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes categoryFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Grammar tab */
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--muted);
+}
+
+.reset-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  transition: all 0.15s;
+  margin-top: 2rem;
+}
+
+.reset-btn:hover {
+  border-color: var(--border2);
+  color: var(--text);
+}

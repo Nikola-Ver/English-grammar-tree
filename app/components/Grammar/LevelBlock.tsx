@@ -1,4 +1,5 @@
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import './LevelBlock.css';
 import type { Level } from '../../data/grammar';
 import type { DoneMap } from '../../hooks/useProgress';
 import { countLevel } from '../../hooks/useProgress';
@@ -19,7 +20,7 @@ export function LevelBlock({ level, done, onToggleRule, searchQuery, forceOpen }
   const contentRef = useRef<HTMLDivElement>(null);
   const k = level.id.toLowerCase();
   const { total, checked } = countLevel(level, done);
-  const pct = total ? Math.round(checked / total * 100) : 0;
+  const pct = total ? Math.round((checked / total) * 100) : 0;
 
   const open = isOpen || forceOpen;
 
@@ -37,9 +38,8 @@ export function LevelBlock({ level, done, onToggleRule, searchQuery, forceOpen }
 
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          el.style.transition =
-            'max-height 0.46s cubic-bezier(0.22,1,0.36,1), opacity 0.3s ease';
-          el.style.maxHeight = el.scrollHeight + 'px';
+          el.style.transition = 'max-height 0.46s cubic-bezier(0.22,1,0.36,1), opacity 0.3s ease';
+          el.style.maxHeight = `${el.scrollHeight}px`;
           el.style.opacity = '1';
 
           const onEnd = (e: TransitionEvent) => {
@@ -54,22 +54,21 @@ export function LevelBlock({ level, done, onToggleRule, searchQuery, forceOpen }
     } else {
       if (!everOpened) return; // never opened — nothing to close
       // Pin current height so the transition has a numeric start value
-      el.style.maxHeight = el.scrollHeight + 'px';
+      el.style.maxHeight = `${el.scrollHeight}px`;
       el.style.opacity = '1';
 
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          el.style.transition =
-            'max-height 0.38s cubic-bezier(0.4,0,0.6,1), opacity 0.25s ease';
+          el.style.transition = 'max-height 0.38s cubic-bezier(0.4,0,0.6,1), opacity 0.25s ease';
           el.style.maxHeight = '0';
           el.style.opacity = '0';
         });
       });
     }
-  }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [open, everOpened]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const toggleOpen = useCallback(() => {
-    setIsOpen(v => !v);
+    setIsOpen((v) => !v);
   }, []);
 
   const q = searchQuery.trim().toLowerCase();
@@ -88,7 +87,9 @@ export function LevelBlock({ level, done, onToggleRule, searchQuery, forceOpen }
           <div className="level-sub">{level.sub}</div>
         </div>
         <div className="level-stats">
-          <div className="level-frac" style={{ color: level.color }}>{checked}/{total}</div>
+          <div className="level-frac" style={{ color: level.color }}>
+            {checked}/{total}
+          </div>
           <div className="level-pct">{pct}%</div>
         </div>
         <div className="level-toggle">▾</div>
@@ -100,35 +101,42 @@ export function LevelBlock({ level, done, onToggleRule, searchQuery, forceOpen }
         />
       </div>
       <div ref={contentRef} className="level-content">
-        {everOpened && level.categories.map((cat, ci) => {
-          let ruleIdx = 0;
-          return (
-            <div key={cat.name} className="category" style={{ animationDelay: `${0.02 + ci * 0.06}s` }}>
-              <div className="category-title">{cat.name}</div>
-              <div className="rules-grid">
-                {cat.rules.map(rule => {
-                  const searchHidden = q
-                    ? !(rule.text + ' ' + (rule.note || '') + ' ' + (rule.exp || '')).toLowerCase().includes(q)
-                    : false;
-                  const delay = 0.05 + ruleIdx * 0.028;
-                  ruleIdx++;
-                  return (
-                    <RuleItem
-                      key={rule.id}
-                      rule={rule}
-                      level={level}
-                      categoryName={cat.name}
-                      isDone={!!done[rule.id]}
-                      animDelay={delay}
-                      onToggle={onToggleRule}
-                      searchHidden={searchHidden}
-                    />
-                  );
-                })}
+        {everOpened &&
+          level.categories.map((cat, ci) => {
+            let ruleIdx = 0;
+            return (
+              <div
+                key={cat.name}
+                className="category"
+                style={{ animationDelay: `${0.02 + ci * 0.06}s` }}
+              >
+                <div className="category-title">{cat.name}</div>
+                <div className="rules-grid">
+                  {cat.rules.map((rule) => {
+                    const searchHidden = q
+                      ? !`${rule.text} ${rule.note || ''} ${rule.exp || ''}`
+                          .toLowerCase()
+                          .includes(q)
+                      : false;
+                    const delay = 0.05 + ruleIdx * 0.028;
+                    ruleIdx++;
+                    return (
+                      <RuleItem
+                        key={rule.id}
+                        rule={rule}
+                        level={level}
+                        categoryName={cat.name}
+                        isDone={!!done[rule.id]}
+                        animDelay={delay}
+                        onToggle={onToggleRule}
+                        searchHidden={searchHidden}
+                      />
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { DATA } from '../data/grammar';
+import { useEffect, useState } from 'react';
 import type { Level } from '../data/grammar';
+import { DATA } from '../data/grammar';
 
 export type DoneMap = Record<string, boolean>;
 
@@ -19,9 +19,10 @@ function saveDone(d: DoneMap) {
 }
 
 export function countLevel(lvl: Level, done: DoneMap) {
-  let total = 0, checked = 0;
-  lvl.categories.forEach(cat => {
-    cat.rules.forEach(r => {
+  let total = 0,
+    checked = 0;
+  lvl.categories.forEach((cat) => {
+    cat.rules.forEach((r) => {
       total++;
       if (done[r.id]) checked++;
     });
@@ -30,8 +31,9 @@ export function countLevel(lvl: Level, done: DoneMap) {
 }
 
 export function countAll(done: DoneMap) {
-  let total = 0, checked = 0;
-  DATA.forEach(lvl => {
+  let total = 0,
+    checked = 0;
+  DATA.forEach((lvl) => {
     const x = countLevel(lvl, done);
     total += x.total;
     checked += x.checked;
@@ -47,7 +49,7 @@ export function useProgress() {
   }, [done]);
 
   function toggleRule(id: string) {
-    setDone(prev => {
+    setDone((prev) => {
       const next = { ...prev, [id]: !prev[id] };
       if (!next[id]) delete next[id];
       return next;

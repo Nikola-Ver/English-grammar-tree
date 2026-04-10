@@ -1,0 +1,237 @@
+.rule-item {
+  border-radius: 9px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+  overflow: hidden;
+}
+
+.rule-item:hover {
+  border-color: var(--border2);
+}
+.rule-item.done {
+  border-color: transparent;
+  background: transparent;
+}
+.rule-item.hidden-search {
+  display: none;
+}
+
+.rule-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 9px 11px;
+  cursor: pointer;
+}
+
+.rule-check {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border2);
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-size: 10px;
+  position: relative;
+  overflow: visible;
+}
+
+.rule-check svg.chk-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.rule-check svg.chk-svg path {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 0;
+  transition: none;
+}
+
+.rule-check.anim-check svg.chk-svg path {
+  animation: checkmarkDraw 0.25s 0.08s ease forwards;
+}
+
+.rule-check.anim-check {
+  animation: checkPulse 0.55s ease forwards;
+}
+
+.rule-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.rule-text {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.rule-item.done .rule-text {
+  color: var(--muted2);
+  text-decoration: line-through;
+  text-decoration-color: var(--muted);
+}
+
+.rule-note {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 2px;
+  display: block;
+  font-style: italic;
+}
+
+.rule-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.test-btn {
+  background: none;
+  border: 1px solid rgba(129, 140, 248, 0.35);
+  border-radius: 5px;
+  color: var(--b2);
+  font-size: 10px;
+  padding: 2px 7px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  transition: all 0.15s;
+  white-space: nowrap;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.test-btn:hover {
+  border-color: var(--b2);
+  background: rgba(129, 140, 248, 0.08);
+  color: #a5b4fc;
+}
+.test-btn:active {
+  transform: scale(0.95);
+}
+.test-btn.copied {
+  border-color: var(--a1);
+  color: var(--a1);
+  background: rgba(74, 222, 128, 0.08);
+}
+
+.rule-arrow {
+  font-size: 11px;
+  color: var(--muted);
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    color 0.2s;
+  flex-shrink: 0;
+  line-height: 1;
+  padding: 2px 3px;
+  margin-top: 3px;
+}
+
+.rule-arrow.open {
+  transform: rotate(180deg);
+  color: var(--b2);
+}
+
+/* Check animations */
+@keyframes checkPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  }
+  60% {
+    box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+  }
+}
+
+@keyframes checkmarkDraw {
+  0% {
+    stroke-dashoffset: 20;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.rule-item.celebrate-enter {
+  animation:
+    ruleSlideIn 0.25s ease,
+    ruleGlow 0.7s 0.1s ease forwards;
+}
+
+.rule-item.celebrate-enter .rule-text {
+  animation: ruleSlideIn 0.3s ease;
+}
+
+.rule-item.celebrate-enter.done .rule-text {
+  animation: textStrike 0.4s 0.2s ease forwards;
+  text-decoration-color: transparent;
+}
+
+.rule-item.uncheck-anim .rule-check {
+  animation: uncheck 0.3s ease;
+}
+
+@keyframes ruleSlideIn {
+  0% {
+    transform: translateX(-6px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ruleGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.25);
+    border-color: rgba(74, 222, 128, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 18px 2px rgba(74, 222, 128, 0.18);
+    border-color: rgba(74, 222, 128, 0.9);
+  }
+  100% {
+    box-shadow: none;
+    border-color: transparent;
+  }
+}
+
+@keyframes textStrike {
+  0% {
+    text-decoration-color: transparent;
+  }
+  100% {
+    text-decoration-color: var(--muted);
+  }
+}
+
+@keyframes uncheck {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(0.7) rotate(-15deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

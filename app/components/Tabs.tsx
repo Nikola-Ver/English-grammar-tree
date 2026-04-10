@@ -1,3 +1,5 @@
+import './Tabs.css';
+
 interface Props {
   activeTab: 'grammar' | 'tenses';
   onSwitch: (tab: 'grammar' | 'tenses') => void;

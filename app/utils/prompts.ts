@@ -1,4 +1,4 @@
-import type { Rule, Level, Category } from '../data/grammar';
+import type { Category, Level, Rule } from '../data/grammar';
 
 export function buildRulePrompt(rule: Rule, level: Level, category: Category): string {
   let prompt = `Я изучаю английскую грамматику (уровень ${level.name}, тема «${category.name}»).\n\n`;
@@ -13,21 +13,29 @@ export function buildRulePrompt(rule: Rule, level: Level, category: Category): s
   return prompt;
 }
 
-interface DoneRule { rule: Rule; level: Level; category: Category }
+interface DoneRule {
+  rule: Rule;
+  level: Level;
+  category: Category;
+}
 
 export function buildGlobalTestPrompt(doneRules: DoneRule[]): string {
-  const ruleList = doneRules.map((item, idx) =>
-    `${idx + 1}. [${item.level.id} — ${item.category.name}] ${item.rule.text}`
-  ).join('\n');
+  const ruleList = doneRules
+    .map((item, idx) => `${idx + 1}. [${item.level.id} — ${item.category.name}] ${item.rule.text}`)
+    .join('\n');
 
   let prompt = 'Я изучил(а) следующие правила английской грамматики:\n\n';
-  prompt += ruleList + '\n\n';
+  prompt += `${ruleList}\n\n`;
   prompt += 'Пожалуйста, проведи комплексное тестирование по всем этим правилам:\n';
-  prompt += '1. Сначала дай 10 упражнений на заполнение пропусков, смешивая разные правила из списка.\n';
+  prompt +=
+    '1. Сначала дай 10 упражнений на заполнение пропусков, смешивая разные правила из списка.\n';
   prompt += '2. Дай 5 предложений с ошибками для исправления (ошибки касаются правил из списка).\n';
-  prompt += '3. Дай 5 предложений для перевода с русского на английский (проверяют несколько правил).\n';
-  prompt += '4. Задай 3 вопроса в формате «выбери правильный вариант» (multiple choice) с объяснением.\n';
-  prompt += '5. После моих ответов — проверь и дай подробную обратную связь с объяснением ошибок.\n\n';
+  prompt +=
+    '3. Дай 5 предложений для перевода с русского на английский (проверяют несколько правил).\n';
+  prompt +=
+    '4. Задай 3 вопроса в формате «выбери правильный вариант» (multiple choice) с объяснением.\n';
+  prompt +=
+    '5. После моих ответов — проверь и дай подробную обратную связь с объяснением ошибок.\n\n';
   prompt += 'Начни с упражнений, не раскрывая ответы заранее.';
   return prompt;
 }

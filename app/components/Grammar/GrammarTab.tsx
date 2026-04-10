@@ -15,10 +15,10 @@ export function GrammarTab({ done, onToggleRule, onReset, searchQuery }: Props) 
   // Determine which levels need to be force-opened for search
   const forceOpenSet = new Set<string>();
   if (q) {
-    DATA.forEach(lvl => {
-      lvl.categories.forEach(cat => {
-        cat.rules.forEach(rule => {
-          if ((rule.text + ' ' + (rule.note || '') + ' ' + (rule.exp || '')).toLowerCase().includes(q)) {
+    DATA.forEach((lvl) => {
+      lvl.categories.forEach((cat) => {
+        cat.rules.forEach((rule) => {
+          if (`${rule.text} ${rule.note || ''} ${rule.exp || ''}`.toLowerCase().includes(q)) {
             forceOpenSet.add(lvl.id);
           }
         });
@@ -26,13 +26,15 @@ export function GrammarTab({ done, onToggleRule, onReset, searchQuery }: Props) 
     });
   }
 
-  const hasResults = !q || DATA.some(lvl =>
-    lvl.categories.some(cat =>
-      cat.rules.some(rule =>
-        (rule.text + ' ' + (rule.note || '') + ' ' + (rule.exp || '')).toLowerCase().includes(q)
-      )
-    )
-  );
+  const hasResults =
+    !q ||
+    DATA.some((lvl) =>
+      lvl.categories.some((cat) =>
+        cat.rules.some((rule) =>
+          `${rule.text} ${rule.note || ''} ${rule.exp || ''}`.toLowerCase().includes(q),
+        ),
+      ),
+    );
 
   function handleReset() {
     if (window.confirm('Сбросить весь прогресс?')) {
@@ -43,7 +45,7 @@ export function GrammarTab({ done, onToggleRule, onReset, searchQuery }: Props) 
   return (
     <div id="pane-grammar" className="tab-pane active">
       <div className="level-path">
-        {DATA.map(level => (
+        {DATA.map((level) => (
           <LevelBlock
             key={level.id}
             level={level}
@@ -54,10 +56,10 @@ export function GrammarTab({ done, onToggleRule, onReset, searchQuery }: Props) 
           />
         ))}
       </div>
-      {!hasResults && (
-        <div className="no-results">Ничего не найдено по запросу</div>
-      )}
-      <button className="reset-btn" onClick={handleReset}>↺ Сбросить прогресс</button>
+      {!hasResults && <div className="no-results">Ничего не найдено по запросу</div>}
+      <button className="reset-btn" onClick={handleReset}>
+        ↺ Сбросить прогресс
+      </button>
     </div>
   );
 }

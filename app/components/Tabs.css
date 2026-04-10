@@ -1,0 +1,31 @@
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 7px 16px;
+  font-size: 13px;
+  color: var(--muted2);
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  transition: all 0.18s;
+  font-weight: 400;
+}
+
+.tab-btn:hover {
+  border-color: var(--border2);
+  color: var(--text);
+}
+
+.tab-btn.active {
+  background: rgba(129, 140, 248, 0.12);
+  border-color: var(--b2);
+  color: var(--b2);
+  font-weight: 500;
+}

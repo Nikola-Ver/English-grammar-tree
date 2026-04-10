@@ -1,0 +1,70 @@
+:root {
+  --bg: #0d0f14;
+  --bg2: #131620;
+  --bg3: #1a1e2a;
+  --border: rgba(255, 255, 255, 0.07);
+  --border2: rgba(255, 255, 255, 0.13);
+  --text: #e8eaf0;
+  --muted: #6b7080;
+  --muted2: #8b92a8;
+  --a1: #4ade80;
+  --a1bg: rgba(74, 222, 128, 0.09);
+  --a2: #34d399;
+  --a2bg: rgba(52, 211, 153, 0.09);
+  --b1: #38bdf8;
+  --b1bg: rgba(56, 189, 248, 0.09);
+  --b2: #818cf8;
+  --b2bg: rgba(129, 140, 248, 0.09);
+  --c1: #f472b6;
+  --c1bg: rgba(244, 114, 182, 0.09);
+  --c2: #fb923c;
+  --c2bg: rgba(251, 146, 60, 0.09);
+  --yt: #ff4444;
+  --ru: #5b9cf6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 60% 40% at 15% 20%, rgba(129, 140, 248, 0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 85% 80%, rgba(251, 146, 60, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 6rem;
+}
+
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+
+.particle-canvas {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}

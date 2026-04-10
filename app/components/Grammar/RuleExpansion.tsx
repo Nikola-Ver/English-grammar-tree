@@ -1,4 +1,5 @@
-import { useRef, useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import './RuleExpansion.css';
 import type { Rule } from '../../data/grammar';
 
 interface Props {
@@ -25,7 +26,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
         requestAnimationFrame(() => {
           el.style.transition =
             'max-height 0.44s cubic-bezier(0.22,1,0.36,1), opacity 0.28s ease, padding 0.3s ease';
-          el.style.maxHeight = el.scrollHeight + 30 + 'px';
+          el.style.maxHeight = `${el.scrollHeight + 30}px`;
           el.style.opacity = '1';
           el.style.padding = '11px 13px';
 
@@ -40,7 +41,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
       });
     } else {
       if (!everOpened) return;
-      el.style.maxHeight = el.scrollHeight + 30 + 'px';
+      el.style.maxHeight = `${el.scrollHeight + 30}px`;
       el.style.opacity = '1';
 
       requestAnimationFrame(() => {
@@ -53,7 +54,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
         });
       });
     }
-  }, [isOpen]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isOpen, everOpened]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!rule.exp) return null;
 
@@ -72,14 +73,12 @@ export function RuleExpansion({ rule, isOpen }: Props) {
       )}
       {rule.exc && (
         <div className="exc-block">
-          <strong>⚠️ Исключения:</strong>{' '}
-          <span dangerouslySetInnerHTML={{ __html: rule.exc }} />
+          <strong>⚠️ Исключения:</strong> <span dangerouslySetInnerHTML={{ __html: rule.exc }} />
         </div>
       )}
       {rule.tip && (
         <div className="tip-block">
-          <strong>💡 Совет:</strong>{' '}
-          <span dangerouslySetInnerHTML={{ __html: rule.tip }} />
+          <strong>💡 Совет:</strong> <span dangerouslySetInnerHTML={{ __html: rule.tip }} />
         </div>
       )}
       {rule.markers && rule.markers.tags.length > 0 && (
@@ -87,12 +86,12 @@ export function RuleExpansion({ rule, isOpen }: Props) {
           <strong>⏱ Маркеры времени</strong>
           <div className="markers-wrap">
             {rule.markers.tags.map((t, i) => (
-              <span key={i} className="marker-tag">{t}</span>
+              <span key={i} className="marker-tag">
+                {t}
+              </span>
             ))}
           </div>
-          {rule.markers.note && (
-            <div className="markers-note">{rule.markers.note}</div>
-          )}
+          {rule.markers.note && <div className="markers-note">{rule.markers.note}</div>}
         </div>
       )}
       {rule.mistakes && rule.mistakes.length > 0 && (
@@ -116,7 +115,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
                 href={l.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={e => e.stopPropagation()}
+                onClick={(e) => e.stopPropagation()}
               >
                 <span className="lnk-dot" />
                 {icon} {l.label}

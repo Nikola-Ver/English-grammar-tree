@@ -1,13 +1,16 @@
 import { useState } from 'react';
-import { TENSE_TREE } from '../../data/tenseTree';
 import { TENSES } from '../../data/tenses';
+import { TENSE_TREE } from '../../data/tenseTree';
 import { TenseResult } from './TenseResult';
 
 interface Props {
   onSelectTense: (key: string) => void;
 }
 
-interface PathStep { q: string; a: string }
+interface PathStep {
+  q: string;
+  a: string;
+}
 
 export function TenseTree({ onSelectTense }: Props) {
   const [node, setNode] = useState('start');
@@ -53,7 +56,9 @@ export function TenseTree({ onSelectTense }: Props) {
       {path.length > 0 && (
         <div className="tt-breadcrumb">
           {path.map((p, i) => (
-            <span key={i} className="tt-crumb">{p.a}</span>
+            <span key={i} className="tt-crumb">
+              {p.a}
+            </span>
           ))}
         </div>
       )}

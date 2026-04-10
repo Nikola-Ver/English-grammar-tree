@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import './styles/globals.css';
-import { useProgress } from './hooks/useProgress';
+import './styles/base.css';
+import { GrammarTab } from './components/Grammar/GrammarTab';
 import { Header } from './components/Header/Header';
 import { Tabs } from './components/Tabs';
-import { GrammarTab } from './components/Grammar/GrammarTab';
 import { TensesTab } from './components/Tenses/TensesTab';
+import { useProgress } from './hooks/useProgress';
 
 type Tab = 'grammar' | 'tenses';
 
@@ -15,11 +15,7 @@ export function App() {
 
   return (
     <div className="wrap">
-      <Header
-        done={done}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-      />
+      <Header done={done} searchQuery={searchQuery} onSearchChange={setSearchQuery} />
       <Tabs activeTab={activeTab} onSwitch={setActiveTab} />
       {activeTab === 'grammar' ? (
         <GrammarTab
