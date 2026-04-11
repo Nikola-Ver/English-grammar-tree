@@ -457,6 +457,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
 
       {/* Ephemeral share / lock popover */}
       {selPop &&
+        !isScrolling &&
         createPortal(
           <div
             className={`sel-share-pop${selCopied ? ' copied' : ''}`}
@@ -485,11 +486,12 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               </button>
             </div>
           </div>,
-          (!isScrolling && document.body) as Element,
+          document.body,
         )}
 
       {/* Locked selection: highlight overlay + message panel */}
       {lockedSel &&
+        !isScrolling &&
         lockAnchor &&
         createPortal(
           <>
@@ -550,7 +552,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               </div>
             </div>
           </>,
-          (!isScrolling && document.body) as Element,
+          document.body,
         )}
 
       {/* Deep-link message card shown to the recipient */}
