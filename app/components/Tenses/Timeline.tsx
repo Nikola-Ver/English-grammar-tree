@@ -34,6 +34,15 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     const C_MUTED = cs.getPropertyValue('--muted').trim() || '#6b7080';
     const C_MUTED2 = cs.getPropertyValue('--muted2').trim() || '#8b92a8';
     const C_BG2 = cs.getPropertyValue('--bg2').trim() || '#131620';
+    const C_TEXT = cs.getPropertyValue('--text').trim() || '#e8eaf0';
+
+    function hexToRgba(hex: string, alpha: number): string {
+      const h = hex.replace('#', '');
+      const r = parseInt(h.slice(0, 2), 16);
+      const g = parseInt(h.slice(2, 4), 16);
+      const b = parseInt(h.slice(4, 6), 16);
+      return `rgba(${r},${g},${b},${alpha})`;
+    }
 
     const AXIS_MIN = -10,
       AXIS_MAX = 10;
@@ -48,7 +57,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     const ticks = [-10, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10];
     ticks.forEach((t) => {
       const x = xOf(t);
-      ctx.strokeStyle = t === 0 ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.05)';
+      ctx.strokeStyle = hexToRgba(C_TEXT, t === 0 ? 0.15 : 0.05);
       ctx.lineWidth = t === 0 ? 1.5 : 1;
       ctx.beginPath();
       ctx.moveTo(x, PAD_T - 14);
@@ -94,7 +103,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
         ctx.fillRect(0, PAD_T + i * ROW_H + 3, 3, ROW_H - 6);
         ctx.restore();
       } else {
-        ctx.fillStyle = i % 2 === 0 ? 'rgba(255,255,255,0.01)' : 'transparent';
+        ctx.fillStyle = i % 2 === 0 ? hexToRgba(C_TEXT, 0.02) : 'transparent';
         ctx.fillRect(PAD_L, PAD_T + i * ROW_H, W - PAD_L - PAD_R, ROW_H);
       }
 
@@ -204,7 +213,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
       ctx.restore();
     });
 
-    ctx.strokeStyle = 'rgba(255,255,255,0.55)';
+    ctx.strokeStyle = hexToRgba(C_TEXT, 0.5);
     ctx.lineWidth = 2;
     ctx.setLineDash([4, 3]);
     ctx.beginPath();
@@ -212,21 +221,33 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     ctx.lineTo(nowX, PAD_T + ROWS * ROW_H);
     ctx.stroke();
     ctx.setLineDash([]);
-    ctx.fillStyle = 'rgba(255,255,255,0.8)';
+    ctx.fillStyle = hexToRgba(C_TEXT, 0.8);
     ctx.font = 'bold 10px Outfit,sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText('▼ Сейчас', nowX, PAD_T - 16);
   }
+
+  const drawRef = useRef(draw);
+  drawRef.current = draw;
 
   useEffect(() => {
     draw();
   });
 
   useEffect(() => {
-    const onResize = () => draw();
+    const onResize = () => drawRef.current();
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
-  }, [draw]);
+  }, []);
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => drawRef.current());
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+    return () => observer.disconnect();
+  }, []);
 
   function handleCanvasClick(e: React.MouseEvent<HTMLCanvasElement>) {
     const canvas = canvasRef.current;

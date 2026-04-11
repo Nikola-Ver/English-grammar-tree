@@ -8,6 +8,7 @@ import { TensesTab } from './components/Tenses/TensesTab';
 import { DATA } from './data/grammar';
 import { MURPHY_DATA } from './data/murphy';
 import { useProgress } from './hooks/useProgress';
+import { useTheme } from './hooks/useTheme';
 import { parseRuleHash, parseTenseHash } from './utils/deepLink';
 
 type Tab = 'grammar' | 'murphy' | 'tenses';
@@ -33,6 +34,7 @@ export function App() {
   const [targetTenseKey, setTargetTenseKey] = useState<string | null>(null);
   const grammarProgress = useProgress('eng_v4');
   const murphyProgress = useProgress('murphy_v1');
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const parsedRule = parseRuleHash();
@@ -62,7 +64,12 @@ export function App() {
 
   return (
     <div className="wrap">
-      <Header searchQuery={searchQuery} onSearchChange={setSearchQuery} />
+      <Header
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
       <Tabs activeTab={activeTab} onSwitch={handleTabSwitch} />
       {activeTab === 'grammar' && (
         <GrammarTab

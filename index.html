@@ -27,6 +27,27 @@
     />
   </head>
   <body>
+    <script>
+      (function () {
+        var saved = localStorage.getItem('theme-override');
+        var theme =
+          saved === 'light' || saved === 'dark'
+            ? saved
+            : window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark';
+        var el = document.documentElement;
+        el.dataset.theme = theme;
+        el.classList.add('no-transitions');
+        window.addEventListener('DOMContentLoaded', function () {
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              el.classList.remove('no-transitions');
+            });
+          });
+        });
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/app/main.tsx"></script>
   </body>

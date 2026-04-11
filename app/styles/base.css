@@ -21,6 +21,35 @@
   --c2bg: rgba(251, 146, 60, 0.09);
   --yt: #ff4444;
   --ru: #5b9cf6;
+  --grad-tint1: rgba(129, 140, 248, 0.05);
+  --grad-tint2: rgba(251, 146, 60, 0.04);
+}
+
+[data-theme="light"] {
+  --bg: #f0f2f8;
+  --bg2: #e5e8f2;
+  --bg3: #d8dcec;
+  --border: rgba(0, 0, 0, 0.07);
+  --border2: rgba(0, 0, 0, 0.13);
+  --text: #14172b;
+  --muted: #717590;
+  --muted2: #505470;
+  --a1: #16a34a;
+  --a1bg: rgba(22, 163, 74, 0.09);
+  --a2: #059669;
+  --a2bg: rgba(5, 150, 105, 0.09);
+  --b1: #0284c7;
+  --b1bg: rgba(2, 132, 199, 0.09);
+  --b2: #6366f1;
+  --b2bg: rgba(99, 102, 241, 0.09);
+  --c1: #db2777;
+  --c1bg: rgba(219, 39, 119, 0.09);
+  --c2: #ea580c;
+  --c2bg: rgba(234, 88, 12, 0.09);
+  --yt: #dc2626;
+  --ru: #1d4ed8;
+  --grad-tint1: rgba(99, 102, 241, 0.06);
+  --grad-tint2: rgba(234, 88, 12, 0.05);
 }
 
 * {
@@ -29,12 +58,21 @@
   padding: 0;
 }
 
+.no-transitions *,
+.no-transitions *::before,
+.no-transitions *::after {
+  transition: none !important;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
   font-family: "Outfit", sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
 }
 
 body::before {
@@ -42,10 +80,11 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    radial-gradient(ellipse 60% 40% at 15% 20%, rgba(129, 140, 248, 0.05) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 60% at 85% 80%, rgba(251, 146, 60, 0.04) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 40% at 15% 20%, var(--grad-tint1) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 85% 80%, var(--grad-tint2) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
+  transition: background-image 0.3s ease;
 }
 
 .wrap {
