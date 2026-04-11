@@ -27,13 +27,20 @@ export function LevelBlock({
   const [isOpen, setIsOpen] = useState(false);
   const [everOpened, setEverOpened] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  // When forceOpen is true but the user explicitly collapses the level, honour that
+  const [userClosed, setUserClosed] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const closingTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const k = level.id.toLowerCase();
   const { total, checked } = countLevel(level, done);
   const pct = total ? Math.round((checked / total) * 100) : 0;
 
-  const open = isOpen || forceOpen;
+  // Reset user-override whenever forceOpen turns off so next deep-link works
+  useEffect(() => {
+    if (!forceOpen) setUserClosed(false);
+  }, [forceOpen]);
+
+  const open = userClosed ? false : isOpen || forceOpen;
 
   useEffect(() => {
     const el = contentRef.current;
@@ -96,8 +103,14 @@ export function LevelBlock({
   }, []);
 
   const toggleOpen = useCallback(() => {
-    setIsOpen((v) => !v);
-  }, []);
+    if (open) {
+      setUserClosed(true);
+      setIsOpen(false);
+    } else {
+      setUserClosed(false);
+      setIsOpen(true);
+    }
+  }, [open]);
 
   const q = searchQuery.trim().toLowerCase();
   const levelMatches = q

@@ -282,7 +282,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
   async function handleShare(e: React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation();
     const url = buildTenseUrl(tenseKey);
-    history.replaceState(null, '', `#tense-${tenseKey}`);
+    history.replaceState(null, '', '/');
     await copyToClipboard(url);
     setShareCopied(true);
     setTimeout(() => setShareCopied(false), 2000);
@@ -444,7 +444,12 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                 <button
                   className="sel-lock-close"
                   onMouseDown={(e) => e.preventDefault()}
-                  onClick={() => setLockedSel(null)}
+                  onClick={() => {
+                    setLockedSel(null);
+                    if (location.hash.includes('~')) {
+                      history.replaceState(null, '', '/');
+                    }
+                  }}
                   title="Закрыть"
                 >
                   ×
@@ -485,7 +490,13 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
               <button
                 className="sel-deep-msg-close"
                 onMouseDown={(e) => e.preventDefault()}
-                onClick={() => setDeepMsg(null)}
+                onClick={() => {
+                  setDeepMsg(null);
+                  deepMsgSelDataRef.current = null;
+                  if (location.hash.includes('~')) {
+                    history.replaceState(null, '', '/');
+                  }
+                }}
                 title="Закрыть"
               >
                 ×

@@ -98,6 +98,10 @@
   mix-blend-mode: screen;
 }
 
+.sel-highlight-rect--deep {
+  background: rgba(129, 140, 248, 0.3);
+}
+
 /* ── Lock panel (message input + copy link) ───────────────────────────────── */
 
 .sel-lock-panel {

@@ -51,10 +51,19 @@ export function App() {
     }
   }, []);
 
+  function handleTabSwitch(tab: Tab) {
+    if (tab !== activeTab) {
+      history.replaceState(null, '', location.pathname + location.search);
+      setTargetRuleId(null);
+      setTargetTenseKey(null);
+    }
+    setActiveTab(tab);
+  }
+
   return (
     <div className="wrap">
       <Header searchQuery={searchQuery} onSearchChange={setSearchQuery} />
-      <Tabs activeTab={activeTab} onSwitch={setActiveTab} />
+      <Tabs activeTab={activeTab} onSwitch={handleTabSwitch} />
       {activeTab === 'grammar' && (
         <GrammarTab
           done={grammarProgress.done}
