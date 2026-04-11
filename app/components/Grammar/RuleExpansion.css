@@ -1,4 +1,5 @@
 .rule-exp {
+  position: relative;
   margin: 0 11px 11px;
   padding: 0 13px;
   background: var(--bg2);

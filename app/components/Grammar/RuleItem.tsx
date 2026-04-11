@@ -57,6 +57,10 @@ export function RuleItem({
         el.classList.add('anim-check');
         spawnParticles(el, level.color);
         setTimeout(() => el.classList.remove('anim-check'), 600);
+      } else if (el) {
+        const ruleEl = el.closest('.rule-item');
+        ruleEl?.classList.add('uncheck-anim');
+        setTimeout(() => ruleEl?.classList.remove('uncheck-anim'), 400);
       }
       setExpOpen(false);
       onToggle(rule.id);

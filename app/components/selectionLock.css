@@ -107,11 +107,33 @@
   z-index: 9996;
 }
 
+.sel-highlight-layer--inline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .sel-highlight-rect {
   position: absolute;
   background: rgba(52, 211, 153, 0.28);
-  border-radius: 2px;
+  border-radius: 0;
   mix-blend-mode: screen;
+}
+
+.sel-highlight-rect.hl-single {
+  border-radius: 3px;
+}
+
+.sel-highlight-rect.hl-first {
+  border-radius: 3px 3px 0 0;
+}
+
+.sel-highlight-rect.hl-last {
+  border-radius: 0 0 3px 3px;
 }
 
 .sel-highlight-rect--deep {
@@ -123,21 +145,37 @@
 .sel-highlight-rect--note {
   position: absolute;
   background: rgba(251, 191, 36, 0.22);
-  border-radius: 2px;
+  border-radius: 0;
   mix-blend-mode: screen;
   cursor: pointer;
   pointer-events: auto;
   transition: background 0.15s;
 }
 
-.sel-highlight-rect--note:hover {
-  background: rgba(251, 191, 36, 0.42);
+.sel-highlight-rect--note.hl-single {
+  border-radius: 3px;
+}
+
+.sel-highlight-rect--note.hl-first {
+  border-radius: 3px 3px 0 0;
+}
+
+.sel-highlight-rect--note.hl-last {
+  border-radius: 0 0 3px 3px;
+}
+
+.sel-highlight-rect--note.hl-hovered {
+  background: rgba(251, 191, 36, 0.38);
+}
+
+.sel-highlight-rect--note.hl-active {
+  background: rgba(251, 191, 36, 0.52);
 }
 
 /* ── Lock panel (message input + copy link) ───────────────────────────────── */
 
 .sel-lock-panel {
-  position: fixed;
+  position: absolute;
   z-index: 9998;
   transform: translateX(-50%);
   width: 268px;
@@ -282,7 +320,7 @@
 /* ── Note draft panel (yellow accent) ─────────────────────────────────────── */
 
 .sel-note-panel {
-  position: fixed;
+  position: absolute;
   z-index: 9998;
   transform: translateX(-50%);
   width: 268px;
@@ -410,7 +448,7 @@
 /* ── Note reading card ─────────────────────────────────────────────────────── */
 
 .sel-note-card {
-  position: fixed;
+  position: absolute;
   z-index: 9998;
   transform: translateX(-50%);
   max-width: 268px;
@@ -518,7 +556,7 @@
 /* ── Deep-link message card (shown to recipients) ─────────────────────────── */
 
 .sel-deep-msg-card {
-  position: fixed;
+  position: absolute;
   z-index: 9998;
   transform: translateX(-50%);
   max-width: 268px;

@@ -1,0 +1,172 @@
+import { type FormEvent, useState } from 'react';
+import { useAuthSync } from '../../context/AuthSyncContext';
+import './AuthPage.css';
+
+interface Props {
+  onContinueWithout: () => void;
+}
+
+type Mode = 'signin' | 'signup';
+
+function getAuthErrorMessage(code: string): string {
+  switch (code) {
+    case 'auth/invalid-email':
+      return 'Неверный адрес электронной почты.';
+    case 'auth/user-not-found':
+    case 'auth/wrong-password':
+    case 'auth/invalid-credential':
+      return 'Неверная почта или пароль.';
+    case 'auth/email-already-in-use':
+      return 'Этот адрес уже зарегистрирован. Попробуйте войти.';
+    case 'auth/weak-password':
+      return 'Пароль должен содержать не менее 6 символов.';
+    case 'auth/popup-closed-by-user':
+      return 'Окно входа было закрыто.';
+    case 'auth/network-request-failed':
+      return 'Ошибка сети. Проверьте подключение.';
+    default:
+      return 'Что-то пошло не так. Попробуйте ещё раз.';
+  }
+}
+
+export function AuthPage({ onContinueWithout }: Props) {
+  const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuthSync();
+  const [mode, setMode] = useState<Mode>('signin');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  async function handleGoogleSignIn() {
+    setError('');
+    setLoading(true);
+    try {
+      await signInWithGoogle();
+    } catch (e) {
+      const code = (e as { code?: string }).code ?? '';
+      if (code !== 'auth/popup-closed-by-user') {
+        setError(getAuthErrorMessage(code));
+      }
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleEmailSubmit(e: FormEvent) {
+    e.preventDefault();
+    setError('');
+    setLoading(true);
+    try {
+      if (mode === 'signin') {
+        await signInWithEmail(email, password);
+      } else {
+        await signUpWithEmail(email, password);
+      }
+    } catch (err) {
+      const code = (err as { code?: string }).code ?? '';
+      setError(getAuthErrorMessage(code));
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <div className="auth-page">
+      <div className="auth-card">
+        <div className="auth-header">
+          <div className="auth-icon" aria-hidden="true">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12z" />
+              <path d="M2.4 21.6c0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6" />
+            </svg>
+          </div>
+          <h2>Войдите для синхронизации</h2>
+          <p className="auth-tagline">Сохраняйте прогресс на всех устройствах</p>
+        </div>
+
+        <button
+          type="button"
+          className="auth-google-btn"
+          onClick={handleGoogleSignIn}
+          disabled={loading}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="#4285F4"
+              d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+            />
+            <path
+              fill="#34A853"
+              d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+            />
+            <path
+              fill="#FBBC05"
+              d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+            />
+            <path
+              fill="#EA4335"
+              d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+            />
+          </svg>
+          Войти через Google
+        </button>
+
+        <div className="auth-divider">
+          <span>или</span>
+        </div>
+
+        <form className="auth-form" onSubmit={handleEmailSubmit}>
+          <input
+            type="email"
+            className="auth-input"
+            placeholder="Эл. почта"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            autoComplete="email"
+          />
+          <input
+            type="password"
+            className="auth-input"
+            placeholder="Пароль"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            autoComplete={mode === 'signin' ? 'current-password' : 'new-password'}
+            minLength={6}
+          />
+
+          {error && <p className="auth-error">{error}</p>}
+
+          <button type="submit" className="auth-submit-btn" disabled={loading}>
+            {loading ? 'Подождите…' : mode === 'signin' ? 'Войти' : 'Создать аккаунт'}
+          </button>
+        </form>
+
+        <button
+          type="button"
+          className="auth-mode-toggle"
+          onClick={() => {
+            setMode(mode === 'signin' ? 'signup' : 'signin');
+            setError('');
+          }}
+        >
+          {mode === 'signin' ? 'Нет аккаунта? Зарегистрироваться' : 'Уже есть аккаунт? Войти'}
+        </button>
+
+        <button type="button" className="auth-skip-btn" onClick={onContinueWithout}>
+          Продолжить без аккаунта
+        </button>
+      </div>
+    </div>
+  );
+}

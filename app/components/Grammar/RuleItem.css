@@ -1,11 +1,21 @@
 .rule-item {
+  position: relative;
   border-radius: 9px;
   border: 1px solid var(--border);
   background: var(--bg);
   transition:
     border-color 0.15s,
     background 0.15s;
-  overflow: hidden;
+}
+
+.rule-item:has(
+    .sel-share-pop,
+    .sel-lock-panel,
+    .sel-note-panel,
+    .sel-note-card,
+    .sel-deep-msg-card
+  ) {
+  z-index: 10;
 }
 
 .rule-item:hover {
@@ -14,6 +24,11 @@
 .rule-item.done {
   border-color: transparent;
   background: transparent;
+}
+
+.rule-item.done:hover {
+  border-color: var(--border);
+  background: var(--bg);
 }
 .rule-item.hidden-search {
   display: none;
@@ -51,6 +66,37 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+  transition: opacity 0.15s;
+}
+
+/* × affordance on hover when rule is done */
+.rule-item.done .rule-check::after {
+  content: "×";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.rule-item.done .rule-check:hover::after {
+  opacity: 1;
+}
+
+.rule-item.done .rule-check:hover svg.chk-svg {
+  opacity: 0;
+}
+
+.rule-item.done .rule-check:hover {
+  transform: scale(0.88);
+  filter: brightness(0.8);
 }
 
 .rule-check svg.chk-svg path {

@@ -2,10 +2,18 @@
   display: flex;
   gap: 6px;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .tab-btn {
+  flex-shrink: 0;
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: 9px;

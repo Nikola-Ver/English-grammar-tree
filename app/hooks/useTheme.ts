@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { notifyProgressChanged, SYNC_APPLIED_EVENT } from '../services/syncRegistry';
 
 type Theme = 'dark' | 'light';
 
@@ -18,7 +19,7 @@ export function useTheme() {
     document.documentElement.dataset.theme = theme;
   }, [theme]);
 
-  // Follow OS theme changes when the user hasn't set a manual override
+  // Follow OS theme changes when no manual override is set
   useEffect(() => {
     const handler = (e: MediaQueryListEvent) => {
       if (!localStorage.getItem(STORAGE_KEY)) {
@@ -29,10 +30,21 @@ export function useTheme() {
     return () => systemMq.removeEventListener('change', handler);
   }, []);
 
+  // Re-read when Firestore sync applies a remote theme to localStorage
+  useEffect(() => {
+    const handler = () => {
+      const saved = localStorage.getItem(STORAGE_KEY) as Theme | null;
+      if (saved === 'dark' || saved === 'light') setTheme(saved);
+    };
+    window.addEventListener(SYNC_APPLIED_EVENT, handler);
+    return () => window.removeEventListener(SYNC_APPLIED_EVENT, handler);
+  }, []);
+
   const toggleTheme = () => {
     setTheme((current) => {
       const next = current === 'dark' ? 'light' : 'dark';
       localStorage.setItem(STORAGE_KEY, next);
+      notifyProgressChanged();
       return next;
     });
   };

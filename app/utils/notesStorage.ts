@@ -1,3 +1,5 @@
+import { notifyNoteChanged, notifyNoteDeleted } from '../services/syncRegistry';
+
 export interface StoredNote {
   id: string;
   contextId: string;
@@ -11,13 +13,16 @@ export interface StoredNote {
   text: string;
   message: string;
   createdAt: number;
+  updatedAt: number;
 }
 
 const KEY = 'eng-notes-v1';
 
 function readAll(): StoredNote[] {
   try {
-    return JSON.parse(localStorage.getItem(KEY) ?? '[]');
+    const raw = JSON.parse(localStorage.getItem(KEY) ?? '[]') as StoredNote[];
+    // Backfill updatedAt for notes created before this field was added
+    return raw.map((n) => (n.updatedAt ? n : { ...n, updatedAt: n.createdAt }));
   } catch {
     return [];
   }
@@ -33,10 +38,12 @@ export function saveNote(note: StoredNote): void {
   if (idx >= 0) all[idx] = note;
   else all.push(note);
   writeAll(all);
+  notifyNoteChanged(note);
 }
 
 export function deleteNote(id: string): void {
   writeAll(readAll().filter((n) => n.id !== id));
+  notifyNoteDeleted(id);
 }
 
 export function getNotesForContext(contextId: string, contextType: 'rule' | 'tense'): StoredNote[] {

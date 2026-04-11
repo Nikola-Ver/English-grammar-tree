@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react';
 import './styles/base.css';
+import { AccountPage } from './components/Account/AccountPage';
+import { AuthPage } from './components/Auth/AuthPage';
 import { GrammarTab } from './components/Grammar/GrammarTab';
 import { Header } from './components/Header/Header';
+import { MergeDialog } from './components/MergeDialog/MergeDialog';
 import { MurphyTab } from './components/Murphy/MurphyTab';
 import { Tabs } from './components/Tabs';
 import { TensesTab } from './components/Tenses/TensesTab';
+import { AuthSyncProvider, useAuthSync } from './context/AuthSyncContext';
 import { DATA } from './data/grammar';
 import { MURPHY_DATA } from './data/murphy';
 import { useProgress } from './hooks/useProgress';
@@ -12,6 +16,7 @@ import { useTheme } from './hooks/useTheme';
 import { parseRuleHash, parseTenseHash } from './utils/deepLink';
 
 type Tab = 'grammar' | 'murphy' | 'tenses';
+type View = 'main' | 'auth' | 'account';
 
 function findRuleTab(ruleId: string): Tab | null {
   for (const lvl of DATA) {
@@ -27,14 +32,21 @@ function findRuleTab(ruleId: string): Tab | null {
   return null;
 }
 
-export function App() {
+function AppContent() {
   const [activeTab, setActiveTab] = useState<Tab>('grammar');
+  const [view, setView] = useState<View>('main');
   const [searchQuery, setSearchQuery] = useState('');
   const [targetRuleId, setTargetRuleId] = useState<string | null>(null);
   const [targetTenseKey, setTargetTenseKey] = useState<string | null>(null);
   const grammarProgress = useProgress('eng_v4');
   const murphyProgress = useProgress('murphy_v1');
   const { theme, toggleTheme } = useTheme();
+  const { user, authLoading, mergeDialogVisible, onMergeChoice } = useAuthSync();
+
+  // Redirect to main whenever auth state settles (sign-in or sign-out)
+  useEffect(() => {
+    if (!authLoading) setView('main');
+  }, [user, authLoading]);
 
   useEffect(() => {
     const parsedRule = parseRuleHash();
@@ -62,34 +74,64 @@ export function App() {
     setActiveTab(tab);
   }
 
+  function handleAvatarClick() {
+    setView(user ? 'account' : 'auth');
+  }
+
+  function handleBackToMain() {
+    setView('main');
+  }
+
   return (
     <div className="wrap">
       <Header
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
+        showSearch={view === 'main' && (activeTab === 'grammar' || activeTab === 'murphy')}
         theme={theme}
         onToggleTheme={toggleTheme}
+        onAvatarClick={handleAvatarClick}
+        onTitleClick={handleBackToMain}
       />
-      <Tabs activeTab={activeTab} onSwitch={handleTabSwitch} />
-      {activeTab === 'grammar' && (
-        <GrammarTab
-          done={grammarProgress.done}
-          onToggleRule={grammarProgress.toggleRule}
-          onReset={grammarProgress.resetAll}
-          searchQuery={searchQuery}
-          targetRuleId={targetRuleId}
-        />
+
+      {view === 'auth' && <AuthPage onContinueWithout={handleBackToMain} />}
+
+      {view === 'account' && <AccountPage onBack={handleBackToMain} />}
+
+      {view === 'main' && (
+        <>
+          <Tabs activeTab={activeTab} onSwitch={handleTabSwitch} />
+          {activeTab === 'grammar' && (
+            <GrammarTab
+              done={grammarProgress.done}
+              onToggleRule={grammarProgress.toggleRule}
+              onReset={grammarProgress.resetAll}
+              searchQuery={searchQuery}
+              targetRuleId={targetRuleId}
+            />
+          )}
+          {activeTab === 'murphy' && (
+            <MurphyTab
+              done={murphyProgress.done}
+              onToggleRule={murphyProgress.toggleRule}
+              onReset={murphyProgress.resetAll}
+              searchQuery={searchQuery}
+              targetRuleId={targetRuleId}
+            />
+          )}
+          {activeTab === 'tenses' && <TensesTab targetTenseKey={targetTenseKey} />}
+        </>
       )}
-      {activeTab === 'murphy' && (
-        <MurphyTab
-          done={murphyProgress.done}
-          onToggleRule={murphyProgress.toggleRule}
-          onReset={murphyProgress.resetAll}
-          searchQuery={searchQuery}
-          targetRuleId={targetRuleId}
-        />
-      )}
-      {activeTab === 'tenses' && <TensesTab targetTenseKey={targetTenseKey} />}
+
+      {mergeDialogVisible && <MergeDialog onChoice={onMergeChoice} />}
     </div>
+  );
+}
+
+export function App() {
+  return (
+    <AuthSyncProvider>
+      <AppContent />
+    </AuthSyncProvider>
   );
 }

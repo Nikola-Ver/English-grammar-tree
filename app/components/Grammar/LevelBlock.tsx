@@ -67,6 +67,7 @@ export function LevelBlock({
           const onEnd = (e: TransitionEvent) => {
             if (e.propertyName === 'max-height') {
               el.style.maxHeight = 'none';
+              el.style.overflow = 'visible';
               el.removeEventListener('transitionend', onEnd);
             }
           };
@@ -77,6 +78,7 @@ export function LevelBlock({
       if (!everOpened) return;
 
       setIsClosing(true);
+      el.style.overflow = '';
       el.style.maxHeight = `${el.scrollHeight}px`;
       el.style.opacity = '1';
 

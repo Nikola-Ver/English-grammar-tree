@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import type { Level } from '../data/grammar';
 import { DATA } from '../data/grammar';
+import { notifyProgressChanged, SYNC_APPLIED_EVENT } from '../services/syncRegistry';
 
 export type DoneMap = Record<string, boolean>;
+export type TombstoneMap = Record<string, number>;
 
 const DEFAULT_SK = 'eng_v4';
 
@@ -16,6 +18,22 @@ function loadDone(sk: string): DoneMap {
 
 function saveDone(d: DoneMap, sk: string) {
   localStorage.setItem(sk, JSON.stringify(d));
+}
+
+function tombstoneKey(sk: string): string {
+  return `${sk}_tombstones`;
+}
+
+function loadTombstones(tk: string): TombstoneMap {
+  try {
+    return JSON.parse(localStorage.getItem(tk) || '{}');
+  } catch {
+    return {};
+  }
+}
+
+function saveTombstones(t: TombstoneMap, tk: string): void {
+  localStorage.setItem(tk, JSON.stringify(t));
 }
 
 export function countLevel(lvl: Level, done: DoneMap) {
@@ -43,21 +61,47 @@ export function countAll(done: DoneMap, data: Level[] = DATA) {
 
 export function useProgress(storageKey = DEFAULT_SK) {
   const [done, setDone] = useState<DoneMap>(() => loadDone(storageKey));
+  const tk = tombstoneKey(storageKey);
 
   useEffect(() => {
     saveDone(done, storageKey);
   }, [done, storageKey]);
 
+  // Re-read when Firestore sync applies remote data to localStorage
+  useEffect(() => {
+    const handler = () => setDone(loadDone(storageKey));
+    window.addEventListener(SYNC_APPLIED_EVENT, handler);
+    return () => window.removeEventListener(SYNC_APPLIED_EVENT, handler);
+  }, [storageKey]);
+
   function toggleRule(id: string) {
     setDone((prev) => {
+      const isCurrentlyDone = !!prev[id];
+
+      if (isCurrentlyDone) {
+        // Unmarking: record tombstone so syncs never re-import this rule
+        const tombstones = loadTombstones(tk);
+        saveTombstones({ ...tombstones, [id]: Date.now() }, tk);
+      } else {
+        // Marking: remove tombstone if one existed
+        const tombstones = loadTombstones(tk);
+        if (id in tombstones) {
+          const { [id]: _removed, ...rest } = tombstones;
+          saveTombstones(rest, tk);
+        }
+      }
+
       const next = { ...prev, [id]: !prev[id] };
       if (!next[id]) delete next[id];
+      notifyProgressChanged();
       return next;
     });
   }
 
   function resetAll() {
+    saveTombstones({}, tk);
     setDone({});
+    notifyProgressChanged();
   }
 
   return { done, toggleRule, resetAll };

@@ -75,6 +75,7 @@
 }
 
 .tt-result {
+  position: relative;
   background: var(--bg2);
   border: 1px solid var(--border2);
   border-radius: 13px;
