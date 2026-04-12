@@ -42,11 +42,13 @@ function AppContent() {
   const murphyProgress = useProgress('murphy_v1');
   const { theme, toggleTheme } = useTheme();
   const { user, authLoading } = useAuthSync();
+  const userId = user?.uid ?? null;
 
-  // Redirect to main whenever auth state settles (sign-in or sign-out)
+  // Return to main when auth finishes loading or when the signed-in user changes
+  // (authLoading alone does not change after the first check, so sign-in on the auth screen would otherwise leave view stuck on 'auth').
   useEffect(() => {
     if (!authLoading) setView('main');
-  }, [authLoading]);
+  }, [authLoading, userId]);
 
   useEffect(() => {
     const lang = i18n.language?.split('-')[0] ?? 'en';
