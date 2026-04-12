@@ -6,22 +6,67 @@ interface Props {
   onSelectTense: (key: string) => void;
 }
 
+const TT_TIMELINE_MOBILE_MQ = '(max-width: 480px)';
+
+/** `viewportW` = visible width of `.tt-timeline-scroll`; canvas is 2× that on mobile. */
+function timelineLayout(viewportW: number) {
+  const vw = Math.max(1, viewportW);
+  const mobileWide =
+    typeof window !== 'undefined' && window.matchMedia(TT_TIMELINE_MOBILE_MQ).matches;
+  const W = mobileWide ? vw * 2 : vw;
+  const compact = vw < 400;
+  let PAD_L = compact ? 82 : 130;
+  let PAD_R = compact ? 10 : 24;
+  const minChart = 56;
+  while (W - PAD_L - PAD_R < minChart && PAD_L > 36) {
+    PAD_L -= 6;
+  }
+  while (W - PAD_L - PAD_R < minChart && PAD_R > 4) {
+    PAD_R -= 2;
+  }
+  const ROW_H = compact ? 26 : 28;
+  const ROWS = TL_DATA.length;
+  const PAD_T = compact ? 32 : 36;
+  const PAD_B = compact ? 24 : 28;
+  const rowLabelPx = compact ? 10 : 11;
+  const axisLabelPx = compact ? 9 : 10;
+  const chartSpan = Math.max(1, W - PAD_L - PAD_R);
+  return { W, PAD_L, PAD_R, PAD_T, PAD_B, ROW_H, ROWS, rowLabelPx, axisLabelPx, chartSpan };
+}
+
+function syncTimelineScrollEdge(inner: HTMLDivElement | null, outer: HTMLDivElement | null) {
+  if (!inner || !outer) return;
+  if (typeof window === 'undefined' || !window.matchMedia(TT_TIMELINE_MOBILE_MQ).matches) {
+    outer.removeAttribute('data-scroll-edge');
+    return;
+  }
+  const maxL = inner.scrollWidth - inner.clientWidth;
+  if (maxL <= 2) {
+    outer.dataset.scrollEdge = 'none';
+    return;
+  }
+  if (inner.scrollLeft <= 2) {
+    outer.dataset.scrollEdge = 'start';
+  } else if (inner.scrollLeft >= maxL - 2) {
+    outer.dataset.scrollEdge = 'end';
+  } else {
+    outer.dataset.scrollEdge = 'mid';
+  }
+}
+
 export function Timeline({ selectedKey, onSelectTense }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const wrapRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollOuterRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
   function draw() {
     const canvas = canvasRef.current;
-    if (!canvas || !wrapRef.current) return;
+    const scrollEl = scrollRef.current;
+    if (!canvas || !scrollEl) return;
     const dpr = window.devicePixelRatio || 1;
-    const W = wrapRef.current.clientWidth - 32;
-    const ROW_H = 28,
-      ROWS = TL_DATA.length;
-    const PAD_L = 130,
-      PAD_R = 24,
-      PAD_T = 36,
-      PAD_B = 28;
+    const { W, PAD_L, PAD_R, PAD_T, PAD_B, ROW_H, ROWS, rowLabelPx, axisLabelPx, chartSpan } =
+      timelineLayout(scrollEl.clientWidth);
     const H = PAD_T + ROWS * ROW_H + PAD_B;
     canvas.width = W * dpr;
     canvas.height = H * dpr;
@@ -48,7 +93,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     const AXIS_MIN = -10,
       AXIS_MAX = 10;
     function xOf(v: number) {
-      return PAD_L + ((v - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * (W - PAD_L - PAD_R);
+      return PAD_L + ((v - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * chartSpan;
     }
     const nowX = xOf(0);
 
@@ -65,7 +110,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
       ctx.lineTo(x, PAD_T + ROWS * ROW_H);
       ctx.stroke();
       ctx.fillStyle = t === 0 ? C_MUTED2 : C_MUTED;
-      ctx.font = `${t === 0 ? '600 ' : ''}10px Outfit,sans-serif`;
+      ctx.font = `${t === 0 ? '600 ' : ''}${axisLabelPx}px Outfit,sans-serif`;
       ctx.textAlign = 'center';
       if (t === 0 || t === -10 || t === 10 || t === -5 || t === 5) ctx.fillText('', x, PAD_T - 4);
     });
@@ -77,7 +122,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     ctx.fillStyle = 'rgba(74,222,128,0.03)';
     ctx.fillRect(futureStart, PAD_T, W - PAD_R - futureStart, ROWS * ROW_H);
 
-    ctx.font = '10px Outfit,sans-serif';
+    ctx.font = `${axisLabelPx}px Outfit,sans-serif`;
     ctx.textAlign = 'center';
     ctx.fillStyle = C_MUTED;
     ctx.fillText('← ПРОШЛОЕ', PAD_L + (pastEnd - PAD_L) / 2, PAD_T - 4);
@@ -111,7 +156,9 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
       ctx.save();
       ctx.globalAlpha = dimmed ? 0.2 : 1;
 
-      ctx.font = isSelected ? 'bold 11.5px Outfit,sans-serif' : '11px Outfit,sans-serif';
+      ctx.font = isSelected
+        ? `bold ${rowLabelPx + 0.5}px Outfit,sans-serif`
+        : `${rowLabelPx}px Outfit,sans-serif`;
       ctx.textAlign = 'right';
       ctx.fillStyle = isSelected ? col : C_MUTED2;
       ctx.fillText(d.label, PAD_L - 8, y + 4);
@@ -223,9 +270,11 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     ctx.stroke();
     ctx.setLineDash([]);
     ctx.fillStyle = hexToRgba(C_TEXT, 0.8);
-    ctx.font = 'bold 10px Outfit,sans-serif';
+    ctx.font = `bold ${axisLabelPx}px Outfit,sans-serif`;
     ctx.textAlign = 'center';
     ctx.fillText('▼ Сейчас', nowX, PAD_T - 16);
+
+    queueMicrotask(() => syncTimelineScrollEdge(scrollRef.current, scrollOuterRef.current));
   }
 
   const drawRef = useRef(draw);
@@ -242,6 +291,21 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
   }, []);
 
   useEffect(() => {
+    const el = scrollRef.current;
+    if (!el || typeof ResizeObserver === 'undefined') return;
+    const ro = new ResizeObserver(() => drawRef.current());
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const mql = window.matchMedia(TT_TIMELINE_MOBILE_MQ);
+    const onChange = () => drawRef.current();
+    mql.addEventListener('change', onChange);
+    return () => mql.removeEventListener('change', onChange);
+  }, []);
+
+  useEffect(() => {
     const observer = new MutationObserver(() => drawRef.current());
     observer.observe(document.documentElement, {
       attributes: true,
@@ -252,19 +316,16 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
 
   function handleCanvasClick(e: React.MouseEvent<HTMLCanvasElement>) {
     const canvas = canvasRef.current;
-    if (!canvas || !wrapRef.current) return;
+    const scrollEl = scrollRef.current;
+    if (!canvas || !scrollEl) return;
     const rect = canvas.getBoundingClientRect();
-    const W = wrapRef.current.clientWidth - 32;
-    const PAD_L = 130,
-      PAD_R = 24,
-      PAD_T = 36;
-    const ROW_H = 28;
+    const { PAD_L, PAD_T, ROW_H, chartSpan } = timelineLayout(scrollEl.clientWidth);
     const AXIS_MIN = -10,
       AXIS_MAX = 10;
     const mx = e.clientX - rect.left,
       my = e.clientY - rect.top;
     function xOf(v: number) {
-      return PAD_L + ((v - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * (W - PAD_L - PAD_R);
+      return PAD_L + ((v - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * chartSpan;
     }
     TL_DATA.forEach((d, i) => {
       const x1 = xOf(d.start),
@@ -275,22 +336,19 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     });
   }
 
-  function handleMouseMove(e: React.MouseEvent<HTMLCanvasElement>) {
+  function handlePointerMove(e: React.PointerEvent<HTMLCanvasElement>) {
     const canvas = canvasRef.current;
     const tip = tooltipRef.current;
-    if (!canvas || !tip || !wrapRef.current) return;
+    const scrollEl = scrollRef.current;
+    if (!canvas || !tip || !scrollEl) return;
     const rect = canvas.getBoundingClientRect();
-    const W = wrapRef.current.clientWidth - 32;
-    const PAD_L = 130,
-      PAD_R = 24,
-      PAD_T = 36,
-      ROW_H = 28;
+    const { PAD_L, PAD_T, ROW_H, chartSpan } = timelineLayout(scrollEl.clientWidth);
     const AXIS_MIN = -10,
       AXIS_MAX = 10;
-    const mx = e.clientX - rect.left,
-      my = e.clientY - rect.top;
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
     function xOf(v: number) {
-      return PAD_L + ((v - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * (W - PAD_L - PAD_R);
+      return PAD_L + ((v - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * chartSpan;
     }
     let hit: (typeof TL_DATA)[0] | null = null;
     TL_DATA.forEach((d, i) => {
@@ -302,8 +360,16 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     });
     if (hit) {
       tip.style.display = 'block';
-      tip.style.left = `${e.clientX + 14}px`;
-      tip.style.top = `${e.clientY - 10}px`;
+      const pad = 14;
+      const tipMax = 220;
+      let left = e.clientX + pad;
+      if (left + tipMax > window.innerWidth - 8) {
+        left = Math.max(8, e.clientX - tipMax - pad);
+      }
+      let top = e.clientY - 10;
+      if (top < 8) top = e.clientY + 24;
+      tip.style.left = `${left}px`;
+      tip.style.top = `${top}px`;
       tip.innerHTML = `<div class="ttt-name" style="color:${(hit as (typeof TL_DATA)[0]).color}">${(hit as (typeof TL_DATA)[0]).label}</div><div class="ttt-desc">${(hit as (typeof TL_DATA)[0]).desc}</div>`;
     } else {
       tip.style.display = 'none';
@@ -312,17 +378,31 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
 
   return (
     <>
-      <div ref={wrapRef} className="tt-timeline-wrap">
+      <div className="tt-timeline-wrap">
         <div className="tt-timeline-title">📊 Шкала времени — когда происходит действие</div>
-        <canvas
-          ref={canvasRef}
-          className="tt-timeline-canvas"
-          onClick={handleCanvasClick}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={() => {
-            if (tooltipRef.current) tooltipRef.current.style.display = 'none';
-          }}
-        />
+        <p className="tt-timeline-hint" role="note">
+          <span className="tt-timeline-hint-arrows" aria-hidden>
+            ‹ ›
+          </span>
+          <span>Листайте шкалу в стороны</span>
+        </p>
+        <div ref={scrollOuterRef} className="tt-timeline-scroll-outer">
+          <div
+            ref={scrollRef}
+            className="tt-timeline-scroll"
+            onScroll={() => syncTimelineScrollEdge(scrollRef.current, scrollOuterRef.current)}
+          >
+            <canvas
+              ref={canvasRef}
+              className="tt-timeline-canvas"
+              onClick={handleCanvasClick}
+              onPointerMove={handlePointerMove}
+              onPointerLeave={() => {
+                if (tooltipRef.current) tooltipRef.current.style.display = 'none';
+              }}
+            />
+          </div>
+        </div>
         <div className="tt-timeline-legend">
           {TL_DATA.map((d) => (
             <div

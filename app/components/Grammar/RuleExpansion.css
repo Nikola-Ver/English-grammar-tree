@@ -155,7 +155,6 @@
   color: var(--muted2);
   text-decoration: none;
   transition: all 0.15s;
-  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 4px;
