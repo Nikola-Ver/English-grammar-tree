@@ -37,6 +37,8 @@ export interface FirestoreUserDoc {
   };
   settings: {
     theme: 'dark' | 'light' | null;
+    /** Normalized UI code (en, ru, …). Omitted on older documents. */
+    language?: string | null;
     updatedAt: Timestamp;
   };
 }
@@ -107,6 +109,8 @@ export async function pushAllData(
   notes: StoredNote[],
   notesTombstones: Record<string, number>,
   theme: 'dark' | 'light' | null,
+  /** Normalized UI language; always stored when syncing so choice follows the account. */
+  language: string,
   provider: 'google' | 'password',
   displayName: string,
   email: string,
@@ -150,7 +154,7 @@ export async function pushAllData(
         murphyTombstones: toTimestampMap(murphyTombstones),
         notesTombstones: toTimestampMap(notesTombstones),
       },
-      settings: { theme: theme ?? null, updatedAt: now },
+      settings: { theme: theme ?? null, language, updatedAt: now },
     },
     { merge: true },
   );

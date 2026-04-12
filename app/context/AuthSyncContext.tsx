@@ -22,6 +22,13 @@ import type { MigrationData } from '../data/migrations';
 import { MIGRATIONS } from '../data/migrations';
 import { auth } from '../firebase';
 import type { DoneMap } from '../hooks/useProgress';
+import i18n from '../i18n/config';
+import {
+  normalizeSupportedLang,
+  persistUiLanguage,
+  pickNavigatorLanguage,
+  readStoredUiLanguage,
+} from '../i18n/languagePreference';
 import {
   deleteAllUserData,
   deleteNoteFromFirestore,
@@ -102,6 +109,8 @@ function readAllLocal() {
       const v = localStorage.getItem(LS_THEME);
       return v === 'dark' || v === 'light' ? v : null;
     })() as 'dark' | 'light' | null,
+    language:
+      readStoredUiLanguage() ?? normalizeSupportedLang(i18n.resolvedLanguage ?? i18n.language),
   };
 }
 
@@ -291,6 +300,7 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
         notes,
         notesTombstones,
         theme,
+        language,
       } = readAllLocal();
       await pushAllData(
         currentUser.uid,
@@ -303,6 +313,7 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
         notes,
         notesTombstones,
         theme,
+        language,
         getProvider(currentUser),
         currentUser.displayName ?? '',
         currentUser.email ?? '',
@@ -371,6 +382,7 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
       notes: StoredNote[],
       notesTombstones: Record<string, number>,
       theme: 'dark' | 'light' | null,
+      language: string,
     ): void => {
       localStorage.setItem(LS_GRAMMAR, JSON.stringify(grammar));
       localStorage.setItem(LS_GRAMMAR_CHECKED_AT, JSON.stringify(grammarCheckedAt));
@@ -381,6 +393,7 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
       localStorage.setItem(LS_NOTES, JSON.stringify(notes));
       localStorage.setItem(LS_NOTES_TOMBSTONES, JSON.stringify(notesTombstones));
       if (theme) localStorage.setItem(LS_THEME, theme);
+      persistUiLanguage(language);
       window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
     },
     [],
@@ -463,6 +476,11 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
             mergedNoteTombstones,
           );
 
+          const cloudLang = cloudDoc.settings.language;
+          const mergedLang = cloudLang
+            ? normalizeSupportedLang(cloudLang)
+            : (local.language ?? pickNavigatorLanguage());
+
           applyLocalWrite(
             mergedGrammar.done,
             mergedGrammar.checkedAt,
@@ -473,7 +491,9 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
             mergedNotes,
             mergedNoteTombstones,
             local.theme ?? cloudDoc.settings.theme ?? null,
+            mergedLang,
           );
+          void i18n.changeLanguage(mergedLang);
         }
         // else: only local data or no data → push local to cloud
 
@@ -543,6 +563,18 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
             localStorage.setItem(LS_THEME, rt);
             changed = true;
           }
+
+          const rl = remoteDoc.settings.language;
+          if (rl) {
+            const nextLang = normalizeSupportedLang(rl);
+            const curLang = normalizeSupportedLang(i18n.resolvedLanguage ?? i18n.language);
+            if (nextLang !== curLang) {
+              persistUiLanguage(nextLang);
+              void i18n.changeLanguage(nextLang);
+              changed = true;
+            }
+          }
+
           if (changed) window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
           if (remoteDoc.lastSyncAt) setLastSyncAt(remoteDoc.lastSyncAt.toDate());
         });

@@ -61,8 +61,10 @@ void i18n
     supportedLngs: ['en', 'ru', 'zh', 'de', 'es', 'fr'],
     interpolation: { escapeValue: false },
     detection: {
+      /* Saved choice wins; if none (first visit), navigator / Accept-Language is used. */
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng',
     },
   });
 

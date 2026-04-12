@@ -4,6 +4,7 @@ import { useAuthSync } from '../../context/AuthSyncContext';
 import { SUPPORTED_LANGUAGES } from '../../i18n/config';
 import './Header.css';
 import { useTranslation } from 'react-i18next';
+import { notifyProgressChanged } from '../../services/syncRegistry';
 
 interface Props {
   theme: 'dark' | 'light';
@@ -173,6 +174,7 @@ export function Header({ theme, onToggleTheme, onAvatarClick, onTitleClick }: Pr
                     className={`lang-menu-item${code === langCode ? ' is-active' : ''}`}
                     onClick={() => {
                       void i18n.changeLanguage(code);
+                      notifyProgressChanged();
                       setLangMenuOpen(false);
                     }}
                   >
