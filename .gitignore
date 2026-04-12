@@ -48,6 +48,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+.venv/
 
 # Optional npm cache directory
 .npm
@@ -72,6 +73,9 @@ node_modules/
 
 # local docs
 PLANS.md
+
+# i18n build artifacts (regenerate with scripts/dump-rule-i18n-source.ts)
+app/i18n/generated/
 TODO.md
 
 # envs

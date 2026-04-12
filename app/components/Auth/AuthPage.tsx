@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useAuthSync } from '../../context/AuthSyncContext';
 import './AuthPage.css';
 
@@ -8,6 +9,7 @@ interface Props {
 
 export function AuthPage({ onContinueWithout }: Props) {
   const { signInWithGoogle } = useAuthSync();
+  const { t } = useTranslation();
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -19,7 +21,7 @@ export function AuthPage({ onContinueWithout }: Props) {
     } catch (e) {
       const code = (e as { code?: string }).code ?? '';
       if (code !== 'auth/popup-closed-by-user') {
-        setError('Что-то пошло не так. Попробуйте ещё раз.');
+        setError(t('auth.errorGeneric'));
       }
     } finally {
       setLoading(false);
@@ -45,8 +47,8 @@ export function AuthPage({ onContinueWithout }: Props) {
               <path d="M2.4 21.6c0-5.3 4.3-9.6 9.6-9.6s9.6 4.3 9.6 9.6" />
             </svg>
           </div>
-          <h2>Войдите для синхронизации</h2>
-          <p className="auth-tagline">Сохраняйте прогресс на всех устройствах</p>
+          <h2>{t('auth.title')}</h2>
+          <p className="auth-tagline">{t('auth.tagline')}</p>
         </div>
 
         <button
@@ -73,7 +75,7 @@ export function AuthPage({ onContinueWithout }: Props) {
               d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
             />
           </svg>
-          {loading ? 'Подождите…' : 'Войти через Google'}
+          {loading ? t('auth.wait') : t('auth.google')}
         </button>
 
         {error && (
@@ -83,7 +85,7 @@ export function AuthPage({ onContinueWithout }: Props) {
         )}
 
         <button type="button" className="auth-skip-btn" onClick={onContinueWithout}>
-          Продолжить без аккаунта
+          {t('auth.continueWithout')}
         </button>
       </div>
     </div>

@@ -1,0 +1,3677 @@
+{
+  "a1_01": {
+    "text": "am / is / are – Formen des Verbs to be",
+    "note": "Ich bin es, er ist es, sie sind es",
+    "exp": "<strong>to be</strong> ist das wichtigste Verb in der englischen Sprache, ein Analogon zum russischen „to be/appear“.<br><br>Drei Formen: <em>am</em> – nur mit <em>I</em>; <em>ist</em> – mit ihm, ihr, es; <em>sind</em> – mit dir, wir, sie.<br><br>⚠️ Ein wichtiger Unterschied zum Russischen: Im Englischen darf das Verb <strong>nicht fehlen</strong>. Auf Russisch sagen wir „Ich bin ein Student“, und auf Englisch müssen wir sagen: <em>Ich <u>am</u> ein Student</em>.",
+    "exc": "Kurzformen: I'm, you're, he's, she's, it's, we're, they're. In Kurzantworten ist die Abkürzung verboten: <em>Yes, I am.</em> (nicht <s>Yes, I'm</s>)",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie ist eine Lehrerin</s> → Sie <em>ist</em> eine Lehrerin",
+      "<s>Ich habe Hunger</s> → Ich <em>bin</em> hungrig",
+      "Überspringen zu sein: <s>Ich Student</s> → Ich <em>bin</em> Student"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I am hungry.",
+        "Ich habe Hunger."
+      ],
+      [
+        "She is a doctor.",
+        "Sie ist Ärztin."
+      ],
+      [
+        "They are ready.",
+        "Sie sind bereit."
+      ],
+      [
+        "It is cold today.",
+        "Heute ist es kalt."
+      ]
+    ]
+  },
+  "a1_02": {
+    "text": "Verneinung: bin nicht/ist nicht/sind nicht",
+    "note": "Ich bin nicht müde. Er ist nicht hier. Sie sind nicht bereit.",
+    "exp": "Die Negation wird durch Hinzufügen von <em>not</em> konstruiert: <em>am not, is not, are not</em>.<br>Kurzformen: <em>isn't</em> (= ist nicht), <em>aren't</em> (= sind nicht). Nur <em>am not</em> wird nicht auf <em>amn't</em> reduziert – eine Ausnahme!",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich bin nicht müde</s> → Ich bin <em>nicht</em> müde (bin't existiert nicht!)",
+      "<s>Er ist nicht müde</s> → Er <em>ist nicht</em> müde",
+      "<s>Sie ist nicht = sie ist nicht</s> – nur <em>sie ist nicht</em> oder <em>sie ist nicht</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm not a student.",
+        "Ich bin kein Student."
+      ],
+      [
+        "He isn't tired.",
+        "Er ist nicht müde."
+      ],
+      [
+        "We aren't ready.",
+        "Wir sind nicht bereit."
+      ]
+    ]
+  },
+  "a1_03": {
+    "text": "Fragen mit to be: Bin ich? / Ist sie? / Sind sie?",
+    "note": "Ist sie Lehrerin? Ist dir kalt? Bin ich zu spät?",
+    "exp": "Bei Fragen steht das Verb <em>to be</em> <strong>vor dem Subjekt</strong>: <em>She is → Is she?</em><br><br>Spezielle Fragen: Fragewort + to be + Subjekt: <em>Wo ist er? Was ist das?</em><br><br>Kurze Antworten: <em>Ja, das bin ich. / Nein, das ist sie nicht</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ist dir kalt?</s> → <em>Ist</em> dir kalt?",
+      "<s>Sie ist zu spät?</s> - Frage ohne Umkehrung: <em>Ist sie zu spät?</em>",
+      "<s>Wo ist er?</s> → Wo <em>ist er?</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Are you a student?",
+        "Sind Sie ein Student?"
+      ],
+      [
+        "Is it expensive?",
+        "Ist es teuer?"
+      ],
+      [
+        "Where are they?",
+        "Wo sind sie?"
+      ]
+    ]
+  },
+  "a1_04": {
+    "text": "Kurze Antworten: Ja, das bin ich. / Nein, das ist sie nicht.",
+    "note": "Nur vollständige Form – nicht erlaubt: „Ja, ich bin“",
+    "exp": "In Kurzform antwortet das Pronomen + <em>to be</em>. <strong>Sie können die Form des Verbs in einer bejahenden Antwort nicht verkürzen</strong>.<br><em>Sind Sie müde? – Ja, das bin ich.</em> ✓ &nbsp;&nbsp; <em>Ja, das bin ich.</em> ✗",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ja, ich bin</s> → Ja, ich <em>bin</em> (kann bei einer bejahenden Antwort nicht abgekürzt werden)",
+      "<s>Nein, ist sie nicht</s> → Nein, <em>ist sie nicht</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Is she ready? — Yes, she is.",
+        "Ist sie bereit? - Ja."
+      ],
+      [
+        "Are they your friends? — No, they aren't.",
+        "Sind das deine Freunde? - NEIN."
+      ]
+    ]
+  },
+  "a1_05": {
+    "text": "Artikel a/an – unbestimmt",
+    "note": "ein Hund, ein Apfel, eine Stunde, eine Universität",
+    "exp": "<em>a</em> und <em>an</em> sind die unbestimmten Artikel, die vor dem <strong>erstgenannten</strong> Objekt im Singular stehen.<br><br>Die Wahl hängt vom <strong>Laut</strong> ab, nicht vom Buchstaben:<br>• <em>a</em> – vor dem Konsonantenlaut: <em>a book, a car, a university</em> [ju...]<br>• <em>an</em> – vor einem Vokal Laut: <em>ein Apfel, eine Stunde</em> [aʊ...], <em>ein ehrlicher Mann</em>",
+    "exc": "<em>eine Universität, ein Europäer</em> – obwohl sie mit einem Vokal beginnen, ist der Anfangslaut [j], also <em>a</em>. <em>eine Stunde, eine ehrliche</em> – h ist stumm, der Anfangslaut ist ein Vokal.",
+    "tip": "",
+    "mistakes": [
+      "<s>eine Universität</s> → <em>eine</em> Universität (Laut [j])",
+      "<s>ein Apfel</s> → <em>ein</em> Apfel",
+      "<s>ein ehrlicher Mann</s> → <em>ein</em> ehrlicher Mann (h stumm)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I saw a cat in the garden.",
+        "Ich habe eine Katze im Garten gesehen."
+      ],
+      [
+        "She is an engineer.",
+        "Sie ist Ingenieurin."
+      ],
+      [
+        "It took an hour.",
+        "Es dauerte eine Stunde."
+      ]
+    ]
+  },
+  "a1_06": {
+    "text": "Artikel der - definitiv",
+    "note": "die Sonne, die Tür, das Buch auf dem Tisch",
+    "exp": "<em>the</em> wird verwendet, wenn der Sprecher und der Zuhörer <strong>wissen</strong>, worüber sie sprechen.<br><br>Wenn wir <em>the</em> setzen:<br>1. Das Thema wurde bereits erwähnt:<em>Ich habe eine Katze gesehen. Die Katze war schwarz.</em><br>2. Einzigartig: <em>die Sonne, der Mond, die Erde</em><br>3. Aus dem Kontext geht klar hervor: <em>Bitte schließen Sie das Fenster.</em><br>4. Superlativ: <em>das Beste, das Größte</em>",
+    "exc": "Aussprache: <em>das</em> [ðə] vor Konsonanten, [ði] vor Vokalen. In der mündlichen Rede oft [ðɪ] zur Betonung.",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich mag die Musik</s> → Ich mag Musik (allgemeine Bedeutung – kein Artikel)",
+      "<s>Das Leben ist kurz</s> → Das Leben ist kurz",
+      "<s>Er ist der Arzt</s> → Er ist <em>ein</em> Arzt (erstmals erwähnt)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film we saw was amazing.",
+        "Der Film, den wir gesehen haben, war großartig."
+      ],
+      [
+        "Could you pass the salt?",
+        "Könnten Sie mir das Salz reichen?"
+      ]
+    ]
+  },
+  "a1_07": {
+    "text": "Nullartikel – wenn der Artikel nicht benötigt wird",
+    "note": "Ich mag Musik. Sie spielt Tennis. Er kommt aus Russland.",
+    "exp": "Der Artikel <strong>steht</strong> nicht vor:<br>• Eigennamen: <em>John, London, Russland</em><br>• Sprachen und Nationalitäten: <em>Englisch, Russisch</em><br>• Sport und Spiele: <em>Fußball, Schach</em><br>• Essen/Getränke im Allgemeinen: <em>Ich liebe Kaffee</em><br>• Abstrakte Konzepte im Allgemeinen: <em>Das Leben ist kurz. Liebe macht blind.</em><br>• Plural im allgemeinen Sinne: <em>Hunde sind freundlich.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich spiele Tennis</s> → Ich spiele Tennis",
+      "<s>Sie spricht Spanisch</s> → Sie spricht Spanisch",
+      "<s>Russland</s> → Russland (Länder ohne Artikel, außer USA, Großbritannien)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She speaks Spanish.",
+        "Sie spricht Spanisch."
+      ],
+      [
+        "He plays basketball every day.",
+        "Er spielt jeden Tag Basketball."
+      ]
+    ]
+  },
+  "a1_08": {
+    "text": "Present Simple – positive Sätze",
+    "note": "Ich arbeite. Er arbeitet. Sie geht. Es läuft.",
+    "exp": "<strong>Present Simple</strong> wird verwendet für: Gewohnheiten und regelmäßige Handlungen, Fakten und allgemeine Wahrheiten, Zeitpläne.<br><br>Formel: ich/du/wir/sie + Infinitiv; he/she/it + Infinitiv+<em>s/es</em><br><br>Regeln für das Schreiben von Endungen <em>-s</em>/-<em>es</em>:<br>• Die meisten Verben: + <em>s</em> → <em>works, games</em><br>• Endung auf -o, -ch, -sh, -s, -ss, -x: + <em>es</em> → <em>goes, watches, wäscht</em><br>• Endet mit einem Konsonanten + -y: -y → <em>ies</em> → <em>studien, versucht</em>",
+    "exc": "Ausnahmen: <em>have → has, be → is, do → does, go → goes</em>",
+    "tip": "Zeitmarkierungen: immer, normalerweise, oft, manchmal, selten, nie, jeden Tag/jede Woche.",
+    "mistakes": [
+      "<s>Sie arbeitet</s> → Sie <em>arbeitet</em> (vergessen -s für die 3. Person)",
+      "<s>Er geht</s> → Er <em>geht</em> (gehen → geht)",
+      "<s>Sie studiert</s> → Sie <em>studiert</em> (Konsonant + y → ies)"
+    ],
+    "markers": {
+      "tags": [
+        "immer",
+        "normalerweise",
+        "oft",
+        "manchmal",
+        "gelegentlich",
+        "selten",
+        "selten",
+        "nie",
+        "jeden Tag",
+        "jede Woche",
+        "jeden Monat",
+        "jedes Jahr",
+        "jeden Morgen",
+        "jeden Abend",
+        "montags",
+        "einmal pro Woche",
+        "zweimal im Monat",
+        "im Allgemeinen",
+        "in der Regel",
+        "normalerweise",
+        "regelmäßig"
+      ],
+      "note": "Häufigkeitsmarkierungen stehen vor dem Hauptverb, aber nach to be."
+    },
+    "ex": [
+      [
+        "I drink coffee every morning.",
+        "Ich trinke jeden Morgen Kaffee."
+      ],
+      [
+        "She works in a hospital.",
+        "Sie arbeitet in einem Krankenhaus."
+      ],
+      [
+        "The Earth goes round the Sun.",
+        "Die Erde dreht sich um die Sonne."
+      ]
+    ]
+  },
+  "a1_09": {
+    "text": "Present Simple - Verneinung: nicht / nicht",
+    "note": "Es gefällt mir nicht. Es gefällt ihm nicht. (nicht: er nicht)",
+    "exp": "Die Verneinung wird mit dem Hilfsverb <em>do/does</em> + <em>not</em> konstruiert:<br>• I/you/we/they + <em>don't</em> + Infinitiv<br>• he/she/it + <em>doesn't</em> + Infinitiv<br><br>⚠️ Nach <em>does't</em> das Hauptverb <strong>ohne -s</strong>! <em>Sie mag nicht</em> (nicht <s>mag</s>).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie mag nicht</s> → Sie <em>mag</em> nicht (nachher nicht – die Grundform!)",
+      "<s>Er funktioniert nicht</s> → Er <em>funktioniert nicht</em>",
+      "<s>Ich mag nicht</s> → Ich <em>mag nicht</em>"
+    ],
+    "markers": {
+      "tags": [
+        "immer",
+        "normalerweise",
+        "oft",
+        "manchmal",
+        "selten",
+        "nie",
+        "jeden Tag",
+        "normalerweise",
+        "allgemein",
+        "in der Regel"
+      ],
+      "note": "Die gleichen Markierungen wie für positive Sätze."
+    },
+    "ex": [
+      [
+        "I don't eat meat.",
+        "Ich esse kein Fleisch."
+      ],
+      [
+        "He doesn't speak French.",
+        "Er spricht kein Französisch."
+      ],
+      [
+        "They don't work here.",
+        "Sie arbeiten hier nicht."
+      ]
+    ]
+  },
+  "a1_10": {
+    "text": "Present Simple – Fragen: Tun Sie? /Tut sie?",
+    "note": "Magst du Pizza? Arbeitet er hier? Wo leben sie?",
+    "exp": "Fragen: <em>Do/Does</em> + Subjekt + Infinitiv?<br>• Ich/Sie/Wir/sie: <em>Do you...?</em><br>• er/sie/es: <em>Does she...?</em><br><br>Spezielle Fragen: Fragewort + Do/Does + Subjekt + Infinitiv:<br><em>Wo lebt sie? Was machen sie?</em><br><br>⚠️ Ausnahme: die Frage „Wer?“ ohne <em>tun</em>: <em>Wer mag Eis?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Mag sie?</s> → Mag sie?</em>",
+      "<s>Arbeitet er?</s> → <em>Arbeitet</em> er?",
+      "<s>Wo lebt sie?</s> → Wo lebt sie?"
+    ],
+    "markers": {
+      "tags": [
+        "immer",
+        "normalerweise",
+        "oft",
+        "manchmal",
+        "nie",
+        "jeden Tag",
+        "jede Woche",
+        "wie oft",
+        "wie oft"
+      ],
+      "note": "Bei Fragen stehen Markierungen hinter dem Betreff."
+    },
+    "ex": [
+      [
+        "Do you speak Russian?",
+        "Sprichst du Russisch?"
+      ],
+      [
+        "Does she live nearby?",
+        "Wohnt sie in der Nähe?"
+      ],
+      [
+        "Where do you work?",
+        "Wo arbeiten Sie?"
+      ]
+    ]
+  },
+  "a1_11": {
+    "text": "Stative-Verben – Verben, die nicht im Continuous verwendet werden",
+    "note": "Ich weiß, nicht: Ich weiß es. Ich liebe, nicht: Ich liebe.",
+    "exp": "Einige Verben beschreiben eher einen Zustand als eine Handlung – sie werden nicht im Kontinuum verwendet.<br><br>Hauptgruppen:<br>• Meinungen: <em>wissen, glauben, denken, verstehen, erinnern, vergessen</em><br>• Gefühle: <em>lieben, hassen, mögen, wollen, brauchen, bevorzugen</em><br>• Wahrnehmung: <em>sehen, hören, riechen, schmecken, schauen</em><br>• Sein: <em>sein, existieren, gehören, enthalten, scheinen, erscheinen</em>",
+    "exc": "<em>think/have/see/taste</em> kann im Continuous verwendet werden, aber mit einer anderen Bedeutung: <em>I think</em> (Meinung) vs. <em>I'm think</em> (denkt gerade nach).",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich weiß es</s> → Ich <em>weiß</em>",
+      "<s>Sie liebt ihn</s> → Sie <em>liebt</em> ihn",
+      "<s>Er möchte einen Kaffee</s> → Er <em>will</em> einen Kaffee"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I understand you. (не: I am understanding)",
+        "Ich verstehe dich."
+      ],
+      [
+        "She loves chocolate. (не: is loving)",
+        "Sie liebt Schokolade."
+      ]
+    ]
+  },
+  "a1_12": {
+    "text": "Personalpronomen: ich, du, er, sie, es, wir, sie",
+    "note": "Sie brauchen immer einen eindeutigen Betreff – Sie können I nicht überspringen",
+    "exp": "Im Gegensatz zum Russischen ist das Subjekt im Englischen immer obligatorisch.<br>Auf Russisch: „Ich gehe nach Hause.“ Auf Englisch: <em>Ich gehe nach Hause.</em><br><br>Objektformen (nach einem Verb oder einer Präposition): <em>me, you, him, her, it, us, them</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ist heute kalt</s> → <em>Es</em> ist kalt (das Thema kann nicht weggelassen werden)",
+      "<s>Ich mag Pizza</s> → <em>Ich</em> mag Pizza",
+      "<s>Sie sagte es ihm</s> → Sie sagte es <em>ihm</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She is a teacher.",
+        "Sie ist Lehrerin."
+      ],
+      [
+        "Tell him the truth.",
+        "Sag ihm die Wahrheit."
+      ],
+      [
+        "Can you help me?",
+        "Können Sie mir helfen?"
+      ]
+    ]
+  },
+  "a1_13": {
+    "text": "Possessive Adjektive: mein, dein, sein, ihr, es, unser, ihr",
+    "note": "mein Buch, ihr Auto, ihr Haus – ändern Sie sich nicht nach Nummer",
+    "exp": "Possessivadjektive zeigen Eigentum an und stehen <strong>vor dem Substantiv</strong>.<br>Wichtig: <em>its</em> (ohne Apostroph) = Eigentum; <em>it's</em> (mit einem Apostroph) = es ist.<br><br>Geschlecht und Zahl nicht ändern: <em>mein Freund / meine Freunde</em> - das Gleiche.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es ist ein großes Haus</s> → <em>Es ist</em> ein großes Haus (es ist = es ist)",
+      "<s>Die Katze hat ihre Pfote verletzt</s> → <em>ihre</em> Pfote verletzt (ihre = Zugehörigkeit)",
+      "<s>Ihre Freunde sind nett</s> → Ihre Freunde <em>sind</em> nett"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is my phone.",
+        "Das ist mein Telefon."
+      ],
+      [
+        "Their dog is cute.",
+        "Ihr Hund ist süß."
+      ],
+      [
+        "The cat hurt its paw.",
+        "Die Katze hat sich an der Pfote verletzt."
+      ]
+    ]
+  },
+  "a1_14": {
+    "text": "Plural von Substantiven",
+    "note": "Katzen, Kisten, Messer, Kinder, Männer, Schafe",
+    "exp": "Grundregel: <em>-s</em> hinzufügen.<br><br>Sonderfälle:<br>• -s, -ss, -sh, -ch, -x, -o: + <em>es</em> → <em>Boxen, Uhren, Tomaten</em><br>• Vokal + -y: + <em>s</em> → <em>Jungen, Tage</em><br>• Konsonant + -y: -y → <em>ies</em> → <em>Städte, Babys</em><br>• -f/-fe: → <em>ves</em> → <em>Messer, Blätter, Frauen</em><br><br>Unregelmäßig: <em>Kind→Kinder, Mann→Männer, Frau→Frauen, Zahn→Zähne, Fuß→Füße, Maus→Mäuse, Person→Menschen, Fische→Fische, Schafe→Schafe</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>zwei Kinder</s> → zwei <em>Kinder</em>",
+      "<s>drei Männer</s> → drei <em>Männer</em>",
+      "<s>Boxen</s> → <em>Boxen</em> (-es hinzufügen)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "one bus → two buses",
+        "ein Bus → zwei Busse"
+      ],
+      [
+        "one child → many children",
+        "ein Kind → viele Kinder"
+      ]
+    ]
+  },
+  "a1_15": {
+    "text": "Dies / das / diese / jene",
+    "note": "dies/diese – in der Nähe; das/die - weit weg",
+    "exp": "<em>dies</em> (dies) – Singular + nächste<br><em>diese</em> (diese) – Plural + in der Nähe<br><em>das</em> (das) – Singular + fern oder bereits bekannt<br><em>those</em> (jene) – Plural + fern<br><br>Wird auch in Bezug auf die Zeit verwendet: <em>diese Woche</em> (diese Woche), <em>dieses Jahr</em> (dieses Jahr).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Das ist mein Stift</s> → <em>Das</em> ist mein Stift",
+      "<s>Das sind diese Bücher</s> → Das sind <em>diese/die</em> Bücher",
+      "<s>Das Buch hier</s> – <em>dieses</em> (nah), <em>das</em> (fern)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is my bag.",
+        "Das ist meine Tasche."
+      ],
+      [
+        "Those shoes are expensive.",
+        "Diese Schuhe sind teuer."
+      ],
+      [
+        "What is that?",
+        "Was ist das?"
+      ]
+    ]
+  },
+  "a1_16": {
+    "text": "Es gibt / gibt es - Existenz",
+    "note": "Es gibt einen Park. Es gibt fünf Zimmer.",
+    "exp": "Die Konstruktion <em>there is/are</em> bedeutet „existiert/existiert“, „ist“.<br>• <em>There is</em> + Substantiv im Singular. Zahl<br>• <em>Es gibt</em> + Nomen im Plural. Zahl<br><br>Verneinung: <em>Gibt es nicht / Gibt es nicht</em><br>Frage: <em>Gibt es...? / Gibt es...?</em><br><br>⚠️ Nicht zu verwechseln mit <em>es ist</em>! <em>Es liegt ein Buch auf dem Tisch</em> (das Buch existiert dort) vs. <em>Es ist ein gutes Buch</em> (Merkmal).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "There is a cinema near here.",
+        "In der Nähe gibt es ein Kino."
+      ],
+      [
+        "Are there any shops nearby? — Yes, there are.",
+        "Gibt es Geschäfte in der Nähe? - Ja."
+      ]
+    ]
+  },
+  "a1_17": {
+    "text": "Präpositionen des Ortes: in, auf, bei, unter, neben, hinter, zwischen",
+    "note": "in der Kiste, auf dem Tisch, am Bahnhof",
+    "exp": "Drei Hauptpräpositionen:<br>• <em>in</em> = in etwas: <em>in der Kiste, in der Stadt, im Bett</em><br>• <em>auf</em> = auf der Oberfläche: <em>auf dem Tisch, an der Wand, links</em><br>• <em>an</em> = an einem bestimmten Punkt: <em>am Bahnhof, zu Hause, in der Schule</em><br><br>Andere: <em>unter</em> (unter), <em>neben/neben</em> (nahe), <em>hinter</em> (hinter), <em>vor</em> (vor), <em>zwischen</em> (zwischen), <em>gegenüber</em> (gegenüber)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "The keys are on the table.",
+        "Die Schlüssel liegen auf dem Tisch."
+      ],
+      [
+        "She is in the kitchen.",
+        "Sie ist in der Küche."
+      ],
+      [
+        "Meet me at the entrance.",
+        "Treffen Sie mich am Eingang."
+      ]
+    ]
+  },
+  "a1_18": {
+    "text": "Imperativ",
+    "note": "Öffnen Sie Ihre Bücher. Lauf nicht. Bitte setzen Sie sich.",
+    "exp": "Imperativ = Grundform eines Verbs ohne Subjekt.<br>Verneinung: <em>Nicht + Infinitiv</em><br><em>Bitte</em> macht die Aufforderung höflicher (am Anfang oder am Ende).<br><br>Um den Sprecher einzubeziehen: <em>Lass uns + Infinitiv</em> → <em>Los geht's! Lass uns essen!</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "Turn left at the crossroads.",
+        "Biegen Sie an der Kreuzung links ab."
+      ],
+      [
+        "Don't touch that!",
+        "Fass das nicht an!"
+      ],
+      [
+        "Let's have a break.",
+        "Machen wir eine Pause."
+      ]
+    ]
+  },
+  "a1_19": {
+    "text": "kann/kann nicht – Geschick und Entschlossenheit",
+    "note": "Ich kann schwimmen. Sie kann nicht fahren. Kann ich Ihnen helfen?",
+    "exp": "<em>can</em> ist ein Modalverb und drückt Folgendes aus:<br>1. Fähigkeit/Fähigkeit: <em>Ich kann Gitarre spielen</em><br>2. Gelegenheit: <em>Es kann gefährlich sein</em><br>3. Auflösung (gesprochen): <em>Kann ich Ihr Telefon benutzen?</em><br><br>⚠️ <em>kann</em> ändert sich nie: <em>er kann</em> (nicht <s>er kann</s>). Danach folgt ein Infinitiv ohne <em>to</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Können Sie mir helfen?</s> → Können Sie <em>helfen</em> (ohne es zu tun)",
+      "<s>Sie kann es schaffen</s> → Sie <em>kann</em> kann es (kann ändert sich nicht)",
+      "<s>Ich kann Französisch sprechen</s> → Ich kann Französisch sprechen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I can speak three languages.",
+        "Ich spreche drei Sprachen."
+      ],
+      [
+        "She can't come today.",
+        "Sie kann heute nicht kommen."
+      ],
+      [
+        "Can you help me, please?",
+        "Könnten Sie mir helfen?"
+      ]
+    ]
+  },
+  "a1_20": {
+    "text": "Fragewörter: was, wo, wer, wann, wie, warum, was, wessen, wie viel/viele",
+    "note": "Was ist das? Wo wohnst du? Wie alt bist du?",
+    "exp": "Fragewörter stehen am <strong>Anfang</strong> der Frage, gefolgt von einem Hilfsverb vor dem Subjekt.<br><br>• <em>what</em> = what/which<br>• <em>where</em> = where/where<br>• <em>who</em> = who (Frage ohne Do: <em>Wer lebt hier?</em>)<br>• <em>when</em> = when<br>• <em>why</em> = warum<br>• <em>wie</em> = wie; <em>wie viel</em> = wie viele (unzählig); <em>wie viele</em> = wie viele (Anzahl); <em>wie alt</em> = wie alt; <em>wie lange</em> = wie lange",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "Where does she work?",
+        "Wo arbeitet sie?"
+      ],
+      [
+        "What time is it?",
+        "Wie spät ist es?"
+      ],
+      [
+        "How many brothers do you have?",
+        "Wie viele Brüder hast du?"
+      ]
+    ]
+  },
+  "a1_21": {
+    "text": "Quantitative Zahlen: 1–1000",
+    "note": "eins, zwei, drei... einundzwanzig, hundert, tausend",
+    "exp": "Ziffern 1–12: Sonderwörter (eins, zwei, drei... zwölf).<br>13–19: + <em>-zehn</em> (dreizehn, vierzehn... neunzehn; Ausnahmen: dreizehn, fünfzehn, achtzehn).<br>Zehner: zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig.<br>Zusammensetzungen: 21 = <em>einundzwanzig</em> (via Bindestrich).<br><br>100 = <em>a/einhundert</em>; 1000 = <em>a/eintausend</em>.<br>Nach Hunderttausend - <em>und</em> (BrE): <em>zweihundertfünfzig</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "She is twenty-three years old.",
+        "Sie ist dreiundzwanzig Jahre alt."
+      ],
+      [
+        "The ticket costs four hundred pounds.",
+        "Das Ticket kostet vierhundert Pfund."
+      ]
+    ]
+  },
+  "a1_22": {
+    "text": "Ordnungszahlen: erste, zweite, dritte...",
+    "note": "der erste, der zweite, der dritte, der vierte ... der einundzwanzigste",
+    "exp": "Ordnungszahlen werden durch Addition von <em>-th</em> gebildet: <em>vierter, fünfter, sechster...</em><br>Ausnahmen: <em>erster (1.), zweiter (2.), dritter (3.), fünfter (5.), achter (8.), neunter (9.), zwölfter (12.)</em>.<br>Wird immer mit dem Artikel <em>der</em> verwendet: <em>der erste Tag, der dritte Boden</em>.<br><br>Brüche: ½ = <em>eine Hälfte</em>, ⅓ = <em>ein Drittel</em>, ¼ = <em>ein Viertel</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "My office is on the third floor.",
+        "Mein Büro ist im dritten Stock."
+      ],
+      [
+        "Today is the first of March.",
+        "Heute ist der erste März."
+      ]
+    ]
+  },
+  "a1_23": {
+    "text": "Possessivfall: 's und s'",
+    "note": "Johns Auto, der Freund meiner Schwester, das Kinderspielzeug, das Lehrerzimmer",
+    "exp": "Im Englischen wird Zugehörigkeit durch ein Apostroph + <em>s</em> ausgedrückt:<br>• Singular: <em>Toms Buch</em>, <em>der Schwanz des Hundes</em><br>• Plural mit -s: nur Apostroph: <em>das Lehrerzimmer, das Haus meiner Eltern</em><br>• Unregelmäßiger Plural: <em>'s</em>: <em>der Kinderspielplatz, Männerkleidung</em><br>• Namen, die mit -s enden: <em>James's / James'</em> – beide Optionen sind korrekt",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "This is Anna's laptop.",
+        "Das ist Annas Laptop."
+      ],
+      [
+        "The children's toys are in the box.",
+        "Kinderspielzeug in einer Kiste."
+      ]
+    ]
+  },
+  "a1_24": {
+    "text": "Präpositionen der Bewegung: hin, hinein, heraus, hoch, runter, entlang, quer, durch",
+    "note": "zur Schule gehen, ins Zimmer gehen, über die Straße rennen",
+    "exp": "<br>• <em>to</em> = Richtung zu einem Punkt: <em>zur Arbeit gehen, in den Park gehen</em><br>• <em>into</em> = Bewegung nach innen: <em>in den Raum kommen, in den Pool springen</em><br>• <em>out</em> = Bewegung nach außen: <em>aus dem Auto steigen, aus der Tasche nehmen</em><br>• <em>auf/ab</em> = auf/ab: <em>klettern den Hügel hinauf, die Treppe hinuntergehen</em><br>• <em>entlang</em> = entlang: <em>am Fluss entlang gehen</em><br>• <em>über</em> = quer/durch: <em>über den See schwimmen, über die Straße gehen</em><br>• <em>durch</em> = durch: <em>durch den Tunnel fahren</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "She walked into the room.",
+        "Sie betrat den Raum."
+      ],
+      [
+        "He ran across the street.",
+        "Er rannte über die Straße."
+      ],
+      [
+        "We drove through the forest.",
+        "Wir fuhren durch den Wald."
+      ]
+    ]
+  },
+  "a2_01": {
+    "text": "Past Simple – regelmäßige Verben: +ed",
+    "note": "arbeiten → gearbeitet, spielen → gespielt, anhalten → angehalten, studieren → studiert",
+    "exp": "<strong>Past Simple</strong> – eine abgeschlossene Handlung in der Vergangenheit mit oder ohne eine bestimmte Zeitform.<br><br>Regeln für das Schreiben der Endung <em>-ed</em>:<br>• Die meisten Verben: + <em>ed</em> → <em>worked, playing</em><br>• Enden auf -e: + <em>d</em> → <em>loved, used</em><br>• Konsonant + -y: -y → <em>ied</em> → <em>studiert, versucht</em><br>• Ein Vokal + ein Konsonant (kurze betonte Silbe): doppelter Konsonant → <em>gestoppt, geplant</em>",
+    "exc": "",
+    "tip": "Markierungen: gestern, letzte Woche/letztes Jahr, vor, im Jahr 2010, um 5 Uhr.",
+    "mistakes": [
+      "<s>Sie geht jeden Tag zur Schule</s> → Sie <em>geht</em> (Gewohnheit = Present Simple)",
+      "<s>Ich gehe morgen ins Kino</s> - vielleicht, aber <em>Ich werde mir einen Film ansehen</em>, genauer gesagt mit Absicht",
+      "<s>Er will</s> → Er <em>will</em> (Stativverb)"
+    ],
+    "markers": {
+      "tags": [
+        "gestern",
+        "letzte Nacht",
+        "letzte Woche",
+        "letzten Monat",
+        "letztes Jahr",
+        "letzten Montag",
+        "vor",
+        "im Jahr 2010",
+        "im Januar",
+        "am Morgen (eines bestimmten Tages)",
+        "um 15 Uhr",
+        "am Dienstag",
+        "als ich jung war",
+        "dann",
+        "danach",
+        "plötzlich",
+        "sofort",
+        "endlich",
+        "einmal",
+        "in diesem Moment",
+        "damals",
+        "in der Vergangenheit"
+      ],
+      "note": "Schlüsselregel: bestimmte Zeit in der Vergangenheit → Past Simple, nicht Present Perfect!"
+    },
+    "ex": [
+      [
+        "She worked all day yesterday.",
+        "Sie hat gestern den ganzen Tag gearbeitet."
+      ],
+      [
+        "They played tennis last Sunday.",
+        "Sie haben letzten Sonntag Tennis gespielt."
+      ]
+    ]
+  },
+  "a2_02": {
+    "text": "Past Simple – unregelmäßige Verben (Tabelle)",
+    "note": "gehen→gingen, sehen→sahen, haben→hatten, kamen→kamen, kaufen→gekauft",
+    "exp": "Etwa 200 unregelmäßige Verben müssen auswendig gelernt werden. Die häufigsten 50 decken ca. 90 % der Verwendungen ab.<br><br>Gruppiert nach Ähnlichkeit der Änderungen:<br>• AAA (nicht ändern): <em>schneiden, setzen, schlagen, setzen, lassen</em><br>• ABA (zurück zum Anfang): <em>laufen→ran→laufen, kommen→kam→kommen</em><br>• ABC (alles anders): <em>gehen→ging→gegangen, sein→war/waren→gewesen</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie ging</s> → Sie <em>ging</em>",
+      "<s>Ich habe gekauft</s> → Ich <em>gekauft</em>",
+      "<s>Sie sind nicht gegangen</s> → Sie sind nicht <em>gegangen</em> (nachher – Grundform)"
+    ],
+    "markers": {
+      "tags": [
+        "gestern",
+        "letzte Woche",
+        "vor",
+        "Wann?",
+        "wie viel Uhr?",
+        "im Jahr 2019",
+        "am Montag"
+      ],
+      "note": "Fragewort wann? erfordert immer Past Simple (nicht Present Perfect)."
+    },
+    "ex": [
+      [
+        "I went to Paris last summer.",
+        "Ich war letzten Sommer in Paris."
+      ],
+      [
+        "She saw a great film.",
+        "Sie hat einen tollen Film gesehen."
+      ],
+      [
+        "We had a meeting at 9.",
+        "Wir hatten um 9 Uhr ein Treffen."
+      ]
+    ]
+  },
+  "a2_03": {
+    "text": "Past Simple - Verneinung: don't + Infinitiv",
+    "note": "Sie ist nicht gegangen (nicht: ist nicht gegangen). Ich habe ihn nicht gesehen.",
+    "exp": "Verneinung: <em>didn</em> (= nicht) + Infinitiv für <strong>alle Personen</strong>.<br>⚠️ Nach <em>didn</em> - <strong>Grundform</strong> des Verbs (nicht im Präteritum!): <em>She done't go</em> (nicht <s>ging</s>).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich bin nicht gegangen</s> → Ich bin nicht <em>gegangen</em>",
+      "<s>Sie ist nicht gekommen</s> → Sie ist nicht <em>gekommen</em>",
+      "<s>Hat sie gespielt?</s> → Hat sie <em>gespielt</em>?",
+      "<s>Sie ist nicht gekommen</s> → Sie ist nicht <em>gekommen</em>",
+      "<s>Was hat er getan?</s> → Was <em>hat er getan?</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I didn't see him yesterday.",
+        "Ich habe ihn gestern nicht gesehen."
+      ],
+      [
+        "She didn't come to work.",
+        "Sie erschien nicht zur Arbeit."
+      ]
+    ]
+  },
+  "a2_04": {
+    "text": "Past Simple – Fragen: Hast du? Wohin ist sie gegangen?",
+    "note": "Sind sie angekommen? Was hat er gesagt?",
+    "exp": "Frage: <em>Haben + Subjekt + Infinitiv getan?</em><br>Spezielle Fragen: <em>Wo/Wann/Was + Haben + Subjekt + Infinitiv getan?</em><br><br>⚠️ Ausnahme: die Frage „Wer hat die Aktion ausgeführt?“ wird ohne gebaut: <em>Wer hat angerufen? Wer hat die Vase zerbrochen?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich werde gehen</s> → Ich <em>werde gehen</em> (ohne zu)",
+      "<s>Sie wird kommen</s> → Sie wird kommen (der Wille ändert sich nicht)",
+      "<s>Ich denke, sie geht morgen</s> → sie <em>wird gehen</em>"
+    ],
+    "markers": {
+      "tags": [
+        "morgen",
+        "nächste Woche",
+        "nächsten Monat",
+        "nächstes Jahr",
+        "bald",
+        "in einer Minute",
+        "in einer Stunde",
+        "in der Zukunft",
+        "eines Tages",
+        "eines Tages",
+        "wahrscheinlich",
+        "vielleicht",
+        "vielleicht",
+        "Ich denke...",
+        "Ich erwarte...",
+        "Ich bin sicher...",
+        "sicherlich",
+        "auf jeden Fall auf jeden Fall"
+      ],
+      "note": "Wille wird für spontane Entscheidungen, Versprechen, Vorhersagen ohne Beweise verwendet."
+    },
+    "ex": [
+      [
+        "Did you enjoy the film?",
+        "Hat dir der Film gefallen?"
+      ],
+      [
+        "Where did they go?",
+        "Wohin sind sie gegangen?"
+      ],
+      [
+        "Who told you that?",
+        "Wer hat dir das erzählt?"
+      ]
+    ]
+  },
+  "a2_05": {
+    "text": "war / waren – Verb in der Vergangenheit sein",
+    "note": "Ich/er/sie/es war. Sie/wir/sie waren.",
+    "exp": "Vergangenheitsform des Verbs <em>sein</em>:<br>• <em>war</em> – mit mir, er, sie, es<br>• <em>waren</em> – mit dir, wir, sie<br><br>Verneinung: <em>warn't / werent</em><br>Frage: <em>War sie...? Waren sie...?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich werde tun</s> – nur eines: <em>Ich werde tun</em>",
+      "<s>Sie wird es tun</s> → Sie wird es <em>tun</em>",
+      "<s>Er wird es tun</s> – umgangssprachliche Form, schriftlich inakzeptabel"
+    ],
+    "markers": {
+      "tags": [
+        "morgen",
+        "nächste Woche",
+        "bald",
+        "dieses Wochenende",
+        "heute Abend",
+        "im Juni",
+        "Sehen! (Zeichen)",
+        "Achtung!"
+      ],
+      "note": "gehen zu = eine vorab getroffene Entscheidung oder Vorhersage basierend auf sichtbaren Zeichen."
+    },
+    "ex": [
+      [
+        "I was very tired last night.",
+        "Ich war letzte Nacht sehr müde."
+      ],
+      [
+        "They were at home all day.",
+        "Sie waren den ganzen Tag zu Hause."
+      ],
+      [
+        "Was it expensive?",
+        "War es teuer?"
+      ]
+    ]
+  },
+  "a2_06": {
+    "text": "Wille - Vorhersagen und spontane Entscheidungen",
+    "note": "Ich rufe Sie zurück. Morgen wird es regnen. Ich nehme die Nudeln.",
+    "exp": "<em>will</em> wird verwendet für:<br>1. <strong>Spontane Entscheidungen</strong> (zum Zeitpunkt der Rede getroffen): <em>Ich helfe Ihnen dabei.</em><br>2. <strong>Vorhersagen</strong> ohne konkreten Plan: <em>Ich denke, es wird regnen.</em><br>3. <strong>Versprechen</strong>: <em>Ich werde es niemandem erzählen.</em><br>4. <strong>Anfragen</strong>: <em>Wirst du das Fenster öffnen?</em><br><br>Abkürzung: <em>wird</em>. Verneinung: <em>wird nicht</em> (= wird nicht).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich werde gehen</s> → Ich <em>werde gehen</em> (ohne zu)",
+      "<s>Sie wird kommen</s> → Sie wird kommen (der Wille ändert sich nicht)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The phone is ringing. — I'll get it!",
+        "Das Telefon klingelt. - Ich antworte!"
+      ],
+      [
+        "It will be cold tomorrow.",
+        "Morgen wird es kalt sein."
+      ]
+    ]
+  },
+  "a2_07": {
+    "text": "gehen zu - Absichten und offensichtliche Vorhersagen",
+    "note": "Ich werde Paris besuchen. Pass auf, du wirst fallen!",
+    "exp": "<em>going to</em> wird verwendet für:<br>1. <strong>Vorab getroffene Entscheidungen und Absichten</strong>: <em>Ich werde nächste Woche mit einer Diät beginnen.</em><br>2. <strong>Vorhersagen mit sichtbaren Zeichen</strong>: <em>Schau dir diese Wolken an – es wird regnen!</em><br><br>Form: <em>am/is/are + gonna + Infinitiv</em>",
+    "exc": "<em>will vs. gehen</em>: <em>„Ich trinke einen Kaffee“</em> – Ich entscheide gerade; <em>„Ich gehe einen Kaffee trinken“</em> – das habe ich schon vorhin entschieden.",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie wird es tun</s> → Sie wird es <em>tun</em>",
+      "<s>Das werde ich tun</s> – man kann nicht zwei Zukunftsaussichten haben"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm going to study medicine.",
+        "Ich werde Medizin studieren."
+      ],
+      [
+        "She's going to have a baby.",
+        "Sie erwartet ein Baby."
+      ]
+    ]
+  },
+  "a2_08": {
+    "text": "Present Continuous: am/is/are + V-ing",
+    "note": "Sie liest jetzt. Sie spielen draußen.",
+    "exp": "<strong>Present Continuous</strong> ist eine Aktion, die <strong>jetzt</strong> oder <strong>vorübergehend</strong> in diesem Zeitraum stattfindet.<br><br>Form: <em>am/is/are + Verb + -ing</em><br><br>Regeln für das Schreiben von <em>-ing</em>:<br>• Die meisten: nur + <em>ing</em> → <em>arbeiten, spielen</em><br>• Endet mit -e: entferne -e + <em>ing</em> → <em>machen, kommen</em><br>• Kurze betonte Silbe: doppelter letzter Konsonant → <em>rennen, sitzen</em>",
+    "exc": "",
+    "tip": "Markierungen: jetzt, im Moment, aktuell, diese Woche/diesen Monat.",
+    "mistakes": [
+      "<s>Ich war zu Besuch</s> → Ich war <em>zu Besuch</em>",
+      "<s>Sie arbeitete</s> → Sie <em>arbeitete</em> (sie/er/es → war)",
+      "<s>Mit 8 war ich arbeiten</s> → Ich <em>arbeitete</em>"
+    ],
+    "markers": {
+      "tags": [
+        "jetzt",
+        "gerade jetzt",
+        "im Moment",
+        "derzeit",
+        "derzeit",
+        "heute",
+        "diese Woche",
+        "diesen Monat",
+        "dieses Jahr",
+        "immer noch",
+        "Sehen!",
+        "Hören!",
+        "heutzutage",
+        "vorübergehend",
+        "vorerst"
+      ],
+      "note": "Diese Markierungen weisen auf eine aktuelle Aktion oder eine vorübergehende Situation hin."
+    },
+    "ex": [
+      [
+        "I am studying English right now.",
+        "Ich lerne jetzt Englisch."
+      ],
+      [
+        "She's working from home this month.",
+        "Sie arbeitet diesen Monat von zu Hause aus."
+      ]
+    ]
+  },
+  "a2_09": {
+    "text": "Present Continuous für die geplante Zukunft",
+    "note": "Ich treffe Tom morgen. Wir fliegen am Freitag nach Rom.",
+    "exp": "Present Continuous wird für <strong>spezifische Vereinbarungen</strong> in der Zukunft verwendet – wenn Zeitpunkt und Ort bereits festgelegt sind.<br><br>Unterschied:<br>• <em>Ich treffe Alice morgen</em> – das Treffen wurde vereinbart (ein konkreter Plan)<br>• <em>Ich treffe Alice morgen</em> – Absicht oder Vorschlag",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich treffe Tom nächste Woche</s> → treffe Tom <em>nächste Woche</em> (ohne in)",
+      "<s>Wir fliegen am Freitag nach Rom</s> → am <em>Freitag</em>"
+    ],
+    "markers": {
+      "tags": [
+        "morgen",
+        "heute Abend",
+        "nächste Woche",
+        "nächsten Monat",
+        "am Freitag",
+        "heute Abend",
+        "bald",
+        "morgen um 20 Uhr",
+        "im Juni",
+        "am Montag"
+      ],
+      "note": "Present Continuous für die Zukunft – spezifische Vereinbarungen, es gibt eine Zeit und einen Ort."
+    },
+    "ex": [
+      [
+        "I'm having dinner with Alex tonight.",
+        "Ich esse heute Abend mit Alex zu Abend."
+      ],
+      [
+        "They're getting married in June.",
+        "Sie heiraten im Juni."
+      ]
+    ]
+  },
+  "a2_10": {
+    "text": "Present Simple vs. Present Continuous – Unterschied",
+    "note": "Ich trinke Kaffee (Gewohnheit) vs. Ich trinke Kaffee (im Moment)",
+    "exp": "<strong>Present Simple:</strong> Gewohnheiten, Fakten, Zeitpläne, allgemeine Wahrheiten.<br><strong>Present Continuous:</strong> etwas, das gerade oder vorübergehend passiert.<br><br>Vergleiche:<br>• <em>Sie spricht Französisch.</em> – kennt die Sprache (immer)<br>• <em>Sie spricht Französisch.</em> – spricht gerade<br><br>⚠️ Stative-Verben (wissen, lieben, wollen, verstehen...) - nur Present Simple!",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich trinke jeden Morgen Kaffee</s> → Ich <em>trinke</em> (Gewohnheit)",
+      "<s>Sie spricht Französisch</s> → Sie <em>kennt</em> Französisch",
+      "<s>Wasser kocht bei 100°C</s> → Wasser <em>kocht</em> (Tatsache)"
+    ],
+    "markers": {
+      "tags": [
+        "jetzt ↔ jeden Tag",
+        "im Moment ↔ immer",
+        "derzeit ↔ normalerweise",
+        "diese Woche ↔ normal"
+      ],
+      "note": "Der Marker bestimmt die Auswahl: jetzt/im Moment → Kontinuierlich; immer/jeden Tag → Einfach."
+    },
+    "ex": [
+      [
+        "Water boils at 100°C. (факт)",
+        "Wasser siedet bei 100°C."
+      ],
+      [
+        "I'm reading a great book this week. (временно)",
+        "Ich lese diese Woche ein tolles Buch."
+      ]
+    ]
+  },
+  "a2_11": {
+    "text": "sollte / sollte nicht - Rat und Empfehlung",
+    "note": "Sie sollten einen Arzt aufsuchen. Du solltest nicht so viel essen.",
+    "exp": "<em>sollte</em> drückt einen milden Rat oder eine persönliche Meinung aus. Schwächer als <em>must</em>.<br>Nach <em>should</em> - Infinitiv ohne <em>to</em>.<br><br>Wird auch für Kritik oder Bedauern verwendet: <em>You Should Have Call</em> (should have Call).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie sollten einen Arzt aufsuchen</s> → sollten <em>sehen</em> (ohne es zu tun)",
+      "<s>Sie sollte gehen</s> → Sie sollte <em>gehen</em>",
+      "<s>Ich hätte gehen sollen</s> → Ich hätte <em>gehen</em> sollen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You should exercise more.",
+        "Du solltest mehr Sport treiben."
+      ],
+      [
+        "She shouldn't work so hard.",
+        "Sie sollte nicht so hart arbeiten."
+      ]
+    ]
+  },
+  "a2_12": {
+    "text": "muss / darf nicht – Pflicht und striktes Verbot",
+    "note": "Sie müssen einen Sicherheitsgurt tragen. Hier darf nicht geraucht werden.",
+    "exp": "<em>muss</em> – eine starke Verpflichtung (oft intern) oder eine kategorische Anforderung.<br><em>darf</em> – ein striktes <strong>Verbot</strong> (absolut unmöglich!) <em>don't have to</em> = nicht erforderlich, aber möglich",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Du darfst nicht rauchen</s> → darf nicht <em>rauchen</em>",
+      "<s>Ich muss dies tun</s> → Ich <em>muss</em> dies tun (ohne es zu tun)",
+      "<s>Du darfst nicht kommen</s> ≠ „du brauchst nicht“ ist „du kannst nicht!“ Für „muss nicht“: <em>muss nicht</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You must show your passport.",
+        "Sie müssen Ihren Reisepass vorlegen."
+      ],
+      [
+        "You mustn't smoke here.",
+        "Hier darf nicht geraucht werden."
+      ]
+    ]
+  },
+  "a2_13": {
+    "text": "müssen - äußere Notwendigkeit",
+    "note": "Ich muss lange arbeiten. Sie muss nicht kommen.",
+    "exp": "<em>müssen</em> – eine Notwendigkeit aufgrund äußerer Regeln, Umstände oder Anforderungen anderer Menschen.<br><br>Unterschied von <em>müssen</em>:<br>• <em>müssen</em> – interne Notwendigkeit: <em>Ich muss sie anrufen</em> (ich selbst halte es für notwendig)<br>• <em>müssen</em> – äußerlich: <em>Ich muss eine Uniform tragen</em> (Regel)<br><br><em>muss nicht to</em>=optional (nicht notwendig, aber erlaubt).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich muss das können</s> – Sie können nicht zwei Modalitäten hintereinander haben",
+      "<s>Sie muss nicht kommen</s> → Sie <em>muss nicht</em> kommen",
+      "<s>Du darfst nicht kommen</s> → darf nicht kommen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I have to finish this report by Friday.",
+        "Ich muss meinen Bericht bis Freitag abgeben."
+      ],
+      [
+        "You don't have to come if you don't want to.",
+        "Du musst nicht kommen."
+      ]
+    ]
+  },
+  "a2_14": {
+    "text": "könnte - vorbei an Geschick und höflichen Bitten",
+    "note": "Sie konnte schwimmen, als sie 5 war. Könnten Sie mir helfen?",
+    "exp": "<em>could</em> ist die Vergangenheitsform von <em>can</em>. Zwei Hauptbedeutungen:<br>1. <strong>Fähigkeiten in der Vergangenheit</strong>: <em>Ich konnte mit 4 Jahren lesen.</em><br>2. <strong>Höfliche Bitten</strong> (höflicher als <em>können</em>): <em>Könnten Sie bitte das Salz reichen?</em><br><br>Auch für die gegenwärtige Möglichkeit: <em>Es könnte wahr sein.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie konnte schwimmen</s> → Sie konnte <em>schwimmen</em> (ohne zu)",
+      "<s>Kann ich, als ich ein Kind war</s> → <em>Ich konnte</em>, als ich ein Kind war",
+      "<s>Könnten Sie langsam sprechen?</s> → Könnten Sie langsam sprechen?"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She could play the violin as a child.",
+        "Als Kind konnte sie Geige spielen."
+      ],
+      [
+        "Could you speak more slowly, please?",
+        "Könnten Sie langsamer sprechen?"
+      ]
+    ]
+  },
+  "a2_15": {
+    "text": "Vergleichsgrad von Adjektiven",
+    "note": "größer, interessanter, besser, schlechter",
+    "exp": "Einsilbig und zweisilbig in <em>-y</em>: + <em>er</em> (schnell→schneller, glücklich→glücklicher).<br>Mehrsilbig: <em>mehr</em> + Adjektiv.<br><br>Schreibregeln: <em>-e</em> → + <em>r</em> (schön→schöner); kurze betonte Silbe: doppelt (groß→größer); -y → ier (schwer→schwerer).<br><br>Unregelmäßig: <em>gut→besser, schlecht→schlechter, weit→weiter/weiter, viel/viel→mehr</em><br>Nach dem Komparativ - <em>als</em>: <em>Sie ist größer als ihre Schwester.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie ist größer als</s> → Sie ist <em>größer</em> als",
+      "<s>Er ist besser</s> → Er ist <em>besser</em>",
+      "<s>Sie ist die Größte in der Klasse</s> → Sie ist <em>die</em> Größte"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This film is more interesting than that one.",
+        "Dieser Film ist noch interessanter."
+      ],
+      [
+        "Today is worse than yesterday.",
+        "Heute ist es schlimmer als gestern."
+      ]
+    ]
+  },
+  "a2_16": {
+    "text": "Adjektive der Superlative",
+    "note": "das Größte, das Schönste, das Beste",
+    "exp": "Einsilbig: <em>das + -est</em>. Mehrsilbig: <em>am meisten</em>.<br>Die Schreibregeln sind die gleichen wie beim Komparativgrad.<br><br>Unregelmäßig: <em>gut→das Beste, schlecht→das Schlimmste, weit→am weitesten, viel/viele→am meisten</em><br><br>⚠️ Immer mit dem Artikel <em>das</em>! Nach Superlativen, oft <em>in</em> oder <em>von</em>: <em>das größte Mädchen in der Klasse.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Er ist der Klügste</s> → Er ist <em>der Klügste</em> / <em>der Klügste</em>",
+      "<s>Sie ist die Beste</s> → Sie ist <em>die Beste</em>",
+      "<s>Das ist der interessanteste Film</s> → <em>der interessanteste</em> Film (brauche den)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is the most expensive restaurant in the city.",
+        "Dies ist das teuerste Restaurant der Stadt."
+      ],
+      [
+        "He is the best player on the team.",
+        "Er ist der beste Spieler im Team."
+      ]
+    ]
+  },
+  "a2_17": {
+    "text": "einige / irgendwelche - unbestimmte Menge",
+    "note": "Ich habe etwas Geld. Hast du welche? Ich habe keine.",
+    "exp": "<em>einige</em> – in bejahenden Sätzen und in Angeboten/Anfragen.<br><em>irgendwelche</em> – in Fragen und Verneinungen.<br><br>Ausnahme: <em>einige</em> in Fragen, wenn wir eine bejahende Antwort erwarten oder etwas anbieten: <em>Möchten Sie etwas Tee? Kann ich etwas Wasser haben?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich habe etwas Geld? (Frage)</s> → Habe ich Geld?",
+      "<s>Ich habe kein Bargeld</s> → Ich habe <em>kein</em> Bargeld",
+      "<s>Möchten Sie Tee?</s> → Möchten Sie <em>etwas</em> Tee? (Angebot)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I bought some bread and some milk.",
+        "Ich kaufte Brot und Milch."
+      ],
+      [
+        "Is there any milk in the fridge?",
+        "Ist Milch im Kühlschrank?"
+      ],
+      [
+        "I don't have any cash on me.",
+        "Ich habe kein Bargeld dabei."
+      ]
+    ]
+  },
+  "a2_18": {
+    "text": "viel / viele / viel / ein paar / wenig",
+    "note": "viel Wasser (unzählbar), viele Menschen (zählbar), viel – überall",
+    "exp": "<em>viel</em> – mit Unzählbaren (viel Wasser, viel Zeit, viel Geld).<br><em>viele</em> – mit Zählbaren (viele Leute, viele Bücher, viele Male).<br><em>viel / viel</em> – mit beidem, Konversationsstil.<br><br><em>ein paar</em> – ein wenig (zählbar, neutral/positiv).<br><em>wenige</em> – wenige, fast keine (zählbar, negativ).<br><em>ein wenig</em> – ein wenig (unzählig, neutral).<br><em>wenig</em> – wenig, fast nichts (unzählig, negativ).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Viele</s> → <em>Viele</em> Menschen (zählbar)",
+      "<s>Viel Geld</s> → <em>Viel</em> Geld (unzählig)",
+      "<s>Ein paar Wasser</s> → <em>Ein wenig</em> Wasser"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I don't have much time.",
+        "Ich habe nicht viel Zeit."
+      ],
+      [
+        "She has a few friends in London.",
+        "Sie hat mehrere Freunde in London."
+      ],
+      [
+        "There is a little sugar left.",
+        "Es ist noch etwas Zucker übrig."
+      ]
+    ]
+  },
+  "a2_19": {
+    "text": "Zählbare und überzählbare Substantive",
+    "note": "Wasser, Informationen, Ratschläge – nicht erlaubt: ein Wasser, zwei Ratschläge",
+    "exp": "<strong>Zählbar</strong>: Man kann zählen, es gibt Plural. Zahl: <em>ein Buch, zwei Bücher</em>.<br><strong>Unzählbar</strong>: kann nicht direkt gezählt werden – kein Plural. Zahlen, kein unbestimmter Artikel.<br><br>Typische Unzählbare: <em>Wasser, Milch, Brot, Reis, Geld, Informationen, Ratschläge, Nachrichten, Wetter, Gepäck, Möbel, Haare, Musik, Arbeit</em><br><br>Um Portionen anzugeben: <em>ein Glas Wasser, ein Ratschlag, ein Laib Brot, eine Tüte Reis</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Zwei Ratschläge</s> → Zwei <em>Ratschläge</em> (unzählige Ratschläge)",
+      "<s>Eine Information</s> → <em>Einige Informationen</em>",
+      "<s>Drei Möbel</s> → Drei <em>Möbel</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Can I have some information, please?",
+        "Darf ich etwas wissen?"
+      ],
+      [
+        "She gave me very useful advice.",
+        "Sie hat mir sehr nützliche Ratschläge gegeben."
+      ]
+    ]
+  },
+  "a2_20": {
+    "text": "Präpositionen in / on / at für Zeit",
+    "note": "im März, im Jahr 2024, im Winter; am Montag, am 5. Juni; um 15 Uhr, nachts",
+    "exp": "<em>um</em> → genaue Uhrzeit: <em>um 6 Uhr, mittags, um Mitternacht, nachts, am Wochenende (BrE)</em><br><em>am</em> → Tage und Daten: <em>am Montag, am 5. März, an meinem Geburtstag, am Neujahrstag</em><br><em>im</em> → Zeiträume: <em>im Juli, im Jahr 2023, morgens/nachmittags/abends, in Sommer, im 21. Jahrhundert</em><br><br>Ohne Präposition: <em>dieses/letzte/nächste + Zeit: heute Morgen, letzte Woche, nächstes Jahr</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>am Montag</s> → <em>am</em> Montag",
+      "<s>in 8 Uhr</s> → <em>um</em> 8 Uhr",
+      "<s>am Morgen</s> → <em>am</em> Morgen",
+      "<s>an meinem Geburtstag</s> → <em>an</em> meinem Geburtstag"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The meeting is at half past three.",
+        "Treffen um halb fünf."
+      ],
+      [
+        "She was born on the 12th of April.",
+        "Sie wurde am 12. April geboren."
+      ],
+      [
+        "I started this job in October.",
+        "Ich habe im Oktober mit dieser Arbeit begonnen."
+      ]
+    ]
+  },
+  "a2_21": {
+    "text": "für / seit / her – Dauer und Beginn",
+    "note": "seit drei Jahren, seit 2020, vor drei Jahren",
+    "exp": "<em>für</em> – Dauer (wie lange): <em>für zwei Stunden, für eine Woche, für Jahre</em>. Wird mit verschiedenen Zeitformen verwendet.<br><em>seit</em> – erster Moment (seit): <em>seit Montag, seit 2019, seit ich ein Kind war</em>. Wird mit dem Present Perfect verwendet.<br><em>vor</em> – Zeit von jetzt an: <em>vor drei Tagen, vor einem Monat</em>. Nur mit Past Simple.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich bin seit drei Jahren hier</s> → seit drei Jahren",
+      "<s>Ich habe ihn seit Montag gesehen</s> → Ich habe ihn <em>am</em> Montag gesehen (vorher mit Past Simple, nicht seitdem!)",
+      "<s>Drei Tage vorher</s> → Drei Tage <em>vor</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've been here for six months.",
+        "Ich bin jetzt seit sechs Monaten hier."
+      ],
+      [
+        "She's worked here since 2020.",
+        "Seit 2020 arbeitet sie hier."
+      ],
+      [
+        "I saw him two days ago.",
+        "Ich habe ihn vor zwei Tagen gesehen."
+      ]
+    ]
+  },
+  "a2_22": {
+    "text": "Schwanzfragen: ... nicht wahr? / ...Tust du? / ...nicht wahr?",
+    "note": "Es ist kalt, nicht wahr? Du magst Jazz, nicht wahr?",
+    "exp": "Tag-Fragen werden zur Bestätigung oder Klarstellung verwendet.<br><br>Regel: bejahender Satz → negativer Tag und umgekehrt.<br>Hilfsverb am Ende = Zeitform des Hauptsatzes.<br><br>Intonation: ↘ (fallend) = Bestätigung; ↗ (steigend) = echte Frage.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es ist kalt, nicht wahr?</s> → nicht wahr",
+      "<s>Sie kann schwimmen, nicht wahr?</s> → kann <em>sie</em> nicht",
+      "<s>Es gefällt dir nicht, nicht wahr?</s> → <em>mag</em> dir? (negativer Satz → positiver Schwanz)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It's a nice day, isn't it?",
+        "Schöner Tag, oder?"
+      ],
+      [
+        "You don't like horror films, do you?",
+        "Du magst keine Horrorfilme, oder?"
+      ],
+      [
+        "She can swim, can't she?",
+        "Sie kann schwimmen, oder?"
+      ]
+    ]
+  },
+  "a2_23": {
+    "text": "have got – Besitz (britische Version)",
+    "note": "Ich habe ein Auto. Hast du einen Stift? Sie hat keine Zeit.",
+    "exp": "<em>have got</em> ist eine umgangssprachliche britische Form von Besitz. Wert = <em>habe</em>.<br><br>• Bestätigung: <em>Ich habe / ich habe einen Laptop.</em><br>• Ablehnung: <em>Ich habe / ich habe keinen</em><br>• Frage: <em>Hast du...? / Hast du...?</em><br><br>⚠️ <em>have got</em> wird nur in der Gegenwart verwendet. Für die Vergangenheit – nur <em>hatte</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich habe 2010 ein Auto</s> → Ich habe 2010 ein Auto <em>gekauft</em> (habe nur das Geschenk)",
+      "<s>Sie hatte einen Hund</s> → Sie <em>hatte</em> einen Hund (früher – hatte nur)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've got two brothers.",
+        "Ich habe zwei Brüder."
+      ],
+      [
+        "Have you got the time?",
+        "Weißt du nicht, wie spät es ist?"
+      ],
+      [
+        "She hasn't got any cash.",
+        "Sie hat kein Bargeld."
+      ]
+    ]
+  },
+  "a2_24": {
+    "text": "Verhaltensadverbien: schnell, vorsichtig, gut, hart, schnell",
+    "note": "Sie singt wunderschön. Er arbeitet hart. Sie fährt schnell.",
+    "exp": "Die meisten Adverbien werden aus Adjektiven + <em>-ly</em> gebildet: <em>schnell → schnell, vorsichtig → vorsichtig, langsam → langsam</em>.<br><br>Sonderfälle:<br>• <em>gut → gut</em> (nicht <s>gut</s>)<br>• <em>schnell → schnell</em> (nicht <s>fastly</s>)<br>• <em>hart → hart</em> (nicht <s>kaum</s> – das ist ein anderes Wort: „kaum“",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie singt wunderschön</s> → Sie singt <em>wunderschön</em>",
+      "<s>Er arbeitet kaum</s> → Er arbeitet <em>hart</em> (kaum = kaum)",
+      "<s>Sie fährt schnell</s> → Sie fährt <em>schnell</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He explained it clearly.",
+        "Er hat es klar erklärt."
+      ],
+      [
+        "She ran fast.",
+        "Sie rannte schnell."
+      ],
+      [
+        "They worked hard all day.",
+        "Sie haben den ganzen Tag hart gearbeitet."
+      ]
+    ]
+  },
+  "a2_25": {
+    "text": "Häufigkeitsadverbien und ihre Stellung im Satz",
+    "note": "immer, normalerweise, oft, manchmal, selten, nie – vor dem Hauptverb",
+    "exp": "Häufigkeitsadverbien: <em>immer, normalerweise, oft, manchmal, gelegentlich, selten, selten, nie</em>.<br><br>Einsetzen in einen Satz:<br>• Vor dem Hauptverb: <em>Sie trinkt immer Tee.</em><br>• Nach dem Verb <em>sein</em>: <em>Er kommt immer zu spät.</em><br>• Nach dem Hilfsverb: <em>Sie war noch nie in Italien.</em><br><br>Außerdem: <em>jeden Tag/Woche, einmal pro Woche, zweimal im Monat</em> – am Ende des Satzes.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie kommt immer zu spät</s> → Sie kommt <em>immer</em> zu spät (später)",
+      "<s>Er trinkt immer Kaffee</s> → Er <em>immer</em> trinkt Kaffee (vor dem Hauptverb)",
+      "<s>Sie war nie immer pünktlich</s> – zwei Adverbien zusammen sind unangemessen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I usually wake up at 7.",
+        "Normalerweise wache ich um 7 Uhr auf."
+      ],
+      [
+        "She is never late for work.",
+        "Sie kommt nie zu spät zur Arbeit."
+      ],
+      [
+        "They meet once a week.",
+        "Sie treffen sich einmal pro Woche."
+      ]
+    ]
+  },
+  "a2_26": {
+    "text": "Reihenfolge der Adjektive vor Substantiven",
+    "note": "eine schöne kleine alte rote italienische Ledertasche",
+    "exp": "Wenn mehrere Adjektive vor einem Substantiv stehen, wird eine strenge Reihenfolge eingehalten: Meinung → Größe → Alter → Form → Farbe → Herkunft → Material → Zweck</strong><br>(Meinung → Größe → Alter → Form → Farbe → Herkunft → Material → Zweck)<br><br>Beispiel: <em>ein kleiner schöner alter quadratischer brauner französischer Holzschreibtisch</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>eine alte französische kleine Holztasche</s> → Reihenfolge: Größe → Alter → Herkunft → Material",
+      "<s>ein wunderschönes italienisches großes Auto</s> → großes <em>schönes</em> italienisches Auto (Größe vor Meinung – nein)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "a lovely little old cottage",
+        "schönes kleines altes Häuschen"
+      ],
+      [
+        "a big red Italian sports car",
+        "großer roter italienischer Sportwagen"
+      ]
+    ]
+  },
+  "b1_01": {
+    "text": "Present Perfect – Form und Bedeutung",
+    "note": "Ich habe es gesehen. Sie ist gegangen. Sie sind angekommen.",
+    "exp": "<strong>Present Perfect</strong> = have/has + V3 (dritte Form des Verbs).\n<br><br>Drei Hauptbedeutungen:\n<br>1. <strong>Lebenserfahrung</strong> (keine Zeitangabe): <em>Ich habe Tokio besucht.</em>\n<br>2. <strong>Ergebnis in der Gegenwart</strong>: <em>Ich habe meine Schlüssel verloren.</em> (Es gibt jetzt keine Schlüssel)\n<br>3. <strong>Unvollendete Aktion</strong>, läuft jetzt: <em>Sie lebt hier seit 5 Jahren.</em>\n<br><br>V3 regelmäßige Verben = Past Simple (bearbeitet, gespielt). Falsche müssen separat bekannt sein.",
+    "exc": "",
+    "tip": "Markierungen: jemals, nie, schon, noch, gerade, kürzlich, in letzter Zeit, bisher.",
+    "mistakes": [
+      "<s>Ich habe ihn gestern gesehen</s> → Ich <em>sah</em> ihn gestern (gestern = Past Simple!)",
+      "<s>Sie ist weg</s> → Sie ist <em>weg</em>",
+      "<s>Ich war letztes Jahr in Rom</s> → Ich <em>war</em> letztes Jahr in Rom"
+    ],
+    "markers": {
+      "tags": [
+        "jemals",
+        "nie",
+        "bereits",
+        "noch",
+        "einfach",
+        "vor kurzem",
+        "spät",
+        "bisher",
+        "bisher",
+        "bis jetzt",
+        "immer noch (neg.)",
+        "diese Woche",
+        "diesen Monat",
+        "dieses Jahr",
+        "heute",
+        "vor",
+        "einmal",
+        "zweimal",
+        "dreimal",
+        "für",
+        "seit",
+        "Es ist das erste Mal...",
+        "das Beste, was ich je hatte..."
+      ],
+      "note": "Wird nie mit einer bestimmten Zeit der Vergangenheit verwendet (gestern, letztes Jahr, im Jahr 2020 → Past Simple)."
+    },
+    "ex": [
+      [
+        "Have you ever eaten sushi?",
+        "Haben Sie schon einmal Sushi gegessen?"
+      ],
+      [
+        "I've just finished my homework.",
+        "Ich habe gerade meine Hausaufgaben erledigt."
+      ],
+      [
+        "She hasn't called yet.",
+        "Sie hat noch nicht angerufen."
+      ]
+    ]
+  },
+  "b1_02": {
+    "text": "jemals / nie / schon / noch / gerade - Present Perfect Marker",
+    "note": "Haben Sie jemals...? Ich habe noch nie... Ich habe schon... Noch nicht. Ich habe gerade...",
+    "exp": "<em>jemals</em> - irgendwann (in Fragen zur Erfahrung). Standort: vor V3.\n<br><em>nie</em> – nie (negativer Wert). Standort: vor V3.\n<br><em>bereits</em> – bereits (früher als erwartet). Ort: vor V3 oder am Ende.\n<br><em>noch</em> - schon/noch. In Fragen (Bist du schon fertig?) und Verneinungen (Ich bin noch nicht fertig). Ort: Ende des Satzes.\n<br><em>gerade</em> – gerade jetzt. Standort: vor V3.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Waren Sie schon einmal in Paris?</s> → <em>jemals</em> in der Frage, <em>noch</em> am Ende",
+      "<s>Ich bin noch nicht fertig</s> → Ich bin <em>noch</em> fertig",
+      "<s>Ich habe gerade gegessen</s> → Ich habe <em>gerade</em> gegessen (kurz vor V3)"
+    ],
+    "markers": {
+      "tags": [
+        "jemals",
+        "nie",
+        "bereits",
+        "noch",
+        "einfach",
+        "vor kurzem",
+        "spät",
+        "bisher",
+        "bisher",
+        "immer noch (noch nicht)"
+      ],
+      "note": "jemals/nie – vor V3; bereits - vor V3 oder am Ende; noch - erst am Ende."
+    },
+    "ex": [
+      [
+        "Have you ever been to Scotland?",
+        "Warst du schon in Schottland?"
+      ],
+      [
+        "I've never eaten snails.",
+        "Ich habe noch nie Schnecken gegessen."
+      ],
+      [
+        "I've already seen that film.",
+        "Ich habe diesen Film bereits gesehen."
+      ],
+      [
+        "She hasn't replied yet.",
+        "Sie hat noch nicht geantwortet."
+      ]
+    ]
+  },
+  "b1_03": {
+    "text": "Present Perfect vs. Past Simple – der entscheidende Unterschied",
+    "note": "Ich war in Paris (Erfahrung) vs. 2019 war ich in Paris (bestimmte Zeit)",
+    "exp": "Dies ist einer der wichtigsten Unterschiede in der englischen Grammatik.\n<br><br><strong>Present Perfect</strong> - Verbindung mit der Gegenwart, Zeit wird NICHT angegeben:\n<br><em>Ich habe mein Portemonnaie verloren.</em> (Jetzt kein Portemonnaie – das ist wichtig)\n<br><br><strong>Past Simple</strong> – abgeschlossene Vergangenheit, Zeit wird angegeben oder impliziert:\n<br><em>Ich habe gestern mein Portemonnaie verloren.</em> (Gestern ist eine bestimmte Zeit)\n<br><br>⚠️ Mit bestimmten Zeitmarkierungen (gestern, letzte Woche, im Jahr 2020, vor) → Nur Past Simple!",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich habe ihn letzte Woche gesehen</s> → Ich habe ihn letzte Woche <em>gesehen</em> (spezifische Zeit = Past Simple)",
+      "<s>Haben Sie jemals Sushi gegessen?</s> → <em>Haben</em> haben Sie jemals Sushi gegessen?",
+      "<s>Ich habe ihn getroffen und er hat es mir erzählt</s> → er hat es mir <em>erzählt</em> (in einem Kontext der Vergangenheit)"
+    ],
+    "markers": {
+      "tags": [
+        "jemals / nie (PP) ↔ bestimmte Zeit (PS)",
+        "schon / noch (PP) ↔ gestern / vor (PS)",
+        "nur (PP) ↔ dann / danach (PS)",
+        "kürzlich (PP) ↔ letzte Woche (PS)"
+      ],
+      "note": "Wenn es eine bestimmte Zeit gibt (gestern, im Jahr 2020, letztes Jahr) → Nur Past Simple."
+    },
+    "ex": [
+      [
+        "I've met the new director. (он сейчас здесь, это актуально)",
+        "Ich habe den neuen Direktor kennengelernt."
+      ],
+      [
+        "I met him last Tuesday. (конкретное время)",
+        "Ich habe ihn letzten Dienstag getroffen."
+      ]
+    ]
+  },
+  "b1_04": {
+    "text": "Present Perfect mit für und seit",
+    "note": "Ich lebe hier seit 5 Jahren / seit 2019.",
+    "exp": "<em>für</em> – Dauer: <em>für zwei Tage, für ein Jahr, für eine lange Zeit, für Ewigkeiten</em>\n<br><em>seit</em> - Ausgangspunkt: <em>seit Montag, seit ich ein Kind war, seit 2015</em>\n<br><br>Die Frage „Wie lange?“ – Wie lange + Present Perfect: <em>Wie lange kennst du sie schon?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich lebe hier seit fünf Jahren</s> → <em>seit</em> fünf Jahren",
+      "<s>Sie kennt ihn seit 2019</s> → Sie kennt ihn <em>seit</em> 2019",
+      "<s>Wie lange leben Sie hier?</s> → Wie lange <em>leben</em> Sie hier? (läuft jetzt)"
+    ],
+    "markers": {
+      "tags": [
+        "für zwei Stunden",
+        "für eine Woche",
+        "seit Jahren",
+        "seit langem",
+        "seit Ewigkeiten",
+        "seit Monaten",
+        "seit Montag",
+        "seit 2019",
+        "seit ich ein Kind war",
+        "seit letztem Jahr",
+        "seitdem",
+        "seit heute morgen",
+        "Wie lange...?"
+      ],
+      "note": "für + Zeitraum; seit + Ausgangspunkt. Beide werden mit dem Present Perfect (Simple und Continuous) verwendet."
+    },
+    "ex": [
+      [
+        "She's worked here for ten years.",
+        "Sie arbeitet hier seit zehn Jahren."
+      ],
+      [
+        "I've known him since university.",
+        "Ich kenne ihn seit der Universität."
+      ]
+    ]
+  },
+  "b1_05": {
+    "text": "Present Perfect Continuous: gewesen + V-ing",
+    "note": "Ich habe eine Stunde gewartet. Sie hat den ganzen Tag gelernt.",
+    "exp": "<strong>Present Perfect Continuous</strong> = have/has been + V-ing\n<br><br>Betonung der <strong>Dauer</strong> oder Unvollständigkeit der Aktion. Beantwortet die Frage „Wie lange?“\n<br>Erklärt oft das sichtbare Ergebnis in der Gegenwart: <em>Du siehst müde aus – bist du gelaufen?</em>\n<br><br>Unterschied zum Present Perfect Simple:\n<br>• <em>Ich habe 50 Seiten gelesen.</em> - Ergebnis, Vollständigkeit\n<br>• <em>Ich habe den ganzen Abend gelesen.</em> – Betonung des Prozesses",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich lerne seit drei Stunden</s> → <em>seit</em> drei Stunden",
+      "<s>Mir wurde den ganzen Abend vorgelesen</s> → Ich habe <em>gelesen</em>",
+      "<s>Ich kenne sie schon seit Jahren</s> → kennen – Stativverb, verwenden Sie Present Perfect Simple"
+    ],
+    "markers": {
+      "tags": [
+        "für",
+        "seit",
+        "Wie lange...?",
+        "den ganzen Tag",
+        "den ganzen Morgen",
+        "den ganzen Abend",
+        "die ganze Woche",
+        "spät",
+        "vor kurzem",
+        "heutzutage",
+        "Trotzdem"
+      ],
+      "note": "Das Present Perfect Continuous betont eher die Dauer als das Ergebnis."
+    },
+    "ex": [
+      [
+        "I've been learning English for two years.",
+        "Ich lerne jetzt seit zwei Jahren Englisch."
+      ],
+      [
+        "Why are your hands dirty? — I've been fixing the car.",
+        "Warum sind deine Hände schmutzig? — Ich habe das Auto repariert."
+      ]
+    ]
+  },
+  "b1_06": {
+    "text": "Past Continuous: war/waren + V-ing",
+    "note": "Ich habe um 20 Uhr gelesen. Sie redeten den ganzen Abend.",
+    "exp": "<strong>Past Continuous</strong> = war/waren + V-ing\n<br><br>Werte:\n<br>1. Aktion in <strong>Prozess</strong> zu einem bestimmten Zeitpunkt in der Vergangenheit: <em>Um 21 Uhr aß ich zu Abend.</em>\n<br>2. <strong>Hintergrundaktivität</strong> wurde von einer anderen unterbrochen: <em>Ich war gerade unterwegs, als es anfing zu regnen.</em>\n<br>3. Parallele Aktionen: <em>Während sie kochte, sah er fern.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie ging</s> → Sie <em>ging</em>",
+      "<s>Sie redeten</s> → Sie <em>redeten</em>",
+      "<s>Ich war um 21 Uhr bei der Arbeit</s> → Ich <em>arbeitete</em>"
+    ],
+    "markers": {
+      "tags": [
+        "gestern um 20 Uhr",
+        "um diese Zeit letzte Woche",
+        "den ganzen Morgen",
+        "den ganzen Tag",
+        "den ganzen Abend",
+        "während",
+        "wann (+ Past Simple)",
+        "als",
+        "in diesem Moment",
+        "mitten in",
+        "während"
+      ],
+      "note": "while/as → Hintergrund (Past Continuous); wann → Ereignis (Past Simple)."
+    },
+    "ex": [
+      [
+        "It was raining when I left home.",
+        "Es regnete, als ich das Haus verließ."
+      ],
+      [
+        "What were you doing at 7 yesterday?",
+        "Was hast du gestern um 7 gemacht?"
+      ]
+    ]
+  },
+  "b1_07": {
+    "text": "Past Simple vs. Past Continuous – Hintergrund und Ereignis",
+    "note": "Während ich kochte, rief er an. Ich war gerade unterwegs, als es anfing zu regnen.",
+    "exp": "Typisches Design: lange Hintergrundaktion (Past Continuous) + kurzes Ereignis (Past Simple).\n<br><br>Gewerkschaften:\n<br>• <em>wann</em> – wird mit dem Past Simple für das Ereignis verwendet: <em>Sie schlief, als der Wecker klingelte.</em>\n<br>• <em>while/as</em> – verwendet mit Past Continuous als Hintergrund: <em>Während ich fernsah, fiel der Strom aus.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Während ich kochte, rief er an</s> → Während ich <em>kochte</em>, rief er an (Hintergrund = Kontinuierlich)",
+      "<s>Ich ging zu Fuß, als es anfing zu regnen</s> → als es <em>anfing</em> (Ereignis = Past Simple)"
+    ],
+    "markers": {
+      "tags": [
+        "während",
+        "als",
+        "wann",
+        "in dem Moment, als",
+        "genauso wie",
+        "während"
+      ],
+      "note": "while + Past Continuous (Hintergrund) + when + Past Simple (Ereignis)."
+    },
+    "ex": [
+      [
+        "She was having a bath when the phone rang.",
+        "Sie nahm gerade ein Bad, als das Telefon klingelte."
+      ],
+      [
+        "While he was giving his speech, someone fell asleep.",
+        "Während er seine Rede hielt, schlief jemand ein."
+      ]
+    ]
+  },
+  "b1_08": {
+    "text": "Typ 0: Wenn + Gegenwart, Gegenwart – Fakten und Gesetze",
+    "note": "Wenn man Wasser auf 100°C erhitzt, kocht es.",
+    "exp": "Geben Sie Null ein – für wissenschaftliche Fakten, Naturgesetze, allgemeine Wahrheiten. Beide Aktionen finden immer zusammen statt.\n<br><br>Form: <em>If + Present Simple, Present Simple</em>\n<br>Anstelle von <em>if</em> können Sie <em>when</em> verwenden: <em>Wenn Sie Rot und Blau mischen, erhalten Sie Lila.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Wenn Sie Wasser erhitzen, kocht es</s> → es <em>kocht</em> (Nulltyp – Gegenwart + Gegenwart)",
+      "<s>Wenn Sie sie mischen, erhalten Sie</s> → Sie <em>erhalten</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If you heat ice, it melts.",
+        "Wenn man Eis erhitzt, schmilzt es."
+      ],
+      [
+        "If it rains, the streets get wet.",
+        "Wenn es regnet, werden die Straßen nass."
+      ]
+    ]
+  },
+  "b1_09": {
+    "text": "1. Typ: Wenn + Gegenwart einfach, Wille - echte Zukunft",
+    "note": "Wenn es morgen regnet, bleibe ich zu Hause.",
+    "exp": "Eine reale, wahrscheinliche Situation in der Zukunft.\n<br><br>Form: <em>If + Present Simple, will + Infinitiv</em>\n<br>⚠️ Im <em>wenn</em>-Teil – NIE Zukunft! Nur Present Simple.\n<br><br>Anstelle von <em>will</em> im Hauptteil können Sie auch: <em>can, may, might, Should</em> verwenden.\n<br>Teile können geändert werden: <em>Ich bleibe zu Hause, wenn es regnet.</em> (ohne Komma)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>If it will rain</s> → If it <em>rains</em> (im if-Teil steht KEIN Wille!)",
+      "<s>Wenn sie fleißig lernt, wird sie bestehen</s> → Wenn sie lernt, <em>wird sie bestehen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If she studies hard, she'll pass the exam.",
+        "Wenn sie gut lernt, wird sie die Prüfung bestehen."
+      ],
+      [
+        "If you need help, I can come.",
+        "Wenn du Hilfe brauchst, kann ich kommen."
+      ]
+    ]
+  },
+  "b1_10": {
+    "text": "Typ 2: If + Past Simple, would – unreal present",
+    "note": "Wenn ich ein Auto hätte, würde ich zur Arbeit fahren. Wenn ich du wäre...",
+    "exp": "Eine unwirkliche oder unwahrscheinliche Situation in der Gegenwart oder Zukunft.\n<br><br>Form: <em>If + Past Simple, would + Infinitiv</em>\n<br>⚠️ Das Verb im <em>if</em>-Teil ist Past Simple, aber die Bedeutung ist <strong>Gegenwart/Zukunft</strong>!\n<br>⚠️ <em>were</em> wird für alle Personen verwendet: <em>If I were you, If she were here</em> ist ein formaler Sprachstandard.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Wenn ich ein Auto hätte</s> → Wenn ich ein Auto <em>hätte</em>",
+      "<s>If I were you</s> → If I <em>wer</em> you (formell)",
+      "<s>Ich würde es tun</s> → Ich <em>könnte</em> es tun (Sie können nicht zwei Modalitäten haben)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If I won the lottery, I would travel the world.",
+        "Wenn ich im Lotto gewinnen würde, würde ich die Welt bereisen."
+      ],
+      [
+        "If I were taller, I'd play basketball.",
+        "Wenn ich größer wäre, würde ich Basketball spielen."
+      ]
+    ]
+  },
+  "b1_11": {
+    "text": "Typ 1 vs. Typ 2: real vs. unwahrscheinlich",
+    "note": "Wenn ich gewinne (1., wirklich) vs. wenn ich gewinne (2., unwahrscheinlich)",
+    "exp": "Die Wahl des Typs spiegelt Ihr Vertrauen in die Realität der Situation wider.\n<br><br>• <em>Wenn ich sie sehe</em> (1. Typ) – Ich erwarte, sie zu sehen\n<br>• <em>Wenn ich sie gesehen hätte</em> (2. Typ) – unwahrscheinlich oder ich fantasiere nur\n<br><br>Dies ist kein Unterschied in der Grammatik, sondern ein Unterschied in der Einstellung des Sprechers.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "Verwirrung vom Typ 1 und 2: <em>Wenn ich gewinne</em> (real) vs. <em>Wenn ich gewinne</em> (unwahrscheinlich)",
+      "<s>Wenn ich gewinne, kaufe ich</s> → kann nicht gemischt werden: <em>würde kaufen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If it rains tomorrow, I'll take an umbrella. (реально возможно)",
+        "Wenn es morgen regnet, nehme ich einen Regenschirm mit."
+      ],
+      [
+        "If it rained every day, I'd move to Spain. (маловероятная фантазия)",
+        "Wenn es jeden Tag regnen würde, würde ich nach Spanien ziehen."
+      ]
+    ]
+  },
+  "b1_12": {
+    "text": "Passiv – Präsens Einfach: ist/sind + V3",
+    "note": "Kaffee wird in Brasilien angebaut. Das Auto wird in Deutschland hergestellt.",
+    "exp": "<strong>Passivstimme</strong> wird verwendet, wenn:\n<br>• Die Handlung selbst ist wichtig, nicht die Person, die sie ausführt\n<br>• Darsteller unbekannt oder offensichtlich\n<br><br>Form Präsens Einfach Passiv: <em>am/is/are + V3</em>\n<br>Der Darsteller (falls erforderlich) wird mit <em>von</em> hinzugefügt: <em>Das Fenster wurde durch den Ball zerbrochen.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Kaffee wird in Brasilien angebaut</s> → Kaffee wird <em>angebaut</em>",
+      "<s>Der Brief wurde auf Französisch geschrieben</s> → Der Brief <em>ist geschrieben</em>",
+      "<s>Hier wurde Englisch gesprochen</s> → Englisch <em>wird gesprochen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "English is spoken in many countries.",
+        "In vielen Ländern wird Englisch gesprochen."
+      ],
+      [
+        "The letter is written in French.",
+        "Der Brief ist auf Französisch verfasst."
+      ]
+    ]
+  },
+  "b1_13": {
+    "text": "Passiv – Past Simple: was/were + V3",
+    "note": "Die Brücke wurde 1890 gebaut. Sie wurden verhaftet.",
+    "exp": "Past Simple Passive: <em>was/were + V3</em>\n<br>• <em>war</em> – Einheiten. Nummer\n<br>• <em>waren</em> – Plural. Nummer\n<br><br>Aktiv → Passiv: <em>Jemand hat mein Auto gestohlen.</em> → <em>Mein Auto wurde gestohlen.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Die Brücke wurde 1890 gebaut</s> → wurde <em>gebaut</em>",
+      "<s>Sie wurden verhaftet</s> → Sie <em>wurden</em> verhaftet",
+      "<s>Das Auto wurde gestohlen</s> → Das Auto <em>wurde</em> gestohlen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The Eiffel Tower was built in 1889.",
+        "Der Eiffelturm wurde 1889 erbaut."
+      ],
+      [
+        "Three people were injured in the accident.",
+        "Bei dem Unfall wurden drei Personen verletzt."
+      ]
+    ]
+  },
+  "b1_14": {
+    "text": "Passiv – Present Perfect: has/have been + V3",
+    "note": "Das Auto wurde repariert. Alle Einladungen wurden verschickt.",
+    "exp": "Present Perfect Passive: <em>hat/waren + V3</em>\n<br><br>Wird verwendet, wenn das Ergebnis in der Gegenwart wichtig ist und nicht, wenn es genau passiert ist.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Das Projekt wurde abgeschlossen</s> → wurde <em>abgeschlossen</em>",
+      "<s>Es wurde gesendet</s> → Es <em>wurde</em> gesendet",
+      "<s>Alle Gäste wurden informiert</s> → wurden <em>informiert</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project has been completed.",
+        "Das Projekt ist abgeschlossen."
+      ],
+      [
+        "All the guests have been informed.",
+        "Alle Gäste wurden benachrichtigt."
+      ]
+    ]
+  },
+  "b1_15": {
+    "text": "Gemeldete Rede – Zeitverschiebung",
+    "note": "„Ich bin müde.“ → Er sagte, er sei müde.",
+    "exp": "Bei der Übersetzung in die indirekte Rede werden die Zeitformen nach hinten „verschoben“:\n<br>• Present Simple → Past Simple: <em>„Ich arbeite“ → er sagte, er habe gearbeitet</em>\n<br>• Past Simple → Past Perfect: <em>„Ich ging“ → sie sagte, sie sei gegangen</em>\n<br>• Present Perfect → Past Perfect: <em>„Ich habe gesehen“ → er sagte, er hätte gesehen</em>\n<br>• wird → würde; kann → könnte; ist → war; ich gehe → ging",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Er sagte, er sei müde</s> → Er sagte, er <em>war</em> müde (Zeitverschiebung)",
+      "<s>Sie sagte, dass sie zu spät kam</s> → Sie sagte <em>mir/uns/ihm</em>, dass... (erzählen erfordert ein Objekt)",
+      "<s>Er hat mir das gesagt</s> → Er <em>sagte</em> das / Er <em>sagte</em> das"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She said: 'I am leaving.' → She said she was leaving.",
+        "Sie sagte, sie würde gehen."
+      ],
+      [
+        "He told me: 'I can't come.' → He told me he couldn't come.",
+        "Er sagte, er könne nicht kommen."
+      ]
+    ]
+  },
+  "b1_16": {
+    "text": "Gemeldete Fragen – indirekte Fragen",
+    "note": "„Wo wohnst du?“ → Sie fragte, wo ich wohne.",
+    "exp": "Bei indirekten Fragen:\n<br>1. <strong>Keine Umkehrung</strong> (Wortreihenfolge wie in der Aussage)\n<br>2. <strong>Kein Hilfsmittel tat/tat</strong>\n<br>3. Allgemeine Fragen (Ja/Nein) → <em>if/ob + Subjekt + Verb</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie fragte, wo ich wohne</s> → sie fragte, wo ich <em>wohnte</em> (keine Umkehrung!)",
+      "<s>Er fragte mich, was ich mache</s> → was ich <em>mache</em>",
+      "<s>Sie fragte, ob ich müde sei</s> → ob ich müde sei"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "\"Where do you work?\" → She asked where I worked.",
+        "Sie fragte, wo ich arbeite."
+      ],
+      [
+        "\"Are you married?\" → He wanted to know if I was married.",
+        "Er wollte wissen, ob ich verheiratet sei."
+      ]
+    ]
+  },
+  "b1_17": {
+    "text": "Sagen vs. Erzählen in der indirekten Rede",
+    "note": "Er hat gesagt, dass... / Er hat mir gesagt, dass... - nachdem du mir gesagt hast, dass du ein Gesicht brauchst!",
+    "exp": "<em>sagen</em> - ohne den erforderlichen Zusatz: <em>Sie sagte, sie sei müde.</em>\n<br><em>erzählen</em> - IMMER mit einem Zusatz (wem es erzählt wird): <em>Sie sagte mir, sie sei müde.</em>\n<br><br>❌ <s>Er sagte, dass er zu spät kam.</s> ✓ <em>Er sagte, dass er zu spät kam.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Er sagte, dass er zu spät kam</s> → Er <em>sagte</em> das / Er <em>sagte</em> das",
+      "<s>Sie erzählte mir die Neuigkeiten</s> → Sie <em>erzählte</em> mir die Neuigkeiten",
+      "<s>Sie erzählten von dem Problem</s> → Sie <em>redeten</em> darüber / <em>sagten</em> etwas darüber"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She said she needed help.",
+        "Sie sagte, sie brauche Hilfe."
+      ],
+      [
+        "He told us the meeting was cancelled.",
+        "Er teilte uns mit, dass das Treffen abgesagt wurde."
+      ]
+    ]
+  },
+  "b1_18": {
+    "text": "Verben + Gerundium (V-ing)",
+    "note": "Ich lese gerne. Sie beendete das Schreiben. Er vermied es, Fehler zu machen.",
+    "exp": "Diese Verben erfordern ein Gerundium (V-ing) nach ihnen:\n<br><em>genießen, beenden, vermeiden, denken, vorschlagen, behalten, erwägen, leugnen, sich vorstellen, verpassen, üben, riskieren, zugeben, verzögern, nicht mögen, sich vorstellen, aufgeben, einbeziehen, aufschieben, empfehlen, widerstehen</em>\n<br><br>Trick zum Auswendiglernen: Wenn Sie ihn durch „Prozess“ ersetzen können, handelt es sich höchstwahrscheinlich um ein Gerundium.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich genieße es zu schwimmen</s> → Ich genieße <em>Schwimmen</em>",
+      "<s>Sie ist mit dem Schreiben fertig</s> → Sie ist mit dem Schreiben fertig",
+      "<s>Er vermied es zu machen</s> → Er vermied es <em>zu machen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I enjoy swimming in the sea.",
+        "Ich schwimme gerne im Meer."
+      ],
+      [
+        "She's considering moving abroad.",
+        "Sie denkt darüber nach, ins Ausland zu ziehen."
+      ],
+      [
+        "He avoided making eye contact.",
+        "Er vermied Augenkontakt."
+      ]
+    ]
+  },
+  "b1_19": {
+    "text": "Verben + Infinitiv (bis + V)",
+    "note": "Ich möchte gehen. Sie beschloss zu bleiben. Er schaffte es, fertig zu werden.",
+    "exp": "Diese Verben erfordern einen Infinitiv mit <em>to</em>:\n<br><em>wollen, entscheiden, hoffen, planen, verwalten, zustimmen, versprechen, ablehnen, scheitern, erwarten, anbieten, lernen, brauchen, leisten, arrangieren, versuchen, wählen, beanspruchen, fordern, verdienen, helfen, so tun, als ob, tendieren, drohen</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie hat sich entschieden zu gehen</s> → Sie hat sich <em>zu gehen</em> entschieden",
+      "<s>Er möchte ausgehen</s> → Er möchte <em>ausgehen</em>",
+      "<s>Ich hoffe, Sie zu sehen</s> → Ich hoffe, Sie zu sehen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She decided to quit her job.",
+        "Sie beschloss, aufzuhören."
+      ],
+      [
+        "I hope to see you soon.",
+        "Ich hoffe, wir sehen uns bald."
+      ],
+      [
+        "He failed to answer.",
+        "Er konnte nicht antworten."
+      ]
+    ]
+  },
+  "b1_20": {
+    "text": "Verben mit beidem (like, love, hate, start, begin)",
+    "note": "Ich lese gerne = Ich lese gerne – kleiner Unterschied",
+    "exp": "Nach <em>like/love/hate/prefer</em> sind beide Optionen möglich:\n<br>• V-ing – wir sprechen über die Aktion als Ganzes: <em>Ich liebe das Kochen.</em> (Ich koche im Allgemeinen gerne)\n<br>• to-inf - wir sprechen über einen konkreten Fall: <em>Ich würde heute Abend gerne kochen.</em>\n<br><br>Nach <em>start/begin/continue/cease</em> gibt es praktisch keinen Unterschied mehr.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich möchte heute Abend kochen</s> → Ich möchte heute Abend <em>kochen</em> (spezieller Fall)",
+      "<s>Sie fing an zu arbeiten</s> → Sie fing an zu <em>arbeiten</em> oder <em>zu arbeiten</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I love travelling / to travel.",
+        "Ich reise gerne."
+      ],
+      [
+        "She started working / to work here in May.",
+        "Im Mai begann sie hier zu arbeiten."
+      ]
+    ]
+  },
+  "b1_21": {
+    "text": "gewohnt - vergangene Gewohnheiten und Zustände",
+    "note": "Ich habe früher Fußball gespielt. Früher hatte sie lange Haare.",
+    "exp": "<em>gewohnt</em> – regelmäßige Aktionen oder Bedingungen in der Vergangenheit, die bereits gestoppt wurden.\n<br><br>Form: <em>verwendet bis + Infinitiv</em>\n<br>Ablehnung: <em>war früher nicht</em>\n<br>Frage: <em>Haben Sie früher...?</em>\n<br><br>⚠️ Es gibt keine Präsensform! Das können Sie vorerst nicht: <s>Das tue ich</s>.\n<br>Unterschied zu <em>gewöhnt sein an</em>: <em>Ich bin es gewohnt, früh aufzustehen</em> = Ich bin (jetzt) ​​daran gewöhnt.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich habe früher Fußball gespielt</s> → Ich habe <em>früher</em> gespielt",
+      "<s>Haben Sie früher...?</s> → Haben Sie <em>Früher</em>...? (nach did - Grundform)",
+      "<s>Ich habe dort gelebt</s> → Ich habe früher <em>gelebt</em> (Infinitiv ohne to+ing)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I used to smoke, but I stopped.",
+        "Ich habe früher geraucht, aber ich habe damit aufgehört."
+      ],
+      [
+        "Did you use to play an instrument?",
+        "Haben Sie schon einmal ein Instrument gespielt?"
+      ]
+    ]
+  },
+  "b1_22": {
+    "text": "Relativsätze: wer, was, das, wo, wessen",
+    "note": "Der Mann, der angerufen hat. Das Buch, das ich gelesen habe. Der Ort, an dem wir uns trafen.",
+    "exp": "<em>wer</em> - für Leute: <em>Die Frau, die angerufen hat, ist meine Schwester.</em>\n<br><em>welches</em> - für Gegenstände und Tiere: <em>Das Buch, das ich ausgeliehen habe, war großartig.</em>\n<br><em>das</em> – für Personen und Objekte (in Definitionssätzen): <em>Das Auto, das er gekauft hat, ist neu.</em>\n<br><em>Wo</em> – für Orte: <em>Das Café, in dem wir uns trafen, ist geschlossen.</em>\n<br><em>dessen</em> - Accessoire: <em>Das Mädchen, dessen Tasche gestohlen wurde...</em>\n<br><br>In der Umgangssprache wird ein Pronomen oft weggelassen, wenn es ein Objekt ist: <em>Der Film (den) ich gesehen habe...</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Der Mann, der rief</s> → der Mann <em>der</em> rief (wer für Menschen)",
+      "<s>Der Ort, den wir trafen</s> → der Ort <em>wo</em> wir uns trafen",
+      "<s>Das Mädchen, dessen Tasche</s> → das Mädchen, <em>dessen</em> Tasche"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The man who lives next door is very friendly.",
+        "Der Mann, der nebenan wohnt, ist sehr freundlich."
+      ],
+      [
+        "The hotel where we stayed had a pool.",
+        "Das Hotel, in dem wir übernachteten, hatte einen Swimmingpool."
+      ]
+    ]
+  },
+  "b1_23": {
+    "text": "Konjunktionen des Gegensatzes: obwohl, jedoch, trotz, trotz, wohingegen",
+    "note": "Obwohl es regnete, gingen wir raus. Trotz des Regens gingen wir.",
+    "exp": "<em>obwohl / obwohl / obwohl</em> + Nebensatz.\n<br><em>trotz / trotz</em> + Substantiv / Gerundium (KEIN Nebensatz!).\n<br><em>allerdings</em> + neuer Satz (nach Punkt oder Semikolon).\n<br><em>während</em> ein Gegensatz zwischen zwei Tatsachen ist.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Depite it was raining</s> → Trotz <em>the rain</em> / Trotz <em>raining</em> (Substantiv/Gerund!)",
+      "<s>Obwohl es regnete, gingen wir</s> → Obwohl <em>es regnete</em> (obwohl + Satz)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Although she was tired, she kept working.",
+        "Obwohl sie müde war, arbeitete sie weiter."
+      ],
+      [
+        "Despite the rain, he cycled to work.",
+        "Trotz des Regens fuhr er mit dem Fahrrad zur Arbeit."
+      ],
+      [
+        "It was expensive. However, it was worth it.",
+        "Es war teuer. Dennoch hat es sich gelohnt."
+      ]
+    ]
+  },
+  "b1_24": {
+    "text": "Future Continuous: wird + V-ing sein",
+    "note": "Ich werde morgen um 9 arbeiten. Sie wird über den Atlantik fliegen.",
+    "exp": "<strong>Future Continuous</strong> = <em>wird + V-ing sein</em>\n<br><br>Werte:\n<br>1. Eine Aktion, die zu einem bestimmten Zeitpunkt in der Zukunft <strong>in Bearbeitung</strong> sein wird: <em>Morgen um diese Zeit werde ich am Strand liegen.</em>\n<br>2. Geplante, erwartete Aktion in der Zukunft (natürlicher Verlauf der Ereignisse): <em>Ich werde sie sowieso morgen sehen.</em>\n<br>3. Höfliche Fragen zu Plänen (kein Druck): <em>Wirst du zur Party kommen?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich werde um 9 Uhr arbeiten</s> → Ich werde <em>arbeiten</em>",
+      "<s>Sie wird arbeiten</s> → Sie <em>wird arbeiten</em>"
+    ],
+    "markers": {
+      "tags": [
+        "morgen um diese Zeit",
+        "nächste Woche um diese Zeit",
+        "morgen um 20 Uhr",
+        "morgen früh",
+        "morgen den ganzen Tag",
+        "in zwei Stunden",
+        "wenn Sie ankommen (+ Future Continuous)",
+        "während du schläfst"
+      ],
+      "note": "Wird oft für höfliche Fragen zu Plänen verwendet: Werden Sie das Auto benutzen?"
+    },
+    "ex": [
+      [
+        "Don't call at 8 — I'll be having dinner.",
+        "Rufen Sie nicht um 8 Uhr an, ich esse zu Abend."
+      ],
+      [
+        "This time next week I'll be sitting on a beach.",
+        "Nächste Woche um diese Zeit werde ich am Strand sitzen."
+      ]
+    ]
+  },
+  "b1_25": {
+    "text": "Future Perfect: wird + V3 haben",
+    "note": "Bis Freitag werde ich den Bericht fertig haben. Bis 2030 werden sie die Brücke gebaut haben.",
+    "exp": "<strong>Future Perfect</strong> = <em>wird + V3 haben</em>\n<br><br>Eine Aktion, die <strong>vor</strong> einem bestimmten Zeitpunkt in der Zukunft abgeschlossen wird.\n<br>Oft verwendet mit <em>by (the time), before</em>: <em>Bis Sie ankommen, werde ich das Abendessen gekocht haben.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Bis Freitag werde ich fertig sein</s> → Ich <em>werde fertig sein</em> (wird bis zum Abgabetermin fertig sein = Future Perfect)",
+      "<s>Ich werde bis Sonntag fertig sein</s> → Ich werde <em>fertig</em> sein"
+    ],
+    "markers": {
+      "tags": [
+        "by tomorrow",
+        "bis Freitag",
+        "bis zum Ende der Woche",
+        "bis Ende des Jahres",
+        "by 2030",
+        "bis zu Ihrer Ankunft",
+        "bevor Sie hierher kommen",
+        "before midnight",
+        "in two hours (= by then)"
+      ],
+      "note": "by (die Zeit) ist ein wichtiger Marker: Die Aktion wird VOR diesem Moment abgeschlossen."
+    },
+    "ex": [
+      [
+        "I'll have finished this book by Sunday.",
+        "Ich werde dieses Buch bis Sonntag zu Ende lesen."
+      ],
+      [
+        "By 2050, scientists will have found a cure.",
+        "Bis 2050 werden Wissenschaftler ein Heilmittel finden."
+      ]
+    ]
+  },
+  "b1_26": {
+    "text": "Untergeordnete Ziele: zu, um, damit, damit",
+    "note": "Ich lerne hart, um zu bestehen. Sie reiste früh ab, um den Zug erreichen zu können.",
+    "exp": "<em>zu / um / so um</em> + Infinitiv - Ziel. <em>In order to</em> und <em>so as to</em> sind etwas formeller.\n<br><em>damit</em> + Subjekt + Verb – Zweck mit einem anderen Subjekt oder mit einem Modal.\n<br><br>⚠️ Verleugnung: <em>um es nicht zu tun/um es nicht zu tun</em> (nicht <s>nicht</s>).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich lerne hart, um zu bestehen</s> → Ich lerne hart, <em>um zu bestehen</em>",
+      "<s>Sie ging früh los, damit sie den Zug erreichen konnte</s> → <em>damit</em> sie konnte",
+      "<s>Um ihn nicht zu verärgern</s> → <em>um ihn nicht zu verärgern</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She studies hard in order to get a scholarship.",
+        "Sie lernt fleißig, um ein Stipendium zu bekommen."
+      ],
+      [
+        "He left early so that he could catch the last train.",
+        "Er reiste früh ab, um den letzten Zug zu erreichen."
+      ]
+    ]
+  },
+  "b1_27": {
+    "text": "Phrasalverben – Grundkenntnisse",
+    "note": "aufgeben, aufschauen, abschalten, herausfinden, einsteigen, aufschieben, weitermachen",
+    "exp": "Phrasalverben = Verb + Partikel (Präposition oder Adverb). Die Bedeutung ist oft idiomatisch.\n<br><br>Am häufigsten:\n<br>• <em>give up</em> = aufgeben, aufgeben\n<br>• <em>find out</em> = herausfinden, herausfinden\n<br>• <em>turn on/off</em> = ein-/ausschalten\n<br>• <em>look up</em> = nachschlagen (im Wörterbuch/Internet)\n<br>• <em>pflegen</em> = aufpassen\n<br>• <em>put off</em> = aufschieben\n<br>• <em>carry on</em> = weitermachen\n<br>• <em>get on/along</em> = (mit jemandem) auskommen\n<br>• <em>erziehen</em> = erziehen; das Thema ansprechen\n<br>• <em>stoßen</em> = stolpern",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie hat das Rauchen aufgegeben</s> → Sie hat das <em>Rauchen</em> aufgegeben",
+      "<s>Ich habe das Wort nachgeschlagen</s> → Ich habe <em>es</em> nachgeschlagen (Pronomen zwischen Verb und Partikel)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've given up smoking.",
+        "Ich habe mit dem Rauchen aufgehört."
+      ],
+      [
+        "Can you look after my cat while I'm away?",
+        "Können Sie während meiner Abwesenheit auf meine Katze aufpassen?"
+      ],
+      [
+        "We need to find out what happened.",
+        "Wir müssen herausfinden, was passiert ist."
+      ]
+    ]
+  },
+  "b2_01": {
+    "text": "Past Perfect Simple: hatte + V3",
+    "note": "Als sie ankam, war er bereits gegangen.",
+    "exp": "<strong>Past Perfect</strong> – eine Aktion, die <strong>vor</strong> einem anderen Zeitpunkt oder Ereignis in der Vergangenheit abgeschlossen wurde.\n<br><br>Form: <em>hatte + V3</em> für alle Gesichter.\n<br>Verneinung: <em>hatte nicht + V3</em>\n<br>Frage: <em>Hatte + Betreff + V3?</em>\n<br><br>Typische Konjunktionen: <em>vorher, nachher, wann, zu der Zeit, schon, gerade, nie</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Als ich ankam, war sie bereits gegangen</s> → sie <em>war bereits gegangen</em>",
+      "<s>Er hatte noch nie Schnee gesehen</s> → Er hatte noch nie Schnee <em>gesehen</em>",
+      "<s>Ich war gegangen</s> → Ich war <em>gegangen</em>"
+    ],
+    "markers": {
+      "tags": [
+        "bis zur Zeit",
+        "vor",
+        "nach",
+        "wann (+ Past Simple)",
+        "bereits",
+        "einfach",
+        "nie",
+        "jemals",
+        "bis Montag",
+        "bis dahin",
+        "sobald",
+        "einmal",
+        "bis",
+        "kaum...wenn",
+        "kaum früher...als"
+      ],
+      "note": "Das Past Perfect zeigt, dass eine vergangene Handlung VOR einer anderen stattfand."
+    },
+    "ex": [
+      [
+        "When I arrived, she had already left.",
+        "Als ich ankam, war sie bereits gegangen."
+      ],
+      [
+        "He had never seen snow before that winter.",
+        "Vor diesem Winter hatte er noch nie Schnee gesehen."
+      ]
+    ]
+  },
+  "b2_02": {
+    "text": "Past Perfect Continuous: war + V-ing",
+    "note": "Er hatte zwei Stunden gewartet, als sie ankam.",
+    "exp": "<strong>Past Perfect Continuous</strong> = war + V-ing\n<br>Betonung der <strong>Dauer</strong> einer Aktion, die vor einem anderen Zeitpunkt in der Vergangenheit stattfand.\n<br>Erklärt oft eine Ursache oder ein sichtbares Ergebnis in der Vergangenheit.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie war erschöpft – sie hatte gearbeitet</s> → sie hatte <em>gearbeitet</em>",
+      "<s>Wie lange haben Sie gewartet?</s> → Wie lange haben Sie <em>gewartet</em>?"
+    ],
+    "markers": {
+      "tags": [
+        "für",
+        "seit",
+        "Wie lange...?",
+        "den ganzen Morgen",
+        "den ganzen Tag",
+        "bis zur Zeit",
+        "wann",
+        "vor",
+        "schon für...",
+        "für zwei Stunden, als sie ankam"
+      ],
+      "note": "Betonung der Dauer bis zu einem Moment in der Vergangenheit. Erklärt oft die Ursache der Erkrankung."
+    },
+    "ex": [
+      [
+        "She was exhausted — she'd been working all night.",
+        "Sie war erschöpft – sie hatte die ganze Nacht gearbeitet."
+      ],
+      [
+        "How long had you been waiting before she arrived?",
+        "Wie lange hast du gewartet, bis sie angekommen ist?"
+      ]
+    ]
+  },
+  "b2_03": {
+    "text": "muss + V3 haben – sichere Schlussfolgerung über die Vergangenheit",
+    "note": "Sie muss es vergessen haben. - Ich bin sicher, das ist die einzige Erklärung",
+    "exp": "<em>must have + V3</em> = Ich bin sicher, dass dies passiert ist (die einzig logische Erklärung).\n<br><br>Konfidenzskala:\n<br>• <em>muss getan haben</em> – ist mit ziemlicher Sicherheit passiert\n<br>• <em>hätte tun sollen</em> – es wurde erwartet, dass es passiert\n<br>• <em>kann/könnte getan haben</em> – es könnte passiert sein\n<br>• <em>kann nicht gewesen sein</em> – es ist wahrscheinlich nicht passiert",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie muss vergessen</s> → Sie muss <em>vergessen haben</em>",
+      "<s>Er muss früher gehen</s> → Er muss <em>gegangen</em> sein",
+      "<s>Sie müssen gestern erschöpft gewesen sein</s> – für die Vergangenheit: <em>muss es gewesen sein</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You must have been exhausted after that journey.",
+        "Sie müssen nach dieser Reise sehr müde sein."
+      ],
+      [
+        "She must have left early — her coat is gone.",
+        "Sie ist offenbar vorzeitig abgereist – ihr Mantel fehlte."
+      ]
+    ]
+  },
+  "b2_04": {
+    "text": "kann nicht haben + V3 - Unmöglichkeit in der Vergangenheit",
+    "note": "Das kann sie nicht gesagt haben! Er kann nicht dort gewesen sein.",
+    "exp": "<em>can't have + V3</em> = Ich bin sicher, dass das <strong>nicht passiert</strong> ist (es ist unmöglich).\n<br>Das Gegenteil von <em>muss geschehen sein</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie kann das nicht vergessen</s> → Sie kann es nicht <em>vergessen haben</em>",
+      "<s>Er konnte nicht dort gewesen sein</s> – das stimmt! kann nicht haben = Unmöglichkeit; konnte nicht haben = Gelegenheit"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He can't have seen her — she was abroad.",
+        "Er konnte sie nicht sehen – sie war im Ausland."
+      ],
+      [
+        "That can't have been the right address.",
+        "Dies könnte nicht die richtige Adresse sein."
+      ]
+    ]
+  },
+  "b2_05": {
+    "text": "sollte + V3 haben - Vorwurf und Bedauern",
+    "note": "Ich hätte anrufen sollen. Das hättest du nicht sagen sollen.",
+    "exp": "<em>hätte + V3</em> = es wäre richtig gewesen, es zu tun, aber ich habe es nicht getan (Bedauern, Vorwurf).\n<br><em>shouldn't have + V3</em> = hätte es nicht tun sollen.\n<br><br>Dies ist eine sehr verbreitete Konstruktion, um Bedauern und Kritik auszudrücken.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich hätte sie anrufen sollen</s> → Ich hätte <em>anrufen sollen</em>",
+      "<s>Sie hätte nicht gehen sollen</s> → Sie hätte nicht <em>gehen</em> sollen",
+      "<s>Sie sollten studiert haben</s> → Sie sollten <em>studiert</em> haben"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I should have brought an umbrella.",
+        "Ich hätte einen Regenschirm mitnehmen sollen."
+      ],
+      [
+        "She shouldn't have told him the secret.",
+        "Sie hätte ihm das Geheimnis nicht verraten sollen."
+      ]
+    ]
+  },
+  "b2_06": {
+    "text": "könnte/könnte + V3 – Möglichkeit in der Vergangenheit haben",
+    "note": "Vielleicht hat sie es vergessen. Es hätte schlimmer kommen können.",
+    "exp": "<em>könnte/könnte + V3 haben</em> = das könnte passiert sein (wir wissen es nicht genau).\n<br><br>Also: <em>could have done</em> = hätte es schaffen können (habe es aber nicht getan): <em>Ich hätte gewinnen können, wenn ich mich mehr Mühe gegeben hätte.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie könnte es vergessen haben</s> → Sie könnte <em>vergessen haben</em>",
+      "<s>Er hätte gewinnen können</s> → Er hätte <em>gewinnen</em> können"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She might have forgotten about the meeting.",
+        "Vielleicht hat sie das Treffen vergessen."
+      ],
+      [
+        "He could have left through the back door.",
+        "Er hätte durch die Hintertür hinausgehen können."
+      ]
+    ]
+  },
+  "b2_07": {
+    "text": "3. Bedingungsart: Wenn + Past Perfect, hätte + V3",
+    "note": "Wenn ich härter gelernt hätte, hätte ich bestanden.",
+    "exp": "Eine unwirkliche Situation in der Vergangenheit – wir reden über etwas, das nicht passiert ist.\n<br><br>Form: <em>Wenn + Past Perfect, hätte + V3</em>\n<br><br>Beide Elemente sind unwirklich:\n<br>• Bedingung nicht erfüllt\n<br>• Es gab auch kein Ergebnis",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Wenn ich härter gelernt hätte, hätte ich bestanden</s> → Wenn ich <em>gelernt hätte</em>... (3. Typ – Past Perfect!)",
+      "<s>Wenn sie Medikamente eingenommen hätte, wäre sie genesen</s> → sie wäre <em>geheilt</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If she had taken the medicine, she would have recovered.",
+        "Wenn sie das Medikament einnehmen würde, würde es ihr besser gehen."
+      ],
+      [
+        "If he hadn't left early, he would have met her.",
+        "Wenn er nicht früher gegangen wäre, hätte er sie getroffen."
+      ]
+    ]
+  },
+  "b2_08": {
+    "text": "Gemischte Konditionale",
+    "note": "Wenn ich gelernt hätte, würde ich jetzt fließend sprechen. (Vergangenheit → Gegenwart)",
+    "exp": "Gemischte Bedingungen verbinden verschiedene Zeitpläne:\n<br><br>1. <strong>Vergangener Zustand → aktuelles Ergebnis</strong>:\n<br><em>If + Past Perfect, would + Infinitiv</em>\n<br><em>Wenn ich diesen Job angenommen hätte, wäre ich jetzt in New York.</em>\n<br><br>2. <strong>Aktueller Zustand → Vergangenes Ergebnis</strong>:\n<br><em>Wenn + Past Simple, hätte + V3</em>\n<br><em>Wenn sie vorsichtiger gewesen wäre, hätte sie es nicht kaputt gemacht.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Wenn ich gelernt hätte, würde ich gestern fließend sprechen</s> – gemischter Typ über die Vergangenheit→Gegenwart, nicht über die Vergangenheit",
+      "<s>Wenn sie vorsichtig gewesen wäre, hätte sie es nicht kaputt gemacht</s> → Sie hätte es <em>nicht kaputt gemacht</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If I had studied medicine, I would be a doctor now.",
+        "Wenn ich eine Ausbildung zum Arzt gemacht hätte, wäre ich jetzt Arzt."
+      ]
+    ]
+  },
+  "b2_09": {
+    "text": "Zukunftspassiv und Passiv mit Modalitäten",
+    "note": "Es wird geschehen. Es muss behoben werden. Es sollte überprüft werden.",
+    "exp": "Modal + Passiv: <em>modal + be + V3</em>\n<br>• <em>wird geschehen</em> – wird geschehen\n<br>• <em>muss getan werden</em> - muss getan werden\n<br>• <em>sollte getan werden</em> - sollte getan werden\n<br>• <em>kann gemacht werden</em> - kann gemacht werden",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Der Bericht wird veröffentlicht</s> → wird <em>veröffentlicht</em>",
+      "<s>Es muss getan werden</s> → Es muss <em>getan werden</em>",
+      "<s>Es sollte getan werden</s> → Es sollte <em>getan</em> sein"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The report will be published tomorrow.",
+        "Der Bericht wird morgen veröffentlicht."
+      ],
+      [
+        "This mistake must be corrected immediately.",
+        "Dieser Fehler muss umgehend behoben werden."
+      ]
+    ]
+  },
+  "b2_10": {
+    "text": "Verursacher: haben/bekommen: etwas tun lassen",
+    "note": "Ich habe mir die Haare schneiden lassen. Sie hat ihr Auto reparieren lassen.",
+    "exp": "<em>have/get + object + V3</em> – Sie bestellen eine Dienstleistung oder jemand erledigt etwas für Sie.\n<br><br>Vergleichen:\n<br>• <em>Ich schneide mir die Haare.</em> – Ich schneide mir selbst die Haare (was nicht typisch ist)\n<br>• <em>Ich habe mir die Haare schneiden lassen.</em> - geschnitten von einem Friseur\n<br><br><em>get</em> ist etwas gesprächiger, <em>have</em> ist etwas formeller.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich habe mir beim Friseur die Haare schneiden lassen</s> → Ich habe mir die Haare schneiden lassen",
+      "<s>Sie hat ihr Auto reparieren lassen</s> → Sie hat ihr Auto <em>reparieren</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I need to have my teeth checked.",
+        "Ich muss meine Zähne von einem Arzt untersuchen lassen."
+      ],
+      [
+        "She had her house painted last spring.",
+        "Letzten Frühling hat sie das Haus gestrichen (Arbeiter eingestellt)."
+      ]
+    ]
+  },
+  "b2_11": {
+    "text": "Passive Berichtsverben: Es wird gesagt, dass... / Man glaubt, dass er...",
+    "note": "Man geht davon aus, dass die Preise steigen werden. Sie gilt als ehrlich.",
+    "exp": "Zwei Konstruktionsmöglichkeiten mit den Verben <em>sagen, denken, glauben, berichten, wissen, erwarten, überlegen</em>:\n<br><br>1. <em>Es + Passiv + dieser + Nebensatz</em>: <em>Es wird angenommen, dass...</em>\n<br>2. <em>Subjekt + ist + V3 + To-Infinitiv</em>: <em>Es wird angenommen, dass sie...</em> ist\n<br><br>Wird in Nachrichten und offiziellen Texten verwendet.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Man sagt, dass die Preise steigen werden</s> → <em>steigen</em>",
+      "<s>Man glaubt, dass er ehrlich ist</s> → Man glaubt, dass er ehrlich ist"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It is reported that three people were injured.",
+        "Drei Menschen wurden verletzt gemeldet."
+      ],
+      [
+        "He is thought to have left the country.",
+        "Es wird angenommen, dass er das Land verlassen hat."
+      ]
+    ]
+  },
+  "b2_12": {
+    "text": "erinnern/vergessen + V-ing vs to-inf – Bedeutungsunterschied",
+    "note": "Ich erinnere mich, dass ich es gesperrt habe (Tatsache der Vergangenheit) vs. „Denken Sie daran, es zu sperren“ (Aufgabe).",
+    "exp": "<em>erinnern/vergessen + V-ing</em> – über ein vergangenes Ereignis, an das wir uns erinnern/vergessen haben.\n<br><em>erinnern/vergessen + to-inf</em> – zur Aufgabe: Denken Sie daran, in Zukunft etwas zu tun.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich erinnere mich daran, es zu sperren</s> (falls die Tatsache vorbei ist) → Ich erinnere mich daran, es <em>zu sperren</em>",
+      "<s>Denken Sie daran, es zu verriegeln!</s> (Aufgabe) → Denken Sie daran, es <em>zu verriegeln</em>!",
+      "<s>Ich habe vergessen, die Hausaufgaben zu machen</s> (falls Sie es nicht getan haben) → Ich habe vergessen, die Hausaufgaben <em>zu machen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I remember meeting her at a conference. (это было)",
+        "Ich erinnere mich, dass ich sie auf einer Konferenz getroffen habe."
+      ],
+      [
+        "Remember to call your mother! (нужно сделать)",
+        "Vergiss nicht, deine Mutter anzurufen!"
+      ],
+      [
+        "I forgot to buy milk. (не сделал)",
+        "Ich habe vergessen, Milch zu kaufen."
+      ]
+    ]
+  },
+  "b2_13": {
+    "text": "stoppen / bereuen / bedeuten + V-ing vs to-inf",
+    "note": "Sie hat mit dem Rauchen aufgehört vs Sie hat mit dem Rauchen aufgehört",
+    "exp": "<em>stop + V-ing</em> – stoppt die Aktion.\n<br><em>stop + to-inf</em> – anhalten, um etwas anderes zu tun.\n<br><br><em>Bedauern + V-ing</em> – die Vergangenheit bereuen.\n<br><em>Bedauern + to-inf</em> – Ich bedauere, Ihnen mitteilen zu müssen (formell): <em>Ich bedauere, Ihnen mitteilen zu müssen...</em>\n<br><br><em>gemein + V-ing</em> – bedeuten: <em>Das bedeutet, härter zu arbeiten.</em>\n<br><em>gemein + to-inf</em> – beabsichtigen: <em>Ich wollte dich anrufen.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie hat mit dem Rauchen aufgehört</s> (falls sie damit aufgehört hat) → Sie hat mit dem Rauchen aufgehört",
+      "<s>Sie hörte auf zu rauchen, um zu antworten</s> (stoppte, um) → Sie hörte auf, <em>zu antworten</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He stopped smoking last year.",
+        "Er hat letztes Jahr mit dem Rauchen aufgehört."
+      ],
+      [
+        "She stopped to look at the view.",
+        "Sie blieb stehen, um die Aussicht zu bewundern."
+      ]
+    ]
+  },
+  "b2_14": {
+    "text": "Wunsch + Past Simple – Wunsch, die Gegenwart zu verändern",
+    "note": "Ich wünschte, ich wüsste die Antwort. Ich wünschte, ich hätte mehr Zeit.",
+    "exp": "<em>wish + Past Simple</em> – über einen unrealistischen Wunsch in der Gegenwart.\n<br>Die Form ist die gleiche wie beim 2. Typ der Bedingung. Für <em>to be</em> - <em>were</em> (formell), obwohl auch <em>was</em> verwendet wird.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich wünschte, ich wüsste die Antwort</s> → Ich wünschte, ich <em>wüsste</em>",
+      "<s>Ich wünschte, ich wäre größer</s> – vielleicht, aber förmlich: <em>Ich wünschte, ich wäre größer</em>",
+      "<s>Ich wünschte, ich würde es wissen</s> - mit würde nur über andere: <em>Ich wünschte, du würdest zuhören</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish I spoke better English.",
+        "Schade, dass ich nicht besser Englisch spreche."
+      ],
+      [
+        "She wishes she lived in a warmer country.",
+        "Sie möchte in einem wärmeren Land leben."
+      ]
+    ]
+  },
+  "b2_15": {
+    "text": "Wunsch + Past Perfect – Bedauern über die Vergangenheit",
+    "note": "Ich wünschte, ich hätte härter gelernt. Ich wünschte, ich hätte das nicht gesagt.",
+    "exp": "<em>Wunsch + Past Perfect</em> – Bedauern über vergangene Ereignisse, die nicht geändert werden können. Die Form ist wie beim 3. Typ der Bedingung.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich wünschte, ich hätte das nicht gesagt</s> → Ich wünschte, ich <em>hätte es nicht gesagt</em> (Bedauern über die Vergangenheit = Past Perfect)",
+      "<s>Ich wünschte, sie hätte diesen Job angenommen</s> → sie hätte <em>angenommen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish I hadn't eaten so much.",
+        "Schade, dass ich so viel gegessen habe."
+      ],
+      [
+        "She wishes she had taken that job offer.",
+        "Sie wünschte, sie hätte dieses Jobangebot angenommen."
+      ]
+    ]
+  },
+  "b2_16": {
+    "text": "Wunsch + Würde – Wunsch, das Verhalten eines anderen zu ändern",
+    "note": "Ich wünschte, du würdest aufhören zu reden. Ich wünschte, es würde wärmer werden.",
+    "exp": "<em>wünsche + würde</em> – Irritation aufgrund des Verhaltens einer anderen Person oder der Wunsch, die Situation zu ändern.\n<br>⚠️ Sie können nicht über sich selbst sagen: <s>Ich wünschte, ich würde</s> – nur über andere Personen oder das Wetter/die Situation.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich wünschte, ich würde aufhören</s> (über mich selbst) → Das geht nicht! Verwendung: <em>Ich wünschte, ich könnte aufhören</em>",
+      "<s>Ich wünschte, du würdest aufhören zu reden</s> → Ich wünschte, du würdest <em>aufhören</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish you would listen to me.",
+        "Ich wünschte, du würdest mir zuhören."
+      ],
+      [
+        "I wish it would stop raining.",
+        "Ich wünschte, der Regen würde aufhören."
+      ]
+    ]
+  },
+  "b2_17": {
+    "text": "Definierende vs. nicht-definierende Klauseln",
+    "note": "Der Mann, der angerufen hat (bestimmt, welcher) vs. Mein Bruder, der angerufen hat (fügt Informationen hinzu)",
+    "exp": "<strong>Defining</strong> (defining): ohne Kommas – sie verdeutlichen, von wem/was sie sprechen. Das Pronomen kann durch <em>that</em> ersetzt werden. Es kann nicht entfernt werden, ohne die Bedeutung zu verlieren.\n<br><br><strong>Nicht definierend: mit Kommas – Informationen hinzufügen, ohne die Bedeutung zu ändern. <em>Das</em> kann <strong>nicht</strong> verwendet werden. Kann entfernt werden.\n<br><br>⚠️ <em>was</em> sich in Nichtdeterminanten auf den gesamten Satz beziehen kann: <em>Sie hat die Prüfung bestanden, was alle überrascht hat.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Mein Bruder, der angerufen hat, ist Arzt</s> → Mein Bruder, <em>der</em> angerufen hat (Sie können das nicht in einer nicht definierenden Formulierung verwenden)",
+      "<s>Der Mann, der nebenan wohnt, ist sehr nett</s> → ohne Komma (Bestimmungssatz)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film that I told you about is on tonight. (какой именно)",
+        "Der Film, von dem ich dir erzählt habe, wird heute Abend gezeigt."
+      ],
+      [
+        "My sister, who lives in Paris, is visiting next week. (доп. инфо)",
+        "Meine Schwester, die in Paris lebt, wird nächste Woche ankommen."
+      ]
+    ]
+  },
+  "b2_18": {
+    "text": "Präpositionen in Relativsätzen",
+    "note": "die Person, mit der ich zusammenarbeite / die Person, mit der ich (formell) zusammenarbeite",
+    "exp": "In der Umgangssprache steht am Ende die Präposition: <em>das Haus, in dem ich aufgewachsen bin.</em>\n<br>In der schriftlichen/formellen Rede steht die Präposition vor <em>welcher/wem</em>: <em>das Haus, in dem ich aufgewachsen bin.</em>\n<br><br>Nach der Präposition nur <em>which</em> (für Dinge) und <em>whom</em> (für Menschen). <em>Das</em> niemals!",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Das Haus, in dem ich aufgewachsen bin</s> → extra <em>es</em>",
+      "<s>Die Person, mit der ich gesprochen habe</s> → die Person, mit der ich gesprochen habe"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project I'm working on is fascinating. (разг.)",
+        "Das Projekt, an dem ich arbeite, ist sehr interessant."
+      ],
+      [
+        "The project on which I am working is fascinating. (форм.)",
+        ""
+      ]
+    ]
+  },
+  "b2_19": {
+    "text": "Konsequenzkonjunktionen: so... dass, so... dass, also, als Ergebnis",
+    "note": "Es war so kalt, dass wir drinnen blieben. Sie hat hart gearbeitet; deshalb hat sie bestanden.",
+    "exp": "<em>so + Adjektiv/Adverb + dass</em>: <em>Er sprach so schnell, dass niemand verstand.</em>\n<br><em>so + (a/an) + Adjektiv + Substantiv + dass</em>: <em>Es war ein so langer Film, dass ich eingeschlafen bin.</em>\n<br><br>Ergebniswörter verbinden (zwischen Sätzen): <em>daher, folglich, als Ergebnis, daher, so</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es war so kalt, dass wir geblieben sind</s> - richtig! Aber: <s>Es war so kalt</s> → Es war so <em>ein kalter Tag</em>",
+      "<s>So groß war seine Erleichterung</s> → So groß war seine Erleichterung (mit Adjektiv - so)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It was such a good book that I read it twice.",
+        "Das Buch war so gut, dass ich es zweimal gelesen habe."
+      ],
+      [
+        "She missed the deadline; consequently, she lost the contract.",
+        "Sie hat die Frist verpasst; Dadurch verlor sie ihren Vertrag."
+      ]
+    ]
+  },
+  "b2_20": {
+    "text": "sich daran gewöhnen / sich daran gewöhnen + V-ing – Gewohnheit (echt)",
+    "note": "Ich bin es gewohnt, früh aufzustehen. Sie gewöhnt sich an die Kälte.",
+    "exp": "<em>be used to + V-ing / Substantiv</em> = to be used to (schon gewohnt).\n<br><em>gewöhnen Sie sich an + V-ing / Substantiv</em> = gewöhnen Sie sich an (den Prozess der Gewöhnung).\n<br><br>⚠️ Nicht zu verwechseln mit <em>used to + infinitive</em> (vergangene Gewohnheiten).\n<br>• <em>Ich habe früher in Paris gelebt.</em> - habe früher gelebt (nicht mehr)\n<br>• <em>Ich bin es gewohnt, in Großstädten zu leben.</em> - Ich bin es gewohnt, in Großstädten zu leben",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich bin es gewohnt, früh aufzustehen</s> → Ich bin es gewohnt, <em>aufzuwachen</em> (an + V-ing gewöhnt sein)",
+      "<s>Ich gewöhne mich daran aufzuwachen</s> → Ich gewöhne mich daran <em>aufzuwachen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm not used to getting up so early.",
+        "Ich bin es nicht gewohnt, so früh aufzustehen."
+      ],
+      [
+        "It took time, but she got used to the new system.",
+        "Es dauerte einige Zeit, aber sie gewöhnte sich an das neue System."
+      ]
+    ]
+  },
+  "b2_21": {
+    "text": "Zukunft in der Vergangenheit: würde/wollte",
+    "note": "Sie sagte, sie würde anrufen. Er wollte gehen.",
+    "exp": "<strong>Zukunft in der Vergangenheit</strong> – Konstruktionen, die die Zukunft aus der Sicht der Vergangenheit ausdrücken. Wird in der indirekten Rede und Erzählung verwendet.\n<br><br>• <em>would + V</em> (von will): <em>Sie sagte, sie würde kommen.</em>\n<br>• <em>wollte/waren zu + V</em>: <em>Er wollte anrufen, vergaß es aber.</em>\n<br>• <em>wollte gerade + V</em>: <em>Sie wollte gerade gehen, als er ankam.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie sagte, sie würde kommen</s> → Sie sagte, sie <em>würde</em> kommen (Zeitverschiebung)",
+      "<s>Er würde anrufen</s> → Er würde <em>anrufen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She promised she would be there.",
+        "Sie versprach, dass sie kommen würde."
+      ],
+      [
+        "He was about to leave when she called.",
+        "Er wollte gerade gehen, als sie anrief."
+      ]
+    ]
+  },
+  "b2_22": {
+    "text": "sein zu - offizieller Termin und Auftrag",
+    "note": "Sie müssen sich bis Montag melden. Sie sollten sich nie wiedersehen.",
+    "exp": "<em>sein bis + Infinitiv</em> – offizielle Befehle, geplante Ereignisse und Schicksal in der Erzählung.\n<br><br>1. Rechtlicher Hinweis: <em>Passagiere müssen sitzen bleiben.</em>\n<br>2. Offizieller Plan: <em>Der Gipfel soll nächsten Monat stattfinden.</em>\n<br>3. Schicksal in der Erzählung: <em>Sie sollten sich nie wiedersehen.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie müssen einreichen</s> → Sie <em>sind</em> einreichen",
+      "<s>Sie sollte sich nie treffen</s> → Sie sollte sich <em>nie</em> treffen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You are to submit the report by Friday.",
+        "Sie müssen Ihren Bericht bis Freitag einreichen."
+      ],
+      [
+        "She was to become one of the greatest scientists of her time.",
+        "Sie war dazu bestimmt, eine der größten Wissenschaftlerinnen zu werden."
+      ]
+    ]
+  },
+  "b2_23": {
+    "text": "sollte - moralische Pflicht und logische Erwartung",
+    "note": "Du solltest dich entschuldigen. Sie hätte es uns sagen sollen.",
+    "exp": "<em>sollte</em> ist eine moralische Verpflichtung oder logische Erwartung. Stärker <em>sollte</em>.\n<br>Immer mit to: <em>sollte gehen</em> (im Gegensatz zu sollte).\n<br>Für die Vergangenheit: <em>sollte + V3 haben</em> – Vorwurf oder Bedauern.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Du solltest dich entschuldigen</s> → Du solltest <em>sich</em> entschuldigen (sollte immer mit!)",
+      "<s>Sie hätte es uns sagen sollen</s> → Sie hätte es uns <em>hätten</em> sagen sollen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You ought to apologise for what you said.",
+        "Sie sollten sich für das, was Sie gesagt haben, entschuldigen."
+      ],
+      [
+        "She ought to have told us earlier.",
+        "Sie hätte es uns früher sagen sollen."
+      ]
+    ]
+  },
+  "b2_24": {
+    "text": "brauchen - Modal- und regelmäßiges Verb",
+    "note": "Sie brauchen sich keine Sorgen zu machen. / Sie muss nicht kommen.",
+    "exp": "<em>need</em> als Modalverb (formal, in Fragen/Verneinungen) und als regelmäßiges Verb.\n<br><br><strong>Modal</strong> (ohne -s, ohne to):\n<br>• <em>Sie brauchen sich keine Sorgen zu machen.</em> / <em>Muss ich das erklären?</em>\n<br><br><strong>Regelmäßiger Bedarf:</strong>\n<br>• <em>Sie muss nicht kommen.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Du brauchst dir keine Sorgen zu machen</s> → Du brauchst dir keine Sorgen zu machen (modal, brauche nicht ohne zu)",
+      "<s>Sie muss kommen</s> → Sie <em>muss</em> kommen (regelmäßiges Bedürfnis + müssen)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You needn't fill in both forms.",
+        "Sie müssen nicht beide Formulare ausfüllen."
+      ],
+      [
+        "She doesn't need to attend every meeting.",
+        "Sie muss nicht an jedem Treffen teilnehmen."
+      ]
+    ]
+  },
+  "b2_25": {
+    "text": "wagen - Mut und Herausforderung",
+    "note": "Wie kannst du es wagen! Ich wage nicht zu fragen. Sie wagte es, ihn herauszufordern.",
+    "exp": "<em>wagen</em> - wagen, wagen. Modal in rhetorischen Fragen und Verneinungen.\n<br><br><strong>Modal</strong>: <em>Wie kannst du es wagen! / Ich wage nicht zu fragen. / Darf ich sagen...</em>\n<br><strong>Normal</strong>: <em>Sie wagte es nicht hinzusehen. / Er hat es gewagt, den Chef herauszufordern.</em>\n<br><br>⚠️ <em>Ich wage zu sagen</em> = vielleicht, wahrscheinlich (stabiler Ausdruck).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Wie kannst du es wagen zu sagen</s> → Wie kannst du es wagen zu sagen (nachdem du es wagst, ohne es zu sagen)",
+      "<s>Ich wage zu behaupten, dass es normal ist.</s> <em>Ich wage zu sagen</em> = vielleicht"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "How dare you speak to me like that!",
+        "Wie kannst du es wagen, so mit mir zu reden!"
+      ],
+      [
+        "She dared to express her opinion openly.",
+        "Sie wagte es, ihre Meinung offen zu äußern."
+      ]
+    ]
+  },
+  "b2_26": {
+    "text": "Reflexivpronomen: mich selbst, dich selbst, sich selbst...",
+    "note": "Ich habe mich verletzt. Sie hat es selbst gemacht. Sie hatten viel Spaß.",
+    "exp": "<em>mich, du selbst, du selbst, du selbst, du selbst, du selbst, du selbst, du selbst</em>.\n<br><br>1. Die Handlung ist auf das Subjekt gerichtet: <em>Er hat sich geschnitten.</em>\n<br>2. Betonung (selbst, ohne Hilfe): <em>Ich habe es selbst gemacht.</em>\n<br><br>Stabil: <em>allein</em> = allein; <em>help yourself</em> = hilf dir selbst.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie brachte ihr das Spielen bei</s> (wenn sie selbst) → Sie brachte <em>sich selbst</em> das Spielen bei",
+      "<s>Sie hatten Spaß</s> → Sie hatten Spaß <em>sich</em>",
+      "<s>Ich habe es selbst gemacht</s> → Ich habe es <em>selbst gemacht</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She taught herself to play the guitar.",
+        "Sie brachte sich selbst das Gitarrespielen bei."
+      ],
+      [
+        "The machine turns itself off automatically.",
+        "Die Maschine schaltet sich automatisch aus."
+      ]
+    ]
+  },
+  "b2_27": {
+    "text": "Sammelbegriffe: Team, Familie, Ausschuss...",
+    "note": "Die Mannschaft spielt gut. (BrE) / Die Mannschaft spielt. (AmE)",
+    "exp": "Sammelbegriffe sind eine Gruppe als Ganzes.\n<br><br>• <strong>BrE</strong>: normalerweise Plural. Nummer: <em>Die Mannschaft spielt.</em>\n<br>• <strong>AmE</strong>: normalerweise Einheiten. Nummer: <em>Die Mannschaft spielt.</em>\n<br><br>Häufig: <em>Team, Familie, Regierung, Ausschuss, Personal, Publikum, Besatzung, Polizei, Armee, Öffentlichkeit, Management</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Die Polizei ist hier</s> → Die Polizei <em>ist</em> hier (Plural in BrE)",
+      "<s>Die Mannschaft spielt gut</s> – das stimmt in AmE; <em>sind</em> wahr in BrE"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The government have announced new measures. (BrE)",
+        "Die Regierung kündigte neue Maßnahmen an."
+      ],
+      [
+        "The audience were on their feet. (BrE)",
+        "Das Publikum sprang auf."
+      ]
+    ]
+  },
+  "b2_28": {
+    "text": "Brüche und Mathematik",
+    "note": "eine Hälfte, drei Viertel, 5,7 = fünf Komma sieben, 25 %",
+    "exp": "Brüche:<em>½ = eine Hälfte; ⅓ = ein Drittel; ¼ = ein Viertel; ¾ = drei Viertel; ⅔ = zwei Drittel</em>.\n<br>Zähler ist quantitativ, Nenner ist ordinal (Plural, wenn Zähler > 1).\n<br><br>Dezimalzahlen: Punkt (nicht Komma): <em>3,14 = drei Komma eins vier</em>.\n<br>Mathematik: <em>+ = plus; - = Minus; × = Zeiten; ÷ = geteilt durch; = = gleich</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Zwei Drittel der Studierenden</s> → Zwei <em>Drittel</em> der Studierenden",
+      "<s>3,14</s> → 3<em>.</em>14 (Punkt, kein Komma)",
+      "<s>25 Prozent</s> → 25 <em>Prozent</em> (ohne s)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Three quarters of students passed the exam.",
+        "Drei Viertel der Studierenden haben die Prüfung bestanden."
+      ],
+      [
+        "The inflation rate fell to 2.5 percent.",
+        "Die Inflationsrate sank auf 2,5 Prozent."
+      ]
+    ]
+  },
+  "b2_29": {
+    "text": "Vergleichsgrade von Adverbien",
+    "note": "schneller, sorgfältiger, am besten, schlechter, weiter",
+    "exp": "Adverbien bilden Vergleichsgrade nach den gleichen Regeln wie Adjektive.\n<br><br>• Einsilbig: + <em>er/est</em>: <em>schnell→schneller, hart→härter, früh→früher</em>\n<br>• Am meisten auf <em>-ly</em>: <em>mehr/am meisten</em>: <em>sorgfältig→vorsichtiger→am sorgfältigsten</em>\n<br>• Falsch: <em>gut→besser→am besten, schlecht→schlechter→am schlechtesten, weit→weiter→am weitesten, wenig→weniger→am wenigsten, viel→mehr→am meisten</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie singt schöner</s> → Sie singt <em>schöner</em>",
+      "<s>Er rennt schneller</s> → Er rennt <em>schneller</em>",
+      "<s>Sie arbeitet am härtesten</s> → Sie arbeitet <em>am härtesten</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She spoke more confidently than before.",
+        "Sie sprach selbstbewusster als zuvor."
+      ],
+      [
+        "He works hardest in the team.",
+        "Er arbeitet härter als jeder andere im Team."
+      ]
+    ]
+  },
+  "c1_01": {
+    "text": "Umkehrung mit negativen Adverbien",
+    "note": "Das habe ich noch nie gesehen. Sie beschwert sich selten.",
+    "exp": "Zur Betonung wird das negative Adverb/der negative Ausdruck am Anfang → Hilfsverb vor dem Subjekt platziert (Wortstellung wie bei einer Frage).\n<br><br>Wörter, die eine Umkehrung auslösen: <em>nie, selten, selten, wenig, kaum, kaum, kaum, nicht nur, nur, kaum früher</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Nie habe ich gesehen</s> → Nie <em>habe ich gesehen</em> (Umkehrung: Auxiliary vor Subjekt)",
+      "<s>Sie beschwert sich selten</s> → Selten <em>beschwert sie sich</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Never have I seen anything so beautiful.",
+        "Ich habe noch nie etwas so Schönes gesehen."
+      ],
+      [
+        "Rarely does she make a mistake.",
+        "Sie macht selten Fehler."
+      ],
+      [
+        "Little did I know what was coming.",
+        "Ich hatte keine Ahnung, was mich erwartete."
+      ]
+    ]
+  },
+  "c1_02": {
+    "text": "Nicht nur... sondern auch mit Inversion",
+    "note": "Er entschuldigte sich nicht nur, sondern bot auch seine Hilfe an.",
+    "exp": "<em>Nicht nur die +-Inversion im ersten Teil</em>, der zweite Teil ist die übliche Reihenfolge.\n<br>Wird zur Betonung verwendet: drückt aus, dass etwas weiter ging als erwartet.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Er hat sich nicht nur entschuldigt</s> → Er hat sich nicht nur <em>entschuldigt</em>",
+      "<s>Sie ist nicht nur talentiert, sondern auch fleißig</s> → aber <em>sie</em> ist auch fleißig (der zweite Teil ist die übliche Reihenfolge)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Not only is she talented, but she is also very hard-working.",
+        "Sie ist nicht nur talentiert, sondern auch sehr fleißig."
+      ],
+      [
+        "Not only did they arrive late, but they also forgot the documents.",
+        "Sie kamen nicht nur zu spät, sondern vergaßen auch ihre Dokumente."
+      ]
+    ]
+  },
+  "c1_03": {
+    "text": "Kaum / Kaum / Kaum / Kaum + Umkehrung",
+    "note": "Kaum hatte ich mich hingesetzt, klingelte das Telefon.",
+    "exp": "Direktsequenzkonstruktionen:\n<br>• <em>Kaum/Kaum + hatte + Subjekt + V3 + wann/vor + Past Simple</em>\n<br>• <em>Kaum + hatte + Subjekt + V3 + als + Past Simple</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Kaum hatte ich gesessen</s> → Kaum <em>hatte ich</em> gesessen",
+      "<s>Kaum saß ich da</s> → Kaum <em>hatte ich gesessen</em> als"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Hardly had she arrived when it started to rain.",
+        "Sie war kaum angekommen, als es zu regnen begann."
+      ],
+      [
+        "No sooner had I sat down than someone knocked at the door.",
+        "Ich hatte mich gerade hingesetzt, als jemand an die Tür klopfte."
+      ]
+    ]
+  },
+  "c1_04": {
+    "text": "Umkehrung in Konditionalen: Had / Were / Should",
+    "note": "Hätte ich es gewusst (= Wenn ich es gewusst hätte). Werde ich du (= Wenn ich du wäre).",
+    "exp": "Formaler Stil – schließt <em>if</em> aus, verwendet Inversion:\n<br>• <em>Had + Subjekt + V3</em> = If + Past Perfect (3. Typ)\n<br>• <em>Waren + Subjekt (+ bis + Infinitiv)</em> = If + Past Simple (2. Typ)\n<br>• <em>Should + Subjekt + Infinitiv</em> = If (unwahrscheinlich, Typ 1)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Hätte ich es gewusst, hätte ich geholfen</s> → <em>Hätte</em> ich es gewusst",
+      "<s>Sollten Sie Hilfe benötigen, rufen Sie uns bitte an</s> → Bitte <em>rufen Sie an</em> (bitte ohne bis nachher)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Had she told me, I would have helped.",
+        "Wenn sie es mir gesagt hätte, hätte ich geholfen."
+      ],
+      [
+        "Were I in your position, I would accept.",
+        "Wenn ich du wäre, würde ich zustimmen."
+      ],
+      [
+        "Should you need assistance, please call us.",
+        "Wenn Sie Hilfe benötigen, rufen Sie uns an."
+      ]
+    ]
+  },
+  "c1_05": {
+    "text": "It-cleft: Es war John, der angerufen hat.",
+    "note": "Um ein beliebiges Mitglied eines Satzes hervorzuheben",
+    "exp": "Struktur: <em>Es + sein + ausgewähltes Element + wer/das/welcher + Rest</em>\n<br>Verschiebt den Fokus der Aufmerksamkeit auf das hervorgehobene Element.\n<br><br>• Für Menschen – <em>die</em>; für Dinge/Umstände – <em>das/welche</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es war John, den er rief</s> → Es war John, der rief (extra er)",
+      "<s>Es war das Geräusch, das mich geweckt hat</s> - richtig, aber <em>das</em> ist für die Dinge besser"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It was the noise that woke me up. (не шум вообще, именно этот)",
+        "Es war der Lärm, der mich aufweckte."
+      ],
+      [
+        "It is hard work that leads to success.",
+        "Es ist harte Arbeit, die zum Erfolg führt."
+      ]
+    ]
+  },
+  "c1_06": {
+    "text": "Wh-cleft: Was mich überrascht hat, war der Preis.",
+    "note": "Was ich brauche, ist Ruhe. Was sie sagte, schockierte alle.",
+    "exp": "Struktur: <em>Was + Nebensatz + sein soll + hervorgehobenes Element</em>\n<br>Betont die Bedeutung des am Ende eingeführten Elements.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Was ich liebe ist London</s> → Was ich liebe <em>ist</em> London (extra)",
+      "<s>Was mich überraschte, war der Preis</s> → Was mich überraschte <em>war</em> der Preis (Singularzahl)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "What I love about London is the diversity.",
+        "Was mir an London am besten gefällt, ist die Vielfalt."
+      ],
+      [
+        "What he did was completely unexpected.",
+        "Was er tat, war völlig unerwartet."
+      ]
+    ]
+  },
+  "c1_07": {
+    "text": "Formaler Konjunktiv nach Nachfrageverben",
+    "note": "Ich schlage vor, dass er geht. Es ist wichtig, dass sie informiert wird.",
+    "exp": "Nach <em>suggest, empfehlen, bestehen, fordern, vorschlagen, bitten, verlangen, fragen, beraten, bestellen + dass</em> – die Grundform des Verbs für <strong>alle Personen</strong> (ohne <em>-s</em>, ohne <em>was</em>).\n<br><br>Die britische Version verwendet oft <em>should</em> anstelle des Konjunktivs: <em>I vorschlagen, dass er gehen sollte.</em>\n<br>Amerikanisch – oft ein reiner Konjunktiv.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich schlage vor, dass er geht</s> → Ich schlage vor, dass er <em>geht</em> (Konjunktiv – ohne -s!)",
+      "<s>Es ist wichtig, dass sie informiert wird</s> → dass sie informiert wird"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I recommend that he see a doctor.",
+        "Ich empfehle ihm, einen Arzt aufzusuchen."
+      ],
+      [
+        "It is essential that all students attend the meeting.",
+        "Es ist unbedingt erforderlich, dass alle Studierenden an der Sitzung teilnehmen."
+      ]
+    ]
+  },
+  "c1_08": {
+    "text": "Es ist höchste Zeit + Past Simple",
+    "note": "Es ist höchste Zeit, dass du ins Bett gehst. Es ist Zeit, dass wir gehen.",
+    "exp": "<em>Es ist (hoch/über) Zeit + Betreff + Past Simple</em>\n<br>Bedeutung: Gegenwart/Zukunft – wir sprechen über etwas, das schon vor langer Zeit hätte getan werden sollen.\n<br><em>höchste Zeit</em> – noch stärker: Es ist höchste Zeit!",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es ist höchste Zeit, dass du gehst</s> → Es ist höchste Zeit, dass du <em>gehst</em> (Past Simple!)",
+      "<s>Es ist höchste Zeit, dass du gehst</s> → Es ist höchste Zeit <em>du gehst</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It's time she found a new job.",
+        "Es ist höchste Zeit, dass sie einen neuen Job findet."
+      ],
+      [
+        "It's high time you apologised.",
+        "Es ist höchste Zeit, sich zu entschuldigen."
+      ]
+    ]
+  },
+  "c1_09": {
+    "text": "als ob / als ob + Konjunktiv",
+    "note": "Sie redet, als wüsste sie alles. Er sah aus, als hätte er einen Geist gesehen.",
+    "exp": "<em>als ob / als ob + Past Simple</em> ist ein unrealistischer Vergleich in der Gegenwart.\n<br><em>als ob / als ob + Past Perfect</em> ist ein unrealistischer Vergleich über die Vergangenheit.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie redet, als ob sie alles wüsste</s> (unwirkliche Situation) → als ob sie <em>wüsste</em>",
+      "<s>Er sah aus, als hätte er einen Geist gesehen</s> → als hätte er <em>einen Geist gesehen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He spends money as if he were a millionaire.",
+        "Er gibt Geld aus, als wäre er ein Millionär."
+      ],
+      [
+        "She spoke as though she had met him before.",
+        "Sie sprach, als ob sie ihn schon einmal getroffen hätte."
+      ]
+    ]
+  },
+  "c1_10": {
+    "text": "Also / Weder + Hilfsverb + Subjekt",
+    "note": "Ich auch. Sie auch nicht. Ich auch.",
+    "exp": "<em>So + Hilfs + Subjekt</em> – Zustimmung zum Bejahenden.\n<br><em>Weder/Noch + Auxiliar + Subjekt</em> – Übereinstimmung mit dem Negativ.\n<br>Das Hilfsverb muss mit der Zeitform des Originalsatzes übereinstimmen.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Das tue ich auch</s> → <em>Das tue ich auch</em> (Hilfsmittel vor Betreff)",
+      "<s>Sie tut es auch nicht</s> → <em>Sie tut es auch nicht</em>",
+      "<s>Ich liebe Jazz. Das tut sie auch</s> → <em>Das tut sie auch</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I love jazz. So does she.",
+        "Ich liebe Jazz. Sie auch."
+      ],
+      [
+        "I haven't been to Rome. Neither have I.",
+        "Ich war nicht in Rom. Ich auch."
+      ]
+    ]
+  },
+  "c1_11": {
+    "text": "Ich denke schon / ich hoffe es / ich fürchte es",
+    "note": "Wird es regnen? - Ich glaube schon. / Ich hoffe nicht.",
+    "exp": "<em>so</em> ersetzt den Nebensatz nach: <em>denken, hoffen, vermuten, erwarten, glauben, sich vorstellen, Angst haben</em>.\n<br>Negativform: <em>nicht</em> (nicht <em>also nicht</em>!).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Das glaube ich nicht</s> → Ich glaube nicht",
+      "<s>Das hoffe ich nicht</s> → Ich hoffe <em>nicht</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Will he come? — I think so. / I don't think so.",
+        "Wird er kommen? - Ich denke ja. / Denke nicht."
+      ],
+      [
+        "Is it expensive? — I'm afraid so.",
+        "Ist es teuer? - Ich fürchte schon."
+      ],
+      [
+        "Is it closed? — I hope not.",
+        "Geschlossen? - Ich hoffe nicht."
+      ]
+    ]
+  },
+  "c1_12": {
+    "text": "Inklusive vs. nicht-inklusive Klauseln",
+    "note": "Der Mann, der angerufen hat, ist mein Bruder. VS Mein Bruder, der angerufen hat, ist Arzt.",
+    "exp": "<strong>Definierend</strong>: Gibt an, über wen/worüber wir sprechen – ohne Kommas. <em>das</em> ist möglich. Das Pronomen kann weggelassen werden, wenn es ein Objekt ist.\n<br><br><strong>Nicht definierend</strong>: Fügt Informationen hinzu – Kommas erforderlich. Nur <em>wer/welcher</em> (nicht <em>das</em>!). Das Pronomen kann nicht weggelassen werden.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Der Film, der den Oscar gewann, war brillant</s> → ohne Komma (definierender Satz)",
+      "<s>Avatar, das 2009 herauskam</s> → Avatar, <em>das</em> herauskam (Sie können das nicht in einem nicht definierenden verwenden!)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film that won the Oscar was brilliant. (определяет, о каком фильме речь)",
+        "Der Film, der den Oscar gewann, war großartig."
+      ],
+      [
+        "Avatar, which came out in 2009, was a huge hit. (доп. факт о и так известном фильме)",
+        "Avatar wurde 2009 veröffentlicht und wurde ein großer Hit."
+      ]
+    ]
+  },
+  "c1_13": {
+    "text": "Präposition + which/who im formalen Stil",
+    "note": "Das Unternehmen, für das ich arbeite. Die Person, mit der ich gesprochen habe.",
+    "exp": "Formaler Stil: <em>Präposition + which/whom</em> vor einem Relativpronomen.\n<br>Informelles Äquivalent: Präposition am Ende eines Satzes.\n<br><em>who</em> ist die formale Objektform von <em>who</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Die Firma, für die ich arbeite</s> → Extra",
+      "<s>Die Person, mit der ich gesprochen habe</s> → die Person, mit der ich gesprochen habe / mit der ich gesprochen habe"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The report to which I referred is attached. (формально)",
+        "Der von mir erwähnte Bericht ist beigefügt."
+      ],
+      [
+        "The report which I referred to is attached. (нейтрально)",
+        ""
+      ],
+      [
+        "The report I referred to is attached. (разговорно)",
+        ""
+      ]
+    ]
+  },
+  "c1_14": {
+    "text": "Nominalisierung – Grundlagen",
+    "note": "entscheiden→Entscheidung, entdecken→Entdeckung, verbessern→Verbesserung",
+    "exp": "Unter Nominalisierung versteht man die Umwandlung von Verben/Adjektiven in Substantive. Ein Zeichen für akademischen und geschäftlichen Stil.\n<br><br>Hauptsuffixe:\n<br>• <em>-tion/-sion</em>: entscheiden→Entscheidung, diskutieren→Diskussion\n<br>• <em>-ment</em>: verbessern→Verbesserung, entwickeln→Entwicklung\n<br>• <em>-ance/-ence</em>: erscheinen→Aussehen, unterscheiden→Unterschied\n<br>• <em>-ity</em>: komplex→komplexität, fähig→fähigkeit\n<br>• <em>-ness</em>: glücklich→Glück, Bewusstsein→Bewusstheit",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich habe mich für eine Erweiterung entschieden</s> → richtig, aber der Stil ist schwächer: <em>Unsere Entscheidung für eine Erweiterung</em> (Nominalisierung)",
+      "<s>Er hat einen Fehler entdeckt</s> → Seine <em>Entdeckung</em> des Fehlers"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She decided to expand. → Our decision to expand the company...",
+        "Unsere Entscheidung zu expandieren..."
+      ],
+      [
+        "He discovered that... → His discovery of the error...",
+        "Seine Entdeckung des Fehlers..."
+      ]
+    ]
+  },
+  "c1_15": {
+    "text": "Nominalisierung in wissenschaftlichen Texten",
+    "note": "Die Tatsache, dass die Preise gestiegen sind → Der Preisanstieg...",
+    "exp": "Die Nominalisierung ermöglicht:\n<br>1. Informationen komprimieren: <em>Die Preise sind deutlich gestiegen.</em>\n<br>2. Definitionen hinzufügen: <em>Der schnelle Anstieg der Immobilienpreise...</em>\n<br>3. Schaffen Sie einen formellen, unpersönlichen Ton.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es gab einen signifikanten Anstieg</s> → einen <em>signifikanten</em> Anstieg (Adjektiv vor einem Substantiv)",
+      "<s>Der Preisanstieg</s> → <em>Der Preisanstieg</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "There has been a significant improvement in air quality.",
+        "Die Luftqualität hat sich deutlich verbessert."
+      ],
+      [
+        "His refusal to comment surprised everyone.",
+        "Seine Weigerung, einen Kommentar abzugeben, überraschte alle."
+      ]
+    ]
+  },
+  "c1_16": {
+    "text": "Partizip Präsens: V-ing-Klausel",
+    "note": "Als ich die Straße entlangging, sah ich einen alten Freund. Da er kein Geld hatte, konnte er kein Essen kaufen.",
+    "exp": "Die Partizipialphrase mit Partizip Präsens (V-ing) ersetzt den Nebensatz:\n<br>• Gleichzeitigkeit: <em>Als ich nach Hause ging, bemerkte ich etwas Seltsames.</em> (= Während ich nach Hause ging)\n<br>• Grund: <em>Da sie die Antwort kannte, hob sie die Hand.</em> (= Weil sie es wusste)\n<br><br>⚠️ Das Subjekt der Partizipialphrase MUSS mit dem Subjekt des Hauptsatzes übereinstimmen!\n<br>Fehler: <s>Als ich die Straße entlang ging, begann es zu regnen.</s> (Der Regen fiel nicht auf die Straße)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Als ich die Straße entlang ging, begann es zu regnen</s> → Betreff ≠ Betreff. Richtig: <em>Als ich die Straße entlangging, wurde ich nass.</em>",
+      "<s>Als sie die Antwort kannte, hob sie die Hand.</s> → Das Thema muss übereinstimmen: <em>Als sie die Antwort wusste, hob sie die Hand.</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Arriving at the airport, he realised he had forgotten his passport.",
+        "Als er am Flughafen ankam, stellte er fest, dass er seinen Reisepass vergessen hatte."
+      ],
+      [
+        "Not knowing what to do, she called her mother.",
+        "Da sie nicht wusste, was sie tun sollte, rief sie ihre Mutter an."
+      ]
+    ]
+  },
+  "c1_17": {
+    "text": "Partizipialsatz der Vergangenheit: V3/Having + V3-Klausel",
+    "note": "Der 1815 verfasste Roman... Nachdem sie mit der Arbeit fertig war, ging sie nach Hause.",
+    "exp": "<em>V3-Klausel</em> (Partizip Perfekt) = passive Bedeutung: <em>1889 erbaut, der Eiffelturm...</em>\n<br><br><em>Having + V3</em> = Aktion vor der Hauptaktion abgeschlossen:\n<br><em>Nachdem er den Bericht gelesen hatte, berief er eine Sitzung ein.</em> (= Nachdem er gelesen hatte...)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Nachdem ich den Bericht gelesen hatte, wurde die Sitzung einberufen</s> → Wer hat ihn gelesen? Es sollte lauten: <em>Nachdem er den Bericht gelesen hatte, berief er eine Sitzung ein.</em>",
+      "<s>Von der Nachricht überrascht, setzte sie sich</s> → sie selbst: <em>sie setzte sich</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Surprised by the news, she sat down silently.",
+        "Überrascht von der Nachricht setzte sie sich schweigend hin."
+      ],
+      [
+        "Having finished the exam, the students left the room.",
+        "Nach Abschluss der Prüfung verließen die Schüler das Klassenzimmer."
+      ]
+    ]
+  },
+  "c2_01": {
+    "text": "Bedingt mit, es sei denn / vorausgesetzt / solange / unter der Bedingung, dass",
+    "note": "Wenn du nicht lernst, wirst du scheitern. Solange du ehrlich bist, werde ich helfen.",
+    "exp": "<em>unless</em> = wenn nicht (kann aber nicht mit Negation verwendet werden!): <em>Es sei denn, Sie beeilen sich</em> = <em>Wenn Sie sich nicht beeilen</em>\n<br><em>bereitgestellt/bereitgestellt (das)</em> = genau dann, wenn (strikte Bedingung)\n<br><em>solange</em> = vorausgesetzt, dass (Annahme)\n<br><em>unter der Bedingung, dass</em> = unter der Bedingung, dass (formell)\n<br><em>im Fall</em> = im Fall",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es sei denn, Sie studieren nicht</s> → Es sei denn, Sie studieren (es sei denn = wenn nicht, ist eine doppelte Verneinung unnötig)",
+      "<s>Solange du ehrlich bist</s> → Solange du <em>sind</em> ehrlich"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'll lend you money, as long as you pay me back.",
+        "Ich leihe dir Geld unter der Bedingung, dass du es zurückzahlst."
+      ],
+      [
+        "You can use my laptop, provided you don't download anything.",
+        "Du kannst meinen Laptop benutzen, solange du nichts herunterlädst."
+      ]
+    ]
+  },
+  "c2_02": {
+    "text": "Angenommen / angenommen / was wäre, wenn",
+    "note": "Angenommen, Sie hätten im Lotto gewonnen – was würden Sie tun?",
+    "exp": "<em>Suppose/Supposed</em> – wird als <em>if</em> in hypothetischen Fragen verwendet.\n<br><em>Was wäre, wenn</em> ist ein informelles Analogon.\n<br><br>Mit Past Simple ist eine Situation unwahrscheinlich oder eingebildet.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Angenommen, Sie würden gewinnen</s> → Angenommen, Sie <em>gewonnen</em> (Past Simple für Hypothese)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Supposing you had to choose — which would you pick?",
+        "Stellen Sie sich vor, Sie müssten sich entscheiden – was würden Sie wählen?"
+      ],
+      [
+        "What if nobody comes? What should we do?",
+        "Was ist, wenn niemand kommt? Was sollen wir tun?"
+      ]
+    ]
+  },
+  "c2_03": {
+    "text": "Nur + Umstand + Umkehrung",
+    "note": "Erst als ich ging, wurde mir klar. Erst dann verstand er es.",
+    "exp": "<em>Nur + wenn/nach/wenn/dann/durch/in/am</em> – die gesamte Gruppe wird an den Anfang verschoben → Umkehrung.\n<br><br>Dies ist eines der wirkungsvollsten rhetorischen Mittel beim Schreiben und öffentlichen Reden.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Erst als ich ging, wurde mir klar</s> → Erst als ich ging <em>wurde mir</em> klar (Umkehrung!)",
+      "<s>Erst nach jahrelanger Übung hat sie es gemeistert</s> → ... <em>hat sie gemeistert</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Only when you experience it can you truly understand.",
+        "Nur wenn man es erlebt, kann man es wirklich verstehen."
+      ],
+      [
+        "Only after years of practice did she master the skill.",
+        "Erst nach jahrelanger Übung beherrschte sie diese Fähigkeit."
+      ]
+    ]
+  },
+  "c2_04": {
+    "text": "Also + Adjektiv/Adverb + Umkehrung",
+    "note": "Seine Erleichterung war so groß, dass er weinte. Das war ihr Talent...",
+    "exp": "Buch- und Rednerstil.\n<br><em>So + adj/adv + be/aux + subject</em>\n<br><em>So + war/waren + Subjekt</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Seine Erleichterung war so groß</s> → So groß <em>war</em> seine Erleichterung",
+      "<s>So groß war ihr Talent</s> → So <em>war</em> ihr Talent / <em>So großartig war</em> ihr Talent"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "So rapid was the change that nobody could adapt.",
+        "Die Veränderungen erfolgten so schnell, dass sich niemand anpassen konnte."
+      ],
+      [
+        "Such was her talent that she was offered a scholarship.",
+        "Ihr Talent war so groß, dass ihr ein Stipendium angeboten wurde."
+      ]
+    ]
+  },
+  "c2_05": {
+    "text": "Absicherung: scheinen, scheinen, neigen dazu, wahrscheinlich zu sein",
+    "note": "Die Preise scheinen zu steigen. Dies tritt häufig auf, wenn...",
+    "exp": "Unter Absicherung versteht man die bewusste Abschwächung von Aussagen, um wissenschaftliche Bescheidenheit zum Ausdruck zu bringen.\n<br><br>Hauptstrukturen:\n<br>• <em>erscheinen/scheinen</em> – anscheinend\n<br>• <em>neigen dazu</em> – tendieren in der Regel dazu\n<br>• <em>wahrscheinlich/unwahrscheinlich</em> – wahrscheinlich/unwahrscheinlich\n<br>• <em>gedacht/angenommen werden</em> – das wird geglaubt",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Preise scheinen zu steigen</s> → Preise scheinen <em>zu steigen</em>",
+      "<s>Ergebnisse scheinen darauf hinzuweisen</s> → Ergebnisse scheinen <em>zu suggerieren</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The results appear to suggest a correlation.",
+        "Die Ergebnisse scheinen auf einen Zusammenhang hinzuweisen."
+      ],
+      [
+        "Companies tend to underestimate implementation costs.",
+        "Unternehmen neigen dazu, die Implementierungskosten zu unterschätzen."
+      ]
+    ]
+  },
+  "c2_06": {
+    "text": "Diskursmarker in wissenschaftlichen Texten",
+    "note": "Darüber hinaus, Dennoch, Umgekehrt, Im Hinblick auf, Im Hinblick auf",
+    "exp": "Marker strukturieren und verbinden wissenschaftliche Texte:\n<br><br>• <strong>Zusatz</strong>: Darüber hinaus, außerdem, zusätzlich, zusätzlich\n<br>• <strong>Kontrast</strong>: Allerdings, dennoch, dennoch, umgekehrt, andererseits\n<br>• <strong>Ergebnis</strong>: Deshalb, Folglich, Als Ergebnis, Daher, So\n<br>• <strong>Erklärung</strong>: Mit anderen Worten: Nämlich\n<br>• <strong>Zugeständnis</strong>: Zugegebenermaßen stimmt es zwar, aber trotzdem",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "außerdem/überdies Verwirrung – beides fügt hinzu, ist aber darüber hinaus stärker",
+      "<s>Umgekehrt zeigt dies dasselbe</s> – führt umgekehrt einen Kontrast ein, keine Bestätigung"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The experiment failed. Nevertheless, the findings were instructive.",
+        "Das Experiment ist gescheitert. Dennoch waren die Ergebnisse aufschlussreich."
+      ],
+      [
+        "Furthermore, the data suggests a strong correlation.",
+        "Darüber hinaus deuten die Daten auf eine starke Korrelation hin."
+      ]
+    ]
+  },
+  "c2_07": {
+    "text": "Sprachregister: formell, neutral, umgangssprachlich",
+    "note": "Ich würde gerne fragen... vs. Ich würde gerne fragen... vs. Kann ich fragen...",
+    "exp": "Die Registrierung richtet sich nach Zweck, Zielgruppe und Kontext.\n<br><br><strong>Formal</strong>: Passiv, Nominalisierung, komplexe Konjunktionen, Vollformen, Verben lateinischen Ursprungs (<em>beginnen, beenden, unterstützen</em>).\n<br><strong>Neutral</strong>: Standardgrammatik, kein Slang, moderate Abkürzungen.\n<br><strong>Informell</strong>: Auslassungspunkte, Phrasenverben (<em>put off = verschieben</em>), Kontraktionen, umgangssprachliche Ausdrücke.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "Mischregister: formaler Anfang und umgangssprachliches Ende in einem Text",
+      "<s>Ich möchte etwas zu dieser Sache fragen</s> → <em>zu dieser Angelegenheit</em> (formeller Fall)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Formal: I wish to draw your attention to a discrepancy.",
+        ""
+      ],
+      [
+        "Neutral: I want to point out a mistake.",
+        ""
+      ],
+      [
+        "Informal: Just wanted to flag something up.",
+        ""
+      ]
+    ]
+  },
+  "c2_08": {
+    "text": "Konnotationen von Synonymen – Bedeutungsnuancen",
+    "note": "dünn/schlank/schlank/dünn/mager: positiv→neutral→negativ",
+    "exp": "Synonyme unterscheiden sich in der Konnotation (emotionale Färbung) und im Register.\n<br><br>Beispiele für Skalen:\n<br>• <em>schlank</em> (+) → <em>dünn</em> (0) → <em>dünn</em> (-) → <em>dürr/mager</em> (--)\n<br>• <em>entschlossen</em> (+) → <em>fest</em> (0) → <em>stur/starrköpfig</em> (-)\n<br>• <em>sparsam</em> (+) → <em>sparsam</em> (0) → <em>geizig/geizig</em> (-)\n<br>• <em>selbstbewusst</em> (+) → <em>durchsetzungsfähig</em> (0) → <em>arrogant</em> (-)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie ist sehr dünn</s> (neutral) vs. absichtlich <em>dünn</em> (+) oder <em>dünn</em> (−)",
+      "Wenn Sie ein Kompliment machen, verwenden Sie ein Wort mit der falschen Konnotation: <em>stur</em> statt <em>entschlossen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She is slim. (+) / She is thin. (0) / She is skinny. (-)",
+        "Das Gleiche, aber andere Einstellung."
+      ]
+    ]
+  },
+  "c2_09": {
+    "text": "Rhetorische Mittel: Anaphora, Chiasmus, Trikolon",
+    "note": "„Wir werden an den Stränden kämpfen, wir werden auf den Landeplätzen kämpfen …“ – Anaphora",
+    "exp": "<strong>Anaphora</strong>: Wiederholung von Wörtern am Anfang aufeinanderfolgender Sätze. <em>„Ich habe einen Traum... ich habe einen Traum...“</em>\n<br><strong>Chiasmus</strong>: AB-BA cross structure. <em>„Fragen Sie nicht, was Ihr Land für Sie tun kann, sondern was Sie für Ihr Land tun können.“</em>\n<br><strong>Trikolon</strong>: drei parallele Elemente. <em>„Veni, vidi, vici.“ / „Regierung des Volkes, durch das Volk, für das Volk.“</em>\n<br><br>Diese Techniken werden in Reden, Essays und Journalismus eingesetzt.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "Die Verwendung von Anaphoren ohne Parallelstruktur stört den Rhythmus",
+      "Trikolon mit ungleichen Elementen: „schnell, effizient, mit großer Sorgfalt“ → „schnell, effizient und vorsichtig“"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Friends, Romans, countrymen, lend me your ears. (триколон)",
+        ""
+      ],
+      [
+        "The more you learn, the more you earn. (хиазм в народной мудрости)",
+        ""
+      ]
+    ]
+  },
+  "c2_10": {
+    "text": "Präzise Kollokationen in wissenschaftlichen Texten",
+    "note": "Recherchen durchführen, Schlussfolgerungen ziehen, einen Konsens erzielen, ein Problem ansprechen",
+    "exp": "In C2 ist es wichtig, bei jedem Substantiv das „richtige“ Verb zu verwenden.\n<br><br>Akademische Kollokationen:\n<br>• Forschung <em>durchführen/durchführen</em> (nicht <s>machen/tun</s>)\n<br>• <em>ziehen/kommen</em> eine Schlussfolgerung\n<br>• <em>ein Problem ansprechen/ansprechen/angehen</em>\n<br>• <em>einen Konsens erreichen/erreichen</em>\n<br>• <em>machen</em> erhebliche Fortschritte\n<br>• <em>stellen/präsentieren</em> Sie eine Herausforderung",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Forschung durchführen</s> → <em>Forschung durchführen/ausführen</em>",
+      "<s>eine Schlussfolgerung ziehen</s> → <em>eine Schlussfolgerung ziehen/kommen</em>",
+      "<s>ein Problem machen</s> → <em>ein Problem ansprechen/ansprechen</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Researchers conducted extensive interviews.",
+        "Die Forscher führten ausführliche Interviews."
+      ],
+      [
+        "The committee failed to reach a consensus.",
+        "Der Ausschuss konnte keinen Konsens erzielen."
+      ]
+    ]
+  },
+  "c2_11": {
+    "text": "Absolutkonstruktion mit Partizip",
+    "note": "Wenn das Wetter es zulässt, machen wir ein Picknick. Mit Tränen in den Augen verließ sie den Raum.",
+    "exp": "Absolute Konstruktion = Substantiv/Pronomen + Partizip (unabhängiges Subjekt).\n<br>Wird im schriftlichen und formalen Stil verwendet – fügt einen Umstand ohne Konjunktion hinzu.\n<br><br>Typen:\n<br>• <em>Wetterabhängig</em> = Wenn das Wetter es zulässt\n<br>• <em>Alles berücksichtigt</em> = Wenn Sie alles berücksichtigen\n<br>• <em>Ihre Arbeit beendet</em> = Wann/Nachdem ihre Arbeit beendet war\n<br>• <em>This done</em> = Wann/Nachdem dies erledigt wurde",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Bei schönem Wetter übernehmen wir das Picknick</s> → überflüssiges Passiv",
+      "<s>Ihre Augen füllten sich mit Tränen, als sie ging</s> ist akzeptabel, aber <em>Ihre Augen füllten sich</em> ist für eine vollständige Tatsache zutreffender"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "All things considered, it was a successful event.",
+        "Alles in allem war es eine gelungene Veranstaltung."
+      ],
+      [
+        "The deadline having passed, the project was cancelled.",
+        "Nach Ablauf der Frist wurde das Projekt abgebrochen."
+      ]
+    ]
+  },
+  "c2_12": {
+    "text": "Auslassungspunkte und Ersetzung in zusammenhängendem Text",
+    "note": "Ich wollte gehen, tat (wollte) es aber nicht. Sie sagte, sie würde anrufen, und das tat sie auch.",
+    "exp": "Ellipse ist das Weglassen bereits bekannter Elemente.\n<br>Substitution – Verwendung von <em>do/so/one/it</em> statt Wiederholung.\n<br><br>Ellipsentypen:\n<br>• <em>A: Kommst du? B: Könnte (tun).</em>\n<br>• <em>Sie spricht Französisch und er auch.</em>\n<br>• <em>Ich wollte gehen, durfte aber nicht.</em> (<em>gehen</em> weggelassen)\n<br><br>Auswechslung: <em>Ich dachte, er würde passen. Das hat er.</em> / <em>Der Große? Ich bevorzuge den Kleinen</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich wollte gehen, wollte aber nicht</s> → <em>aber nicht</em> (wir lassen „wollen“ weg)",
+      "<s>Sie sagte, sie würde anrufen und sie sagte</s> → <em>und sie tat es</em> (Ersetzung durch do)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Can you drive? — I used to (drive).",
+        "Kannst du fahren? - Früher konnte ich das."
+      ],
+      [
+        "She said she'd be here and she was.",
+        "Sie sagte, sie würde kommen, und sie kam."
+      ]
+    ]
+  },
+  "c2_13": {
+    "text": "Infinitivphrasen statt Nebensätze",
+    "note": "Ich möchte, dass du es erklärst. Sie bat mich um Hilfe. Er scheint nicht glücklich zu sein.",
+    "exp": "Der komplexe Infinitiv (Complex Object) ersetzt den Nebensatz:\n<br><em>Ich möchte + Objekt + To-Infinitiv</em>: <em>Ich möchte, dass sie bleibt.</em>\n<br><br>Nach <em>sehen, hören, beobachten, lassen, machen, haben</em> - Infinitiv ohne <em>zu</em>:\n<br><em>Ich sah sie gehen. / Sie brachte ihn zum Weinen. / Lass mich helfen.</em>\n<br>Im Passiv - mit <em>to</em>: <em>He was made to pay.</em>\n<br><br>Konstruktionen mit <em>scheinen, erscheinen, geschehen, beweisen + to-inf</em>:\n<br><em>Sie scheint es zu wissen. / Er war zufällig da.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich sah, wie sie ging</s> → Ich sah, wie sie <em>ging</em> (nachdem ich gesehen hatte, wie sie ging)",
+      "<s>Sie musste gehen</s> – das stimmt! Im Passiv – mit to",
+      "<s>Ich möchte, dass sie bleibt</s> → Ich möchte, dass <em>sie bleibt</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I need you to sign this document.",
+        "Ich möchte, dass Sie dieses Dokument unterschreiben."
+      ],
+      [
+        "She was made to apologise publicly.",
+        "Sie wurde gezwungen, sich öffentlich zu entschuldigen."
+      ],
+      [
+        "He seemed to have forgotten everything.",
+        "Er schien alles vergessen zu haben."
+      ]
+    ]
+  },
+  "c2_14": {
+    "text": "Future Perfect Continuous: wird + V-ing gewesen sein",
+    "note": "Bis zum nächsten Jahr werde ich fünf Jahre lang Englisch lernen.",
+    "exp": "<strong>Future Perfect Continuous</strong> = <em>wird + V-ing gewesen sein</em>\n<br><br>Betonung der Dauer einer Aktion, die bis zu einem bestimmten Punkt in der Zukunft andauern wird. Beantwortet oft die Frage „Wie lange dauert es bis dahin?“\n<br><br>Oft verwendet mit <em>von (der Zeit), für, wann</em>: <em>Bis Montag wird sie drei Wochen lang an diesem Projekt gearbeitet haben.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Im nächsten Jahr werde ich studieren</s> → Ich werde <em>gelernt</em> haben",
+      "<s>Sie wird gearbeitet haben</s> → Sie wird <em>gearbeitet</em> haben"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "By next year, I will have been learning English for five years.",
+        "Bis zum nächsten Jahr werde ich fünf Jahre lang Englisch lernen."
+      ],
+      [
+        "When we arrive, she will have been waiting for two hours.",
+        "Als wir ankommen, wartet sie schon seit zwei Stunden."
+      ]
+    ]
+  },
+  "c2_15": {
+    "text": "Koordination der Zeitformen – Reihenfolge der Zeitformen",
+    "note": "Sie sagte, sie hätte gearbeitet. Er dachte, es würde schwierig werden.",
+    "exp": "In komplexen Sätzen stimmt das Verb des Nebensatzes zeitlich mit dem Hauptsatz überein.\n<br><br>Wenn das Hauptverb in der Vergangenheit steht:\n<br>• Present Simple → Past Simple: <em>er sagte, es sei wahr</em>\n<br>• Past Simple → Past Perfect: <em>Sie sagte, sie hätte es gesehen</em>\n<br>• Present Perfect → Past Perfect: <em>er sagte, er sei fertig</em>\n<br>• wird → würde; kann → könnte; kann → könnte; ist → war\n<br><br>⚠️ Ausnahme: Allgemeine Wahrheiten und wissenschaftliche Fakten ändern sich nicht: <em>Sie sagte, dass Wasser bei 100°C kocht.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie sagte, dass Wasser kocht</s> (Tatsache) → Wasser <em>kocht</em>",
+      "<s>Er sagte, er hätte es gesehen</s> → Er sagte, er <em>hatte</em> es gesehen"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He told me that he had been living there for years.",
+        "Er erzählte mir, dass er viele Jahre dort gelebt hatte."
+      ],
+      [
+        "She said the Earth moves around the Sun. (общая истина — не меняем)",
+        "Sie sagte, dass sich die Erde um die Sonne bewegt."
+      ]
+    ]
+  },
+  "c2_16": {
+    "text": "Koordinierende Konjunktionen: und, aber, oder, noch, für, doch, so",
+    "note": "FANBOYS: Für, und, noch, aber, oder, doch, so",
+    "exp": "Koordinierende Konjunktionen verbinden äquivalente Satzteile.\n<br><br>Seven Basic (Akronym FANBOYS):\n<br>• <em>for</em> = weil (formell): <em>Sie ging, weil sie müde war.</em>\n<br>• <em>und</em> = und (Hinzufügen)\n<br>• <em>nor</em> = und nicht (Weder/Nor... Umkehrung!): <em>Sie hat weder angerufen noch geschrieben.</em>\n<br>• <em>aber</em> = aber (Kontrast)\n<br>• <em>oder</em> = oder (Alternative)\n<br>• <em>yet</em> = jedoch (im Gegensatz dazu formeller aber)\n<br>• <em>so</em> = daher (Konsequenz)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie war müde und arbeitete trotzdem weiter</s> – korrekt ohne „sie“ im zweiten Teil",
+      "<s>Sie hat weder angerufen noch geschrieben</s> → noch <em>hat sie</em> geschrieben (Umkehrung!)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She was tired, yet she kept working.",
+        "Sie war müde, arbeitete aber weiter."
+      ],
+      [
+        "He didn't study, nor did he attend class.",
+        "Er lernte nicht und ging auch nicht zum Unterricht."
+      ]
+    ]
+  },
+  "c2_17": {
+    "text": "Untergeordnete Konjunktionen: obwohl, während, vorausgesetzt, es sei denn...",
+    "note": "obwohl, als ob, während, vorausgesetzt, dass, es sei denn, angesichts dessen, für den Fall",
+    "exp": "Unterordnende Konjunktionen leiten Nebensätze ein.\n<br><br>Nach Wert:\n<br>• <strong>Zeit</strong>: <em>wann, während, als, nach, vorher, bis, einmal, sobald, wann immer</em>\n<br>• <strong>Gründe</strong>: <em>weil, seit, als, angesichts dessen, das zu sehen</em>\n<br>• <strong>Bedingungen</strong>: <em>wenn, sofern nicht vorgesehen, solange, im Fall der Annahme</em>\n<br>• <strong>Ziele</strong>: <em>damit, damit, am besten</em>\n<br>• <strong>Zugeständnisse</strong>: <em>obwohl, obwohl, während, während, jedoch</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Obwohl es regnete, gingen wir</s> → Obwohl <em>es regnete</em>",
+      "<s>Sehen, dass die Frist abgelaufen ist</s> → war abgelaufen (Perfekt vor einer anderen Vergangenheit)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Seeing that the deadline had passed, we cancelled the meeting.",
+        "Da die Frist abgelaufen war, haben wir das Treffen abgesagt."
+      ],
+      [
+        "Lest she forget, he sent her a reminder.",
+        "Damit sie es nicht vergisst, schickte er ihr eine Erinnerung."
+      ]
+    ]
+  },
+  "c2_18": {
+    "text": "Komma, Semikolon und Doppelpunkt",
+    "note": "Verwenden Sie vor FANBOYS ein Komma. Verwenden Sie ein Semikolon, um verwandte Klauseln zu verknüpfen.",
+    "exp": "<strong>Komma</strong>:\n<br>• Bevor Sie Konjunktionen FANBOYS zwischen unabhängigen Sätzen koordinieren.\n<br>• Nach einleitenden Worten/Wendungen: <em>Sie entschied sich jedoch zu bleiben.</em>\n<br>• In den Aufzählungen (Oxford-Komma – vor dem letzten und): <em>Äpfel, Orangen und Bananen</em>.\n<br><br><strong>Semikolon (;)</strong>: verbindet zwei unabhängige Sätze ohne Konjunktion.\n<br><em>Sie war müde; sie ging zu Bett</em>\n<br><br><strong>Doppelpunkt (:)</strong>: leitet eine Liste, Erklärung, ein Zitat ein.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sie entschied sich jedoch zu bleiben</s> → Allerdings<em>,</em> sie entschied sich",
+      "<s>Sie war müde; und sie ging zu Bett</s> → ohne Konjunktion nach dem Semikolon: <em>Sie war müde; sie ging zu Bett</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "However, the results were inconclusive; further research is required.",
+        "Allerdings sind die Ergebnisse gemischt; Weitere Forschung ist erforderlich."
+      ],
+      [
+        "The company has three priorities: efficiency, innovation, and sustainability.",
+        "Das Unternehmen hat drei Prioritäten: Effizienz, Innovation und Nachhaltigkeit."
+      ]
+    ]
+  },
+  "c2_19": {
+    "text": "Bindestrich, Apostroph und Anführungszeichen",
+    "note": "Geviertstrich – zur Hervorhebung – löst eine Phrase aus. Es ist vs. es. „Direkte Rede“",
+    "exp": "<strong>Strich (-)</strong>: hebt eine Plug-in-Konstruktion hervor (stärker als ein Komma): <em>Die Lösung – obwohl teuer – hat sich als effektiv erwiesen.</em>\n<br><br><strong>Apostroph</strong>:\n<br>• Abkürzungen: <em>it's = es ist; nicht; sie sind</em>\n<br>• Possessivfall: <em>Johns Buch; die Ergebnisse der Schüler</em>\n<br>• ⚠️ <em>its</em> (zugehörig) vs. <em>it's</em> (es ist)\n<br><br><strong>Zitate</strong>: AmE – doppelt („<em>text</em>“), BrE – einfach („<em>text</em>“).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Es ist ein großes Haus</s> → <em>Es ist</em> ein großes Haus",
+      "<s>Der Schwanz der Katze</s> → Der Schwanz der Katze",
+      "<s>Her's book</s> → <em>Her</em> book (Possessivpronomen haben kein Apostroph)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project — launched in 2020 — exceeded all expectations.",
+        "Das im Jahr 2020 gestartete Projekt übertraf alle Erwartungen."
+      ],
+      [
+        "It's important to check its settings before use.",
+        "Es ist wichtig, die Einstellungen zu überprüfen, bevor Sie es verwenden."
+      ]
+    ]
+  },
+  "c2_20": {
+    "text": "Spezielle und indirekte Fragen in wissenschaftlichen Texten",
+    "note": "Die Frage ist, ob... / Ich frage mich, was die Daten zeigen.",
+    "exp": "In wissenschaftlichen Texten werden direkte Fragen durch indirekte Fragen (Fragesätze) ersetzt.\n<br><br>Eine indirekte Frage ist ein Nebensatz mit der üblichen Wortstellung (ohne Umkehrung, ohne do).\n<br><br>Einleitende Worte: <em>ob, wenn (ja/nein), was, wo, wann, wie, warum, was</em>.\n<br><br>Beispiel: <em>Was zeigen diese Daten?</em> → <em>Die Frage ist, was diese Daten zeigen.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ich frage mich, was die Daten zeigen</s> → was die Daten <em>zeigen</em> (keine Umkehrung in einer indirekten Frage)",
+      "<s>Die Frage ist, ob er es weiß</s> → ob er <em>weiß</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wonder whether the hypothesis is correct.",
+        "Ich frage mich, ob die Hypothese wahr ist."
+      ],
+      [
+        "The study examines how social media affects behaviour.",
+        "Die Studie untersucht, wie soziale Medien das Verhalten beeinflussen."
+      ]
+    ]
+  }
+}

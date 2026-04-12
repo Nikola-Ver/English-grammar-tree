@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { SyncStatus } from '../../context/AuthSyncContext';
 import { useAuthSync } from '../../context/AuthSyncContext';
 import './AccountPage.css';
@@ -7,19 +8,13 @@ interface Props {
   onBack: () => void;
 }
 
-function SyncDot({ status }: { status: SyncStatus }) {
-  const labels: Record<SyncStatus, string> = {
-    idle: 'Не активно',
-    syncing: 'Синхронизация…',
-    synced: 'Синхронизировано',
-    offline: 'Офлайн',
-    error: 'Ошибка синхронизации',
-  };
-  return <span className={`account-sync-dot account-sync-dot--${status}`} title={labels[status]} />;
+function SyncDot({ status, title }: { status: SyncStatus; title: string }) {
+  return <span className={`account-sync-dot account-sync-dot--${status}`} title={title} />;
 }
 
-function formatDate(d: Date): string {
-  return d.toLocaleString(undefined, {
+function formatDate(d: Date, locale: string): string {
+  const tag = locale === 'zh' ? 'zh-CN' : locale === 'ru' ? 'ru-RU' : locale;
+  return d.toLocaleString(tag, {
     dateStyle: 'medium',
     timeStyle: 'short',
   });
@@ -32,11 +27,20 @@ function getInitials(name: string | null, email: string | null): string {
 }
 
 export function AccountPage({ onBack }: Props) {
+  const { t, i18n } = useTranslation();
   const { user, syncStatus, lastSyncAt, signOut, deleteAccount, syncNow } = useAuthSync();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [syncing, setSyncing] = useState(false);
   const [deleteError, setDeleteError] = useState('');
+
+  const syncDotLabel: Record<SyncStatus, string> = {
+    idle: t('account.syncIdle'),
+    syncing: t('account.syncSyncing'),
+    synced: t('account.syncSynced'),
+    offline: t('account.syncOffline'),
+    error: t('account.syncError'),
+  };
 
   if (!user) return null;
 
@@ -44,6 +48,7 @@ export function AccountPage({ onBack }: Props) {
   const email = user.email ?? null;
   const photoURL = user.photoURL ?? null;
   const initials = getInitials(displayName, email);
+  const locale = i18n.language.split('-')[0];
 
   async function handleSyncNow() {
     setSyncing(true);
@@ -63,9 +68,9 @@ export function AccountPage({ onBack }: Props) {
     } catch (e) {
       const code = (e as { code?: string }).code ?? '';
       if (code === 'auth/requires-recent-login') {
-        setDeleteError('Выйдите из аккаунта и войдите снова, затем повторите попытку.');
+        setDeleteError(t('account.deleteErrorRecentLogin'));
       } else {
-        setDeleteError('Не удалось удалить аккаунт. Попробуйте ещё раз.');
+        setDeleteError(t('account.deleteErrorGeneric'));
       }
       setDeleting(false);
       setConfirmDelete(false);
@@ -73,20 +78,23 @@ export function AccountPage({ onBack }: Props) {
   }
 
   const statusText: Record<SyncStatus, string> = {
-    idle: 'Не активно',
-    syncing: 'Синхронизация…',
-    synced: 'Синхронизировано',
-    offline: 'Офлайн — данные синхронизируются при подключении',
-    error: 'Ошибка синхронизации — повтор в очереди',
+    idle: t('account.syncIdle'),
+    syncing: t('account.syncSyncing'),
+    synced: t('account.syncSynced'),
+    offline: t('account.syncOfflineDetail'),
+    error: t('account.syncErrorDetail'),
   };
 
   return (
     <div className="account-page">
       <div className="account-card">
-        {/* Avatar + identity */}
         <div className="account-identity">
           {photoURL ? (
-            <img className="account-avatar" src={photoURL} alt={displayName ?? 'Аватар'} />
+            <img
+              className="account-avatar"
+              src={photoURL}
+              alt={displayName ?? t('header.avatar')}
+            />
           ) : (
             <div className="account-avatar account-avatar--initials">{initials}</div>
           )}
@@ -96,29 +104,29 @@ export function AccountPage({ onBack }: Props) {
           </div>
         </div>
 
-        {/* Sync status */}
         <div className="account-sync-row">
           <div className="account-sync-label">
-            <SyncDot status={syncStatus} />
+            <SyncDot status={syncStatus} title={syncDotLabel[syncStatus]} />
             <span>{statusText[syncStatus]}</span>
           </div>
           {lastSyncAt && (
-            <p className="account-last-sync">Последняя синхронизация: {formatDate(lastSyncAt)}</p>
+            <p className="account-last-sync">
+              {t('account.lastSync')} {formatDate(lastSyncAt, locale)}
+            </p>
           )}
         </div>
 
-        {/* Actions */}
         <button
           type="button"
           className="account-btn account-btn--secondary"
           onClick={handleSyncNow}
           disabled={syncing || syncStatus === 'syncing'}
         >
-          {syncing || syncStatus === 'syncing' ? 'Синхронизация…' : 'Синхронизировать'}
+          {syncing || syncStatus === 'syncing' ? t('account.syncSyncing') : t('account.syncNow')}
         </button>
 
         <button type="button" className="account-btn account-btn--secondary" onClick={signOut}>
-          Выйти
+          {t('account.signOut')}
         </button>
 
         <div className="account-divider" />
@@ -129,14 +137,11 @@ export function AccountPage({ onBack }: Props) {
             className="account-btn account-btn--danger"
             onClick={() => setConfirmDelete(true)}
           >
-            Удалить аккаунт
+            {t('account.deleteAccount')}
           </button>
         ) : (
           <div className="account-delete-confirm">
-            <p className="account-delete-warning">
-              Аккаунт и все синхронизированные данные будут удалены безвозвратно. Локальный прогресс
-              тоже будет очищен. Это действие нельзя отменить.
-            </p>
+            <p className="account-delete-warning">{t('account.deleteWarning')}</p>
             {deleteError && <p className="account-delete-error">{deleteError}</p>}
             <div className="account-delete-actions">
               <button
@@ -145,7 +150,7 @@ export function AccountPage({ onBack }: Props) {
                 onClick={() => setConfirmDelete(false)}
                 disabled={deleting}
               >
-                Отмена
+                {t('account.cancel')}
               </button>
               <button
                 type="button"
@@ -153,14 +158,14 @@ export function AccountPage({ onBack }: Props) {
                 onClick={handleDeleteAccount}
                 disabled={deleting}
               >
-                {deleting ? 'Удаление…' : 'Да, удалить всё'}
+                {deleting ? t('account.deleting') : t('account.deleteConfirm')}
               </button>
             </div>
           </div>
         )}
 
         <button type="button" className="account-back-btn" onClick={onBack}>
-          ← Назад
+          {t('account.back')}
         </button>
       </div>
     </div>

@@ -1,0 +1,285 @@
+{
+  "header": {
+    "titlePrefix": "English ",
+    "titleAccent": "Grammar",
+    "titleSuffix": " Tree",
+    "themeLight": "Thème clair",
+    "themeDark": "Thème sombre",
+    "account": "Compte",
+    "signIn": "Se connecter",
+    "avatar": "Avatar",
+    "language": "Langue"
+  },
+  "tabs": {
+    "grammar": "📚 Grammaire",
+    "murphy": "📖 Livres Murphy",
+    "tenses": "🕐 Arbre des temps"
+  },
+  "auth": {
+    "title": "Connectez-vous pour synchroniser",
+    "tagline": "Conservez votre progression sur tous vos appareils",
+    "google": "Se connecter avec Google",
+    "wait": "Veuillez patienter…",
+    "continueWithout": "Continuer sans compte",
+    "errorGeneric": "Une erreur s'est produite. Réessayez."
+  },
+  "account": {
+    "syncIdle": "Inactif",
+    "syncSyncing": "Synchronisation…",
+    "syncSynced": "Synchronisé",
+    "syncOffline": "Hors ligne",
+    "syncError": "Erreur de synchro",
+    "syncOfflineDetail": "Hors ligne — les données se synchroniseront à la reconnexion",
+    "syncErrorDetail": "Erreur de synchro — nouvel essai en file d'attente",
+    "lastSync": "Dernière synchro :",
+    "syncNow": "Synchroniser",
+    "signOut": "Se déconnecter",
+    "deleteAccount": "Supprimer le compte",
+    "deleteWarning": "Votre compte et toutes les données synchronisées seront supprimés définitivement. La progression locale sera aussi effacée. Action irréversible.",
+    "cancel": "Annuler",
+    "deleteConfirm": "Oui, tout supprimer",
+    "deleting": "Suppression…",
+    "back": "← Retour",
+    "deleteErrorRecentLogin": "Déconnectez-vous, reconnectez-vous, puis réessayez.",
+    "deleteErrorGeneric": "Impossible de supprimer le compte. Réessayez."
+  },
+  "grammar": {
+    "rulesUnit": "règles",
+    "progressDone": "{{pct}} % terminé",
+    "resetProgress": "Réinitialiser la progression",
+    "resetConfirmHint": "Cliquez encore pour confirmer",
+    "search": "Rechercher",
+    "closeSearch": "Fermer la recherche",
+    "testLearned": "Quiz sur le contenu appris",
+    "resetBanner": "Cliquez encore sur réinitialiser pour confirmer",
+    "searchPlaceholder": "Rechercher un thème ou une règle…",
+    "clearSearch": "Effacer la recherche",
+    "noResults": "Aucun résultat",
+    "alertNoRules": "Cochez d'abord au moins une règle comme apprise !"
+  },
+  "murphy": {
+    "unitsUnit": "unités",
+    "progressDone": "{{pct}} % terminé",
+    "resetProgress": "Réinitialiser la progression",
+    "resetConfirmHint": "Cliquez encore pour confirmer",
+    "search": "Rechercher",
+    "closeSearch": "Fermer la recherche",
+    "testLearned": "Quiz sur le contenu appris",
+    "resetBanner": "Cliquez encore sur réinitialiser pour confirmer",
+    "searchPlaceholder": "Rechercher une unité ou un thème…",
+    "clearSearch": "Effacer la recherche",
+    "noResults": "Aucun résultat",
+    "alertNoUnits": "Cochez d'abord au moins une unité comme apprise !"
+  },
+  "tensesTab": {
+    "introLead": "Arbre interactif pour choisir le temps.",
+    "introRest": "Répondez aux questions pour obtenir le bon temps avec la formule, des exemples et des erreurs fréquentes.",
+    "orPick": "— ou choisissez un temps directement —"
+  },
+  "timeline": {
+    "title": "📊 Frise — quand l'action se produit",
+    "scrollHint": "Faites défiler la frise sur les côtés",
+    "past": "← PASSÉ",
+    "future": "FUTUR →",
+    "now": "▼ Maintenant",
+    "row": {
+      "present_simple": "Action répétée ou continue — toujours",
+      "present_continuous": "Action en cours maintenant",
+      "present_perfect": "Passé avec lien au présent",
+      "present_perfect_continuous": "Commencé dans le passé et se poursuit",
+      "past_simple": "Action terminée à un moment précis",
+      "past_continuous": "Action de fond prolongée dans le passé",
+      "past_perfect": "Terminée AVANT un autre événement passé",
+      "past_perfect_continuous": "Durait jusqu'à un moment du passé",
+      "future_will": "Décision ou prédiction",
+      "future_going_to": "Intention planifiée",
+      "future_continuous": "En cours à un moment futur",
+      "future_perfect": "Sera terminée AVANT un moment futur"
+    }
+  },
+  "tenseTree": {
+    "start": {
+      "q": "Quand l'action se produit-elle ?",
+      "c0": "Présent / général",
+      "c1": "Passé",
+      "c2": "Futur"
+    },
+    "present": {
+      "q": "Que voulez-vous exprimer ?",
+      "c0": "Habitude, fait, horaire",
+      "c1": "En ce moment ou temporaire",
+      "c2": "Lien au présent : expérience / résultat"
+    },
+    "present_now": {
+      "q": "État permanent ou processus en cours ?",
+      "c0": "Permanent (savoir, aimer, vouloir…)",
+      "c1": "En cours maintenant / temporaire"
+    },
+    "present_perfect_branch": {
+      "q": "Insister sur la durée ou sur le fait ?",
+      "c0": "Le fait / résultat / expérience",
+      "c1": "La durée (« combien de temps »)"
+    },
+    "past": {
+      "q": "Que dire du passé ?",
+      "c0": "Action terminée (temps précis)",
+      "c1": "Action en cours / arrière-plan",
+      "c2": "Avant un autre événement passé"
+    },
+    "past_perfect_branch": {
+      "q": "Faut-il insister sur la durée ?",
+      "c0": "Non — seulement l'achèvement",
+      "c1": "Oui — combien de temps ça durait"
+    },
+    "future": {
+      "q": "Comment exprimez-vous le futur ?",
+      "c0": "Décision spontanée / promesse / prédiction",
+      "c1": "Prévu / indices clairs",
+      "c2": "En cours à un moment futur",
+      "c3": "Terminé avant un moment futur"
+    }
+  },
+  "tenseUi": {
+    "timeMarkers": "⏱ Marqueurs de temps",
+    "examples": "Exemples",
+    "mistakes": "🚫 Erreurs fréquentes",
+    "restart": "↺ Recommencer",
+    "shareLink": "Partager le lien"
+  },
+  "rule": {
+    "exceptions": "⚠️ Exceptions :",
+    "tip": "💡 Conseil :",
+    "mistakes": "🚫 Erreurs fréquentes :",
+    "test": "✦ Quiz",
+    "copyLinkTitle": "Copier le lien vers cette règle"
+  },
+  "selection": {
+    "share": "Partager",
+    "pin": "Épingler",
+    "note": "Note",
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "commentPlaceholder": "Ajouter un commentaire…",
+    "copyLink": "⛓ Copier le lien",
+    "linkCopied": "✓ Lien copié",
+    "notePlaceholder": "Votre note…",
+    "save": "Enregistrer",
+    "deleteNote": "Supprimer la note",
+    "emptyNote": "Note vide",
+    "messageTitle": "💬 Message"
+  },
+  "copied": "✓ Copié !",
+  "tenses": {
+    "present_simple": {
+      "desc": "Actions régulières, habitudes, faits et horaires.",
+      "ex0": "She drinks coffee every morning.",
+      "ex0tr": "Elle boit du café tous les matins.",
+      "ex1": "The sun rises in the east.",
+      "ex1tr": "Le soleil se lève à l'est.",
+      "m0": "<s>She work</s> → She <em>works</em>",
+      "m1": "<s>Do she likes?</s> → Does she like?",
+      "m2": "<s>I not like</s> → I <em>don't</em> like"
+    },
+    "present_continuous": {
+      "desc": "Action en cours maintenant ou situation temporaire. Aussi des projets précis proches.",
+      "ex0": "I'm studying English right now.",
+      "ex0tr": "J'étudie l'anglais en ce moment.",
+      "ex1": "She's meeting Tom tomorrow.",
+      "ex1tr": "Elle voit Tom demain.",
+      "m0": "<s>I am knowing</s> → les verbes d'état ne se mettent guère au continu",
+      "m1": "<s>She is working usually</s> → She <em>usually works</em> (habitude = présent simple)"
+    },
+    "past_simple": {
+      "desc": "Action terminée dans le passé avec un moment précis ou sous-entendu.",
+      "ex0": "I saw her yesterday.",
+      "ex0tr": "Je l'ai vue hier.",
+      "ex1": "She went to Paris in 2022.",
+      "ex1tr": "Elle est allée à Paris en 2022.",
+      "m0": "<s>I goed</s> → I <em>went</em>",
+      "m1": "<s>I didn't went</s> → I didn't <em>go</em>",
+      "m2": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday"
+    },
+    "past_continuous": {
+      "desc": "Action en cours à un moment du passé ; fond interrompu par une autre.",
+      "ex0": "I was reading when she called.",
+      "ex0tr": "Je lisais quand elle a appelé.",
+      "ex1": "While he was cooking, she was working.",
+      "ex1tr": "Pendant qu'il cuisinait, elle travaillait.",
+      "m0": "<s>She were working</s> → She <em>was</em> working",
+      "m1": "<s>I was work</s> → I was <em>working</em>"
+    },
+    "present_perfect": {
+      "desc": "Passé avec effet au présent. Expérience de vie. Période non close avec for/since.",
+      "ex0": "I've lost my keys.",
+      "ex0tr": "J'ai perdu mes clés (toujours pas retrouvées).",
+      "ex1": "Have you ever been to Japan?",
+      "ex1tr": "Es-tu déjà allé au Japon ?",
+      "m0": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday",
+      "m1": "<s>She has went</s> → She has <em>gone</em>",
+      "m2": "<s>I've lived here since five years</s> → <em>for</em> five years"
+    },
+    "present_perfect_continuous": {
+      "desc": "Insistance sur la durée ou le processus inachevé depuis le passé.",
+      "ex0": "I've been learning English for two years.",
+      "ex0tr": "J'apprends l'anglais depuis deux ans.",
+      "ex1": "Why are you tired? — I've been running.",
+      "ex1tr": "Pourquoi es-tu fatigué ? — J'ai couru.",
+      "m0": "<s>I've been know</s> → pas de continu pour les verbes d'état",
+      "m1": "<s>I've been learning since two years</s> → <em>for</em> two years"
+    },
+    "past_perfect": {
+      "desc": "Action terminée avant un autre moment du passé.",
+      "ex0": "When I arrived, she had already left.",
+      "ex0tr": "Quand je suis arrivé, elle était déjà partie.",
+      "ex1": "He had never seen snow before that winter.",
+      "ex1tr": "Avant cet hiver il n'avait jamais vu la neige.",
+      "m0": "<s>When I arrived, she already left</s> → she <em>had</em> already left",
+      "m1": "<s>He had never see</s> → He had never <em>seen</em>"
+    },
+    "past_perfect_continuous": {
+      "desc": "Combien de temps ça durait avant un moment passé ; cause ou résultat visible.",
+      "ex0": "She was exhausted — she'd been working all night.",
+      "ex0tr": "Elle était épuisée — elle avait travaillé toute la nuit.",
+      "ex1": "How long had you been waiting?",
+      "ex1tr": "Depuis combien de temps attendiez-vous ?",
+      "m0": "<s>She had been work</s> → She had been <em>working</em>",
+      "m1": "<s>How long had you waiting?</s> → had you <em>been waiting</em>"
+    },
+    "future_will": {
+      "desc": "Prédictions, décisions spontanées, promesses, faits sur le futur.",
+      "ex0": "I'll help you!",
+      "ex0tr": "Je t'aide ! (spontané)",
+      "ex1": "She will probably be late.",
+      "ex1tr": "Elle sera probablement en retard.",
+      "m0": "<s>I will to go</s> → I will <em>go</em>",
+      "m1": "<s>She wills come</s> → She will come"
+    },
+    "future_going_to": {
+      "desc": "Intentions planifiées ou prédictions avec indices clairs.",
+      "ex0": "I'm going to study medicine.",
+      "ex0tr": "Je vais étudier la médecine.",
+      "ex1": "Look at those clouds — it's going to rain!",
+      "ex1tr": "Regarde ces nuages — il va pleuvoir !",
+      "m0": "<s>She is going to does</s> → She is going to <em>do</em>",
+      "m1": "<s>I am going to will do</s> → ne pas doubler les futurs"
+    },
+    "future_continuous": {
+      "desc": "Action qui sera en cours à un moment futur précis.",
+      "ex0": "This time tomorrow I'll be lying on the beach.",
+      "ex0tr": "À cette heure demain je serai sur la plage.",
+      "ex1": "Don't call at 8 — I'll be having dinner.",
+      "ex1tr": "N'appelle pas à 8h — je serai en train de dîner.",
+      "m0": "<s>I'll be work at 9</s> → I'll be <em>working</em>",
+      "m1": "<s>She will working</s> → She <em>will be working</em>"
+    },
+    "future_perfect": {
+      "desc": "Action qui sera terminée avant un moment futur.",
+      "ex0": "I'll have finished by Sunday.",
+      "ex0tr": "J'aurai fini d'ici dimanche.",
+      "ex1": "By 2030 they will have built the bridge.",
+      "ex1tr": "D'ici 2030 ils auront construit le pont.",
+      "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
+      "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "header": {
+    "titlePrefix": "English ",
+    "titleAccent": "Grammar",
+    "titleSuffix": " Tree",
+    "themeLight": "Light theme",
+    "themeDark": "Dark theme",
+    "account": "Account",
+    "signIn": "Sign in",
+    "avatar": "Avatar",
+    "language": "Language"
+  },
+  "tabs": {
+    "grammar": "📚 Grammar",
+    "murphy": "📖 Murphy books",
+    "tenses": "🕐 Tense tree"
+  },
+  "auth": {
+    "title": "Sign in to sync",
+    "tagline": "Keep your progress on every device",
+    "google": "Sign in with Google",
+    "wait": "Please wait…",
+    "continueWithout": "Continue without an account",
+    "errorGeneric": "Something went wrong. Please try again."
+  },
+  "account": {
+    "syncIdle": "Idle",
+    "syncSyncing": "Syncing…",
+    "syncSynced": "Synced",
+    "syncOffline": "Offline",
+    "syncError": "Sync error",
+    "syncOfflineDetail": "Offline — data will sync when you are back online",
+    "syncErrorDetail": "Sync error — retry queued",
+    "lastSync": "Last synced:",
+    "syncNow": "Sync now",
+    "signOut": "Sign out",
+    "deleteAccount": "Delete account",
+    "deleteWarning": "Your account and all synced data will be permanently removed. Local progress will also be cleared. This cannot be undone.",
+    "cancel": "Cancel",
+    "deleteConfirm": "Yes, delete everything",
+    "deleting": "Deleting…",
+    "back": "← Back",
+    "deleteErrorRecentLogin": "Sign out, sign in again, then try once more.",
+    "deleteErrorGeneric": "Could not delete the account. Please try again."
+  },
+  "grammar": {
+    "rulesUnit": "rules",
+    "progressDone": "{{pct}}% complete",
+    "resetProgress": "Reset progress",
+    "resetConfirmHint": "Click again to confirm",
+    "search": "Search",
+    "closeSearch": "Close search",
+    "testLearned": "Quiz on learned items",
+    "resetBanner": "Click the reset button again to confirm",
+    "searchPlaceholder": "Search topics or rules…",
+    "clearSearch": "Clear search",
+    "noResults": "No results for your search",
+    "alertNoRules": "Mark at least one rule as learned first!"
+  },
+  "murphy": {
+    "unitsUnit": "units",
+    "progressDone": "{{pct}}% complete",
+    "resetProgress": "Reset progress",
+    "resetConfirmHint": "Click again to confirm",
+    "search": "Search",
+    "closeSearch": "Close search",
+    "testLearned": "Quiz on learned items",
+    "resetBanner": "Click the reset button again to confirm",
+    "searchPlaceholder": "Search units or topics…",
+    "clearSearch": "Clear search",
+    "noResults": "No results for your search",
+    "alertNoUnits": "Mark at least one unit as learned first!"
+  },
+  "tensesTab": {
+    "introLead": "Interactive tense chooser.",
+    "introRest": "Answer the questions to get the right tense with a formula, examples, and common mistakes.",
+    "orPick": "— or pick a tense directly —"
+  },
+  "timeline": {
+    "title": "📊 Timeline — when the action happens",
+    "scrollHint": "Scroll the timeline sideways",
+    "past": "← PAST",
+    "future": "FUTURE →",
+    "now": "▼ Now",
+    "row": {
+      "present_simple": "Habitual or ongoing action — always",
+      "present_continuous": "Action in progress right now",
+      "present_perfect": "Past action with a present result",
+      "present_perfect_continuous": "Started in the past and still continues",
+      "past_simple": "Finished action at a specific past time",
+      "past_continuous": "Longer background action in the past",
+      "past_perfect": "Finished BEFORE another past event",
+      "past_perfect_continuous": "Had been going on up to a past moment",
+      "future_will": "Decision or prediction about the future",
+      "future_going_to": "Planned intention",
+      "future_continuous": "Action in progress at a future moment",
+      "future_perfect": "Will be finished BEFORE a future point"
+    }
+  },
+  "tenseTree": {
+    "start": {
+      "q": "When does the action happen?",
+      "c0": "Present / general",
+      "c1": "Past",
+      "c2": "Future"
+    },
+    "present": {
+      "q": "What do you want to express?",
+      "c0": "Habit, fact, schedule",
+      "c1": "Right now or temporary",
+      "c2": "Link to the present: experience / result"
+    },
+    "present_now": {
+      "q": "Is it a permanent state or a process right now?",
+      "c0": "Permanent (know, love, want…)",
+      "c1": "In progress now / temporary"
+    },
+    "present_perfect_branch": {
+      "q": "Do you stress duration or the fact itself?",
+      "c0": "The fact / result / experience",
+      "c1": "Duration (“how long”)"
+    },
+    "past": {
+      "q": "What about the past?",
+      "c0": "Finished action (specific time)",
+      "c1": "Action in progress / background",
+      "c2": "Before another past event"
+    },
+    "past_perfect_branch": {
+      "q": "Do you need to stress duration?",
+      "c0": "No — just completion",
+      "c1": "Yes — how long it had been going"
+    },
+    "future": {
+      "q": "How are you expressing the future?",
+      "c0": "Spontaneous decision / promise / prediction",
+      "c1": "Planned ahead / clear signs",
+      "c2": "In progress at a future moment",
+      "c3": "Finished before a future moment"
+    }
+  },
+  "tenseUi": {
+    "timeMarkers": "⏱ Time markers",
+    "examples": "Examples",
+    "mistakes": "🚫 Common mistakes",
+    "restart": "↺ Start over",
+    "shareLink": "Share link"
+  },
+  "rule": {
+    "exceptions": "⚠️ Exceptions:",
+    "tip": "💡 Tip:",
+    "mistakes": "🚫 Common mistakes:",
+    "test": "✦ Quiz",
+    "copyLinkTitle": "Copy link to this rule"
+  },
+  "selection": {
+    "share": "Share",
+    "pin": "Pin",
+    "note": "Note",
+    "close": "Close",
+    "cancel": "Cancel",
+    "commentPlaceholder": "Add a comment…",
+    "copyLink": "⛓ Copy link",
+    "linkCopied": "✓ Link copied",
+    "notePlaceholder": "Your note…",
+    "save": "Save",
+    "deleteNote": "Delete note",
+    "emptyNote": "Note has no text",
+    "messageTitle": "💬 Message"
+  },
+  "copied": "✓ Copied!",
+  "tenses": {
+    "present_simple": {
+      "desc": "Regular actions, habits, facts, and schedules.",
+      "ex0": "She drinks coffee every morning.",
+      "ex0tr": "She drinks coffee every morning.",
+      "ex1": "The sun rises in the east.",
+      "ex1tr": "The sun rises in the east.",
+      "m0": "<s>She work</s> → She <em>works</em>",
+      "m1": "<s>Do she likes?</s> → Does she like?",
+      "m2": "<s>I not like</s> → I <em>don't</em> like"
+    },
+    "present_continuous": {
+      "desc": "Action happening right now or a temporary situation. Also specific plans for the near future.",
+      "ex0": "I'm studying English right now.",
+      "ex0tr": "I'm studying English right now.",
+      "ex1": "She's meeting Tom tomorrow.",
+      "ex1tr": "She's meeting Tom tomorrow.",
+      "m0": "<s>I am knowing</s> → stative verbs are not used in Continuous",
+      "m1": "<s>She is working usually</s> → She <em>usually works</em> (habit = Present Simple)"
+    },
+    "past_simple": {
+      "desc": "A finished action in the past, with a specific time or an implied moment.",
+      "ex0": "I saw her yesterday.",
+      "ex0tr": "I saw her yesterday.",
+      "ex1": "She went to Paris in 2022.",
+      "ex1tr": "She went to Paris in 2022.",
+      "m0": "<s>I goed</s> → I <em>went</em>",
+      "m1": "<s>I didn't went</s> → I didn't <em>go</em>",
+      "m2": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday"
+    },
+    "past_continuous": {
+      "desc": "An action in progress at a past moment. Background action interrupted by another.",
+      "ex0": "I was reading when she called.",
+      "ex0tr": "I was reading when she called.",
+      "ex1": "While he was cooking, she was working.",
+      "ex1tr": "While he was cooking, she was working.",
+      "m0": "<s>She were working</s> → She <em>was</em> working",
+      "m1": "<s>I was work</s> → I was <em>working</em>"
+    },
+    "present_perfect": {
+      "desc": "A past action with a present result. Life experience. Unfinished period with for/since.",
+      "ex0": "I've lost my keys.",
+      "ex0tr": "I've lost my keys (still lost).",
+      "ex1": "Have you ever been to Japan?",
+      "ex1tr": "Have you ever been to Japan?",
+      "m0": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday",
+      "m1": "<s>She has went</s> → She has <em>gone</em>",
+      "m2": "<s>I've lived here since five years</s> → <em>for</em> five years"
+    },
+    "present_perfect_continuous": {
+      "desc": "Focus on duration or an unfinished process that started in the past.",
+      "ex0": "I've been learning English for two years.",
+      "ex0tr": "I've been learning English for two years.",
+      "ex1": "Why are you tired? — I've been running.",
+      "ex1tr": "Why are you tired? — I've been running.",
+      "m0": "<s>I've been know</s> → stative verbs are not used in Continuous",
+      "m1": "<s>I've been learning since two years</s> → <em>for</em> two years"
+    },
+    "past_perfect": {
+      "desc": "An action that finished before another moment in the past.",
+      "ex0": "When I arrived, she had already left.",
+      "ex0tr": "When I arrived, she had already left.",
+      "ex1": "He had never seen snow before that winter.",
+      "ex1tr": "He had never seen snow before that winter.",
+      "m0": "<s>When I arrived, she already left</s> → she <em>had</em> already left",
+      "m1": "<s>He had never see</s> → He had never <em>seen</em>"
+    },
+    "past_perfect_continuous": {
+      "desc": "How long something had been going on before a past moment. Explains cause or visible result.",
+      "ex0": "She was exhausted — she'd been working all night.",
+      "ex0tr": "She was exhausted — she'd been working all night.",
+      "ex1": "How long had you been waiting?",
+      "ex1tr": "How long had you been waiting?",
+      "m0": "<s>She had been work</s> → She had been <em>working</em>",
+      "m1": "<s>How long had you waiting?</s> → had you <em>been waiting</em>"
+    },
+    "future_will": {
+      "desc": "Predictions, spontaneous decisions, promises, general statements about the future.",
+      "ex0": "I'll help you!",
+      "ex0tr": "I'll help you! (spontaneous decision)",
+      "ex1": "She will probably be late.",
+      "ex1tr": "She will probably be late.",
+      "m0": "<s>I will to go</s> → I will <em>go</em>",
+      "m1": "<s>She wills come</s> → She will come"
+    },
+    "future_going_to": {
+      "desc": "Planned intentions or predictions based on clear evidence.",
+      "ex0": "I'm going to study medicine.",
+      "ex0tr": "I'm going to study medicine. (plan)",
+      "ex1": "Look at those clouds — it's going to rain!",
+      "ex1tr": "Look at those clouds — it's going to rain!",
+      "m0": "<s>She is going to does</s> → She is going to <em>do</em>",
+      "m1": "<s>I am going to will do</s> → don't combine two future forms"
+    },
+    "future_continuous": {
+      "desc": "An action that will be in progress at a specific future time.",
+      "ex0": "This time tomorrow I'll be lying on the beach.",
+      "ex0tr": "This time tomorrow I'll be lying on the beach.",
+      "ex1": "Don't call at 8 — I'll be having dinner.",
+      "ex1tr": "Don't call at 8 — I'll be having dinner.",
+      "m0": "<s>I'll be work at 9</s> → I'll be <em>working</em>",
+      "m1": "<s>She will working</s> → She <em>will be working</em>"
+    },
+    "future_perfect": {
+      "desc": "An action that will be finished before a certain future moment.",
+      "ex0": "I'll have finished by Sunday.",
+      "ex0tr": "I'll have finished by Sunday.",
+      "ex1": "By 2030 they will have built the bridge.",
+      "ex1tr": "By 2030 they will have built the bridge.",
+      "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
+      "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
+    }
+  }
+}

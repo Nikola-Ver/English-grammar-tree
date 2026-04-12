@@ -366,12 +366,12 @@
 .grammar-search-btn:hover {
   border-color: var(--b2);
   color: var(--b2);
-  box-shadow: 0 0 14px rgba(129, 140, 248, 0.15);
+  box-shadow: 0 0 14px rgba(var(--rgb-b2), 0.15);
 }
 
 .grammar-search-btn.active {
-  background: rgba(129, 140, 248, 0.12);
-  border-color: rgba(129, 140, 248, 0.5);
+  background: rgba(var(--rgb-b2), 0.12);
+  border-color: rgba(var(--rgb-b2), 0.5);
   color: var(--b2);
 }
 
@@ -432,8 +432,8 @@
 }
 
 .grammar-search-input:focus {
-  border-color: rgba(129, 140, 248, 0.5);
-  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.08);
+  border-color: rgba(var(--rgb-b2), 0.5);
+  box-shadow: 0 0 0 3px rgba(var(--rgb-b2), 0.08);
 }
 
 .grammar-search-input::placeholder {

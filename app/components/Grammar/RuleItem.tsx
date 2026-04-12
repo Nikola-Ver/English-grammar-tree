@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './RuleItem.css';
-import { useState } from 'react';
 import type { Category, Level, Rule } from '../../data/grammar';
 import { IconCheck, IconShare } from '../../icons';
 import { copyToClipboard } from '../../utils/clipboard';
@@ -31,8 +31,10 @@ export function RuleItem({
   isTarget = false,
   promptBuilder,
 }: Props) {
+  const { t } = useTranslation();
   const [expOpen, setExpOpen] = useState(isTarget);
   const [shareCopied, setShareCopied] = useState(false);
+  const [testCopied, setTestCopied] = useState(false);
   const checkRef = useRef<HTMLDivElement>(null);
   // Touch-handling refs for immediate-first-tap expansion on mobile
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
@@ -107,20 +109,16 @@ export function RuleItem({
 
   async function handleTest(e: React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation();
-    const btn = e.currentTarget;
-    const orig = btn.textContent;
     const cat = level.categories.find((c) => c.rules.some((r) => r.id === rule.id));
     if (!cat) return;
     const build = promptBuilder ?? buildRulePrompt;
     const prompt = build(rule, level, cat);
     await copyToClipboard(prompt);
-    btn.textContent = '✓ Скопировано!';
-    btn.classList.add('copied');
+    setTestCopied(true);
+    e.currentTarget.classList.add('copied');
     setTimeout(() => {
-      if (btn) {
-        btn.textContent = orig;
-        btn.classList.remove('copied');
-      }
+      setTestCopied(false);
+      e.currentTarget.classList.remove('copied');
     }, 2000);
   }
 
@@ -174,13 +172,13 @@ export function RuleItem({
           <button
             className={`share-btn${shareCopied ? ' copied' : ''}`}
             onClick={handleShare}
-            title="Copy link to this rule"
+            title={t('rule.copyLinkTitle')}
           >
             {shareCopied ? '✓' : <IconShare />}
           </button>
           {rule.exp && (
             <button className="test-btn" onClick={handleTest}>
-              ✦ Тест
+              {testCopied ? t('copied') : t('rule.test')}
             </button>
           )}
           {rule.exp && <span className={`rule-arrow${expOpen ? ' open' : ''}`}>▾</span>}

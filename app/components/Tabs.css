@@ -32,7 +32,7 @@
 }
 
 .tab-btn.active {
-  background: rgba(129, 140, 248, 0.12);
+  background: rgba(var(--rgb-b2), 0.12);
   border-color: var(--b2);
   color: var(--b2);
   font-weight: 500;

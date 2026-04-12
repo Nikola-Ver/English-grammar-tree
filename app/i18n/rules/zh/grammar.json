@@ -1,0 +1,3677 @@
+{
+  "a1_01": {
+    "text": "am / is / are - 动词 to be 的形式",
+    "note": "我是，他是，他们是",
+    "exp": "<strong>to be</strong> 是英语中最重要的动词，类似于俄语中的“to be/appear”。<br><br>三种形式：<em>am</em> - 仅与<em>I</em>； <em>是</em> - 与他、她、它； <em>是</em> - 和你、我们、他们在一起。<br><br>⚠️ 与俄语的一个重要区别：在英语中，动词<strong>不能错过</strong>。在俄语中我们说“我是学生”，而在英语中我们必须说：<em>我<u>是</u>学生</em>。",
+    "exc": "简短形式：我是，你是，他是，她是，它是，我们是，他们是。简而言之，禁止使用缩写：<em>Yes, I am.</em>（不是 <s>Yes, I am</s>）",
+    "tip": "",
+    "mistakes": [
+      "<s>她是一名老师</s> → 她<em>是</em>一名老师",
+      "<s>我饿了</s> → 我<em>很</em>饿了",
+      "跳至：<s>我学生</s> → 我<em>是</em>学生"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I am hungry.",
+        "我饿了。"
+      ],
+      [
+        "She is a doctor.",
+        "她是一名医生。"
+      ],
+      [
+        "They are ready.",
+        "他们准备好了。"
+      ],
+      [
+        "It is cold today.",
+        "今天很冷。"
+      ]
+    ]
+  },
+  "a1_02": {
+    "text": "否定：我不是/不是/不是",
+    "note": "我不累。他不在这里。他们还没准备好。",
+    "exp": "否定是通过添加<em>not</em>来构造的：<em>am not、is not、are not</em>。<br>缩写形式：<em>isn't</em>（= is not）、<em>aren't</em>（= are not）。只有 <em>am not</em> 不会简化为 <em>amn't</em> - 例外！",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我不累</s> → 我<em>不</em>累（amn't 不存在！）",
+      "<s>他不累</s> → 他<em>不</em>累",
+      "<s>她不是=她不是</s> - 只有<em>她不是</em>或<em>她不是</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm not a student.",
+        "我不是学生。"
+      ],
+      [
+        "He isn't tired.",
+        "他不累。"
+      ],
+      [
+        "We aren't ready.",
+        "我们还没准备好。"
+      ]
+    ]
+  },
+  "a1_03": {
+    "text": "问题是：我是吗？ / 她是吗？ / 他们是吗？",
+    "note": "她是老师吗？你冷吗？我迟到了吗？",
+    "exp": "在疑问句中，动词<em>to be</em>置于<strong>主语</strong>之前：<em>She is → Is she?</em><br><br>特殊问题：疑问词 + to be + 主语：<em>Where is he？这是什么？</em><br><br>简短回答：<em>是的，我是。 / 不，她不是</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你冷吗？</s> → <em>你冷吗？</em>",
+      "<s>她迟到了？</s> - 没有倒装的问题：<em>她迟到了吗？</em>",
+      "<s>他在哪里？</s> → <em>他在哪里？</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Are you a student?",
+        "你是学生吗？"
+      ],
+      [
+        "Is it expensive?",
+        "贵吗？"
+      ],
+      [
+        "Where are they?",
+        "他们在哪里？"
+      ]
+    ]
+  },
+  "a1_04": {
+    "text": "简短的回答：是的，我是。 / 不，她不是。",
+    "note": "仅限完整形式 - 不允许：“是的，我是”",
+    "exp": "简而言之，回答代词+<em>to be</em>。 <strong>你不能缩短</strong>肯定答案中动词的形式。<br><em>你累了吗？ — 是的，我是。</em>✓ ✓ &nbsp;&nbsp; <em>是的，我是。</em>✗",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>是的，我</s> → 是的，我<em>是</em>（不能在肯定回答中缩写）",
+      "<s>不，她不是</s> → 不，她<em>不是</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Is she ready? — Yes, she is.",
+        "她准备好了吗？ - 是的。"
+      ],
+      [
+        "Are they your friends? — No, they aren't.",
+        "他们是你的朋友吗？ - 不。"
+      ]
+    ]
+  },
+  "a1_05": {
+    "text": "第 a / an - 无限期",
+    "note": "一只狗、一个苹果、一个小时、一所大学",
+    "exp": "<em>a</em> 和 <em>an</em> 是不定冠词，放置在单数<strong>首先提到</strong>对象之前。<br><br>选择取决于<strong>声音</strong>，而不是字母：<br>• <em>a</em> - 辅音之前：<em>a book, a car, a University</em> [ju...]<br>• <em>an</em> - 元音之前声音：<em>一个苹果，一个小时</em> [aʊ...]，<em>一个诚实的人</em>",
+    "exc": "<em>一所大学，一个欧洲人</em> - 虽然它们以元音开头，但声母是[j]，因此<em>a</em>。 <em>一个小时，一个诚实</em> - h 是静音，声母是元音。",
+    "tip": "",
+    "mistakes": [
+      "<s>一所大学</s> → <em>一所</em>大学（发音为[j]）",
+      "<s>一个苹果</s> → <em>一个</em>苹果",
+      "<s>一个诚实的人</s> → <em>一个</em>诚实的人（h静音）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I saw a cat in the garden.",
+        "我在花园里看到一只猫。"
+      ],
+      [
+        "She is an engineer.",
+        "她是一名工程师。"
+      ],
+      [
+        "It took an hour.",
+        "花了一个小时。"
+      ]
+    ]
+  },
+  "a1_06": {
+    "text": "文章 - 明确",
+    "note": "阳光、门、桌上的书",
+    "exp": "<em>the</em>用于当说话者和听者<strong>知道</strong>他们在谈论什么时。<br><br>当我们使用<em>the</em>时：<br>1.主题已经提到过：<em>我看到了一只猫。猫是黑色的。</em><br>2。独一无二：<em>太阳、月亮、地球</em><br>3。从上下文中可以清楚地看出：<em>请关闭窗口。</em><br>4。最高级：<em>最好的，最大的</em>",
+    "exc": "发音：辅音前的<em></em> [ðə]，元音前的[ði]。在口语中，常用 [ðɪ] 表示强调。",
+    "tip": "",
+    "mistakes": [
+      "<s>我喜欢音乐</s> → 我喜欢音乐（一般含义 - 无冠词）",
+      "<s>生命短暂</s> → 生命短暂",
+      "<s>他是医生</s> → 他是<em>一位</em>医生（首先提到）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film we saw was amazing.",
+        "我们看的电影很棒。"
+      ],
+      [
+        "Could you pass the salt?",
+        "你能把盐递过去吗？"
+      ]
+    ]
+  },
+  "a1_07": {
+    "text": "零文章 - 当不需要文章时",
+    "note": "我喜欢音乐。她打网球。他来自俄罗斯。",
+    "exp": "文章<strong>未放置在</strong>之前：<br>• 专有名称：<em>约翰，伦敦，俄罗斯</em><br>• 语言和国籍：<em>英语、俄语</em><br>• 体育和游戏：<em>足球、象棋</em><br>• 一般意义上的食物/饮料：<em>我喜欢咖啡</em><br>• 一般抽象概念：<em>生命短暂。爱情是盲目的。</em><br>• 一般意义上的复数：<em>狗是友好的。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我打网球</s> → 我打网球",
+      "<s>她说西班牙语</s> → 她说西班牙语",
+      "<s>俄罗斯</s> → 俄罗斯（没有冠词的国家，除了美国、英国）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She speaks Spanish.",
+        "她说 西班牙语。"
+      ],
+      [
+        "He plays basketball every day.",
+        "他每天都打篮球。"
+      ]
+    ]
+  },
+  "a1_08": {
+    "text": "一般现在时 - 肯定句",
+    "note": "我工作。他工作。她走了。它运行了。",
+    "exp": "<strong>现在简单</strong>用于：习惯和常规行为、事实和一般真理、时间表。<br><br>公式：我/你/我们/他们+不定式； he/she/it + 不定式+<em>s/es</em><br><br>词尾书写规则<em>-s</em>/-<em>es</em>：<br>• 大多数动词：+ <em>s</em> → <em>works、plays</em><br>• 以 -o、-ch、-sh、-s、-ss、-x 结尾：+ <em>es</em> → <em>goes、watchs、washes</em><br>• 以辅音 + -y 结尾：-y → <em>ies</em> → <em>研究、尝试</em>",
+    "exc": "例外：<em>have → has、be → is、do → does、go → go</em>",
+    "tip": "时间标记：总是、通常、经常、有时、很少、从不、每天/每周。",
+    "mistakes": [
+      "<s>她工作</s> → 她<em>工作</em>（忘记了 -s 表示第三人）",
+      "<s>他走</s> → 他<em>走</em>（走→走）",
+      "<s>她学习</s> → 她<em>学习</em>（辅音 + y → ies）"
+    ],
+    "markers": {
+      "tags": [
+        "总是",
+        "通常",
+        "经常",
+        "有时",
+        "偶尔",
+        "很少",
+        "很少",
+        "从来没有",
+        "每天",
+        "每周",
+        "每个月",
+        "每年",
+        "每天早上",
+        "每天晚上",
+        "每周一",
+        "每周一次",
+        "每月两次",
+        "总的来说",
+        "作为一项规则",
+        "通常",
+        "经常"
+      ],
+      "note": "频率标记出现在主要动词之前，但在 to be 之后。"
+    },
+    "ex": [
+      [
+        "I drink coffee every morning.",
+        "我每天早上都喝咖啡。"
+      ],
+      [
+        "She works in a hospital.",
+        "她在医院工作。"
+      ],
+      [
+        "The Earth goes round the Sun.",
+        "地球绕着太阳转。"
+      ]
+    ]
+  },
+  "a1_09": {
+    "text": "一般现在时 - 否定：不/不",
+    "note": "我不喜欢它。他不喜欢这样。 （不是：他没有）",
+    "exp": "否定是使用助动词<em>do/does</em> + <em>not</em>构建的：<br>• I/you/we/they + <em>dont</em> + 不定式<br>• he/she/it + <em>doesn't</em> + 不定式<br><br>⚠️ 在<em>doesn't</em>主要动词<strong>不带-s</strong>之后！ <em>她不喜欢</em>（不是<s>喜欢</s>）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她不喜欢</s> → 她不<em>喜欢</em>（在“不”之后 - 基本形式！）",
+      "<s>他不工作</s>→他<em>不工作</em>",
+      "<s>我不喜欢</s> → 我<em>不</em>喜欢"
+    ],
+    "markers": {
+      "tags": [
+        "总是",
+        "通常",
+        "经常",
+        "有时",
+        "很少",
+        "从来没有",
+        "每天",
+        "通常",
+        "一般来说",
+        "作为一项规则"
+      ],
+      "note": "与肯定句的标记相同。"
+    },
+    "ex": [
+      [
+        "I don't eat meat.",
+        "我不吃肉。"
+      ],
+      [
+        "He doesn't speak French.",
+        "他不会说法语。"
+      ],
+      [
+        "They don't work here.",
+        "他们不在这里工作。"
+      ]
+    ]
+  },
+  "a1_10": {
+    "text": "现在简单 - 问题：你吗？ /她是吗？",
+    "note": "你喜欢披萨吗？他在这里工作吗？他们住在哪里？",
+    "exp": "问题：<em>做/做</em> + 主语+不定式？<br>• 我/你/我们/他们：<em>你...吗？</em><br>• 他/她/它：<em>她...吗？</em><br><br>特殊问题：疑问词+ do/does + 主语+不定式：<br><em>她住在哪里？他们做什么？</em><br><br>⚠️ 例外：“谁？”这个问题没有<em>do</em>：<em>谁喜欢冰淇淋？</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她喜欢吗？</s> → 她<em>喜欢吗？</em>",
+      "<s>他工作吗？</s> → <em>他工作</em>吗？",
+      "<s>她住在哪里？</s> → 她住在哪里？"
+    ],
+    "markers": {
+      "tags": [
+        "总是",
+        "通常",
+        "经常",
+        "有时",
+        "从来没有",
+        "每天",
+        "每周",
+        "多久一次",
+        "多少次"
+      ],
+      "note": "在问题中，标记位于主语之后。"
+    },
+    "ex": [
+      [
+        "Do you speak Russian?",
+        "你会说俄语吗？"
+      ],
+      [
+        "Does she live nearby?",
+        "她住在附近吗？"
+      ],
+      [
+        "Where do you work?",
+        "你在哪里工作？"
+      ]
+    ]
+  },
+  "a1_11": {
+    "text": "静态动词 - 不用于连续式的动词",
+    "note": "我知道，不：我知道。我爱，不是：我正在爱。",
+    "exp": "有些动词描述的是状态而不是动作 - 它们不用于进行时态。<br><br>主要类别：<br>• 意见：<em>知道、相信、思考、理解、记住、忘记</em><br>• 感觉：<em>爱、恨、喜欢、想要、需要、更喜欢</em><br>• 感知：<em>看到、听到、闻到、尝到、看起来</em><br>• 存在：<em>是、存在、属于、包含、似乎、出现</em>",
+    "exc": "<em>think/have/see/taste</em>可以用在连续体中，但含义不同：<em>我认为</em>（意见）与<em>我正在思考</em>（现在正在思考）。",
+    "tip": "",
+    "mistakes": [
+      "<s>我知道</s> → 我<em>知道</em>",
+      "<s>她爱他</s> → 她<em>爱</em>他",
+      "<s>他想要一杯咖啡</s> → 他<em>想要</em>一杯咖啡"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I understand you. (не: I am understanding)",
+        "我理解你。"
+      ],
+      [
+        "She loves chocolate. (не: is loving)",
+        "她喜欢巧克力。"
+      ]
+    ]
+  },
+  "a1_12": {
+    "text": "人称代词：我、你、他、她、它、我们、他们",
+    "note": "你总是需要一个明确的主题 - 你不能跳过我",
+    "exp": "与俄语不同，英语<strong>主语始终是必填</strong>。<br>俄语：“我要回家了。”英语：<em>我要回家了。</em><br><br>宾语形式（在动词或介词之后）：<em>我、你、他、她、它、我们、他们</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>今天冷</s> → <em>冷</em>冷（主语不能省略）",
+      "<s>我喜欢披萨</s> → <em>我</em>喜欢披萨",
+      "<s>她告诉他</s> → 她告诉<em>他</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She is a teacher.",
+        "她是一名老师。"
+      ],
+      [
+        "Tell him the truth.",
+        "告诉他真相。"
+      ],
+      [
+        "Can you help me?",
+        "你能帮我吗？"
+      ]
+    ]
+  },
+  "a1_13": {
+    "text": "所有格形容词：我的、你的、他的、她的、它的、我们的、他们的",
+    "note": "我的书，她的车，他们的房子——不要按号码改变",
+    "exp": "所有格形容词显示所有权，并位于<strong>名词之前</strong>。<br>重要提示：<em>its</em>（不带撇号）= 所有权； <em>it's</em>（带有撇号）= it is。<br><br>性别和号码不要改变：<em>我的朋友/我的朋友</em> - 一样。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>这是一个大房子</s> → <em>这是</em>一个大房子（它=它是）",
+      "<s>猫伤害了它的爪子</s>→伤害了<em>它的</em>爪子（它=归属）",
+      "<s>他们的朋友很好</s> → 他们的朋友<em>很好</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is my phone.",
+        "这是我的手机。"
+      ],
+      [
+        "Their dog is cute.",
+        "他们的狗很可爱。"
+      ],
+      [
+        "The cat hurt its paw.",
+        "猫的爪子受伤了。"
+      ]
+    ]
+  },
+  "a1_14": {
+    "text": "名词复数",
+    "note": "猫、盒子、刀、儿童、男人、羊",
+    "exp": "基本规则：添加<em>-s</em>。<br><br>特殊情况：<br>• -s、-ss、-sh、-ch、-x、-o: + <em>es</em> → <em>盒子、手表、西红柿</em><br>• 元音 + -y: + <em>s</em> → <em>男孩、天</em><br>• 辅音 + -y: -y → <em>ies</em> → <em>城市、婴儿</em><br>• -f/-fe：→ <em>ves</em> → <em>刀、树叶、妻子</em><br><br>不规则：<em>儿童→儿童、男人→男人、女人→女人、牙齿→牙齿、脚→脚、老鼠→老鼠、人→人、鱼→鱼、羊→羊</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>两个孩子</s> → 两个<em>孩子</em>",
+      "<s>三人</s> → 三<em>人</em>",
+      "<s>盒子</s> → <em>盒子</em>（添加-es）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "one bus → two buses",
+        "一辆巴士 → 两辆巴士"
+      ],
+      [
+        "one child → many children",
+        "一个孩子 → 许多孩子"
+      ]
+    ]
+  },
+  "a1_15": {
+    "text": "这个/那个/这些/那些",
+    "note": "这个/这些 - 附近；那个/那些——远方",
+    "exp": "<em>this</em>（这个）- 单数+下一个<br><em>这些</em>（这些）- 复数+附近<br><em>that</em>（那个）- 单数+远或已知<br><em>those</em>（那些）- 复数+远<br><br>也用于时间：<em>本周</em>（本周），<em>那一年</em>（那一年）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>这是我的笔</s> → <em>这是我的笔</em>",
+      "<s>那些是书</s> →那些是<em>那些/那些</em>书",
+      "<s>那本书在这里</s> - <em>这</em>（近），<em>那</em>（远）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is my bag.",
+        "这是我的袋子。"
+      ],
+      [
+        "Those shoes are expensive.",
+        "那双鞋很贵。"
+      ],
+      [
+        "What is that?",
+        "它是什么？"
+      ]
+    ]
+  },
+  "a1_16": {
+    "text": "There is / there are - existence",
+    "note": "有一个公园。有五个房间。",
+    "exp": "<em>there is/are</em> 的意思是“存在/存在”、“是”。<br>• <em>There is</em> + 单数名词。 number<br>• <em>There are</em> + plural noun. number<br><br>否定：<em>没有/没有</em><br>问题：<em>有...吗？ / 有...吗？</em><br><br>⚠️ 不要与<em>是</em>混淆！ <em>桌子上有一本书</em>（书就在那里）vs<em>这是一本好书</em>（有特色）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "There is a cinema near here.",
+        "附近有一家电影院。"
+      ],
+      [
+        "Are there any shops nearby? — Yes, there are.",
+        "附近有商店吗？ - 是的。"
+      ]
+    ]
+  },
+  "a1_17": {
+    "text": "地点介词：in, on, at, under, next to, Behind, Between",
+    "note": "在盒子里、在桌子上、在车站",
+    "exp": "三个主要介词：<br>• <em>in</em> = 在某物内：<em>在盒子里、在城市中、在床上</em><br>• <em>on</em> = 在表面上：<em>在桌子上、在墙上、在左边</em><br>• <em>at</em> = 在特定点：<em>在车站、在家里、在学校</em><br><br>其他： <em>under</em>（下）、<em>next to/beside</em>（附近）、<em>behind</em>（后面）、<em>in front of</em>（前面）、<em> Between</em>（之间）、<em>opposite</em>（相反）",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "The keys are on the table.",
+        "钥匙在桌子上。"
+      ],
+      [
+        "She is in the kitchen.",
+        "她在厨房里。"
+      ],
+      [
+        "Meet me at the entrance.",
+        "在入口处见我。"
+      ]
+    ]
+  },
+  "a1_18": {
+    "text": "势在必行",
+    "note": "打开你的书。别跑。请坐。",
+    "exp": "命令式 = 没有主语的动词的基本形式。<br>否定：<em>Don't + 不定式</em><br><em>Please</em> 使请求更加礼貌（在开头或结尾）。<br><br>要包括说话者：<em>Let's + 不定式</em> → <em>Let's go！咱们吃饭吧！</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "Turn left at the crossroads.",
+        "在路口左转。"
+      ],
+      [
+        "Don't touch that!",
+        "别碰这个！"
+      ],
+      [
+        "Let's have a break.",
+        "我们休息一下吧。"
+      ]
+    ]
+  },
+  "a1_19": {
+    "text": "能/不能——技巧和决心",
+    "note": "我会游泳。她不会开车。我可以帮你吗？",
+    "exp": "<em>can</em>是情态动词，表示：<br>1.技能/能力：<em>我会弹吉他</em><br>2。机会：<em>可能很危险</em><br>3.决议（口头）：<em>我可以使用你的手机吗？</em><br><br>⚠️ <em>可以</em>永远不会改变：<em>他可以</em>（不是<s>他可以</s>）。其后是不带<em>to</em>的不定式。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你能帮我吗？</s> → 你能<em>帮助</em>（无需）",
+      "<s>她可以做到</s> → 她<em>可以</em>做到（可以不会改变）",
+      "<s>我会说法语</s> → 我会说法语"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I can speak three languages.",
+        "我会说三种语言。"
+      ],
+      [
+        "She can't come today.",
+        "她今天不能来。"
+      ],
+      [
+        "Can you help me, please?",
+        "你能帮我吗？"
+      ]
+    ]
+  },
+  "a1_20": {
+    "text": "疑问词：什么、哪里、谁、何时、如何、为什么、哪个、谁、多少/多少",
+    "note": "这是什么？你住在哪里？你今年多大？",
+    "exp": "疑问词出现在问题的<strong>开头</strong>，主语之前有助动词。<br><br>• <em>what</em> = 什么/which<br>• <em>where</em> = where/where<br>• <em>who</em> = who（不带 do 的问题：<em>谁住在这里？</em>）<br>• <em>when</em> = when<br>• <em>why</em> =为什么<br>• <em>如何</em> = 如何； <em>多少</em> = 多少（不可数）； <em>多少</em> = 多少（计数）； <em>多大</em> = 多大； <em>多长时间</em> = 多长时间",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "Where does she work?",
+        "她在哪里工作？"
+      ],
+      [
+        "What time is it?",
+        "现在几点了？"
+      ],
+      [
+        "How many brothers do you have?",
+        "你有几个兄弟？"
+      ]
+    ]
+  },
+  "a1_21": {
+    "text": "定量数字：1–1000",
+    "note": "一、二、三……二十一、一百、一千",
+    "exp": "数字 1–12：特殊词（一、二、三...十二）。<br>13–19：+ <em>-teen</em>（十三、十四...十九；例外：十三、十五、十八）。<br>十：二十、三十、四十、五十、六十、七十、八十、九十。<br>复合词：21 = <em>二十一</em>（通过连字符）。<br><br>100 = <em>一个/一百</em>； 1000 = <em>一/一千</em>。<br>一百/千之后 - <em>和</em> (BrE)：<em>两百五十</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "She is twenty-three years old.",
+        "她今年二十三岁。"
+      ],
+      [
+        "The ticket costs four hundred pounds.",
+        "票价四百英镑。"
+      ]
+    ]
+  },
+  "a1_22": {
+    "text": "序数词：第一、第二、第三……",
+    "note": "第一、第二、第三、第四……二十一",
+    "exp": "序数由<em>-th</em>相加而成：<em>第四、第五、第六...</em><br>例外：<em>第一（1st）、第二（2nd）、第三（3rd）、第五（5）、第八（8）、第九（9）、第十二（12）</em>。<br>总是与冠词<em>the</em>一起使用：<em>第一天、第三天地板</em>。<br><br>分数：½ = <em>二分之一</em>，⅓ = <em>三分之一</em>，¼ = <em>四分之一</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "My office is on the third floor.",
+        "我的办公室在三楼。"
+      ],
+      [
+        "Today is the first of March.",
+        "今天是三月一日。"
+      ]
+    ]
+  },
+  "a1_23": {
+    "text": "所有格：'s 和 s'",
+    "note": "约翰的车，我姐姐的朋友，孩子们的玩具，老师的房间",
+    "exp": "在英语中，归属感由撇号 + <em>s</em> 表示：<br>• 单数：<em>汤姆的书</em>、<em>狗尾巴</em><br>• 带-s 的复数：仅撇号：<em>老师的房间、我父母的房子</em><br>• 不规则复数：<em>'s</em>：<em>儿童游乐场、男人的房子衣服</em><br>• 以 -s 结尾的名字：<em>James's / James'</em> - 两个选项都是正确的",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "This is Anna's laptop.",
+        "这是安娜的笔记本电脑。"
+      ],
+      [
+        "The children's toys are in the box.",
+        "盒子里的儿童玩具。"
+      ]
+    ]
+  },
+  "a1_24": {
+    "text": "运动介词：到、进入、出、上、下、沿着、穿过、通过",
+    "note": "去学校，走进房间，跑过马路",
+    "exp": "<br>• <em>to</em> = 到一点的方向：<em>去上班，步行去公园</em><br>• <em>into</em> = 向内运动：<em>进入房间，跳进游泳池</em><br>• <em>出</em> = 向外运动：<em>下车，从包里拿出来</em><br>• <em>上/下</em> = 上/下： <em>爬上山，走下楼梯</em><br>• <em>沿着</em> = 沿着：<em>沿着河走</em><br>• <em>穿过</em> = 穿过/穿过：<em>游过湖，穿过马路</em><br>• <em>穿过</em> = 穿过：<em>开车穿过隧道</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "She walked into the room.",
+        "她进了房间。"
+      ],
+      [
+        "He ran across the street.",
+        "他跑过马路。"
+      ],
+      [
+        "We drove through the forest.",
+        "我们开车穿过森林。"
+      ]
+    ]
+  },
+  "a2_01": {
+    "text": "一般过去时 - 规则动词：+ed",
+    "note": "工作→工作、玩耍→玩耍、停止→停止、学习→学习",
+    "exp": "<strong>简单过去时</strong> - 过去完成的动作，有或没有特定时态。<br><br>词尾<em>-ed</em>的书写规则：<br>• 大多数动词：+ <em>ed</em> → <em>worked、played</em><br>• 以 -e 结尾：+ <em>d</em> → <em>loved、used</em><br>• 辅音 + -y：-y → <em>ied</em> → <em>研究、尝试</em><br>• 一个元音 + 一个辅音（短重读音节）：双辅音 → <em>停止，计划</em>",
+    "exc": "",
+    "tip": "标记：昨天、上周/去年、前、2010 年 5 点。",
+    "mistakes": [
+      "<s>她每天都会去学校</s> → 她<em>去</em>（习惯=简单现在时）",
+      "<s>我明天要去电影院</s> - 也许吧，但是<em>我会更有目的地去看电影</em>",
+      "<s>他想要</s> → 他<em>想要</em>（静态动词）"
+    ],
+    "markers": {
+      "tags": [
+        "昨天",
+        "昨晚",
+        "上周",
+        "上个月",
+        "去年",
+        "上周一",
+        "前",
+        "2010年",
+        "一月",
+        "（某一天的）早上",
+        "下午 3 点",
+        "周二",
+        "当我年轻的时候",
+        "那么",
+        "之后",
+        "突然",
+        "立即",
+        "终于",
+        "一次",
+        "那一刻",
+        "那些日子",
+        "在过去"
+      ],
+      "note": "关键规则：过去的特定时间 → 一般过去时，而不是现在完成时！"
+    },
+    "ex": [
+      [
+        "She worked all day yesterday.",
+        "她昨天工作了一整天。"
+      ],
+      [
+        "They played tennis last Sunday.",
+        "他们上周日打网球。"
+      ]
+    ]
+  },
+  "a2_02": {
+    "text": "一般过去时 - 不规则动词（表）",
+    "note": "去→去，看→看见，有→有，来→来，买→买",
+    "exp": "大约200个不规则动词需要死记硬背。最频繁的 50 种覆盖约 90% 的使用。<br><br>按变化的相似性进行分组：<br>• AAA（不更改）：<em>剪切、放置、击中、设置、让</em><br>• ABA（返回开头）：<em>跑→跑→跑、来→来→来</em><br>• ABC（全部不同）：<em>走→去→走，是→曾经/曾经→曾经</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她去了</s> → 她<em>去了</em>",
+      "<s>我买了</s> → 我<em>买了</em>",
+      "<s>他们没有去</s> → 他们没有<em>去</em>（在做了之后 - 基本形式）"
+    ],
+    "markers": {
+      "tags": [
+        "昨天",
+        "上周",
+        "前",
+        "什么时候？",
+        "什么时候？",
+        "2019年",
+        "周一"
+      ],
+      "note": "疑问词什么时候？总是需要过去简单（而不是现在完成时）。"
+    },
+    "ex": [
+      [
+        "I went to Paris last summer.",
+        "去年夏天我去了巴黎。"
+      ],
+      [
+        "She saw a great film.",
+        "她看了一部很棒的电影。"
+      ],
+      [
+        "We had a meeting at 9.",
+        "我们九点开会。"
+      ]
+    ]
+  },
+  "a2_03": {
+    "text": "一般过去时 - 否定：did not + 不定式",
+    "note": "她没有去（不是：没有去）。我没有看到他。",
+    "exp": "否定：<em>didn't</em>（= 没有）+ 不定式表示<strong>所有人</strong>。<br>⚠️ 在 <em>didn't</em> 之后 - 动词的<strong>基本形式</strong>（不是过去时！）：<em>她没有去</em>（不是<s>去</s>）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我没有去</s> → 我没有<em>去</em>",
+      "<s>她没有来</s> → 她没有<em>来</em>",
+      "<s>她玩过吗？</s> → 她<em>玩过</em>吗？",
+      "<s>她没有来</s> → 她没有<em>来</em>",
+      "<s>他做了什么？</s> → 他做了什么？</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I didn't see him yesterday.",
+        "昨天我没有看到他。"
+      ],
+      [
+        "She didn't come to work.",
+        "她没有来上班。"
+      ]
+    ]
+  },
+  "a2_04": {
+    "text": "一般过去时 - 问题：你是吗？她去哪儿了？",
+    "note": "他们到了吗？他说什么？",
+    "exp": "问题：<em>Did + 主语 + 不定式？</em><br>特殊问题：<em>地点/时间/什么 + did + 主语 + 不定式？</em><br><br>⚠️ 例外：问题“谁执行了该操作？”是在没有 did 的情况下构建的：<em>谁打电话来的？谁打破了花瓶？</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我会去</s> → 我<em>会去</em>（不带to）",
+      "<s>她会来</s> → 她会来（意愿不会改变）",
+      "<s>我认为她明天会去</s>→她<em>会去</em>"
+    ],
+    "markers": {
+      "tags": [
+        "明天",
+        "下周",
+        "下个月",
+        "明年",
+        "很快",
+        "一分钟后",
+        "一小时内",
+        "未来",
+        "有一天",
+        "有一天",
+        "可能",
+        "也许",
+        "也许",
+        "我认为...",
+        "我预计...",
+        "我确信...",
+        "当然",
+        "绝对绝对"
+      ],
+      "note": "will 用于没有证据的自发决定、承诺、预测。"
+    },
+    "ex": [
+      [
+        "Did you enjoy the film?",
+        "你喜欢这部电影吗？"
+      ],
+      [
+        "Where did they go?",
+        "他们去哪儿了？"
+      ],
+      [
+        "Who told you that?",
+        "谁告诉你这个的？"
+      ]
+    ]
+  },
+  "a2_05": {
+    "text": "was / were - 动词过去式",
+    "note": "我/他/她/它是。你/我们/他们是。",
+    "exp": "动词<em>to be</em>的过去式：<br>• <em>was</em> - 与我、他、她、它<br>• <em>were</em> - 与你、我们、他们<br><br>否定：<em>wasn't / were not</em><br>问题：<em>Was she...？他们是……吗？</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我要做</s> - 只有一件事：<em>我要做</em>",
+      "<s>她会做</s> → 她会<em>做</em>",
+      "<s>他会这样做</s> - 口语形式，不可接受书面形式"
+    ],
+    "markers": {
+      "tags": [
+        "明天",
+        "下周",
+        "很快",
+        "这个周末",
+        "今晚",
+        "六月",
+        "看！ （标志）",
+        "当心！"
+      ],
+      "note": "去=基于可见迹象的预先做出的决定或预测。"
+    },
+    "ex": [
+      [
+        "I was very tired last night.",
+        "昨晚我很累。"
+      ],
+      [
+        "They were at home all day.",
+        "他们一整天都待在家里。"
+      ],
+      [
+        "Was it expensive?",
+        "贵吗？"
+      ]
+    ]
+  },
+  "a2_06": {
+    "text": "意志——预测和自发决定",
+    "note": "我会给你回电话。明天会下雨。我要吃意大利面。",
+    "exp": "<em>will</em> 用于：<br>1。 <strong>自发决定</strong>（在演讲时做出）：<em>我会帮助你。</em><br>2.没有具体计划的<strong>预测</strong>：<em>我认为会下雨。</em><br>3. <strong>承诺</strong>：<em>我不会告诉任何人。</em><br>4. <strong>请求</strong>：<em>你愿意打开窗户吗？</em><br><br>缩写：<em>'ll</em>。否定：<em>不会</em>（=不会）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我会去</s> → 我<em>会去</em>（不带to）",
+      "<s>她会来</s> → 她会来（意愿不会改变）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The phone is ringing. — I'll get it!",
+        "电话响了。 - 我会回答！"
+      ],
+      [
+        "It will be cold tomorrow.",
+        "明天会很冷。"
+      ]
+    ]
+  },
+  "a2_07": {
+    "text": "去 - 意图和明显的预测",
+    "note": "我要去访问 巴黎 。小心——你会摔倒的！",
+    "exp": "<em>前往</em>用于：<br>1. <strong>预先制定的决定和意图</strong>：<em>我下周要开始节食。</em><br>2. <strong>有明显迹象的预测</strong>：<em>看看那些云彩 - 要下雨了！</em><br><br>形式：<em>am/is/are + getting to + 不定式</em>",
+    "exc": "<em>will vsgoing to</em>：<em>“我要喝咖啡”</em> - 我现在就决定； <em>“我要去喝咖啡”</em> - 我早就决定了。",
+    "tip": "",
+    "mistakes": [
+      "<s>她会做</s> → 她会<em>做</em>",
+      "<s>我会做</s> - 你不能有两个未来"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm going to study medicine.",
+        "我要去学医。"
+      ],
+      [
+        "She's going to have a baby.",
+        "她正在怀孕。"
+      ]
+    ]
+  },
+  "a2_08": {
+    "text": "现在进行时：am/is/are + V-ing",
+    "note": "她现在正在读书。他们正在外面玩。",
+    "exp": "<strong>现在进行时</strong>是<strong>现在</strong>或在此期间<strong>暂时</strong>发生的动作。<br><br>形式：<em>am/is/are + 动词 + -ing</em><br><br><em>-ing</em>的书写规则：<br>• 大多数：只是 + <em>ing</em> → <em>工作、玩耍</em><br>• 以 -e 结尾：删除-e + <em>ing</em> → <em>制作、到来</em><br>• 短重读音节：双读最后一个辅音 → <em>跑、坐</em>",
+    "exc": "",
+    "tip": "标记：现在、此刻、目前、本周/本月。",
+    "mistakes": [
+      "<s>我正在访问</s> → 我<em>正在访问</em>",
+      "<s>她正在工作</s>→她<em>正在</em>工作（她/他/它→是）",
+      "<s>8 岁时我在工作</s> → 我在<em>工作</em>"
+    ],
+    "markers": {
+      "tags": [
+        "现在",
+        "现在",
+        "此刻",
+        "目前",
+        "当前",
+        "今天",
+        "本周",
+        "这个月",
+        "今年",
+        "仍然",
+        "看！",
+        "听！",
+        "这些天",
+        "暂时",
+        "暂且"
+      ],
+      "note": "这些标记表示现在的行动或暂时的情况。"
+    },
+    "ex": [
+      [
+        "I am studying English right now.",
+        "我现在正在学习英语。"
+      ],
+      [
+        "She's working from home this month.",
+        "这个月她在家工作。"
+      ]
+    ]
+  },
+  "a2_09": {
+    "text": "现在 连续 计划的未来",
+    "note": "我明天要见汤姆。我们周五飞往罗马。",
+    "exp": "现在进行时用于将来<strong>具体协议</strong> - 当时间和地点已经确定时。<br><br>区别：<br>• <em>我明天会见爱丽丝</em> - 会议已商定（具体计划）<br>• <em>我明天会见爱丽丝</em> - 意图或建议",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我将在下周与汤姆见面</s> → <em>下周与汤姆见面</em>（无 in）",
+      "<s>我们将于周五飞往罗马</s> → <em>周五</em>"
+    ],
+    "markers": {
+      "tags": [
+        "明天",
+        "今晚",
+        "下周",
+        "下个月",
+        "周五",
+        "今天晚上",
+        "很快",
+        "明天晚上 8 点",
+        "六月",
+        "周一"
+      ],
+      "note": "现在 连续未来 - 具体协议，有时间和地点。"
+    },
+    "ex": [
+      [
+        "I'm having dinner with Alex tonight.",
+        "今晚我要和亚历克斯共进晚餐。"
+      ],
+      [
+        "They're getting married in June.",
+        "他们将于六月结婚。"
+      ]
+    ]
+  },
+  "a2_10": {
+    "text": "一般现在时与现在进行时 - 区别",
+    "note": "我喝咖啡（习惯）与我正在喝咖啡（现在）",
+    "exp": "<strong>现在简单：</strong>习惯、事实、时间表、一般真理。<br><strong>现在进行时：</strong>现在或暂时发生的事情。<br><br>比较：<br>• <em>她说法语。</em> - 知道该语言（总是）<br>• <em>她说法语。</em> - 现在说<br><br>⚠️ 静态动词（知道、爱、想要，理解...) - 只有现在简单！",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我每天早上都喝咖啡</s> → 我<em>喝</em>（习惯）",
+      "<s>她懂法语</s> → 她<em>懂</em>法语",
+      "<s>水在 100°C 时沸腾</s> → 水<em>沸腾</em>（事实）"
+    ],
+    "markers": {
+      "tags": [
+        "现在 ↔ 每天",
+        "此刻 ↔ 总是",
+        "目前 ↔ 通常",
+        "本周 ↔ 通常"
+      ],
+      "note": "标记决定选择：现在/此时→连续；总是/每天 → 简单。"
+    },
+    "ex": [
+      [
+        "Water boils at 100°C. (факт)",
+        "水在 100°C 时沸腾。"
+      ],
+      [
+        "I'm reading a great book this week. (временно)",
+        "这周我正在读一本很棒的书。"
+      ]
+    ]
+  },
+  "a2_11": {
+    "text": "应该/不应该——建议和推荐",
+    "note": "你应该去看医生。你不应该吃那么多。",
+    "exp": "<em>应该</em>表达温和的建议或个人意见。弱于<em>必须</em>。<br><em>应该</em>之后 - 不带<em>to</em>的不定式。<br><br>也用于批评或遗憾：<em>You Should had call</em>（应该打电话）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你应该去看医生</s> → 应该<em>去看</em>（无需）",
+      "<s>她应该走</s> → 她应该<em>走</em>",
+      "<s>我应该走了</s> → 我应该<em>走</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You should exercise more.",
+        "你应该多运动。"
+      ],
+      [
+        "She shouldn't work so hard.",
+        "她不应该这么辛苦。"
+      ]
+    ]
+  },
+  "a2_12": {
+    "text": "必须/不得——义务和严格禁止",
+    "note": "您必须系好安全带。你不可以在这里抽烟。",
+    "exp": "<em>必须</em> - 强烈的义务（通常是内部）或校准类别要求。<br><em>不得</em> - 严格的<strong>禁止</strong>（绝对不可能！）。<br><br>⚠️ 重要区别：<em>必须</em> ≠ <em>不必</em>！<br>• <em>必须</em> =禁止<br>• <em>不必</em> = 不要求，但可能",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你不可以吸烟</s> → 不可以<em>吸烟</em>",
+      "<s>我必须这样做</s> → 我<em>必须</em>这样做（无需）",
+      "<s>你不能来</s> ≠“你不需要”就是“你不能！”对于“不必”：<em>不必</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You must show your passport.",
+        "您必须出示您的护照。"
+      ],
+      [
+        "You mustn't smoke here.",
+        "你不能在这里吸烟。"
+      ]
+    ]
+  },
+  "a2_13": {
+    "text": "必须 - 外部必要性",
+    "note": "我必须工作到很晚。她不必来。",
+    "exp": "<em>have to</em> - 由于外部规则、环境或其他人的要求而必需的。<br><br>与<em>must</em>的区别：<br>• <em>must</em> - 内部必要性：<em>我必须打电话给她</em>（我自己认为有必要）<br>• <em>have to</em> - 外部：<em>我必须穿制服</em> （规则）<br><br><em>不必</em>=可选（不是必需的，但允许）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我必须能做到这一点</s> - 你不能连续有两个模态框",
+      "<s>她不必不来</s> → 她<em>不必</em>来",
+      "<s>你不能来</s> → 不能来"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I have to finish this report by Friday.",
+        "我必须在星期五之前提交报告。"
+      ],
+      [
+        "You don't have to come if you don't want to.",
+        "你不必来。"
+      ]
+    ]
+  },
+  "a2_14": {
+    "text": "可以 - 过去的技能和礼貌的请求",
+    "note": "她五岁时就会游泳。你能帮我吗？",
+    "exp": "<em>could</em> 是 <em>can</em> 的过去式。主要有两个含义：<br>1． <strong>过去的技能</strong>：<em>我4岁就能读书。</em><br>2. <strong>礼貌请求</strong>（比<em>能</em>更有礼貌）：<em>请你把盐递过来吗？</em><br><br>还有目前的可能性：<em>这可能是真的。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她可以游泳</s> → 她可以<em>游泳</em>（无需）",
+      "<s>我小时候可以吗</s> → <em>我可以</em>当我还是个孩子的时候",
+      "<s>你能说慢点吗？</s> → 你能说慢点吗？"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She could play the violin as a child.",
+        "她小时候就知道如何拉小提琴。"
+      ],
+      [
+        "Could you speak more slowly, please?",
+        "你能说慢一点吗？"
+      ]
+    ]
+  },
+  "a2_15": {
+    "text": "形容词的比较级",
+    "note": "更大、更有趣、更好、更差",
+    "exp": "<em>-y</em> 中的单音节和双音节：+ <em>er</em>（快→更快，快乐→快乐）。<br>多音节：<em>更多</em> + 形容词。<br><br>书写规则：<em>-e</em> → + <em>r</em>（好→更好）；短重读音节：双（大→更大）； -y → ier（重→重）。<br><br>不规则：<em>好→更好，坏→更差，远→更远/更远，多/很多→更多</em><br>比较级后 - <em>比</em>：<em>她比她姐姐高。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她比</s>高 → 她<em>比</em>高",
+      "<s>他更好</s> → 他<em>更好</em>",
+      "<s>她是班上最高的</s> → 她是<em>最高的</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This film is more interesting than that one.",
+        "这部电影比那更有趣。"
+      ],
+      [
+        "Today is worse than yesterday.",
+        "今天比昨天更糟糕。"
+      ]
+    ]
+  },
+  "a2_16": {
+    "text": "形容词最高级",
+    "note": "最大的、最美的、最好的",
+    "exp": "单音节：<em>+ -est</em>。多音节：<em>最</em>。<br>书写规则与比较级相同。<br><br>不规则：<em>好→最好，坏→最差，远→最远，多/很多→最</em><br><br>⚠️总是用冠词<em>the</em>！最高级之后，通常是<em>in</em>或<em>of</em>：<em>班级里最高的女孩。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>他最聪明</s>→他<em>最</em>聪明/<em>最聪明</em>",
+      "<s>她是最棒的</s> → 她是<em>最棒的</em>",
+      "<s>这是最有趣的电影</s> → <em>最有趣</em>电影（需要）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is the most expensive restaurant in the city.",
+        "这是城里最贵的餐厅。"
+      ],
+      [
+        "He is the best player on the team.",
+        "他是队里最好的球员。"
+      ]
+    ]
+  },
+  "a2_17": {
+    "text": "一些/任何 - 无限量",
+    "note": "我有一些钱。你有吗？我没有。",
+    "exp": "<em>some</em> - 在肯定句和提议/请求中。<br><em>any</em> - 在问题和否定中。<br><br>例外：<em>some</em> 在我们期望得到肯定答案或提供某物时的问题中：<em>你想喝点茶吗？我可以喝点水吗？</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我有钱吗？ （问题）</s> → 我有钱吗？",
+      "<s>我没有现金</s> → 我没有<em>任何</em>现金",
+      "<s>您想要茶吗？</s> → 您想要<em>一些</em>茶吗？ （提供）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I bought some bread and some milk.",
+        "我买了面包和牛奶。"
+      ],
+      [
+        "Is there any milk in the fridge?",
+        "冰箱里有牛奶吗？"
+      ],
+      [
+        "I don't have any cash on me.",
+        "我身上没带现金。"
+      ]
+    ]
+  },
+  "a2_18": {
+    "text": "much / many / a lot of / a few / a little",
+    "note": "很多水（不可数），很多人（可数），很多——到处",
+    "exp": "<em>很多</em> - 不可数（很多水，很多时间，很多钱）。<br><em>很多</em> - 可数（很多人，很多书，很多次）。<br><em>很多/很多</em> - 两者都有，对话风格。<br><br><em>一些</em> - 一点（可数，中性/积极）。<br><em>很少</em> - 很少，几乎没有（可数，负）。<br><em>一点</em> - 一点（不可数，中性）。<br><em>一点</em> - 很少，几乎没有（不可数，负）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>很多人</s> → <em>很多</em>人（可数）",
+      "<s>很多钱</s> → <em>很多</em>钱（不可数）",
+      "<s>A few water</s> → <em>A little</em> water"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I don't have much time.",
+        "我没有太多时间。"
+      ],
+      [
+        "She has a few friends in London.",
+        "她在伦敦有几个朋友。"
+      ],
+      [
+        "There is a little sugar left.",
+        "还剩下一些糖。"
+      ]
+    ]
+  },
+  "a2_19": {
+    "text": "可数名词和不可数名词",
+    "note": "水、信息、建议 - 不允许：一水、两个建议",
+    "exp": "<strong>可数</strong>：可以数，有复数。 number：<em>一本书，两本书</em>。<br><strong>不可数</strong>：不能直接计数 - 没有复数。数字，没有不定冠词。<br><br>典型的不可数词：<em>水、牛奶、面包、大米、金钱、信息、建议、新闻、天气、行李、家具、头发、音乐、工作</em><br><br>表示部分：<em>一杯水、一条建议、一条面包、一袋米</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>两条建议</s> → 两条<em>建议</em>（建议不可数）",
+      "<s>一条信息</s> → <em>一些信息</em>",
+      "<s>三件家具</s> → 三件<em>家具</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Can I have some information, please?",
+        "我可以知道一些事情吗？"
+      ],
+      [
+        "She gave me very useful advice.",
+        "她给了我非常有用的建议。"
+      ]
+    ]
+  },
+  "a2_20": {
+    "text": "介词 in / on / at 表示时间",
+    "note": "2024年3月，冬季； 6 月 5 日星期一；下午 3 点，晚上",
+    "exp": "<em>在</em> → 确切时间：<em>6 点、中午、午夜、晚上、周末（BrE）</em><br><em>于</em> → 日期和日期：<em>周一、3 月 5 日、我生日、元旦</em><br><em>于</em> → 期间：<em>2023 年 7 月、上午/下午/晚上，在夏天，在21世纪</em><br><br>不带介词：<em>这个/上一个/下一个+时间：今天早上，上周，明年</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>星期一</s>→<em>星期一</em>",
+      "<s>8 点钟</s> → <em>晚上</em> 8 点钟",
+      "<s>早上</s> → <em>早上</em>",
+      "<s>在我的生日</s> → <em>在</em>我的生日"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The meeting is at half past three.",
+        "四点半集合。"
+      ],
+      [
+        "She was born on the 12th of April.",
+        "她出生于4月12日。"
+      ],
+      [
+        "I started this job in October.",
+        "我十月份开始这项工作。"
+      ]
+    ]
+  },
+  "a2_21": {
+    "text": "for/since/ago - 持续时间和开始",
+    "note": "三年了，从2020年开始，三年前",
+    "exp": "<em>持续</em> - 持续时间（多长时间）：<em>两小时、一周、几年</em>。用于不同的时态。<br><em>since</em> - 初始时刻（since）：<em>since Monday，since 2019，since I was a child</em>。与现在完成时一起使用。<br><em>前</em> - 从现在开始的时间：<em>三天前，一个月前</em>。仅限过去简单。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我来这里三年了</s> → 三年了",
+      "<s>我从星期一就见到他了</s> → 我<em>在</em>星期一见到了他（之前是过去简单，从那以后就没有了！）",
+      "<s>三天前</s> → 三天<em>前</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've been here for six months.",
+        "我来这里已经六个月了。"
+      ],
+      [
+        "She's worked here since 2020.",
+        "她自2020年以来一直在这里工作。"
+      ],
+      [
+        "I saw him two days ago.",
+        "两天前我见过他。"
+      ]
+    ]
+  },
+  "a2_22": {
+    "text": "尾部疑问：……不是吗？ / ...你？ / ...不是吗？",
+    "note": "天气很冷，不是吗？你喜欢爵士乐，不是吗？",
+    "exp": "标记疑问句用于确认或澄清。<br><br>规则：肯定句→否定标记，反之亦然。<br>尾部助动词=主句时态。<br><br>语调：↘（落）=确认； ↗（上升）= 真正的问题。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>很冷，不是吗？</s> → 不是<em>吗</em>",
+      "<s>她会游泳，他不是吗？</s> → 她不能<em>她</em>",
+      "<s>你不喜欢它，不是吗？</s> → <em>你喜欢</em>吗？ （否定句→肯定句尾）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It's a nice day, isn't it?",
+        "美好的一天，对吧？"
+      ],
+      [
+        "You don't like horror films, do you?",
+        "你不喜欢恐怖片，是吗？"
+      ],
+      [
+        "She can swim, can't she?",
+        "她会游泳，不是吗？"
+      ]
+    ]
+  },
+  "a2_23": {
+    "text": "拥有 - 拥有（英国版）",
+    "note": "我有一辆车。你有笔吗？她没有时间。",
+    "exp": "<em>have got</em> 是英国口语中的占有形式。值 = <em>有</em>。<br><br>• 肯定：<em>我有/我有一台笔记本电脑。</em><br>• 否认：<em>我没有/我没有</em><br>• 问题：<em>你有...吗？ / 你有...吗？</em><br><br>⚠️ <em>have got</em> 仅用于现在时。对于过去 - 只有<em>有</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我在 2010 年买了一辆车</s> → 我在 2010 年<em>买了</em>一辆车（只得到了礼物）",
+      "<s>她养了一只狗</s> → 她<em>养了</em>一只狗（过去 - 仅养过）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've got two brothers.",
+        "我有两个兄弟。"
+      ],
+      [
+        "Have you got the time?",
+        "你不知道现在几点了吗？"
+      ],
+      [
+        "She hasn't got any cash.",
+        "她没有现金。"
+      ]
+    ]
+  },
+  "a2_24": {
+    "text": "方式副词：快速、仔细、好、硬、快",
+    "note": "她唱歌很美。他工作很努力。她开得很快。",
+    "exp": "大多数副词由形容词+<em>-ly</em>组成：<em>quick→fastly，career→carely，slow→slowly</em>。<br><br>特殊情况：<br>•<em>good→well</em>（不是<s>goodly</s>）<br>•<em>fast→fast</em>（不是<s>fastly</s>）<br>•<em>hard→hard</em>（不是<s>几乎</s> - 这是另一个词：“勉强”）<br>• <em>迟到→迟</em>（不是<s>最近</s> - 这是“最近”）<br><br>地点：通常在动词/宾语之后：<em>她英语说得很好。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她唱得好听</s> → 她唱得<em>好听</em>",
+      "<s>他工作很努力</s> → 他工作<em>努力</em>（几乎=勉强）",
+      "<s>她开得很快</s> → 她<em>开得很快</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He explained it clearly.",
+        "他解释得很清楚。"
+      ],
+      [
+        "She ran fast.",
+        "她跑得很快。"
+      ],
+      [
+        "They worked hard all day.",
+        "他们辛苦工作了一整天。"
+      ]
+    ]
+  },
+  "a2_25": {
+    "text": "频率副词及其在句子中的位置",
+    "note": "总是、通常、经常、有时、很少、从不 - 在主要动词之前",
+    "exp": "频率副词：<em>总是、通常、经常、有时、偶尔、很少、很少、从不</em>。<br><br>放在句子中：<br>• 主要动词前：<em>她总是喝茶。</em><br>• 动词<em>to be</em>后：<em>他总是迟到。</em><br>• 助动词后：<em>她从来没有去过意大利。</em><br><br>另外：<em>每天/每周、每周一次、每月两次</em> - 在句子末尾。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她总是迟到</s> → 她<em>总是</em>迟到（之后）",
+      "<s>他总是喝咖啡</s> → 他<em>总是</em>喝咖啡（在主要动词之前）",
+      "<s>她从来都不准时</s> - 两个副词放在一起是不合适的"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I usually wake up at 7.",
+        "我通常7点起床。"
+      ],
+      [
+        "She is never late for work.",
+        "她上班从不迟到。"
+      ],
+      [
+        "They meet once a week.",
+        "他们每周见面一次。"
+      ]
+    ]
+  },
+  "a2_26": {
+    "text": "形容词在名词之前的顺序",
+    "note": "一个可爱的小旧红色意大利皮包",
+    "exp": "当几个形容词出现在名词前时，会遵守严格的顺序：意见 → 大小 → 年龄 → 形状 → 颜色 → 起源 → 材料 → 目的</strong><br>（意见 → 大小 → 年龄 → 形状 → 颜色 → 起源 → 材料 → 目的）<br><br>示例：<em>一个小而漂亮的旧方形棕色法式木制写字台</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>一个木制法式老小包</s>→顺序：尺寸→年代→产地→材质",
+      "<s>一辆漂亮的意大利大车</s> → 大<em>漂亮</em>意大利车（意见之前的尺寸 - 否）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "a lovely little old cottage",
+        "可爱的小旧小屋"
+      ],
+      [
+        "a big red Italian sports car",
+        "大红色意大利跑车"
+      ]
+    ]
+  },
+  "b1_01": {
+    "text": "现在完成时——形式和意义",
+    "note": "我已经看到了。她已经走了。他们已经到了。",
+    "exp": "<strong>现在完成</strong> = have/has + V3（动词的第三种形式）。\n<br><br>三个主要含义：\n<br>1. <strong>生活经历</strong>（未指定时间）：<em>我去过东京。</em>\n<br>2。 <strong>目前的结果</strong>：<em>我丢失了钥匙。</em>（现在没有钥匙）\n<br>3。 <strong>未完成的行动</strong>，正在进行中：<em>她已经在这里住了 5 年了。</em>\n<br><br>V3 规则动词 = 一般过去时（工作、玩耍）。不正确的需要单独了解。",
+    "exc": "",
+    "tip": "标记：曾经、从未、已经、还、刚刚、最近、最近、到目前为止。",
+    "mistakes": [
+      "<s>我昨天见过他</s> → 我昨天<em>见过</em>他（昨天=过去简单！）",
+      "<s>她走了</s> → 她<em>走了</em>",
+      "<s>我去年去过罗马</s> → 我去年<em>去过</em>罗马"
+    ],
+    "markers": {
+      "tags": [
+        "曾经",
+        "从来没有",
+        "已经",
+        "还",
+        "只是",
+        "最近",
+        "迟到了",
+        "到目前为止",
+        "到现在为止",
+        "到现在为止",
+        "仍然（否定）",
+        "本周",
+        "这个月",
+        "今年",
+        "今天",
+        "之前",
+        "一次",
+        "两次",
+        "三次",
+        "对于",
+        "自从",
+        "这是第一次...",
+        "我有史以来最好的..."
+      ],
+      "note": "从未与过去的特定时间一起使用（昨天、去年、2020 年→简单过去时）。"
+    },
+    "ex": [
+      [
+        "Have you ever eaten sushi?",
+        "你吃过寿司吗？"
+      ],
+      [
+        "I've just finished my homework.",
+        "我刚刚做完作业。"
+      ],
+      [
+        "She hasn't called yet.",
+        "她还没打电话。"
+      ]
+    ]
+  },
+  "b1_02": {
+    "text": "曾经/从未/已经/还/只是 - 现在完美标记",
+    "note": "你有没有...?我从来没有……我已经……还没有。我刚刚...",
+    "exp": "<em>曾经</em> - 有一天（关于经验的问题）。位置：V3前面。\n<br><em>从不</em> - 从不（负值）。位置：V3前面。\n<br><em>已经</em> - 已经（比预期早）。放置：V3之前或末尾。\n<br><em>但是</em> - 已经/还。在疑问（你完成了吗？）和否定（我还没完成）中。地点：句末。\n<br><em>刚刚</em> - 就在现在。位置：V3前面。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你去过巴黎吗？</s> → 问题中<em>曾经</em>，最后<em>还</em>",
+      "<s>我还没有完成</s> → 我<em>还没有</em>完成<em>还</em>",
+      "<s>我刚刚吃过</s> → 我<em>刚刚</em>吃过（就在V3之前）"
+    ],
+    "markers": {
+      "tags": [
+        "曾经",
+        "从来没有",
+        "已经",
+        "还",
+        "只是",
+        "最近",
+        "迟到了",
+        "到目前为止",
+        "到现在为止",
+        "仍然（还没有）"
+      ],
+      "note": "曾经/从不 - V3 之前；已经 - 在 V3 之前或结束时；然而——只有在最后。"
+    },
+    "ex": [
+      [
+        "Have you ever been to Scotland?",
+        "你去过苏格兰吗？"
+      ],
+      [
+        "I've never eaten snails.",
+        "我从来没有吃过蜗牛。"
+      ],
+      [
+        "I've already seen that film.",
+        "我已经看过这部电影了。"
+      ],
+      [
+        "She hasn't replied yet.",
+        "她还没有回答。"
+      ]
+    ]
+  },
+  "b1_03": {
+    "text": "现在完成时与过去简单 - 主要区别",
+    "note": "我去过巴黎（经历） vs 我2019年去过巴黎（具体时间）",
+    "exp": "这是英语语法中最重要的差异之一。\n<br><br><strong>现在完成</strong> - 与现在联系，不指示时间：\n<br><em>我丢了钱包。</em>（现在没有钱包 - 这很重要）\n<br><br><strong>简单过去时</strong> - 完成的过去时，时间是指示或暗示的：\n<br><em>我昨天丢了钱包。</em>（昨天是特定时间）\n<br><br>⚠️ 有特定的时间标记（昨天、上周、2020 年、之前）→ 仅过去简单！",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我上周见过他</s> → 我上周<em>见过</em>他（具体时间=过去简单）",
+      "<s>你吃过寿司吗？</s> → <em>你</em>你吃过寿司吗？",
+      "<s>我遇见了他，他告诉了我</s>→他<em>告诉了</em>我（在过去的一个背景下）"
+    ],
+    "markers": {
+      "tags": [
+        "曾经/从不 (PP) ↔ 特定时间 (PS)",
+        "已经/还 (PP) ↔ 昨天/之前 (PS)",
+        "只是 (PP) ↔ 然后/之后 (PS)",
+        "最近 (PP) ↔ 上周 (PS)"
+      ],
+      "note": "如果有特定时间（昨天、2020年、去年）→仅限过去简单。"
+    },
+    "ex": [
+      [
+        "I've met the new director. (он сейчас здесь, это актуально)",
+        "我认识了新导演。"
+      ],
+      [
+        "I met him last Tuesday. (конкретное время)",
+        "我上周二见过他。"
+      ]
+    ]
+  },
+  "b1_04": {
+    "text": "现在完成时与 for 和since",
+    "note": "自 2019 年以来，我已经在这里住了 5 年了。",
+    "exp": "<em>持续</em> - 持续时间：<em>两天、一年、很长一段时间、很多年</em>\n<br><em>自从</em> - 起点：<em>从星期一开始，从我小时候开始，从 2015 年开始</em>\n<br><br>问题“多长时间？” — 多久了 + 现在完成时：<em>你认识她多久了？</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我已经在这里住了五年了</s> → <em>已经</em>五年了",
+      "<s>她在 2019 年就认识他了</s> → 她<em>从</em> 2019 年就认识他了",
+      "<s>您在这里住了多久？</s> → 您在这里住了多久了？<em></em> （现在正在进行）"
+    ],
+    "markers": {
+      "tags": [
+        "两个小时",
+        "一周",
+        "多年来",
+        "很长一段时间",
+        "多年来",
+        "几个月",
+        "自周一以来",
+        "自 2019 年起",
+        "从小我就",
+        "从去年开始",
+        "从那时起",
+        "从今天早上开始",
+        "多久...？"
+      ],
+      "note": "持续+时间段；因为+起点。两者都与现在完成时（简单和进行时）一起使用。"
+    },
+    "ex": [
+      [
+        "She's worked here for ten years.",
+        "她已经在这里工作十年了。"
+      ],
+      [
+        "I've known him since university.",
+        "我从大学就认识他了。"
+      ]
+    ]
+  },
+  "b1_05": {
+    "text": "现在完成进行时：have was + V-ing",
+    "note": "我已经等了一个小时了。她一整天都在学习。",
+    "exp": "<strong>现在完成进行时</strong> = 已经/已经 + V-ing\n<br><br>强调行动的<strong>持续时间</strong>或不完整。回答“多长时间？”的问题\n<br>经常解释当前可见的结果：<em>你看起来很累 - 你跑步了吗？</em>\n<br><br>与现在完成简单的区别：\n<br>• <em>我已经读了 50 页。</em> - 结果、完整性\n<br>• <em>我整个晚上都在读书。</em> - 强调过程",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我已经学习了三个小时</s> → <em>学习了</em>三个小时",
+      "<s>我整个晚上都在读书</s> → 我一直在<em>阅读</em>",
+      "<s>我认识她很多年了</s> → 知道 - 静态动词，使用现在完成简单"
+    ],
+    "markers": {
+      "tags": [
+        "对于",
+        "自从",
+        "多久...？",
+        "全天",
+        "整个早上",
+        "整个晚上",
+        "整个星期",
+        "迟到了",
+        "最近",
+        "这些天",
+        "仍然"
+      ],
+      "note": "现在完成进行时强调持续时间而不是结果。"
+    },
+    "ex": [
+      [
+        "I've been learning English for two years.",
+        "我已经学英语两年了。"
+      ],
+      [
+        "Why are your hands dirty? — I've been fixing the car.",
+        "你的手为什么脏？ — 我正在修理汽车。"
+      ]
+    ]
+  },
+  "b1_06": {
+    "text": "过去进行时：was/were + V-ing",
+    "note": "我晚上八点在读书。他们整个晚上都在说话。",
+    "exp": "<strong>过去进行时</strong> = was/were + V-ing\n<br><br>价值观：\n<br>1.过去某个特定时刻<strong>流程</strong>中的行动：<em>晚上 9 点我正在吃晚饭。</em>\n<br>2。 <strong>后台活动</strong>被另一个打断：<em>开始下雨时我正在散步。</em>\n<br>3。并行动作：<em>当她做饭时，他在看电视。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她在走路</s> → 她<em>在走路</em>",
+      "<s>他们在说话</s> → 他们<em>在</em>说话",
+      "<s>我晚上 9 点工作</s> → 我<em>工作</em>"
+    ],
+    "markers": {
+      "tags": [
+        "昨天晚上八点",
+        "上周的这个时候",
+        "整个早上",
+        "全天",
+        "整个晚上",
+        "同时",
+        "当（+过去简单）",
+        "作为",
+        "那一刻",
+        "中间",
+        "期间"
+      ],
+      "note": "while/as → 背景（过去进行时）；当→事件（过去简单）。"
+    },
+    "ex": [
+      [
+        "It was raining when I left home.",
+        "我离开家时正在下雨。"
+      ],
+      [
+        "What were you doing at 7 yesterday?",
+        "昨天七点你在做什么？"
+      ]
+    ]
+  },
+  "b1_07": {
+    "text": "一般过去时与过去进行时 - 背景和事件",
+    "note": "当我做饭的时候，他打来电话。我正在散步，天开始下雨了。",
+    "exp": "典型设计：长背景动作（过去进行时）+短事件（过去简单）。\n<br><br>工会：\n<br>• <em>何时</em> - 与一般过去时一起用于该事件：<em>闹钟响时她正在睡觉。</em>\n<br>• <em>while/as</em> - 与过去进行时一起使用作为背景：<em>当我看电视时，电源熄灭了。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>当我做饭时，他打电话</s> → 当我<em>做饭</em>时，他打电话（背景=连续）",
+      "<s>天开始下雨的时候我正在散步</s> → 下雨的时候<em>开始</em>（事件 = Past Simple）"
+    ],
+    "markers": {
+      "tags": [
+        "同时",
+        "作为",
+        "当",
+        "此刻",
+        "正如",
+        "期间"
+      ],
+      "note": "while +过去进行时（背景）+when +过去简单（事件）。"
+    },
+    "ex": [
+      [
+        "She was having a bath when the phone rang.",
+        "她正在洗澡，电话铃响了。"
+      ],
+      [
+        "While he was giving his speech, someone fell asleep.",
+        "当他演讲时，有人睡着了。"
+      ]
+    ]
+  },
+  "b1_08": {
+    "text": "类型0：如果+现在，现在-事实和法律",
+    "note": "如果将水加热到 100°C，它就会沸腾。",
+    "exp": "输入零——代表科学事实、自然法则、一般真理。这两个动作总是同时发生。\n<br><br>形式：<em>If + 现在简单，现在简单</em>\n<br>您可以使用<em>when</em>来代替<em>if</em>：<em>当你混合红色和蓝色时，你会得到紫色。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>如果你加热水，它就会沸腾</s> → 它<em>沸腾</em>（零类型 - Present + Present）",
+      "<s>当你混合它们时，你会得到</s> → 你<em>得到</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If you heat ice, it melts.",
+        "如果你加热冰，它就会融化。"
+      ],
+      [
+        "If it rains, the streets get wet.",
+        "如果下雨，街道就会湿透。"
+      ]
+    ]
+  },
+  "b1_09": {
+    "text": "第一种：If + 现在简单，will - 真实的未来",
+    "note": "如果明天下雨，我就呆在家里。",
+    "exp": "未来真实的、可能发生的情况。\n<br><br>形式：<em>If + 一般现在时，will + 不定式</em>\n<br>⚠️ 在<em>if</em>部分 - NEVER Future！仅现在时简单。\n<br><br>在主要部分中，您可以使用：<em>can、may、might、should</em>，而不是<em>will</em>。\n<br>零件可以更换：<em>如果下雨我会呆在家里。</em>（不带逗号）",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>如果会下雨</s> → 如果<em>下雨</em>（如果部分没有意愿！）",
+      "<s>如果她努力学习，她就会通过</s> → 如果她学习，她<em>就会通过</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If she studies hard, she'll pass the exam.",
+        "如果她学习好，她就会通过考试。"
+      ],
+      [
+        "If you need help, I can come.",
+        "如果你需要帮助，我可以来。"
+      ]
+    ]
+  },
+  "b1_10": {
+    "text": "类型2：If + 一般过去时，would - 虚幻现在时",
+    "note": "如果我有车，我会开车去上班。如果我是你...",
+    "exp": "当前或将来不真实或不可能的情况。\n<br><br>形式：<em>If + 一般过去式，would + 不定式</em>\n<br>⚠️<em>if</em>部分的动词是一般过去时，但意思是<strong>现在/将来</strong>！\n<br>⚠️ <em>were</em> 用于所有人：<em>If I were you, If she were here</em> 是正式的语言标准。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>如果我有辆车</s> → 如果我<em>有</em>一辆车",
+      "<s>如果我是你</s> → 如果我<em>是</em>你（正式）",
+      "<s>我可以做到</s> → 我<em>可以</em>做到（你不能有两个情态动词）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If I won the lottery, I would travel the world.",
+        "如果我中了彩票，我就会环游世界。"
+      ],
+      [
+        "If I were taller, I'd play basketball.",
+        "如果我长高一点，我就会打篮球。"
+      ]
+    ]
+  },
+  "b1_11": {
+    "text": "类型 1 与类型 2：真实与不可能",
+    "note": "如果我赢了（第一，真的） vs 如果我赢了（第二，不太可能）",
+    "exp": "类型的选择反映了<strong>您对现实情况的信心</strong>。\n<br><br>• <em>如果我看到她</em>（第一种类型）- 我希望见到她\n<br>• <em>如果我看到她</em>（第二种）- 不太可能，或者我只是在幻想\n<br><br>这不是语法上的差异，而是说话者态度上的差异。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "第 1 类和第 2 类混淆：<em>如果我赢了</em>（真实）与<em>如果我赢了</em>（不太可能）",
+      "<s>如果我赢了，我会购买</s> → 不能混合：<em>会购买</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If it rains tomorrow, I'll take an umbrella. (реально возможно)",
+        "如果明天下雨，我就带伞。"
+      ],
+      [
+        "If it rained every day, I'd move to Spain. (маловероятная фантазия)",
+        "如果每天都下雨，我就会搬到西班牙。"
+      ]
+    ]
+  },
+  "b1_12": {
+    "text": "被动语态 - 现在简单: is/are + V3",
+    "note": "咖啡产于巴西。这辆车是德国制造的。",
+    "exp": "<strong>被动语态</strong>用于以下情况：\n<br>• 行动本身很重要，而不是执行该行动的人\n<br>• 表演者未知或明显\n<br><br>形成现在简单被动：<em>am/is/are + V3</em>\n<br>表演者（如果需要）添加了<em>by</em>：<em>窗户被球打破了。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>咖啡在巴西种植</s> → 咖啡<em>种植</em>",
+      "<s>这封信是用法语写的</s> → 这封信<em>是这样写的</em>",
+      "<s>这里说英语</s> → <em>说英语</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "English is spoken in many countries.",
+        "许多国家都使用英语。"
+      ],
+      [
+        "The letter is written in French.",
+        "这封信是用法语写的。"
+      ]
+    ]
+  },
+  "b1_13": {
+    "text": "被动语态 - 过去简单: was/were + V3",
+    "note": "这座桥建于 1890 年。他们被捕了。",
+    "exp": "过去简单被动语态：<em>was/were + V3</em>\n<br>• <em>was</em> - 单位。数量\n<br>• <em>were</em> - 复数。数量\n<br><br>主动 → 被动：<em>有人偷了我的车。</em> → <em>我的车被偷了。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>这座桥建于 1890 年</s> → <em>建成</em>",
+      "<s>他们被逮捕了</s> → 他们<em>被</em>逮捕了",
+      "<s>汽车被盗</s> → 汽车<em>被盗</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The Eiffel Tower was built in 1889.",
+        "埃菲尔铁塔建于 1889 年。"
+      ],
+      [
+        "Three people were injured in the accident.",
+        "事故造成三人受伤。"
+      ]
+    ]
+  },
+  "b1_14": {
+    "text": "被动语态 - 现在完成时：已经/已经 + V3",
+    "note": "车已经修好了。所有邀请均已发送。",
+    "exp": "现在完成被动语态：<em>已经/已经 + V3</em>\n<br><br>当当前的结果很重要时使用，而不是当它确切发生时使用。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>项目已完成</s> → 已<em>完成</em>",
+      "<s>已发送</s> → <em>已</em>已发送",
+      "<s>已通知所有客人</s> → 已<em>通知</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project has been completed.",
+        "该项目已完成。"
+      ],
+      [
+        "All the guests have been informed.",
+        "所有客人均已收到通知。"
+      ]
+    ]
+  },
+  "b1_15": {
+    "text": "报告演讲-时移",
+    "note": "“我累了。” → 他说他累了。",
+    "exp": "当翻译成间接引语时，时态会“转移”回来：\n<br>• 现在简单→过去简单：<em>“我工作”→他说他工作</em>\n<br>• 过去简单→过去完成时：<em>“我去了”→她说她走了</em>\n<br>• 现在完成时 → 过去完成时：<em>“我见过”→ 他说他见过</em>\n<br>• 将 → 将；可以 → 可以；是 → 是；我要去 → 要去",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>他说他累了</s>→他说他<em>累了</em>（时移）",
+      "<s>她说她迟到了</s> → 她告诉<em>我/我们/他</em>...（告诉需要一个对象）",
+      "<s>他对我说</s> → 他<em>告诉我</em> /他<em>说</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She said: 'I am leaving.' → She said she was leaving.",
+        "她说她要走了。"
+      ],
+      [
+        "He told me: 'I can't come.' → He told me he couldn't come.",
+        "他说他不能来。"
+      ]
+    ]
+  },
+  "b1_16": {
+    "text": "报告问题 - 间接问题",
+    "note": "“你住在哪里？” → 她问我住在哪里。",
+    "exp": "在间接疑问句中：\n<br>1. <strong>无倒装</strong>（词序与声明中相同）\n<br>2。 <strong>没有辅助 do/did</strong>\n<br>3。一般问题（是/否）→<em>如果/是否+主语+动词</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她问我住在哪里</s> → 她问我<em>住在哪里</em>（没有倒装！）",
+      "<s>他问我在做什么</s> → 我<em>在做什么</em>",
+      "<s>她问我是否累了</s> → 我<em>是否</em>累了"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "\"Where do you work?\" → She asked where I worked.",
+        "她问我在哪里工作。"
+      ],
+      [
+        "\"Are you married?\" → He wanted to know if I was married.",
+        "他想知道我是否已婚。"
+      ]
+    ]
+  },
+  "b1_17": {
+    "text": "间接引语中的说与说",
+    "note": "他说.../他告诉我...-在告诉我你需要一张脸之后！",
+    "exp": "<em>说</em> - 没有必要的补充：<em>她说她累了。</em>\n<br><em>告诉</em> - 总是加上一个补充（告诉谁）：<em>她告诉我她累了。</em>\n<br><br>❌<s>他说他迟到了。</s> ✓ <em>他说他迟到了。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>他告诉我他迟到了</s>→他<em>说</em>/他<em>告诉我</em>",
+      "<s>她告诉我这个消息</s> → 她<em>告诉我这个消息</em>",
+      "<s>他们讲述了这个问题</s> → 他们<em>谈论了</em>这个问题/<em>说了</em>一些关于它的事情"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She said she needed help.",
+        "她说她需要帮助。"
+      ],
+      [
+        "He told us the meeting was cancelled.",
+        "他通知我们会议取消了。"
+      ]
+    ]
+  },
+  "b1_18": {
+    "text": "动词 + 动名词 (V-ing)",
+    "note": "我喜欢读书。她写完了。他避免犯错误。",
+    "exp": "这些动词后面需要加动名词 (V-ing)：\n<br><em>享受、完成、避免、介意、建议、保留、考虑、否认、想象、错过、实践、冒险、承认、延迟、不喜欢、幻想、放弃、参与、推迟、推荐、抵制</em>\n<br><br>记忆技巧：如果你能用“process”代替它，它很可能是一个动名词。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我喜欢游泳</s> → 我喜欢<em>游泳</em>",
+      "<s>她写完了</s> → 她写完了<em>写</em>",
+      "<s>他避免制造</s> → 他避免<em>制造</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I enjoy swimming in the sea.",
+        "我喜欢在海里游泳。"
+      ],
+      [
+        "She's considering moving abroad.",
+        "她正在考虑移居国外。"
+      ],
+      [
+        "He avoided making eye contact.",
+        "他避免目光接触。"
+      ]
+    ]
+  },
+  "b1_19": {
+    "text": "动词 + 不定式 (to + V)",
+    "note": "我想去。她决定留下来。他设法完成了。",
+    "exp": "这些动词需要带 <em>to</em> 的不定式：\n<br><em>想要、决定、希望、计划、管理、同意、承诺、拒绝、失败、期望、提供、学习、需要、负担、安排、尝试、选择、主张、要求、应得、帮助、假装、倾向、威胁</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她决定去</s> → 她决定<em>去</em>",
+      "<s>他想出去</s> → 他想<em>出去</em>",
+      "<s>我希望见到你</s> → 我希望<em>见到</em>你"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She decided to quit her job.",
+        "她决定退出。"
+      ],
+      [
+        "I hope to see you soon.",
+        "希望很快能见到你。"
+      ],
+      [
+        "He failed to answer.",
+        "他无法回答。"
+      ]
+    ]
+  },
+  "b1_20": {
+    "text": "两者兼有的动词（喜欢、爱、恨、开始、开始）",
+    "note": "我喜欢读书=我喜欢读书-略有不同",
+    "exp": "在<em>喜欢/喜欢/讨厌/喜欢</em>之后，两种选择都是可能的：\n<br>• V-ing - 我们从整体上讨论行动：<em>我喜欢烹饪。</em>（我通常喜欢烹饪）\n<br>• to-inf - 我们正在讨论一个具体案例：<em>我今晚想做饭。</em>\n<br><br>在<em>开始/开始/继续/停止</em>之后几乎没有区别。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我今晚想做饭</s> → 我想今晚<em>做饭</em>（具体情况）",
+      "<s>她开始工作</s> → 她开始<em>工作</em>或<em>去工作</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I love travelling / to travel.",
+        "我喜欢旅行。"
+      ],
+      [
+        "She started working / to work here in May.",
+        "她五月份开始在这里工作。"
+      ]
+    ]
+  },
+  "b1_21": {
+    "text": "过去的习惯和状态",
+    "note": "我以前踢足球。她曾经留着长发。",
+    "exp": "<em>曾经</em> - 过去已经停止的常规行为或情况。\n<br><br>形式：<em>used to + 不定式</em>\n<br>否认：<em>没用过</em>\n<br>问题：<em>您曾经...吗？</em>\n<br><br>⚠️ 没有现在时形式！你不能：<s>我目前使用</s>。\n<br>与<em>习惯于</em>的区别：<em>我习惯早起</em> = 我已经习惯了（现在）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我过去常常踢足球</s> → 我<em>曾经</em>踢球",
+      "<s>您曾经...吗？</s> → 您<em>曾经</em>...吗？ （在 did - 基本形式之后）",
+      "<s>我曾经住在那里</s> → 我曾经<em>住</em>（不带to+ing的不定式）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I used to smoke, but I stopped.",
+        "我以前也抽烟，但后来戒了。"
+      ],
+      [
+        "Did you use to play an instrument?",
+        "您以前演奏过乐器吗？"
+      ]
+    ]
+  },
+  "b1_22": {
+    "text": "关系从句：who、which、that、where、whose",
+    "note": "那个打电话的人。我读过的书。我们相遇的地方。",
+    "exp": "<em>谁</em> - 对于人：<em>打电话的女人是我的妹妹。</em>\n<br><em>其中</em> - 对于物体和动物：<em>我借的书很棒。</em>\n<br><em>that</em> - 用于人和物体（在定义子句中）：<em>他买的汽车是新的。</em>\n<br><em>where</em> - 地点：<em>我们见面的咖啡馆关门了。</em>\n<br><em>谁的</em> - 配件：<em>包被偷的女孩...</em>\n<br><br>在口语中，如果代词是宾语，则通常会被省略：<em>我看过的电影...</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>打电话的人</s>→打电话的人<em></em>（对人来说）",
+      "<s>我们相遇的地方</s> → 我们相遇的<em>地方</em>",
+      "<s>拿着包的女孩</s> → 拿着包的女孩<em></em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The man who lives next door is very friendly.",
+        "住在隔壁的那个人非常友好。"
+      ],
+      [
+        "The hotel where we stayed had a pool.",
+        "我们住的酒店有游泳池。"
+      ]
+    ]
+  },
+  "b1_23": {
+    "text": "对比连词：尽管、然而、尽管、尽管、而",
+    "note": "尽管下着雨，我们还是出去了。尽管下雨，我们还是去了。",
+    "exp": "<em>尽管/即使/尽管</em> + 从句。\n<br><em>尽管/尽管</em> + 名词/动名词（不是从句！）。\n<br><em>但是</em> + 新句子（句号或分号之后）。\n<br><em>而</em>是两个事实之间的对比。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>尽管正在下雨</s> → 尽管<em>下雨</em> / 尽管<em>下雨</em>（名词/动名词！）",
+      "<s>虽然下雨了，我们还是去了</s> → 虽然<em>下雨了</em>（虽然+句子）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Although she was tired, she kept working.",
+        "尽管很累，她还是继续工作。"
+      ],
+      [
+        "Despite the rain, he cycled to work.",
+        "尽管下雨，他还是骑自行车去上班。"
+      ],
+      [
+        "It was expensive. However, it was worth it.",
+        "价格很贵。尽管如此，这是值得的。"
+      ]
+    ]
+  },
+  "b1_24": {
+    "text": "将来进行时：will be + V-ing",
+    "note": "我明天九点上班。她将飞越大西洋。",
+    "exp": "<strong>未来连续</strong> = <em>将是 + V-ing</em>\n<br><br>价值观：\n<br>1.将在未来某个特定时刻<strong>正在进行</strong>的动作：<em>明天这个时候，我将躺在海滩上。</em>\n<br>2。未来计划的、预期的行动（事件的自然进程）：<em>无论如何我明天都会见到她。</em>\n<br>3。关于计划的礼貌问题（无压力）：<em>你会来参加聚会吗？</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我将在 9 点工作</s> → 我将<em>工作</em>",
+      "<s>她会工作</s> → 她<em>将会工作</em>"
+    ],
+    "markers": {
+      "tags": [
+        "明天这个时候",
+        "下周这个时候",
+        "明天晚上 8 点",
+        "明天早上",
+        "明天一整天",
+        "两小时内",
+        "当你到达时（+未来连续）",
+        "当你睡觉时"
+      ],
+      "note": "通常用于有关计划的礼貌问题：您会使用这辆车吗？"
+    },
+    "ex": [
+      [
+        "Don't call at 8 — I'll be having dinner.",
+        "八点别打电话——我去吃晚饭。"
+      ],
+      [
+        "This time next week I'll be sitting on a beach.",
+        "下周的这个时候我将坐在海滩上。"
+      ]
+    ]
+  },
+  "b1_25": {
+    "text": "未来完美：将有+V3",
+    "note": "到周五我就会完成报告。到 2030 年，他们将建成这座桥。",
+    "exp": "<strong>未来完美</strong> = <em>将有+ V3</em>\n<br><br>将在未来某个时间点<strong>之前</strong>完成的操作。\n<br>经常与<em>按（时间）、之前</em>连用：<em>By the time youarriage, I'll have煮熟的晚餐。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>到周五我将完成</s> → 我<em>将完成</em>（将在截止日期前完成=未来完美）",
+      "<s>我将在周日之前完成</s> → 我将<em>完成</em>"
+    ],
+    "markers": {
+      "tags": [
+        "明天之前",
+        "周五之前",
+        "到本周末",
+        "到年底",
+        "到 2030 年",
+        "当您到达时",
+        "在你到达这里之前",
+        "午夜之前",
+        "两小时后（= 那时）"
+      ],
+      "note": "by（时间）是一个关键标记：操作将在此时之前完成。"
+    },
+    "ex": [
+      [
+        "I'll have finished this book by Sunday.",
+        "我将在周日之前读完这本书。"
+      ],
+      [
+        "By 2050, scientists will have found a cure.",
+        "到 2050 年，科学家将找到治疗方法。"
+      ]
+    ]
+  },
+  "b1_26": {
+    "text": "次要目标：为了、为了、以便、以便",
+    "note": "我努力学习才能通过。她很早就出发了，以便能赶上火车。",
+    "exp": "<em>为了/为了</em> + 不定式 - 目标。 <em>为了</em>和<em>以便</em>更正式一些。\n<br><em>so</em> + 主语 + 动词 - 与另一个主语或情态动词一起表达目的。\n<br><br>⚠️否认：<em>为了不/所以不</em>（不是<s>不</s>）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我努力学习是为了通过</s> → 我努力学习<em>是为了通过</em>",
+      "<s>她提前出发是为了赶火车</s> → <em>这样</em>她可以",
+      "<s>为了不让他不高兴</s> → <em>为了不让他不高兴</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She studies hard in order to get a scholarship.",
+        "她努力学习以获得奖学金。"
+      ],
+      [
+        "He left early so that he could catch the last train.",
+        "他很早就出发赶末班车了。"
+      ]
+    ]
+  },
+  "b1_27": {
+    "text": "短语动词 - 基本",
+    "note": "放弃、查找、关闭、找出、继续、推迟、继续",
+    "exp": "短语动词 = 动词 + 助词（介词或副词）。其含义通常是惯用的。\n<br><br>最常见的：\n<br>• <em>放弃</em> = 放弃，放弃\n<br>• <em>找出</em> = 找出，找出\n<br>• <em>打开/关闭</em> = 打开/关闭\n<br>• <em>查找</em> = 查找（在字典/互联网中）\n<br>• <em>照顾</em> = 保重\n<br>• <em>推迟</em> = 推迟\n<br>• <em>继续</em> = 继续\n<br>• <em>get on/along</em> =（与某人）相处\n<br>• <em>抚养</em> = 教育；提出话题\n<br>• <em>遇到</em> = 偶然发现",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她戒烟了</s> → 她戒了<em>吸烟</em>",
+      "<s>我在</s>中查找了这个词 → 我<em>它</em>查找了（动词和助词之间的代词）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've given up smoking.",
+        "我戒烟了。"
+      ],
+      [
+        "Can you look after my cat while I'm away?",
+        "我不在的时候你能照顾一下我的猫吗？"
+      ],
+      [
+        "We need to find out what happened.",
+        "我们需要找出发生了什么。"
+      ]
+    ]
+  },
+  "b2_01": {
+    "text": "过去完成时: had + V3",
+    "note": "当她到达时，他已经离开了。",
+    "exp": "<strong>过去完成时</strong> - 在过去的另一个时刻或事件<strong>之前</strong>完成的动作。\n<br><br>形式：所有面<em>had + V3</em>。\n<br>否定：<em>没有 + V3</em>\n<br>问题：<em>有 + 主题 + V3？</em>\n<br><br>典型连词：<em>before、after、when、by the time、already、just、never</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>当我到达时，她已经离开了</s> → 她<em>已经离开了</em>",
+      "<s>他从未见过雪</s> → 他从未<em>见过</em>雪",
+      "<s>我走了</s>→我<em>走了</em>"
+    ],
+    "markers": {
+      "tags": [
+        "到时候",
+        "之前",
+        "之后",
+        "当（+过去简单）",
+        "已经",
+        "只是",
+        "从来没有",
+        "曾经",
+        "周一",
+        "到那时",
+        "尽快",
+        "一次",
+        "直到",
+        "几乎...什么时候",
+        "不早于..."
+      ],
+      "note": "过去完成时表明过去的一个动作发生在另一个动作之前。"
+    },
+    "ex": [
+      [
+        "When I arrived, she had already left.",
+        "当我到达时，她已经离开了。"
+      ],
+      [
+        "He had never seen snow before that winter.",
+        "那年冬天之前他从未见过雪。"
+      ]
+    ]
+  },
+  "b2_02": {
+    "text": "过去完成进行时：had was + V-ing",
+    "note": "当她到达时，他已经等了两个小时了。",
+    "exp": "<strong>过去完成进行时</strong> = had was + V-ing\n<br>强调过去另一点之前发生的动作的<strong>持续时间</strong>。\n<br>经常解释过去的原因或可见的结果。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她已经筋疲力尽了 - 她一直在工作</s> → 她一直在<em>工作</em>",
+      "<s>您等了多久？</s> → 您<em>等了多久</em>？"
+    ],
+    "markers": {
+      "tags": [
+        "对于",
+        "自从",
+        "多久...？",
+        "整个早上",
+        "全天",
+        "到时候",
+        "当",
+        "之前",
+        "已经为...",
+        "当她到达时两个小时"
+      ],
+      "note": "强调直到过去一刻的持续时间。通常会解释病情的原因。"
+    },
+    "ex": [
+      [
+        "She was exhausted — she'd been working all night.",
+        "她已经筋疲力尽了——她工作了一整夜。"
+      ],
+      [
+        "How long had you been waiting before she arrived?",
+        "她来之前你等了多久？"
+      ]
+    ]
+  },
+  "b2_03": {
+    "text": "必须有 + V3 - 对过去的自信结论",
+    "note": "她肯定忘记了。 - 我确信这是唯一的解释",
+    "exp": "<em>必须有 + V3</em> = 我确定这发生了（唯一合乎逻辑的解释）。\n<br><br>置信度：\n<br>• <em>一定已经完成了</em> - 几乎肯定发生了\n<br>• <em>应该完成</em> - 预计会发生\n<br>• <em>可能/可能已经完成</em> - 它可能已经发生\n<br>• <em>不可能完成</em> - 它可能没有发生",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她一定忘记了</s> → 她一定<em>已经忘记了</em>",
+      "<s>他必须早点离开</s> → 他必须<em>离开</em>",
+      "<s>你昨天一定很累</s> - 对于过去：<em>一定是</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You must have been exhausted after that journey.",
+        "这次旅行之后你一定很累了。"
+      ],
+      [
+        "She must have left early — her coat is gone.",
+        "她显然很早就离开了——她的外套不见了。"
+      ]
+    ]
+  },
+  "b2_04": {
+    "text": "不能拥有 + V3 - 过去不可能",
+    "note": "她不可能这么说！他不可能在那儿。",
+    "exp": "<em>不能有 + V3</em> = 我确信这<strong>没有发生</strong>（这是不可能的）。\n<br>与<em>相反的事情一定已经完成了</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她不能忘记</s> → 她不能<em>忘记</em>",
+      "<s>他不可能在那里</s> - 没错！不能拥有=不可能；不可能有=机会"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He can't have seen her — she was abroad.",
+        "他看不到她——她在国外。"
+      ],
+      [
+        "That can't have been the right address.",
+        "这不可能是正确的地址。"
+      ]
+    ]
+  },
+  "b2_05": {
+    "text": "应该有+V3——责备和遗憾",
+    "note": "我应该打电话的。你不应该这么说。",
+    "exp": "<em>应该有 + V3</em> = 这样做是正确的，但我没有（遗憾，责备）。\n<br><em>不应该 + V3</em> = 不应该这样做。\n<br><br>这是表达遗憾和批评的一种非常常见的结构。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我应该给她打电话</s> → 我应该<em>打电话</em>",
+      "<s>她不应该走</s> → 她不应该<em>走</em>",
+      "<s>你应该学习</s> → 你应该<em>学习</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I should have brought an umbrella.",
+        "我应该带把伞的。"
+      ],
+      [
+        "She shouldn't have told him the secret.",
+        "她不应该告诉他这个秘密。"
+      ]
+    ]
+  },
+  "b2_06": {
+    "text": "might / might have + V3 - 过去的可能性",
+    "note": "她可能已经忘记了。情况可能会更糟。",
+    "exp": "<em>可能/可能有 + V3</em> = 这可能已经发生（我们不确定）。\n<br><br>另外：<em>本来可以做到</em> =本来可以做到（但没有）：<em>如果我更加努力，我就可以获胜。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她可能忘记了</s> → 她可能<em>已经忘记了</em>",
+      "<s>他本来可以赢</s> → 他本来可以<em>赢</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She might have forgotten about the meeting.",
+        "也许她忘记了这次会议。"
+      ],
+      [
+        "He could have left through the back door.",
+        "他本来可以从后门出去的。"
+      ]
+    ]
+  },
+  "b2_07": {
+    "text": "第三种条件句：If + 过去完成时，would have + V3",
+    "note": "如果我更努力地学习，我就会通过。",
+    "exp": "过去的不真实情况——我们正在谈论一些没有发生过的事情。\n<br><br>形式：<em>If + 过去完成时，会有 + V3</em>\n<br><br>这两个元素都是不真实的：\n<br>• 不满足条件\n<br>•也没有结果",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>如果我更努力地学习，我就会通过</s> → 如果我<em>学过</em>...（第三种 - 过去完成时！）",
+      "<s>如果她吃了药，她就会康复</s> → 她就会<em>康复</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If she had taken the medicine, she would have recovered.",
+        "如果她吃了药，就会好起来。"
+      ],
+      [
+        "If he hadn't left early, he would have met her.",
+        "如果不是他走得早，他早就遇见了她。"
+      ]
+    ]
+  },
+  "b2_08": {
+    "text": "混合条件句",
+    "note": "如果我学过的话，我现在就能说得流利了。 （过去→现在）",
+    "exp": "混合条件连接不同的时间计划：\n<br><br>1。 <strong>过去的情况→现在的结果</strong>：\n<br><em>If + 过去完成时、would + 不定式</em>\n<br><em>如果我接受了那份工作，我现在就会在纽约。</em>\n<br><br>2。 <strong>当前状况 → 过去结果</strong>：\n<br><em>如果+过去简单，就会+V3</em>\n<br><em>如果她再小心一些，就不会弄坏它了。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>如果我学习过，我昨天就会说得很流利</s> - 关于过去→现在的混合类型，而不是过去",
+      "<s>如果她小心的话，她就不会弄坏它</s> → 她<em>就不会弄坏它</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If I had studied medicine, I would be a doctor now.",
+        "如果我学习成为一名医生，我现在就会成为一名医生。"
+      ]
+    ]
+  },
+  "b2_09": {
+    "text": "未来被动语态和带有情态动词的被动语态",
+    "note": "它将完成。它必须被修复。应该检查一下。",
+    "exp": "情态 + 被动：<em>情态 + be + V3</em>\n<br>• <em>将完成</em> - 将完成\n<br>• <em>必须完成</em> - 必须完成\n<br>• <em>应该完成</em> - 应该完成\n<br>• <em>可以做到</em> - 可以做到",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>报告将发布</s> → 将<em>发布</em>",
+      "<s>必须完成</s> → 必须<em>完成</em>",
+      "<s>应该做</s>→应该<em>完成</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The report will be published tomorrow.",
+        "该报告将于明天发布。"
+      ],
+      [
+        "This mistake must be corrected immediately.",
+        "这个错误必须立即纠正。"
+      ]
+    ]
+  },
+  "b2_10": {
+    "text": "使役有/得到：做了某事",
+    "note": "我剪了头发。她把车修好了。",
+    "exp": "<em>拥有/获取 + 对象 + V3</em> - 您订购服务或某人为您做某事。\n<br><br>比较：\n<br>• <em>我剪了头发。</em> - 我自己剪了头发（这并不典型）\n<br>• <em>我剪了头发。</em> - 由美发师剪的\n<br><br><em>get</em> 更加会话化一点，<em>have</em> 更加正式一点。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我在理发店剪了头发</s> → 我<em>剪了</em>我的头发",
+      "<s>她把车修好了</s> → 她把车修好了<em></em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I need to have my teeth checked.",
+        "我需要让医生检查我的牙齿。"
+      ],
+      [
+        "She had her house painted last spring.",
+        "去年春天，她粉刷了房子（雇用工人）。"
+      ]
+    ]
+  },
+  "b2_11": {
+    "text": "被动报告动词：据说.../他被认为...",
+    "note": "人们认为价格将会上涨。众所周知，她很诚实。",
+    "exp": "动词<em>说、思考、相信、报告、知道、期望、考虑</em>的两种构造选项：\n<br><br>1。 <em>It + 被动语态 + that + 从句</em>： <em>It is believe that...</em>\n<br>2。 <em>主语+ is + V3 + to-不定式</em>：<em>她被认为是...</em>\n<br><br>用于新闻和官方文本。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>据说价格会上涨</s> → 会<em>上涨</em>",
+      "<s>人们相信他是诚实的</s> → 人们相信他<em>是</em>诚实的"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It is reported that three people were injured.",
+        "据报道，三人受伤。"
+      ],
+      [
+        "He is thought to have left the country.",
+        "据信他已离开该国。"
+      ]
+    ]
+  },
+  "b2_12": {
+    "text": "记住/忘记 + V-ing 与 to-inf - 含义差异",
+    "note": "我记得锁定它（过去的事实）与记住锁定它（任务）",
+    "exp": "<em>记住/忘记 + V-ing</em> - 关于我们记住/忘记的过去事件。\n<br><em>记住/忘记+ to-inf</em> - 关于任务：记住将来要做的事情。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我记得锁定它</s>（如果事实已经过去）→我记得<em>锁定</em>它",
+      "<s>记住锁定它！</s>（任务）→ 记住<em>锁定</em>它！",
+      "<s>我忘记做作业</s>（如果你还没有做）→ 我忘记<em>做</em>作业"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I remember meeting her at a conference. (это было)",
+        "我记得在一次会议上见过她。"
+      ],
+      [
+        "Remember to call your mother! (нужно сделать)",
+        "别忘了给你妈妈打电话！"
+      ],
+      [
+        "I forgot to buy milk. (не сделал)",
+        "我忘记买牛奶了。"
+      ]
+    ]
+  },
+  "b2_13": {
+    "text": "停止/后悔/平均值+V-ing vs to-inf",
+    "note": "她停止吸烟 vs 她停止吸烟",
+    "exp": "<em>stop + V-ing</em> - 停止动作。\n<br><em>stop + to-inf</em> - 停止做其他事情。\n<br><br><em>regret + V-ing</em> - 对过去感到遗憾。\n<br><em>regret + to-inf</em> - 遗憾地通知您（正式）：<em>我遗憾地通知您...</em>\n<br><br><em>意思是 + V-ing</em> - 意思是：<em>这意味着更加努力。</em>\n<br><em>mean + to-inf</em> - 意图：<em>我想给你打电话。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她停止吸烟</s>（如果戒烟）→ 她停止<em>吸烟</em>",
+      "<s>她停止吸烟来回答</s>（停下来）→她停下来<em>回答</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He stopped smoking last year.",
+        "他去年戒烟了。"
+      ],
+      [
+        "She stopped to look at the view.",
+        "她停下来欣赏风景。"
+      ]
+    ]
+  },
+  "b2_14": {
+    "text": "Wish + 一般过去时 - 改变现在的愿望",
+    "note": "我希望我知道答案。我希望我有更多的时间。",
+    "exp": "<em>wish + Past Simple</em> - 关于当前不切实际的愿望。\n<br>形式与第二类条件句相同。对于<em>to be</em> - <em>were</em>（正式），尽管也使用<em>was</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我希望我知道答案</s> → 我希望我<em>知道</em>",
+      "<s>我希望我更高一些</s> - 也许，但正式地说：<em>我希望我更高一些</em>",
+      "<s>我希望我知道</s> - 只了解其他人：<em>我希望你能听</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish I spoke better English.",
+        "遗憾的是我英语说得不好。"
+      ],
+      [
+        "She wishes she lived in a warmer country.",
+        "她想生活在一个温暖的国家。"
+      ]
+    ]
+  },
+  "b2_15": {
+    "text": "愿望 + 过去完成时 - 对过去的遗憾",
+    "note": "我希望我能更努力地学习。我希望我没有这么说过。",
+    "exp": "<em>愿望 + 过去完成时</em> - 对无法改变的过去事件感到遗憾。形式与第三种条件句相同。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我希望我没有这么说</s> → 我希望我<em>没有说过</em>（对过去的遗憾=过去完成时）",
+      "<s>我希望她接受了那份工作</s>→她<em>接受了</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish I hadn't eaten so much.",
+        "可惜我吃了这么多。"
+      ],
+      [
+        "She wishes she had taken that job offer.",
+        "她希望自己接受了这份工作机会。"
+      ]
+    ]
+  },
+  "b2_16": {
+    "text": "Wish + Will - 渴望改变别人的行为",
+    "note": "我希望你别再说话了。我希望它能变暖。",
+    "exp": "<em>希望 + 会</em> - 由于别人的行为或渴望改变情况而感到恼火。\n<br>⚠️ 你不能使用关于你自己的内容：<s>我希望我会</s> - 只能关于其他人或天气/情况。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我希望我能停下来</s>（关于我自己）→ 你不能！使用：<em>我希望我能停下来</em>",
+      "<s>我希望你停止说话</s> → 我希望你<em>停止</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish you would listen to me.",
+        "我希望你能听我说。"
+      ],
+      [
+        "I wish it would stop raining.",
+        "我希望雨快点停。"
+      ]
+    ]
+  },
+  "b2_17": {
+    "text": "定义性从句与非定义性从句",
+    "note": "打电话的人（确定哪一个）与打电话的我兄弟（添加信息）",
+    "exp": "<strong>定义</strong>（定义）：不带逗号 - 他们澄清他们在谈论谁/什么。代词可以替换为<em>that</em>。它不能在不失去意义的情况下被删除。\n<br><br><strong>非定义：用逗号 - 添加信息而不改变含义。 <em></em> <strong>不能</strong>使用。可以去除。\n<br><br>⚠️ <em>which</em>在非限定词中可以指整个句子：<em>她通过了考试，这让所有人都感到惊讶。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我的兄弟，那个打电话的人，是一名医生</s> → 我的兄弟，<em>他</em>打电话的（你不能在非定义的情况下使用它）",
+      "<s>住在隔壁的那个人非常友善</s> → 不加逗号（定义从句）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film that I told you about is on tonight. (какой именно)",
+        "我告诉过你的电影今晚上映。"
+      ],
+      [
+        "My sister, who lives in Paris, is visiting next week. (доп. инфо)",
+        "我住在巴黎的姐姐将于下周抵达。"
+      ]
+    ]
+  },
+  "b2_18": {
+    "text": "关系从句中的介词",
+    "note": "与我一起工作的人/与我一起工作的人（正式）",
+    "exp": "在口语中，介词出现在结尾：<em>我长大的房子。</em>\n<br>在书面/正式演讲中，<em>which/whom</em>之前的介词：<em>我长大的房子。</em>\n<br><br>介词后 - 仅<em>which</em>（用于事物）和<em>whom</em>（用于人）。从来没有<em>那样</em>！",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我在里面长大的房子</s>→额外<em>它</em>",
+      "<s>与我交谈的人</s> → 我<em>与之交谈的人</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project I'm working on is fascinating. (разг.)",
+        "我正在从事的项目非常有趣。"
+      ],
+      [
+        "The project on which I am working is fascinating. (форм.)",
+        ""
+      ]
+    ]
+  },
+  "b2_19": {
+    "text": "结果连词：so...that、such...that、因此、结果",
+    "note": "天气太冷了，我们就呆在里面。她工作努力；因此，她通过了。",
+    "exp": "<em>so + 形容词/副词 + that</em>：<em>他说得太快了，没人听懂。</em>\n<br><em>such + (a/an) + 形容词 + 名词 + that</em>：<em>电影太长了，我睡着了。</em>\n<br><br>结果的连接词（句子之间）：<em>因此、因此、作为结果、因此、因此</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>天气太冷了，我们留下来了</s> - 对！但是：<s>天气太冷了</s> → 这真是<em>寒冷的一天</em>",
+      "<s>他的解脱是如此巨大</s> → 他的解脱如此巨大（用形容词 - 所以）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It was such a good book that I read it twice.",
+        "这本书太好了，我看了两遍。"
+      ],
+      [
+        "She missed the deadline; consequently, she lost the contract.",
+        "她错过了最后期限；结果，她失去了合同。"
+      ]
+    ]
+  },
+  "b2_20": {
+    "text": "习惯/习惯+V-ing - 习惯（真实）",
+    "note": "我习惯早起。她已经习惯寒冷了。",
+    "exp": "<em>beused to + V-ing /名词</em> = to beused to（已经习惯了）。\n<br><em>习惯+ V-ing /名词</em> = 习惯（习惯的过程）。\n<br><br>⚠️不要与<em>used to +不定式</em>（过去的习惯）混淆。\n<br>• <em>我曾经住在巴黎。</em> - 曾经住过（不再）\n<br>• <em>我习惯了生活在大城市。</em> - 习惯了生活在大城市",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我习惯早起</s> → 我习惯<em>醒来</em>（习惯+ V-ing）",
+      "<s>我习惯了醒来</s> → 我习惯了<em>醒来</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm not used to getting up so early.",
+        "我不习惯起这么早。"
+      ],
+      [
+        "It took time, but she got used to the new system.",
+        "虽然花了一些时间，但她还是习惯了新系统。"
+      ]
+    ]
+  },
+  "b2_21": {
+    "text": "过去的未来：会/将会",
+    "note": "她说她会打电话。他正要离开。",
+    "exp": "<strong>过去的未来</strong> - 从过去的角度表达未来的结构。用于间接引语和叙述。\n<br><br>• <em>would + V</em>（来自遗嘱）：<em>她说她会来。</em>\n<br>• <em>曾经/我们要去+V</em>：<em>他本来要打电话但是忘记了。</em>\n<br>• <em>正要+V</em>：<em>他到达时她正要离开。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她说她会来</s> → 她说她<em>会</em>来（时移）",
+      "<s>他要打电话</s> → 他要<em>打电话</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She promised she would be there.",
+        "她答应她会来。"
+      ],
+      [
+        "He was about to leave when she called.",
+        "他正要离开，她打电话来了。"
+      ]
+    ]
+  },
+  "b2_22": {
+    "text": "be to - 正式任命和命令",
+    "note": "你要在周一之前报告。他们再也不会见面了。",
+    "exp": "<em>be to + 不定式</em> - 官方命令、计划中的事件和叙述中的命运。\n<br><br>1。法律指示：<em>乘客应保持座位。</em>\n<br>2。官方计划：<em>峰会将于下个月举行。</em>\n<br>3。叙述中的命运：<em>他们再也没有见面。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>您要提交</s> → 您<em>要</em>提交",
+      "<s>她永远不会见面</s> → 她<em>永远</em>会面"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You are to submit the report by Friday.",
+        "您必须在周五之前提交报告。"
+      ],
+      [
+        "She was to become one of the greatest scientists of her time.",
+        "她注定会成为最伟大的科学家之一。"
+      ]
+    ]
+  },
+  "b2_23": {
+    "text": "应该——道德义务和逻辑期望",
+    "note": "你应该道歉。她应该告诉我们的。",
+    "exp": "<em>应该</em>是一种道德义务或逻辑期望。 <em>应该</em>更强。\n<br>始终使用to：<em>应该去</em>（而不是应该）。\n<br>对于过去：<em>应该有+ V3</em> - 责备或遗憾。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你应该道歉</s> → 你应该<em></em>道歉（应该总是用to！）",
+      "<s>她应该告诉我们</s> → 她应该<em></em>告诉我们"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You ought to apologise for what you said.",
+        "你应该为你所说的话道歉。"
+      ],
+      [
+        "She ought to have told us earlier.",
+        "她应该早点告诉我们。"
+      ]
+    ]
+  },
+  "b2_24": {
+    "text": "need - 情态动词和规则动词",
+    "note": "你不用担心。 / 她不需要来。",
+    "exp": "<em>需要</em>作为情态动词（正式，在疑问句/否定句中）和常规动词。\n<br><br><strong>模态</strong>（不带 -s，不带 to）：\n<br>• <em>你不用担心。</em> / <em>需要我解释吗？</em>\n<br><br><strong>常规需要 + </strong>：\n<br>• <em>她不需要来。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你不必担心</s> → 你不必担心（情态动词needn't without to）",
+      "<s>她需要来</s> → 她<em>需要</em>来（常规需要+到）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You needn't fill in both forms.",
+        "您无需填写这两个表格。"
+      ],
+      [
+        "She doesn't need to attend every meeting.",
+        "她不必参加每次会议。"
+      ]
+    ]
+  },
+  "b2_25": {
+    "text": "敢——勇气和挑战",
+    "note": "你怎么敢！我不敢问。她敢于挑战他。",
+    "exp": "<em>敢</em> - 敢，敢。反问句和否定句中的情态。\n<br><br><strong>莫代尔</strong>：<em>你怎么敢！ / 我不敢问。 /我敢说...</em>\n<br><strong>正常</strong>：<em>她不敢看。 / 他敢于挑战老大。</em>\n<br><br>⚠️<em>我敢说</em>=也许，可能（稳定表达）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你怎么敢说</s> → 你怎么敢说（在“daemon”之后没有“to”）",
+      "<s>我敢说这是正常的； <em>我敢说</em>=也许"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "How dare you speak to me like that!",
+        "你竟敢这样对我说话！"
+      ],
+      [
+        "She dared to express her opinion openly.",
+        "她敢于公开表达自己的意见。"
+      ]
+    ]
+  },
+  "b2_26": {
+    "text": "反身代词：我自己、你自己、他自己……",
+    "note": "我伤害了自己。她自己做的。他们玩得很开心。",
+    "exp": "<em>我自己，你自己，你自己，你自己，你自己，你自己，你自己，你自己</em>。\n<br><br>1。动作针对主体：<em>他割伤了自己。</em>\n<br>2。强调（你自己，没有帮助）：<em>我自己做的。</em>\n<br><br>稳定：<em>我自己</em> = 单独； <em>自助</em>=自助。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她教她玩</s>（如果她自己）→ 她教<em>她自己</em>玩",
+      "<s>他们很享受</s> → 他们很享受<em>自己</em>",
+      "<s>我自己做的</s> → 我<em>我自己做的</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She taught herself to play the guitar.",
+        "她自学弹吉他。"
+      ],
+      [
+        "The machine turns itself off automatically.",
+        "机器自动关闭。"
+      ]
+    ]
+  },
+  "b2_27": {
+    "text": "集体名词：团队、家庭、委员会……",
+    "note": "球队踢得很好。 (BrE) / 球队正在比赛。 (AmE)",
+    "exp": "集体名词是一个整体。\n<br><br>• <strong>BrE</strong>：通常是复数。 number：<em>球队正在比赛。</em>\n<br>• <strong>AmE</strong>：通常为单位。 number：<em>球队正在比赛。</em>\n<br><br>常见：<em>团队、家庭、政府、委员会、工作人员、观众、工作人员、警察、军队、公众、管理层</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>警察在这里</s> → 警察<em>在这里</em>（BrE 中的复数）",
+      "<s>球队打得很好</s> - 在 AmE 中是这样； <em>在 BrE 中是正确的</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The government have announced new measures. (BrE)",
+        "政府宣布了新措施。"
+      ],
+      [
+        "The audience were on their feet. (BrE)",
+        "观众们跳了起来。"
+      ]
+    ]
+  },
+  "b2_28": {
+    "text": "分数和数学",
+    "note": "二分之一、四分之三、5.7 = 五点七、25%",
+    "exp": "分数：<em>½ = 二分之一； ⅓=三分之一； ¼ = 四分之一； 3/4 = 四分之三； ⅔ = 三分之二</em>。\n<br>分子是定量的，分母是序数（如果分子> 1则为复数）。\n<br><br>小数：句点（不是逗号）：<em>3.14 = 三点一四</em>。\n<br>数学：<em>+ = 加； - = 减； × = 次； ÷ = 除以； = = 等于</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>三分之二的学生</s> → <em>三分之二的学生</em>",
+      "<s>3,14</s> → 3<em>.</em>14（句点，不是逗号）",
+      "<s>25%</s> → 25<em>%</em>（不含 s）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Three quarters of students passed the exam.",
+        "四分之三的学生通过了考试。"
+      ],
+      [
+        "The inflation rate fell to 2.5 percent.",
+        "通货膨胀率降至2.5%。"
+      ]
+    ]
+  },
+  "b2_29": {
+    "text": "副词的比较级",
+    "note": "更快、更仔细、最好、更差、更远",
+    "exp": "副词根据与形容词相同的规则形成比较级。\n<br><br>• 单音节：+<em>er/est</em>：<em>快→更快，硬→硬，早→早</em>\n<br>• 最<em>-ly</em>：<em>更多/最</em>：<em>仔细→更仔细→最仔细</em>\n<br>• 错误：<em>好→更好→最好，差→更差→最差，远→更远→最远，小→少→最少，多→更多→最多</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她唱得更动听</s> → 她唱得更动听<em>动听</em>",
+      "<s>他跑得更快</s> → 他<em>跑得更快</em>",
+      "<s>她工作最努力</s> → 她工作<em>最努力</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She spoke more confidently than before.",
+        "她说话比以前更加自信了。"
+      ],
+      [
+        "He works hardest in the team.",
+        "他比团队中的任何人都更加努力。"
+      ]
+    ]
+  },
+  "c1_01": {
+    "text": "否定副词的倒装",
+    "note": "我从来没有见过这个。她很少抱怨。",
+    "exp": "为了强调，否定副词/表达被放置在开头 → 助动词主语之前（词序如问题中）。\n<br><br>引发倒装的单词：<em>从不、很少、很少、很少、几乎、几乎、勉强、不仅、仅、不久</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我从未见过</s> → 从未<em>我见过</em>（倒装：助动词在主语之前）",
+      "<s>她很少抱怨</s> → 她很少<em>抱怨</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Never have I seen anything so beautiful.",
+        "我从来没有见过如此美丽的东西。"
+      ],
+      [
+        "Rarely does she make a mistake.",
+        "她很少犯错误。"
+      ],
+      [
+        "Little did I know what was coming.",
+        "我不知道等待我的是什么。"
+      ]
+    ]
+  },
+  "c1_02": {
+    "text": "不仅...而且还有反转",
+    "note": "他不仅道歉，还主动提出提供帮助。",
+    "exp": "<em>不仅第一部分有+反转</em>，第二部分也是通常的顺序。\n<br>用于强调：表示某事比预期更进一步。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>他不仅道歉</s> → 他不仅<em>道歉</em>",
+      "<s>她不仅有才华，而且很努力</s> → 但<em>她</em>也很努力（第二部分是通常的顺序）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Not only is she talented, but she is also very hard-working.",
+        "她不仅才华横溢，而且非常努力。"
+      ],
+      [
+        "Not only did they arrive late, but they also forgot the documents.",
+        "他们不仅迟到了，还忘记了证件。"
+      ]
+    ]
+  },
+  "c1_03": {
+    "text": "几乎/几乎/不久+反转",
+    "note": "我刚坐下，电话就响了。",
+    "exp": "立即数序列构造：\n<br>• <em>几乎/很少 + had + 主语 + V3 + 当/之前 + 一般过去时</em>\n<br>• <em>+ had + subject + V3 + 不久于+过去简单</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我几乎没有坐过</s> → 我几乎没有<em>坐过</em>",
+      "<s>我一坐下</s> → 我一坐下</em>就"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Hardly had she arrived when it started to rain.",
+        "她刚到就下雨了。"
+      ],
+      [
+        "No sooner had I sat down than someone knocked at the door.",
+        "我刚坐下，就有人敲门。"
+      ]
+    ]
+  },
+  "c1_04": {
+    "text": "条件句中的倒装：Had / Were / Should",
+    "note": "如果我知道（=如果我知道）。我是你吗（=如果我是你）。",
+    "exp": "正式风格 - 排除 <em>if</em>，使用反转：\n<br>• <em>Had + 主语 + V3</em> = If + 过去完成时（第三种类型）\n<br>• <em>Were + 主语（+ to + 不定式）</em> = If + 一般过去时（第二种类型）\n<br>• <em>Should + 主语 + 不定式</em> = If（不太可能，输入 1）",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>如果我知道，我会帮忙</s> → <em>如果</em>我知道",
+      "<s>如果您需要帮助，请致电</s> → 请<em>致电</em>（请不要在后面加上）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Had she told me, I would have helped.",
+        "如果她告诉我，我就会帮忙。"
+      ],
+      [
+        "Were I in your position, I would accept.",
+        "如果我是你，我就会同意。"
+      ],
+      [
+        "Should you need assistance, please call us.",
+        "如果您需要帮助，请致电我们。"
+      ]
+    ]
+  },
+  "c1_05": {
+    "text": "它-裂口：是约翰打来的。",
+    "note": "突出显示句子的任何成员",
+    "exp": "结构：<em>It + to be + 所选元素 + who/that/which + rest</em>\n<br>将注意力焦点转移到突出显示的元素上。\n<br><br>• 对于人 - <em>谁</em>；对于事物/情况 - <em>那个/哪个</em>。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>他打电话给约翰</s> → 是约翰打电话（额外的他）",
+      "<s>是噪音吵醒了我</s> - 正确，但是<em>这</em>对事情来说更可取"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It was the noise that woke me up. (не шум вообще, именно этот)",
+        "是噪音把我吵醒了。"
+      ],
+      [
+        "It is hard work that leads to success.",
+        "艰苦的工作才能带来成功。"
+      ]
+    ]
+  },
+  "c1_06": {
+    "text": "Wh-cleft：令我惊讶的是价格。",
+    "note": "我需要的是休息。她的话让所有人都震惊了。",
+    "exp": "结构：<em>What + 从句 + to be + 突出显示的元素</em>\n<br>强调最后引入的元素的重要性。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我爱的是伦敦</s> → 我爱<em>是</em>伦敦（额外）",
+      "<s>让我惊讶的是价格</s> → 让我惊讶的<em>是</em>价格（单数）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "What I love about London is the diversity.",
+        "我最喜欢伦敦的一点是它的多样性。"
+      ],
+      [
+        "What he did was completely unexpected.",
+        "他的所作所为完全出乎他的意料。"
+      ]
+    ]
+  },
+  "c1_07": {
+    "text": "要求动词后的正式虚拟语气",
+    "note": "我建议他离开。让她了解情况至关重要。",
+    "exp": "在<em>建议、推荐、坚持、要求、提议、请求、要求、询问、建议、命令 + that</em> 之后 - 用于<strong>所有人</strong>的动词的基本形式（不带<em>-s</em>、不带<em>was</em>）。\n<br><br>英国版本经常使用<em>应该</em>代替虚拟语气：<em>我建议他应该离开。</em>\n<br>美国语 - 通常是纯粹的虚拟语气。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我建议他离开</s> → 我建议他<em>离开</em>（虚拟语气 - 不带 -s！）",
+      "<s>必须告知她</s> → 她<em>被告知</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I recommend that he see a doctor.",
+        "我建议他去看医生。"
+      ],
+      [
+        "It is essential that all students attend the meeting.",
+        "所有学生都必须参加会议。"
+      ]
+    ]
+  },
+  "c1_08": {
+    "text": "是时候了+过去简单时",
+    "note": "你该睡觉了。我们是时候离开了。",
+    "exp": "<em>这是（高/大约）时间 + 主题 + 一般过去时</em>\n<br>含义：现在/未来 - 我们正在谈论很久以前就应该做的事情。\n<br><em>时间到了</em> - 更强烈的是：时间到了！",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>你该走了</s> → 你<em>该走了</em>（太简单了！）",
+      "<s>你该走了</s> → <em>你该走了</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It's time she found a new job.",
+        "现在是她找到新工作的时候了。"
+      ],
+      [
+        "It's high time you apologised.",
+        "是时候道歉了。"
+      ]
+    ]
+  },
+  "c1_09": {
+    "text": "好像 / 好像 + 虚拟语气",
+    "note": "她说得好像她什么都知道一样。他看上去就像见了鬼一样。",
+    "exp": "<em>as if / as if + Past Simple</em>在现在是一个不切实际的比较。\n<br><em>as if / as if +过去完成时</em>是对过去的不切实际的比较。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她说话就好像她知道一切</s>（不真实的情况）→ 就好像她<em>知道</em>",
+      "<s>他看起来好像看到了鬼</s> → 好像他<em>见过</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He spends money as if he were a millionaire.",
+        "他花钱就像百万富翁一样。"
+      ],
+      [
+        "She spoke as though she had met him before.",
+        "她说话的语气就好像她以前见过他一样。"
+      ]
+    ]
+  },
+  "c1_10": {
+    "text": "所以 / 都不 + 助动词 + 主语",
+    "note": "我也是，她也一样。我也是。",
+    "exp": "<em>So + 辅助 + 主语</em> - 同意肯定句。\n<br><em>既不/也不+辅助+主语</em> - 同意否定。\n<br>助动词必须与原句时态一致。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>So I do</s> → <em>So do I</em>（主语之前的助动词）",
+      "<s>她也没有</s> → <em>她也没有</em>",
+      "<s>我喜欢爵士乐。 So she does too</s> → <em>So does she</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I love jazz. So does she.",
+        "我喜欢爵士乐。她也是。"
+      ],
+      [
+        "I haven't been to Rome. Neither have I.",
+        "我没去过罗马。我也是。"
+      ]
+    ]
+  },
+  "c1_11": {
+    "text": "我想是这样/我希望如此/恐怕是这样",
+    "note": "会下雨吗？ - 我想是的。 / 我希望不会。",
+    "exp": "<em>so</em> 替换以下从句：<em>认为、希望、假设、期望、相信、想象、害怕</em>。\n<br>否定形式：<em>not</em>（not <em>so not</em>！）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我不这么认为</s> → 我不这么认为",
+      "<s>我希望不是</s> → 我希望<em>不是</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Will he come? — I think so. / I don't think so.",
+        "他会来吗？ - 我想是的。 / 别想。"
+      ],
+      [
+        "Is it expensive? — I'm afraid so.",
+        "贵吗？ - 恐怕是这样。"
+      ],
+      [
+        "Is it closed? — I hope not.",
+        "关门了？ - 我希望不会。"
+      ]
+    ]
+  },
+  "c1_12": {
+    "text": "包容性条款与非包容性条款",
+    "note": "打电话的人是我的兄弟。 VS 打电话给我的兄弟是一名医生。",
+    "exp": "<strong>定义</strong>：指定我们正在谈论的人/事 - 不带逗号。 <em>这是可能的</em>。如果代词是宾语，则可以省略。\n<br><br><strong>非定义</strong>：添加信息 - 需要逗号。只有<em>谁/哪个</em>（不是<em>那个</em>！）。代词不能省略。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>赢得奥斯卡奖的电影非常精彩</s> → 没有逗号（定义从句）",
+      "<s>《阿凡达》，2009 年推出</s> → 《阿凡达》，<em></em> 推出（你不能在非定义版本中使用它！）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film that won the Oscar was brilliant. (определяет, о каком фильме речь)",
+        "获得奥斯卡奖的这部电影很棒。"
+      ],
+      [
+        "Avatar, which came out in 2009, was a huge hit. (доп. факт о и так известном фильме)",
+        "2009年上映的《阿凡达》一炮而红。"
+      ]
+    ]
+  },
+  "c1_13": {
+    "text": "介词 + 正式风格中的which/whom",
+    "note": "我工作的公司。与我交谈的人。",
+    "exp": "正式风格：关系代词前的<em>介词+which/whom</em>。\n<br>非正式等价物：句子末尾的介词。\n<br><em>whom</em> 是 <em>who</em> 的正式对象形式。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我工作的公司</s> → 额外",
+      "<s>我说话的人</s>→我说话的人<em></em>/我说话的<em>人</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The report to which I referred is attached. (формально)",
+        "我提到的报告已附后。"
+      ],
+      [
+        "The report which I referred to is attached. (нейтрально)",
+        ""
+      ],
+      [
+        "The report I referred to is attached. (разговорно)",
+        ""
+      ]
+    ]
+  },
+  "c1_14": {
+    "text": "名词化 - 基础知识",
+    "note": "决定→决策、发现→发现、改进→改进",
+    "exp": "名词化是将动词/形容词转换为名词。学术和商业风格的标志。\n<br><br>主要后缀：\n<br>• <em>-tion/-sion</em>：决定→决定，讨论→讨论\n<br>• <em>-ment</em>：改进→改进，发展→发展\n<br>• <em>-ance/-ence</em>：出现→外观，不同→不同\n<br>• <em>-ity</em>：复杂→复杂性，能力→能力\n<br>• <em>-ness</em>：快乐→幸福，意识→意识",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我决定扩展</s>→正确，但风格较弱：<em>我们决定扩展</em>（名词化）",
+      "<s>他发现了一个错误</s> → 他<em>发现了</em>错误"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She decided to expand. → Our decision to expand the company...",
+        "我们决定扩大..."
+      ],
+      [
+        "He discovered that... → His discovery of the error...",
+        "他发现了这个错误......"
+      ]
+    ]
+  },
+  "c1_15": {
+    "text": "学术文本中的名词化",
+    "note": "价格上涨的事实 → 价格上涨......",
+    "exp": "名词化允许：\n<br>1.压缩信息：<em>价格大幅上涨。</em>\n<br>2。添加定义：<em>房价的快速上涨...</em>\n<br>3。营造正式、客观的语气。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>有显着增加</s>→<em>显着</em>增加（名词前的形容词）",
+      "<s>价格上涨</s> → <em>价格上涨</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "There has been a significant improvement in air quality.",
+        "空气质量明显改善。"
+      ],
+      [
+        "His refusal to comment surprised everyone.",
+        "他拒绝发表评论令所有人感到惊讶。"
+      ]
+    ]
+  },
+  "c1_16": {
+    "text": "现在分词：V-ing 子句",
+    "note": "走在街上，我看到了一位老朋友。没有钱，他买不到食物。",
+    "exp": "带现在分词 (V-ing) 的分词短语取代从句：\n<br>• 同时性：<em>走回家时，我注意到一些奇怪的事情。</em>（= 当我走回家时）\n<br>• 原因：<em>知道答案，她举起了手。</em>（= 因为她知道）\n<br><br>⚠️分词短语的主语必须与主句的主语一致！\n<br>错误：<s>走在街上，下雨了。</s>（雨没有落在街上）",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>走在街上，下雨了</s>→主题≠主题。正确：<em>走在街上，我湿透了。</em>",
+      "<s>知道答案，她举起了手</s> → 主题必须匹配：<em>知道答案，她举起了手。</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Arriving at the airport, he realised he had forgotten his passport.",
+        "到达机场后，他发现自己忘记带护照了。"
+      ],
+      [
+        "Not knowing what to do, she called her mother.",
+        "她不知道该怎么办，就给妈妈打电话。"
+      ]
+    ]
+  },
+  "c1_17": {
+    "text": "过去分词短语：V3 /having + V3 从句",
+    "note": "这部小说写于 1815 年……完成工作后，她回家了。",
+    "exp": "<em>V3 子句</em>（过去分词）= 被动含义：<em>Built in 1889, the Eiffel Tower...</em>\n<br><br><em>+ V3</em> = 在主要操作之前完成操作：\n<br><em>读完报告后，他召开了一次会议。</em>（= 他读完后...）",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>阅读报告后，召开会议</s> → 谁阅读了报告？应该是：<em>读完报告后，他召开了一次会议。</em>",
+      "<s>对这个消息感到惊讶，她坐下了</s>→她自己：<em>她坐下了</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Surprised by the news, she sat down silently.",
+        "听到这个消息，她很惊讶，默默地坐下来。"
+      ],
+      [
+        "Having finished the exam, the students left the room.",
+        "考试结束后，学生们离开了教室。"
+      ]
+    ]
+  },
+  "c2_01": {
+    "text": "有条件除非/提供/只要/条件是",
+    "note": "除非你学习，否则你就会失败。只要你诚实，我就会帮你。",
+    "exp": "<em>除非</em> = if not（但不能与否定一起使用！）：<em>除非你着急</em> = <em>如果你不着急</em>\n<br><em>提供/提供（那个）</em> = 当且仅当（严格条件）\n<br><em>只要</em> = 前提是（假设）\n<br><em>条件</em> = 条件（正式）\n<br><em>以防万一</em>=以防万一",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>除非你不学习</s>→除非你学习（除非=如果不，双重否定是不必要的）",
+      "<s>只要你诚实</s> → 只要你<em>诚实</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'll lend you money, as long as you pay me back.",
+        "我借钱给你，条件是你还钱。"
+      ],
+      [
+        "You can use my laptop, provided you don't download anything.",
+        "你可以使用我的笔记本电脑，只要你不下载任何东西。"
+      ]
+    ]
+  },
+  "c2_02": {
+    "text": "假设/假定/如果",
+    "note": "假设你中了彩票——你会做什么？",
+    "exp": "<em>假设/假设</em> - 在假设性问题中用作<em>if</em>。\n<br><em>What if</em> 是一个非正式的类比。\n<br><br>使用过去简单 - 情况不太可能或虚构。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>假设你会赢</s> → 假设你<em>赢了</em>（假设的过去简单）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Supposing you had to choose — which would you pick?",
+        "想象一下，如果你必须做出选择——你会选择什么？"
+      ],
+      [
+        "What if nobody comes? What should we do?",
+        "万一没人来怎么办？我们应该做什么？"
+      ]
+    ]
+  },
+  "c2_03": {
+    "text": "唯一+情境+反转",
+    "note": "直到我离开后我才意识到。这时他才明白。",
+    "exp": "<em>仅+ when/after/if/then/by/in/on</em> - 整个组移动到开头 → 反转。\n<br><br>这是写作和公开演讲中最强大的修辞手段之一。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>只有当我离开时，我才意识到</s> → 只有当我离开时，我才意识到（反转！）",
+      "<s>经过多年的练习，她掌握了</s> → ...<em>她掌握了吗</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Only when you experience it can you truly understand.",
+        "只有亲身经历过，才能真正理解。"
+      ],
+      [
+        "Only after years of practice did she master the skill.",
+        "经过多年的练习，她才掌握了这项技能。"
+      ]
+    ]
+  },
+  "c2_04": {
+    "text": "so + 形容词/副词 + 倒装",
+    "note": "他如释重负，流下了眼泪。这就是她的天赋……",
+    "exp": "书籍和演讲风格。\n<br><em>So + adj/adv + be/aux + 主语</em>\n<br><em>这样的 + 是/是 + 主题</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>他如释重负</s> → 他如释重负<em></em>",
+      "<s>她的天赋如此伟大</s> → 她的天赋如此<em></em> / 她的天赋<em>如此伟大</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "So rapid was the change that nobody could adapt.",
+        "变化发生得如此之快，以至于没有人能够适应。"
+      ],
+      [
+        "Such was her talent that she was offered a scholarship.",
+        "她的才华如此之大，以至于她获得了奖学金。"
+      ]
+    ]
+  },
+  "c2_05": {
+    "text": "对冲：似乎、似乎、倾向于、可能",
+    "note": "价格似乎正在上涨。这种情况往往会发生在...",
+    "exp": "对冲是故意软化陈述以表达科学谦虚。\n<br><br>主要结构：\n<br>• <em>出现/似乎</em> - 显然\n<br>• <em>倾向于</em> - 通常，倾向于\n<br>• <em>可能/不太可能</em> - 可能/不可能\n<br>• <em>被认为/被认为是</em> - 人们相信",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>价格似乎在上涨</s> → 价格似乎<em>正在上涨</em>",
+      "<s>结果似乎有建议</s> → 结果似乎<em>有建议</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The results appear to suggest a correlation.",
+        "结果似乎表明存在相关性。"
+      ],
+      [
+        "Companies tend to underestimate implementation costs.",
+        "公司往往会低估实施成本。"
+      ]
+    ]
+  },
+  "c2_06": {
+    "text": "学术文本中的话语标记",
+    "note": "此外，然而，相反，鉴于，关于",
+    "exp": "标记结构和连接学术文本：\n<br><br>• <strong>加法</strong>：此外，此外，此外，另外\n<br>• <strong>对比</strong>：然而，尽管如此，尽管如此，相反，另一方面\n<br>• <strong>结果</strong>：因此，结果，结果，因此，因此\n<br>• <strong>解释</strong>：换句话说，也就是说，即\n<br>• <strong>让步</strong>：诚然，虽然确实如此，尽管如此",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "此外/此外混乱 - 两者都增加，但更强大",
+      "<s>相反，这显示相同</s> - 相反引入对比，而不是确认"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The experiment failed. Nevertheless, the findings were instructive.",
+        "实验失败了。尽管如此，结果还是有启发性的。"
+      ],
+      [
+        "Furthermore, the data suggests a strong correlation.",
+        "此外，数据表明存在很强的相关性。"
+      ]
+    ]
+  },
+  "c2_07": {
+    "text": "语音语域：正式、中性、口语",
+    "note": "我想问... vs 我想问... vs 我可以问吗...",
+    "exp": "注册由目的、受众和背景决定。\n<br><br><strong>形式</strong>：被动、名词化、复杂连词、完整形式、源自拉丁语的动词（<em>开始、终止、协助</em>）。\n<br><strong>中性</strong>：标准语法，没有俚语，适度的缩写。\n<br><strong>非正式</strong>：省略号、短语动词（<em>推迟=推迟</em>）、缩写、口语表达。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "混合语体：在一篇文本中使用正式开头和口语结尾",
+      "<s>我想问一下这件事</s> → <em>这件事</em>（正式案例）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Formal: I wish to draw your attention to a discrepancy.",
+        ""
+      ],
+      [
+        "Neutral: I want to point out a mistake.",
+        ""
+      ],
+      [
+        "Informal: Just wanted to flag something up.",
+        ""
+      ]
+    ]
+  },
+  "c2_08": {
+    "text": "同义词的内涵 - 含义的深浅",
+    "note": "瘦/苗条/苗条/瘦/憔悴：正→中性→负",
+    "exp": "同义词的内涵（情感色彩）和语域有所不同。\n<br><br>尺度示例：\n<br>• <em>苗条</em> (+) → <em>瘦</em> (0) → <em>瘦</em> (-) → <em>骨瘦如柴/憔悴</em> (--)\n<br>• <em>坚定</em> (+) → <em>坚定</em> (0) → <em>固执/固执</em> (-)\n<br>• <em>节俭</em> (+) → <em>经济</em> (0) → <em>吝啬/吝啬</em> (-)\n<br>• <em>自信</em> (+) → <em>自信</em> (0) → <em>傲慢</em> (-)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她很瘦</s>（中性）与故意<em>苗条</em>（+）或<em>瘦</em>（−）",
+      "赞美时使用了错误含义的词：<em>顽固</em>而不是<em>坚定</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She is slim. (+) / She is thin. (0) / She is skinny. (-)",
+        "同样的事情，但态度不同。"
+      ]
+    ]
+  },
+  "c2_09": {
+    "text": "修辞手段：照应、交叉、三角号",
+    "note": "“我们将在海滩上战斗，我们将在登陆场上战斗......” - 照应法",
+    "exp": "<strong>照应</strong>：在连续句子的开头重复单词。 <em>“我有一个梦想...我有一个梦想...”</em>\n<br><strong>Chiasmus</strong>：AB-BA交叉结构。 <em>“不要问你的国家能为你做什么，而要问你能为你的国家做什么。”</em>\n<br><strong>三分号</strong>：三个平行元素。 <em>“Veni，vidi，vici。” /“民有、民治、民享的政府。”</em>\n<br><br>这些技巧用于演讲、散文和新闻报道。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "使用没有平行结构的照应会扰乱节奏",
+      "具有不等元素的三分号：“快速、高效、小心”→“快速、高效、小心”"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Friends, Romans, countrymen, lend me your ears. (триколон)",
+        ""
+      ],
+      [
+        "The more you learn, the more you earn. (хиазм в народной мудрости)",
+        ""
+      ]
+    ]
+  },
+  "c2_10": {
+    "text": "学术文本中的精确搭配",
+    "note": "进行研究、得出结论、达成共识、解决问题",
+    "exp": "在 C2 中，每个名词使用“正确”动词非常重要。\n<br><br>学术搭配：\n<br>• <em>进行/开展</em>研究（不是<s>制造/做</s>）\n<br>• <em>得出/得出</em>结论\n<br>• <em>提出/解决/解决</em>问题\n<br>• <em>达成/实现</em>共识\n<br>• <em>取得</em>重大进展\n<br>• <em>提出/提出</em>挑战",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>进行研究</s> → <em>进行/进行</em>研究",
+      "<s>得出结论</s> → <em>得出/得出</em>结论",
+      "<s>提出问题</s> → <em>提出/解决</em>问题"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Researchers conducted extensive interviews.",
+        "研究人员进行了广泛的采访。"
+      ],
+      [
+        "The committee failed to reach a consensus.",
+        "委员会未能达成共识。"
+      ]
+    ]
+  },
+  "c2_11": {
+    "text": "带分词的绝对结构",
+    "note": "如果天气允许的话，我们会去野餐。她的眼里充满了泪水，离开了房间。",
+    "exp": "绝对结构=名词/代词+分词（独立主语）。\n<br>用于书面和正式风格 - 添加一个没有连词的情况。\n<br><br>类型：\n<br>• <em>天气允许</em> = 如果天气允许\n<br>• <em>考虑所有事情</em> = 如果您考虑所有事情\n<br>• <em>她的工作完成</em> = 她的工作完成时/之后\n<br>• <em>此完成</em> = 完成此操作的时间/之后",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>如果天气允许，我们会去野餐</s> → 多余的被动",
+      "<s>她的眼睛里充满了泪水，她离开了</s>是可以接受的，但是<em>她的眼睛里充满了泪水</em>对于一个完整的事实来说更准确"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "All things considered, it was a successful event.",
+        "综合考虑，这是一次成功的活动。"
+      ],
+      [
+        "The deadline having passed, the project was cancelled.",
+        "截止日期过后，该项目被取消。"
+      ]
+    ]
+  },
+  "c2_12": {
+    "text": "连接文本中的省略和替换",
+    "note": "我想去但没去。她说她会打电话，她就打电话了。",
+    "exp": "省略号是省略已知元素。\n<br>替换 - 使用<em>do/so/one/it</em>而不是重复。\n<br><br>椭圆类型：\n<br>• <em>A：你来吗？ B：可能（做）。</em>\n<br>• <em>她会说法语，他也会说/他也会。</em>\n<br>• <em>我想离开，但不被允许。</em>（<em>离开</em>省略）\n<br><br>替补：<em>我以为他会通过。他做到了。</em> / <em>大的？我更喜欢小一点的</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我想去但不想去</s> → <em>但没有</em>（我们省略了想去）",
+      "<s>她说她会打电话，她说</s> → <em>她做到了</em>（通过 do 替换）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Can you drive? — I used to (drive).",
+        "你会开车吗？ - 我以前可以。"
+      ],
+      [
+        "She said she'd be here and she was.",
+        "她说她会来，她就来了。"
+      ]
+    ]
+  },
+  "c2_13": {
+    "text": "不定式短语代替从句",
+    "note": "我要你解释一下。她请我帮忙。他看起来并不高兴。",
+    "exp": "复杂不定式（复杂宾语）取代从句：\n<br><em>我想要+宾语+ to-不定式</em>：<em>我希望她留下来。</em>\n<br><br>在<em>see、hear、watch、let、make、have</em>之后 - 不带<em>to</em>的不定式：\n<br><em>我看到她离开。 / 她让他哭了。 / 让我帮忙。</em>\n<br>在被动语态中 - 与<em>to</em>：<em>He was made to pay.</em>\n<br><br>带有<em>seem、appear、happen、prove + to-inf</em>的结构：\n<br><em>她似乎知道。 / 他碰巧在那儿。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我看到她离开</s> → 我看到她<em>离开</em>（看到后没有）",
+      "<s>她被迫离开</s> - 没错！在被动语态中 - with to",
+      "<s>我希望她留下</s> → 我希望<em>她留下</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I need you to sign this document.",
+        "我需要你签署这份文件。"
+      ],
+      [
+        "She was made to apologise publicly.",
+        "她被迫公开道歉。"
+      ],
+      [
+        "He seemed to have forgotten everything.",
+        "他似乎已经忘记了一切。"
+      ]
+    ]
+  },
+  "c2_14": {
+    "text": "将来完成进行时: will be + V-ing",
+    "note": "到明年，我将学习英语五年了。",
+    "exp": "<strong>将来完成进行时</strong> = <em>will be + V-ing</em>\n<br><br>强调将持续到未来某一时刻的动作的持续时间。经常回答“到那时还有多久？”的问题。\n<br><br>经常与<em>by（时间）、for、when</em>连用：<em>到星期一，她将在这个项目上工作三周。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>明年我将学习</s> → 我将<em>一直</em>学习",
+      "<s>她将会工作</s> → 她将会<em>工作</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "By next year, I will have been learning English for five years.",
+        "到明年我就已经学习英语五年了。"
+      ],
+      [
+        "When we arrive, she will have been waiting for two hours.",
+        "当我们到达时，她已经等了两个小时了。"
+      ]
+    ]
+  },
+  "c2_15": {
+    "text": "时态协调 - 时态顺序",
+    "note": "她说她一直在工作。他认为这会很困难。",
+    "exp": "在复杂的句子中，从句的动词与主句的动词在时间上一致。\n<br><br>如果主要动词是过去时：\n<br>• 现在简单→过去简单：<em>他说这是真的</em>\n<br>• 过去简单→过去完成时：<em>她说她看到了</em>\n<br>• 现在完成时 → 过去完成时：<em>他说他已经完成了</em>\n<br>• 将 → 将；可以 → 可以；可能 → 可能；是 → 是\n<br><br>⚠️例外：一般真理和科学事实不会改变：<em>她说水在 100°C 时沸腾。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她说水沸腾了</s>（事实）→水<em>沸腾了</em>",
+      "<s>他说他看到了</s>→他说他<em>看到了</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He told me that he had been living there for years.",
+        "他告诉我他已经在那里住了很多年了。"
+      ],
+      [
+        "She said the Earth moves around the Sun. (общая истина — не меняем)",
+        "她说地球绕着太阳转。"
+      ]
+    ]
+  },
+  "c2_16": {
+    "text": "并列连词：and、but、or、nor、for、yet、so",
+    "note": "粉丝：对于、并且、也不、但是、或者、然而、所以",
+    "exp": "并列连词连接句子的等效部分。\n<br><br>七个基本（缩写 FANBOYS）：\n<br>• <em>for</em> = 因为（正式）：<em>她离开了，因为她累了。</em>\n<br>• <em>和</em> = 和（相加）\n<br>• <em>nor</em> = 与 not（既不/也不...反转！）：<em>她没有打电话，也没有写信。</em>\n<br>• <em>但是</em> = 但是（对比）\n<br>• <em>或</em> = 或（替代）\n<br>• <em>yet</em> = 然而（对比，更正式但是）\n<br>• <em>so</em> = 因此（结果）",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>她很累，但仍在工作</s> - 第二部分中没有“她”是正确的",
+      "<s>她没有打电话，也没有写信</s>→<em>她也没有</em>写信（反转！）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She was tired, yet she kept working.",
+        "她很累，但仍继续工作。"
+      ],
+      [
+        "He didn't study, nor did he attend class.",
+        "他没有学习，也没有去上课。"
+      ]
+    ]
+  },
+  "c2_17": {
+    "text": "从属连词：虽然、然而、提供、除非...",
+    "note": "虽然，好像，然而，规定，除非，鉴于，万一",
+    "exp": "从属连词引入从属从句。\n<br><br>按价值：\n<br>• <strong>时间</strong>：<em>何时、同时、作为、之后、之前、直到、一次、一次、每当</em>\n<br>• <strong>原因</strong>：<em>因为、因为、因为、考虑到、看到</em>\n<br>• <strong>条件</strong>：<em>如果、除非、提供、只要、万一、假设</em>\n<br>• <strong>目标</strong>：<em>以便做到最好</em>\n<br>• <strong>让步</strong>：<em>尽管、尽管、而、同时、但是</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>虽然下雨，我们还是去了</s> → 虽然<em>下雨了</em>",
+      "<s>看到截止日期已过</s> → 已过（另一个过去时之前的过去完成时）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Seeing that the deadline had passed, we cancelled the meeting.",
+        "由于截止日期已过，我们取消了会议。"
+      ],
+      [
+        "Lest she forget, he sent her a reminder.",
+        "为了让她不要忘记，他给她发了一条提醒。"
+      ]
+    ]
+  },
+  "c2_18": {
+    "text": "逗号、分号和冒号",
+    "note": "在 FANBOYS 之前使用逗号。使用分号链接相关子句。",
+    "exp": "<strong>逗号</strong>：\n<br>• 在独立子句之间协调连词 FANBOYS 之前。\n<br>• 在介绍性词语/短语之后：<em>但是，她决定留下来。</em>\n<br>• 在枚举中（牛津逗号 - 最后一个 and 之前）：<em>苹果、橙子和香蕉</em>。\n<br><br><strong>分号(;)</strong>：连接两个独立子句，无需连词。\n<br><em>她很累；她很累。她去睡觉了</em>\n<br><br><strong>冒号(:)</strong>：介绍列表、解释、引用。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>然而她决定留下来</s> → 然而<em>，</em>她决定",
+      "<s>她累了；然后她就去睡觉了</s> → 分号后没有连词：<em>她累了；她去睡觉了</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "However, the results were inconclusive; further research is required.",
+        "然而，结果好坏参半。需要进一步研究。"
+      ],
+      [
+        "The company has three priorities: efficiency, innovation, and sustainability.",
+        "该公司有三个优先事项：效率、创新和可持续发展。"
+      ]
+    ]
+  },
+  "c2_19": {
+    "text": "破折号、撇号和引号",
+    "note": "Em dash - 用于强调 - 引发一个短语。它与它的对比。 “直接讲话”",
+    "exp": "<strong>破折号 (—)</strong>：突出显示插件结构（比逗号更强）：<em>该解决方案虽然昂贵，但已被证明是有效的。</em>\n<br><br><strong>撇号</strong>：\n<br>• 缩写：<em>it's = it is;不;他们是</em>\n<br>• 所有格：<em>约翰的书；学生成绩</em>\n<br>• ⚠️ <em>它</em>（属于）与<em>它</em>（它是）\n<br><br><strong>引号</strong>：AmE - 双引号（“<em>文本</em>”），BrE - 单引号（'<em>文本</em>'）。",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>这是一个大房子</s> → <em>这是一个大房子</em>",
+      "<s>猫的尾巴</s> → 猫<em>的</em>尾巴",
+      "<s>她的书</s> → <em>她</em>书（所有格代词没有撇号）"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project — launched in 2020 — exceeded all expectations.",
+        "该项目于 2020 年启动，超出了所有人的预期。"
+      ],
+      [
+        "It's important to check its settings before use.",
+        "使用前检查其设置非常重要。"
+      ]
+    ]
+  },
+  "c2_20": {
+    "text": "学术文本中的特殊问题和间接问题",
+    "note": "问题是是否.../我想知道数据显示了什么。",
+    "exp": "在学术文本中，直接问题被间接问题（疑问句）所取代。\n<br><br>间接疑问句是具有通常词序的从句（没有倒装，没有 do）。\n<br><br>介绍性词语：<em>是否、如果（是/否）、什么、何处、何时、如何、为什么、哪个</em>。\n<br><br>示例：<em>此数据显示什么？</em> → <em>问题是此数据显示什么。</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>我想知道数据显示什么</s> → 数据<em>显示什么</em>（间接问题中没有反演）",
+      "<s>问题是他是否知道</s> → 他是否<em>知道</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wonder whether the hypothesis is correct.",
+        "我想知道这个假设是否正确。"
+      ],
+      [
+        "The study examines how social media affects behaviour.",
+        "该研究探讨了社交媒体如何影响行为。"
+      ]
+    ]
+  }
+}

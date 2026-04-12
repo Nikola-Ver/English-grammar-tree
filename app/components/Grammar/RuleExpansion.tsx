@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './RuleExpansion.css';
 import '../selectionLock.css';
-import type { Rule } from '../../data/grammar';
+import type { LinkType, Rule } from '../../data/grammar';
 import { useNotes } from '../../hooks/useNotes';
 import { IconNote, IconPin, IconShare, IconTrash } from '../../icons';
 import { copyToClipboard } from '../../utils/clipboard';
@@ -20,6 +21,13 @@ import {
   lockSelection,
   restoreSelectionData,
 } from '../../utils/selection';
+
+function grammarLinkBadge(lt: LinkType): string {
+  if (lt === 'yt') return '▶';
+  if (lt === 'ru') return 'RU';
+  if (lt === 'en') return 'EN';
+  return lt.toUpperCase();
+}
 
 interface Props {
   rule: Rule;
@@ -48,6 +56,7 @@ interface NoteDraft {
 }
 
 export function RuleExpansion({ rule, isOpen }: Props) {
+  const { t } = useTranslation();
   const ref = useRef<HTMLDivElement>(null);
   const [everOpened, setEverOpened] = useState(false);
   const [selPop, setSelPop] = useState<SelectionPop | null>(null);
@@ -284,15 +293,17 @@ export function RuleExpansion({ rule, isOpen }: Props) {
     const hasNotes = notes.length > 0;
     const hasDraft = noteDraft !== null;
 
+    // Use functional updates so we don't replace []/Map with new references every run
+    // (that retriggered this effect and caused "Maximum update depth exceeded").
     if (!hasLock) {
-      setLockRects([]);
-      setLockAnchor(null);
+      setLockRects((prev) => (prev.length === 0 ? prev : []));
+      setLockAnchor((prev) => (prev == null ? prev : null));
     }
     if (!hasMsg) {
-      setDeepMsgRects([]);
+      setDeepMsgRects((prev) => (prev.length === 0 ? prev : []));
     }
     if (!hasNotes && !hasDraft) {
-      setNoteRects(new Map());
+      setNoteRects((prev) => (prev.size === 0 ? prev : new Map()));
     }
 
     if (!hasLock && !hasMsg && !hasPop && !hasNotes && !hasDraft) return;
@@ -324,7 +335,11 @@ export function RuleExpansion({ rule, isOpen }: Props) {
         const range = restoreSelectionData(container, sp.selData);
         if (range) {
           const anchor = anchorFromRangeInContainer(range, container);
-          setSelPop((prev) => (prev ? { ...prev, x: anchor.x, y: anchor.y } : null));
+          setSelPop((prev) => {
+            if (!prev) return null;
+            if (prev.x === anchor.x && prev.y === anchor.y) return prev;
+            return { ...prev, x: anchor.x, y: anchor.y };
+          });
         }
       }
 
@@ -357,7 +372,22 @@ export function RuleExpansion({ rule, isOpen }: Props) {
         if (range) {
           const rects = rectsFromRangeInContainer(range, container);
           const anchor = anchorFromRangeInContainer(range, container);
-          setNoteDraft((prev) => (prev ? { ...prev, rects, anchor } : null));
+          setNoteDraft((prev) => {
+            if (!prev) return null;
+            if (
+              prev.anchor.x === anchor.x &&
+              prev.anchor.y === anchor.y &&
+              prev.rects.length === rects.length &&
+              (rects.length === 0 ||
+                (prev.rects[0]?.top === rects[0]?.top &&
+                  prev.rects[0]?.left === rects[0]?.left &&
+                  prev.rects[0]?.width === rects[0]?.width &&
+                  prev.rects[0]?.height === rects[0]?.height))
+            ) {
+              return prev;
+            }
+            return { ...prev, rects, anchor };
+          });
         }
       }
     }
@@ -393,6 +423,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
       setLockAnchor(anchorFromRangeInContainer(range, ref.current));
     }
 
+    window.getSelection()?.removeAllRanges();
     setLockedSel({ selData: handle.selData, text: handle.text, message: '' });
     setSelPop(null);
   }
@@ -488,17 +519,19 @@ export function RuleExpansion({ rule, isOpen }: Props) {
           )}
           {rule.exc && (
             <div className="exc-block">
-              <strong>⚠️ Исключения:</strong> <span dangerouslySetInnerHTML={{ __html: rule.exc }} />
+              <strong>{t('rule.exceptions')}</strong>{' '}
+              <span dangerouslySetInnerHTML={{ __html: rule.exc }} />
             </div>
           )}
           {rule.tip && (
             <div className="tip-block">
-              <strong>💡 Совет:</strong> <span dangerouslySetInnerHTML={{ __html: rule.tip }} />
+              <strong>{t('rule.tip')}</strong>{' '}
+              <span dangerouslySetInnerHTML={{ __html: rule.tip }} />
             </div>
           )}
           {rule.markers && rule.markers.tags.length > 0 && (
             <div className="markers-block">
-              <strong>⏱ Маркеры времени</strong>
+              <strong>{t('tenseUi.timeMarkers')}</strong>
               <div className="markers-wrap">
                 {rule.markers.tags.map((t) => (
                   <span key={t} className="marker-tag">
@@ -511,7 +544,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
           )}
           {rule.mistakes && rule.mistakes.length > 0 && (
             <div className="mistakes-block">
-              <strong>🚫 Типичные ошибки:</strong>
+              <strong>{t('rule.mistakes')}</strong>
               <ul>
                 {rule.mistakes.map((m) => (
                   <li key={m} dangerouslySetInnerHTML={{ __html: m }} />
@@ -522,7 +555,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
           {rule.links && rule.links.length > 0 && (
             <div className="link-row">
               {rule.links.map((l) => {
-                const icon = l.type === 'yt' ? '▶' : l.type === 'ru' ? 'RU' : 'EN';
+                const icon = grammarLinkBadge(l.type);
                 return (
                   <a
                     key={l.url}
@@ -618,7 +651,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               className={`sel-pop-btn sel-pop-btn--share${selCopied ? ' copied' : ''}`}
               onMouseDown={(e) => e.preventDefault()}
               onClick={handleSelShare}
-              title="Поделиться"
+              title={t('selection.share')}
             >
               <IconShare />
             </button>
@@ -626,7 +659,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               className="sel-pop-btn sel-pop-btn--pin"
               onMouseDown={(e) => e.preventDefault()}
               onClick={handleLock}
-              title="Закрепить"
+              title={t('selection.pin')}
             >
               <IconPin />
             </button>
@@ -634,7 +667,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               className="sel-pop-btn sel-pop-btn--note"
               onMouseDown={(e) => e.preventDefault()}
               onClick={handleNoteStart}
-              title="Пометка"
+              title={t('selection.note')}
             >
               <IconNote />
             </button>
@@ -660,7 +693,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
                   history.replaceState(null, '', '/');
                 }
               }}
-              title="Закрыть"
+              title={t('selection.close')}
             >
               ×
             </button>
@@ -668,7 +701,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
           <div className="sel-lock-panel-body">
             <textarea
               className="sel-lock-textarea"
-              placeholder="Добавьте комментарий…"
+              placeholder={t('selection.commentPlaceholder')}
               value={lockedSel.message}
               onChange={(e) =>
                 setLockedSel((prev) => (prev ? { ...prev, message: e.target.value } : null))
@@ -679,7 +712,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               onMouseDown={(e) => e.preventDefault()}
               onClick={handleLockCopy}
             >
-              {lockCopied ? '✓ Ссылка скопирована' : '⛓ Скопировать ссылку'}
+              {lockCopied ? t('selection.linkCopied') : t('selection.copyLink')}
             </button>
           </div>
         </div>
@@ -701,7 +734,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               className="sel-note-close"
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => setNoteDraft(null)}
-              title="Отмена"
+              title={t('selection.cancel')}
             >
               ×
             </button>
@@ -709,7 +742,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
           <div className="sel-note-panel-body">
             <textarea
               className="sel-note-textarea"
-              placeholder="Ваша пометка…"
+              placeholder={t('selection.notePlaceholder')}
               value={noteDraft.message}
               onChange={(e) =>
                 setNoteDraft((prev) => (prev ? { ...prev, message: e.target.value } : null))
@@ -723,7 +756,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
               onMouseDown={(e) => e.preventDefault()}
               onClick={handleNoteSave}
             >
-              Сохранить
+              {t('selection.save')}
             </button>
           </div>
         </div>
@@ -748,7 +781,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
                 className="sel-note-card-delete"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => handleNoteDelete(activeNote.id)}
-                title="Удалить пометку"
+                title={t('selection.deleteNote')}
               >
                 <IconTrash />
               </button>
@@ -759,7 +792,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
                   setActiveNoteId(null);
                   setActiveNoteAnchor(null);
                 }}
-                title="Закрыть"
+                title={t('selection.close')}
               >
                 ×
               </button>
@@ -769,7 +802,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
             {activeNote.message ? (
               activeNote.message
             ) : (
-              <span className="sel-note-card-empty">Пометка без текста</span>
+              <span className="sel-note-card-empty">{t('selection.emptyNote')}</span>
             )}
           </div>
         </div>
@@ -781,7 +814,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
           style={{ left: deepMsgAnchor.x, top: deepMsgAnchor.y + 10 }}
         >
           <div className="sel-deep-msg-header">
-            <span className="sel-deep-msg-title">💬 Сообщение</span>
+            <span className="sel-deep-msg-title">{t('selection.messageTitle')}</span>
             <button
               className="sel-deep-msg-close"
               onMouseDown={(e) => e.preventDefault()}
@@ -793,7 +826,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
                   history.replaceState(null, '', '/');
                 }
               }}
-              title="Закрыть"
+              title={t('selection.close')}
             >
               ×
             </button>

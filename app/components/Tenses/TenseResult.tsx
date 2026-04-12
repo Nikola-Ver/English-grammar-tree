@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { Tense } from '../../data/tenses';
 import { useNotes } from '../../hooks/useNotes';
 import { IconNote, IconPin, IconShare, IconTrash } from '../../icons';
@@ -23,7 +24,7 @@ import '../selectionLock.css';
 interface Props {
   tenseKey: string;
   tense: Tense;
-  breadcrumbs: { q: string; a: string }[];
+  breadcrumbs: { aKey: string }[];
   onRestart: () => void;
 }
 
@@ -49,6 +50,7 @@ interface NoteDraft {
 }
 
 export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) {
+  const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   const [selPop, setSelPop] = useState<SelectionPop | null>(null);
   const selPopRef = useRef(selPop);
@@ -296,6 +298,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
       setLockAnchor(anchorFromRangeInContainer(range, containerRef.current));
     }
 
+    window.getSelection()?.removeAllRanges();
     setLockedSel({ selData: handle.selData, text: handle.text, message: '' });
     setSelPop(null);
   }
@@ -385,13 +388,22 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
   const markers = tense.markers ? tense.markers.split(',') : [];
   const activeNote = notes.find((n) => n.id === activeNoteId) ?? null;
 
+  const desc = t(`tenses.${tenseKey}.desc`);
+  const examples: [string, string][] = tense.examplesEn.map((en, i) => [
+    en,
+    t(`tenses.${tenseKey}.ex${i}tr`),
+  ]);
+  const mistakes = Array.from({ length: tense.mistakeCount }, (_, i) =>
+    t(`tenses.${tenseKey}.m${i}`),
+  );
+
   return (
     <>
       {breadcrumbs.length > 0 && (
         <div className="tt-breadcrumb">
           {breadcrumbs.map((p) => (
-            <span key={p.a} className="tt-crumb">
-              {p.a}
+            <span key={p.aKey} className="tt-crumb">
+              {t(p.aKey)}
             </span>
           ))}
         </div>
@@ -406,21 +418,21 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
             <button
               className={`tense-share-btn${shareCopied ? ' copied' : ''}`}
               onClick={handleShare}
-              title="Поделиться ссылкой"
+              title={t('tenseUi.shareLink')}
             >
               {shareCopied ? '✓' : <IconShare />}
             </button>
           </div>
           <div className="tt-result-formula">{tense.formula}</div>
           <div className="tt-result-desc" style={{ marginTop: 8 }}>
-            {tense.desc}
+            {desc}
           </div>
           {markers.length > 0 && (
             <>
               <div
                 style={{ fontSize: 11, fontWeight: 600, color: 'var(--b1)', margin: '10px 0 5px' }}
               >
-                ⏱ Маркеры времени
+                {t('tenseUi.timeMarkers')}
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
                 {markers.map((m) => (
@@ -446,21 +458,21 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
         </div>
         <div className="tt-result-right">
           <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--muted2)', marginBottom: 5 }}>
-            Примеры
+            {t('tenseUi.examples')}
           </div>
           <ul className="tt-result-ex">
-            {tense.examples.map(([en, ru]) => (
+            {examples.map(([en, tr]) => (
               <li key={en}>
                 {en}
-                {ru && <span className="tr">{ru}</span>}
+                {tr && <span className="tr">{tr}</span>}
               </li>
             ))}
           </ul>
-          {tense.mistakes && tense.mistakes.length > 0 && (
+          {mistakes.length > 0 && (
             <div className="tt-mistakes" style={{ marginTop: 10 }}>
-              <strong>🚫 Типичные ошибки:</strong>
+              <strong>{t('tenseUi.mistakes')}</strong>
               <ul style={{ margin: '4px 0 0 14px', padding: 0, listStyle: 'disc' }}>
-                {tense.mistakes.map((m) => (
+                {mistakes.map((m) => (
                   <li
                     key={m}
                     style={{ marginBottom: 3, lineHeight: 1.6 }}
@@ -470,8 +482,8 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
               </ul>
             </div>
           )}
-          <button className="tt-restart" onClick={onRestart}>
-            ↺ Начать сначала
+          <button type="button" className="tt-restart" onClick={onRestart}>
+            {t('tenseUi.restart')}
           </button>
         </div>
 
@@ -551,7 +563,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                 className={`sel-pop-btn sel-pop-btn--share${selCopied ? ' copied' : ''}`}
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={handleSelShare}
-                title="Поделиться"
+                title={t('selection.share')}
               >
                 <IconShare />
               </button>
@@ -559,7 +571,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                 className="sel-pop-btn sel-pop-btn--pin"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={handleLock}
-                title="Закрепить"
+                title={t('selection.pin')}
               >
                 <IconPin />
               </button>
@@ -567,7 +579,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                 className="sel-pop-btn sel-pop-btn--note"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={handleNoteStart}
-                title="Пометка"
+                title={t('selection.note')}
               >
                 <IconNote />
               </button>
@@ -594,7 +606,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                     history.replaceState(null, '', '/');
                   }
                 }}
-                title="Закрыть"
+                title={t('selection.close')}
               >
                 ×
               </button>
@@ -602,7 +614,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
             <div className="sel-lock-panel-body">
               <textarea
                 className="sel-lock-textarea"
-                placeholder="Добавьте комментарий…"
+                placeholder={t('selection.commentPlaceholder')}
                 value={lockedSel.message}
                 onChange={(e) =>
                   setLockedSel((prev) => (prev ? { ...prev, message: e.target.value } : null))
@@ -613,7 +625,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={handleLockCopy}
               >
-                {lockCopied ? '✓ Ссылка скопирована' : '⛓ Скопировать ссылку'}
+                {lockCopied ? t('selection.linkCopied') : t('selection.copyLink')}
               </button>
             </div>
           </div>
@@ -636,7 +648,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                 className="sel-note-close"
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => setNoteDraft(null)}
-                title="Отмена"
+                title={t('selection.cancel')}
               >
                 ×
               </button>
@@ -644,7 +656,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
             <div className="sel-note-panel-body">
               <textarea
                 className="sel-note-textarea"
-                placeholder="Ваша пометка…"
+                placeholder={t('selection.notePlaceholder')}
                 value={noteDraft.message}
                 onChange={(e) =>
                   setNoteDraft((prev) => (prev ? { ...prev, message: e.target.value } : null))
@@ -658,7 +670,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={handleNoteSave}
               >
-                Сохранить
+                {t('selection.save')}
               </button>
             </div>
           </div>
@@ -685,7 +697,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                   className="sel-note-card-delete"
                   onMouseDown={(e) => e.preventDefault()}
                   onClick={() => handleNoteDelete(activeNote.id)}
-                  title="Удалить пометку"
+                  title={t('selection.deleteNote')}
                 >
                   <IconTrash />
                 </button>
@@ -696,7 +708,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                     setActiveNoteId(null);
                     setActiveNoteAnchor(null);
                   }}
-                  title="Закрыть"
+                  title={t('selection.close')}
                 >
                   ×
                 </button>
@@ -706,7 +718,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
               {activeNote.message ? (
                 activeNote.message
               ) : (
-                <span className="sel-note-card-empty">Пометка без текста</span>
+                <span className="sel-note-card-empty">{t('selection.emptyNote')}</span>
               )}
             </div>
           </div>
@@ -718,7 +730,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
             style={{ left: deepMsgAnchor.x, top: deepMsgAnchor.y + 10 }}
           >
             <div className="sel-deep-msg-header">
-              <span className="sel-deep-msg-title">💬 Сообщение</span>
+              <span className="sel-deep-msg-title">{t('selection.messageTitle')}</span>
               <button
                 className="sel-deep-msg-close"
                 onMouseDown={(e) => e.preventDefault()}
@@ -730,7 +742,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
                     history.replaceState(null, '', '/');
                   }
                 }}
-                title="Закрыть"
+                title={t('selection.close')}
               >
                 ×
               </button>

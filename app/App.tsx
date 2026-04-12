@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './styles/base.css';
 import { AccountPage } from './components/Account/AccountPage';
 import { AuthPage } from './components/Auth/AuthPage';
@@ -32,6 +33,7 @@ function findRuleTab(ruleId: string): Tab | null {
 }
 
 function AppContent() {
+  const { i18n } = useTranslation();
   const [activeTab, setActiveTab] = useState<Tab>('grammar');
   const [view, setView] = useState<View>('main');
   const [targetRuleId, setTargetRuleId] = useState<string | null>(null);
@@ -45,6 +47,11 @@ function AppContent() {
   useEffect(() => {
     if (!authLoading) setView('main');
   }, [authLoading]);
+
+  useEffect(() => {
+    const lang = i18n.language?.split('-')[0] ?? 'en';
+    document.documentElement.lang = lang;
+  }, [i18n.language]);
 
   useEffect(() => {
     const parsedRule = parseRuleHash();

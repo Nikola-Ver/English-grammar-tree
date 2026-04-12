@@ -1,0 +1,173 @@
+{
+  "grammarUi": {
+    "levels": {
+      "A1": {
+        "name": "A1 — Beginner",
+        "sub": "Beginner · 2–3 months"
+      },
+      "A2": {
+        "name": "A2 — Elementary",
+        "sub": "Elementary · 3–4 months"
+      },
+      "B1": {
+        "name": "B1 — Intermediate",
+        "sub": "Intermediate · 4–6 months"
+      },
+      "B2": {
+        "name": "B2 — Upper-intermediate",
+        "sub": "Upper-intermediate · 5–8 months"
+      },
+      "C1": {
+        "name": "C1 — Advanced",
+        "sub": "Advanced · 8–12 months"
+      },
+      "C2": {
+        "name": "C2 — Proficiency",
+        "sub": "Proficiency · 1–2+ years"
+      }
+    },
+    "categories": {
+      "A1": [
+        "The verb to be",
+        "Articles",
+        "Present Simple",
+        "Pronouns",
+        "Basic structures",
+        "Numbers and numerals",
+        "The possessive",
+        "Prepositions of movement"
+      ],
+      "A2": [
+        "Past Simple",
+        "Future",
+        "Present Continuous",
+        "Modal verbs",
+        "Adjectives and quantity",
+        "Prepositions of time",
+        "Miscellaneous A2",
+        "The verb have / have got",
+        "Adverbs",
+        "Adjective word order"
+      ],
+      "B1": [
+        "Present Perfect",
+        "Past tenses",
+        "Conditionals",
+        "The passive voice",
+        "Reported speech",
+        "Gerund and infinitive",
+        "Subordinate clauses",
+        "Future forms — advanced",
+        "Purpose and reason clauses"
+      ],
+      "B2": [
+        "Past Perfect",
+        "Modals for the past",
+        "Third conditional and mixed conditionals",
+        "The passive — advanced",
+        "Gerund — nuances",
+        "Wish and the subjunctive",
+        "Relative clauses — nuances",
+        "Linking words and conjunctions",
+        "Advanced modals and future in the past",
+        "Pronouns, nouns and numbers"
+      ],
+      "C1": [
+        "Inversion",
+        "Cleft sentences",
+        "The subjunctive",
+        "Ellipsis and substitution",
+        "Subordinate clauses — advanced",
+        "Nominalisation",
+        "Participial clauses"
+      ],
+      "C2": [
+        "Conditionals — full system",
+        "Inversion — full system",
+        "Modality in academic writing",
+        "Register and lexical precision",
+        "Absolute constructions",
+        "Ellipsis and grammatical reduction",
+        "Future Perfect Continuous and tense agreement",
+        "Conjunctions and cohesion",
+        "Punctuation in academic writing"
+      ]
+    }
+  },
+  "murphyUi": {
+    "levels": {
+      "EL": {
+        "name": "Elementary — Essential Grammar in Use",
+        "sub": "A1–A2 · Red Murphy · 115 units"
+      },
+      "INT": {
+        "name": "Intermediate — English Grammar in Use",
+        "sub": "B1–B2 · Blue Murphy · 145 units"
+      },
+      "ADV": {
+        "name": "Advanced — Advanced Grammar in Use",
+        "sub": "C1–C2 · Green Hewings · 100 units"
+      }
+    },
+    "categories": {
+      "EL": [
+        "Present tense",
+        "Past tense",
+        "Present Perfect and Present Perfect Continuous",
+        "The passive voice",
+        "Auxiliary verbs — overview",
+        "Future tense",
+        "Modal verbs",
+        "Word order",
+        "Questions",
+        "Reported speech",
+        "Infinitive and gerund",
+        "Common verbs",
+        "Pronouns — part 1",
+        "Articles A and THE",
+        "Pronouns — part 2",
+        "Adjectives and adverbs",
+        "Word order — continued",
+        "Conjunctions",
+        "Prepositions",
+        "Phrasal verbs"
+      ],
+      "INT": [
+        "Present Simple and Present Continuous",
+        "Past Simple and Past Continuous",
+        "Present Perfect and Present Perfect Continuous",
+        "Past Perfect and Past Perfect Continuous",
+        "have got and used to",
+        "Future forms",
+        "Modal verbs",
+        "Conditionals and I wish",
+        "The passive voice",
+        "Reported speech",
+        "Questions",
+        "Infinitive and gerund",
+        "Countability and articles A / THE",
+        "Possession",
+        "Pronouns",
+        "Relative clauses",
+        "Adjectives and adverbs",
+        "Conjunctions and prepositions",
+        "Phrasal verbs"
+      ],
+      "ADV": [
+        "Present and past tenses",
+        "The future",
+        "Modals and semi-modals",
+        "Linking verbs, passives, questions",
+        "Verb complementation",
+        "Reporting",
+        "Nouns and agreement",
+        "Articles, determiners and quantifiers",
+        "Relative clauses and other clause types",
+        "Adjectives and adverbs",
+        "Adverbial clauses",
+        "Prepositions",
+        "Organising information"
+      ]
+    }
+  }
+}

@@ -1,7 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { MURPHY_DATA } from '../../data/murphy';
 import type { DoneMap } from '../../hooks/useProgress';
 import { countAll } from '../../hooks/useProgress';
+import {
+  getRuleContentBundle,
+  localizeMurphyLevels,
+  normalizeUiLang,
+} from '../../i18n/localizeRules';
 import { copyToClipboard } from '../../utils/clipboard';
 import { buildMurphyGlobalTestPrompt, buildMurphyRulePrompt } from '../../utils/prompts';
 import { LevelBlock } from '../Grammar/LevelBlock';
@@ -15,7 +21,13 @@ interface Props {
 }
 
 export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) {
-  const { total, checked } = countAll(done, MURPHY_DATA);
+  const { t, i18n } = useTranslation();
+  const murphyLevels = useMemo(() => {
+    const bundle = getRuleContentBundle(i18n);
+    const lang = normalizeUiLang(i18n.language);
+    return localizeMurphyLevels(MURPHY_DATA, bundle, t, lang);
+  }, [i18n, i18n.language, t]);
+  const { total, checked } = countAll(done, murphyLevels);
   const pct = total ? Math.round((checked / total) * 100) : 0;
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -23,13 +35,14 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const [confirmReset, setConfirmReset] = useState(false);
+  const [testCopied, setTestCopied] = useState(false);
   const resetTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const q = searchQuery.trim().toLowerCase();
 
   const forceOpenSet = new Set<string>();
   if (q) {
-    MURPHY_DATA.forEach((lvl) => {
+    murphyLevels.forEach((lvl) => {
       if (lvl.id.toLowerCase().includes(q) || lvl.name.toLowerCase().includes(q)) {
         forceOpenSet.add(lvl.id);
         return;
@@ -48,7 +61,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
     });
   }
   if (targetRuleId) {
-    MURPHY_DATA.forEach((lvl) => {
+    murphyLevels.forEach((lvl) => {
       if (lvl.categories.some((cat) => cat.rules.some((r) => r.id === targetRuleId))) {
         forceOpenSet.add(lvl.id);
       }
@@ -107,14 +120,13 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
     }
   }
 
-  async function handleGlobalTest(e: React.MouseEvent<HTMLButtonElement>) {
-    const btn = e.currentTarget;
+  async function handleGlobalTest() {
     const doneRules: {
       rule: import('../../data/grammar').Rule;
       level: import('../../data/grammar').Level;
       category: import('../../data/grammar').Category;
     }[] = [];
-    MURPHY_DATA.forEach((lvl) => {
+    murphyLevels.forEach((lvl) => {
       lvl.categories.forEach((cat) => {
         cat.rules.forEach((rule) => {
           if (done[rule.id]) doneRules.push({ rule, level: lvl, category: cat });
@@ -122,16 +134,13 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
       });
     });
     if (doneRules.length === 0) {
-      alert('Сначала отметь хотя бы один юнит как изученный!');
+      alert(t('murphy.alertNoUnits'));
       return;
     }
-    const orig = btn.innerHTML;
     const prompt = buildMurphyGlobalTestPrompt(doneRules);
     await copyToClipboard(prompt);
-    btn.textContent = '✓ Скопировано!';
-    setTimeout(() => {
-      if (btn) btn.innerHTML = orig;
-    }, 2000);
+    setTestCopied(true);
+    setTimeout(() => setTestCopied(false), 2000);
   }
 
   return (
@@ -140,19 +149,22 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
         <div className="murphy-progress-block">
           <div className="murphy-progress-nums">
             <span className="murphy-checked">{checked}</span>
-            <span className="murphy-total"> / {total} юнитов</span>
+            <span className="murphy-total">
+              {' '}
+              / {total} {t('murphy.unitsUnit')}
+            </span>
           </div>
           <div className="murphy-bar-bg">
             <div className="murphy-bar-fill" style={{ width: `${pct}%` }} />
           </div>
-          <div className="murphy-pct">{pct}% завершено</div>
+          <div className="murphy-pct">{t('murphy.progressDone', { pct })}</div>
         </div>
         <div className="murphy-header-right">
           <button
             className={`tab-reset-btn${confirmReset ? ' confirming' : ''}`}
             onClick={handleReset}
-            aria-label={confirmReset ? 'Нажмите ещё раз для подтверждения' : 'Сбросить прогресс'}
-            title={confirmReset ? 'Нажмите ещё раз для подтверждения' : 'Сбросить прогресс'}
+            aria-label={confirmReset ? t('murphy.resetConfirmHint') : t('murphy.resetProgress')}
+            title={confirmReset ? t('murphy.resetConfirmHint') : t('murphy.resetProgress')}
           >
             {confirmReset ? (
               <svg
@@ -190,8 +202,8 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
           <button
             className={`murphy-search-btn${searchOpen ? ' active' : ''}`}
             onClick={toggleSearch}
-            aria-label={searchOpen ? 'Закрыть поиск' : 'Поиск'}
-            title={searchOpen ? 'Закрыть поиск' : 'Поиск'}
+            aria-label={searchOpen ? t('murphy.closeSearch') : t('murphy.search')}
+            title={searchOpen ? t('murphy.closeSearch') : t('murphy.search')}
           >
             {searchOpen ? (
               <svg
@@ -226,7 +238,8 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
             )}
           </button>
           <button className="murphy-test-btn" onClick={handleGlobalTest}>
-            <span className="btn-icon">🧠</span> Тест по изученному
+            <span className="btn-icon">🧠</span>{' '}
+            {testCopied ? t('copied') : t('murphy.testLearned')}
           </button>
         </div>
       </div>
@@ -254,7 +267,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
               <line x1="12" y1="9" x2="12" y2="13" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>
-            Нажмите кнопку сброса ещё раз, чтобы подтвердить
+            {t('murphy.resetBanner')}
           </span>
           <button
             className="reset-confirm-cancel"
@@ -267,7 +280,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
             }}
             tabIndex={confirmReset ? 0 : -1}
           >
-            Отмена
+            {t('account.cancel')}
           </button>
         </div>
       </div>
@@ -293,7 +306,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
             ref={searchInputRef}
             className="murphy-search-input"
             type="search"
-            placeholder="Поиск по юниту, теме..."
+            placeholder={t('murphy.searchPlaceholder')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             tabIndex={searchOpen ? 0 : -1}
@@ -306,7 +319,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
                 setSearchQuery('');
                 searchInputRef.current?.focus();
               }}
-              aria-label="Очистить поиск"
+              aria-label={t('murphy.clearSearch')}
             >
               <svg
                 width="12"
@@ -327,7 +340,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
       </div>
 
       <div className="level-path">
-        {MURPHY_DATA.map((level) => (
+        {murphyLevels.map((level) => (
           <LevelBlock
             key={level.id}
             level={level}
@@ -340,7 +353,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
           />
         ))}
       </div>
-      {!hasResults && <div className="no-results">Ничего не найдено по запросу</div>}
+      {!hasResults && <div className="no-results">{t('murphy.noResults')}</div>}
     </div>
   );
 }

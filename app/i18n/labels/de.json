@@ -1,0 +1,155 @@
+{
+  "grammarUi": {
+    "levels": {
+      "A1": { "name": "A1 — Anfänger", "sub": "Anfänger · 2–3 Monate" },
+      "A2": { "name": "A2 — Grundstufe", "sub": "Grundstufe · 3–4 Monate" },
+      "B1": { "name": "B1 — Mittelstufe", "sub": "Mittelstufe · 4–6 Monate" },
+      "B2": { "name": "B2 — Obere Mittelstufe", "sub": "Obere Mittelstufe · 5–8 Monate" },
+      "C1": { "name": "C1 — Fortgeschritten", "sub": "Fortgeschritten · 8–12 Monate" },
+      "C2": { "name": "C2 — Kompetente Sprachbeherrschung", "sub": "Kompetente Beherrschung · 1–2+ Jahre" }
+    },
+    "categories": {
+      "A1": [
+        "Das Verb to be",
+        "Artikel",
+        "Present Simple",
+        "Pronomen",
+        "Grundlegende Strukturen",
+        "Zahlen und Numeralia",
+        "Possessivformen",
+        "Präpositionen der Bewegung"
+      ],
+      "A2": [
+        "Past Simple",
+        "Future",
+        "Present Continuous",
+        "Modalverben",
+        "Adjektive und Menge",
+        "Zeitpräpositionen",
+        "Sonstiges A2",
+        "have / have got",
+        "Adverbien",
+        "Stellung der Adjektive"
+      ],
+      "B1": [
+        "Present Perfect",
+        "Vergangenheitsformen",
+        "Konditionalsätze",
+        "Passiv",
+        "Indirekte Rede",
+        "Gerundium und Infinitiv",
+        "Nebensätze",
+        "Zukunftsformen — vertieft",
+        "Final- und Kausalsätze"
+      ],
+      "B2": [
+        "Past Perfect",
+        "Modalverben in der Vergangenheit",
+        "3. Konditional und gemischte Formen",
+        "Passiv — vertieft",
+        "Gerundium — Nuancen",
+        "wish und Subjunktiv",
+        "Relativsätze — Nuancen",
+        "Konnektoren und Konjunktionen",
+        "Erweiterte Modalverben und Future in the Past",
+        "Pronomen, Substantive und Zahlen"
+      ],
+      "C1": [
+        "Inversion",
+        "Spaltsätze (Cleft sentences)",
+        "Subjunktiv",
+        "Ellipse und Substitution",
+        "Nebensätze — vertieft",
+        "Nominalisierung",
+        "Partizipialkonstruktionen"
+      ],
+      "C2": [
+        "Konditionalsätze — vollständiges System",
+        "Inversion — vollständiges System",
+        "Modalität im akademischen Text",
+        "Register und lexikalische Präzision",
+        "Absolute Konstruktionen",
+        "Ellipse und grammatische Kürzungen",
+        "Future Perfect Continuous und Tempuskongruenz",
+        "Konjunktionen und Kohäsion",
+        "Zeichensetzung im akademischen Text"
+      ]
+    }
+  },
+  "murphyUi": {
+    "levels": {
+      "EL": {
+        "name": "Elementary — Essential Grammar in Use",
+        "sub": "A1–A2 · Roter Murphy · 115 Einheiten"
+      },
+      "INT": {
+        "name": "Intermediate — English Grammar in Use",
+        "sub": "B1–B2 · Blauer Murphy · 145 Einheiten"
+      },
+      "ADV": {
+        "name": "Advanced — Advanced Grammar in Use",
+        "sub": "C1–C2 · Grünes Hewings · 100 Einheiten"
+      }
+    },
+    "categories": {
+      "EL": [
+        "Gegenwart",
+        "Vergangenheit",
+        "Present Perfect und Present Perfect Continuous",
+        "Passiv",
+        "Hilfsverben — Überblick",
+        "Zukunft",
+        "Modalverben",
+        "Wortstellung",
+        "Fragen",
+        "Indirekte Rede",
+        "Infinitiv und Gerundium",
+        "Häufige Verben",
+        "Pronomen — Teil 1",
+        "Artikel A und THE",
+        "Pronomen — Teil 2",
+        "Adjektive und Adverbien",
+        "Wortstellung — Fortsetzung",
+        "Konjunktionen",
+        "Präpositionen",
+        "Phrasal verbs"
+      ],
+      "INT": [
+        "Present Simple und Present Continuous",
+        "Past Simple und Past Continuous",
+        "Present Perfect und Present Perfect Continuous",
+        "Past Perfect und Past Perfect Continuous",
+        "have got und used to",
+        "Zukunftsformen",
+        "Modalverben",
+        "Konditional und I wish",
+        "Passiv",
+        "Indirekte Rede",
+        "Fragen",
+        "Infinitiv und Gerundium",
+        "Zählbarkeit und Artikel A / THE",
+        "Besitz",
+        "Pronomen",
+        "Relativsätze",
+        "Adjektive und Adverbien",
+        "Konjunktionen und Präpositionen",
+        "Phrasal verbs"
+      ],
+      "ADV": [
+        "Gegenwart und Vergangenheit",
+        "Zukunft",
+        "Modal- und Halbmodalverben",
+        "Linking verbs, Passiv, Fragen",
+        "Verbkomplementation",
+        "Reported speech",
+        "Substantive und Kongruenz",
+        "Artikel, Determinierer und Quantoren",
+        "Relativsätze und andere Satztypen",
+        "Adjektive und Adverbien",
+        "Adverbialsätze",
+        "Präpositionen",
+        "Informationsstruktur"
+      ]
+    }
+  }
+}

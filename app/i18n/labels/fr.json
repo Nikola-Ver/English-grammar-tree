@@ -1,0 +1,155 @@
+{
+  "grammarUi": {
+    "levels": {
+      "A1": { "name": "A1 — Débutant", "sub": "Débutant · 2–3 mois" },
+      "A2": { "name": "A2 — Élémentaire", "sub": "Élémentaire · 3–4 mois" },
+      "B1": { "name": "B1 — Intermédiaire", "sub": "Intermédiaire · 4–6 mois" },
+      "B2": { "name": "B2 — Intermédiaire supérieur", "sub": "Intermédiaire sup. · 5–8 mois" },
+      "C1": { "name": "C1 — Avancé", "sub": "Avancé · 8–12 mois" },
+      "C2": { "name": "C2 — Maîtrise", "sub": "Maîtrise · 1–2+ ans" }
+    },
+    "categories": {
+      "A1": [
+        "Le verbe to be",
+        "Articles",
+        "Present Simple",
+        "Pronoms",
+        "Structures de base",
+        "Nombres et numéraux",
+        "Le possessif",
+        "Prépositions de mouvement"
+      ],
+      "A2": [
+        "Past Simple",
+        "Futur",
+        "Present Continuous",
+        "Verbes modaux",
+        "Adjectifs et quantité",
+        "Prépositions de temps",
+        "Divers A2",
+        "have / have got",
+        "Adverbes",
+        "Ordre des adjectifs"
+      ],
+      "B1": [
+        "Present Perfect",
+        "Temps du passé",
+        "Conditionnel",
+        "Voix passive",
+        "Discours rapporté",
+        "Gérondif et infinitif",
+        "Propositions subordonnées",
+        "Formes du futur — avancé",
+        "Propositions de but et de cause"
+      ],
+      "B2": [
+        "Past Perfect",
+        "Modaux au passé",
+        "Troisième conditionnel et formes mixtes",
+        "Passif — avancé",
+        "Gérondif — nuances",
+        "wish et subjonctif",
+        "Propositions relatives — nuances",
+        "Mots de liaison et conjonctions",
+        "Modaux avancés et futur dans le passé",
+        "Pronoms, noms et nombres"
+      ],
+      "C1": [
+        "Inversion",
+        "Phrases clivées",
+        "Subjonctif",
+        "Ellipse et substitution",
+        "Subordonnées — avancé",
+        "Nominalisation",
+        "Constructions participiales"
+      ],
+      "C2": [
+        "Conditionnel — système complet",
+        "Inversion — système complet",
+        "Modalité dans le texte académique",
+        "Registre et précision lexicale",
+        "Constructions absolues",
+        "Ellipse et réduction grammaticale",
+        "Future Perfect Continuous et concordance des temps",
+        "Conjonctions et cohésion",
+        "Ponctuation dans le texte académique"
+      ]
+    }
+  },
+  "murphyUi": {
+    "levels": {
+      "EL": {
+        "name": "Elementary — Essential Grammar in Use",
+        "sub": "A1–A2 · Murphy rouge · 115 unités"
+      },
+      "INT": {
+        "name": "Intermediate — English Grammar in Use",
+        "sub": "B1–B2 · Murphy bleu · 145 unités"
+      },
+      "ADV": {
+        "name": "Advanced — Advanced Grammar in Use",
+        "sub": "C1–C2 · Hewings vert · 100 unités"
+      }
+    },
+    "categories": {
+      "EL": [
+        "Présent",
+        "Passé",
+        "Present Perfect et Present Perfect Continuous",
+        "Voix passive",
+        "Verbes auxiliaires — aperçu",
+        "Futur",
+        "Verbes modaux",
+        "Ordre des mots",
+        "Questions",
+        "Discours rapporté",
+        "Infinitif et gérondif",
+        "Verbes courants",
+        "Pronoms — partie 1",
+        "Articles A et THE",
+        "Pronoms — partie 2",
+        "Adjectifs et adverbes",
+        "Ordre des mots — suite",
+        "Conjonctions",
+        "Prépositions",
+        "Phrasal verbs"
+      ],
+      "INT": [
+        "Present Simple et Present Continuous",
+        "Past Simple et Past Continuous",
+        "Present Perfect et Present Perfect Continuous",
+        "Past Perfect et Past Perfect Continuous",
+        "have got et used to",
+        "Formes du futur",
+        "Verbes modaux",
+        "Conditionnel et I wish",
+        "Voix passive",
+        "Discours rapporté",
+        "Questions",
+        "Infinitif et gérondif",
+        "Dénombrabilité et articles A / THE",
+        "Possession",
+        "Pronoms",
+        "Propositions relatives",
+        "Adjectifs et adverbes",
+        "Conjonctions et prépositions",
+        "Phrasal verbs"
+      ],
+      "ADV": [
+        "Présent et passé",
+        "Futur",
+        "Modaux et semi-modaux",
+        "Linking verbs, passif, questions",
+        "Complémentation verbale",
+        "Reported speech",
+        "Noms et accord",
+        "Articles, déterminants et quantifieurs",
+        "Relatives et autres types de propositions",
+        "Adjectifs et adverbes",
+        "Propositions adverbiales",
+        "Prépositions",
+        "Organisation de l’information"
+      ]
+    }
+  }
+}

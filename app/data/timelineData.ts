@@ -7,7 +7,8 @@ export interface TimelineEntry {
   end: number;
   type: 'bar' | 'point' | 'arrow';
   dotEnd?: boolean;
-  desc: string;
+  /** i18n key: timeline.row.{key} */
+  descKey: string;
 }
 
 export const TL_DATA: TimelineEntry[] = [
@@ -19,7 +20,7 @@ export const TL_DATA: TimelineEntry[] = [
     start: -10,
     end: 10,
     type: 'arrow',
-    desc: 'Повторяющееся/постоянное действие — всегда',
+    descKey: 'timeline.row.present_simple',
   },
   {
     key: 'present_continuous',
@@ -29,7 +30,7 @@ export const TL_DATA: TimelineEntry[] = [
     start: -0.5,
     end: 0.5,
     type: 'bar',
-    desc: 'Действие в процессе прямо сейчас',
+    descKey: 'timeline.row.present_continuous',
   },
   {
     key: 'present_perfect',
@@ -40,7 +41,7 @@ export const TL_DATA: TimelineEntry[] = [
     end: 0,
     type: 'bar',
     dotEnd: true,
-    desc: 'Действие в прошлом → результат сейчас',
+    descKey: 'timeline.row.present_perfect',
   },
   {
     key: 'present_perfect_continuous',
@@ -51,7 +52,7 @@ export const TL_DATA: TimelineEntry[] = [
     end: 0,
     type: 'bar',
     dotEnd: false,
-    desc: 'Действие началось в прошлом и продолжается',
+    descKey: 'timeline.row.present_perfect_continuous',
   },
   {
     key: 'past_simple',
@@ -61,7 +62,7 @@ export const TL_DATA: TimelineEntry[] = [
     start: -5,
     end: -4.5,
     type: 'point',
-    desc: 'Завершённое действие в конкретный момент прошлого',
+    descKey: 'timeline.row.past_simple',
   },
   {
     key: 'past_continuous',
@@ -71,7 +72,7 @@ export const TL_DATA: TimelineEntry[] = [
     start: -7,
     end: -3,
     type: 'bar',
-    desc: 'Длительное фоновое действие в прошлом',
+    descKey: 'timeline.row.past_continuous',
   },
   {
     key: 'past_perfect',
@@ -82,7 +83,7 @@ export const TL_DATA: TimelineEntry[] = [
     end: -5,
     type: 'bar',
     dotEnd: true,
-    desc: 'Завершилось ДО другого события в прошлом',
+    descKey: 'timeline.row.past_perfect',
   },
   {
     key: 'past_perfect_continuous',
@@ -93,7 +94,7 @@ export const TL_DATA: TimelineEntry[] = [
     end: -5,
     type: 'bar',
     dotEnd: false,
-    desc: 'Длилось до момента в прошлом',
+    descKey: 'timeline.row.past_perfect_continuous',
   },
   {
     key: 'future_will',
@@ -103,7 +104,7 @@ export const TL_DATA: TimelineEntry[] = [
     start: 2,
     end: 2.5,
     type: 'point',
-    desc: 'Решение/предсказание о будущем',
+    descKey: 'timeline.row.future_will',
   },
   {
     key: 'future_going_to',
@@ -113,7 +114,7 @@ export const TL_DATA: TimelineEntry[] = [
     start: 1,
     end: 4,
     type: 'bar',
-    desc: 'Запланированное намерение',
+    descKey: 'timeline.row.future_going_to',
   },
   {
     key: 'future_continuous',
@@ -123,7 +124,7 @@ export const TL_DATA: TimelineEntry[] = [
     start: 3,
     end: 6,
     type: 'bar',
-    desc: 'Действие будет в процессе в момент будущего',
+    descKey: 'timeline.row.future_continuous',
   },
   {
     key: 'future_perfect',
@@ -134,6 +135,6 @@ export const TL_DATA: TimelineEntry[] = [
     end: 5,
     type: 'bar',
     dotEnd: true,
-    desc: 'Завершится ДО момента в будущем',
+    descKey: 'timeline.row.future_perfect',
   },
 ];

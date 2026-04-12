@@ -183,9 +183,9 @@ a.rule-unit-link:hover {
 }
 
 .share-btn:hover {
-  border-color: rgba(129, 140, 248, 0.35);
+  border-color: rgba(var(--rgb-b2), 0.35);
   color: var(--b2);
-  background: rgba(129, 140, 248, 0.06);
+  background: rgba(var(--rgb-b2), 0.06);
 }
 
 .share-btn:active {
@@ -195,14 +195,14 @@ a.rule-unit-link:hover {
 .share-btn.copied {
   border-color: var(--a1);
   color: var(--a1);
-  background: rgba(74, 222, 128, 0.08);
+  background: rgba(var(--rgb-a1), 0.08);
   opacity: 1;
   font-size: 11px;
 }
 
 .test-btn {
   background: none;
-  border: 1px solid rgba(129, 140, 248, 0.35);
+  border: 1px solid rgba(var(--rgb-b2), 0.35);
   border-radius: 5px;
   color: var(--b2);
   font-size: 10px;
@@ -217,8 +217,8 @@ a.rule-unit-link:hover {
 
 .test-btn:hover {
   border-color: var(--b2);
-  background: rgba(129, 140, 248, 0.08);
-  color: #a5b4fc;
+  background: rgba(var(--rgb-b2), 0.08);
+  color: var(--sel-share-hover);
 }
 .test-btn:active {
   transform: scale(0.95);
@@ -226,7 +226,7 @@ a.rule-unit-link:hover {
 .test-btn.copied {
   border-color: var(--a1);
   color: var(--a1);
-  background: rgba(74, 222, 128, 0.08);
+  background: rgba(var(--rgb-a1), 0.08);
 }
 
 .rule-arrow {
@@ -249,13 +249,13 @@ a.rule-unit-link:hover {
 /* Check animations */
 @keyframes checkPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+    box-shadow: 0 0 0 0 rgba(var(--rgb-a1), 0.7);
   }
   60% {
-    box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+    box-shadow: 0 0 0 10px rgba(var(--rgb-a1), 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+    box-shadow: 0 0 0 0 rgba(var(--rgb-a1), 0);
   }
 }
 
@@ -300,12 +300,12 @@ a.rule-unit-link:hover {
 
 @keyframes ruleGlow {
   0% {
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.25);
-    border-color: rgba(74, 222, 128, 0.6);
+    box-shadow: 0 0 0 0 rgba(var(--rgb-a1), 0.25);
+    border-color: rgba(var(--rgb-a1), 0.6);
   }
   50% {
-    box-shadow: 0 0 18px 2px rgba(74, 222, 128, 0.18);
-    border-color: rgba(74, 222, 128, 0.9);
+    box-shadow: 0 0 18px 2px rgba(var(--rgb-a1), 0.18);
+    border-color: rgba(var(--rgb-a1), 0.9);
   }
   100% {
     box-shadow: none;
@@ -343,15 +343,15 @@ a.rule-unit-link:hover {
 
 @keyframes targetPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(129, 140, 248, 0.5);
-    border-color: rgba(129, 140, 248, 0.7);
+    box-shadow: 0 0 0 0 rgba(var(--rgb-b2), 0.5);
+    border-color: rgba(var(--rgb-b2), 0.7);
   }
   30% {
-    box-shadow: 0 0 0 6px rgba(129, 140, 248, 0.15);
-    border-color: rgba(129, 140, 248, 1);
+    box-shadow: 0 0 0 6px rgba(var(--rgb-b2), 0.15);
+    border-color: rgba(var(--rgb-b2), 1);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(129, 140, 248, 0);
+    box-shadow: 0 0 0 0 rgba(var(--rgb-b2), 0);
     border-color: var(--border);
   }
 }

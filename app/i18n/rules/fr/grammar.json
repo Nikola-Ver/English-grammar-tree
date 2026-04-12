@@ -1,0 +1,3677 @@
+{
+  "a1_01": {
+    "text": "suis / est / sont - formes du verbe être",
+    "note": "Je suis, il est, ils sont",
+    "exp": "<strong>to be</strong> est le verbe le plus important de la langue anglaise, un analogue du russe « to be/apparaître ».<br><br>Trois formes : <em>am</em> - uniquement avec <em>I</em> ; <em>est</em> - avec lui, elle, cela ; <em>sont</em> - avec vous, nous, ils.<br><br>⚠️ Une différence importante avec le russe : en anglais, le verbe <strong>ne peut pas être manqué</strong>. En russe, nous disons « Je suis un étudiant » et en anglais, nous devons dire : <em>Je <u>suis</u> un étudiant</em>.",
+    "exc": "Formes abrégées : je suis, vous êtes, il est, elle est, c'est, nous sommes, ils sont. Dans les réponses courtes, l'abréviation est interdite : <em>Oui, je le suis.</em> (et non <s>Oui, je le suis</s>)",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle est enseignante</s> → Elle <em>est</em> une enseignante",
+      "<s>J'ai faim</s> → J'<em>ai</em> faim",
+      "Passer pour être : <s>Je suis étudiant</s> → Je <em>suis</em> un étudiant"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I am hungry.",
+        "J'ai faim."
+      ],
+      [
+        "She is a doctor.",
+        "Elle est médecin."
+      ],
+      [
+        "They are ready.",
+        "Ils sont prêts."
+      ],
+      [
+        "It is cold today.",
+        "Il fait froid aujourd'hui."
+      ]
+    ]
+  },
+  "a1_02": {
+    "text": "Négation : je ne suis pas/n'est pas/ne suis pas",
+    "note": "Je ne suis pas fatigué. Il n'est pas là. Ils ne sont pas prêts.",
+    "exp": "La négation est construite en ajoutant <em>pas</em> : <em>ne suis pas, n'est pas, ne suis pas</em>.<br>Formes courtes : <em>n'est pas</em> (= n'est pas), <em>ne sont pas</em> (= ne sont pas). Seul <em>je ne suis pas</em> ne se réduit pas à <em>je ne suis pas</em> - une exception !",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je ne suis pas fatigué</s> → Je ne suis <em>pas</em> fatigué (je ne suis pas fatigué !)",
+      "<s>Il n'est pas fatigué</s> → Il <em>n'est pas</em> fatigué",
+      "<s>Elle ne l'est pas = elle ne l'est pas</s> - seulement <em>elle ne l'est pas</em> ou <em>elle ne l'est pas</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm not a student.",
+        "Je ne suis pas étudiant."
+      ],
+      [
+        "He isn't tired.",
+        "Il n'est pas fatigué."
+      ],
+      [
+        "We aren't ready.",
+        "Nous ne sommes pas prêts."
+      ]
+    ]
+  },
+  "a1_03": {
+    "text": "Des questions à poser : le suis-je ? / Vraiment ? / Le sont-ils ?",
+    "note": "Est-elle enseignante ? As-tu froid ? Suis-je en retard ?",
+    "exp": "Dans les questions, le verbe <em>être</em> est placé <strong>avant le sujet</strong> : <em>Elle est → Est-elle ?</em><br><br>Questions spéciales : mot interrogatif + être + sujet : <em>Où est-il ? Qu'est-ce que c'est ?</em><br><br>Réponses courtes : <em>Oui, je le suis. / Non, elle ne l'est pas</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>As-tu froid ?</s> → <em>As-tu</em> froid ?",
+      "<s>Elle est en retard ?</s> - question sans inversion : <em>Est-elle en retard ?</em>",
+      "<s>Où est-il ?</s> → Où <em>est-il ?</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Are you a student?",
+        "Êtes-vous un étudiant?"
+      ],
+      [
+        "Is it expensive?",
+        "Est-ce cher ?"
+      ],
+      [
+        "Where are they?",
+        "Où sont-ils ?"
+      ]
+    ]
+  },
+  "a1_04": {
+    "text": "Réponses courtes : Oui, je le suis. / Non, elle ne l'est pas.",
+    "note": "Formulaire complet uniquement - non autorisé : \"Oui, je le suis\"",
+    "exp": "En bref répond le pronom + <em>être</em>. <strong>Vous ne pouvez pas raccourcir</strong> la forme du verbe dans une réponse affirmative.<br><em>Êtes-vous fatigué ? — Oui, je le suis.</em> ✓ &nbsp;&nbsp; <em>Oui, je le suis.</em> ✗",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Oui, je le suis</s> → Oui, je <em>le suis</em> (ne peut pas être abrégé dans une réponse affirmative)",
+      "<s>Non, elle ne l'est pas</s> → Non, elle <em>ne l'est pas</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Is she ready? — Yes, she is.",
+        "Est-elle prête ? - Oui."
+      ],
+      [
+        "Are they your friends? — No, they aren't.",
+        "Sont-ils vos amis ? - Non."
+      ]
+    ]
+  },
+  "a1_05": {
+    "text": "Article a/an - indéfini",
+    "note": "un chien, une pomme, une heure, une université",
+    "exp": "<em>a</em> et <em>an</em> sont l'article indéfini, placé avant l'objet <strong>premier mentionné</strong> au singulier.<br><br>Le choix dépend du <strong>son</strong>, pas de la lettre :<br>• <em>a</em> - avant le son de la consonne : <em>un livre, une voiture, une université</em> [ju...]<br>• <em>an</em> - avant le son d'une voyelle : <em>une pomme, une heure</em> [aʊ...], <em>un honnête homme</em>",
+    "exc": "<em>une université, un européen</em> - bien qu'ils commencent par une voyelle, le son initial est [j], donc <em>a</em>. <em>une heure, un honnête</em> - h est muet, le son initial est une voyelle.",
+    "tip": "",
+    "mistakes": [
+      "<s>une université</s> → <em>une</em> université (son [j])",
+      "<s>une pomme</s> → <em>une</em> pomme",
+      "<s>un homme honnête</s> → <em>un</em> homme honnête (h muet)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I saw a cat in the garden.",
+        "J'ai vu un chat dans le jardin."
+      ],
+      [
+        "She is an engineer.",
+        "Elle est ingénieure."
+      ],
+      [
+        "It took an hour.",
+        "Cela a pris une heure."
+      ]
+    ]
+  },
+  "a1_06": {
+    "text": "Article le - défini",
+    "note": "le soleil, la porte, le livre sur la table",
+    "exp": "<em>le</em> est utilisé lorsque l'orateur et l'auditeur <strong>sont</strong> de quoi ils parlent.<br><br>Quand on met <em>le</em> :<br>1. Le sujet a déjà été évoqué :<em>J'ai vu un chat. Le chat était noir.</em><br>2. Unique en son genre : <em>le soleil, la lune, la terre</em><br>3. D'après le contexte, cela ressort clairement : <em>Fermez la fenêtre, s'il vous plaît.</em><br>4. Superlatif : <em>le meilleur, le plus grand</em>",
+    "exc": "Prononciation : <em>the</em> [ðə] avant les consonnes, [ði] avant les voyelles. Dans le discours oral, souvent [ðɪ] pour souligner.",
+    "tip": "",
+    "mistakes": [
+      "<s>J'aime la musique</s> → J'aime la musique (sens général - pas d'article)",
+      "<s>La vie est courte</s> → La vie est courte",
+      "<s>Il est le médecin</s> → Il est <em>un</em> médecin (première mention)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film we saw was amazing.",
+        "Le film que nous avons regardé était incroyable."
+      ],
+      [
+        "Could you pass the salt?",
+        "Pourriez-vous me passer le sel ?"
+      ]
+    ]
+  },
+  "a1_07": {
+    "text": "Zéro article - lorsque l'article n'est pas nécessaire",
+    "note": "J'aime la musique. Elle joue au tennis. Il vient de Russie.",
+    "exp": "L'article <strong>n'est pas placé</strong> avant :<br>• Noms propres : <em>John, Londres, Russie</em><br>• Langues et nationalités : <em>Anglais, russe</em><br>• Sports et jeux : <em>football, échecs</em><br>• Nourriture/boissons au sens général : <em>J'aime le café</em><br>• Concepts abstraits en général : <em>La vie est courte. L'amour est aveugle.</em><br>• Pluriel au sens général : <em>Les chiens sont amicaux.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je joue au tennis</s> → Je joue au tennis",
+      "<s>Elle parle espagnol</s> → Elle parle espagnol",
+      "<s>la Russie</s> → Russie (pays sans article, sauf les États-Unis et le Royaume-Uni)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She speaks Spanish.",
+        "Elle parle espagnol."
+      ],
+      [
+        "He plays basketball every day.",
+        "Il joue au basket tous les jours."
+      ]
+    ]
+  },
+  "a1_08": {
+    "text": "Présent Simple - phrases affirmatives",
+    "note": "Je travaille. Il travaille. Elle s'en va. Ça marche.",
+    "exp": "<strong>Present Simple</strong> est utilisé pour : les habitudes et les actions régulières, les faits et les vérités générales, les horaires.<br><br>Formule : Je/vous/nous/ils + infinitif ; il/elle + infinitif+<em>s/es</em><br><br>Règles d'écriture des terminaisons <em>-s</em>/-<em>es</em> :<br>• La plupart des verbes : + <em>s</em> → <em>fonctionne, joue</em><br>• Se terminant par -o, -ch, -sh, -s, -ss, -x : + <em>es</em> → <em>va, regarde, lavages</em><br>• Terminer par une consonne + -y : -y → <em>ies</em> → <em>étudie, essaie</em>",
+    "exc": "Exceptions : <em>avoir → a, être → est, faire → fait, aller → va</em>",
+    "tip": "Marqueurs de temps : toujours, habituellement, souvent, parfois, rarement, jamais, tous les jours/semaines.",
+    "mistakes": [
+      "<s>Elle travaille</s> → Elle <em>travaille</em> (j'ai oublié -s pour la 3ème personne)",
+      "<s>Il va</s> → Il <em>va</em> (va → va)",
+      "<s>Elle étudie</s> → Elle <em>étudie</em> (consonne + y → ies)"
+    ],
+    "markers": {
+      "tags": [
+        "toujours",
+        "habituellement",
+        "souvent",
+        "parfois",
+        "occasionnellement",
+        "rarement",
+        "rarement",
+        "jamais",
+        "tous les jours",
+        "chaque semaine",
+        "chaque mois",
+        "chaque année",
+        "tous les matins",
+        "tous les soirs",
+        "le lundi",
+        "une fois par semaine",
+        "deux fois par mois",
+        "en général",
+        "en règle générale",
+        "normalement",
+        "régulièrement"
+      ],
+      "note": "Les marqueurs de fréquence se placent avant le verbe principal, mais après être."
+    },
+    "ex": [
+      [
+        "I drink coffee every morning.",
+        "Je bois du café tous les matins."
+      ],
+      [
+        "She works in a hospital.",
+        "Elle travaille dans un hôpital."
+      ],
+      [
+        "The Earth goes round the Sun.",
+        "La Terre tourne autour du Soleil."
+      ]
+    ]
+  },
+  "a1_09": {
+    "text": "Présent Simple - négation : ne pas / ne pas faire",
+    "note": "Je n'aime pas ça. Il n'aime pas ça. (non : il ne le fait pas)",
+    "exp": "La négation est construite à l'aide du verbe auxiliaire <em>faire/fait</em> + <em>pas</em> :<br>• Je/vous/nous/ils + <em>ne fait pas</em> + infinitif<br>• il/elle/il + <em>ne fait pas</em> + infinitif<br><br>⚠️ Après <em>ne fait pas</em> le verbe principal <strong>sans -s</strong> ! <em>Elle n'aime pas</em> (pas <s>aime</s>).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle n'aime pas</s> → Elle n'<em>aime pas</em> (après, non - le formulaire de base !)",
+      "<s>Il ne travaille pas</s> → Il <em>ne travaille pas</em>",
+      "<s>Je n'aime pas</s> → Je <em>n'aime pas</em>"
+    ],
+    "markers": {
+      "tags": [
+        "toujours",
+        "habituellement",
+        "souvent",
+        "parfois",
+        "rarement",
+        "jamais",
+        "tous les jours",
+        "normalement",
+        "généralement",
+        "en règle générale"
+      ],
+      "note": "Les mêmes marqueurs que pour les phrases affirmatives."
+    },
+    "ex": [
+      [
+        "I don't eat meat.",
+        "Je ne mange pas de viande."
+      ],
+      [
+        "He doesn't speak French.",
+        "Il ne parle pas français."
+      ],
+      [
+        "They don't work here.",
+        "Ils ne travaillent pas ici."
+      ]
+    ]
+  },
+  "a1_10": {
+    "text": "Présent Simple - questions : Et vous ? /Est-ce qu'elle ?",
+    "note": "Aimez-vous les pizzas? Est-ce qu'il travaille ici ? Où vivent-ils ?",
+    "exp": "Questions : <em>Fait/Fait</em> + sujet + infinitif ?<br>• Je/vous/nous/ils : <em>Est-ce que vous...?</em><br>• il/elle/elle : <em>Est-ce qu'elle...?</em><br><br>Questions spéciales : mot interrogatif + faire/fait + sujet + infinitif :<br><em>Où habite-t-elle ? Que font-ils ?</em><br><br>⚠️ Exception : la question « Qui ? » sans <em>faire</em> : <em>Qui aime la glace ?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Est-ce qu'elle aime ?</s> → Est-ce qu'elle <em>aime ?</em>",
+      "<s>Est-ce qu'il travaille ?</s> → <em>Est-ce que</em> il travaille ?",
+      "<s>Où habite-t-elle ?</s> → Où habite-t-elle ?"
+    ],
+    "markers": {
+      "tags": [
+        "toujours",
+        "habituellement",
+        "souvent",
+        "parfois",
+        "jamais",
+        "tous les jours",
+        "chaque semaine",
+        "à quelle fréquence",
+        "Combien de fois"
+      ],
+      "note": "Dans les questions, les marqueurs viennent après le sujet."
+    },
+    "ex": [
+      [
+        "Do you speak Russian?",
+        "Parlez-vous russe ?"
+      ],
+      [
+        "Does she live nearby?",
+        "Est-ce qu'elle habite à proximité ?"
+      ],
+      [
+        "Where do you work?",
+        "Où travaillez-vous ?"
+      ]
+    ]
+  },
+  "a1_11": {
+    "text": "Verbes statifs - verbes non utilisés en continu",
+    "note": "Je sais, non : je sais. J'aime, non : j'aime.",
+    "exp": "Certains verbes décrivent un état plutôt qu'une action - ils ne sont pas utilisés aux temps continus.<br><br>Groupes principaux :<br>• Opinions : <em>savoir, croire, penser, comprendre, se souvenir, oublier</em><br>• Sentiments : <em>aimer, détester, aimer, vouloir, avoir besoin, préférer</em><br>• Perception : <em>voir, entendre, sentir, goûter, regarder</em><br>• Être : <em>être, exister, appartenir, contenir, paraître, apparaître</em>",
+    "exc": "<em>penser/avoir/voir/goûter</em> peut être utilisé dans le continu, mais avec un sens différent : <em>Je pense</em> (opinion) vs <em>Je pense</em> (penser en ce moment).",
+    "tip": "",
+    "mistakes": [
+      "<s>Je sais</s> → Je <em>sais</em>",
+      "<s>Elle l'aime</s> → Elle <em>l'aime</em>",
+      "<s>Il veut un café</s> → Il <em>veut</em> un café"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I understand you. (не: I am understanding)",
+        "Je te comprends."
+      ],
+      [
+        "She loves chocolate. (не: is loving)",
+        "Elle adore le chocolat."
+      ]
+    ]
+  },
+  "a1_12": {
+    "text": "Pronoms personnels : je, tu, il, elle, cela, nous, ils",
+    "note": "Vous avez toujours besoin d'un sujet explicite - vous ne pouvez pas sauter",
+    "exp": "Contrairement au russe, en anglais<strong>le sujet est toujours obligatoire</strong>.<br>En russe : « Je rentre à la maison. » En anglais : <em>Je rentre à la maison.</em><br><br>Formes objets (après un verbe ou une préposition) : <em>moi, toi, lui, elle, cela, nous, eux</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il fait froid aujourd'hui</s> → <em>Il</em> fait froid (le sujet ne peut pas être omis)",
+      "<s>Moi, j'aime la pizza</s> → <em>J'</em> aime la pizza",
+      "<s>Elle lui a dit</s> → Elle lui a dit</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She is a teacher.",
+        "Elle est enseignante."
+      ],
+      [
+        "Tell him the truth.",
+        "Dis-lui la vérité."
+      ],
+      [
+        "Can you help me?",
+        "Pouvez-vous m'aider ?"
+      ]
+    ]
+  },
+  "a1_13": {
+    "text": "Adjectifs possessifs : mon, votre, son, elle, son, notre, leur",
+    "note": "mon livre, sa voiture, leur maison - ne change pas de numéro",
+    "exp": "Les adjectifs possessifs montrent la propriété et se placent <strong>avant le nom</strong>.<br>Important : <em>son</em> (sans apostrophe) = propriété ; <em>c'est</em> (avec une apostrophe) = c'est.<br><br>Ne changez pas de genre et de nombre : <em>mon ami / mes amis</em> - pareil.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>C'est une grande maison</s> → <em>C'est</em> une grande maison (c'est = c'est)",
+      "<s>Le chat s'est blessé à la patte</s> → s'est blessé <em>sa</em> patte (son = appartenance)",
+      "<s>Leurs amis sont gentils</s> → Leurs amis <em>sont</em> gentils"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is my phone.",
+        "C'est mon téléphone."
+      ],
+      [
+        "Their dog is cute.",
+        "Leur chien est mignon."
+      ],
+      [
+        "The cat hurt its paw.",
+        "Le chat s'est blessé à la patte."
+      ]
+    ]
+  },
+  "a1_14": {
+    "text": "Pluriel des noms",
+    "note": "chats, boîtes, couteaux, enfants, hommes, moutons",
+    "exp": "Règle de base : ajoutez <em>-s</em>.<br><br>Cas particuliers :<br>• -s, -ss, -sh, -ch, -x, -o : + <em>es</em> → <em>boîtes, montres, tomates</em><br>• voyelle + -y : + <em>s</em> → <em>garçons, jours</em><br>• consonne + -y : -y → <em>ies</em> → <em>villes, bébés</em><br>• -f/-fe : → <em>ves</em> → <em>couteaux, feuilles, épouses</em><br><br>Irrégulier : <em>enfant→enfants, homme→hommes, femme→femmes, dent→dents, pied→pieds, souris→souris, personne→personne, poisson→poisson, mouton→mouton</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>deux enfants</s> → deux <em>enfants</em>",
+      "<s>trois hommes</s> → trois <em>hommes</em>",
+      "<s>boîtes</s> → <em>boîtes</em> (ajouter -es)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "one bus → two buses",
+        "un bus → deux bus"
+      ],
+      [
+        "one child → many children",
+        "un enfant → plusieurs enfants"
+      ]
+    ]
+  },
+  "a1_15": {
+    "text": "Ceci/cela/ces/ceux",
+    "note": "ceci/ces - à proximité ; ça/ceux - loin",
+    "exp": "<em>this</em> (this) - singulier + suivant<br><em>ces</em> (ces) - pluriel + proche<br><em>que</em> (cela) - singulier + lointain ou déjà connu<br><em>ceux</em> (ceux) - pluriel + lointain<br><br>Également utilisé à propos du temps : <em>cette semaine</em> (cette semaine), <em>cette année</em> (cette année).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ceci est mon stylo</s> → <em>Ceci</em> est mon stylo",
+      "<s>Ce sont ces livres</s> → Ce sont <em>ces/ces</em> livres",
+      "<s>Ce livre ici</s> - <em>ceci</em> (près), <em>cela</em> (loin)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is my bag.",
+        "Voici mon sac."
+      ],
+      [
+        "Those shoes are expensive.",
+        "Ces chaussures sont chères."
+      ],
+      [
+        "What is that?",
+        "Qu'est-ce que c'est ?"
+      ]
+    ]
+  },
+  "a1_16": {
+    "text": "Il y a / il y a - existence",
+    "note": "Il y a un parc. Il y a cinq chambres.",
+    "exp": "La construction <em>il y a/sont</em> signifie « existe/existe », « est ».<br>• <em>Il y a</em> + nom singulier. numéro<br>• <em>Il y a</em> + nom pluriel. numéro<br><br>Négation : <em>Il n'y a pas / Il n'y en a pas</em><br>Question : <em>Est-ce qu'il y a... ? / Y a-t-il...?</em><br><br>⚠️ À ne pas confondre avec <em>c'est le cas</em> ! <em>Il y a un livre sur la table</em> (le livre existe là) vs <em>C'est un bon livre</em> (caractéristique).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "There is a cinema near here.",
+        "Il y a un cinéma à proximité."
+      ],
+      [
+        "Are there any shops nearby? — Yes, there are.",
+        "Y a-t-il des magasins à proximité ? - Oui."
+      ]
+    ]
+  },
+  "a1_17": {
+    "text": "Prépositions de lieu : dans, sur, à, sous, à côté, derrière, entre",
+    "note": "dans la boîte, sur la table, à la gare",
+    "exp": "Trois prépositions principales :<br>• <em>in</em> = à l'intérieur de quelque chose : <em>dans la boîte, dans la ville, au lit</em><br>• <em>on</em> = en surface : <em>sur la table, sur le mur, à gauche</em><br>• <em>à</em> = à un moment précis : <em>à la gare, à la maison, à l'école</em><br><br>Autres : <em>sous</em> (sous), <em>à côté de/à côté</em> (près), <em>derrière</em> (derrière), <em>devant</em> (devant), <em>entre</em> (entre), <em>opposé</em> (en face)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "The keys are on the table.",
+        "Les clés sont sur la table."
+      ],
+      [
+        "She is in the kitchen.",
+        "Elle est dans la cuisine."
+      ],
+      [
+        "Meet me at the entrance.",
+        "Retrouvez-moi à l'entrée."
+      ]
+    ]
+  },
+  "a1_18": {
+    "text": "Impératif",
+    "note": "Ouvrez vos livres. Ne cours pas. Veuillez vous asseoir.",
+    "exp": "Impératif = forme de base d'un verbe sans sujet.<br>Négation : <em>Ne pas + infinitif</em><br><em>S'il vous plaît</em> rend la demande plus polie (au début ou à la fin).<br><br>Pour inclure le locuteur : <em>Allons + infinitif</em> → <em>C'est parti ! Mangeons !</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "Turn left at the crossroads.",
+        "Tournez à gauche à l'intersection."
+      ],
+      [
+        "Don't touch that!",
+        "Ne touchez pas à ça !"
+      ],
+      [
+        "Let's have a break.",
+        "Faisons une pause."
+      ]
+    ]
+  },
+  "a1_19": {
+    "text": "je peux / je ne peux pas - compétence et résolution",
+    "note": "Je sais nager. Elle ne peut pas conduire. Puis-je vous aider?",
+    "exp": "<em>can</em> est un verbe modal, exprime :<br>1. Compétence/Capacité : <em>Je peux jouer de la guitare</em><br>2. Opportunité : <em>Cela peut être dangereux</em><br>3. Résolution (orale) : <em>Puis-je utiliser votre téléphone ?</em><br><br>⚠️ <em>peut</em> ne change jamais : <em>il peut</em> (pas <s>il peut</s>). Après, il y a un infinitif sans <em>to</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Pouvez-vous m'aider ?</s> → Pouvez-vous <em>aider</em> (sans le faire)",
+      "<s>Elle peut le faire</s> → Elle <em>peut</em> le faire (peut ne change pas)",
+      "<s>Je peux parler français</s> → Je peux parler français"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I can speak three languages.",
+        "Je parle trois langues."
+      ],
+      [
+        "She can't come today.",
+        "Elle ne peut pas venir aujourd'hui."
+      ],
+      [
+        "Can you help me, please?",
+        "Pourriez-vous m'aider ?"
+      ]
+    ]
+  },
+  "a1_20": {
+    "text": "Mots interrogatifs : quoi, où, qui, quand, comment, pourquoi, lequel, dont, combien/beaucoup",
+    "note": "Qu'est-ce que c'est ? Où  habites-tu? Quel âge as-tu?",
+    "exp": "Les mots de question apparaissent au <strong>début</strong> de la question, suivis d'un verbe auxiliaire avant le sujet.<br><br>• <em>quoi</em> = quoi/qui<br>• <em>où</em> = où/où<br>• <em>qui</em> = qui (question sans faire : <em>Qui habite ici ?</em>)<br>• <em>quand</em> = quand<br>• <em>pourquoi</em> = pourquoi<br>• <em>comment</em> = comment ; <em>combien</em> = combien (indénombrable) ; <em>combien</em> = combien (compter) ; <em>quel âge</em> = quel âge ; <em>combien de temps</em> = combien de temps",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "Where does she work?",
+        "Où travaille-t-elle ?"
+      ],
+      [
+        "What time is it?",
+        "Quelle heure est-il ?"
+      ],
+      [
+        "How many brothers do you have?",
+        "Combien de frères as-tu ?"
+      ]
+    ]
+  },
+  "a1_21": {
+    "text": "Chiffres quantitatifs : 1 à 1 000",
+    "note": "un, deux, trois... vingt et un, cent, mille",
+    "exp": "Chiffres 1 à 12 : mots spéciaux (un, deux, trois... douze).<br>13 à 19 : + <em>-teen</em> (treize, quatorze... dix-neuf ; exceptions : treize, quinze, dix-huit).<br>Dizaines : vingt, trente, quarante, cinquante, soixante, soixante-dix, quatre-vingt, quatre-vingt-dix.<br>Composés : 21 = <em>vingt et un</em> (via trait d'union).<br><br>100 = <em>a/cent</em> ; 1000 = <em>a/mille</em>.<br>Après cent/mille - <em>et</em> (BrE) : <em>deux cent cinquante</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "She is twenty-three years old.",
+        "Elle a vingt-trois ans."
+      ],
+      [
+        "The ticket costs four hundred pounds.",
+        "Le billet coûte quatre cents livres."
+      ]
+    ]
+  },
+  "a1_22": {
+    "text": "Nombres ordinaux : premier, deuxième, troisième...",
+    "note": "le premier, le deuxième, le troisième, le quatrième... le vingt et unième",
+    "exp": "Les nombres ordinaux sont formés en ajoutant <em>-ième</em> : <em>quatrième, cinquième, sixième...</em><br>Exceptions : <em>premier (1er), deuxième (2e), troisième (3e), cinquième (5e), huitième (8e), neuvième (9e), douzième (12e)</em>.<br>Toujours utilisé avec l'article <em>le</em> : <em>le premier jour, le troisième étage</em>.<br><br>Fractions : ½ = <em>un demi</em>, ⅓ = <em>un tiers</em>, ¼ = <em>un quart</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "My office is on the third floor.",
+        "Mon bureau est au troisième étage."
+      ],
+      [
+        "Today is the first of March.",
+        "Aujourd'hui, c'est le premier mars."
+      ]
+    ]
+  },
+  "a1_23": {
+    "text": "Cas possessif : 's et s'",
+    "note": "La voiture de John, l'amie de ma sœur, les jouets des enfants, la salle des professeurs",
+    "exp": "En anglais, l'appartenance s'exprime par une apostrophe + <em>s</em> :<br>• Singulier : <em>Le livre de Tom</em>, <em>la queue du chien</em><br>• Pluriel avec -s : apostrophe uniquement : <em>la salle des professeurs, la maison de mes parents</em><br>• Pluriel irrégulier : <em>'s</em> : <em>l'aire de jeux des enfants, celle des hommes vêtements</em><br>• Noms se terminant par -s : <em>James's / James'</em> - les deux options sont correctes",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "This is Anna's laptop.",
+        "C'est l'ordinateur portable d'Anna."
+      ],
+      [
+        "The children's toys are in the box.",
+        "Jouets pour enfants dans une boîte."
+      ]
+    ]
+  },
+  "a1_24": {
+    "text": "Prépositions de mouvement : vers, dans, hors de, haut, bas, le long, à travers, à travers",
+    "note": "aller à l'école, entrer dans la pièce, traverser la rue en courant",
+    "exp": "<br>• <em>vers</em> = direction vers un point : <em>aller au travail, marcher jusqu'au parc</em><br>• <em>dans</em> = mouvement vers l'intérieur : <em>entrer dans la pièce, sauter dans la piscine</em><br>• <em>sortir de</em> = mouvement vers l'extérieur : <em>sortez de la voiture, sortez du sac</em><br>• <em>haut/bas</em> = haut/bas : <em>monter la colline, descendre les escaliers</em><br>• <em>le long</em> = le long : <em>marcher le long de la rivière</em><br>• <em>à travers</em> = à travers/à travers : <em>traverser le lac à la nage, traverser la route</em><br>• <em>à travers</em> = à travers : <em>traverser le tunnel</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [],
+    "markers": null,
+    "ex": [
+      [
+        "She walked into the room.",
+        "Elle entra dans la pièce."
+      ],
+      [
+        "He ran across the street.",
+        "Il a traversé la rue en courant."
+      ],
+      [
+        "We drove through the forest.",
+        "Nous avons traversé la forêt."
+      ]
+    ]
+  },
+  "a2_01": {
+    "text": "Passé simple - verbes réguliers : +ed",
+    "note": "travailler → travaillé, jouer → joué, arrêter → arrêté, étudier → étudié",
+    "exp": "<strong>Past Simple</strong> - une action terminée dans le passé avec ou sans un temps spécifique.<br><br>Règles d'écriture de la terminaison <em>-ed</em> :<br>• La plupart des verbes : + <em>ed</em> → <em>travaillé, joué</em><br>• Fin par -e : + <em>d</em> → <em>aimé, utilisé</em><br>• Consonne + -y : -y → <em>ied</em> → <em>étudié, essayé</em><br>• Une voyelle + une consonne (syllabe courte accentuée) : doubler la consonne → <em>arrêté, planifié</em>",
+    "exc": "",
+    "tip": "Marqueurs : hier, la semaine/l'année dernière, il y a, en 2010, à 17 heures.",
+    "mistakes": [
+      "<s>Elle va à l'école tous les jours</s> → Elle <em>y va</em> (habitude = Present Simple)",
+      "<s>Je vais au cinéma demain</s> - peut-être, mais <em>Je vais voir un film</em> plus précisément avec intention",
+      "<s>Il veut</s> → Il <em>veut</em> (verbe statif)"
+    ],
+    "markers": {
+      "tags": [
+        "hier",
+        "hier soir",
+        "la semaine dernière",
+        "le mois dernier",
+        "l'année dernière",
+        "lundi dernier",
+        "il y a",
+        "en 2010",
+        "en janvier",
+        "le matin (d'un jour précis)",
+        "à 15h",
+        "mardi",
+        "quand j'étais jeune",
+        "alors",
+        "après ça",
+        "tout à coup",
+        "immédiatement",
+        "enfin",
+        "une fois",
+        "à ce moment-là",
+        "à cette époque",
+        "dans le passé"
+      ],
+      "note": "Règle clé : moment précis dans le passé → Past Simple, pas Present Perfect !"
+    },
+    "ex": [
+      [
+        "She worked all day yesterday.",
+        "Elle a travaillé toute la journée hier."
+      ],
+      [
+        "They played tennis last Sunday.",
+        "Ils ont joué au tennis dimanche dernier."
+      ]
+    ]
+  },
+  "a2_02": {
+    "text": "Passé simple - verbes irréguliers (tableau)",
+    "note": "aller → allé, voir → vu, avoir → eu, venir → venu, acheter → acheté",
+    "exp": "Environ 200 verbes irréguliers doivent être appris par cœur. Les 50 plus fréquents couvrent ~90 % des utilisations.<br><br>Groupes par similarité de changements :<br>• AAA (ne pas changer) : <em>couper, mettre, frapper, poser, laisser</em><br>• ABA (retour au début) : <em>courir→courir→courir, venir→venu→venir</em><br>• ABC (tous différents) : <em>aller→aller→partir, être→était/étaient→été</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle est allée</s> → Elle <em>est allée</em>",
+      "<s>J'ai acheté</s> → J'ai <em>acheté</em>",
+      "<s>Ils n'y sont pas allés</s> → Ils ne sont pas <em>y sont allés</em> (après l'avoir fait - formulaire de base)"
+    ],
+    "markers": {
+      "tags": [
+        "hier",
+        "la semaine dernière",
+        "il y a",
+        "quand?",
+        "quelle heure?",
+        "en 2019",
+        "le lundi"
+      ],
+      "note": "Question mot quand ? nécessite toujours Past Simple (pas Present Perfect)."
+    },
+    "ex": [
+      [
+        "I went to Paris last summer.",
+        "Je suis allé à Paris l'été dernier."
+      ],
+      [
+        "She saw a great film.",
+        "Elle a regardé un super film."
+      ],
+      [
+        "We had a meeting at 9.",
+        "Nous avons eu rendez-vous à 9 heures."
+      ]
+    ]
+  },
+  "a2_03": {
+    "text": "Passé simple - négation : n'a pas + infinitif",
+    "note": "Elle n'y est pas allée (pas : n'y est pas allée). Je ne l'ai pas vu.",
+    "exp": "Négation : <em>n'a pas</em> (= n'a pas) + infinitif pour <strong>toutes les personnes</strong>.<br>⚠️ Après <em>n'a pas</em> - <strong>forme de base</strong> du verbe (pas au passé !) : <em>Elle n'est pas allée</em> (n'est pas <s>est allée</s>).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je n'y suis pas allé</s> → Je n'y suis <em>pas allé</em>",
+      "<s>Elle n'est pas venue</s> → Elle n'est <em>venue</em>",
+      "<s>A-t-elle joué ?</s> → Est-ce qu'elle <em>joué</em> ?",
+      "<s>Elle n'est pas venue</s> → Elle n'est <em>venue</em>",
+      "<s>Qu'a-t-il fait ?</s> → Qu'<em>a-t-il fait ?</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I didn't see him yesterday.",
+        "Je ne l'ai pas vu hier."
+      ],
+      [
+        "She didn't come to work.",
+        "Elle ne s'est pas présentée au travail."
+      ]
+    ]
+  },
+  "a2_04": {
+    "text": "Passé simple - questions : l'avez-vous fait ? Où est-elle allée ?",
+    "note": "Sont-ils arrivés ? Qu'a-t-il dit ?",
+    "exp": "Question : <em>A fait + sujet + infinitif ?</em><br>Questions spéciales : <em>Où/Quand/Quoi + a fait + sujet + infinitif ?</em><br><br>⚠️ Exception : la question « Qui a réalisé l'action ? est construit sans faire : <em>Qui a appelé ? Qui a cassé le vase ?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je vais y aller</s> → Je <em>j'irai</em> (sans le faire)",
+      "<s>Elle viendra</s> → Elle viendra (la volonté ne change pas)",
+      "<s>Je pense qu'elle y va demain</s> → elle <em>ira</em>"
+    ],
+    "markers": {
+      "tags": [
+        "demain",
+        "la semaine prochaine",
+        "le mois prochain",
+        "l'année prochaine",
+        "bientôt",
+        "dans une minute",
+        "dans une heure",
+        "dans le futur",
+        "un jour",
+        "un jour",
+        "probablement",
+        "peut-être",
+        "peut-être",
+        "Je pense...",
+        "J'attends...",
+        "Je suis sûr...",
+        "certainement",
+        "certainement certainement"
+      ],
+      "note": "la volonté est utilisée pour des décisions spontanées, des promesses, des prédictions sans preuves."
+    },
+    "ex": [
+      [
+        "Did you enjoy the film?",
+        "Avez-vous aimé le film ?"
+      ],
+      [
+        "Where did they go?",
+        "Où sont-ils allés ?"
+      ],
+      [
+        "Who told you that?",
+        "Qui t'a dit ça ?"
+      ]
+    ]
+  },
+  "a2_05": {
+    "text": "was / were - verbe être dans le passé",
+    "note": "Je/il/elle/c'était. Vous/nous/ils l’étaient.",
+    "exp": "Passé du verbe <em>être</em> :<br>• <em>était</em> - avec moi, il, elle, cela<br>• <em>étaient</em> - avec vous, nous, ils<br><br>Négation : <em>n'était pas / n'était pas</em><br>Question : <em>Était-elle... ? Étaient-ils...?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je vais le faire</s> - une seule chose : <em>Je vais le faire</em>",
+      "<s>Elle va faire</s> → elle va <em>faire</em>",
+      "<s>Il va le faire</s> - forme familière, inacceptable par écrit"
+    ],
+    "markers": {
+      "tags": [
+        "demain",
+        "la semaine prochaine",
+        "bientôt",
+        "ce week-end",
+        "ce soir",
+        "en juin",
+        "Regarder! (signe)",
+        "Attention!"
+      ],
+      "note": "aller à = une décision ou une prédiction prédéfinie basée sur des signes visibles."
+    },
+    "ex": [
+      [
+        "I was very tired last night.",
+        "J'étais très fatigué hier soir."
+      ],
+      [
+        "They were at home all day.",
+        "Ils étaient à la maison toute la journée."
+      ],
+      [
+        "Was it expensive?",
+        "Était-ce cher ?"
+      ]
+    ]
+  },
+  "a2_06": {
+    "text": "volonté - prédictions et décisions spontanées",
+    "note": "Je te rappelle. Il pleuvra demain. Je vais prendre les pâtes.",
+    "exp": "<em>will</em> est utilisé pour :<br>1. <strong>Décisions spontanées</strong> (prises au moment du discours) : <em>Je vais vous aider avec ça.</em><br>2. <strong>Prédictions</strong> sans plan précis : <em>Je pense qu'il va pleuvoir.</em><br>3. <strong>Promesses</strong> : <em>Je ne le dirai à personne.</em><br>4. <strong>Demandes</strong> : <em>Voulez-vous ouvrir la fenêtre ?</em><br><br>Abréviation : <em>'ll</em>. Négation : <em>ne le fera pas</em> (= ne le fera pas).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je vais y aller</s> → Je <em>j'irai</em> (sans le faire)",
+      "<s>Elle viendra</s> → Elle viendra (la volonté ne change pas)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The phone is ringing. — I'll get it!",
+        "Le téléphone sonne. - Je vais répondre !"
+      ],
+      [
+        "It will be cold tomorrow.",
+        "Il fera froid demain."
+      ]
+    ]
+  },
+  "a2_07": {
+    "text": "aller à - intentions et prédictions évidentes",
+    "note": "Je vais visiter Paris. Attention, vous allez tomber !",
+    "exp": "<em>aller à</em> est utilisé pour :<br>1. <strong>Décisions et intentions prédéfinies</strong> : <em>Je vais commencer un régime la semaine prochaine.</em><br>2. <strong>Prédictions avec signes visibles</strong> : <em>Regardez ces nuages : il va pleuvoir !</em><br><br>Forme : <em>suis/est/sommes + va à + infinitif</em>",
+    "exc": "<em>vouloir ou y aller</em> : <em>\"Je vais prendre un café\"</em> - Je prends ma décision maintenant ; <em>\"Je vais prendre un café\"</em> - J'ai déjà décidé plus tôt.",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle va faire</s> → Elle va <em>faire</em>",
+      "<s>Je vais le faire</s> - vous ne pouvez pas avoir deux avenirs"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm going to study medicine.",
+        "Je vais étudier la médecine."
+      ],
+      [
+        "She's going to have a baby.",
+        "Elle attend un bébé."
+      ]
+    ]
+  },
+  "a2_08": {
+    "text": "Présent Continu : suis/est/sont + V-ing",
+    "note": "Elle lit maintenant. Ils jouent dehors.",
+    "exp": "Le <strong>Présent Continu</strong> est une action qui se déroule <strong>en ce moment</strong> ou <strong>temporairement</strong> pendant cette période.<br><br>Forme : <em>suis/est/sont + verbe + -ing</em><br><br>Règles d'écriture du <em>-ing</em> :<br>• La plupart : juste + <em>ing</em> → <em>travailler, jouer</em><br>• Se termine par -e : supprimer -e + <em>ing</em> → <em>faire, venir</em><br>• Syllabe courte accentuée : doubler la dernière consonne → <em>courir, s'asseoir</em>",
+    "exc": "",
+    "tip": "Marqueurs : maintenant, en ce moment, actuellement, cette semaine/mois.",
+    "mistakes": [
+      "<s>J'étais en visite</s> → J'étais <em>en visite</em>",
+      "<s>Elle travaillait</s> → Elle <em>travaillait</em> (elle/il/elle → était)",
+      "<s>À 8 ans, je travaillais</s> → Je <em>travaillais</em>"
+    ],
+    "markers": {
+      "tags": [
+        "maintenant",
+        "en ce moment",
+        "en ce moment",
+        "actuellement",
+        "actuellement",
+        "aujourd'hui",
+        "cette semaine",
+        "ce mois-ci",
+        "cette année",
+        "encore",
+        "Regarder!",
+        "Écouter!",
+        "ces jours-ci",
+        "temporairement",
+        "pour le moment"
+      ],
+      "note": "Ces marqueurs indiquent une action immédiate ou une situation temporaire."
+    },
+    "ex": [
+      [
+        "I am studying English right now.",
+        "J'étudie l'anglais maintenant."
+      ],
+      [
+        "She's working from home this month.",
+        "Elle travaille à domicile ce mois-ci."
+      ]
+    ]
+  },
+  "a2_09": {
+    "text": "Présent Continu pour le futur planifié",
+    "note": "Je rencontre Tom demain. Nous prenons l'avion pour Rome vendredi.",
+    "exp": "Présent Continu est utilisé pour <strong>des accords spécifiques</strong> dans le futur - lorsque l'heure et le lieu ont déjà été déterminés.<br><br>Différence :<br>• <em>Je rencontre Alice demain</em> - la réunion a été convenue (un plan spécifique)<br>• <em>Je rencontrerai Alice demain</em> - intention ou proposition",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je rencontre Tom la semaine prochaine</s> → je rencontre Tom <em>la semaine prochaine</em> (sans entrer)",
+      "<s>Nous prenons l'avion pour Rome le vendredi</s> → le <em>vendredi</em>"
+    ],
+    "markers": {
+      "tags": [
+        "demain",
+        "ce soir",
+        "la semaine prochaine",
+        "le mois prochain",
+        "le vendredi",
+        "ce soir",
+        "bientôt",
+        "à 20h demain",
+        "en juin",
+        "le lundi"
+      ],
+      "note": "Présent Continu pour le futur - accords spécifiques, il y a un temps et un lieu."
+    },
+    "ex": [
+      [
+        "I'm having dinner with Alex tonight.",
+        "Je dîne avec Alex ce soir."
+      ],
+      [
+        "They're getting married in June.",
+        "Ils se marient en juin."
+      ]
+    ]
+  },
+  "a2_10": {
+    "text": "Présent Simple vs Présent Continu - différence",
+    "note": "Je bois du café (habitude) vs je bois du café (en ce moment)",
+    "exp": "<strong>Présent Simple :</strong> habitudes, faits, horaires, vérités générales.<br><strong>Présent Continu :</strong> quelque chose qui se produit en ce moment ou temporairement.<br><br>Comparez :<br>• <em>Elle parle français.</em> - connaît la langue (toujours)<br>• <em>Elle parle français.</em> - parle en ce moment<br><br>⚠️ Verbes statifs (savoir, aimer, vouloir, comprendre...) - uniquement Present Simple !",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je bois du café tous les matins</s> → Je <em>bois</em> (habitude)",
+      "<s>Elle connaît le français</s> → Elle <em>sait</em> le français",
+      "<s>L'eau bout à 100°C</s> → L'eau <em>bouillit</em> (fait)"
+    ],
+    "markers": {
+      "tags": [
+        "maintenant ↔ tous les jours",
+        "en ce moment ↔ toujours",
+        "actuellement ↔ habituellement",
+        "cette semaine ↔ normalement"
+      ],
+      "note": "Le marqueur détermine le choix : maintenant/à l'instant → Continu ; toujours/tous les jours → Simple."
+    },
+    "ex": [
+      [
+        "Water boils at 100°C. (факт)",
+        "L'eau bout à 100°C."
+      ],
+      [
+        "I'm reading a great book this week. (временно)",
+        "Je lis un super livre cette semaine."
+      ]
+    ]
+  },
+  "a2_11": {
+    "text": "devrait / ne devrait pas - conseils et recommandations",
+    "note": "Vous devriez consulter un médecin. Tu ne devrais pas manger autant.",
+    "exp": "<em>devrait</em> exprime des conseils modérés ou une opinion personnelle. Plus faible que <em>doit</em>.<br>Après <em>devrait</em> - infinitif sans <em>à</em>.<br><br>Également utilisé pour la critique ou le regret : <em>Vous auriez dû appeler</em> (auriez dû appeler).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Vous devriez consulter un médecin</s> → devriez <em>voir</em> (sans le faire)",
+      "<s>Elle devrait y aller</s> → Elle devrait <em>y aller</em>",
+      "<s>J'aurais dû partir</s> → J'aurais dû <em>partir</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You should exercise more.",
+        "Vous devriez faire plus d'exercice."
+      ],
+      [
+        "She shouldn't work so hard.",
+        "Elle ne devrait pas travailler si dur."
+      ]
+    ]
+  },
+  "a2_12": {
+    "text": "doit / ne doit pas - obligation et interdiction stricte",
+    "note": "Vous devez porter une ceinture de sécurité. Tu ne dois pas fumer ici.",
+    "exp": "<em>doit</em> - une obligation forte (souvent interne) ou une exigence catégorique.<br><em>ne doit pas</em> - une <strong>interdiction</strong> stricte (absolument impossible !).<br><br>⚠️ Différence importante : <em>ne doit pas</em> ≠ <em>ne pas être obligé</em> !<br>• <em>ne doit pas</em> = interdit<br>• <em>pas obligatoire</em> = pas obligatoire, mais possible",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Vous ne devez pas fumer</s> → vous ne devez pas <em>fumer</em>",
+      "<s>Je dois faire ça</s> → Je <em>dois</em> faire ça (sans le faire)",
+      "<s>Vous ne devez pas venir</s> ≠ « vous n'avez pas besoin » signifie « vous ne pouvez pas ! » Pour \"pas obligé\" : <em>pas obligé</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You must show your passport.",
+        "Vous devez présenter votre passeport."
+      ],
+      [
+        "You mustn't smoke here.",
+        "Vous ne pouvez pas fumer ici."
+      ]
+    ]
+  },
+  "a2_13": {
+    "text": "devoir - nécessité externe",
+    "note": "Je dois travailler tard. Elle n'est pas obligée de venir.",
+    "exp": "<em>devoir</em> - une nécessité en raison de règles externes, de circonstances ou d'exigences d'autrui.<br><br>Différence de <em>devoir</em> :<br>• <em>doit</em> - nécessité interne : <em>Je dois l'appeler</em> (je le considère moi-même comme nécessaire)<br>• <em>devoir</em> - externe : <em>Je dois porter un uniforme</em> (règle)<br><br><em>ne pas avoir to</em>=facultatif (pas nécessaire, mais autorisé).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je dois pouvoir le faire</s> - vous ne pouvez pas avoir deux modaux à la suite",
+      "<s>She doesn't have to don't come</s> → She <em>doesn't have to</em> come",
+      "<s>Tu ne dois pas venir</s> → tu ne dois pas venir"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I have to finish this report by Friday.",
+        "Je dois soumettre mon rapport d'ici vendredi."
+      ],
+      [
+        "You don't have to come if you don't want to.",
+        "Vous n'êtes pas obligé de venir."
+      ]
+    ]
+  },
+  "a2_14": {
+    "text": "pourrait - compétences passées et demandes polies",
+    "note": "Elle savait nager quand elle avait 5 ans. Pourriez-vous m'aider ?",
+    "exp": "<em>pourrait</em> est le passé de <em>can</em>. Deux significations principales :<br>1. <strong>Compétence dans le passé</strong> : <em>Je savais lire à 4 ans.</em><br>2. <strong>Demandes polies</strong> (plus polies que <em>peut</em>) : <em>Pourriez-vous me passer le sel, s'il vous plaît ?</em><br><br>Également pour une possibilité actuelle : <em>Cela pourrait être vrai.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle savait nager</s> → Elle pouvait <em>nager</em> (sans le faire)",
+      "<s>Puis-je quand j'étais enfant</s> → <em>Je pouvais</em> quand j'étais enfant",
+      "<s>Pourriez-vous parler lentement ?</s> → Pourriez-vous parler lentement ?"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She could play the violin as a child.",
+        "Elle savait jouer du violon lorsqu'elle était enfant."
+      ],
+      [
+        "Could you speak more slowly, please?",
+        "Pourriez-vous parler plus lentement ?"
+      ]
+    ]
+  },
+  "a2_15": {
+    "text": "Degré comparatif des adjectifs",
+    "note": "plus grand, plus intéressant, meilleur, pire",
+    "exp": "Monosyllabique et dissyllabique en <em>-y</em> : + <em>er</em> (rapide→plus rapide, heureux→plus heureux).<br>Polysyllabique : <em>plus</em> + adjectif.<br><br>Règles d'écriture : <em>-e</em> → + <em>r</em> (gentil→plus gentil); syllabe courte accentuée : double (gros → plus gros) ; -y → ier (lourd→plus lourd).<br><br>Irrégulier : <em>bon→mieux, mauvais→pire, loin→plus loin/plus loin, beaucoup/beaucoup→plus</em><br>Après le comparatif - <em>que</em> : <em>Elle est plus grande que sa sœur.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle est plus grande que</s> → Elle est <em>plus grande</em> que",
+      "<s>Il est meilleur</s> → Il est <em>meilleur</em>",
+      "<s>Elle est la plus grande de la classe</s> → Elle est <em>la</em> la plus grande"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This film is more interesting than that one.",
+        "Ce film est plus intéressant que ça."
+      ],
+      [
+        "Today is worse than yesterday.",
+        "Aujourd'hui, c'est pire qu'hier."
+      ]
+    ]
+  },
+  "a2_16": {
+    "text": "Adjectifs superlatifs",
+    "note": "le plus grand, le plus beau, le meilleur",
+    "exp": "Monosyllabique : <em>le + -est</em>. Polysyllabique : <em>le plus</em>.<br>Les règles d'écriture sont les mêmes que pour le diplôme comparatif.<br><br>Irrégulier : <em>bon→le meilleur, mauvais→le pire, loin→le plus loin, beaucoup/beaucoup→le plus</em><br><br>⚠️ Toujours avec l'article <em>le</em> ! Après les superlatifs, souvent <em>dans</em> ou <em>de</em> : <em>la fille la plus grande de la classe.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il est le plus intelligent</s> → Il est <em>le plus</em> intelligent / <em>le plus intelligent</em>",
+      "<s>Elle est la meilleure</s> → Elle est <em>la meilleure</em>",
+      "<s>C'est le film le plus intéressant</s> → <em>le film le plus intéressant</em> (il en faut)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "This is the most expensive restaurant in the city.",
+        "C'est le restaurant le plus cher de la ville."
+      ],
+      [
+        "He is the best player on the team.",
+        "C'est le meilleur joueur de l'équipe."
+      ]
+    ]
+  },
+  "a2_17": {
+    "text": "une partie / n'importe quel - montant indéfini",
+    "note": "J'ai de l'argent. En avez-vous ? Je n'en ai pas.",
+    "exp": "<em>certains</em> - dans les phrases affirmatives et dans les offres/demandes.<br><em>tout</em> - dans les questions et les négations.<br><br>Exception : <em>certains</em> dans les questions lorsque nous attendons une réponse affirmative ou proposons quelque chose : <em>Voulez-vous du thé ? Puis-je avoir de l'eau ?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'ai de l'argent ? (question)</s> → Ai-je <em>de</em> de l'argent ?",
+      "<s>Je n'ai pas d'argent</s> → Je n'ai <em>pas</em> d'argent",
+      "<s>Voulez-vous du thé ?</s> → Voudriez-vous <em>du</em> thé ? (offre)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I bought some bread and some milk.",
+        "J'ai acheté du pain et du lait."
+      ],
+      [
+        "Is there any milk in the fridge?",
+        "Y a-t-il du lait dans le réfrigérateur ?"
+      ],
+      [
+        "I don't have any cash on me.",
+        "Je n'ai pas d'argent liquide avec moi."
+      ]
+    ]
+  },
+  "a2_18": {
+    "text": "beaucoup / beaucoup / beaucoup de / quelques / un peu",
+    "note": "beaucoup d'eau (indénombrable), beaucoup de gens (dénombrable), beaucoup de - partout",
+    "exp": "<em>beaucoup</em> - avec des innombrables (beaucoup d'eau, beaucoup de temps, beaucoup d'argent).<br><em>beaucoup</em> - avec des innombrables (beaucoup de personnes, beaucoup de livres, plusieurs fois).<br><em>beaucoup de / beaucoup de</em> - avec les deux, style conversationnel.<br><br><em>quelques-uns</em> - un peu (dénombrable, neutre/positif).<br><em>peu</em> - peu, presque aucun (dénombrable, négatif).<br><em>un peu</em> - un peu (indénombrable, neutre).<br><em>peu</em> - peu, presque aucun (indénombrable, négatif).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Beaucoup de monde</s> → <em>Beaucoup</em> de personnes (dénombrables)",
+      "<s>Beaucoup d'argent</s> → <em>Beaucoup</em> d'argent (indénombrable)",
+      "<s>Un peu d'eau</s> → <em>Un peu</em> d'eau"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I don't have much time.",
+        "Je n'ai pas beaucoup de temps."
+      ],
+      [
+        "She has a few friends in London.",
+        "Elle a plusieurs amis à Londres."
+      ],
+      [
+        "There is a little sugar left.",
+        "Il reste du sucre."
+      ]
+    ]
+  },
+  "a2_19": {
+    "text": "Noms dénombrables et indénombrables",
+    "note": "eau, information, conseil - interdit : une eau, deux conseils",
+    "exp": "<strong>Dénombrable</strong> : on peut compter, il y a des pluriels. nombre : <em>un livre, deux livres</em>.<br><strong>Indénombrable</strong> : ne peut pas être compté directement - pas de pluriel. nombres, pas d'article indéfini.<br><br>Indénombrables typiques : <em>eau, lait, pain, riz, argent, information, conseil, actualités, météo, bagages, meubles, cheveux, musique, travail</em><br><br>Pour indiquer des portions : <em>un verre d'eau, un conseil, une miche de pain, un sac de riz</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Deux conseils</s> → Deux <em>conseils</em> (conseils innombrables)",
+      "<s>Une information</s> → <em>Quelques informations</em>",
+      "<s>Trois meubles</s> → Trois <em>meubles</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Can I have some information, please?",
+        "Puis-je savoir quelque chose ?"
+      ],
+      [
+        "She gave me very useful advice.",
+        "Elle m'a donné des conseils très utiles."
+      ]
+    ]
+  },
+  "a2_20": {
+    "text": "Prépositions dans / sur / à pour le temps",
+    "note": "en mars, en 2024, en hiver ; le lundi 5 juin ; à 15h, le soir",
+    "exp": "<em>à</em> → heure exacte : <em>à 6 heures, à midi, à minuit, le soir, le week-end (BrE)</em><br><em>le</em> → jours et dates : <em>le lundi, le 5 mars, le jour de mon anniversaire, le jour de l'An</em><br><em>à</em> → périodes : <em>en juillet, en 2023, le matin/l'après-midi/le soir, en été, au 21ème siècle</em><br><br>Sans préposition : <em>ce/dernier/suivant + heure : ce matin, la semaine dernière, l'année prochaine</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>lundi</s> → <em>le</em> lundi",
+      "<s>à 8 heures</s> → <em>à</em> 8 heures",
+      "<s>le matin</s> → <em>dans</em> le matin",
+      "<s>le jour de mon anniversaire</s> → <em>le</em> de mon anniversaire"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The meeting is at half past three.",
+        "Rendez-vous à quatre heures et demie."
+      ],
+      [
+        "She was born on the 12th of April.",
+        "Elle est née le 12 avril."
+      ],
+      [
+        "I started this job in October.",
+        "J'ai commencé ce travail en octobre."
+      ]
+    ]
+  },
+  "a2_21": {
+    "text": "pour / depuis / il y a - durée et début",
+    "note": "depuis trois ans, depuis 2020, il y a trois ans",
+    "exp": "<em>pour</em> - durée (combien de temps) : <em>pendant deux heures, pendant une semaine, pendant des années</em>. Utilisé avec différents temps.<br><em>depuis</em> - moment initial (depuis) : <em>depuis lundi, depuis 2019, depuis que je suis enfant</em>. Utilisé avec le Present Perfect.<br><em>il y a</em> - il y a du temps à partir de maintenant : <em>il y a trois jours, il y a un mois</em>. Uniquement avec Past Simple.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je suis ici depuis trois ans</s> → depuis trois ans",
+      "<s>Je l'ai vu depuis lundi</s> → Je l'ai vu <em>le</em> lundi (il y a longtemps avec Past Simple, pas depuis !)",
+      "<s>Trois jours avant</s> → Il y a trois jours <em>il y a</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've been here for six months.",
+        "Je suis ici depuis six mois maintenant."
+      ],
+      [
+        "She's worked here since 2020.",
+        "Elle travaille ici depuis 2020."
+      ],
+      [
+        "I saw him two days ago.",
+        "Je l'ai vu il y a deux jours."
+      ]
+    ]
+  },
+  "a2_22": {
+    "text": "Questions de queue : ... n'est-ce pas ? / ...est-ce que tu? / ... n'est-ce pas ?",
+    "note": "Il fait froid, n'est-ce pas ? Vous aimez le jazz, n'est-ce pas ?",
+    "exp": "Les questions balises sont utilisées pour confirmer ou clarifier.<br><br>Règle : phrase affirmative → balise négative, et vice versa.<br>Verbe auxiliaire dans la queue = temps de la phrase principale.<br><br>Intonation : ↘ (tombant) = confirmation ; ↗ (montant) = vraie question.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il fait froid, n'est-ce pas ?</s> → n'est-ce pas <em>ça</em>",
+      "<s>Elle sait nager, n'est-ce pas ?</s> → <em>elle ne sait pas</em>",
+      "<s>Vous n'aimez pas ça, n'est-ce pas ?</s> → <em>et</em> vous ? (phrase négative → queue positive)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It's a nice day, isn't it?",
+        "Belle journée, non ?"
+      ],
+      [
+        "You don't like horror films, do you?",
+        "Vous n'aimez pas les films d'horreur, n'est-ce pas ?"
+      ],
+      [
+        "She can swim, can't she?",
+        "Elle sait nager, n'est-ce pas ?"
+      ]
+    ]
+  },
+  "a2_23": {
+    "text": "have got - possession (version britannique)",
+    "note": "J'ai une voiture. As-tu un stylo ? Elle n'a pas le temps.",
+    "exp": "<em>have got</em> est une forme de possession britannique familière. Valeur = <em>avoir</em>.<br><br>• Affirmation : <em>J'ai / J'ai un ordinateur portable.</em><br>• Déni : <em>Je n'ai pas / Je n'ai pas</em><br>• Question : <em>Avez-vous... ? / Avez-vous...?</em><br><br>⚠️ <em>have got</em> est utilisé uniquement au présent. Pour le passé - seulement <em>avait</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'ai une voiture en 2010</s> → J'ai <em>acheté</em> une voiture en 2010 (je n'ai que le cadeau)",
+      "<s>Elle avait un chien</s> → Elle <em>avait</em> un chien (passé - seulement eu)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've got two brothers.",
+        "J'ai deux frères."
+      ],
+      [
+        "Have you got the time?",
+        "Don't you know what time it is?"
+      ],
+      [
+        "She hasn't got any cash.",
+        "Elle n'a pas d'argent."
+      ]
+    ]
+  },
+  "a2_24": {
+    "text": "Adverbes de manière : vite, soigneusement, bien, dur, vite",
+    "note": "Elle chante magnifiquement. Il travaille dur. Elle conduit vite.",
+    "exp": "La plupart des adverbes sont formés d'adjectifs + <em>-ly</em> : <em>rapide → rapide, prudent → soigneusement, lent → lentement</em>.<br><br>Cas particuliers :<br>• <em>bien → bien</em> (pas <s>bien</s>)<br>• <em>rapide → rapide</em> (pas <s>rapidement</s>)<br>• <em>dur → dur</em> (pas <s>à peine</s> - c'est un autre mot : \"à peine\")<br>• <em>tard → tard</em> (pas <s>dernièrement</s> - c'est \"dernièrement\")<br><br>Lieu : généralement après le verbe/objet : <em>Elle parle bien anglais.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle chante magnifiquement</s> → Elle chante <em>magnifiquement</em>",
+      "<s>Il travaille dur</s> → Il travaille <em>dur</em> (à peine = à peine)",
+      "<s>Elle conduit vite</s> → Elle conduit <em>vite</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He explained it clearly.",
+        "Il l'a expliqué clairement."
+      ],
+      [
+        "She ran fast.",
+        "Elle a couru vite."
+      ],
+      [
+        "They worked hard all day.",
+        "Ils ont travaillé dur toute la journée."
+      ]
+    ]
+  },
+  "a2_25": {
+    "text": "Adverbes de fréquence et leur place dans une phrase",
+    "note": "toujours, habituellement, souvent, parfois, rarement, jamais - avant le verbe principal",
+    "exp": "Adverbes de fréquence : <em>toujours, habituellement, souvent, parfois, occasionnellement, rarement, rarement, jamais</em>.<br><br>Placer dans une phrase :<br>• Avant le verbe principal : <em>Elle boit toujours du thé.</em><br>• Après le verbe <em>être</em> : <em>Il est toujours en retard.</em><br>• Après le verbe auxiliaire : <em>Elle n'est jamais allée en Italie.</em><br><br>Aussi : <em>tous les jours/semaines, une fois par semaine, deux fois par mois</em> - à la fin de la phrase.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle est toujours en retard</s> → Elle est <em>toujours</em> en retard (après avoir été)",
+      "<s>Il boit toujours du café</s> → Il <em>toujours</em> boit du café (avant le verbe principal)",
+      "<s>Elle n'a jamais été toujours à l'heure</s> - deux adverbes ensemble sont inappropriés"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I usually wake up at 7.",
+        "Je me réveille habituellement à 7 heures."
+      ],
+      [
+        "She is never late for work.",
+        "Elle n'est jamais en retard au travail."
+      ],
+      [
+        "They meet once a week.",
+        "Ils se réunissent une fois par semaine."
+      ]
+    ]
+  },
+  "a2_26": {
+    "text": "Ordre des adjectifs devant les noms",
+    "note": "un ravissant petit sac ancien en cuir italien rouge",
+    "exp": "Lorsque plusieurs adjectifs apparaissent devant un nom, un ordre strict est observé : Opinion → Taille → Âge → Forme → Couleur → Origine → Matériau → But</strong><br>(Avis → Taille → Âge → Forme → Couleur → Origine → Matériau → But)<br><br>Exemple : <em>un beau petit bureau français carré en bois marron ancien</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>un petit sac ancien français en bois</s> → commande : taille → âge → origine → matière",
+      "<s>une belle grosse voiture italienne</s> → grosse <em>belle</em> voiture italienne (taille avant avis - non)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "a lovely little old cottage",
+        "jolie petite maison ancienne"
+      ],
+      [
+        "a big red Italian sports car",
+        "grosse voiture de sport italienne rouge"
+      ]
+    ]
+  },
+  "b1_01": {
+    "text": "Present Perfect - forme et signification",
+    "note": "Je l'ai vu. Elle est partie. Ils sont arrivés.",
+    "exp": "<strong>Present Perfect</strong> = have/has + V3 (troisième forme du verbe).\n<br><br>Trois significations principales :\n<br>1. <strong>Expérience de vie</strong> (aucune heure précisée) : <em>J'ai visité Tokyo.</em>\n<br>2. <strong>Résultat au présent</strong> : <em>J'ai perdu mes clés.</em> (il n'y a plus de clés maintenant)\n<br>3. <strong>Action inachevée</strong>, en cours actuellement : <em>Elle vit ici depuis 5 ans.</em>\n<br><br>V3 Verbes réguliers = Past Simple (travaillé, joué). Les erreurs doivent être connues séparément.",
+    "exc": "",
+    "tip": "Marqueurs : jamais, jamais, déjà, encore, juste, récemment, dernièrement, jusqu'à présent.",
+    "mistakes": [
+      "<s>Je l'ai vu hier</s> → Je <em>vu</em> hier (hier = Past Simple !)",
+      "<s>Elle est partie</s> → Elle est <em>partie</em>",
+      "<s>Je suis allé à Rome l'année dernière</s> → Je <em>allai</em> à Rome l'année dernière"
+    ],
+    "markers": {
+      "tags": [
+        "jamais",
+        "jamais",
+        "déjà",
+        "encore",
+        "juste",
+        "récemment",
+        "en retard",
+        "jusqu'à présent",
+        "jusqu'à présent",
+        "jusqu'à maintenant",
+        "encore (nég.)",
+        "cette semaine",
+        "ce mois-ci",
+        "cette année",
+        "aujourd'hui",
+        "avant",
+        "une fois",
+        "deux fois",
+        "trois fois",
+        "pour",
+        "depuis",
+        "c'est la première fois...",
+        "le meilleur que j'ai jamais eu..."
+      ],
+      "note": "Jamais utilisé avec une époque précise du passé (hier, l'année dernière, en 2020 → Past Simple)."
+    },
+    "ex": [
+      [
+        "Have you ever eaten sushi?",
+        "Avez-vous déjà mangé des sushis ?"
+      ],
+      [
+        "I've just finished my homework.",
+        "Je viens de finir mes devoirs."
+      ],
+      [
+        "She hasn't called yet.",
+        "Elle n'a pas encore appelé."
+      ]
+    ]
+  },
+  "b1_02": {
+    "text": "jamais / jamais / déjà / encore / juste - Marqueurs Present Perfect",
+    "note": "Avez-vous déjà...? Je n'ai jamais... Je l'ai déjà... Pas encore. Je viens de...",
+    "exp": "<em>jamais</em> - un jour (dans les questions sur l'expérience). Localisation : devant V3.\n<br><em>jamais</em> - jamais (valeur négative). Localisation : devant V3.\n<br><em>déjà</em> - déjà (plus tôt que prévu). Lieu : avant la V3 ou à la fin.\n<br><em>encore</em> - déjà/encore. En questions (As-tu déjà fini ?) et en négations (Je n'ai pas encore fini). Lieu : fin de phrase.\n<br><em>juste</em> - juste maintenant. Localisation : devant V3.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Êtes-vous déjà allé à Paris ?</s> → <em>déjà</em> dans la question, <em>encore</em> à la fin",
+      "<s>Je n'ai pas encore fini</s> → Je <em>pas</em> fini <em>encore</em>",
+      "<s>Je viens de manger</s> → Je <em>je viens</em> de manger (juste avant la V3)"
+    ],
+    "markers": {
+      "tags": [
+        "jamais",
+        "jamais",
+        "déjà",
+        "encore",
+        "juste",
+        "récemment",
+        "en retard",
+        "jusqu'à présent",
+        "jusqu'à présent",
+        "encore (pas encore)"
+      ],
+      "note": "jamais/jamais - avant la V3 ; déjà - avant la V3 ou à la fin ; encore - seulement à la fin."
+    },
+    "ex": [
+      [
+        "Have you ever been to Scotland?",
+        "Êtes-vous allé en Ecosse?"
+      ],
+      [
+        "I've never eaten snails.",
+        "Je n'ai jamais mangé d'escargots."
+      ],
+      [
+        "I've already seen that film.",
+        "J'ai déjà vu ce film."
+      ],
+      [
+        "She hasn't replied yet.",
+        "Elle n'a pas encore répondu."
+      ]
+    ]
+  },
+  "b1_03": {
+    "text": "Present Perfect vs Past Simple - la principale différence",
+    "note": "Je suis allé à Paris (expérience) vs je suis allé à Paris en 2019 (heure précise)",
+    "exp": "C’est l’une des différences les plus importantes dans la grammaire anglaise.\n<br><br><strong>Present Perfect</strong> - connexion avec le présent, l'heure n'est PAS indiquée :\n<br><em>J'ai perdu mon portefeuille.</em> (pas de portefeuille maintenant - c'est important)\n<br><br><strong>Past Simple</strong> - passé complété, le temps est indiqué ou implicite :\n<br><em>J'ai perdu mon portefeuille hier.</em> (hier est une heure précise)\n<br><br>⚠️ Avec des marqueurs temporels spécifiques (hier, la semaine dernière, en 2020, il y a) → Past Simple uniquement !",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je l'ai vu la semaine dernière</s> → Je <em>vu</em> la semaine dernière (heure précise = Past Simple)",
+      "<s>Avez-vous déjà mangé des sushis ?</s> → <em>Avez-vous</em> déjà mangé des sushis ?",
+      "<s>Je l'ai rencontré et il me l'a dit</s> → il <em>me l'a dit</em> (dans un contexte du passé)"
+    ],
+    "markers": {
+      "tags": [
+        "jamais / jamais (PP) ↔ heure précise (PS)",
+        "déjà / encore (PP) ↔ hier / il y a (PS)",
+        "juste (PP) ↔ puis / après cela (PS)",
+        "récemment (PP) ↔ la semaine dernière (PS)"
+      ],
+      "note": "S'il y a une heure précise (hier, en 2020, l'année dernière) → Past Simple uniquement."
+    },
+    "ex": [
+      [
+        "I've met the new director. (он сейчас здесь, это актуально)",
+        "J'ai rencontré le nouveau directeur."
+      ],
+      [
+        "I met him last Tuesday. (конкретное время)",
+        "Je l'ai rencontré mardi dernier."
+      ]
+    ]
+  },
+  "b1_04": {
+    "text": "Présent Parfait avec pour et depuis",
+    "note": "Je vis ici depuis 5 ans / depuis 2019.",
+    "exp": "<em>pour</em> - durée : <em>pendant deux jours, pendant un an, pendant une longue période, pendant des siècles</em>\n<br><em>depuis</em> - point de départ : <em>depuis lundi, depuis que je suis enfant, depuis 2015</em>\n<br><br>La question « Combien de temps ? » — Depuis combien de temps + Present Perfect : <em>Depuis combien de temps la connaissez-vous ?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je vis ici depuis cinq ans</s> → <em>depuis</em> cinq ans",
+      "<s>Elle le connaît depuis 2019</s> → elle le connaît <em>depuis</em> 2019",
+      "<s>Combien de temps avez-vous vécu ici ?</s> → Depuis combien de temps <em>avez-vous</em> vécu ici ? (en cours maintenant)"
+    ],
+    "markers": {
+      "tags": [
+        "pendant deux heures",
+        "pendant une semaine",
+        "depuis des années",
+        "depuis longtemps",
+        "depuis des lustres",
+        "pendant des mois",
+        "depuis lundi",
+        "depuis 2019",
+        "depuis que je suis enfant",
+        "depuis l'année dernière",
+        "depuis",
+        "depuis ce matin",
+        "Combien de temps...?"
+      ],
+      "note": "pour + période ; depuis + point de départ. Les deux sont utilisés avec le Present Perfect (Simple et Continu)."
+    },
+    "ex": [
+      [
+        "She's worked here for ten years.",
+        "Elle travaille ici depuis dix ans."
+      ],
+      [
+        "I've known him since university.",
+        "Je le connais depuis l'université."
+      ]
+    ]
+  },
+  "b1_05": {
+    "text": "Present Perfect Continu : ont été + V-ing",
+    "note": "J'attends depuis une heure. Elle a étudié toute la journée.",
+    "exp": "<strong>Présent Parfait Continu</strong> = avoir/a été + V-ing\n<br><br>L'accent est mis sur la <strong>durée</strong> ou le caractère incomplet de l'action. Répond à la question « Combien de temps ? »\n<br>Explique souvent le résultat visible dans le présent : <em>Vous avez l'air fatigué : avez-vous couru ?</em>\n<br><br>Différence avec Present Perfect Simple :\n<br>• <em>J'ai lu 50 pages.</em> - résultat, exhaustivité\n<br>• <em>J'ai lu toute la soirée.</em> - accent mis sur le processus",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'apprends depuis trois heures</s> → <em>depuis</em> trois heures",
+      "<s>J'ai été lu toute la soirée</s> → J'ai <em>lu</em>",
+      "<s>Je la connais depuis des années</s> → savoir - verbe statif, utilisez Present Perfect Simple"
+    ],
+    "markers": {
+      "tags": [
+        "pour",
+        "depuis",
+        "Combien de temps...?",
+        "toute la journée",
+        "toute la matinée",
+        "toute la soirée",
+        "toute la semaine",
+        "en retard",
+        "récemment",
+        "ces jours-ci",
+        "toujours"
+      ],
+      "note": "Le Present Perfect Continu met l’accent sur la durée plutôt que sur le résultat."
+    },
+    "ex": [
+      [
+        "I've been learning English for two years.",
+        "J'apprends l'anglais depuis deux ans maintenant."
+      ],
+      [
+        "Why are your hands dirty? — I've been fixing the car.",
+        "Pourquoi tes mains sont-elles sales ? — Je réparais la voiture."
+      ]
+    ]
+  },
+  "b1_06": {
+    "text": "Passé continu : était/étaient + V-ing",
+    "note": "Je lisais à 20 heures. Ils ont parlé toute la soirée.",
+    "exp": "<strong>Passé Continu</strong> = était/étaient + V-ing\n<br><br>Valeurs :\n<br>1. Action dans le <strong>processus</strong> à un moment précis du passé : <em>À 21h, je dînais.</em>\n<br>2. <strong>Activité de fond</strong> interrompue par une autre : <em>Je marchais quand il a commencé à pleuvoir.</em>\n<br>3. Actions parallèles : <em>Pendant qu'elle cuisinait, il regardait la télé.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle marchait</s> → Elle <em>marchait</em>",
+      "<s>Ils parlaient</s> → Ils <em>parlaient</em>",
+      "<s>Je travaillais à 21h</s> → Je <em>travaillais</em>"
+    ],
+    "markers": {
+      "tags": [
+        "à 20h hier",
+        "à cette heure la semaine dernière",
+        "toute la matinée",
+        "toute la journée",
+        "toute la soirée",
+        "tandis que",
+        "quand (+ Passé simple)",
+        "comme",
+        "à ce moment-là",
+        "au milieu de",
+        "pendant"
+      ],
+      "note": "while/as → arrière-plan (Past Continu) ; quand → événement (Past Simple)."
+    },
+    "ex": [
+      [
+        "It was raining when I left home.",
+        "Il pleuvait quand j'ai quitté la maison."
+      ],
+      [
+        "What were you doing at 7 yesterday?",
+        "Que faisais-tu hier à 7 heures ?"
+      ]
+    ]
+  },
+  "b1_07": {
+    "text": "Passé simple vs passé continu – contexte et événement",
+    "note": "Pendant que je cuisinais, il a appelé. Je marchais quand il a commencé à pleuvoir.",
+    "exp": "Conception typique : action de fond longue (Past Continu) + événement court (Past Simple).\n<br><br>Syndicats :\n<br>• <em>quand</em> - utilisé avec le Past Simple pour l'événement : <em>Elle dormait lorsque l'alarme s'est déclenchée.</em>\n<br>• <em>while/as</em> - utilisé avec Past Continu pour l'arrière-plan : <em>Pendant que je regardais la télévision, l'alimentation a été coupée.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Pendant que je cuisinais, il a appelé</s> → Pendant que je <em>cuisinais</em>, il a appelé (arrière-plan = Continu)",
+      "<s>Je marchais quand il a commencé à pleuvoir</s> → quand ça <em>a commencé</em> (event = Past Simple)"
+    ],
+    "markers": {
+      "tags": [
+        "tandis que",
+        "comme",
+        "quand",
+        "au moment où",
+        "tout comme",
+        "pendant"
+      ],
+      "note": "while + Past Continu (arrière-plan) + when + Past Simple (événement)."
+    },
+    "ex": [
+      [
+        "She was having a bath when the phone rang.",
+        "Elle prenait un bain lorsque le téléphone sonna."
+      ],
+      [
+        "While he was giving his speech, someone fell asleep.",
+        "Pendant qu'il faisait son discours, quelqu'un s'est endormi."
+      ]
+    ]
+  },
+  "b1_08": {
+    "text": "Type 0 : Si + Présent, Présent - faits et lois",
+    "note": "Si vous chauffez l’eau à 100°C, elle bout.",
+    "exp": "Tapez zéro - pour les faits scientifiques, les lois de la nature, les vérités générales. Les deux actions se produisent toujours ensemble.\n<br><br>Formulaire : <em>Si + Présent Simple, Présent Simple</em>\n<br>Au lieu de <em>si</em>, vous pouvez utiliser <em>quand</em> : <em>Lorsque vous mélangez du rouge et du bleu, vous obtenez du violet.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Si vous chauffez de l'eau, elle bouillira</s> → elle <em>bouillira</em> (type zéro - Présent + Présent)",
+      "<s>Lorsque vous les mélangez, vous obtiendrez</s> → vous <em>obtenez</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If you heat ice, it melts.",
+        "Si vous chauffez de la glace, elle fond."
+      ],
+      [
+        "If it rains, the streets get wet.",
+        "S'il pleut, les rues sont mouillées."
+      ]
+    ]
+  },
+  "b1_09": {
+    "text": "1er type : Si + Présent Simple, sera - futur réel",
+    "note": "S'il pleut demain, je resterai à la maison.",
+    "exp": "Une situation réelle et probable dans le futur.\n<br><br>Forme : <em>Si + Présent Simple, will + Infinitif</em>\n<br>⚠️ Dans la partie <em>if</em> - JAMAIS Future ! Seulement présent simple.\n<br><br>Au lieu de <em>volonté</em> dans la partie principale, vous pouvez : <em>peut, peut, pourrait, devrait</em>.\n<br>Les pièces peuvent être changées : <em>Je resterai à la maison s'il pleut.</em> (sans virgule)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>S'il pleut</s> → S'il <em>pleut</em> (il n'y a AUCUNE volonté dans la partie if !)",
+      "<s>Si elle étudie dur, elle réussit</s> → Si elle étudie, elle <em>réussira</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If she studies hard, she'll pass the exam.",
+        "Si elle étudie bien, elle réussira l'examen."
+      ],
+      [
+        "If you need help, I can come.",
+        "Si tu as besoin d'aide, je peux venir."
+      ]
+    ]
+  },
+  "b1_10": {
+    "text": "Type 2 : Si + Past Simple, serait - présent irréel",
+    "note": "Si j'avais une voiture, je me rendrais au travail en voiture. Si j'étais toi...",
+    "exp": "Une situation irréelle ou improbable dans le présent ou le futur.\n<br><br>Forme : <em>Si + Passé simple, serait + infinitif</em>\n<br>⚠️ Le verbe dans la partie <em>if</em> est Past Simple, mais le sens est <strong>présent/futur</strong> !\n<br>⚠️ <em>étaient</em> est utilisé pour toutes les personnes : <em>Si j'étais vous, Si elle était ici</em> est une norme de langage formel.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Si j'avais une voiture</s> → Si j'<em>avais</em> une voiture",
+      "<s>Si j'étais vous</s> → Si j'<em>étais</em> vous (officiellement)",
+      "<s>Je pourrais le faire</s> → Je <em>pourrais</em> le faire (vous ne pouvez pas avoir deux modaux)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If I won the lottery, I would travel the world.",
+        "Si je gagnais à la loterie, je voyagerais à travers le monde."
+      ],
+      [
+        "If I were taller, I'd play basketball.",
+        "Si j'étais plus grand, je jouerais au basket."
+      ]
+    ]
+  },
+  "b1_11": {
+    "text": "Type 1 vs Type 2 : réel vs improbable",
+    "note": "Si je gagne (1er, vraiment) vs Si je gagne (2e, peu probable)",
+    "exp": "Le choix du type reflète<strong>votre confiance</strong> dans la réalité de la situation.\n<br><br>• <em>Si je la vois</em> (1er type) - Je m'attends à la voir\n<br>• <em>Si je la voyais</em> (2ème type) - peu probable ou je fantasme juste\n<br><br>Ce n'est pas une différence de grammaire, mais une différence dans l'attitude du locuteur.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "Confusion de type 1 et 2 : <em>Si je gagne</em> (réel) vs <em>Si je gagne</em> (peu probable)",
+      "<s>Si je gagnais, j'achèterais</s> → ne peut pas être mélangé : <em>achèterais</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If it rains tomorrow, I'll take an umbrella. (реально возможно)",
+        "S'il pleut demain, je prendrai un parapluie."
+      ],
+      [
+        "If it rained every day, I'd move to Spain. (маловероятная фантазия)",
+        "S'il pleuvait tous les jours, je déménagerais en Espagne."
+      ]
+    ]
+  },
+  "b1_12": {
+    "text": "Voix Passive - Présent Simple : est/sont + V3",
+    "note": "Le café est cultivé au Brésil. La voiture est fabriquée en Allemagne.",
+    "exp": "La <strong>voix passive</strong> est utilisée lorsque :\n<br>• L'action elle-même est importante, pas la personne qui l'exécute\n<br>• Interprète inconnu ou évident\n<br><br>Forme Présent Simple Passif : <em>am/is/are + V3</em>\n<br>L'interprète (si nécessaire) est ajouté avec <em>par</em> : <em>La fenêtre a été brisée par la balle.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Le café est cultivé au Brésil</s> → Le café est <em>cultivé</em>",
+      "<s>La lettre écrite en français</s> → La lettre <em>est écrite</em>",
+      "<s>L'anglais est parlé ici</s> → L'anglais <em>est parlé</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "English is spoken in many countries.",
+        "L'anglais est parlé dans de nombreux pays."
+      ],
+      [
+        "The letter is written in French.",
+        "La lettre est écrite en français."
+      ]
+    ]
+  },
+  "b1_13": {
+    "text": "Voix Passive - Past Simple : était/étaient + V3",
+    "note": "Le pont a été construit en 1890. Ils ont été arrêtés.",
+    "exp": "Past Simple Passif : <em>était/étaient + V3</em>\n<br>• <em>était</em> - unités. numéro\n<br>• <em>étaient</em> - pluriel. numéro\n<br><br>Actif → Passif : <em>Quelqu'un a volé ma voiture.</em> → <em>Ma voiture a été volée.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Le pont a été construit en 1890</s> → a été <em>construit</em>",
+      "<s>Ils ont été arrêtés</s> → Ils <em>ont été</em> arrêtés",
+      "<s>La voiture volée</s> → La voiture <em>a été</em> volée"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The Eiffel Tower was built in 1889.",
+        "La Tour Eiffel a été construite en 1889."
+      ],
+      [
+        "Three people were injured in the accident.",
+        "Trois personnes ont été blessées dans l'accident."
+      ]
+    ]
+  },
+  "b1_14": {
+    "text": "Voix Passive - Present Perfect : a/ont été + V3",
+    "note": "La voiture a été réparée. Toutes les invitations ont été envoyées.",
+    "exp": "Present Perfect Passif : <em>a/ont été + V3</em>\n<br><br>Utilisé lorsque le résultat dans le présent est important, et non quand exactement il s'est produit.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Le projet est terminé</s> → a été <em>terminé</em>",
+      "<s>Il a été envoyé</s> → Il <em>a</em> été envoyé",
+      "<s>Tous les invités ont été informés</s> → ont été <em>informés</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project has been completed.",
+        "Le projet est terminé."
+      ],
+      [
+        "All the guests have been informed.",
+        "Tous les invités ont été informés."
+      ]
+    ]
+  },
+  "b1_15": {
+    "text": "Discours rapporté - décalage horaire",
+    "note": "\"Je suis fatigué.\" → Il a dit qu'il était fatigué.",
+    "exp": "Lorsqu'ils sont traduits au discours indirect, les temps sont « décalés » :\n<br>• Présent simple → Passé simple : <em>\"Je travaille\" → il a dit qu'il travaillait</em>\n<br>• Passé simple → Passé parfait : <em>\"J'y suis allé\" → elle a dit qu'elle était partie</em>\n<br>• Present Perfect → Past Perfect : <em>\"J'ai vu\" → il a dit qu'il avait vu</em>\n<br>• volonté → serait; peut → pourrait; est → était; j'y vais → j'allais",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il a dit qu'il était fatigué</s> → Il a dit qu'il <em>était</em> fatigué (décalage horaire)",
+      "<s>Elle a dit qu'elle était en retard</s> → Elle m'a dit/à nous/à lui</em> que... (le dire nécessite un objet)",
+      "<s>Il m'a dit cela</s> → Il <em>m'a dit</em> cela / Il <em>a dit</em> que"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She said: 'I am leaving.' → She said she was leaving.",
+        "Elle a dit qu'elle partait."
+      ],
+      [
+        "He told me: 'I can't come.' → He told me he couldn't come.",
+        "Il a dit qu'il ne pouvait pas venir."
+      ]
+    ]
+  },
+  "b1_16": {
+    "text": "Questions rapportées - questions indirectes",
+    "note": "\"Où habites-tu?\" → Elle m'a demandé où j'habitais.",
+    "exp": "Dans les questions indirectes :\n<br>1. <strong>Pas d'inversion</strong> (ordre des mots comme dans la déclaration)\n<br>2. <strong>Aucun auxiliaire faire/faire</strong>\n<br>3. Questions générales (Oui/Non) → <em>si/si + sujet + verbe</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle m'a demandé où j'habite</s> → elle m'a demandé où j'<em>vivais</em> (pas d'inversion !)",
+      "<s>Il m'a demandé ce que je faisais</s> → ce que je <em>faisais</em>",
+      "<s>Elle m'a demandé si j'étais fatigué</s> → si j'<em>étais</em> fatigué"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "\"Where do you work?\" → She asked where I worked.",
+        "Elle m'a demandé où je travaillais."
+      ],
+      [
+        "\"Are you married?\" → He wanted to know if I was married.",
+        "Il voulait savoir si j'étais marié."
+      ]
+    ]
+  },
+  "b1_17": {
+    "text": "dire vs dire au discours indirect",
+    "note": "Il a dit ça... / Il m'a dit ça... - après, tu as besoin d'un visage !",
+    "exp": "<em>dites</em> - sans l'ajout requis : <em>Elle a dit qu'elle était fatiguée.</em>\n<br><em>dire</em> - TOUJOURS avec un ajout (à qui on le dit) : <em>Elle m'a dit qu'elle était fatiguée.</em>\n<br><br>❌ <s>Il a dit qu'il était en retard.</s> ✓ <em>Il a dit qu'il était en retard.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il a dit qu'il était en retard</s> → Il <em>a dit</em> que / Il <em>m'a dit</em> que",
+      "<s>Elle m'a annoncé la nouvelle</s> → Elle <em>m'a annoncé</em> la nouvelle",
+      "<s>Ils ont parlé du problème</s> → Ils <em>en ont parlé</em> / <em>ont dit</em> quelque chose à ce sujet"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She said she needed help.",
+        "Elle a dit qu'elle avait besoin d'aide."
+      ],
+      [
+        "He told us the meeting was cancelled.",
+        "Il nous a informé que la réunion avait été annulée."
+      ]
+    ]
+  },
+  "b1_18": {
+    "text": "Verbes + gérondif (V-ing)",
+    "note": "J'aime lire. Elle a fini d'écrire. Il évitait de faire des erreurs.",
+    "exp": "Ces verbes nécessitent un gérondif (V-ing) après eux :\n<br><em>apprécier, terminer, éviter, penser, suggérer, garder, considérer, nier, imaginer, manquer, pratiquer, risquer, admettre, retarder, ne pas aimer, fantaisie, abandonner, impliquer, remettre à plus tard, recommander, résister</em>\n<br><br>Astuce de mémorisation : si vous pouvez le remplacer par \"processus\", il s'agit probablement d'un gérondif.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'aime nager</s> → J'aime <em>nager</em>",
+      "<s>Elle a fini d'écrire</s> → Elle a fini <em>d'écrire</em>",
+      "<s>Il a évité de faire</s> → Il a évité de <em>faire</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I enjoy swimming in the sea.",
+        "J'aime nager dans la mer."
+      ],
+      [
+        "She's considering moving abroad.",
+        "Elle envisage de déménager à l'étranger."
+      ],
+      [
+        "He avoided making eye contact.",
+        "Il évitait le contact visuel."
+      ]
+    ]
+  },
+  "b1_19": {
+    "text": "Verbes + infinitif (à + V)",
+    "note": "Je veux y aller. Elle a décidé de rester. Il a réussi à terminer.",
+    "exp": "Ces verbes nécessitent un infinitif avec <em>to</em> :\n<br><em>vouloir, décider, espérer, planifier, gérer, accepter, promettre, refuser, échouer, s'attendre, offrir, apprendre, avoir besoin, se permettre, arranger, tenter, choisir, revendiquer, exiger, mériter, aider, faire semblant, s'occuper, menacer</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle a décidé d'y aller</s> → Elle a décidé <em>d'y aller</em>",
+      "<s>Il veut sortir</s> → Il veut <em>sortir</em>",
+      "<s>J'espère vous voir</s> → J'espère <em>vous voir</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She decided to quit her job.",
+        "Elle a décidé d'arrêter."
+      ],
+      [
+        "I hope to see you soon.",
+        "J'espère vous voir bientôt."
+      ],
+      [
+        "He failed to answer.",
+        "Il ne pouvait pas répondre."
+      ]
+    ]
+  },
+  "b1_20": {
+    "text": "Verbes avec les deux (aimer, aimer, détester, commencer, commencer)",
+    "note": "J'aime lire = j'aime lire - légère différence",
+    "exp": "Après <em>aimer/aimer/hainer/préférer</em> les deux options sont possibles :\n<br>• V-ing - nous parlons de l'action dans son ensemble : <em>J'aime cuisiner.</em> (J'aime généralement cuisiner)\n<br>• to-inf - nous parlons d'un cas précis : <em>J'aimerais cuisiner ce soir.</em>\n<br><br>Après le <em>début/commencement/continue/cesse</em>, il n'y a pratiquement aucune différence.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'aimerais cuisiner ce soir</s> → J'aimerais <em>cuisiner</em> ce soir (cas précis)",
+      "<s>Elle a commencé à travailler</s> → Elle a commencé à <em>travailler</em> ou <em>à travailler</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I love travelling / to travel.",
+        "J'aime voyager."
+      ],
+      [
+        "She started working / to work here in May.",
+        "Elle a commencé à travailler ici en mai."
+      ]
+    ]
+  },
+  "b1_21": {
+    "text": "habitué - habitudes et états passés",
+    "note": "Je jouais au football. Elle avait les cheveux longs.",
+    "exp": "<em>utilisé</em> - actions ou conditions régulières dans le passé qui ont déjà pris fin.\n<br><br>Forme : <em>utilisé pour + infinitif</em>\n<br>Déni : <em>je n'avais pas l'habitude de le faire</em>\n<br>Question : <em>Aviez-vous l'habitude de... ?</em>\n<br><br>⚠️ Il n'y a pas de forme au présent ! Vous ne pouvez pas : <s>J'en ai l'habitude</s> pour le moment.\n<br>Différence de <em>être habitué à</em> : <em>J'ai l'habitude de me lever tôt</em> = J'y suis habitué (maintenant).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je jouais au football</s> → Je <em>avais</em> joué",
+      "<s>Aviez-vous l'habitude de... ?</s> → Aviez-vous <em>l'habitude de</em>... ? (après did - formulaire de base)",
+      "<s>J'y vivais</s> → J'y <em>vivais</em> (infinitif sans to+ing)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I used to smoke, but I stopped.",
+        "Je fumais, mais j'ai arrêté."
+      ],
+      [
+        "Did you use to play an instrument?",
+        "Avez-vous déjà joué d'un instrument ?"
+      ]
+    ]
+  },
+  "b1_22": {
+    "text": "Clauses relatives : qui, quoi, cela, où, dont",
+    "note": "L'homme qui a appelé. Le livre que j'ai lu. L'endroit où nous nous sommes rencontrés.",
+    "exp": "<em>qui</em> - pour les gens : <em>La femme qui a appelé est ma sœur.</em>\n<br><em>qui</em> - pour les objets et les animaux : <em>Le livre que j'ai emprunté était génial.</em>\n<br><em>que</em> - pour les personnes et les objets (dans les clauses de définition) : <em>La voiture qu'il a achetée est neuve.</em>\n<br><em>où</em> - pour les lieux : <em>Le café où nous nous sommes rencontrés est fermé.</em>\n<br><em>dont</em> - accessoire : <em>La fille dont le sac a été volé...</em>\n<br><br>Dans le langage familier, un pronom est souvent omis s'il s'agit d'un objet : <em>Le film (que) j'ai vu...</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>L'homme qui a appelé</s> → l'homme <em>qui</em> a appelé (qui pour les gens)",
+      "<s>L'endroit où nous avons rencontré</s> → l'endroit <em>où</em> nous nous sommes rencontrés",
+      "<s>La fille qui a un sac</s> → la fille <em>dont</em> le sac"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The man who lives next door is very friendly.",
+        "L'homme qui habite à côté est très sympathique."
+      ],
+      [
+        "The hotel where we stayed had a pool.",
+        "L'hôtel dans lequel nous avons séjourné avait une piscine."
+      ]
+    ]
+  },
+  "b1_23": {
+    "text": "Conjonctions de contraste : bien que, cependant, malgré, malgré, alors que",
+    "note": "Même s'il pleuvait, nous sommes sortis. Malgré la pluie, nous y sommes allés.",
+    "exp": "<em>bien que / même si / bien que</em> + clause subordonnée.\n<br><em>malgré / malgré</em> + nom / gérondif (PAS de proposition subordonnée !).\n<br><em>cependant</em> + nouvelle phrase (après un point ou un point-virgule).\n<br><em>considérant que</em> est un contraste entre deux faits.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Malgré qu'il pleuvait</s> → Malgré <em>la pluie</em> / Malgré <em>il pleuvait</em> (nom/gérondif !)",
+      "<s>Même s'il pleuvait, nous y sommes allés</s> → Même si <em>il pleuvait</em> (bien que + phrase)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Although she was tired, she kept working.",
+        "Même si elle était fatiguée, elle a continué à travailler."
+      ],
+      [
+        "Despite the rain, he cycled to work.",
+        "Malgré la pluie, il est allé au travail à vélo."
+      ],
+      [
+        "It was expensive. However, it was worth it.",
+        "C'était cher. Pourtant, ça valait le coup."
+      ]
+    ]
+  },
+  "b1_24": {
+    "text": "Future Continu : sera + V-ing",
+    "note": "Je travaillerai à 9 heures demain. Elle survolera l'Atlantique.",
+    "exp": "<strong>Future Continu</strong> = <em>sera + V-ing</em>\n<br><br>Valeurs :\n<br>1. Une action qui sera <strong>en cours</strong> à un moment précis dans le futur : <em>A cette heure demain, je serai allongé sur la plage.</em>\n<br>2. Action planifiée et attendue dans le futur (cours naturel des événements) : <em>Je la verrai demain de toute façon.</em>\n<br>3. Questions polies sur les projets (pas de pression) : <em>Viens-tu à la fête ?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je travaillerai à 9 heures</s> → Je <em>travaillerai</em>",
+      "<s>Elle travaillera</s> → Elle <em>travaillera</em>"
+    ],
+    "markers": {
+      "tags": [
+        "à cette heure demain",
+        "cette fois la semaine prochaine",
+        "à 20h demain",
+        "demain matin",
+        "toute la journée demain",
+        "dans deux heures",
+        "quand vous arrivez (+ Future Continu)",
+        "pendant que tu dors"
+      ],
+      "note": "Souvent utilisé pour des questions polies sur les projets : utiliserez-vous la voiture ?"
+    },
+    "ex": [
+      [
+        "Don't call at 8 — I'll be having dinner.",
+        "N'appelle pas à 8 heures, je vais dîner."
+      ],
+      [
+        "This time next week I'll be sitting on a beach.",
+        "À cette époque, la semaine prochaine, je serai assis sur la plage."
+      ]
+    ]
+  },
+  "b1_25": {
+    "text": "Future Perfect : aura + V3",
+    "note": "D'ici vendredi, j'aurai terminé le rapport. D’ici 2030, ils auront construit le pont.",
+    "exp": "<strong>Future Perfect</strong> = <em>aura + V3</em>\n<br><br>Une action qui sera terminée <strong>avant</strong> un certain moment dans le futur.\n<br>Souvent utilisé avec <em>par (l'heure), avant</em> : <em>Au moment où vous arriverez, j'aurai préparé le dîner.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>D'ici vendredi, je terminerai</s> → J'<em>aurai terminé</em> (sera terminé avant la date limite = Future Perfect)",
+      "<s>J'aurai fini dimanche</s> → J'aurai <em>fini</em>"
+    ],
+    "markers": {
+      "tags": [
+        "d'ici demain",
+        "d'ici vendredi",
+        "d'ici la fin de la semaine",
+        "d'ici la fin de l'année",
+        "d'ici 2030",
+        "au moment où vous arrivez",
+        "avant d'arriver ici",
+        "avant minuit",
+        "dans deux heures (= d'ici là)"
+      ],
+      "note": "par (le temps) est un marqueur clé : l’action se terminera AVANT ce moment."
+    },
+    "ex": [
+      [
+        "I'll have finished this book by Sunday.",
+        "Je finirai de lire ce livre d'ici dimanche."
+      ],
+      [
+        "By 2050, scientists will have found a cure.",
+        "D’ici 2050, les scientifiques trouveront un remède."
+      ]
+    ]
+  },
+  "b1_26": {
+    "text": "Objectifs subordonnés : pour, afin de, pour que, de manière à",
+    "note": "J'étudie dur pour réussir. Elle est partie tôt pour pouvoir prendre le train.",
+    "exp": "<em>à / afin de / de manière à</em> + infinitif - objectif. <em>Pour</em> et <em>de manière à</em> sont un peu plus formels.\n<br><em>de sorte que</em> + sujet + verbe - but avec un autre sujet ou avec un modal.\n<br><br>⚠️ Déni : <em>afin de ne pas / pour ne pas</em> (ne pas <s>ne pas</s>).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'étudie dur pour réussir</s> → J'étudie dur <em>pour réussir</em>",
+      "<s>Elle est partie tôt pour pouvoir prendre le train</s> → <em>pour que</em> elle puisse",
+      "<s>Afin de ne pas le contrarier</s> → <em>afin de ne pas</em> le contrarier"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She studies hard in order to get a scholarship.",
+        "Elle étudie dur pour obtenir une bourse."
+      ],
+      [
+        "He left early so that he could catch the last train.",
+        "Il est parti tôt pour prendre le dernier train."
+      ]
+    ]
+  },
+  "b1_27": {
+    "text": "Verbes à particule - basique",
+    "note": "abandonner, lever les yeux, éteindre, découvrir, continuer, remettre à plus tard, continuer",
+    "exp": "Verbes à particule = verbe + particule (préposition ou adverbe). Le sens est souvent idiomatique.\n<br><br>Les plus fréquents :\n<br>• <em>abandonner</em> = abandonner, abandonner\n<br>• <em>découvrir</em> = découvrir, découvrir\n<br>• <em>allumer/éteindre</em> = allumer/éteindre\n<br>• <em>rechercher</em> = rechercher (dans le dictionnaire/Internet)\n<br>• <em>prendre soin</em> = prendre soin\n<br>• <em>retardé</em> = reporté\n<br>• <em>continuer</em> = continuer\n<br>• <em>get on/along</em> = s'entendre (avec quelqu'un)\n<br>• <em>éduquer</em> = éduquer ; aborder le sujet\n<br>• <em>trouver</em> = tomber sur",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle a arrêté de fumer</s> → Elle a arrêté de <em>fumer</em>",
+      "<s>J'ai recherché le mot dans</s> → J'ai <em>recherché</em> (pronom entre verbe et particule)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I've given up smoking.",
+        "J'ai arrêté de fumer."
+      ],
+      [
+        "Can you look after my cat while I'm away?",
+        "Pouvez-vous garder mon chat pendant mon absence ?"
+      ],
+      [
+        "We need to find out what happened.",
+        "Nous devons découvrir ce qui s'est passé."
+      ]
+    ]
+  },
+  "b2_01": {
+    "text": "Past Perfect Simple : avait + V3",
+    "note": "Au moment où elle est arrivée, il était déjà parti.",
+    "exp": "<strong>Past Perfect</strong> - une action qui s'est terminée <strong>avant</strong> un autre moment ou un autre événement dans le passé.\n<br><br>Formulaire : <em>avait + V3</em> pour tous les visages.\n<br>Négation : <em>n'avait pas + V3</em>\n<br>Question : <em>Avait + sujet + V3 ?</em>\n<br><br>Conjonctions typiques : <em>avant, après, quand, à ce moment-là, déjà, juste, jamais</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Quand je suis arrivée, elle est déjà partie</s> → elle <em>était déjà partie</em>",
+      "<s>Il n'avait jamais vu de neige</s> → Il n'avait jamais <em>vu</em> de neige",
+      "<s>J'y suis allé</s> → J'étais <em>parti</em>"
+    ],
+    "markers": {
+      "tags": [
+        "au moment",
+        "avant",
+        "après",
+        "quand (+ Passé simple)",
+        "déjà",
+        "juste",
+        "jamais",
+        "jamais",
+        "d'ici lundi",
+        "d'ici là",
+        "dès que",
+        "une fois",
+        "jusqu'à",
+        "à peine...quand",
+        "pas plus tôt... que"
+      ],
+      "note": "Le Past Perfect montre qu’une action passée s’est produite AVANT une autre."
+    },
+    "ex": [
+      [
+        "When I arrived, she had already left.",
+        "Quand je suis arrivé, elle était déjà partie."
+      ],
+      [
+        "He had never seen snow before that winter.",
+        "Il n'avait jamais vu de neige avant cet hiver-là."
+      ]
+    ]
+  },
+  "b2_02": {
+    "text": "Past Perfect Continu : avait été + V-ing",
+    "note": "Il attendait depuis deux heures quand elle est arrivée.",
+    "exp": "<strong>Past Perfect Continu</strong> = avait été + V-ing\n<br>L'accent est mis sur la <strong>durée</strong> d'une action qui s'est produite avant un autre moment dans le passé.\n<br>Explique souvent une cause ou un résultat visible dans le passé.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle était épuisée — elle avait travaillé</s> → elle avait <em>travaillé</em>",
+      "<s>Combien de temps avez-vous attendu ?</s> → Depuis combien de temps avez-vous <em>attendu</em> ?"
+    ],
+    "markers": {
+      "tags": [
+        "pour",
+        "depuis",
+        "Combien de temps...?",
+        "toute la matinée",
+        "toute la journée",
+        "au moment",
+        "quand",
+        "avant",
+        "déjà pour...",
+        "pendant deux heures quand elle est arrivée"
+      ],
+      "note": "L'accent est mis sur la durée jusqu'à un moment dans le passé. Explique souvent la cause de la maladie."
+    },
+    "ex": [
+      [
+        "She was exhausted — she'd been working all night.",
+        "Elle était épuisée : elle avait travaillé toute la nuit."
+      ],
+      [
+        "How long had you been waiting before she arrived?",
+        "Combien de temps as-tu attendu avant qu'elle arrive ?"
+      ]
+    ]
+  },
+  "b2_03": {
+    "text": "doit avoir + V3 - conclusion confiante sur le passé",
+    "note": "Elle a dû oublier. - Je suis sûr que c'est la seule explication",
+    "exp": "<em>doit avoir + V3</em> = Je suis sûr que cela s'est produit (la seule explication logique).\n<br><br>Échelle de confiance :\n<br>• <em>ça a dû être fait</em> - cela s'est presque certainement produit\n<br>• <em>aurait dû le faire</em> - c'était prévu que cela se produise\n<br>• <em>aurait pu/aurait pu le faire</em> - c'est peut-être arrivé\n<br>• <em>je n'aurais pas pu le faire</em> : cela ne s'est probablement pas produit",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle doit oublier</s> → Elle doit <em>avoir oublié</em>",
+      "<s>Il doit être parti plus tôt</s> → Il doit être <em>parti</em>",
+      "<s>Vous devez être épuisé hier</s> - pour le passé : <em>vous avez dû l'être</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You must have been exhausted after that journey.",
+        "Vous devez être très fatigué après ce voyage."
+      ],
+      [
+        "She must have left early — her coat is gone.",
+        "Elle est apparemment partie tôt – son manteau manquait."
+      ]
+    ]
+  },
+  "b2_04": {
+    "text": "je ne peux pas avoir + V3 - impossibilité dans le passé",
+    "note": "Elle n'a pas pu dire ça ! Il ne peut pas avoir été là.",
+    "exp": "<em>ne peut pas avoir + V3</em> = Je suis sûr que cela <strong>ne s'est pas produit</strong> (c'est impossible).\n<br>Le contraire de <em>a dû être fait</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle ne peut pas oublier ça</s> → Elle ne peut pas <em>avoir oublié</em>",
+      "<s>Il n'aurait pas pu être là</s> - c'est vrai ! je ne peux pas avoir = impossibilité ; je n'aurais pas pu = opportunité"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He can't have seen her — she was abroad.",
+        "Il ne pouvait pas la voir – elle était à l'étranger."
+      ],
+      [
+        "That can't have been the right address.",
+        "Ce n'est peut-être pas la bonne adresse."
+      ]
+    ]
+  },
+  "b2_05": {
+    "text": "aurait dû + V3 - reproche et regret",
+    "note": "J'aurais dû appeler. Tu n'aurais pas dû dire ça.",
+    "exp": "<em>il aurait fallu + V3</em> = ça aurait été bien de le faire, mais je ne l'ai pas fait (regret, reproche).\n<br><em>n'aurait pas dû + V3</em> = n'aurait pas dû le faire.\n<br><br>Il s'agit d'une construction très courante pour exprimer des regrets et des critiques.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'aurais dû l'appeler</s> → J'<em>aurais dû appeler</em>",
+      "<s>Elle n'aurait pas dû y aller</s> → Elle n'aurait pas dû <em>partir</em>",
+      "<s>Tu aurais dû étudier</s> → Tu aurais dû <em>étudier</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I should have brought an umbrella.",
+        "J'aurais dû prendre un parapluie."
+      ],
+      [
+        "She shouldn't have told him the secret.",
+        "Elle n'aurait pas dû lui révéler le secret."
+      ]
+    ]
+  },
+  "b2_06": {
+    "text": "pourrait / aurait pu avoir + V3 - possibilité dans le passé",
+    "note": "Elle a peut-être oublié. Cela aurait pu être pire.",
+    "exp": "<em>pourrait/pourrait avoir + V3</em> = cela aurait pu arriver (nous n'en sommes pas sûrs).\n<br><br>Aussi : <em>j'aurais pu le faire</em> = j'aurais pu le faire (mais je ne l'ai pas fait) : <em>J'aurais pu gagner si j'avais essayé plus fort.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle a peut-être oublié</s> → Elle a peut-être <em>oublié</em>",
+      "<s>Il aurait pu gagner</s> → Il aurait pu <em>gagner</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She might have forgotten about the meeting.",
+        "Peut-être qu'elle a oublié la réunion."
+      ],
+      [
+        "He could have left through the back door.",
+        "Il aurait pu sortir par la porte arrière."
+      ]
+    ]
+  },
+  "b2_07": {
+    "text": "3ème type de conditionnel : Si + Plus-que-parfait, aurait + V3",
+    "note": "Si j'avais étudié plus dur, j'aurais réussi.",
+    "exp": "Une situation irréelle dans le passé - nous parlons de quelque chose qui ne s'est pas produit.\n<br><br>Formulaire : <em>Si + Plus-que-parfait, aurait + V3</em>\n<br><br>Les deux éléments sont irréels :\n<br>• Condition non remplie\n<br>• Il n'y a eu aucun résultat non plus",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Si j'avais étudié plus dur, j'aurais réussi</s> → Si j'<em>avais étudié</em>... (3ème type - Past Perfect !)",
+      "<s>Si elle avait pris des médicaments, elle aurait récupéré</s> → elle <em>aurait récupéré</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If she had taken the medicine, she would have recovered.",
+        "Si elle prenait le médicament, elle irait mieux."
+      ],
+      [
+        "If he hadn't left early, he would have met her.",
+        "S'il n'était pas parti plus tôt, il l'aurait rencontrée."
+      ]
+    ]
+  },
+  "b2_08": {
+    "text": "Conditions mixtes",
+    "note": "Si j'avais étudié, je parlerais couramment maintenant. (passé → présent)",
+    "exp": "Les conditions mixtes connectent différents plans temporels :\n<br><br>1. <strong>Condition passée → résultat présent</strong> :\n<br><em>Si + Plus-que-parfait, serait + infinitif</em>\n<br><em>Si j'avais accepté ce poste, je serais à New York maintenant.</em>\n<br><br>2. <strong>Condition actuelle → résultat passé</strong> :\n<br><em>Si + Past Simple, aurait + V3</em>\n<br><em>Si elle avait été plus prudente, elle ne l'aurait pas cassé.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Si j'avais étudié, je parlerais couramment hier</s> - type mixte sur le passé → présent, pas le passé",
+      "<s>Si elle avait fait attention, elle ne l'a pas cassé</s> → elle <em>ne l'aurait pas cassé</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "If I had studied medicine, I would be a doctor now.",
+        "Si j'avais étudié pour devenir médecin, je le serais maintenant."
+      ]
+    ]
+  },
+  "b2_09": {
+    "text": "Futur Passif et Passif avec modaux",
+    "note": "Ce sera fait. Il faut le réparer. Il faudrait le vérifier.",
+    "exp": "Modal + Passif : <em>modal + be + V3</em>\n<br>• <em>sera fait</em> - sera fait\n<br>• <em>doit être fait</em> - doit être fait\n<br>• <em>devrait être fait</em> - devrait être fait\n<br>• <em>peut être fait</em> - peut être fait",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Le rapport sera publié</s> → sera <em>sera</em> publié",
+      "<s>Cela doit être fait</s> → Cela doit <em>être fait</em>",
+      "<s>Cela devrait être fait</s> → Cela devrait être <em>fait</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The report will be published tomorrow.",
+        "Le rapport sera publié demain."
+      ],
+      [
+        "This mistake must be corrected immediately.",
+        "Cette erreur doit être corrigée immédiatement."
+      ]
+    ]
+  },
+  "b2_10": {
+    "text": "Causatif have/get : faire faire quelque chose",
+    "note": "Je me suis fait couper les cheveux. Elle a fait réparer sa voiture.",
+    "exp": "<em>avoir/obtenir + objet + V3</em> - vous commandez un service ou quelqu'un fait quelque chose pour vous.\n<br><br>Comparez :\n<br>• <em>Je me suis coupé les cheveux.</em> - Je me suis coupé les cheveux moi-même (ce qui n'est pas typique)\n<br>• <em>Je me suis fait couper les cheveux.</em> - coupé par un coiffeur\n<br><br><em>get</em> est un peu plus conversationnel, <em>have</em> est un peu plus formel.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je me suis coupé les cheveux chez le coiffeur</s> → Je <em>me suis fait couper</em> les cheveux",
+      "<s>Elle a fait réparer sa voiture</s> → Elle a fait réparer sa voiture <em>réparée</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I need to have my teeth checked.",
+        "Je dois faire examiner mes dents par un médecin."
+      ],
+      [
+        "She had her house painted last spring.",
+        "Au printemps dernier, elle a repeint la maison (embauchant des ouvriers)."
+      ]
+    ]
+  },
+  "b2_11": {
+    "text": "Verbes de rapport passif : On dit que... / On croit qu'il...",
+    "note": "On pense que les prix vont augmenter. Elle est connue pour être honnête.",
+    "exp": "Deux options de construction avec les verbes <em>dire, penser, croire, rapporter, savoir, attendre, considérer</em> :\n<br><br>1. <em>Ça + passif + cela + clause subordonnée</em> : <em>On pense que...</em>\n<br>2. <em>Sujet + est + V3 + à-infinitif</em> : <em>On pense qu'elle est...</em>\n<br><br>Utilisé dans les actualités et les textes officiels.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>On dit que les prix vont augmenter</s> → vont <em>augmenter</em>",
+      "<s>On pense qu'il est honnête</s> → On croit qu'il <em>est</em> honnête"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It is reported that three people were injured.",
+        "Trois personnes auraient été blessées."
+      ],
+      [
+        "He is thought to have left the country.",
+        "Il semblerait qu'il ait quitté le pays."
+      ]
+    ]
+  },
+  "b2_12": {
+    "text": "se souvenir / oublier + V-ing vs to-inf - différence de sens",
+    "note": "Je me souviens de l'avoir verrouillé (fait du passé) vs N'oubliez pas de le verrouiller (tâche)",
+    "exp": "<em>se souvenir/oublier + V-ing</em> - à propos d'un événement passé dont nous nous souvenons/oublions.\n<br><em>souvenir/oublier + to-inf</em> - à propos de la tâche : n'oubliez pas de faire quelque chose à l'avenir.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je me souviens de l'avoir verrouillé</s> (si le fait est passé) → Je me souviens de l'avoir <em>verrouillé</em>",
+      "<s>N'oubliez pas de le verrouiller !</s> (tâche) → N'oubliez pas <em>de le verrouiller</em> !",
+      "<s>J'ai oublié de faire mes devoirs</s> (si vous ne les avez pas fait) → J'ai <em>oublié de faire</em> mes devoirs"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I remember meeting her at a conference. (это было)",
+        "Je me souviens de l'avoir rencontrée lors d'une conférence."
+      ],
+      [
+        "Remember to call your mother! (нужно сделать)",
+        "N'oubliez pas d'appeler votre maman !"
+      ],
+      [
+        "I forgot to buy milk. (не сделал)",
+        "J'ai oublié d'acheter du lait."
+      ]
+    ]
+  },
+  "b2_13": {
+    "text": "stop / regret / méchant + V-ing vs to-inf",
+    "note": "Elle a arrêté de fumer vs Elle a arrêté de fumer",
+    "exp": "<em>stop + V-ing</em> - arrête l'action.\n<br><em>stop + to-inf</em> - arrêter pour faire autre chose.\n<br><br><em>regret + V-ing</em> - regretter le passé.\n<br><em>regret + to-inf</em> - regret de vous informer (officiellement) : <em>Je regrette de vous informer...</em>\n<br><br><em>moyenne + V-ing</em> - moyenne : <em>Cela signifie travailler plus dur.</em>\n<br><em>méchant + to-inf</em> - intention : <em>Je voulais vous appeler.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle a arrêté de fumer</s> (si elle a arrêté) → Elle a arrêté de <em>fumer</em>",
+      "<s>Elle a arrêté de fumer pour répondre</s> (s'est arrêtée pour) → Elle a arrêté <em>pour répondre</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He stopped smoking last year.",
+        "Il a arrêté de fumer l'année dernière."
+      ],
+      [
+        "She stopped to look at the view.",
+        "Elle s'arrêta pour admirer la vue."
+      ]
+    ]
+  },
+  "b2_14": {
+    "text": "souhait + Past Simple - désir de changer le présent",
+    "note": "J'aurais aimé connaître la réponse. J'aurais aimé avoir plus de temps.",
+    "exp": "<em>wish + Past Simple</em> - sur un désir irréaliste dans le présent.\n<br>La forme est la même que dans le 2ème type de conditionnel. Pour <em>être</em> - <em>étaient</em> (officiellement), bien que <em>était</em> soit également utilisé.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'aimerais connaître la réponse</s> → J'aimerais <em>savoir</em>",
+      "<s>J'aurais aimé être plus grand</s> - peut-être, mais formellement : <em>J'aurais aimé être plus grand</em>",
+      "<s>J'aimerais savoir</s> - avec seulement pour les autres : <em>J'aimerais que vous m'écoutiez</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish I spoke better English.",
+        "C'est dommage que je ne parle pas mieux anglais."
+      ],
+      [
+        "She wishes she lived in a warmer country.",
+        "Elle aimerait vivre dans un pays plus chaud."
+      ]
+    ]
+  },
+  "b2_15": {
+    "text": "souhait + Past Perfect - regretter le passé",
+    "note": "J'aurais aimé étudier plus dur. J'aurais aimé ne pas dire ça.",
+    "exp": "<em>souhait + Past Perfect</em> - regretter les événements passés qui ne peuvent pas être modifiés. La forme est comme dans le 3ème type de conditionnel.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'aurais aimé ne pas dire ça</s> → J'aurais aimé <em>ne pas l'avoir dit</em> (regrets pour le passé = Past Perfect)",
+      "<s>J'aurais aimé qu'elle accepte ce travail</s> → elle avait <em>pris</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish I hadn't eaten so much.",
+        "C'est dommage d'avoir autant mangé."
+      ],
+      [
+        "She wishes she had taken that job offer.",
+        "Elle aurait aimé avoir accepté cette offre d'emploi."
+      ]
+    ]
+  },
+  "b2_16": {
+    "text": "souhait + serait - désir de changer le comportement de quelqu'un d'autre",
+    "note": "J'aimerais que tu arrêtes de parler. J'aimerais qu'il se réchauffe.",
+    "exp": "<em>souhait + serait</em> - irritation due au comportement de quelqu'un d'autre ou au désir de changer la situation.\n<br>⚠️ Vous ne pouvez pas utiliser à propos de vous-même : <s>J'aimerais le faire</s> - uniquement à propos d'autres personnes ou de la météo/de la situation.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'aimerais arrêter</s> (à propos de moi-même) → tu ne peux pas ! Utiliser : <em>J'aimerais pouvoir arrêter</em>",
+      "<s>Je souhaite que tu arrêtes de parler</s> → J'aimerais que tu <em>arrêtes</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wish you would listen to me.",
+        "J'aimerais que tu m'écoutes."
+      ],
+      [
+        "I wish it would stop raining.",
+        "J'aimerais que la pluie s'arrête."
+      ]
+    ]
+  },
+  "b2_17": {
+    "text": "Clauses définies ou non",
+    "note": "L'homme qui a appelé (détermine lequel) vs Mon frère, qui a appelé, (ajoute des informations)",
+    "exp": "<strong>Définir</strong> (définir) : sans virgules - ils précisent de qui/de quoi ils parlent. Le pronom peut être remplacé par <em>que</em>. On ne peut pas le supprimer sans perdre son sens.\n<br><br><strong>Non définissant : avec des virgules - ajoutez des informations sans en changer le sens. <em>Cela</em> <strong>ne peut pas</strong> être utilisé. Peut être retiré.\n<br><br>⚠️ <em>qui</em> dans les non-déterminants peut faire référence à la phrase entière : <em>Elle a réussi l'examen, ce qui a surpris tout le monde.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Mon frère qui a appelé est médecin</s> → Mon frère, <em>qui</em> a appelé (vous ne pouvez pas utiliser cela dans un sens non définissant)",
+      "<s>L'homme qui habite à côté, est très gentil</s> → sans virgule (proposition déterminante)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film that I told you about is on tonight. (какой именно)",
+        "Le film dont je vous ai parlé est projeté ce soir."
+      ],
+      [
+        "My sister, who lives in Paris, is visiting next week. (доп. инфо)",
+        "Ma sœur, qui habite à Paris, arrivera la semaine prochaine."
+      ]
+    ]
+  },
+  "b2_18": {
+    "text": "Prépositions dans les propositions relatives",
+    "note": "la personne avec qui je travaille / la personne avec qui je travaille (officiellement)",
+    "exp": "Dans le langage courant, la préposition vient à la fin : <em>la maison dans laquelle j'ai grandi.</em>\n<br>Dans le discours écrit/formel, la préposition avant <em>quel/qui</em> : <em>la maison dans laquelle j'ai grandi.</em>\n<br><br>Après la préposition - seulement <em>qui</em> (pour les choses) et <em>qui</em> (pour les personnes). Jamais <em>ça</em> !",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>La maison dans laquelle j'ai grandi</s> → <em>extra</em>",
+      "<s>La personne à qui j'ai parlé</s> → la personne à qui j'ai parlé <em>à</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project I'm working on is fascinating. (разг.)",
+        "Le projet sur lequel je travaille est très intéressant."
+      ],
+      [
+        "The project on which I am working is fascinating. (форм.)",
+        ""
+      ]
+    ]
+  },
+  "b2_19": {
+    "text": "Conjonctions de conséquence : donc... que, tel... que, donc, en conséquence",
+    "note": "Il faisait si froid que nous sommes restés à l'intérieur. Elle a travaillé dur ; par conséquent, elle a réussi.",
+    "exp": "<em>donc + adjectif/adverbe + ça</em> : <em>Il parlait si vite que personne ne comprenait.</em>\n<br><em>tel + (a/an) + adjectif + nom + ça</em> : <em>C'était un si long film que je me suis endormi.</em>\n<br><br>Connexion des mots de résultat (entre phrases) : <em>donc, par conséquent, en conséquence, donc, ainsi</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il faisait si froid que nous sommes restés</s> - c'est vrai ! Mais : <s>Il faisait si froid que</s> → C'était tellement <em>une journée froide</em>",
+      "<s>Tel était grand son soulagement</s> → Tellement grand était son soulagement (avec adjectif - donc)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It was such a good book that I read it twice.",
+        "Le livre était tellement bon que je l'ai lu deux fois."
+      ],
+      [
+        "She missed the deadline; consequently, she lost the contract.",
+        "Elle a raté la date limite ; En conséquence, elle a perdu son contrat."
+      ]
+    ]
+  },
+  "b2_20": {
+    "text": "être habitué à / s'habituer à + V-ing - habitude (réelle)",
+    "note": "J'ai l'habitude de me lever tôt. Elle s'habitue au froid.",
+    "exp": "<em>être habitué à + V-ing / nom</em> = être habitué à (déjà utilisé).\n<br><em>s'habituer à + V-ing / nom</em> = s'habituer à (le processus pour s'habituer à).\n<br><br>⚠️ A ne pas confondre avec <em>habitué à + infinitif</em> (habitudes passées).\n<br>• <em>J'habitais à Paris.</em> - j'habitais (plus)\n<br>• <em>J'ai l'habitude de vivre dans les grandes villes.</em> - habitué à vivre dans les grandes villes",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'ai l'habitude de me réveiller tôt</s> → J'ai l'habitude de <em>me réveiller</em> (être habitué à + V-ing)",
+      "<s>Je m'habitue à me réveiller</s> → Je m'habitue à <em>me réveiller</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'm not used to getting up so early.",
+        "Je n'ai pas l'habitude de me lever si tôt."
+      ],
+      [
+        "It took time, but she got used to the new system.",
+        "Cela a pris du temps, mais elle s'est habituée au nouveau système."
+      ]
+    ]
+  },
+  "b2_21": {
+    "text": "L'avenir dans le passé : allait/allait",
+    "note": "Elle a dit qu'elle appellerait. Il allait partir.",
+    "exp": "<strong>Future in the Past</strong> - des constructions qui expriment le futur du point de vue du passé. Utilisé dans le discours indirect et le récit.\n<br><br>• <em>would + V</em> (de testament) : <em>Elle a dit qu'elle viendrait.</em>\n<br>• <em>allait/allait à + V</em> : <em>Il allait appeler mais il a oublié.</em>\n<br>• <em>était sur le point de + V</em> : <em>Elle était sur le point de partir quand il est arrivé.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle a dit qu'elle viendrait</s> → Elle a dit qu'elle <em>viendrait</em> (décalage horaire)",
+      "<s>Il allait appeler</s> → Il allait <em>appeler</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She promised she would be there.",
+        "Elle a promis qu'elle viendrait."
+      ],
+      [
+        "He was about to leave when she called.",
+        "Il était sur le point de partir quand elle l'appela."
+      ]
+    ]
+  },
+  "b2_22": {
+    "text": "être à - rendez-vous et ordre officiels",
+    "note": "Vous devez vous présenter d'ici lundi. Ils ne devaient plus jamais se revoir.",
+    "exp": "<em>be to + infinitif</em> - ordres officiels, événements planifiés et destin dans le récit.\n<br><br>1. Instruction légale : <em>Les passagers doivent rester assis.</em>\n<br>2. Plan officiel : <em>Le sommet doit avoir lieu le mois prochain.</em>\n<br>3. Le destin dans le récit : <em>Ils ne devaient plus jamais se revoir.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Vous devez soumettre</s> → Vous <em>devez</em> soumettre",
+      "<s>Elle ne devait jamais se rencontrer</s> → Elle ne devait <em>jamais</em> se rencontrer"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You are to submit the report by Friday.",
+        "Vous devez soumettre votre rapport avant vendredi."
+      ],
+      [
+        "She was to become one of the greatest scientists of her time.",
+        "Elle était destinée à devenir l’une des plus grandes scientifiques."
+      ]
+    ]
+  },
+  "b2_23": {
+    "text": "devrait - devoir moral et attente logique",
+    "note": "Tu devrais t'excuser. Elle aurait dû nous le dire.",
+    "exp": "<em>devrait</em> est une obligation morale ou une attente logique. Plus fort <em>devrait</em>.\n<br>Toujours avec to : <em>devrait y aller</em> (par opposition à devrait).\n<br>Pour le passé : <em>devrait avoir + V3</em> - reproche ou regret.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Vous devriez vous excuser</s> → Vous devriez <em>vous</em> vous excuser (vous devriez toujours le faire !)",
+      "<s>Elle aurait dû nous le dire</s> → Elle <em>aurait dû</em> nous le dire"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You ought to apologise for what you said.",
+        "Vous devriez vous excuser pour ce que vous avez dit."
+      ],
+      [
+        "She ought to have told us earlier.",
+        "Elle aurait dû nous le dire plus tôt."
+      ]
+    ]
+  },
+  "b2_24": {
+    "text": "besoin - verbe modal et régulier",
+    "note": "Ne vous inquiétez pas. / Elle n'a pas besoin de venir.",
+    "exp": "<em>besoin</em> comme modal (formel, en questions/négations) et comme verbe régulier.\n<br><br><strong>Modal</strong> (sans -s, sans to) :\n<br>• <em>Ne vous inquiétez pas.</em> / <em>Dois-je vous expliquer ?</em>\n<br><br><strong>Besoin régulier + de</strong> :\n<br>• <em>Elle n'a pas besoin de venir.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Vous n'avez pas besoin de vous inquiéter</s> → Vous n'avez pas besoin de vous inquiéter (le modal n'a pas besoin de le faire)",
+      "<s>Elle a besoin de venir</s> → Elle <em>doit</em> venir (besoin régulier + de)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "You needn't fill in both forms.",
+        "Vous n'avez pas besoin de remplir les deux formulaires."
+      ],
+      [
+        "She doesn't need to attend every meeting.",
+        "Elle n'est pas obligée d'assister à toutes les réunions."
+      ]
+    ]
+  },
+  "b2_25": {
+    "text": "oser - courage et défi",
+    "note": "Comment oses-tu ! Je n'ose pas demander. Elle a osé le défier.",
+    "exp": "<em>oser</em> - oser, oser. Modal dans les questions rhétoriques et les négations.\n<br><br><strong>Modal</strong> : <em>Comment oses-tu ! / Je n'ose pas demander. / Oserais-je dire...</em>\n<br><strong>Normal</strong> : <em>Elle n'a pas osé regarder. / Il a osé défier le patron.</em>\n<br><br>⚠️ <em>J'ose dire</em> = peut-être, probablement (expression stable).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Comment oses-tu dire</s> → Comment oses-tu dire (après avoir osé sans le faire)",
+      "<s>J'ose dire que</s> c'est normal ; <em>J'ose dire</em> = peut-être"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "How dare you speak to me like that!",
+        "Comment oses-tu me parler comme ça !"
+      ],
+      [
+        "She dared to express her opinion openly.",
+        "Elle a osé exprimer ouvertement son opinion."
+      ]
+    ]
+  },
+  "b2_26": {
+    "text": "Reflexive pronouns: myself, yourself, himself...",
+    "note": "Je me suis blessé. Elle l'a fait elle-même. Ils se sont bien amusés.",
+    "exp": "<em>moi-même, vous-même, vous-même, vous-même, vous-même, vous-même, vous-même</em>.\n<br><br>1. L'action est dirigée vers le sujet : <em>Il s'est coupé.</em>\n<br>2. Insistez (par vous-même, sans aide) : <em>Je l'ai fait moi-même.</em>\n<br><br>Stable : <em>par moi-même</em> = seul ; <em>aidez-vous</em> = aidez-vous.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle lui a appris à jouer</s> (si elle-même) → Elle a appris <em>elle-même</em> à jouer",
+      "<s>Ils se sont amusés</s> → Ils se sont <em>amusés</em>",
+      "<s>Je l'ai fait tout seul</s> → Je l'ai fait <em>tout seul</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She taught herself to play the guitar.",
+        "Elle a appris toute seule à jouer de la guitare."
+      ],
+      [
+        "The machine turns itself off automatically.",
+        "La machine s'éteint automatiquement."
+      ]
+    ]
+  },
+  "b2_27": {
+    "text": "Noms collectifs : équipe, famille, comité...",
+    "note": "L'équipe joue bien. (BrE) / L’équipe joue. (AmE)",
+    "exp": "Les noms collectifs forment un groupe dans son ensemble.\n<br><br>• <strong>BrE</strong> : généralement au pluriel. numéro : <em>L'équipe joue.</em>\n<br>• <strong>AmE</strong> : généralement des unités. numéro : <em>L'équipe joue.</em>\n<br><br>Fréquent : <em>équipe, famille, gouvernement, comité, personnel, public, équipage, police, armée, public, direction</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>La police est ici</s> → La police <em>sont</em> ici (pluriel en BrE)",
+      "<s>L'équipe joue bien</s> - c'est vrai en AmE ; <em>sont</em> vrais en BrE"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The government have announced new measures. (BrE)",
+        "Le gouvernement a annoncé de nouvelles mesures."
+      ],
+      [
+        "The audience were on their feet. (BrE)",
+        "Le public s'est levé d'un bond."
+      ]
+    ]
+  },
+  "b2_28": {
+    "text": "Fractions et mathématiques",
+    "note": "un demi, trois quarts, 5,7 = cinq virgule sept, 25 %",
+    "exp": "Fractions :<em>½ = une moitié ; ⅓ = un tiers ; ¼ = un quart ; ¾ = trois quarts ; ⅔ = deux tiers</em>.\n<br>Le numérateur est quantitatif, le dénominateur est ordinal (pluriel si numérateur > 1).\n<br><br>Décimales : point (pas de virgule) : <em>3,14 = trois virgule un quatre</em>.\n<br>Mathématiques : <em>+ = plus ; - = moins ; × = fois ; ÷ = divisé par ; = = est égal</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Deux tiers des étudiants</s> → Deux <em>tiers</em> des étudiants",
+      "<s>3,14</s> → 3<em>.</em>14 (point, pas virgule)",
+      "<s>25 pour cent</s> → 25 <em>pour cent</em> (sans s)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Three quarters of students passed the exam.",
+        "Les trois quarts des étudiants ont réussi l'examen."
+      ],
+      [
+        "The inflation rate fell to 2.5 percent.",
+        "Le taux d'inflation est tombé à 2,5 pour cent."
+      ]
+    ]
+  },
+  "b2_29": {
+    "text": "Degrés de comparaison des adverbes",
+    "note": "plus vite, plus prudemment, meilleur, pire, plus loin",
+    "exp": "Les adverbes forment des degrés de comparaison selon les mêmes règles que les adjectifs.\n<br><br>• Monosyllabique : + <em>er/est</em> : <em>rapide→plus rapide, dur→plus dur, tôt→plus tôt</em>\n<br>• La plupart sur <em>-ly</em> : <em>plus/plus</em> : <em>prudemment→plus soigneusement→très attentivement</em>\n<br>• Incorrect : <em>bien→meilleur→meilleur, mal→pire→pire, loin→plus loin→le plus loin, peu→moins→moins, beaucoup→plus→la plupart</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle chante plus belle</s> → Elle chante plus <em>magnifiquement</em>",
+      "<s>Il court plus vite</s> → Il court <em>plus vite</em>",
+      "<s>Elle travaille le plus dur</s> → Elle travaille <em>le plus dur</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She spoke more confidently than before.",
+        "Elle parlait avec plus d’assurance qu’auparavant."
+      ],
+      [
+        "He works hardest in the team.",
+        "Il travaille plus dur que quiconque dans l’équipe."
+      ]
+    ]
+  },
+  "c1_01": {
+    "text": "Inversion avec des adverbes négatifs",
+    "note": "Je n'ai jamais vu ça. Elle se plaint rarement.",
+    "exp": "Pour souligner, l'adverbe/expression négatif est placé au début → verbe auxiliaire avant le sujet (ordre des mots comme dans une question).\n<br><br>Mots qui déclenchent l'inversion : <em>jamais, rarement, rarement, peu, à peine, à peine, à peine, pas seulement, seulement, pas plus tôt</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Jamais je n'ai vu</s> → Jamais <em>je n'ai vu</em> (inversion : auxiliaire avant sujet)",
+      "<s>Rarement elle se plaint</s> → Rarement <em>elle se plaint</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Never have I seen anything so beautiful.",
+        "Je n'ai jamais rien vu d'aussi beau."
+      ],
+      [
+        "Rarely does she make a mistake.",
+        "Elle fait rarement des erreurs."
+      ],
+      [
+        "Little did I know what was coming.",
+        "Je n'avais aucune idée de ce qui m'attendait."
+      ]
+    ]
+  },
+  "c1_02": {
+    "text": "Non seulement... mais aussi avec inversion",
+    "note": "Non seulement il s’est excusé, mais il a également proposé son aide.",
+    "exp": "<em>Non seulement + inversion dans la première partie</em>, la deuxième partie est l'ordre habituel.\n<br>Utilisé pour souligner : exprime que quelque chose est allé plus loin que prévu.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Non seulement il s'est excusé</s> → Non seulement <em>il s'est excusé</em>",
+      "<s>Non seulement elle est talentueuse, mais elle travaille aussi dur</s> → mais <em>elle</em> travaille aussi dur (la deuxième partie est l'ordre habituel)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Not only is she talented, but she is also very hard-working.",
+        "Elle est non seulement talentueuse, mais aussi très travailleuse."
+      ],
+      [
+        "Not only did they arrive late, but they also forgot the documents.",
+        "Non seulement ils étaient en retard, mais ils ont également oublié leurs documents."
+      ]
+    ]
+  },
+  "c1_03": {
+    "text": "A peine / A peine / A peine + inversion",
+    "note": "A peine étais-je assis que le téléphone sonna.",
+    "exp": "Constructions de séquences immédiates :\n<br>• <em>À peine/à peine + avait + sujet + V3 + quand/avant + Past Simple</em>\n<br>• <em>À peine + eu + sujet + V3 + que + Past Simple</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je m'étais à peine assis</s> → À peine <em>étais-je</em> assis",
+      "<s>À peine assis que</s> → À peine <em>étais-je assis</em> que"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Hardly had she arrived when it started to rain.",
+        "Elle était à peine arrivée qu'il commença à pleuvoir."
+      ],
+      [
+        "No sooner had I sat down than someone knocked at the door.",
+        "Je venais de m'asseoir quand quelqu'un a frappé à la porte."
+      ]
+    ]
+  },
+  "c1_04": {
+    "text": "Inversion au conditionnel : Avait / Était / Devrait",
+    "note": "Si j'avais su (= Si j'avais su). Étais-je toi (= Si j'étais toi).",
+    "exp": "Style formel - exclut <em>if</em>, utilise l'inversion :\n<br>• <em>Had + sujet + V3</em> = If + Past Perfect (3ème type)\n<br>• <em>Étaient + sujet (+ à + infinitif)</em> = Si + Past Simple (2ème type)\n<br>• <em>Devrait + sujet + infinitif</em> = Si (peu probable, tapez 1)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ai-je su, j'aurais aidé</s> → <em>Si</em> j'avais su",
+      "<s>Si vous avez besoin d'aide, veuillez appeler</s> → veuillez <em>appeler</em> (sans après, s'il vous plaît)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Had she told me, I would have helped.",
+        "Si elle me l'avait dit, je l'aurais aidé."
+      ],
+      [
+        "Were I in your position, I would accept.",
+        "Si j'étais toi, je serais d'accord."
+      ],
+      [
+        "Should you need assistance, please call us.",
+        "Si vous avez besoin d'aide, appelez-nous."
+      ]
+    ]
+  },
+  "c1_05": {
+    "text": "It-fente : C'est John qui a appelé.",
+    "note": "Pour mettre en évidence n'importe quel membre d'une phrase",
+    "exp": "Structure : <em>Il + être + élément sélectionné + qui/cela/qui + reste</em>\n<br>Déplace le centre d'attention vers l'élément en surbrillance.\n<br><br>• Pour les personnes - <em>qui</em> ; pour les choses/circonstances - <em>cela/qui</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>C'est John qu'il a appelé</s> → C'est John qui a appelé (extra he)",
+      "<s>C'est le bruit qui m'a réveillé</s> - correct, mais <em>ça</em> est préférable pour les choses"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It was the noise that woke me up. (не шум вообще, именно этот)",
+        "C'est le bruit qui m'a réveillé."
+      ],
+      [
+        "It is hard work that leads to success.",
+        "C'est un travail acharné qui mène au succès."
+      ]
+    ]
+  },
+  "c1_06": {
+    "text": "Wh-cleft : Ce qui m'a surpris, c'est le prix.",
+    "note": "Ce dont j'ai besoin, c'est de repos. Ce qu'elle a dit a choqué tout le monde.",
+    "exp": "Structure : <em>Quoi + clause subordonnée + être + élément en surbrillance</em>\n<br>Souligne l'importance de l'élément introduit à la fin.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ce que j'aime, c'est Londres</s> → Ce que j'aime <em>c'est</em> Londres (en supplément)",
+      "<s>Ce qui m'a surpris, c'est le prix</s> → Ce qui m'a surpris <em>c'est</em> le prix (chiffre au singulier)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "What I love about London is the diversity.",
+        "Ce que j'aime le plus à Londres, c'est la diversité."
+      ],
+      [
+        "What he did was completely unexpected.",
+        "Ce qu’il a fait était complètement inattendu."
+      ]
+    ]
+  },
+  "c1_07": {
+    "text": "Subjonctif formel après les verbes de demande",
+    "note": "Je lui suggère de partir. Il est essentiel qu'elle soit informée.",
+    "exp": "Après <em>suggérer, recommander, insister, exiger, proposer, demander, exiger, demander, conseiller, commander + que</em> - la forme de base du verbe pour <strong>toutes les personnes</strong> (sans <em>-s</em>, sans <em>était</em>).\n<br><br>La version britannique utilise souvent <em>should</em> au lieu du subjonctif : <em>Je suggère qu'il devrait partir.</em>\n<br>Américain - souvent un pur subjonctif.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je lui suggère de partir</s> → Je lui suggère de <em>partir</em> (subjonctif - sans -s !)",
+      "<s>Il est essentiel qu'elle soit informée</s> → qu'elle <em>soit</em> informée"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I recommend that he see a doctor.",
+        "Je lui recommande de consulter un médecin."
+      ],
+      [
+        "It is essential that all students attend the meeting.",
+        "Il est essentiel que tous les étudiants soient présents à la réunion."
+      ]
+    ]
+  },
+  "c1_08": {
+    "text": "Il est grand temps + Past Simple",
+    "note": "Il est grand temps que tu ailles te coucher. Il est temps de partir.",
+    "exp": "<em>Il est (haut/environ) l'heure + sujet + Past Simple</em>\n<br>Sens : présent/futur - nous parlons de quelque chose qui aurait dû être fait il y a longtemps.\n<br><em>il est grand temps</em> - encore plus fort : il est grand temps !",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il est grand temps que vous y alliez</s> → Il est grand temps que vous <em>y alliez</em> (Past Simple !)",
+      "<s>Il est grand temps que vous y alliez</s> → Il est grand temps <em>que vous y alliez</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "It's time she found a new job.",
+        "Il est grand temps qu'elle trouve un nouvel emploi."
+      ],
+      [
+        "It's high time you apologised.",
+        "Il est grand temps de s'excuser."
+      ]
+    ]
+  },
+  "c1_09": {
+    "text": "comme si / comme si + subjonctif",
+    "note": "Elle parle comme si elle savait tout. Il avait l'air d'avoir vu un fantôme.",
+    "exp": "<em>comme si / comme si + Past Simple</em> est une comparaison irréaliste au présent.\n<br><em>comme si / comme si + Past Perfect</em> est une comparaison irréaliste sur le passé.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle parle comme si elle savait tout</s> (situation irréelle) → comme si elle <em>savait</em>",
+      "<s>Il avait l'air d'avoir vu un fantôme</s> → comme s'il <em>avait vu</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He spends money as if he were a millionaire.",
+        "Il dépense de l'argent comme s'il était millionnaire."
+      ],
+      [
+        "She spoke as though she had met him before.",
+        "Elle parlait comme si elle l'avait déjà rencontré."
+      ]
+    ]
+  },
+  "c1_10": {
+    "text": "Alors / Ni l'un ni l'autre + verbe auxiliaire + sujet",
+    "note": "Moi aussi. Elle non plus. Moi aussi.",
+    "exp": "<em>Donc + auxiliaire + sujet</em> - accord avec l'affirmatif.\n<br><em>Ni/Ni + auxiliaire + sujet</em> - accord avec le négatif.\n<br>Le verbe auxiliaire doit coïncider avec le temps de la phrase originale.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Alors je fais</s> → <em>Moi aussi</em> (auxiliaire avant sujet)",
+      "<s>Elle non plus</s> → <em>Elle non plus</em>",
+      "<s>J'adore le jazz. Alors elle aussi</s> → <em>Elle aussi</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I love jazz. So does she.",
+        "J'adore le jazz. Elle aussi."
+      ],
+      [
+        "I haven't been to Rome. Neither have I.",
+        "Je ne suis pas allé à Rome. Moi aussi."
+      ]
+    ]
+  },
+  "c1_11": {
+    "text": "Je le pense / je l'espère / j'en ai peur",
+    "note": "Va-t-il pleuvoir ? - Je pense que oui. / J'espère que non.",
+    "exp": "<em>donc</em> remplace la proposition subordonnée après : <em>penser, espérer, supposer, s'attendre, croire, imaginer, avoir peur</em>.\n<br>Forme négative : <em>pas</em> (pas <em>donc pas</em> !).",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je ne pense pas</s> → Je ne pense pas",
+      "<s>Je l'espère pas</s> → J'espère <em>pas</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Will he come? — I think so. / I don't think so.",
+        "Viendra-t-il ? - Je pense que oui. / Ne pense pas."
+      ],
+      [
+        "Is it expensive? — I'm afraid so.",
+        "Est-ce cher ? - J'en ai bien peur."
+      ],
+      [
+        "Is it closed? — I hope not.",
+        "Fermé ? - J'espère que non."
+      ]
+    ]
+  },
+  "c1_12": {
+    "text": "Clauses inclusives ou non inclusives",
+    "note": "L'homme qui a appelé est mon frère. VS Mon frère qui a appelé est médecin.",
+    "exp": "<strong>Définir</strong> : précise de qui/de quoi nous parlons - sans virgules. <em>ce</em> est possible. Le pronom peut être omis s'il s'agit d'un objet.\n<br><br><strong>Non définissant</strong> : ajoute des informations - virgules requises. Seulement <em>qui/quoi</em> (pas <em>ça</em> !). Le pronom ne peut pas être omis.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Le film qui a remporté l'Oscar était génial</s> → sans virgule (clause déterminante)",
+      "<s>Avatar, sorti en 2009</s> → Avatar, <em>qui</em> est sorti (vous ne pouvez pas l'utiliser dans un film non défini !)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The film that won the Oscar was brilliant. (определяет, о каком фильме речь)",
+        "Le film qui a remporté l'Oscar était génial."
+      ],
+      [
+        "Avatar, which came out in 2009, was a huge hit. (доп. факт о и так известном фильме)",
+        "Avatar, sorti en 2009, est devenu un grand succès."
+      ]
+    ]
+  },
+  "c1_13": {
+    "text": "Préposition + lequel/qui dans le style formel",
+    "note": "L'entreprise pour laquelle je travaille. La personne avec qui j'ai parlé.",
+    "exp": "Style formel : <em>préposition + which/whom</em> avant un pronom relatif.\n<br>Équivalent informel : préposition à la fin d'une phrase.\n<br><em>qui</em> est la forme objet formelle de <em>qui</em>.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>L'entreprise pour laquelle je travaille</s> → extra",
+      "<s>La personne à qui j'ai parlé</s> → la personne à qui j'ai parlé <em>à</em> / à <em>à qui</em> j'ai parlé"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The report to which I referred is attached. (формально)",
+        "Le rapport dont j'ai parlé est joint."
+      ],
+      [
+        "The report which I referred to is attached. (нейтрально)",
+        ""
+      ],
+      [
+        "The report I referred to is attached. (разговорно)",
+        ""
+      ]
+    ]
+  },
+  "c1_14": {
+    "text": "Nominalisation – Bases",
+    "note": "décider → décision, découvrir → découverte, améliorer → amélioration",
+    "exp": "La nominalisation est la conversion de verbes/adjectifs en noms. Un signe de style académique et commercial.\n<br><br>Suffixes principaux :\n<br>• <em>-tion/-sion</em> : décider→décision, discuter→discussion\n<br>• <em>-ment</em> : améliorer→amélioration, développer→développement\n<br>• <em>-ance/-ence</em> : apparaître→apparence, différer→différence\n<br>• <em>-ité</em> : complexe → complexité, capable → capacité\n<br>• <em>-ness</em> : heureux → bonheur, conscient → conscience",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>J'ai pris la décision de m'étendre</s> → correct, mais le style est plus faible : <em>Notre décision de nous étendre</em> (nominalisation)",
+      "<s>Il a découvert une erreur</s> → Sa <em>découverte</em> de l'erreur"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She decided to expand. → Our decision to expand the company...",
+        "Notre décision d'agrandir..."
+      ],
+      [
+        "He discovered that... → His discovery of the error...",
+        "Sa découverte de l'erreur..."
+      ]
+    ]
+  },
+  "c1_15": {
+    "text": "Nominalisation dans un texte académique",
+    "note": "Le fait que les prix ont augmenté → L'augmentation des prix...",
+    "exp": "La nominalisation permet :\n<br>1. Informations compressées : <em>Il y a eu une augmentation significative des prix.</em>\n<br>2. Ajouter des définitions : <em>L'augmentation rapide des prix de l'immobilier...</em>\n<br>3. Créez un ton formel et impersonnel.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Il y a eu une augmentation significative</s> → une augmentation <em>significative</em> (adjectif avant un nom)",
+      "<s>L'augmentation des prix</s> → <em>L'augmentation des prix</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "There has been a significant improvement in air quality.",
+        "La qualité de l'air s'est considérablement améliorée."
+      ],
+      [
+        "His refusal to comment surprised everyone.",
+        "Son refus de commenter a surpris tout le monde."
+      ]
+    ]
+  },
+  "c1_16": {
+    "text": "Participe présent : clause V-ing",
+    "note": "En marchant dans la rue, j'ai vu un vieil ami. N’ayant pas d’argent, il ne pouvait pas acheter de nourriture.",
+    "exp": "La phrase participative avec le participe présent (V-ing) remplace la proposition subordonnée :\n<br>• Simultanéité : <em>En rentrant chez moi, j'ai remarqué quelque chose d'étrange.</em> (= Pendant que je rentrais chez moi à pied)\n<br>• Raison : <em>Connaissant la réponse, elle a levé la main.</em> (= Parce qu'elle savait)\n<br><br>⚠️ Le sujet de la phrase participative DOIT coïncider avec le sujet de la phrase principale !\n<br>Erreur : <s>En marchant dans la rue, la pluie a commencé.</s> (la pluie n'est pas tombée dans la rue)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>En marchant dans la rue, la pluie a commencé</s> → sujet ≠ sujet. Correct : <em>En marchant dans la rue, je me suis mouillé.</em>",
+      "<s>Connaissant la réponse, sa main a été levée</s> → le sujet doit correspondre : <em>Connaissant la réponse, elle a levé la main.</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Arriving at the airport, he realised he had forgotten his passport.",
+        "En arrivant à l'aéroport, il s'est rendu compte qu'il avait oublié son passeport."
+      ],
+      [
+        "Not knowing what to do, she called her mother.",
+        "Ne sachant que faire, elle a appelé sa mère."
+      ]
+    ]
+  },
+  "c1_17": {
+    "text": "Phrase participative passée : V3 / Clause Avoir + V3",
+    "note": "Écrit en 1815, le roman... Ayant fini son travail, elle rentra chez elle.",
+    "exp": "<em>Clause V3</em> (Participe Passé) = sens passif : <em>Construite en 1889, la Tour Eiffel...</em>\n<br><br><em>Avoir + V3</em> = action réalisée avant la principale :\n<br><em>Après avoir lu le rapport, il a convoqué une réunion.</em> (= Après avoir lu...)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Après avoir lu le rapport, la réunion a été convoquée</s> → qui l'a lu ? Cela devrait être : <em>Après avoir lu le rapport, il a convoqué une réunion.</em>",
+      "<s>Surprise par la nouvelle, elle s'est assise</s> → elle-même : <em>elle s'est assise</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Surprised by the news, she sat down silently.",
+        "Surpris par la nouvelle, elle s'assit en silence."
+      ],
+      [
+        "Having finished the exam, the students left the room.",
+        "Après avoir terminé l'examen, les élèves ont quitté la salle de classe."
+      ]
+    ]
+  },
+  "c2_01": {
+    "text": "Conditionnel avec sauf / à condition / tant que / à condition que",
+    "note": "Si vous n’étudiez pas, vous échouerez. Tant que tu es honnête, je t'aiderai.",
+    "exp": "<em>sauf si</em> = if not (mais ne peut pas être utilisé avec la négation !) : <em>Sauf si vous vous dépêchez</em> = <em>Si vous ne vous dépêchez pas</em>\n<br><em>fourni/fournissant (que)</em> = si et seulement si (condition stricte)\n<br><em>tant que</em> = à condition que (hypothèse)\n<br><em>à condition que</em> = à condition que (formellement)\n<br><em>au cas où</em> = au cas où",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Sauf si vous n'étudiez pas</s> → Sauf si vous étudiez (sauf si = sinon, la double négation n'est pas nécessaire)",
+      "<s>Tant que vous serez honnête</s> → Tant que vous <em>êtes</em> honnête"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I'll lend you money, as long as you pay me back.",
+        "Je te prêterai de l'argent à condition que tu le rembourses."
+      ],
+      [
+        "You can use my laptop, provided you don't download anything.",
+        "Vous pouvez utiliser mon ordinateur portable, à condition de ne rien télécharger."
+      ]
+    ]
+  },
+  "c2_02": {
+    "text": "Supposons / supposons / et si",
+    "note": "Supposons que vous gagniez à la loterie, que feriez-vous ?",
+    "exp": "<em>Suppose/Supposing</em> - utilisé comme <em>if</em> dans les questions hypothétiques.\n<br><em>Et si</em> est un analogue informel.\n<br><br>Avec Past Simple - une situation est improbable ou imaginaire.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Supposons que vous gagniez</s> → Supposons que vous <em>gagnez</em> (Past Simple pour hypothèse)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Supposing you had to choose — which would you pick?",
+        "Imaginez que vous deviez choisir : que choisiriez-vous ?"
+      ],
+      [
+        "What if nobody comes? What should we do?",
+        "Et si personne ne vient ? Que devons-nous faire ?"
+      ]
+    ]
+  },
+  "c2_03": {
+    "text": "Seulement + circonstance + inversion",
+    "note": "Ce n’est qu’en partant que j’ai réalisé. C'est seulement alors qu'il a compris.",
+    "exp": "<em>Seulement + when/after/if/then/by/in/on</em> - le groupe entier est déplacé au début → inversion.\n<br><br>C'est l'un des dispositifs rhétoriques les plus puissants pour l'écriture et la prise de parole en public.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Ce n'est qu'en partant que j'ai réalisé</s> → Ce n'est qu'en partant <em>que j'ai</em> réalisé (inversion !)",
+      "<s>Seulement après des années de pratique, elle a maîtrisé</s> → ... <em>a-t-elle maîtrisé</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Only when you experience it can you truly understand.",
+        "Ce n’est qu’en l’expérimentant que l’on peut vraiment comprendre."
+      ],
+      [
+        "Only after years of practice did she master the skill.",
+        "Ce n’est qu’après des années de pratique qu’elle a maîtrisé cette compétence."
+      ]
+    ]
+  },
+  "c2_04": {
+    "text": "Donc + adjectif/adverbe + inversion",
+    "note": "Son soulagement fut si grand qu'il pleura. Tel était son talent...",
+    "exp": "Style livre et oratoire.\n<br><em>Donc + adj/adv + be/aux + sujet</em>\n<br><em>Tel + était/étaient + sujet</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Son soulagement était si grand que</s> → Son soulagement était si grand <em>était</em>",
+      "<s>Tel était son talent</s> → Tel <em>était</em> son talent / <em>Tel était</em> son talent"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "So rapid was the change that nobody could adapt.",
+        "Les changements se sont produits si rapidement que personne n’a pu s’adapter."
+      ],
+      [
+        "Such was her talent that she was offered a scholarship.",
+        "Son talent était si grand qu'on lui offrit une bourse."
+      ]
+    ]
+  },
+  "c2_05": {
+    "text": "Couverture : semble, tend à, est susceptible de",
+    "note": "Les prix semblent augmenter. Cela a tendance à se produire lorsque...",
+    "exp": "La couverture est l’adoucissement délibéré des déclarations pour exprimer la modestie scientifique.\n<br><br>Principales structures :\n<br>• <em>apparaître/sembler</em> - apparemment\n<br>• <em>tendent à</em> - en règle générale, tendent à\n<br>• <em>être probable/peu probable</em> - probable/peu probable\n<br>• <em>être pensé/considéré comme étant</em> - on pense que",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Les prix semblent augmenter</s> → Les prix semblent <em>augmenter</em>",
+      "<s>Les résultats semblent suggérer</s> → Les résultats semblent <em>suggérer</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The results appear to suggest a correlation.",
+        "Les résultats semblent indiquer une corrélation."
+      ],
+      [
+        "Companies tend to underestimate implementation costs.",
+        "Les entreprises ont tendance à sous-estimer les coûts de mise en œuvre."
+      ]
+    ]
+  },
+  "c2_06": {
+    "text": "Marqueurs de discours dans le texte académique",
+    "note": "Par ailleurs, néanmoins, à l’inverse, compte tenu, en ce qui concerne",
+    "exp": "Les marqueurs structurent et relient le texte académique :\n<br><br>• <strong>Ajout</strong> : De plus, De plus, De plus, De plus\n<br>• <strong>Contraste</strong> : Cependant, néanmoins, néanmoins, À l'inverse, D'un autre côté\n<br>• <strong>Résultat</strong> : Par conséquent, Par conséquent, Par conséquent, Par conséquent, Ainsi\n<br>• <strong>Explication</strong> : Autrement dit, c'est-à-dire, à savoir\n<br>• <strong>Concession</strong> : Certes, S'il est vrai que, Malgré cela",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "en plus/en plus confusion - les deux ajoutent, mais en plus c'est plus fort",
+      "<s>À l'inverse, cela montre la même chose</s> : à l'inverse, cela introduit un contraste et non une confirmation."
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The experiment failed. Nevertheless, the findings were instructive.",
+        "L'expérience a échoué. Les résultats ont néanmoins été instructifs."
+      ],
+      [
+        "Furthermore, the data suggests a strong correlation.",
+        "De plus, les données suggèrent une forte corrélation."
+      ]
+    ]
+  },
+  "c2_07": {
+    "text": "Registres de parole : formels, neutres, familiers",
+    "note": "Je voudrais demander... vs Je voudrais demander... vs Puis-je demander...",
+    "exp": "L'inscription est déterminée par l'objectif, le public et le contexte.\n<br><br><strong>Formel</strong> : passif, nominalisation, conjonctions complexes, formes complètes, verbes d'origine latine (<em>commencer, terminer, assister</em>).\n<br><strong>Neutre</strong> : grammaire standard, pas d'argot, abréviations modérées.\n<br><strong>Informel</strong> : points de suspension, verbes à particule (<em>retarder = reporter</em>), contractions, expressions familières.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "Mélange de registres : début formel et fin familière dans un seul texte",
+      "<s>Je voudrais poser une question à propos de cette chose</s> → <em>cette question</em> (cas formel)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Formal: I wish to draw your attention to a discrepancy.",
+        ""
+      ],
+      [
+        "Neutral: I want to point out a mistake.",
+        ""
+      ],
+      [
+        "Informal: Just wanted to flag something up.",
+        ""
+      ]
+    ]
+  },
+  "c2_08": {
+    "text": "Connotations des synonymes - nuances de sens",
+    "note": "mince/mince/mince/maigre/décharné : positif → neutre → négatif",
+    "exp": "Les synonymes diffèrent par leur connotation (coloration émotionnelle) et leur registre.\n<br><br>Exemples d'échelles :\n<br>• <em>mince</em> (+) → <em>mince</em> (0) → <em>maigre</em> (-) → <em>maigre/décharné</em> (--)\n<br>• <em>déterminé</em> (+) → <em>ferme</em> (0) → <em>têtu/entêté</em> (-)\n<br>• <em>économe</em> (+) → <em>économique</em> (0) → <em>avare/poignet</em> (-)\n<br>• <em>confiant</em> (+) → <em>affirmé</em> (0) → <em>arrogant</em> (-)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle est très mince</s> (neutre) vs intentionnellement <em>mince</em> (+) ou <em>maigre</em> (−)",
+      "Utiliser un mot avec une mauvaise connotation lors d'un compliment : <em>têtu</em> au lieu de <em>déterminé</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She is slim. (+) / She is thin. (0) / She is skinny. (-)",
+        "Même chose, mais attitude différente."
+      ]
+    ]
+  },
+  "c2_09": {
+    "text": "Dispositifs rhétoriques : anaphore, chiasme, tricolon",
+    "note": "\"Nous nous battrons sur les plages, nous nous battrons sur les terrains de débarquement...\" - anaphore",
+    "exp": "<strong>Anaphore</strong> : répétition de mots au début de phrases successives. <em>\"J'ai un rêve... J'ai un rêve...\"</em>\n<br><strong>Chiasmus</strong> : structure croisée AB-BA. <em>\"Ne demandez pas ce que votre pays peut faire pour vous, mais ce que vous pouvez faire pour votre pays.\"</em>\n<br><strong>Tricolon</strong> : trois éléments parallèles. <em>\"Veni, vidi, vici.\" / \"Gouvernement du peuple, par le peuple, pour le peuple.\"</em>\n<br><br>Ces techniques sont utilisées dans l'art oratoire, les essais et le journalisme.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "Utiliser une anaphore sans structure parallèle perturbe le rythme",
+      "Tricolon avec des éléments inégaux : « rapide, efficace, avec beaucoup de soin » → « rapide, efficace et prudent »"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Friends, Romans, countrymen, lend me your ears. (триколон)",
+        ""
+      ],
+      [
+        "The more you learn, the more you earn. (хиазм в народной мудрости)",
+        ""
+      ]
+    ]
+  },
+  "c2_10": {
+    "text": "Collocations précises dans le texte académique",
+    "note": "mener des recherches, tirer des conclusions, parvenir à un consensus, résoudre un problème",
+    "exp": "En C2, il est important d'utiliser le verbe « correct » avec chaque nom.\n<br><br>Collocations académiques :\n<br>• <em>mener/effectuer</em> des recherches (et non <s>faire/faire</s>)\n<br>• <em>tirer/parvenir</em> à une conclusion\n<br>• <em>soulever/régler/régler</em> un problème\n<br>• <em>atteindre/atteindre</em> un consensus\n<br>• <em>réaliser</em> des progrès significatifs\n<br>• <em>poser/présenter</em> un défi",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>faire des recherches</s> → <em>mener/effectuer</em> des recherches",
+      "<s>faire une conclusion</s> → <em>tirer/arriver</em> une conclusion",
+      "<s>faire un problème</s> → <em>soulever/régler</em> un problème"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Researchers conducted extensive interviews.",
+        "Les chercheurs ont mené des entretiens approfondis."
+      ],
+      [
+        "The committee failed to reach a consensus.",
+        "Le comité n'a pas réussi à parvenir à un consensus."
+      ]
+    ]
+  },
+  "c2_11": {
+    "text": "Construction absolue avec participe",
+    "note": "Si le temps le permet, nous ferons un pique-nique. Les yeux remplis de larmes, elle quitta la pièce.",
+    "exp": "Construction absolue = nom/pronom + participe (sujet indépendant).\n<br>Utilisé dans un style écrit et formel - ajoute une circonstance sans conjonction.\n<br><br>Types :\n<br>• <em>Si le temps le permet</em> = Si le temps le permet\n<br>• <em>Tout bien considéré</em> = Si vous considérez tout\n<br>• <em>Son travail est terminé</em> = Quand/Après que son travail soit terminé\n<br>• <em>Ceci est fait</em> = Quand/Après que cela ait été fait",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Si le temps le permet, le pique-nique sera fait par nos soins</s> → passif redondant",
+      "<s>Ses yeux remplis de larmes, elle est partie</s> est acceptable, mais <em>Ses yeux remplis</em> est plus précis pour un fait complet"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "All things considered, it was a successful event.",
+        "Tout bien considéré, ce fut un événement réussi."
+      ],
+      [
+        "The deadline having passed, the project was cancelled.",
+        "Une fois le délai dépassé, le projet a été annulé."
+      ]
+    ]
+  },
+  "c2_12": {
+    "text": "Points de suspension et substitution dans le texte connecté",
+    "note": "Je voulais y aller mais je ne le voulais pas. Elle a dit qu'elle appellerait et elle l'a fait.",
+    "exp": "Les points de suspension sont l'omission d'éléments déjà connus.\n<br>Substitution - utiliser <em>do/so/one/it</em> au lieu de répéter.\n<br><br>Types d'ellipses :\n<br>• <em>A : Vous venez ? B : Pourrait (faire).</em>\n<br>• <em>Elle parle français et lui aussi / lui aussi.</em>\n<br>• <em>Je voulais partir, mais je n'y étais pas autorisé.</em> (<em>partir</em> omis)\n<br><br>Substitution : <em>Je pensais qu'il passerait. Il l'a fait.</em> / <em>Le gros ? Je préfère le petit</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je voulais y aller mais je ne voulais pas</s> → <em>mais je ne l'ai pas fait</em> (nous omettons de vouloir)",
+      "<s>Elle a dit qu'elle appellerait et elle a dit</s> → <em>et elle l'a fait</em> (substitution par do)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Can you drive? — I used to (drive).",
+        "Pouvez-vous conduire ? - Avant, j'en étais capable."
+      ],
+      [
+        "She said she'd be here and she was.",
+        "Elle a dit qu'elle viendrait, et elle est venue."
+      ]
+    ]
+  },
+  "c2_13": {
+    "text": "Phrases infinitives au lieu de propositions subordonnées",
+    "note": "Je veux que tu m'expliques. Elle m'a demandé de l'aider. Il n'a pas l'air content.",
+    "exp": "L'infinitif complexe (Objet Complexe) remplace la proposition subordonnée :\n<br><em>Je veux + objet + to-infinitif</em> : <em>Je veux qu'elle reste.</em>\n<br><br>Après <em>voir, entendre, regarder, laisser, faire, avoir</em> - infinitif sans <em>à</em> :\n<br><em>Je l'ai vue partir. / Elle l'a fait pleurer. / Laisse-moi t'aider.</em>\n<br>Au passif - avec <em>à</em> : <em>Il a été fait payer.</em>\n<br><br>Constructions avec <em>semblent, apparaissent, se produisent, prouvent + to-inf</em> :\n<br><em>Elle semble savoir. / Il se trouvait être là.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je l'ai vue partir</s> → Je l'ai vue <em>partir</em> (après voir sans le faire)",
+      "<s>Elle a été obligée de partir</s> - c'est vrai ! Au passif - avec à",
+      "<s>Je veux qu'elle reste</s> → Je veux <em>qu'elle reste</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I need you to sign this document.",
+        "J'ai besoin que vous signiez ce document."
+      ],
+      [
+        "She was made to apologise publicly.",
+        "Elle a été obligée de s'excuser publiquement."
+      ],
+      [
+        "He seemed to have forgotten everything.",
+        "Il semblait avoir tout oublié."
+      ]
+    ]
+  },
+  "c2_14": {
+    "text": "Future Perfect Continu : aura été + V-ing",
+    "note": "L’année prochaine, j’aurai étudié l’anglais pendant cinq ans.",
+    "exp": "<strong>Future Perfect Continu</strong> = <em>aura été + V-ing</em>\n<br><br>L'accent est mis sur la durée d'une action qui durera jusqu'à un certain point dans le futur. Répond souvent à la question « Dans combien de temps ? »\n<br><br>Souvent utilisé avec <em>par (l'heure), pour, quand</em> : <em>D'ici lundi, elle aura travaillé sur ce projet depuis trois semaines.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>L'année prochaine, j'étudierai</s> → J'aurai <em>été</em> étudié",
+      "<s>Elle aura travaillé</s> → Elle aura <em>travaillé</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "By next year, I will have been learning English for five years.",
+        "By next year I will have been studying English for five years."
+      ],
+      [
+        "When we arrive, she will have been waiting for two hours.",
+        "Quand nous arriverons, elle attendra déjà depuis deux heures."
+      ]
+    ]
+  },
+  "c2_15": {
+    "text": "Coordination des temps - séquence de temps",
+    "note": "Elle a dit qu'elle travaillait. Il pensait que ce serait difficile.",
+    "exp": "Dans les phrases complexes, le verbe de la proposition subordonnée s'accorde en rythme avec la proposition principale.\n<br><br>Si le verbe principal est au passé :\n<br>• Présent simple → Passé simple : <em>il a dit que c'était vrai</em>\n<br>• Past Simple → Past Perfect : <em>elle a dit qu'elle l'avait vu</em>\n<br>• Present Perfect → Past Perfect : <em>il a dit qu'il avait terminé</em>\n<br>• volonté → serait; peut → pourrait; peut → pourrait; est → était\n<br><br>⚠️ Exception : les vérités générales et les faits scientifiques ne changent pas : <em>Elle a dit que l'eau bout à 100°C.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle a dit que l'eau bout</s> (fait) → l'eau <em>bouillit</em>",
+      "<s>Il a dit qu'il l'avait vu</s> → Il a dit qu'il <em>l'avait vu</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "He told me that he had been living there for years.",
+        "Il m'a dit qu'il vivait là depuis de nombreuses années."
+      ],
+      [
+        "She said the Earth moves around the Sun. (общая истина — не меняем)",
+        "Elle a dit que la Terre tourne autour du Soleil."
+      ]
+    ]
+  },
+  "c2_16": {
+    "text": "Conjonctions de coordination : et, mais, ou, ni, pour, pourtant, donc",
+    "note": "FANBOYS : Pour, et, ni, mais, ou, pourtant, donc",
+    "exp": "Les conjonctions de coordination relient des parties équivalentes d’une phrase.\n<br><br>Seven Basic (acronyme FANBOYS) :\n<br>• <em>pour</em> = parce que (formel) : <em>Elle est partie, car elle était fatiguée.</em>\n<br>• <em>et</em> = et (ajout)\n<br>• <em>ni</em> = et non (Ni/Ni... inversion !) : <em>Elle n'a pas appelé, ni écrit.</em>\n<br>• <em>mais</em> = mais (contraste)\n<br>• <em>ou</em> = ou (alternative)\n<br>• <em>encore</em> = cependant (contraste, plus formel mais)\n<br>• <em>donc</em> = donc (conséquence)",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Elle était fatiguée, mais elle continuait à travailler</s> - correct sans « elle » dans la deuxième partie",
+      "<s>Elle n'a pas appelé ni écrit</s> → et <em>elle n'a pas</em> écrit (inversion !)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "She was tired, yet she kept working.",
+        "Elle était fatiguée mais continuait à travailler."
+      ],
+      [
+        "He didn't study, nor did he attend class.",
+        "Il n'a pas étudié ni suivi de cours."
+      ]
+    ]
+  },
+  "c2_17": {
+    "text": "Conjonctions de subordination : bien que, alors que, à condition, à moins que...",
+    "note": "bien que, comme si, attendu que, à condition que, à moins que, étant donné que, au cas où",
+    "exp": "Les conjonctions de subordination introduisent des clauses subordonnées.\n<br><br>Par valeur :\n<br>• <strong>Heure</strong> : <em>quand, pendant, comme, après, avant, jusqu'à, une fois, dès que, à chaque fois</em>\n<br>• <strong>Raisons</strong> : <em>parce que, puisque, comme, étant donné cela, vu que</em>\n<br>• <strong>Conditions</strong> : <em>si, à moins que, à condition que, au cas où, en supposant</em>\n<br>• <strong>Objectifs</strong> : <em>pour que, afin que, le meilleur</em>\n<br>• <strong>Concessions</strong> : <em>bien que, même si, alors que, tandis que, cependant</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Même s'il pleuvait, nous y sommes allés</s> → Même si <em>il pleuvait</em>",
+      "<s>Voyant que la date limite est passée</s> → était passée (Past Perfect avant un autre passé)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Seeing that the deadline had passed, we cancelled the meeting.",
+        "Le délai étant passé, nous avons annulé la réunion."
+      ],
+      [
+        "Lest she forget, he sent her a reminder.",
+        "Pour qu'elle n'oublie pas, il lui a envoyé un rappel."
+      ]
+    ]
+  },
+  "c2_18": {
+    "text": "Virgule, point-virgule et deux-points",
+    "note": "Utilisez une virgule avant FANBOYS. Utilisez un point-virgule pour lier les clauses associées.",
+    "exp": "<strong>Virgule</strong> :\n<br>• Avant de coordonner les conjonctions FANBOYS entre clauses indépendantes.\n<br>• Après les mots/tournures de phrase introductives : <em>Cependant, elle a décidé de rester.</em>\n<br>• Dans les énumérations (virgule d'Oxford - avant le dernier et) : <em>pommes, oranges et bananes</em>.\n<br><br><strong>Point-virgule (;)</strong> : relie deux clauses indépendantes sans conjonction.\n<br><em>Elle était fatiguée ; elle s'est couchée</em>\n<br><br><strong>Côlon (:)</strong> : introduit une liste, une explication, une citation.",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Cependant, elle a décidé de rester</s> → Cependant<em>,</em> elle a décidé",
+      "<s>Elle était fatiguée ; et elle s'est couchée</s> → sans conjonction après le point-virgule : <em>Elle était fatiguée ; elle s'est couchée</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "However, the results were inconclusive; further research is required.",
+        "Cependant, les résultats sont mitigés ; des recherches supplémentaires sont nécessaires."
+      ],
+      [
+        "The company has three priorities: efficiency, innovation, and sustainability.",
+        "L'entreprise a trois priorités : efficacité, innovation et durabilité."
+      ]
+    ]
+  },
+  "c2_19": {
+    "text": "Tiret, apostrophe et guillemets",
+    "note": "Em tiret - pour souligner - déclenche une phrase. C'est contre son. \"Discours direct\"",
+    "exp": "<strong>Dash (—)</strong> : met en évidence une construction de plug-in (plus forte qu'une virgule) : <em>La solution - bien que coûteuse - s'est avérée efficace.</em>\n<br><br><strong>Apostrophe</strong> :\n<br>• Abréviations : <em>c'est = c'est ; ne le faites pas; ils sont\n<br>• Cas possessif : <em>Le livre de John ; les résultats des étudiants</em>\n<br>• ⚠️ <em>son</em> (appartenance) vs <em>c'est</em> (c'est)\n<br><br><strong>Citations</strong> : AmE - double (\"<em>texte</em>\"), BrE - simple (\"<em>texte</em>').",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>C'est une grande maison</s> → <em>C'est</em> une grande maison",
+      "<s>La queue du chat</s> → La queue du chat<em></em>",
+      "<s>Le livre d'elle</s> → <em>Son</em> livre (les pronoms possessifs n'ont pas d'apostrophe)"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "The project — launched in 2020 — exceeded all expectations.",
+        "Le projet, lancé en 2020, a dépassé toutes les attentes."
+      ],
+      [
+        "It's important to check its settings before use.",
+        "Il est important de vérifier ses paramètres avant de l'utiliser."
+      ]
+    ]
+  },
+  "c2_20": {
+    "text": "Questions spéciales et indirectes dans le texte académique",
+    "note": "La question est de savoir si... / Je me demande ce que montrent les données.",
+    "exp": "Dans les textes académiques, les questions directes sont remplacées par des questions indirectes (clauses interrogatives).\n<br><br>Une question indirecte est une proposition subordonnée avec l'ordre habituel des mots (sans inversion, sans faire).\n<br><br>Mots d'introduction : <em>si, si (oui/non), quoi, où, quand, comment, pourquoi, lequel</em>.\n<br><br>Exemple : <em>Que montrent ces données ?</em> → <em>La question est de savoir ce que montrent ces données.</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Je me demande ce que montrent les données</s> → ce que les données <em>montrent</em> (pas d'inversion dans une question indirecte)",
+      "<s>La question est de savoir s'il sait</s> → s'il <em>sait</em>"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I wonder whether the hypothesis is correct.",
+        "Je me demande si l'hypothèse est vraie."
+      ],
+      [
+        "The study examines how social media affects behaviour.",
+        "L'étude examine comment les médias sociaux influencent le comportement."
+      ]
+    ]
+  }
+}

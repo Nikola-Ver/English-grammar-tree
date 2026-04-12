@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,6 +38,8 @@
               : 'dark';
         var el = document.documentElement;
         el.dataset.theme = theme;
+        var lng = localStorage.getItem('i18nextLng');
+        if (lng) el.lang = String(lng).split('-')[0];
         el.classList.add('no-transitions');
         window.addEventListener('DOMContentLoaded', function () {
           requestAnimationFrame(function () {

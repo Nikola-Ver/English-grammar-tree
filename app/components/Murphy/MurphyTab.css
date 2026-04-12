@@ -55,8 +55,8 @@
 }
 
 .murphy-test-btn {
-  background: linear-gradient(135deg, rgba(244, 114, 182, 0.12), rgba(56, 189, 248, 0.08));
-  border: 1px solid rgba(244, 114, 182, 0.4);
+  background: linear-gradient(135deg, rgba(var(--rgb-pink), 0.12), rgba(var(--rgb-b1), 0.08));
+  border: 1px solid rgba(var(--rgb-pink), 0.4);
   border-radius: 10px;
   color: var(--c1);
   font-size: 13px;
@@ -74,9 +74,9 @@
 
 .murphy-test-btn:hover {
   border-color: var(--c1);
-  background: linear-gradient(135deg, rgba(244, 114, 182, 0.2), rgba(56, 189, 248, 0.12));
-  color: #f9a8d4;
-  box-shadow: 0 0 18px rgba(244, 114, 182, 0.15);
+  background: linear-gradient(135deg, rgba(var(--rgb-pink), 0.2), rgba(var(--rgb-b1), 0.12));
+  color: var(--murphy-accent-text);
+  box-shadow: 0 0 18px rgba(var(--rgb-pink), 0.15);
 }
 
 .murphy-test-btn:active {
@@ -114,12 +114,12 @@
 .murphy-search-btn:hover {
   border-color: var(--c1);
   color: var(--c1);
-  box-shadow: 0 0 14px rgba(244, 114, 182, 0.15);
+  box-shadow: 0 0 14px rgba(var(--rgb-pink), 0.15);
 }
 
 .murphy-search-btn.active {
-  background: rgba(244, 114, 182, 0.1);
-  border-color: rgba(244, 114, 182, 0.5);
+  background: rgba(var(--rgb-pink), 0.1);
+  border-color: rgba(var(--rgb-pink), 0.5);
   color: var(--c1);
 }
 
@@ -179,8 +179,8 @@
 }
 
 .murphy-search-input:focus {
-  border-color: rgba(244, 114, 182, 0.5);
-  box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.08);
+  border-color: rgba(var(--rgb-pink), 0.5);
+  box-shadow: 0 0 0 3px rgba(var(--rgb-pink), 0.08);
 }
 
 .murphy-search-input::placeholder {

@@ -1,0 +1,285 @@
+{
+  "header": {
+    "titlePrefix": "英语",
+    "titleAccent": "语法",
+    "titleSuffix": "树",
+    "themeLight": "浅色主题",
+    "themeDark": "深色主题",
+    "account": "账户",
+    "signIn": "登录",
+    "avatar": "头像",
+    "language": "语言"
+  },
+  "tabs": {
+    "grammar": "📚 语法",
+    "murphy": "📖 墨菲教材",
+    "tenses": "🕐 时态树"
+  },
+  "auth": {
+    "title": "登录以同步",
+    "tagline": "在所有设备上保存学习进度",
+    "google": "使用 Google 登录",
+    "wait": "请稍候…",
+    "continueWithout": "不登录继续",
+    "errorGeneric": "出错了，请重试。"
+  },
+  "account": {
+    "syncIdle": "空闲",
+    "syncSyncing": "正在同步…",
+    "syncSynced": "已同步",
+    "syncOffline": "离线",
+    "syncError": "同步错误",
+    "syncOfflineDetail": "离线 — 联网后将同步数据",
+    "syncErrorDetail": "同步错误 — 已加入重试队列",
+    "lastSync": "上次同步：",
+    "syncNow": "立即同步",
+    "signOut": "退出登录",
+    "deleteAccount": "删除账户",
+    "deleteWarning": "您的账户及所有云端数据将被永久删除，本地进度也会被清除。此操作无法撤销。",
+    "cancel": "取消",
+    "deleteConfirm": "是的，全部删除",
+    "deleting": "正在删除…",
+    "back": "← 返回",
+    "deleteErrorRecentLogin": "请退出后重新登录，然后再试一次。",
+    "deleteErrorGeneric": "无法删除账户，请重试。"
+  },
+  "grammar": {
+    "rulesUnit": "条规则",
+    "progressDone": "已完成 {{pct}}%",
+    "resetProgress": "重置进度",
+    "resetConfirmHint": "再点一次确认",
+    "search": "搜索",
+    "closeSearch": "关闭搜索",
+    "testLearned": "已学内容测验",
+    "resetBanner": "请再按一次重置按钮以确认",
+    "searchPlaceholder": "按主题或规则搜索…",
+    "clearSearch": "清除搜索",
+    "noResults": "没有匹配结果",
+    "alertNoRules": "请先将至少一条规则标为已学！"
+  },
+  "murphy": {
+    "unitsUnit": "个单元",
+    "progressDone": "已完成 {{pct}}%",
+    "resetProgress": "重置进度",
+    "resetConfirmHint": "再点一次确认",
+    "search": "搜索",
+    "closeSearch": "关闭搜索",
+    "testLearned": "已学内容测验",
+    "resetBanner": "请再按一次重置按钮以确认",
+    "searchPlaceholder": "按单元或主题搜索…",
+    "clearSearch": "清除搜索",
+    "noResults": "没有匹配结果",
+    "alertNoUnits": "请先将至少一个单元标为已学！"
+  },
+  "tensesTab": {
+    "introLead": "互动式时态选择。",
+    "introRest": "回答问题即可获得对应时态的公式、例句和常见错误。",
+    "orPick": "— 或直接选择时态 —"
+  },
+  "timeline": {
+    "title": "📊 时间轴 — 动作何时发生",
+    "scrollHint": "左右滑动查看时间轴",
+    "past": "← 过去",
+    "future": "未来 →",
+    "now": "▼ 现在",
+    "row": {
+      "present_simple": "重复或持续的动作 — 总是",
+      "present_continuous": "此刻正在进行的动作",
+      "present_perfect": "过去发生并与现在相关",
+      "present_perfect_continuous": "从过去开始并仍在继续",
+      "past_simple": "在特定过去时刻完成的动作",
+      "past_continuous": "过去持续进行的背景动作",
+      "past_perfect": "在另一过去事件之前已完成",
+      "past_perfect_continuous": "持续到过去某一时刻的动作",
+      "future_will": "对未来的决定或预测",
+      "future_going_to": "事先计划好的打算",
+      "future_continuous": "将来某一时刻正在进行的动作",
+      "future_perfect": "在将来某时点之前将已完成"
+    }
+  },
+  "tenseTree": {
+    "start": {
+      "q": "动作发生在什么时候？",
+      "c0": "现在 / 一般情况",
+      "c1": "过去",
+      "c2": "将来"
+    },
+    "present": {
+      "q": "你想表达什么？",
+      "c0": "习惯、事实、日程",
+      "c1": "此刻或临时情况",
+      "c2": "与现在的联系：经历 / 结果"
+    },
+    "present_now": {
+      "q": "是长期状态还是此刻的过程？",
+      "c0": "长期状态（知道、喜欢、想要…）",
+      "c1": "此刻进行中 / 临时"
+    },
+    "present_perfect_branch": {
+      "q": "强调持续时间还是事实本身？",
+      "c0": "事实 / 结果 / 经历",
+      "c1": "持续时间（“多久”）"
+    },
+    "past": {
+      "q": "关于过去你想说什么？",
+      "c0": "已完成的动作（具体时间）",
+      "c1": "进行中的动作 / 背景",
+      "c2": "在另一过去事件之前"
+    },
+    "past_perfect_branch": {
+      "q": "需要强调持续时间吗？",
+      "c0": "不需要 — 只表完成",
+      "c1": "需要 — 持续了多久"
+    },
+    "future": {
+      "q": "你如何表达将来？",
+      "c0": "临时决定 / 承诺 / 预测",
+      "c1": "事先计划 / 有明显迹象",
+      "c2": "将来某刻正在进行",
+      "c3": "在将来某刻之前将完成"
+    }
+  },
+  "tenseUi": {
+    "timeMarkers": "⏱ 时间标志词",
+    "examples": "例句",
+    "mistakes": "🚫 常见错误",
+    "restart": "↺ 重新开始",
+    "shareLink": "分享链接"
+  },
+  "rule": {
+    "exceptions": "⚠️ 例外：",
+    "tip": "💡 提示：",
+    "mistakes": "🚫 常见错误：",
+    "test": "✦ 测验",
+    "copyLinkTitle": "复制此规则链接"
+  },
+  "selection": {
+    "share": "分享",
+    "pin": "固定",
+    "note": "笔记",
+    "close": "关闭",
+    "cancel": "取消",
+    "commentPlaceholder": "添加备注…",
+    "copyLink": "⛓ 复制链接",
+    "linkCopied": "✓ 链接已复制",
+    "notePlaceholder": "你的笔记…",
+    "save": "保存",
+    "deleteNote": "删除笔记",
+    "emptyNote": "笔记无正文",
+    "messageTitle": "💬 消息"
+  },
+  "copied": "✓ 已复制！",
+  "tenses": {
+    "present_simple": {
+      "desc": "经常性动作、习惯、事实和日程安排。",
+      "ex0": "She drinks coffee every morning.",
+      "ex0tr": "她每天早上喝咖啡。",
+      "ex1": "The sun rises in the east.",
+      "ex1tr": "太阳从东方升起。",
+      "m0": "<s>She work</s> → She <em>works</em>",
+      "m1": "<s>Do she likes?</s> → Does she like?",
+      "m2": "<s>I not like</s> → I <em>don't</em> like"
+    },
+    "present_continuous": {
+      "desc": "此刻正在发生或暂时的情形，也可表示近期的具体安排。",
+      "ex0": "I'm studying English right now.",
+      "ex0tr": "我现在正在学英语。",
+      "ex1": "She's meeting Tom tomorrow.",
+      "ex1tr": "她明天要和汤姆见面。",
+      "m0": "<s>I am knowing</s> → 状态动词一般不用进行时",
+      "m1": "<s>She is working usually</s> → She <em>usually works</em>（习惯用一般现在时）"
+    },
+    "past_simple": {
+      "desc": "过去已完成的动作，常伴有具体时间或隐含的时间点。",
+      "ex0": "I saw her yesterday.",
+      "ex0tr": "我昨天见到她了。",
+      "ex1": "She went to Paris in 2022.",
+      "ex1tr": "她2022年去了巴黎。",
+      "m0": "<s>I goed</s> → I <em>went</em>",
+      "m1": "<s>I didn't went</s> → I didn't <em>go</em>",
+      "m2": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday"
+    },
+    "past_continuous": {
+      "desc": "过去某一时刻正在进行的动作；作为背景被另一动作打断。",
+      "ex0": "I was reading when she called.",
+      "ex0tr": "她打电话时我正在看书。",
+      "ex1": "While he was cooking, she was working.",
+      "ex1tr": "他做饭时她在工作。",
+      "m0": "<s>She were working</s> → She <em>was</em> working",
+      "m1": "<s>I was work</s> → I was <em>working</em>"
+    },
+    "present_perfect": {
+      "desc": "过去发生但与现在相关；人生经历；与 for/since 的未完成时段。",
+      "ex0": "I've lost my keys.",
+      "ex0tr": "我把钥匙丢了（现在仍没找到）。",
+      "ex1": "Have you ever been to Japan?",
+      "ex1tr": "你去过日本吗？",
+      "m0": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday",
+      "m1": "<s>She has went</s> → She has <em>gone</em>",
+      "m2": "<s>I've lived here since five years</s> → <em>for</em> five years"
+    },
+    "present_perfect_continuous": {
+      "desc": "强调从过去开始的过程或持续时间。",
+      "ex0": "I've been learning English for two years.",
+      "ex0tr": "我学英语已经两年了。",
+      "ex1": "Why are you tired? — I've been running.",
+      "ex1tr": "你为什么累？——我一直在跑步。",
+      "m0": "<s>I've been know</s> → 状态动词不用进行时",
+      "m1": "<s>I've been learning since two years</s> → <em>for</em> two years"
+    },
+    "past_perfect": {
+      "desc": "在过去某一时刻之前已经完成的动作。",
+      "ex0": "When I arrived, she had already left.",
+      "ex0tr": "我到的时候她已经走了。",
+      "ex1": "He had never seen snow before that winter.",
+      "ex1tr": "那个冬天之前他从没见过雪。",
+      "m0": "<s>When I arrived, she already left</s> → she <em>had</em> already left",
+      "m1": "<s>He had never see</s> → He had never <em>seen</em>"
+    },
+    "past_perfect_continuous": {
+      "desc": "在过去某点之前动作持续了多久；说明原因或当时的结果。",
+      "ex0": "She was exhausted — she'd been working all night.",
+      "ex0tr": "她筋疲力尽——整晚都在工作。",
+      "ex1": "How long had you been waiting?",
+      "ex1tr": "你等了多久了？",
+      "m0": "<s>She had been work</s> → She had been <em>working</em>",
+      "m1": "<s>How long had you waiting?</s> → had you <em>been waiting</em>"
+    },
+    "future_will": {
+      "desc": "预测、临时决定、承诺、对将来的一般陈述。",
+      "ex0": "I'll help you!",
+      "ex0tr": "我来帮你！（临时决定）",
+      "ex1": "She will probably be late.",
+      "ex1tr": "她可能会迟到。",
+      "m0": "<s>I will to go</s> → I will <em>go</em>",
+      "m1": "<s>She wills come</s> → She will come"
+    },
+    "future_going_to": {
+      "desc": "事先打算或根据明显迹象作出的预测。",
+      "ex0": "I'm going to study medicine.",
+      "ex0tr": "我打算学医。",
+      "ex1": "Look at those clouds — it's going to rain!",
+      "ex1tr": "看那些云——要下雨了！",
+      "m0": "<s>She is going to does</s> → She is going to <em>do</em>",
+      "m1": "<s>I am going to will do</s> → 不要叠用两种将来形式"
+    },
+    "future_continuous": {
+      "desc": "在将来某一时刻正在进行的动作。",
+      "ex0": "This time tomorrow I'll be lying on the beach.",
+      "ex0tr": "明天这个时候我会躺在沙滩上。",
+      "ex1": "Don't call at 8 — I'll be having dinner.",
+      "ex1tr": "八点别打电话——我在吃晚饭。",
+      "m0": "<s>I'll be work at 9</s> → I'll be <em>working</em>",
+      "m1": "<s>She will working</s> → She <em>will be working</em>"
+    },
+    "future_perfect": {
+      "desc": "在将来某一时间点之前将会完成的动作。",
+      "ex0": "I'll have finished by Sunday.",
+      "ex0tr": "周日之前我会做完。",
+      "ex1": "By 2030 they will have built the bridge.",
+      "ex1tr": "到2030年他们会建好这座桥。",
+      "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
+      "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
+    }
+  }
+}

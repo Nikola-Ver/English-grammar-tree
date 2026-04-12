@@ -1,4 +1,4 @@
-export type LinkType = 'yt' | 'ru' | 'en';
+export type LinkType = 'yt' | 'ru' | 'en' | 'de' | 'es' | 'fr' | 'zh';
 
 export interface RuleLink {
   label: string;

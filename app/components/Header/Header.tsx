@@ -1,6 +1,9 @@
+import { useEffect, useRef, useState } from 'react';
 import type { SyncStatus } from '../../context/AuthSyncContext';
 import { useAuthSync } from '../../context/AuthSyncContext';
+import { SUPPORTED_LANGUAGES } from '../../i18n/config';
 import './Header.css';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   theme: 'dark' | 'light';
@@ -14,7 +17,7 @@ function SyncStatusDot({ status }: { status: SyncStatus }) {
   return <span className={`avatar-sync-dot avatar-sync-dot--${status}`} aria-hidden="true" />;
 }
 
-function Avatar() {
+function Avatar({ altAvatar }: { altAvatar: string }) {
   const { user, syncStatus } = useAuthSync();
 
   if (user?.photoURL) {
@@ -23,7 +26,7 @@ function Avatar() {
         <img
           className="avatar-img"
           src={user.photoURL}
-          alt={user.displayName ?? 'Аватар'}
+          alt={user.displayName ?? altAvatar}
           referrerPolicy="no-referrer"
         />
         <SyncStatusDot status={syncStatus} />
@@ -64,6 +67,67 @@ function Avatar() {
 
 export function Header({ theme, onToggleTheme, onAvatarClick, onTitleClick }: Props) {
   const { user } = useAuthSync();
+  const { t, i18n } = useTranslation();
+  const langCode = i18n.language.split('-')[0];
+  const current = SUPPORTED_LANGUAGES.find((l) => l.code === langCode);
+  const currentLabel = current?.label ?? langCode.toUpperCase();
+  const currentLangHint = current?.hint ?? t('header.language');
+
+  const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [langMenuMounted, setLangMenuMounted] = useState(false);
+  const [langMenuVisible, setLangMenuVisible] = useState(false);
+  const langWrapRef = useRef<HTMLDivElement>(null);
+  const langMenuOpenRef = useRef(langMenuOpen);
+  const langMenuVisibleRef = useRef(langMenuVisible);
+  const langMenuReachedVisibleRef = useRef(false);
+  langMenuOpenRef.current = langMenuOpen;
+  langMenuVisibleRef.current = langMenuVisible;
+
+  useEffect(() => {
+    if (langMenuOpen) {
+      langMenuReachedVisibleRef.current = false;
+      setLangMenuMounted(true);
+      let innerRaf = 0;
+      const outerRaf = requestAnimationFrame(() => {
+        innerRaf = requestAnimationFrame(() => {
+          langMenuReachedVisibleRef.current = true;
+          setLangMenuVisible(true);
+        });
+      });
+      return () => {
+        cancelAnimationFrame(outerRaf);
+        if (innerRaf) cancelAnimationFrame(innerRaf);
+      };
+    }
+    setLangMenuVisible(false);
+    if (!langMenuReachedVisibleRef.current) {
+      setLangMenuMounted(false);
+    }
+  }, [langMenuOpen]);
+
+  function handleLangMenuTransitionEnd(e: React.TransitionEvent<HTMLDivElement>) {
+    if (e.target !== e.currentTarget || e.propertyName !== 'opacity') return;
+    if (!langMenuVisibleRef.current && !langMenuOpenRef.current) {
+      setLangMenuMounted(false);
+    }
+  }
+
+  useEffect(() => {
+    if (!langMenuOpen) return;
+    function onDocPointerDown(ev: PointerEvent) {
+      if (langWrapRef.current?.contains(ev.target as Node)) return;
+      setLangMenuOpen(false);
+    }
+    function onKey(ev: KeyboardEvent) {
+      if (ev.key === 'Escape') setLangMenuOpen(false);
+    }
+    document.addEventListener('pointerdown', onDocPointerDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onDocPointerDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [langMenuOpen]);
 
   return (
     <header>
@@ -71,16 +135,59 @@ export function Header({ theme, onToggleTheme, onAvatarClick, onTitleClick }: Pr
         <div className="title-block">
           <h1>
             <button type="button" className="title-btn" onClick={onTitleClick}>
-              English <span>Grammar</span> Tree
+              {t('header.titlePrefix')}
+              <span>{t('header.titleAccent')}</span>
+              {t('header.titleSuffix')}
             </button>
           </h1>
         </div>
         <div className="header-controls">
+          <div className="lang-select-wrap" ref={langWrapRef}>
+            <button
+              type="button"
+              className="lang-select-surface lang-select-trigger"
+              aria-label={t('header.language')}
+              aria-expanded={langMenuOpen}
+              aria-haspopup="listbox"
+              aria-controls="app-lang-listbox"
+              title={currentLangHint}
+              onClick={() => setLangMenuOpen((o) => !o)}
+            >
+              <span className="lang-select-code">{currentLabel}</span>
+            </button>
+            {langMenuMounted && (
+              <div
+                id="app-lang-listbox"
+                className={`lang-menu${langMenuVisible ? ' lang-menu--visible' : ''}`}
+                role="listbox"
+                aria-label={t('header.language')}
+                aria-hidden={!langMenuVisible}
+                onTransitionEnd={handleLangMenuTransitionEnd}
+              >
+                {SUPPORTED_LANGUAGES.map(({ code, hint }) => (
+                  <button
+                    key={code}
+                    type="button"
+                    role="option"
+                    aria-selected={code === langCode}
+                    className={`lang-menu-item${code === langCode ? ' is-active' : ''}`}
+                    onClick={() => {
+                      void i18n.changeLanguage(code);
+                      setLangMenuOpen(false);
+                    }}
+                  >
+                    {hint}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <button
             className="theme-toggle"
             onClick={onToggleTheme}
-            aria-label={theme === 'dark' ? 'Светлая тема' : 'Тёмная тема'}
-            title={theme === 'dark' ? 'Светлая тема' : 'Тёмная тема'}
+            aria-label={theme === 'dark' ? t('header.themeLight') : t('header.themeDark')}
+            title={theme === 'dark' ? t('header.themeLight') : t('header.themeDark')}
+            type="button"
           >
             {theme === 'dark' ? (
               <svg
@@ -124,10 +231,13 @@ export function Header({ theme, onToggleTheme, onAvatarClick, onTitleClick }: Pr
           <button
             className="avatar-btn"
             onClick={onAvatarClick}
-            aria-label={user ? 'Аккаунт' : 'Войти'}
-            title={user ? (user.displayName ?? user.email ?? 'Аккаунт') : 'Войти'}
+            aria-label={user ? t('header.account') : t('header.signIn')}
+            title={
+              user ? (user.displayName ?? user.email ?? t('header.account')) : t('header.signIn')
+            }
+            type="button"
           >
-            <Avatar />
+            <Avatar altAvatar={t('header.avatar')} />
           </button>
         </div>
       </div>

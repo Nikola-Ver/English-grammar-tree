@@ -1,5 +1,6 @@
-import { useEffect, useRef } from 'react';
-import { TL_DATA } from '../../data/timelineData';
+import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { type TimelineEntry, TL_DATA } from '../../data/timelineData';
 
 interface Props {
   selectedKey: string | null;
@@ -54,11 +55,35 @@ function syncTimelineScrollEdge(inner: HTMLDivElement | null, outer: HTMLDivElem
   }
 }
 
+function tooltipPosition(clientX: number, clientY: number) {
+  const pad = 14;
+  const tipMax = 220;
+  let left = clientX + pad;
+  if (left + tipMax > window.innerWidth - 8) {
+    left = Math.max(8, clientX - tipMax - pad);
+  }
+  let top = clientY - 10;
+  if (top < 8) top = clientY + 24;
+  return { left, top };
+}
+
 export function Timeline({ selectedKey, onSelectTense }: Props) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const scrollOuterRef = useRef<HTMLDivElement>(null);
-  const tooltipRef = useRef<HTMLDivElement>(null);
+  const axisTextRef = useRef({ past: '', future: '', now: '' });
+  axisTextRef.current = {
+    past: t('timeline.past'),
+    future: t('timeline.future'),
+    now: t('timeline.now'),
+  };
+
+  const [hoverTip, setHoverTip] = useState<{
+    clientX: number;
+    clientY: number;
+    entry: TimelineEntry;
+  } | null>(null);
 
   function draw() {
     const canvas = canvasRef.current;
@@ -81,6 +106,14 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     const C_MUTED2 = cs.getPropertyValue('--muted2').trim() || '#8b92a8';
     const C_BG2 = cs.getPropertyValue('--bg2').trim() || '#131620';
     const C_TEXT = cs.getPropertyValue('--text').trim() || '#e8eaf0';
+    const C_CHART_PAST = cs.getPropertyValue('--tt-chart-past').trim() || 'rgba(56,189,248,0.045)';
+    const C_CHART_FUTURE =
+      cs.getPropertyValue('--tt-chart-future').trim() || 'rgba(74,222,128,0.045)';
+
+    function rowPaintColor(key: string, fallback: string): string {
+      const v = cs.getPropertyValue(`--tl-${key}`).trim();
+      return v || fallback;
+    }
 
     function hexToRgba(hex: string, alpha: number): string {
       const h = hex.replace('#', '');
@@ -101,38 +134,40 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     ctx.fillRect(0, 0, W, H);
 
     const ticks = [-10, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10];
-    ticks.forEach((t) => {
-      const x = xOf(t);
-      ctx.strokeStyle = hexToRgba(C_TEXT, t === 0 ? 0.15 : 0.05);
-      ctx.lineWidth = t === 0 ? 1.5 : 1;
+    ticks.forEach((tick) => {
+      const x = xOf(tick);
+      ctx.strokeStyle = hexToRgba(C_TEXT, tick === 0 ? 0.15 : 0.05);
+      ctx.lineWidth = tick === 0 ? 1.5 : 1;
       ctx.beginPath();
       ctx.moveTo(x, PAD_T - 14);
       ctx.lineTo(x, PAD_T + ROWS * ROW_H);
       ctx.stroke();
-      ctx.fillStyle = t === 0 ? C_MUTED2 : C_MUTED;
-      ctx.font = `${t === 0 ? '600 ' : ''}${axisLabelPx}px Outfit,sans-serif`;
+      ctx.fillStyle = tick === 0 ? C_MUTED2 : C_MUTED;
+      ctx.font = `${tick === 0 ? '600 ' : ''}${axisLabelPx}px Outfit,sans-serif`;
       ctx.textAlign = 'center';
-      if (t === 0 || t === -10 || t === 10 || t === -5 || t === 5) ctx.fillText('', x, PAD_T - 4);
+      if (tick === 0 || tick === -10 || tick === 10 || tick === -5 || tick === 5)
+        ctx.fillText('', x, PAD_T - 4);
     });
 
     const pastEnd = xOf(0) - 1,
       futureStart = xOf(0) + 1;
-    ctx.fillStyle = 'rgba(56,189,248,0.03)';
+    ctx.fillStyle = C_CHART_PAST;
     ctx.fillRect(PAD_L, PAD_T, pastEnd - PAD_L, ROWS * ROW_H);
-    ctx.fillStyle = 'rgba(74,222,128,0.03)';
+    ctx.fillStyle = C_CHART_FUTURE;
     ctx.fillRect(futureStart, PAD_T, W - PAD_R - futureStart, ROWS * ROW_H);
 
+    const { past: pastLabel, future: futureLabel, now: nowLabel } = axisTextRef.current;
     ctx.font = `${axisLabelPx}px Outfit,sans-serif`;
     ctx.textAlign = 'center';
     ctx.fillStyle = C_MUTED;
-    ctx.fillText('← ПРОШЛОЕ', PAD_L + (pastEnd - PAD_L) / 2, PAD_T - 4);
-    ctx.fillText('БУДУЩЕЕ →', futureStart + (W - PAD_R - futureStart) / 2, PAD_T - 4);
+    ctx.fillText(pastLabel, PAD_L + (pastEnd - PAD_L) / 2, PAD_T - 4);
+    ctx.fillText(futureLabel, futureStart + (W - PAD_R - futureStart) / 2, PAD_T - 4);
 
     TL_DATA.forEach((d, i) => {
       const y = PAD_T + i * ROW_H + ROW_H / 2;
       const x1 = xOf(d.start),
         x2 = xOf(d.end);
-      const col = d.color;
+      const col = rowPaintColor(d.key, d.color);
       const isSelected = selectedKey === d.key;
       const isAnySelected = !!selectedKey;
       const dimmed = isAnySelected && !isSelected;
@@ -272,7 +307,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     ctx.fillStyle = hexToRgba(C_TEXT, 0.8);
     ctx.font = `bold ${axisLabelPx}px Outfit,sans-serif`;
     ctx.textAlign = 'center';
-    ctx.fillText('▼ Сейчас', nowX, PAD_T - 16);
+    ctx.fillText(nowLabel, nowX, PAD_T - 16);
 
     queueMicrotask(() => syncTimelineScrollEdge(scrollRef.current, scrollOuterRef.current));
   }
@@ -338,9 +373,8 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
 
   function handlePointerMove(e: React.PointerEvent<HTMLCanvasElement>) {
     const canvas = canvasRef.current;
-    const tip = tooltipRef.current;
     const scrollEl = scrollRef.current;
-    if (!canvas || !tip || !scrollEl) return;
+    if (!canvas || !scrollEl) return;
     const rect = canvas.getBoundingClientRect();
     const { PAD_L, PAD_T, ROW_H, chartSpan } = timelineLayout(scrollEl.clientWidth);
     const AXIS_MIN = -10,
@@ -350,7 +384,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
     function xOf(v: number) {
       return PAD_L + ((v - AXIS_MIN) / (AXIS_MAX - AXIS_MIN)) * chartSpan;
     }
-    let hit: (typeof TL_DATA)[0] | null = null;
+    let hit: TimelineEntry | null = null;
     TL_DATA.forEach((d, i) => {
       const x1 = xOf(d.start),
         x2 = xOf(d.end);
@@ -359,32 +393,23 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
       if (inY && inX) hit = d;
     });
     if (hit) {
-      tip.style.display = 'block';
-      const pad = 14;
-      const tipMax = 220;
-      let left = e.clientX + pad;
-      if (left + tipMax > window.innerWidth - 8) {
-        left = Math.max(8, e.clientX - tipMax - pad);
-      }
-      let top = e.clientY - 10;
-      if (top < 8) top = e.clientY + 24;
-      tip.style.left = `${left}px`;
-      tip.style.top = `${top}px`;
-      tip.innerHTML = `<div class="ttt-name" style="color:${(hit as (typeof TL_DATA)[0]).color}">${(hit as (typeof TL_DATA)[0]).label}</div><div class="ttt-desc">${(hit as (typeof TL_DATA)[0]).desc}</div>`;
+      setHoverTip({ clientX: e.clientX, clientY: e.clientY, entry: hit });
     } else {
-      tip.style.display = 'none';
+      setHoverTip(null);
     }
   }
+
+  const tipPos = hoverTip ? tooltipPosition(hoverTip.clientX, hoverTip.clientY) : null;
 
   return (
     <>
       <div className="tt-timeline-wrap">
-        <div className="tt-timeline-title">📊 Шкала времени — когда происходит действие</div>
+        <div className="tt-timeline-title">{t('timeline.title')}</div>
         <p className="tt-timeline-hint" role="note">
           <span className="tt-timeline-hint-arrows" aria-hidden>
             ‹ ›
           </span>
-          <span>Листайте шкалу в стороны</span>
+          <span>{t('timeline.scrollHint')}</span>
         </p>
         <div ref={scrollOuterRef} className="tt-timeline-scroll-outer">
           <div
@@ -397,9 +422,7 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
               className="tt-timeline-canvas"
               onClick={handleCanvasClick}
               onPointerMove={handlePointerMove}
-              onPointerLeave={() => {
-                if (tooltipRef.current) tooltipRef.current.style.display = 'none';
-              }}
+              onPointerLeave={() => setHoverTip(null)}
             />
           </div>
         </div>
@@ -414,13 +437,29 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
               }}
               onClick={() => onSelectTense(d.key)}
             >
-              <div className="tt-tl-leg-dot" style={{ background: d.color }} />
+              <div className="tt-tl-leg-dot" style={{ background: `var(--tl-${d.key})` }} />
               <span>{d.label}</span>
             </div>
           ))}
         </div>
       </div>
-      <div ref={tooltipRef} className="tt-timeline-tooltip" style={{ display: 'none' }} />
+      {hoverTip && tipPos && (
+        <div
+          className="tt-timeline-tooltip"
+          style={{
+            display: 'block',
+            position: 'fixed',
+            left: tipPos.left,
+            top: tipPos.top,
+            zIndex: 50,
+          }}
+        >
+          <div className="ttt-name" style={{ color: `var(--tl-${hoverTip.entry.key})` }}>
+            {hoverTip.entry.label}
+          </div>
+          <div className="ttt-desc">{t(hoverTip.entry.descKey)}</div>
+        </div>
+      )}
     </>
   );
 }

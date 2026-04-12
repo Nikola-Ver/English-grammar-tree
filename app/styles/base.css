@@ -8,21 +8,49 @@
   --muted: #6b7080;
   --muted2: #8b92a8;
   --a1: #4ade80;
-  --a1bg: rgba(74, 222, 128, 0.09);
   --a2: #34d399;
-  --a2bg: rgba(52, 211, 153, 0.09);
   --b1: #38bdf8;
-  --b1bg: rgba(56, 189, 248, 0.09);
   --b2: #818cf8;
-  --b2bg: rgba(129, 140, 248, 0.09);
   --c1: #f472b6;
-  --c1bg: rgba(244, 114, 182, 0.09);
   --c2: #fb923c;
-  --c2bg: rgba(251, 146, 60, 0.09);
   --yt: #ff4444;
   --ru: #5b9cf6;
-  --grad-tint1: rgba(129, 140, 248, 0.05);
-  --grad-tint2: rgba(251, 146, 60, 0.04);
+  /* RGB tuples for rgba(var(--rgb-…), α) in component CSS — vivid on dark theme */
+  --rgb-b2: 129, 140, 248;
+  --rgb-b1: 56, 189, 248;
+  --rgb-a1: 74, 222, 128;
+  --rgb-a2: 52, 211, 153;
+  --rgb-amber: 251, 191, 36;
+  --rgb-pink: 244, 114, 182;
+  --rgb-c2: 251, 146, 60;
+  --sel-share-hover: #a5b4fc;
+  --sel-pin-hover: #6ee7b7;
+  --sel-note-mid: #fbbf24;
+  --sel-note-hover: #fde68a;
+  --murphy-accent-text: #f9a8d4;
+  --a1bg: rgba(var(--rgb-a1), 0.09);
+  --a2bg: rgba(var(--rgb-a2), 0.09);
+  --b1bg: rgba(var(--rgb-b1), 0.09);
+  --b2bg: rgba(var(--rgb-b2), 0.09);
+  --c1bg: rgba(var(--rgb-pink), 0.09);
+  --c2bg: rgba(var(--rgb-c2), 0.09);
+  --grad-tint1: rgba(var(--rgb-b2), 0.05);
+  --grad-tint2: rgba(var(--rgb-c2), 0.04);
+  /* Tenses tab — timeline chart bands + row/legend colors (neon on dark canvas) */
+  --tt-chart-past: rgba(var(--rgb-b1), 0.045);
+  --tt-chart-future: rgba(var(--rgb-a1), 0.045);
+  --tl-present_simple: #4ade80;
+  --tl-present_continuous: #34d399;
+  --tl-present_perfect: #f472b6;
+  --tl-present_perfect_continuous: #fb923c;
+  --tl-past_simple: #38bdf8;
+  --tl-past_continuous: #818cf8;
+  --tl-past_perfect: #34d399;
+  --tl-past_perfect_continuous: #4ade80;
+  --tl-future_will: #38bdf8;
+  --tl-future_going_to: #818cf8;
+  --tl-future_continuous: #f472b6;
+  --tl-future_perfect: #fb923c;
 }
 
 [data-theme="light"] {
@@ -34,22 +62,54 @@
   --text: #14172b;
   --muted: #717590;
   --muted2: #505470;
+  /*
+   * Light theme: saturated “jewel” accents — bright chroma, mid depth — so they stay
+   * lively but don’t wash into the pale gray background (avoid dusty / pastel mixes).
+   */
   --a1: #16a34a;
-  --a1bg: rgba(22, 163, 74, 0.09);
   --a2: #059669;
-  --a2bg: rgba(5, 150, 105, 0.09);
   --b1: #0284c7;
-  --b1bg: rgba(2, 132, 199, 0.09);
-  --b2: #6366f1;
-  --b2bg: rgba(99, 102, 241, 0.09);
+  --b2: #4f46e5;
   --c1: #db2777;
-  --c1bg: rgba(219, 39, 119, 0.09);
   --c2: #ea580c;
-  --c2bg: rgba(234, 88, 12, 0.09);
   --yt: #dc2626;
-  --ru: #1d4ed8;
-  --grad-tint1: rgba(99, 102, 241, 0.06);
-  --grad-tint2: rgba(234, 88, 12, 0.05);
+  --ru: #2563eb;
+  --rgb-b2: 79, 70, 229;
+  --rgb-b1: 2, 132, 199;
+  --rgb-a1: 22, 163, 74;
+  --rgb-a2: 5, 150, 105;
+  --rgb-amber: 202, 138, 4;
+  --rgb-pink: 219, 39, 119;
+  --rgb-c2: 234, 88, 12;
+  --sel-share-hover: #6366f1;
+  --sel-pin-hover: #10b981;
+  --sel-note-mid: #ca8a04;
+  --sel-note-hover: #eab308;
+  --murphy-accent-text: #e11d48;
+  /* Slightly stronger fills & page tint so color reads on off-white */
+  --a1bg: rgba(var(--rgb-a1), 0.13);
+  --a2bg: rgba(var(--rgb-a2), 0.13);
+  --b1bg: rgba(var(--rgb-b1), 0.11);
+  --b2bg: rgba(var(--rgb-b2), 0.11);
+  --c1bg: rgba(var(--rgb-pink), 0.11);
+  --c2bg: rgba(var(--rgb-c2), 0.11);
+  --grad-tint1: rgba(var(--rgb-b2), 0.09);
+  --grad-tint2: rgba(var(--rgb-c2), 0.065);
+  /* Timeline: stronger bands + jewel tones that read on light gray */
+  --tt-chart-past: rgba(var(--rgb-b1), 0.11);
+  --tt-chart-future: rgba(var(--rgb-a1), 0.11);
+  --tl-present_simple: #16a34a;
+  --tl-present_continuous: #059669;
+  --tl-present_perfect: #db2777;
+  --tl-present_perfect_continuous: #ea580c;
+  --tl-past_simple: #0284c7;
+  --tl-past_continuous: #4f46e5;
+  --tl-past_perfect: #059669;
+  --tl-past_perfect_continuous: #16a34a;
+  --tl-future_will: #0284c7;
+  --tl-future_going_to: #4f46e5;
+  --tl-future_continuous: #db2777;
+  --tl-future_perfect: #ea580c;
 }
 
 * {

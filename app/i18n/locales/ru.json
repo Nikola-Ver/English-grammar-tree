@@ -1,0 +1,285 @@
+{
+  "header": {
+    "titlePrefix": "English ",
+    "titleAccent": "Grammar",
+    "titleSuffix": " Tree",
+    "themeLight": "Светлая тема",
+    "themeDark": "Тёмная тема",
+    "account": "Аккаунт",
+    "signIn": "Войти",
+    "avatar": "Аватар",
+    "language": "Язык"
+  },
+  "tabs": {
+    "grammar": "📚 Грамматика",
+    "murphy": "📖 Книги от Murphy",
+    "tenses": "🕐 Дерево времён"
+  },
+  "auth": {
+    "title": "Войдите для синхронизации",
+    "tagline": "Сохраняйте прогресс на всех устройствах",
+    "google": "Войти через Google",
+    "wait": "Подождите…",
+    "continueWithout": "Продолжить без аккаунта",
+    "errorGeneric": "Что-то пошло не так. Попробуйте ещё раз."
+  },
+  "account": {
+    "syncIdle": "Не активно",
+    "syncSyncing": "Синхронизация…",
+    "syncSynced": "Синхронизировано",
+    "syncOffline": "Офлайн",
+    "syncError": "Ошибка синхронизации",
+    "syncOfflineDetail": "Офлайн — данные синхронизируются при подключении",
+    "syncErrorDetail": "Ошибка синхронизации — повтор в очереди",
+    "lastSync": "Последняя синхронизация:",
+    "syncNow": "Синхронизировать",
+    "signOut": "Выйти",
+    "deleteAccount": "Удалить аккаунт",
+    "deleteWarning": "Аккаунт и все синхронизированные данные будут удалены безвозвратно. Локальный прогресс тоже будет очищен. Это действие нельзя отменить.",
+    "cancel": "Отмена",
+    "deleteConfirm": "Да, удалить всё",
+    "deleting": "Удаление…",
+    "back": "← Назад",
+    "deleteErrorRecentLogin": "Выйдите из аккаунта и войдите снова, затем повторите попытку.",
+    "deleteErrorGeneric": "Не удалось удалить аккаунт. Попробуйте ещё раз."
+  },
+  "grammar": {
+    "rulesUnit": "правил",
+    "progressDone": "{{pct}}% завершено",
+    "resetProgress": "Сбросить прогресс",
+    "resetConfirmHint": "Нажмите ещё раз для подтверждения",
+    "search": "Поиск",
+    "closeSearch": "Закрыть поиск",
+    "testLearned": "Тест по изученному",
+    "resetBanner": "Нажмите кнопку сброса ещё раз, чтобы подтвердить",
+    "searchPlaceholder": "Поиск по теме, правилу…",
+    "clearSearch": "Очистить поиск",
+    "noResults": "Ничего не найдено по запросу",
+    "alertNoRules": "Сначала отметь хотя бы одно правило как изученное!"
+  },
+  "murphy": {
+    "unitsUnit": "юнитов",
+    "progressDone": "{{pct}}% завершено",
+    "resetProgress": "Сбросить прогресс",
+    "resetConfirmHint": "Нажмите ещё раз для подтверждения",
+    "search": "Поиск",
+    "closeSearch": "Закрыть поиск",
+    "testLearned": "Тест по изученному",
+    "resetBanner": "Нажмите кнопку сброса ещё раз, чтобы подтвердить",
+    "searchPlaceholder": "Поиск по юниту, теме…",
+    "clearSearch": "Очистить поиск",
+    "noResults": "Ничего не найдено по запросу",
+    "alertNoUnits": "Сначала отметь хотя бы один юнит как изученный!"
+  },
+  "tensesTab": {
+    "introLead": "Интерактивное дерево выбора времени.",
+    "introRest": "Отвечай на вопросы — получишь нужное время с формулой, примерами и типичными ошибками.",
+    "orPick": "— или выбери сразу —"
+  },
+  "timeline": {
+    "title": "📊 Шкала времени — когда происходит действие",
+    "scrollHint": "Листайте шкалу в стороны",
+    "past": "← ПРОШЛОЕ",
+    "future": "БУДУЩЕЕ →",
+    "now": "▼ Сейчас",
+    "row": {
+      "present_simple": "Повторяющееся/постоянное действие — всегда",
+      "present_continuous": "Действие в процессе прямо сейчас",
+      "present_perfect": "Действие в прошлом → результат сейчас",
+      "present_perfect_continuous": "Действие началось в прошлом и продолжается",
+      "past_simple": "Завершённое действие в конкретный момент прошлого",
+      "past_continuous": "Длительное фоновое действие в прошлом",
+      "past_perfect": "Завершилось ДО другого события в прошлом",
+      "past_perfect_continuous": "Длилось до момента в прошлом",
+      "future_will": "Решение/предсказание о будущем",
+      "future_going_to": "Запланированное намерение",
+      "future_continuous": "Действие будет в процессе в момент будущего",
+      "future_perfect": "Завершится ДО момента в будущем"
+    }
+  },
+  "tenseTree": {
+    "start": {
+      "q": "Когда происходит действие?",
+      "c0": "Настоящее / постоянное",
+      "c1": "Прошлое",
+      "c2": "Будущее"
+    },
+    "present": {
+      "q": "Что именно ты хочешь выразить?",
+      "c0": "Привычка, факт, расписание",
+      "c1": "Действие прямо сейчас или временно",
+      "c2": "Связь с настоящим: опыт/результат"
+    },
+    "present_now": {
+      "q": "Это постоянное состояние или процесс прямо сейчас?",
+      "c0": "Постоянное (знаю, люблю, хочу…)",
+      "c1": "Процесс сейчас / временно"
+    },
+    "present_perfect_branch": {
+      "q": "Важна продолжительность или сам факт?",
+      "c0": "Сам факт / результат / опыт",
+      "c1": "Продолжительность («как долго»)"
+    },
+    "past": {
+      "q": "Что ты хочешь выразить о прошлом?",
+      "c0": "Завершённое действие (конкретное время)",
+      "c1": "Действие в процессе / фон",
+      "c2": "Действие до другого прошлого события"
+    },
+    "past_perfect_branch": {
+      "q": "Нужно подчеркнуть продолжительность?",
+      "c0": "Нет — просто факт завершения",
+      "c1": "Да — как долго шло до момента"
+    },
+    "future": {
+      "q": "Как ты выражаешь будущее?",
+      "c0": "Спонтанное решение / обещание / предсказание",
+      "c1": "Заранее запланировано / есть признаки",
+      "c2": "Будет в процессе в момент будущего",
+      "c3": "Завершится до момента в будущем"
+    }
+  },
+  "tenseUi": {
+    "timeMarkers": "⏱ Маркеры времени",
+    "examples": "Примеры",
+    "mistakes": "🚫 Типичные ошибки",
+    "restart": "↺ Начать сначала",
+    "shareLink": "Поделиться ссылкой"
+  },
+  "rule": {
+    "exceptions": "⚠️ Исключения:",
+    "tip": "💡 Совет:",
+    "mistakes": "🚫 Типичные ошибки:",
+    "test": "✦ Тест",
+    "copyLinkTitle": "Скопировать ссылку на правило"
+  },
+  "selection": {
+    "share": "Поделиться",
+    "pin": "Закрепить",
+    "note": "Пометка",
+    "close": "Закрыть",
+    "cancel": "Отмена",
+    "commentPlaceholder": "Добавьте комментарий…",
+    "copyLink": "⛓ Скопировать ссылку",
+    "linkCopied": "✓ Ссылка скопирована",
+    "notePlaceholder": "Ваша пометка…",
+    "save": "Сохранить",
+    "deleteNote": "Удалить пометку",
+    "emptyNote": "Пометка без текста",
+    "messageTitle": "💬 Сообщение"
+  },
+  "copied": "✓ Скопировано!",
+  "tenses": {
+    "present_simple": {
+      "desc": "Регулярные действия, привычки, факты и расписания.",
+      "ex0": "She drinks coffee every morning.",
+      "ex0tr": "Она пьёт кофе каждое утро.",
+      "ex1": "The sun rises in the east.",
+      "ex1tr": "Солнце встаёт на востоке.",
+      "m0": "<s>She work</s> → She <em>works</em>",
+      "m1": "<s>Do she likes?</s> → Does she like?",
+      "m2": "<s>I not like</s> → I <em>don't</em> like"
+    },
+    "present_continuous": {
+      "desc": "Действие прямо сейчас или временная ситуация. Также конкретные планы на будущее.",
+      "ex0": "I'm studying English right now.",
+      "ex0tr": "Я сейчас изучаю английский.",
+      "ex1": "She's meeting Tom tomorrow.",
+      "ex1tr": "Она встречается с Томом завтра.",
+      "m0": "<s>I am knowing</s> → stative verbs не употребляются в Continuous",
+      "m1": "<s>She is working usually</s> → She <em>usually works</em> (привычка = PS)"
+    },
+    "past_simple": {
+      "desc": "Завершённое действие в прошлом. Всегда с конкретным временем или подразумеваемым моментом.",
+      "ex0": "I saw her yesterday.",
+      "ex0tr": "Я видел её вчера.",
+      "ex1": "She went to Paris in 2022.",
+      "ex1tr": "Она ездила в Париж в 2022 году.",
+      "m0": "<s>I goed</s> → I <em>went</em>",
+      "m1": "<s>I didn't went</s> → I didn't <em>go</em>",
+      "m2": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday"
+    },
+    "past_continuous": {
+      "desc": "Действие в процессе в момент прошлого. Фоновое действие, прерванное другим.",
+      "ex0": "I was reading when she called.",
+      "ex0tr": "Я читал, когда она позвонила.",
+      "ex1": "While he was cooking, she was working.",
+      "ex1tr": "Пока он готовил, она работала.",
+      "m0": "<s>She were working</s> → She <em>was</em> working",
+      "m1": "<s>I was work</s> → I was <em>working</em>"
+    },
+    "present_perfect": {
+      "desc": "Действие в прошлом с результатом в настоящем. Жизненный опыт. Незавершённое действие с for/since.",
+      "ex0": "I've lost my keys.",
+      "ex0tr": "Я потерял ключи (они сейчас не найдены).",
+      "ex1": "Have you ever been to Japan?",
+      "ex1tr": "Ты когда-нибудь был в Японии?",
+      "m0": "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday",
+      "m1": "<s>She has went</s> → She has <em>gone</em>",
+      "m2": "<s>I've lived here since five years</s> → <em>for</em> five years"
+    },
+    "present_perfect_continuous": {
+      "desc": "Акцент на продолжительности или незавершённости действия, начавшегося в прошлом.",
+      "ex0": "I've been learning English for two years.",
+      "ex0tr": "Я учу английский уже два года.",
+      "ex1": "Why are you tired? — I've been running.",
+      "ex1tr": "Почему ты устал? — Бегал.",
+      "m0": "<s>I've been know</s> → stative verbs не в Continuous",
+      "m1": "<s>I've been learning since two years</s> → <em>for</em> two years"
+    },
+    "past_perfect": {
+      "desc": "Действие, завершившееся до другого момента в прошлом.",
+      "ex0": "When I arrived, she had already left.",
+      "ex0tr": "Когда я приехал, она уже ушла.",
+      "ex1": "He had never seen snow before that winter.",
+      "ex1tr": "До той зимы он никогда не видел снега.",
+      "m0": "<s>When I arrived, she already left</s> → she <em>had</em> already left",
+      "m1": "<s>He had never see</s> → He had never <em>seen</em>"
+    },
+    "past_perfect_continuous": {
+      "desc": "Продолжительность действия до момента в прошлом. Объясняет причину или видимый результат в прошлом.",
+      "ex0": "She was exhausted — she'd been working all night.",
+      "ex0tr": "Она была измотана — всю ночь работала.",
+      "ex1": "How long had you been waiting?",
+      "ex1tr": "Как долго ты ждал?",
+      "m0": "<s>She had been work</s> → She had been <em>working</em>",
+      "m1": "<s>How long had you waiting?</s> → had you <em>been waiting</em>"
+    },
+    "future_will": {
+      "desc": "Предсказания, спонтанные решения, обещания, факты о будущем.",
+      "ex0": "I'll help you!",
+      "ex0tr": "Я помогу тебе! (спонтанное решение)",
+      "ex1": "She will probably be late.",
+      "ex1tr": "Она, вероятно, опоздает.",
+      "m0": "<s>I will to go</s> → I will <em>go</em>",
+      "m1": "<s>She wills come</s> → She will come"
+    },
+    "future_going_to": {
+      "desc": "Запланированные намерения или предсказания на основе видимых признаков.",
+      "ex0": "I'm going to study medicine.",
+      "ex0tr": "Я собираюсь изучать медицину. (план)",
+      "ex1": "Look at those clouds — it's going to rain!",
+      "ex1tr": "Смотри на тучи — сейчас пойдёт дождь!",
+      "m0": "<s>She is going to does</s> → She is going to <em>do</em>",
+      "m1": "<s>I am going to will do</s> — нельзя два будущих"
+    },
+    "future_continuous": {
+      "desc": "Действие, которое будет в процессе в конкретный момент будущего.",
+      "ex0": "This time tomorrow I'll be lying on the beach.",
+      "ex0tr": "В это время завтра я буду лежать на пляже.",
+      "ex1": "Don't call at 8 — I'll be having dinner.",
+      "ex1tr": "Не звони в 8 — я буду ужинать.",
+      "m0": "<s>I'll be work at 9</s> → I'll be <em>working</em>",
+      "m1": "<s>She will working</s> → She <em>will be working</em>"
+    },
+    "future_perfect": {
+      "desc": "Действие, которое завершится до определённого момента в будущем.",
+      "ex0": "I'll have finished by Sunday.",
+      "ex0tr": "К воскресенью я закончу.",
+      "ex1": "By 2030 they will have built the bridge.",
+      "ex1tr": "К 2030 году они построят мост.",
+      "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
+      "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
+    }
+  }
+}

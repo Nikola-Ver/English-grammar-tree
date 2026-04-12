@@ -92,7 +92,7 @@
 }
 
 .account-sync-dot--synced {
-  background: #22c55e;
+  background: var(--a1);
 }
 
 .account-sync-dot--syncing {
@@ -101,7 +101,7 @@
 }
 
 .account-sync-dot--offline {
-  background: #f97316;
+  background: var(--c2);
 }
 
 .account-sync-dot--error {

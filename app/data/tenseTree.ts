@@ -1,72 +1,76 @@
 export interface TenseChoice {
-  label: string;
+  labelKey: string;
   icon: string;
   result?: string;
   next?: string;
 }
 
 export interface TenseNode {
-  q: string;
+  qKey: string;
   choices: TenseChoice[];
 }
 
 export const TENSE_TREE: Record<string, TenseNode> = {
   start: {
-    q: 'Когда происходит действие?',
+    qKey: 'tenseTree.start.q',
     choices: [
-      { label: 'Настоящее / постоянное', icon: '🔵', next: 'present' },
-      { label: 'Прошлое', icon: '🟣', next: 'past' },
-      { label: 'Будущее', icon: '🟢', next: 'future' },
+      { labelKey: 'tenseTree.start.c0', icon: '🔵', next: 'present' },
+      { labelKey: 'tenseTree.start.c1', icon: '🟣', next: 'past' },
+      { labelKey: 'tenseTree.start.c2', icon: '🟢', next: 'future' },
     ],
   },
   present: {
-    q: 'Что именно ты хочешь выразить?',
+    qKey: 'tenseTree.present.q',
     choices: [
-      { label: 'Привычка, факт, расписание', icon: '📅', result: 'present_simple' },
-      { label: 'Действие прямо сейчас или временно', icon: '⏱️', next: 'present_now' },
-      { label: 'Связь с настоящим: опыт/результат', icon: '🔗', next: 'present_perfect_branch' },
+      { labelKey: 'tenseTree.present.c0', icon: '📅', result: 'present_simple' },
+      { labelKey: 'tenseTree.present.c1', icon: '⏱️', next: 'present_now' },
+      { labelKey: 'tenseTree.present.c2', icon: '🔗', next: 'present_perfect_branch' },
     ],
   },
   present_now: {
-    q: 'Это постоянное состояние или процесс прямо сейчас?',
+    qKey: 'tenseTree.present_now.q',
     choices: [
-      { label: 'Постоянное (знаю, люблю, хочу...)', icon: '💭', result: 'present_simple' },
-      { label: 'Процесс сейчас / временно', icon: '⚡', result: 'present_continuous' },
+      { labelKey: 'tenseTree.present_now.c0', icon: '💭', result: 'present_simple' },
+      { labelKey: 'tenseTree.present_now.c1', icon: '⚡', result: 'present_continuous' },
     ],
   },
   present_perfect_branch: {
-    q: 'Важна продолжительность или сам факт?',
+    qKey: 'tenseTree.present_perfect_branch.q',
     choices: [
-      { label: 'Сам факт / результат / опыт', icon: '✅', result: 'present_perfect' },
+      { labelKey: 'tenseTree.present_perfect_branch.c0', icon: '✅', result: 'present_perfect' },
       {
-        label: 'Продолжительность ("как долго")',
+        labelKey: 'tenseTree.present_perfect_branch.c1',
         icon: '⏳',
         result: 'present_perfect_continuous',
       },
     ],
   },
   past: {
-    q: 'Что ты хочешь выразить о прошлом?',
+    qKey: 'tenseTree.past.q',
     choices: [
-      { label: 'Завершённое действие (конкретное время)', icon: '📌', result: 'past_simple' },
-      { label: 'Действие в процессе / фон', icon: '🌊', result: 'past_continuous' },
-      { label: 'Действие до другого прошлого события', icon: '⏪', next: 'past_perfect_branch' },
+      { labelKey: 'tenseTree.past.c0', icon: '📌', result: 'past_simple' },
+      { labelKey: 'tenseTree.past.c1', icon: '🌊', result: 'past_continuous' },
+      { labelKey: 'tenseTree.past.c2', icon: '⏪', next: 'past_perfect_branch' },
     ],
   },
   past_perfect_branch: {
-    q: 'Нужно подчеркнуть продолжительность?',
+    qKey: 'tenseTree.past_perfect_branch.q',
     choices: [
-      { label: 'Нет — просто факт завершения', icon: '✔️', result: 'past_perfect' },
-      { label: 'Да — как долго шло до момента', icon: '⏳', result: 'past_perfect_continuous' },
+      { labelKey: 'tenseTree.past_perfect_branch.c0', icon: '✔️', result: 'past_perfect' },
+      {
+        labelKey: 'tenseTree.past_perfect_branch.c1',
+        icon: '⏳',
+        result: 'past_perfect_continuous',
+      },
     ],
   },
   future: {
-    q: 'Как ты выражаешь будущее?',
+    qKey: 'tenseTree.future.q',
     choices: [
-      { label: 'Спонтанное решение / обещание / предсказание', icon: '💡', result: 'future_will' },
-      { label: 'Заранее запланировано / есть признаки', icon: '📝', result: 'future_going_to' },
-      { label: 'Будет в процессе в момент будущего', icon: '⏱️', result: 'future_continuous' },
-      { label: 'Завершится до момента в будущем', icon: '✅', result: 'future_perfect' },
+      { labelKey: 'tenseTree.future.c0', icon: '💡', result: 'future_will' },
+      { labelKey: 'tenseTree.future.c1', icon: '📝', result: 'future_going_to' },
+      { labelKey: 'tenseTree.future.c2', icon: '⏱️', result: 'future_continuous' },
+      { labelKey: 'tenseTree.future.c3', icon: '✅', result: 'future_perfect' },
     ],
   },
 };

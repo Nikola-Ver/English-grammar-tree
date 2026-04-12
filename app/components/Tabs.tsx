@@ -1,4 +1,5 @@
 import './Tabs.css';
+import { useTranslation } from 'react-i18next';
 
 type Tab = 'grammar' | 'murphy' | 'tenses';
 
@@ -8,25 +9,29 @@ interface Props {
 }
 
 export function Tabs({ activeTab, onSwitch }: Props) {
+  const { t } = useTranslation();
   return (
     <div className="tabs">
       <button
+        type="button"
         className={`tab-btn${activeTab === 'grammar' ? ' active' : ''}`}
         onClick={() => onSwitch('grammar')}
       >
-        📚 Грамматика
+        {t('tabs.grammar')}
       </button>
       <button
+        type="button"
         className={`tab-btn${activeTab === 'murphy' ? ' active' : ''}`}
         onClick={() => onSwitch('murphy')}
       >
-        📖 Книги от Murphy
+        {t('tabs.murphy')}
       </button>
       <button
+        type="button"
         className={`tab-btn${activeTab === 'tenses' ? ' active' : ''}`}
         onClick={() => onSwitch('tenses')}
       >
-        🕐 Дерево времён
+        {t('tabs.tenses')}
       </button>
     </div>
   );

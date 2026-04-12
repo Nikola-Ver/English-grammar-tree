@@ -66,7 +66,7 @@
 .tip-block {
   margin-top: 8px;
   padding: 8px 10px;
-  background: rgba(56, 189, 248, 0.07);
+  background: rgba(var(--rgb-b1), 0.07);
   border-radius: 6px;
   border-left: 2px solid var(--b1);
   font-size: 12px;
@@ -80,7 +80,7 @@
 .mistakes-block {
   margin-top: 8px;
   padding: 8px 10px;
-  background: rgba(244, 114, 182, 0.07);
+  background: rgba(var(--rgb-pink), 0.07);
   border-radius: 6px;
   border-left: 2px solid var(--c1);
   font-size: 12px;
@@ -103,7 +103,7 @@
 .markers-block {
   margin-top: 8px;
   padding: 9px 11px;
-  background: rgba(56, 189, 248, 0.06);
+  background: rgba(var(--rgb-b1), 0.06);
   border-radius: 6px;
   border-left: 2px solid var(--b1);
   font-size: 12px;
@@ -124,7 +124,7 @@
 
 .marker-tag {
   background: var(--bg3);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(var(--rgb-b1), 0.2);
   border-radius: 4px;
   padding: 2px 7px;
   font-family: "DM Mono", monospace;
@@ -196,11 +196,11 @@
 
 /* Deep-link highlight — vivid ::selection colour + container glow */
 .rule-exp.deep-highlighted ::selection {
-  background-color: rgba(52, 211, 153, 0.45);
+  background-color: rgba(var(--rgb-a2), 0.45);
   color: #e8eaf0;
   text-shadow:
-    0 0 10px rgba(56, 189, 248, 0.6),
-    0 0 20px rgba(52, 211, 153, 0.35);
+    0 0 10px rgba(var(--rgb-b1), 0.6),
+    0 0 20px rgba(var(--rgb-a2), 0.35);
 }
 
 .rule-exp.deep-highlighted {
@@ -214,21 +214,21 @@
   }
   12% {
     box-shadow:
-      inset 0 0 0 1px rgba(52, 211, 153, 0.75),
-      0 0 22px rgba(52, 211, 153, 0.15);
-    border-color: rgba(52, 211, 153, 0.55);
+      inset 0 0 0 1px rgba(var(--rgb-a2), 0.75),
+      0 0 22px rgba(var(--rgb-a2), 0.15);
+    border-color: rgba(var(--rgb-a2), 0.55);
   }
   45% {
     box-shadow:
-      inset 0 0 0 1px rgba(56, 189, 248, 0.75),
-      0 0 22px rgba(56, 189, 248, 0.15);
-    border-color: rgba(56, 189, 248, 0.55);
+      inset 0 0 0 1px rgba(var(--rgb-b1), 0.75),
+      0 0 22px rgba(var(--rgb-b1), 0.15);
+    border-color: rgba(var(--rgb-b1), 0.55);
   }
   75% {
     box-shadow:
-      inset 0 0 0 1px rgba(52, 211, 153, 0.4),
-      0 0 12px rgba(52, 211, 153, 0.08);
-    border-color: rgba(52, 211, 153, 0.3);
+      inset 0 0 0 1px rgba(var(--rgb-a2), 0.4),
+      0 0 12px rgba(var(--rgb-a2), 0.08);
+    border-color: rgba(var(--rgb-a2), 0.3);
   }
   100% {
     box-shadow: none;
