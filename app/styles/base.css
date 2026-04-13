@@ -163,6 +163,15 @@ body::before {
   display: block;
 }
 
+.tab-suspense-fallback {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .particle-canvas {
   position: fixed;
   pointer-events: none;

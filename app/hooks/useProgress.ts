@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import type { Level } from '../data/grammar';
-import { DATA } from '../data/grammar';
 import { notifyProgressChanged, SYNC_APPLIED_EVENT } from '../services/syncRegistry';
 
 export type DoneMap = Record<string, boolean>;
@@ -52,7 +51,7 @@ export function countLevel(lvl: Level, done: DoneMap) {
   return { total, checked };
 }
 
-export function countAll(done: DoneMap, data: Level[] = DATA) {
+export function countAll(done: DoneMap, data: Level[]) {
   let total = 0,
     checked = 0;
   data.forEach((lvl) => {

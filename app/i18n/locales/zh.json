@@ -1,4 +1,7 @@
 {
+  "common": {
+    "loading": "加载中…"
+  },
   "header": {
     "titlePrefix": "英语",
     "titleAccent": "语法",

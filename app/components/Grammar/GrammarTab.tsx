@@ -26,7 +26,7 @@ export function GrammarTab({ done, onToggleRule, onReset, targetRuleId }: Props)
     const bundle = getRuleContentBundle(i18n);
     return localizeGrammarLevels(DATA, bundle, t, uiLang);
   }, [i18n, t, uiLang]);
-  const { total, checked } = countAll(done);
+  const { total, checked } = countAll(done, grammarData);
   const pct = total ? Math.round((checked / total) * 100) : 0;
 
   const [searchQuery, setSearchQuery] = useState('');

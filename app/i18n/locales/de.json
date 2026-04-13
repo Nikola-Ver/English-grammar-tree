@@ -1,4 +1,7 @@
 {
+  "common": {
+    "loading": "Laden…"
+  },
   "header": {
     "titlePrefix": "English ",
     "titleAccent": "Grammar",

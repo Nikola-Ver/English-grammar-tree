@@ -1,4 +1,4 @@
-import { SUPPORTED_LANGUAGES } from './config';
+import { SUPPORTED_LANGUAGES } from './supportedLanguages';
 
 const CODES = new Set<string>(SUPPORTED_LANGUAGES.map((l) => l.code));
 

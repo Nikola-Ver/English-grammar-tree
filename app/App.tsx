@@ -1,36 +1,41 @@
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './styles/base.css';
-import { AccountPage } from './components/Account/AccountPage';
-import { AuthPage } from './components/Auth/AuthPage';
-import { GrammarTab } from './components/Grammar/GrammarTab';
 import { Header } from './components/Header/Header';
-import { MurphyTab } from './components/Murphy/MurphyTab';
 import { Tabs } from './components/Tabs';
-import { TensesTab } from './components/Tenses/TensesTab';
 import { AuthSyncProvider, useAuthSync } from './context/AuthSyncContext';
-import { DATA } from './data/grammar';
-import { MURPHY_DATA } from './data/murphy';
 import { useProgress } from './hooks/useProgress';
 import { useTheme } from './hooks/useTheme';
 import { matchSupportedLang } from './i18n/languagePreference';
 import { parseRuleHash, parseTenseHash } from './utils/deepLink';
+import { findRuleTab } from './utils/findRuleTab';
+
+const GrammarTab = lazy(() =>
+  import('./components/Grammar/GrammarTab').then((m) => ({ default: m.GrammarTab })),
+);
+const MurphyTab = lazy(() =>
+  import('./components/Murphy/MurphyTab').then((m) => ({ default: m.MurphyTab })),
+);
+const TensesTab = lazy(() =>
+  import('./components/Tenses/TensesTab').then((m) => ({ default: m.TensesTab })),
+);
+const AuthPage = lazy(() =>
+  import('./components/Auth/AuthPage').then((m) => ({ default: m.AuthPage })),
+);
+const AccountPage = lazy(() =>
+  import('./components/Account/AccountPage').then((m) => ({ default: m.AccountPage })),
+);
 
 type Tab = 'grammar' | 'murphy' | 'tenses';
 type View = 'main' | 'auth' | 'account';
 
-function findRuleTab(ruleId: string): Tab | null {
-  for (const lvl of DATA) {
-    for (const cat of lvl.categories) {
-      if (cat.rules.some((r) => r.id === ruleId)) return 'grammar';
-    }
-  }
-  for (const lvl of MURPHY_DATA) {
-    for (const cat of lvl.categories) {
-      if (cat.rules.some((r) => r.id === ruleId)) return 'murphy';
-    }
-  }
-  return null;
+function TabSuspenseFallback() {
+  const { t } = useTranslation();
+  return (
+    <div className="tab-suspense-fallback" role="status" aria-live="polite">
+      {t('common.loading')}
+    </div>
+  );
 }
 
 function AppContent() {
@@ -59,15 +64,19 @@ function AppContent() {
   useEffect(() => {
     const parsedRule = parseRuleHash();
     if (parsedRule?.ruleId) {
-      const tab = findRuleTab(parsedRule.ruleId);
-      if (tab) {
+      const ruleId = parsedRule.ruleId;
+      let cancelled = false;
+      void findRuleTab(ruleId).then((tab) => {
+        if (cancelled || !tab) return;
         setActiveTab(tab);
-        setTargetRuleId(parsedRule.ruleId);
-      }
+        setTargetRuleId(ruleId);
+      });
       if (parsedRule.lang && matchSupportedLang(parsedRule.lang)) {
         i18n.changeLanguage(parsedRule.lang);
       }
-      return;
+      return () => {
+        cancelled = true;
+      };
     }
     const parsedTense = parseTenseHash();
     if (parsedTense?.tenseKey) {
@@ -105,30 +114,40 @@ function AppContent() {
         onTitleClick={handleBackToMain}
       />
 
-      {view === 'auth' && <AuthPage onContinueWithout={handleBackToMain} />}
+      {view === 'auth' && (
+        <Suspense fallback={<TabSuspenseFallback />}>
+          <AuthPage onContinueWithout={handleBackToMain} />
+        </Suspense>
+      )}
 
-      {view === 'account' && <AccountPage onBack={handleBackToMain} />}
+      {view === 'account' && (
+        <Suspense fallback={<TabSuspenseFallback />}>
+          <AccountPage onBack={handleBackToMain} />
+        </Suspense>
+      )}
 
       {view === 'main' && (
         <>
           <Tabs activeTab={activeTab} onSwitch={handleTabSwitch} />
-          {activeTab === 'grammar' && (
-            <GrammarTab
-              done={grammarProgress.done}
-              onToggleRule={grammarProgress.toggleRule}
-              onReset={grammarProgress.resetAll}
-              targetRuleId={targetRuleId}
-            />
-          )}
-          {activeTab === 'murphy' && (
-            <MurphyTab
-              done={murphyProgress.done}
-              onToggleRule={murphyProgress.toggleRule}
-              onReset={murphyProgress.resetAll}
-              targetRuleId={targetRuleId}
-            />
-          )}
-          {activeTab === 'tenses' && <TensesTab targetTenseKey={targetTenseKey} />}
+          <Suspense fallback={<TabSuspenseFallback />}>
+            {activeTab === 'grammar' && (
+              <GrammarTab
+                done={grammarProgress.done}
+                onToggleRule={grammarProgress.toggleRule}
+                onReset={grammarProgress.resetAll}
+                targetRuleId={targetRuleId}
+              />
+            )}
+            {activeTab === 'murphy' && (
+              <MurphyTab
+                done={murphyProgress.done}
+                onToggleRule={murphyProgress.toggleRule}
+                onReset={murphyProgress.resetAll}
+                targetRuleId={targetRuleId}
+              />
+            )}
+            {activeTab === 'tenses' && <TensesTab targetTenseKey={targetTenseKey} />}
+          </Suspense>
         </>
       )}
     </div>
