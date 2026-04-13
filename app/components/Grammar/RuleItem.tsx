@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './RuleItem.css';
 import type { Category, Level, Rule } from '../../data/grammar';
+import { normalizeUiLang } from '../../i18n/localizeRules';
 import { IconCheck, IconShare } from '../../icons';
 import { copyToClipboard } from '../../utils/clipboard';
 import { buildRuleUrl } from '../../utils/deepLink';
@@ -31,7 +32,7 @@ export function RuleItem({
   isTarget = false,
   promptBuilder,
 }: Props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [expOpen, setExpOpen] = useState(isTarget);
   const [shareCopied, setShareCopied] = useState(false);
   const [testCopied, setTestCopied] = useState(false);
@@ -111,7 +112,8 @@ export function RuleItem({
     e.stopPropagation();
     const cat = level.categories.find((c) => c.rules.some((r) => r.id === rule.id));
     if (!cat) return;
-    const build = promptBuilder ?? buildRulePrompt;
+    const build =
+      promptBuilder ?? ((r, l, c) => buildRulePrompt(normalizeUiLang(i18n.language), r, l, c));
     const prompt = build(rule, level, cat);
     await copyToClipboard(prompt);
     setTestCopied(true);

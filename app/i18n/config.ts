@@ -1,12 +1,19 @@
 /**
  * i18n layout:
  *   locales/     — UI strings (tabs, header, account, …)
+ *   aiPrompt/    — LLM quiz prompt copy (per UI language)
  *   labels/      — Grammar & Murphy section titles (grammarUi, murphyUi) per UI language
  *   rules/<lang> — Pedagogical copy: grammar.json + murphy.json (en = source; de/es/fr/zh machine-translated from en)
  */
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
+import aiPromptDe from './aiPrompt/de.json';
+import aiPromptEn from './aiPrompt/en.json';
+import aiPromptEs from './aiPrompt/es.json';
+import aiPromptFr from './aiPrompt/fr.json';
+import aiPromptRu from './aiPrompt/ru.json';
+import aiPromptZh from './aiPrompt/zh.json';
 import labelsDe from './labels/de.json';
 import labelsEn from './labels/en.json';
 import labelsEs from './labels/es.json';
@@ -50,12 +57,12 @@ void i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: { ...en, ...labelsEn, ruleContent: ruleContentEn } },
-      ru: { translation: ru },
-      zh: { translation: { ...zh, ...labelsZh, ruleContent: ruleContentZh } },
-      de: { translation: { ...de, ...labelsDe, ruleContent: ruleContentDe } },
-      es: { translation: { ...es, ...labelsEs, ruleContent: ruleContentEs } },
-      fr: { translation: { ...fr, ...labelsFr, ruleContent: ruleContentFr } },
+      en: { translation: { ...en, ...labelsEn, ...aiPromptEn, ruleContent: ruleContentEn } },
+      ru: { translation: { ...ru, ...aiPromptRu } },
+      zh: { translation: { ...zh, ...labelsZh, ...aiPromptZh, ruleContent: ruleContentZh } },
+      de: { translation: { ...de, ...labelsDe, ...aiPromptDe, ruleContent: ruleContentDe } },
+      es: { translation: { ...es, ...labelsEs, ...aiPromptEs, ruleContent: ruleContentEs } },
+      fr: { translation: { ...fr, ...labelsFr, ...aiPromptFr, ruleContent: ruleContentFr } },
     },
     fallbackLng: 'en',
     supportedLngs: ['en', 'ru', 'zh', 'de', 'es', 'fr'],

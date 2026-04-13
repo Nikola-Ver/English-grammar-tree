@@ -9,7 +9,7 @@ import {
   normalizeUiLang,
 } from '../../i18n/localizeRules';
 import { copyToClipboard } from '../../utils/clipboard';
-import { buildGlobalTestPrompt } from '../../utils/prompts';
+import { buildCategoryTestPrompt, buildGlobalTestPrompt } from '../../utils/prompts';
 import { LevelBlock } from './LevelBlock';
 
 interface Props {
@@ -21,11 +21,11 @@ interface Props {
 
 export function GrammarTab({ done, onToggleRule, onReset, targetRuleId }: Props) {
   const { t, i18n } = useTranslation();
+  const uiLang = normalizeUiLang(i18n.language);
   const grammarData = useMemo(() => {
     const bundle = getRuleContentBundle(i18n);
-    const lang = normalizeUiLang(i18n.language);
-    return localizeGrammarLevels(DATA, bundle, t, lang);
-  }, [i18n, i18n.language, t]);
+    return localizeGrammarLevels(DATA, bundle, t, uiLang);
+  }, [i18n, t, uiLang]);
   const { total, checked } = countAll(done);
   const pct = total ? Math.round((checked / total) * 100) : 0;
 
@@ -137,7 +137,7 @@ export function GrammarTab({ done, onToggleRule, onReset, targetRuleId }: Props)
       alert(t('grammar.alertNoRules'));
       return;
     }
-    const prompt = buildGlobalTestPrompt(doneRules);
+    const prompt = buildGlobalTestPrompt(uiLang, doneRules);
     await copyToClipboard(prompt);
     setTestCopied(true);
     setTimeout(() => setTestCopied(false), 2000);
@@ -349,6 +349,7 @@ export function GrammarTab({ done, onToggleRule, onReset, targetRuleId }: Props)
             searchQuery={searchQuery}
             forceOpen={forceOpenSet.has(level.id)}
             targetRuleId={targetRuleId}
+            categoryPromptBuilder={(lvl, cat) => buildCategoryTestPrompt(uiLang, lvl, cat)}
           />
         ))}
       </div>

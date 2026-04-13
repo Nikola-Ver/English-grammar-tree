@@ -9,7 +9,11 @@ import {
   normalizeUiLang,
 } from '../../i18n/localizeRules';
 import { copyToClipboard } from '../../utils/clipboard';
-import { buildMurphyGlobalTestPrompt, buildMurphyRulePrompt } from '../../utils/prompts';
+import {
+  buildMurphyCategoryTestPrompt,
+  buildMurphyGlobalTestPrompt,
+  buildMurphyRulePrompt,
+} from '../../utils/prompts';
 import { LevelBlock } from '../Grammar/LevelBlock';
 import './MurphyTab.css';
 
@@ -22,11 +26,11 @@ interface Props {
 
 export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) {
   const { t, i18n } = useTranslation();
+  const uiLang = normalizeUiLang(i18n.language);
   const murphyLevels = useMemo(() => {
     const bundle = getRuleContentBundle(i18n);
-    const lang = normalizeUiLang(i18n.language);
-    return localizeMurphyLevels(MURPHY_DATA, bundle, t, lang);
-  }, [i18n, i18n.language, t]);
+    return localizeMurphyLevels(MURPHY_DATA, bundle, t, uiLang);
+  }, [i18n, t, uiLang]);
   const { total, checked } = countAll(done, murphyLevels);
   const pct = total ? Math.round((checked / total) * 100) : 0;
 
@@ -137,7 +141,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
       alert(t('murphy.alertNoUnits'));
       return;
     }
-    const prompt = buildMurphyGlobalTestPrompt(doneRules);
+    const prompt = buildMurphyGlobalTestPrompt(uiLang, doneRules);
     await copyToClipboard(prompt);
     setTestCopied(true);
     setTimeout(() => setTestCopied(false), 2000);
@@ -349,7 +353,8 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
             searchQuery={searchQuery}
             forceOpen={forceOpenSet.has(level.id)}
             targetRuleId={targetRuleId}
-            promptBuilder={buildMurphyRulePrompt}
+            promptBuilder={(r, l, c) => buildMurphyRulePrompt(uiLang, r, l, c)}
+            categoryPromptBuilder={(l, c) => buildMurphyCategoryTestPrompt(uiLang, l, c)}
           />
         ))}
       </div>

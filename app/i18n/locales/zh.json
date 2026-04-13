@@ -151,6 +151,8 @@
     "tip": "💡 提示：",
     "mistakes": "🚫 常见错误：",
     "test": "✦ 测验",
+    "testCategory": "✦ 主题测验",
+    "testCategoryTitle": "复制整主题的测验提示",
     "copyLinkTitle": "复制此规则链接"
   },
   "selection": {

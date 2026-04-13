@@ -1,54 +1,58 @@
+import type { TFunction } from 'i18next';
 import type { Category, Level, Rule } from '../data/grammar';
+import i18n from '../i18n/config';
+import { normalizeUiLang } from '../i18n/localizeRules';
 
-export function buildMurphyRulePrompt(rule: Rule, level: Level, category: Category): string {
-  let prompt = `Я изучаю английскую грамматику по книге «${level.name}» (тема «${category.name}»).\n\n`;
-  prompt += `Юнит: «${rule.text}»\n`;
-  if (rule.note) prompt += `Подсказка: ${rule.note}\n`;
-  if (rule.unitUrl) prompt += `Источник: ${rule.unitUrl}\n`;
-  prompt += '\nПожалуйста, проведи углублённое тестирование этой темы:\n';
-  prompt += '1. Объясни тему кратко своими словами (2–3 предложения).\n';
-  prompt += '2. Дай 5 упражнений на заполнение пропусков (gaps).\n';
-  prompt += '3. Дай 3 предложения с ошибками для исправления.\n';
-  prompt += '4. Задай 2 вопроса на перевод с русского на английский.\n';
-  prompt += '5. После того как я отвечу — проверь ответы и дай подробную обратную связь.';
+/** Fixed translator for `aiPrompt.*` strings in the given UI language. */
+function pt(lang: string): TFunction {
+  return i18n.getFixedT(normalizeUiLang(lang), 'translation');
+}
+
+export function buildMurphyRulePrompt(
+  lang: string,
+  rule: Rule,
+  level: Level,
+  category: Category,
+): string {
+  const t = pt(lang);
+  let prompt = t('aiPrompt.murphyRuleOpen', { level: level.name, category: category.name });
+  prompt += t('aiPrompt.unit', { text: rule.text });
+  if (rule.note) prompt += t('aiPrompt.hint', { note: rule.note });
+  if (rule.unitUrl) prompt += t('aiPrompt.source', { url: rule.unitUrl });
+  prompt += `\n${t('aiPrompt.deepTitle')}${t('aiPrompt.deep1')}${t('aiPrompt.deep2')}${t('aiPrompt.deep3')}${t('aiPrompt.deep4')}${t('aiPrompt.deep5')}`;
   return prompt;
 }
 
 export function buildMurphyGlobalTestPrompt(
+  lang: string,
   doneRules: { rule: Rule; level: Level; category: Category }[],
 ): string {
+  const t = pt(lang);
   const ruleList = doneRules
     .map(
       (item, idx) => `${idx + 1}. [${item.level.name} — ${item.category.name}] ${item.rule.text}`,
     )
     .join('\n');
 
-  let prompt = 'Я изучил(а) следующие темы из книг Мёрфи (English Grammar in Use):\n\n';
+  let prompt = t('aiPrompt.murphyGlobalIntro');
   prompt += `${ruleList}\n\n`;
-  prompt += 'Пожалуйста, проведи комплексное тестирование по всем этим темам:\n';
-  prompt +=
-    '1. Сначала дай 10 упражнений на заполнение пропусков, смешивая разные темы из списка.\n';
-  prompt += '2. Дай 5 предложений с ошибками для исправления (ошибки касаются тем из списка).\n';
-  prompt +=
-    '3. Дай 5 предложений для перевода с русского на английский (проверяют несколько тем).\n';
-  prompt +=
-    '4. Задай 3 вопроса в формате «выбери правильный вариант» (multiple choice) с объяснением.\n';
-  prompt +=
-    '5. После моих ответов — проверь и дай подробную обратную связь с объяснением ошибок.\n\n';
-  prompt += 'Начни с упражнений, не раскрывая ответы заранее.';
+  prompt += t('aiPrompt.murphyGlobalTitle');
+  prompt += `${t('aiPrompt.glob1')}${t('aiPrompt.glob2')}${t('aiPrompt.glob3')}${t('aiPrompt.glob4')}${t('aiPrompt.glob5')}`;
+  prompt += t('aiPrompt.murphyGlobalFooter');
   return prompt;
 }
 
-export function buildRulePrompt(rule: Rule, level: Level, category: Category): string {
-  let prompt = `Я изучаю английскую грамматику (уровень ${level.name}, тема «${category.name}»).\n\n`;
-  prompt += `Правило: «${rule.text}»\n`;
-  if (rule.note) prompt += `Подсказка: ${rule.note}\n`;
-  prompt += '\nПожалуйста, проведи углублённое тестирование этого правила:\n';
-  prompt += '1. Объясни правило кратко своими словами (2–3 предложения).\n';
-  prompt += '2. Дай 5 упражнений на заполнение пропусков (gaps).\n';
-  prompt += '3. Дай 3 предложения с ошибками для исправления.\n';
-  prompt += '4. Задай 2 вопроса на перевод с русского на английский.\n';
-  prompt += '5. После того как я отвечу — проверь ответы и дай подробную обратную связь.';
+export function buildRulePrompt(
+  lang: string,
+  rule: Rule,
+  level: Level,
+  category: Category,
+): string {
+  const t = pt(lang);
+  let prompt = t('aiPrompt.grammarRuleOpen', { level: level.name, category: category.name });
+  prompt += t('aiPrompt.rule', { text: rule.text });
+  if (rule.note) prompt += t('aiPrompt.hint', { note: rule.note });
+  prompt += `\n${t('aiPrompt.deepTitle')}${t('aiPrompt.deep1')}${t('aiPrompt.deep2')}${t('aiPrompt.deep3')}${t('aiPrompt.deep4')}${t('aiPrompt.deep5')}`;
   return prompt;
 }
 
@@ -58,23 +62,72 @@ interface DoneRule {
   category: Category;
 }
 
-export function buildGlobalTestPrompt(doneRules: DoneRule[]): string {
+function rulesWithExplanations(category: Category) {
+  return category.rules.filter((r) => r.exp);
+}
+
+/** Quiz prompt for every rule in the category that has an explanation (same scope as per-rule ✦ Quiz). */
+export function buildCategoryTestPrompt(
+  lang: string,
+  level: Level,
+  category: Category,
+): string | null {
+  const t = pt(lang);
+  const rules = rulesWithExplanations(category);
+  if (rules.length === 0) return null;
+
+  const ruleList = rules
+    .map((r, idx) => {
+      let line = `${idx + 1}. «${r.text}»`;
+      if (r.note) line += ` — ${r.note}`;
+      return line;
+    })
+    .join('\n');
+
+  let prompt = t('aiPrompt.catGrammarOpen', { level: level.name, category: category.name });
+  prompt += `${t('aiPrompt.catGrammarList')}${ruleList}\n\n`;
+  prompt += t('aiPrompt.catGrammarTitle');
+  prompt += `${t('aiPrompt.cat1')}${t('aiPrompt.cat2')}${t('aiPrompt.cat3')}${t('aiPrompt.cat4')}${t('aiPrompt.cat5')}`;
+  prompt += t('aiPrompt.catFooter');
+  return prompt;
+}
+
+/** Murphy: same idea as buildCategoryTestPrompt, with book-style wording. */
+export function buildMurphyCategoryTestPrompt(
+  lang: string,
+  level: Level,
+  category: Category,
+): string | null {
+  const t = pt(lang);
+  const rules = rulesWithExplanations(category);
+  if (rules.length === 0) return null;
+
+  const ruleList = rules
+    .map((r, idx) => {
+      let line = `${idx + 1}. «${r.text}»`;
+      if (r.note) line += ` — ${r.note}`;
+      return line;
+    })
+    .join('\n');
+
+  let prompt = t('aiPrompt.catMurphyOpen', { level: level.name, category: category.name });
+  prompt += `${t('aiPrompt.catMurphyList')}${ruleList}\n\n`;
+  prompt += t('aiPrompt.catMurphyTitle');
+  prompt += `${t('aiPrompt.cat1')}${t('aiPrompt.cat2')}${t('aiPrompt.cat3')}${t('aiPrompt.cat4')}${t('aiPrompt.cat5')}`;
+  prompt += t('aiPrompt.catFooter');
+  return prompt;
+}
+
+export function buildGlobalTestPrompt(lang: string, doneRules: DoneRule[]): string {
+  const t = pt(lang);
   const ruleList = doneRules
     .map((item, idx) => `${idx + 1}. [${item.level.id} — ${item.category.name}] ${item.rule.text}`)
     .join('\n');
 
-  let prompt = 'Я изучил(а) следующие правила английской грамматики:\n\n';
+  let prompt = t('aiPrompt.grammarGlobalIntro');
   prompt += `${ruleList}\n\n`;
-  prompt += 'Пожалуйста, проведи комплексное тестирование по всем этим правилам:\n';
-  prompt +=
-    '1. Сначала дай 10 упражнений на заполнение пропусков, смешивая разные правила из списка.\n';
-  prompt += '2. Дай 5 предложений с ошибками для исправления (ошибки касаются правил из списка).\n';
-  prompt +=
-    '3. Дай 5 предложений для перевода с русского на английский (проверяют несколько правил).\n';
-  prompt +=
-    '4. Задай 3 вопроса в формате «выбери правильный вариант» (multiple choice) с объяснением.\n';
-  prompt +=
-    '5. После моих ответов — проверь и дай подробную обратную связь с объяснением ошибок.\n\n';
-  prompt += 'Начни с упражнений, не раскрывая ответы заранее.';
+  prompt += t('aiPrompt.grammarGlobalTitle');
+  prompt += `${t('aiPrompt.glob1')}${t('aiPrompt.glob2')}${t('aiPrompt.glob3')}${t('aiPrompt.glob4')}${t('aiPrompt.glob5')}`;
+  prompt += t('aiPrompt.grammarGlobalFooter');
   return prompt;
 }

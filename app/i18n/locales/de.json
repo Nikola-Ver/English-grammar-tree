@@ -151,6 +151,8 @@
     "tip": "💡 Tipp:",
     "mistakes": "🚫 Typische Fehler:",
     "test": "✦ Quiz",
+    "testCategory": "✦ Themen-Quiz",
+    "testCategoryTitle": "Quiz-Prompt für das gesamte Thema kopieren",
     "copyLinkTitle": "Link zu dieser Regel kopieren"
   },
   "selection": {

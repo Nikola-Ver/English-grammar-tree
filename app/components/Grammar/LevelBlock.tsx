@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './LevelBlock.css';
 import type { Category, Level, Rule } from '../../data/grammar';
 import type { DoneMap } from '../../hooks/useProgress';
 import { countLevel } from '../../hooks/useProgress';
+import { copyToClipboard } from '../../utils/clipboard';
 import { RuleItem } from './RuleItem';
 
 interface Props {
@@ -13,6 +15,7 @@ interface Props {
   forceOpen: boolean;
   targetRuleId?: string | null;
   promptBuilder?: (rule: Rule, level: Level, cat: Category) => string;
+  categoryPromptBuilder?: (level: Level, cat: Category) => string | null;
 }
 
 export function LevelBlock({
@@ -23,7 +26,10 @@ export function LevelBlock({
   forceOpen,
   targetRuleId,
   promptBuilder,
+  categoryPromptBuilder,
 }: Props) {
+  const { t } = useTranslation();
+  const [categoryTestCopiedKey, setCategoryTestCopiedKey] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [everOpened, setEverOpened] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
@@ -187,13 +193,37 @@ export function LevelBlock({
 
             if (q && ruleItems.every((r) => r.searchHidden)) return null;
 
+            const categoryKey = `${level.id}::${ci}::${cat.name}`;
+            const categoryPrompt = categoryPromptBuilder?.(level, cat) ?? null;
+            const showCategoryTest = !!categoryPrompt;
+
             return (
               <div
                 key={cat.name}
                 className="category"
                 style={{ animationDelay: `${0.02 + ci * 0.06}s` }}
               >
-                <div className="category-title">{cat.name}</div>
+                <div className="category-head">
+                  <div className="category-title">{cat.name}</div>
+                  {showCategoryTest && (
+                    <button
+                      type="button"
+                      className={`category-test-btn${
+                        categoryTestCopiedKey === categoryKey ? ' copied' : ''
+                      }`}
+                      title={t('rule.testCategoryTitle')}
+                      onClick={async (e) => {
+                        e.stopPropagation();
+                        if (!categoryPrompt) return;
+                        await copyToClipboard(categoryPrompt);
+                        setCategoryTestCopiedKey(categoryKey);
+                        setTimeout(() => setCategoryTestCopiedKey(null), 2000);
+                      }}
+                    >
+                      {categoryTestCopiedKey === categoryKey ? t('copied') : t('rule.testCategory')}
+                    </button>
+                  )}
+                </div>
                 <div className="rules-grid">
                   {ruleItems.map(({ rule, searchHidden, delay }) => (
                     <RuleItem

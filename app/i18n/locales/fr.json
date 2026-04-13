@@ -151,6 +151,8 @@
     "tip": "💡 Conseil :",
     "mistakes": "🚫 Erreurs fréquentes :",
     "test": "✦ Quiz",
+    "testCategory": "✦ Quiz thème",
+    "testCategoryTitle": "Copier un prompt de quiz pour tout le thème",
     "copyLinkTitle": "Copier le lien vers cette règle"
   },
   "selection": {
