@@ -50,7 +50,8 @@ interface NoteDraft {
 }
 
 export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langCode = i18n.language.split('-')[0];
   const containerRef = useRef<HTMLDivElement>(null);
   const [selPop, setSelPop] = useState<SelectionPop | null>(null);
   const selPopRef = useRef(selPop);
@@ -77,7 +78,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
   deepMsgRef.current = deepMsg;
 
   // Notes state — reacts to local actions and real-time Firestore sync
-  const [notes, setNotes] = useNotes(tenseKey, 'tense');
+  const [notes, setNotes] = useNotes(tenseKey, 'tense', langCode);
   const notesRef = useRef(notes);
   notesRef.current = notes;
   const [noteRects, setNoteRects] = useState<Map<string, HighlightRect[]>>(new Map());
@@ -279,8 +280,8 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
     if (!selPop || !containerRef.current) return;
     const range = restoreSelectionData(containerRef.current, selPop.selData);
     if (range) applySelection(range);
-    const url = buildTenseUrl(tenseKey, selPop.selData);
-    history.replaceState(null, '', `#tense-${tenseKey}~${url.split('~')[1]}`);
+    const url = buildTenseUrl(tenseKey, selPop.selData, langCode);
+    history.replaceState(null, '', `#tense-${tenseKey}@${langCode}~${url.split('~')[1]}`);
     await copyToClipboard(url);
     setSelCopied(true);
     setTimeout(() => setSelCopied(false), 2000);
@@ -309,8 +310,8 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
       ...lockedSel.selData,
       message: lockedSel.message.trim() || undefined,
     };
-    const url = buildTenseUrl(tenseKey, selDataWithMsg);
-    history.replaceState(null, '', `#tense-${tenseKey}~${url.split('~')[1]}`);
+    const url = buildTenseUrl(tenseKey, selDataWithMsg, langCode);
+    history.replaceState(null, '', `#tense-${tenseKey}@${langCode}~${url.split('~')[1]}`);
     await copyToClipboard(url);
     setLockCopied(true);
     setTimeout(() => setLockCopied(false), 2000);
@@ -348,6 +349,7 @@ export function TenseResult({ tenseKey, tense, breadcrumbs, onRestart }: Props) 
       id: crypto.randomUUID(),
       contextId: tenseKey,
       contextType: 'tense',
+      language: langCode,
       selData: noteDraft.selData,
       text: noteDraft.text,
       message: noteDraft.message,

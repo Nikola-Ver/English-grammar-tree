@@ -13,6 +13,7 @@ import { DATA } from './data/grammar';
 import { MURPHY_DATA } from './data/murphy';
 import { useProgress } from './hooks/useProgress';
 import { useTheme } from './hooks/useTheme';
+import { matchSupportedLang } from './i18n/languagePreference';
 import { parseRuleHash, parseTenseHash } from './utils/deepLink';
 
 type Tab = 'grammar' | 'murphy' | 'tenses';
@@ -57,20 +58,26 @@ function AppContent() {
 
   useEffect(() => {
     const parsedRule = parseRuleHash();
-    if (parsedRule) {
+    if (parsedRule?.ruleId) {
       const tab = findRuleTab(parsedRule.ruleId);
       if (tab) {
         setActiveTab(tab);
         setTargetRuleId(parsedRule.ruleId);
       }
+      if (parsedRule.lang && matchSupportedLang(parsedRule.lang)) {
+        i18n.changeLanguage(parsedRule.lang);
+      }
       return;
     }
     const parsedTense = parseTenseHash();
-    if (parsedTense) {
+    if (parsedTense?.tenseKey) {
       setActiveTab('tenses');
       setTargetTenseKey(parsedTense.tenseKey);
+      if (parsedTense.lang && matchSupportedLang(parsedTense.lang)) {
+        i18n.changeLanguage(parsedTense.lang);
+      }
     }
-  }, []);
+  }, [i18n]);
 
   function handleTabSwitch(tab: Tab) {
     if (tab !== activeTab) {

@@ -4,6 +4,7 @@ export interface StoredNote {
   id: string;
   contextId: string;
   contextType: 'rule' | 'tense';
+  language: string;
   selData: {
     startPath: number[];
     startOffset: number;
@@ -23,8 +24,11 @@ const TOMBSTONES_KEY = 'eng-notes-tombstones-v1';
 function readAll(): StoredNote[] {
   try {
     const raw = JSON.parse(localStorage.getItem(KEY) ?? '[]') as StoredNote[];
-    // Backfill updatedAt for notes created before this field was added
-    return raw.map((n) => (n.updatedAt ? n : { ...n, updatedAt: n.createdAt }));
+    return raw.map((n) => ({
+      ...n,
+      updatedAt: n.updatedAt || n.createdAt,
+      language: n.language || 'en',
+    }));
   } catch {
     return [];
   }
@@ -59,6 +63,12 @@ export function deleteNote(id: string): void {
   notifyNoteDeleted(id);
 }
 
-export function getNotesForContext(contextId: string, contextType: 'rule' | 'tense'): StoredNote[] {
-  return readAll().filter((n) => n.contextId === contextId && n.contextType === contextType);
+export function getNotesForContext(
+  contextId: string,
+  contextType: 'rule' | 'tense',
+  language: string,
+): StoredNote[] {
+  return readAll().filter(
+    (n) => n.contextId === contextId && n.contextType === contextType && n.language === language,
+  );
 }

@@ -42,42 +42,54 @@ function decodeSelection(encoded: string): SelectionData | null {
   return { startPath, startOffset, endPath, endOffset, message };
 }
 
+export interface ParsedDeepLink {
+  ruleId?: string;
+  tenseKey?: string;
+  selectionData: SelectionData | null;
+  /** Sender's UI language at the time the link was created. */
+  lang: string | null;
+}
+
 /** Returns a shareable URL for a rule, optionally with a path-based selection. */
-export function buildRuleUrl(ruleId: string, selectionData?: SelectionData): string {
+export function buildRuleUrl(ruleId: string, selectionData?: SelectionData, lang?: string): string {
   const base = `${location.origin}${location.pathname}`;
-  const hash = `rule-${ruleId}`;
-  if (selectionData) {
-    return `${base}#${hash}~${encodeSelection(selectionData)}`;
-  }
+  let hash = `rule-${ruleId}`;
+  if (lang) hash += `@${lang}`;
+  if (selectionData) hash += `~${encodeSelection(selectionData)}`;
   return `${base}#${hash}`;
 }
 
-/** Reads the current URL hash and extracts rule ID and optional selection data. */
-export function parseRuleHash(): { ruleId: string; selectionData: SelectionData | null } | null {
-  const match = location.hash.match(/^#rule-([^~\s]+?)(?:~(.+))?$/);
+/** Reads the current URL hash and extracts rule ID, optional language and selection data. */
+export function parseRuleHash(): ParsedDeepLink | null {
+  const match = location.hash.match(/^#rule-([^@~\s]+?)(?:@([a-z]{2,3}))?(?:~(.+))?$/);
   if (!match) return null;
   return {
     ruleId: match[1],
-    selectionData: match[2] ? decodeSelection(match[2]) : null,
+    selectionData: match[3] ? decodeSelection(match[3]) : null,
+    lang: match[2] ?? null,
   };
 }
 
 /** Returns a shareable URL for a tense, optionally with a path-based selection. */
-export function buildTenseUrl(tenseKey: string, selectionData?: SelectionData): string {
+export function buildTenseUrl(
+  tenseKey: string,
+  selectionData?: SelectionData,
+  lang?: string,
+): string {
   const base = `${location.origin}${location.pathname}`;
-  const hash = `tense-${tenseKey}`;
-  if (selectionData) {
-    return `${base}#${hash}~${encodeSelection(selectionData)}`;
-  }
+  let hash = `tense-${tenseKey}`;
+  if (lang) hash += `@${lang}`;
+  if (selectionData) hash += `~${encodeSelection(selectionData)}`;
   return `${base}#${hash}`;
 }
 
-/** Reads the current URL hash and extracts tense key and optional selection data. */
-export function parseTenseHash(): { tenseKey: string; selectionData: SelectionData | null } | null {
-  const match = location.hash.match(/^#tense-([^~\s]+?)(?:~(.+))?$/);
+/** Reads the current URL hash and extracts tense key, optional language and selection data. */
+export function parseTenseHash(): ParsedDeepLink | null {
+  const match = location.hash.match(/^#tense-([^@~\s]+?)(?:@([a-z]{2,3}))?(?:~(.+))?$/);
   if (!match) return null;
   return {
     tenseKey: match[1],
-    selectionData: match[2] ? decodeSelection(match[2]) : null,
+    selectionData: match[3] ? decodeSelection(match[3]) : null,
+    lang: match[2] ?? null,
   };
 }

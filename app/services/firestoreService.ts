@@ -46,6 +46,7 @@ export interface FirestoreUserDoc {
 export interface FirestoreNote {
   contextId: string;
   contextType: 'rule' | 'tense';
+  language: string;
   selData: {
     startPath: number[];
     startOffset: number;
@@ -63,6 +64,7 @@ function toStoredNote(id: string, data: FirestoreNote): StoredNote {
     id,
     contextId: data.contextId,
     contextType: data.contextType,
+    language: data.language || 'en',
     selData: data.selData,
     text: data.text,
     message: data.message,
@@ -75,6 +77,7 @@ function toFirestoreNote(note: StoredNote): FirestoreNote {
   return {
     contextId: note.contextId,
     contextType: note.contextType,
+    language: note.language,
     selData: note.selData,
     text: note.text,
     message: note.message,

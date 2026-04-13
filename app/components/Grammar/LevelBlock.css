@@ -156,6 +156,26 @@
   opacity: 0;
 }
 
+.level-content:has(
+    .sel-share-pop,
+    .sel-lock-panel,
+    .sel-note-panel,
+    .sel-note-card,
+    .sel-deep-msg-card
+  ) {
+  z-index: 10;
+}
+
+.level-block:has(
+    .sel-share-pop,
+    .sel-lock-panel,
+    .sel-note-panel,
+    .sel-note-card,
+    .sel-deep-msg-card
+  ) {
+  z-index: 10;
+}
+
 .level-content::before {
   content: "";
   position: absolute;

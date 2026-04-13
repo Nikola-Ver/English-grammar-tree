@@ -56,7 +56,8 @@ interface NoteDraft {
 }
 
 export function RuleExpansion({ rule, isOpen }: Props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langCode = i18n.language.split('-')[0];
   const ref = useRef<HTMLDivElement>(null);
   const [everOpened, setEverOpened] = useState(false);
   const [selPop, setSelPop] = useState<SelectionPop | null>(null);
@@ -83,7 +84,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
   deepMsgRef.current = deepMsg;
 
   // Notes state — reacts to local actions and real-time Firestore sync
-  const [notes, setNotes] = useNotes(rule.id, 'rule');
+  const [notes, setNotes] = useNotes(rule.id, 'rule', langCode);
   const notesRef = useRef(notes);
   notesRef.current = notes;
   const [noteRects, setNoteRects] = useState<Map<string, HighlightRect[]>>(new Map());
@@ -105,7 +106,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
   // Restore a path-based selection from the URL hash once the content renders
   useEffect(() => {
     if (!everOpened || highlightApplied.current || !ref.current) return;
-    const hashMatch = location.hash.match(/^#rule-([^~\s]+?)(?:~(.+))?$/);
+    const hashMatch = location.hash.match(/^#rule-([^@~\s]+?)(?:@[a-z]{2,3})?(?:~(.+))?$/);
     if (!hashMatch || hashMatch[1] !== rule.id || !hashMatch[2]) return;
 
     highlightApplied.current = true;
@@ -405,7 +406,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
     if (!selPop || !ref.current) return;
     const range = restoreSelectionData(ref.current, selPop.selData);
     if (range) applySelection(range);
-    const url = buildRuleUrl(rule.id, selPop.selData);
+    const url = buildRuleUrl(rule.id, selPop.selData, langCode);
     await copyToClipboard(url);
     setSelCopied(true);
     setTimeout(() => setSelCopied(false), 2000);
@@ -434,7 +435,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
       ...lockedSel.selData,
       message: lockedSel.message.trim() || undefined,
     };
-    const url = buildRuleUrl(rule.id, selDataWithMsg);
+    const url = buildRuleUrl(rule.id, selDataWithMsg, langCode);
     await copyToClipboard(url);
     setLockCopied(true);
     setTimeout(() => setLockCopied(false), 2000);
@@ -461,6 +462,7 @@ export function RuleExpansion({ rule, isOpen }: Props) {
       id: crypto.randomUUID(),
       contextId: rule.id,
       contextType: 'rule',
+      language: langCode,
       selData: noteDraft.selData,
       text: noteDraft.text,
       message: noteDraft.message,
