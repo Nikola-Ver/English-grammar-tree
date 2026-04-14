@@ -66,7 +66,6 @@ export function GrammarTab({ done, onToggleRule, onReset, targetRuleId }: Props)
       }
     });
   }
-
   const hasResults = !q || forceOpenSet.size > 0;
 
   function toggleSearch() {
@@ -340,7 +339,7 @@ export function GrammarTab({ done, onToggleRule, onReset, targetRuleId }: Props)
       </div>
 
       <div className="level-path">
-        {grammarData.map((level) => (
+        {grammarData.map((level, i) => (
           <LevelBlock
             key={level.id}
             level={level}
@@ -349,6 +348,7 @@ export function GrammarTab({ done, onToggleRule, onReset, targetRuleId }: Props)
             searchQuery={searchQuery}
             forceOpen={forceOpenSet.has(level.id)}
             targetRuleId={targetRuleId}
+            stackOrder={grammarData.length - 1 - i}
             categoryPromptBuilder={(lvl, cat) => buildCategoryTestPrompt(uiLang, lvl, cat)}
           />
         ))}

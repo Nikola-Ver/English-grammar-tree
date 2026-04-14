@@ -13,6 +13,18 @@
   opacity: 0;
 }
 
+/* Let share / pin / note / message UI extend past the expansion box (next topic, next level) */
+.rule-exp:has(
+    .sel-share-pop,
+    .sel-lock-panel,
+    .sel-note-panel,
+    .sel-note-card,
+    .sel-deep-msg-card
+  ) {
+  overflow: visible;
+  z-index: 5;
+}
+
 .rule-exp strong {
   color: var(--text);
   font-weight: 500;

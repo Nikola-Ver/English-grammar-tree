@@ -7,6 +7,10 @@
 .level-block {
   position: relative;
   margin-bottom: 24px;
+  /* Per-level stacking so inner .level-sticky (high z) does not beat the next band;
+     when this block is raised (:has open panel), overflow UI can paint over following levels */
+  isolation: isolate;
+  z-index: 0;
 }
 
 .level-block:not(:last-child)::after {
@@ -18,6 +22,19 @@
   height: 28px;
   background: var(--border2);
   z-index: 2;
+}
+
+/* Header + progress: sticky above scrolling body (must beat .level-content + open panels inside it) */
+.level-sticky {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 12;
+  background: var(--bg2);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .level-sticky {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .level-header {
@@ -37,7 +54,7 @@
     background 0.25s,
     box-shadow 0.25s;
   position: relative;
-  z-index: 3;
+  z-index: 1;
   user-select: none;
 }
 
@@ -138,7 +155,7 @@
   overflow: hidden;
   margin-top: -3px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 .level-progress-fill {
@@ -163,17 +180,121 @@
     .sel-note-card,
     .sel-deep-msg-card
   ) {
-  z-index: 10;
+  /* Do not raise z-index here — it would paint the whole column above sibling .level-sticky */
+  /* Inline style may set overflow: hidden during level open/close — panels must escape */
+  overflow: visible !important;
 }
 
-.level-block:has(
-    .sel-share-pop,
-    .sel-lock-panel,
-    .sel-note-panel,
-    .sel-note-card,
-    .sel-deep-msg-card
-  ) {
-  z-index: 10;
+/* z-index when selection UI is open is set inline (MutationObserver) so it wins over sticky compositing */
+
+.level-category-bulk {
+  --bulk-accent: var(--level-accent, var(--b2));
+  display: inline-flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 15px 0 0;
+  padding: 2px;
+  border-radius: 9px;
+  background: linear-gradient(180deg, var(--bg3) 0%, var(--bg2) 100%);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.level-category-bulk-divider {
+  align-self: stretch;
+  width: 1px;
+  min-height: 22px;
+  margin: 3px 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--border2) 20%,
+    var(--border2) 80%,
+    transparent 100%
+  );
+  flex-shrink: 0;
+}
+
+.level-category-bulk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px 4px 7px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted2);
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.level-category-bulk-ico {
+  display: flex;
+  color: var(--muted);
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.level-category-bulk-btn:hover .level-category-bulk-ico {
+  color: var(--bulk-accent);
+}
+
+.level-category-bulk-btn--collapse:hover .level-category-bulk-ico {
+  transform: translateY(-1px);
+}
+
+.level-category-bulk-btn--expand:hover .level-category-bulk-ico {
+  transform: translateY(1px);
+}
+
+.level-category-bulk-btn:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 0 1px var(--bulk-accent);
+}
+
+[data-theme="light"] .level-category-bulk-btn:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.level-category-bulk-btn:active {
+  transform: scale(0.97);
+}
+
+.level-category-bulk-label {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .level-category-bulk {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .level-category-bulk-btn {
+    flex: 1;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .level-category-bulk-label {
+    white-space: normal;
+    text-align: center;
+    max-width: 7.5rem;
+  }
 }
 
 .level-content::before {
@@ -191,11 +312,21 @@
   position: relative;
 }
 
+.category:has(
+    .sel-share-pop,
+    .sel-lock-panel,
+    .sel-note-panel,
+    .sel-note-card,
+    .sel-deep-msg-card
+  ) {
+  z-index: 8;
+}
+
 .category::before {
   content: "";
   position: absolute;
   left: -28px;
-  top: 8.5px;
+  top: 10.5px;
   width: 20px;
   height: 2px;
   background: var(--border2);
@@ -295,11 +426,15 @@
   }
 }
 
-/* ─── Exit animations ───────────────────────────────────────── */
+/* ─── Exit animations (level accordion closing) ─────────────── */
+/* Hook to .level-content--closing so animations start synchronously with the
+   close effect (not one frame late waiting for React to apply .level-block.closing). */
 
+.level-content.level-content--closing .rules-grid .rule-item,
 .level-block.closing .rules-grid .rule-item {
-  animation: ruleItemExit 0.26s cubic-bezier(0.4, 0, 0.8, 0.5) both;
+  animation: ruleItemExit 0.36s cubic-bezier(0.45, 0, 0.6, 1) both;
   animation-delay: 0s;
+  animation-delay: calc(var(--anim-delay, 0s) * 0.48);
 }
 
 @keyframes ruleItemExit {
@@ -308,16 +443,38 @@
     transform: translateY(0) scale(1);
     filter: blur(0);
   }
+  45% {
+    opacity: 0.62;
+    transform: translateY(-4px) scale(0.98);
+    filter: blur(1px);
+  }
   100% {
     opacity: 0;
-    transform: translateY(-12px) scale(0.94);
+    transform: translateY(-12px) scale(0.92);
     filter: blur(3px);
   }
 }
 
+.level-content.level-content--closing .category,
 .level-block.closing .category {
-  animation: categoryExit 0.22s cubic-bezier(0.4, 0, 0.8, 0.5) both;
-  animation-delay: 0s;
+  animation: categoryExit 0.34s cubic-bezier(0.45, 0, 0.6, 1) both;
+  animation-delay: var(--cat-stagger, 0s);
+}
+
+.level-content.level-content--closing .level-category-bulk,
+.level-block.closing .level-category-bulk {
+  animation: levelBulkFade 0.28s ease forwards;
+}
+
+@keyframes levelBulkFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes categoryExit {
@@ -327,7 +484,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
 }
 

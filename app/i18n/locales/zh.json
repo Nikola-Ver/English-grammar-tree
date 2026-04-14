@@ -158,6 +158,10 @@
     "testCategoryTitle": "复制整主题的测验提示",
     "copyLinkTitle": "复制此规则链接"
   },
+  "category": {
+    "collapseAll": "收起所有主题",
+    "expandAll": "展开所有主题"
+  },
   "selection": {
     "share": "分享",
     "pin": "固定",

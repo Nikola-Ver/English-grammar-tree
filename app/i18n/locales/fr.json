@@ -158,6 +158,10 @@
     "testCategoryTitle": "Copier un prompt de quiz pour tout le thème",
     "copyLinkTitle": "Copier le lien vers cette règle"
   },
+  "category": {
+    "collapseAll": "Tout replier",
+    "expandAll": "Tout déplier"
+  },
   "selection": {
     "share": "Partager",
     "pin": "Épingler",

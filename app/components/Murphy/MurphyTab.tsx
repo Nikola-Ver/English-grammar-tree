@@ -71,7 +71,6 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
       }
     });
   }
-
   const hasResults = !q || forceOpenSet.size > 0;
 
   function toggleSearch() {
@@ -344,7 +343,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
       </div>
 
       <div className="level-path">
-        {murphyLevels.map((level) => (
+        {murphyLevels.map((level, i) => (
           <LevelBlock
             key={level.id}
             level={level}
@@ -353,6 +352,7 @@ export function MurphyTab({ done, onToggleRule, onReset, targetRuleId }: Props) 
             searchQuery={searchQuery}
             forceOpen={forceOpenSet.has(level.id)}
             targetRuleId={targetRuleId}
+            stackOrder={murphyLevels.length - 1 - i}
             promptBuilder={(r, l, c) => buildMurphyRulePrompt(uiLang, r, l, c)}
             categoryPromptBuilder={(l, c) => buildMurphyCategoryTestPrompt(uiLang, l, c)}
           />

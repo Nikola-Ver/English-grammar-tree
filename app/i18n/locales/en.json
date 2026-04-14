@@ -158,6 +158,10 @@
     "testCategoryTitle": "Copy a quiz prompt for this whole topic",
     "copyLinkTitle": "Copy link to this rule"
   },
+  "category": {
+    "collapseAll": "Collapse all topics",
+    "expandAll": "Expand all topics"
+  },
   "selection": {
     "share": "Share",
     "pin": "Pin",

@@ -80,6 +80,18 @@ function safeParse<T>(raw: string | null, fallback: T): T {
   }
 }
 
+function clearSyncProgressLocalStorage(): void {
+  localStorage.removeItem(LS_GRAMMAR);
+  localStorage.removeItem(LS_GRAMMAR_CHECKED_AT);
+  localStorage.removeItem(LS_GRAMMAR_TOMBSTONES);
+  localStorage.removeItem(LS_MURPHY);
+  localStorage.removeItem(LS_MURPHY_CHECKED_AT);
+  localStorage.removeItem(LS_MURPHY_TOMBSTONES);
+  localStorage.removeItem(LS_NOTES);
+  localStorage.removeItem(LS_NOTES_TOMBSTONES);
+  localStorage.removeItem(LS_THEME);
+}
+
 function readAllLocal() {
   return {
     grammar: safeParse<DoneMap>(localStorage.getItem(LS_GRAMMAR), {}),
@@ -255,6 +267,114 @@ function getProvider(user: User): 'google' | 'password' {
   return user.providerData[0]?.providerId === 'google.com' ? 'google' : 'password';
 }
 
+function applyLocalWrite(
+  grammar: DoneMap,
+  grammarCheckedAt: Record<string, number>,
+  grammarTombstones: Record<string, number>,
+  murphy: DoneMap,
+  murphyCheckedAt: Record<string, number>,
+  murphyTombstones: Record<string, number>,
+  notes: StoredNote[],
+  notesTombstones: Record<string, number>,
+  theme: 'dark' | 'light' | null,
+  language: string,
+): void {
+  localStorage.setItem(LS_GRAMMAR, JSON.stringify(grammar));
+  localStorage.setItem(LS_GRAMMAR_CHECKED_AT, JSON.stringify(grammarCheckedAt));
+  localStorage.setItem(LS_GRAMMAR_TOMBSTONES, JSON.stringify(grammarTombstones));
+  localStorage.setItem(LS_MURPHY, JSON.stringify(murphy));
+  localStorage.setItem(LS_MURPHY_CHECKED_AT, JSON.stringify(murphyCheckedAt));
+  localStorage.setItem(LS_MURPHY_TOMBSTONES, JSON.stringify(murphyTombstones));
+  localStorage.setItem(LS_NOTES, JSON.stringify(notes));
+  localStorage.setItem(LS_NOTES_TOMBSTONES, JSON.stringify(notesTombstones));
+  if (theme) localStorage.setItem(LS_THEME, theme);
+  else localStorage.removeItem(LS_THEME);
+  persistUiLanguage(language);
+  window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
+}
+
+/** Clears synced progress in localStorage and reapplies the Firestore snapshot (no merge with prior local). */
+async function replaceLocalDataFromFirebase(uid: string): Promise<Date | null> {
+  clearSyncProgressLocalStorage();
+
+  const [cloudDoc, cloudNotes] = await Promise.all([getUserDoc(uid), getNotesCollection(uid)]);
+
+  if (!cloudDoc) {
+    const lang = pickNavigatorLanguage();
+    applyLocalWrite({}, {}, {}, {}, {}, {}, [], {}, null, lang);
+    void i18n.changeLanguage(lang);
+    return null;
+  }
+
+  const migratedCloud =
+    cloudDoc.contentVersion < CONTENT_VERSION
+      ? applyMigrations(
+          {
+            grammar: cloudDoc.progress.grammar,
+            murphy: cloudDoc.progress.murphy,
+            notes: Array.from(cloudNotes.values()),
+          },
+          cloudDoc.contentVersion,
+        )
+      : {
+          grammar: cloudDoc.progress.grammar,
+          murphy: cloudDoc.progress.murphy,
+          notes: Array.from(cloudNotes.values()),
+        };
+
+  const emptyDone: DoneMap = {};
+  const emptyTs: Record<string, number> = {};
+  const remoteGrammarCheckedAt = toMillisMap(cloudDoc.progress.grammarCheckedAt);
+  const remoteGrammarTombstones = toMillisMap(cloudDoc.progress.grammarTombstones);
+  const remoteMurphyCheckedAt = toMillisMap(cloudDoc.progress.murphyCheckedAt);
+  const remoteMurphyTombstones = toMillisMap(cloudDoc.progress.murphyTombstones);
+  const remoteNoteTombstones = toMillisMap(cloudDoc.progress.notesTombstones);
+
+  const mergedGrammar = mergeProgress(
+    emptyDone,
+    emptyTs,
+    emptyTs,
+    migratedCloud.grammar,
+    remoteGrammarCheckedAt,
+    remoteGrammarTombstones,
+  );
+  const mergedMurphy = mergeProgress(
+    emptyDone,
+    emptyTs,
+    emptyTs,
+    migratedCloud.murphy,
+    remoteMurphyCheckedAt,
+    remoteMurphyTombstones,
+  );
+
+  const mergedNoteTombstones = mergeNoteTombstones({}, remoteNoteTombstones);
+  const mergedNotes = applyNoteTombstones(
+    mergeNotesList([], new Map(migratedCloud.notes.map((n) => [n.id, n]))),
+    mergedNoteTombstones,
+  );
+
+  const mergedLang = cloudDoc.settings.language
+    ? normalizeSupportedLang(cloudDoc.settings.language)
+    : pickNavigatorLanguage();
+  const mergedTheme = cloudDoc.settings.theme ?? null;
+
+  applyLocalWrite(
+    mergedGrammar.done,
+    mergedGrammar.checkedAt,
+    mergedGrammar.tombstones,
+    mergedMurphy.done,
+    mergedMurphy.checkedAt,
+    mergedMurphy.tombstones,
+    mergedNotes,
+    mergedNoteTombstones,
+    mergedTheme,
+    mergedLang,
+  );
+  void i18n.changeLanguage(mergedLang);
+
+  return cloudDoc.lastSyncAt ? cloudDoc.lastSyncAt.toDate() : null;
+}
+
 // ---------------------------------------------------------------------------
 
 export const AuthSyncContext = createContext<AuthSyncContextValue | null>(null);
@@ -283,48 +403,62 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
   // Core push
   // -------------------------------------------------------------------------
 
-  const pushToFirestore = useCallback(async (currentUser: User): Promise<void> => {
-    if (!navigator.onLine) {
-      setSyncStatus('offline');
-      return;
-    }
-    setSyncStatus('syncing');
-    try {
-      const {
-        grammar,
-        grammarCheckedAt,
-        grammarTombstones,
-        murphy,
-        murphyCheckedAt,
-        murphyTombstones,
-        notes,
-        notesTombstones,
-        theme,
-        language,
-      } = readAllLocal();
-      await pushAllData(
-        currentUser.uid,
-        grammar,
-        grammarCheckedAt,
-        grammarTombstones,
-        murphy,
-        murphyCheckedAt,
-        murphyTombstones,
-        notes,
-        notesTombstones,
-        theme,
-        language,
-        getProvider(currentUser),
-        currentUser.displayName ?? '',
-        currentUser.email ?? '',
-        currentUser.photoURL,
-      );
-      setLastSyncAt(new Date());
-      setSyncStatus('synced');
-    } catch {
-      setSyncStatus('error');
-    }
-  }, []);
+  const pushToFirestore = useCallback(
+    async (currentUser: User, options?: { recoverOnError?: boolean }): Promise<void> => {
+      if (!navigator.onLine) {
+        setSyncStatus('offline');
+        return;
+      }
+      const recoverOnError = options?.recoverOnError ?? true;
+      setSyncStatus('syncing');
+      try {
+        const {
+          grammar,
+          grammarCheckedAt,
+          grammarTombstones,
+          murphy,
+          murphyCheckedAt,
+          murphyTombstones,
+          notes,
+          notesTombstones,
+          theme,
+          language,
+        } = readAllLocal();
+        await pushAllData(
+          currentUser.uid,
+          grammar,
+          grammarCheckedAt,
+          grammarTombstones,
+          murphy,
+          murphyCheckedAt,
+          murphyTombstones,
+          notes,
+          notesTombstones,
+          theme,
+          language,
+          getProvider(currentUser),
+          currentUser.displayName ?? '',
+          currentUser.email ?? '',
+          currentUser.photoURL,
+        );
+        setLastSyncAt(new Date());
+        setSyncStatus('synced');
+      } catch {
+        if (recoverOnError && userRef.current?.uid === currentUser.uid && navigator.onLine) {
+          try {
+            const remoteLast = await replaceLocalDataFromFirebase(currentUser.uid);
+            if (remoteLast) setLastSyncAt(remoteLast);
+            await pushToFirestore(currentUser, { recoverOnError: false });
+          } catch {
+            setSyncStatus('error');
+          }
+        } else {
+          setSyncStatus('error');
+        }
+      }
+    },
+    [],
+  );
 
   const schedulePush = useCallback(() => {
     if (!userRef.current) return;
@@ -368,40 +502,101 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
   );
 
   // -------------------------------------------------------------------------
-  // Pull & merge helpers
-  // -------------------------------------------------------------------------
-
-  const applyLocalWrite = useCallback(
-    (
-      grammar: DoneMap,
-      grammarCheckedAt: Record<string, number>,
-      grammarTombstones: Record<string, number>,
-      murphy: DoneMap,
-      murphyCheckedAt: Record<string, number>,
-      murphyTombstones: Record<string, number>,
-      notes: StoredNote[],
-      notesTombstones: Record<string, number>,
-      theme: 'dark' | 'light' | null,
-      language: string,
-    ): void => {
-      localStorage.setItem(LS_GRAMMAR, JSON.stringify(grammar));
-      localStorage.setItem(LS_GRAMMAR_CHECKED_AT, JSON.stringify(grammarCheckedAt));
-      localStorage.setItem(LS_GRAMMAR_TOMBSTONES, JSON.stringify(grammarTombstones));
-      localStorage.setItem(LS_MURPHY, JSON.stringify(murphy));
-      localStorage.setItem(LS_MURPHY_CHECKED_AT, JSON.stringify(murphyCheckedAt));
-      localStorage.setItem(LS_MURPHY_TOMBSTONES, JSON.stringify(murphyTombstones));
-      localStorage.setItem(LS_NOTES, JSON.stringify(notes));
-      localStorage.setItem(LS_NOTES_TOMBSTONES, JSON.stringify(notesTombstones));
-      if (theme) localStorage.setItem(LS_THEME, theme);
-      persistUiLanguage(language);
-      window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
-    },
-    [],
-  );
-
-  // -------------------------------------------------------------------------
   // On sign-in: pull cloud data, merge (last-write-wins), setup listeners
   // -------------------------------------------------------------------------
+
+  const attachFirestoreListeners = useCallback((currentUser: User): void => {
+    const userDocUnsub = subscribeToUserDoc(currentUser.uid, (remoteDoc) => {
+      if (!remoteDoc) return;
+      const loc = readAllLocal();
+
+      const remoteGrammarCheckedAt = toMillisMap(remoteDoc.progress.grammarCheckedAt);
+      const remoteGrammarTombstones = toMillisMap(remoteDoc.progress.grammarTombstones);
+      const remoteMurphyCheckedAt = toMillisMap(remoteDoc.progress.murphyCheckedAt);
+      const remoteMurphyTombstones = toMillisMap(remoteDoc.progress.murphyTombstones);
+      const remoteNoteTombstones = toMillisMap(remoteDoc.progress.notesTombstones);
+
+      const mergedGrammar = mergeProgress(
+        loc.grammar,
+        loc.grammarCheckedAt,
+        loc.grammarTombstones,
+        remoteDoc.progress.grammar,
+        remoteGrammarCheckedAt,
+        remoteGrammarTombstones,
+      );
+      const mergedMurphy = mergeProgress(
+        loc.murphy,
+        loc.murphyCheckedAt,
+        loc.murphyTombstones,
+        remoteDoc.progress.murphy,
+        remoteMurphyCheckedAt,
+        remoteMurphyTombstones,
+      );
+
+      const mergedNoteTombstones = mergeNoteTombstones(loc.notesTombstones, remoteNoteTombstones);
+      const filteredNotes = applyNoteTombstones(loc.notes, mergedNoteTombstones);
+
+      let changed = false;
+
+      const ngStr = JSON.stringify(mergedGrammar.done);
+      if (ngStr !== localStorage.getItem(LS_GRAMMAR)) {
+        localStorage.setItem(LS_GRAMMAR, ngStr);
+        changed = true;
+      }
+      const nmStr = JSON.stringify(mergedMurphy.done);
+      if (nmStr !== localStorage.getItem(LS_MURPHY)) {
+        localStorage.setItem(LS_MURPHY, nmStr);
+        changed = true;
+      }
+      localStorage.setItem(LS_GRAMMAR_CHECKED_AT, JSON.stringify(mergedGrammar.checkedAt));
+      localStorage.setItem(LS_MURPHY_CHECKED_AT, JSON.stringify(mergedMurphy.checkedAt));
+      localStorage.setItem(LS_GRAMMAR_TOMBSTONES, JSON.stringify(mergedGrammar.tombstones));
+      localStorage.setItem(LS_MURPHY_TOMBSTONES, JSON.stringify(mergedMurphy.tombstones));
+      localStorage.setItem(LS_NOTES_TOMBSTONES, JSON.stringify(mergedNoteTombstones));
+
+      const filteredStr = JSON.stringify(filteredNotes);
+      if (filteredStr !== localStorage.getItem(LS_NOTES)) {
+        localStorage.setItem(LS_NOTES, filteredStr);
+        changed = true;
+      }
+
+      const rt = remoteDoc.settings.theme;
+      if (rt && rt !== localStorage.getItem(LS_THEME)) {
+        localStorage.setItem(LS_THEME, rt);
+        changed = true;
+      }
+
+      const rl = remoteDoc.settings.language;
+      if (rl) {
+        const nextLang = normalizeSupportedLang(rl);
+        const curLang = normalizeSupportedLang(i18n.resolvedLanguage ?? i18n.language);
+        if (nextLang !== curLang) {
+          persistUiLanguage(nextLang);
+          void i18n.changeLanguage(nextLang);
+          changed = true;
+        }
+      }
+
+      if (changed) window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
+      if (remoteDoc.lastSyncAt) setLastSyncAt(remoteDoc.lastSyncAt.toDate());
+    });
+
+    const notesUnsub = subscribeToNotes(currentUser.uid, (remoteNotes) => {
+      const loc = readAllLocal();
+      const raw = mergeNotesList(loc.notes, remoteNotes);
+      const merged = applyNoteTombstones(raw, loc.notesTombstones);
+      const mergedStr = JSON.stringify(merged);
+      if (mergedStr !== localStorage.getItem(LS_NOTES)) {
+        localStorage.setItem(LS_NOTES, mergedStr);
+        window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
+      }
+    });
+
+    snapshotUnsubRef.current = () => {
+      userDocUnsub();
+      notesUnsub();
+    };
+  }, []);
 
   const handleUserSignedIn = useCallback(
     async (currentUser: User): Promise<void> => {
@@ -499,106 +694,19 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
 
         await pushToFirestore(currentUser);
 
-        // Real-time listeners -------------------------------------------------
-        const userDocUnsub = subscribeToUserDoc(currentUser.uid, (remoteDoc) => {
-          if (!remoteDoc) return;
-          const loc = readAllLocal();
-
-          const remoteGrammarCheckedAt = toMillisMap(remoteDoc.progress.grammarCheckedAt);
-          const remoteGrammarTombstones = toMillisMap(remoteDoc.progress.grammarTombstones);
-          const remoteMurphyCheckedAt = toMillisMap(remoteDoc.progress.murphyCheckedAt);
-          const remoteMurphyTombstones = toMillisMap(remoteDoc.progress.murphyTombstones);
-          const remoteNoteTombstones = toMillisMap(remoteDoc.progress.notesTombstones);
-
-          const mergedGrammar = mergeProgress(
-            loc.grammar,
-            loc.grammarCheckedAt,
-            loc.grammarTombstones,
-            remoteDoc.progress.grammar,
-            remoteGrammarCheckedAt,
-            remoteGrammarTombstones,
-          );
-          const mergedMurphy = mergeProgress(
-            loc.murphy,
-            loc.murphyCheckedAt,
-            loc.murphyTombstones,
-            remoteDoc.progress.murphy,
-            remoteMurphyCheckedAt,
-            remoteMurphyTombstones,
-          );
-
-          // Merge note tombstones and re-filter local notes
-          const mergedNoteTombstones = mergeNoteTombstones(
-            loc.notesTombstones,
-            remoteNoteTombstones,
-          );
-          const filteredNotes = applyNoteTombstones(loc.notes, mergedNoteTombstones);
-
-          let changed = false;
-
-          const ngStr = JSON.stringify(mergedGrammar.done);
-          if (ngStr !== localStorage.getItem(LS_GRAMMAR)) {
-            localStorage.setItem(LS_GRAMMAR, ngStr);
-            changed = true;
-          }
-          const nmStr = JSON.stringify(mergedMurphy.done);
-          if (nmStr !== localStorage.getItem(LS_MURPHY)) {
-            localStorage.setItem(LS_MURPHY, nmStr);
-            changed = true;
-          }
-          localStorage.setItem(LS_GRAMMAR_CHECKED_AT, JSON.stringify(mergedGrammar.checkedAt));
-          localStorage.setItem(LS_MURPHY_CHECKED_AT, JSON.stringify(mergedMurphy.checkedAt));
-          localStorage.setItem(LS_GRAMMAR_TOMBSTONES, JSON.stringify(mergedGrammar.tombstones));
-          localStorage.setItem(LS_MURPHY_TOMBSTONES, JSON.stringify(mergedMurphy.tombstones));
-          localStorage.setItem(LS_NOTES_TOMBSTONES, JSON.stringify(mergedNoteTombstones));
-
-          const filteredStr = JSON.stringify(filteredNotes);
-          if (filteredStr !== localStorage.getItem(LS_NOTES)) {
-            localStorage.setItem(LS_NOTES, filteredStr);
-            changed = true;
-          }
-
-          const rt = remoteDoc.settings.theme;
-          if (rt && rt !== localStorage.getItem(LS_THEME)) {
-            localStorage.setItem(LS_THEME, rt);
-            changed = true;
-          }
-
-          const rl = remoteDoc.settings.language;
-          if (rl) {
-            const nextLang = normalizeSupportedLang(rl);
-            const curLang = normalizeSupportedLang(i18n.resolvedLanguage ?? i18n.language);
-            if (nextLang !== curLang) {
-              persistUiLanguage(nextLang);
-              void i18n.changeLanguage(nextLang);
-              changed = true;
-            }
-          }
-
-          if (changed) window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
-          if (remoteDoc.lastSyncAt) setLastSyncAt(remoteDoc.lastSyncAt.toDate());
-        });
-
-        const notesUnsub = subscribeToNotes(currentUser.uid, (remoteNotes) => {
-          const loc = readAllLocal();
-          const raw = mergeNotesList(loc.notes, remoteNotes);
-          const merged = applyNoteTombstones(raw, loc.notesTombstones);
-          const mergedStr = JSON.stringify(merged);
-          if (mergedStr !== localStorage.getItem(LS_NOTES)) {
-            localStorage.setItem(LS_NOTES, mergedStr);
-            window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
-          }
-        });
-
-        snapshotUnsubRef.current = () => {
-          userDocUnsub();
-          notesUnsub();
-        };
+        attachFirestoreListeners(currentUser);
       } catch {
-        setSyncStatus('error');
+        try {
+          const remoteLast = await replaceLocalDataFromFirebase(currentUser.uid);
+          if (remoteLast) setLastSyncAt(remoteLast);
+          await pushToFirestore(currentUser, { recoverOnError: false });
+          attachFirestoreListeners(currentUser);
+        } catch {
+          setSyncStatus('error');
+        }
       }
     },
-    [pushToFirestore, applyLocalWrite],
+    [pushToFirestore, attachFirestoreListeners],
   );
 
   // -------------------------------------------------------------------------
@@ -668,15 +776,7 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
       snapshotUnsubRef.current = null;
     }
     await deleteAllUserData(uid);
-    localStorage.removeItem(LS_GRAMMAR);
-    localStorage.removeItem(LS_GRAMMAR_CHECKED_AT);
-    localStorage.removeItem(LS_GRAMMAR_TOMBSTONES);
-    localStorage.removeItem(LS_MURPHY);
-    localStorage.removeItem(LS_MURPHY_CHECKED_AT);
-    localStorage.removeItem(LS_MURPHY_TOMBSTONES);
-    localStorage.removeItem(LS_NOTES);
-    localStorage.removeItem(LS_NOTES_TOMBSTONES);
-    localStorage.removeItem(LS_THEME);
+    clearSyncProgressLocalStorage();
     await deleteUser(userRef.current);
     setSyncStatus('idle');
     setLastSyncAt(null);

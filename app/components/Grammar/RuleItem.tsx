@@ -19,6 +19,8 @@ interface Props {
   onToggle: (id: string) => void;
   searchHidden: boolean;
   isTarget?: boolean;
+  /** Same value as parent LevelBlock; exposed as `--rule-stack-order` for stacking */
+  stackOrder?: number;
   promptBuilder?: (rule: Rule, level: Level, cat: Category) => string;
 }
 
@@ -30,6 +32,7 @@ export function RuleItem({
   onToggle,
   searchHidden,
   isTarget = false,
+  stackOrder = 0,
   promptBuilder,
 }: Props) {
   const { t, i18n } = useTranslation();
@@ -155,7 +158,12 @@ export function RuleItem({
     <div
       className={`rule-item${isDone ? ' done' : ''}${searchHidden ? ' hidden-search' : ''}`}
       id={`ri-${rule.id}`}
-      style={{ '--anim-delay': `${animDelay}s` } as React.CSSProperties}
+      style={
+        {
+          '--anim-delay': `${animDelay}s`,
+          '--rule-stack-order': stackOrder,
+        } as React.CSSProperties
+      }
     >
       <div
         className="rule-top"

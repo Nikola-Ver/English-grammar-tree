@@ -158,6 +158,10 @@
     "testCategoryTitle": "Quiz-Prompt für das gesamte Thema kopieren",
     "copyLinkTitle": "Link zu dieser Regel kopieren"
   },
+  "category": {
+    "collapseAll": "Alle Themen einklappen",
+    "expandAll": "Alle Themen ausklappen"
+  },
   "selection": {
     "share": "Teilen",
     "pin": "Anheften",

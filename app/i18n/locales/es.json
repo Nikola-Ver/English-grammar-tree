@@ -158,6 +158,10 @@
     "testCategoryTitle": "Copiar prompt de test para todo el tema",
     "copyLinkTitle": "Copiar enlace a esta regla"
   },
+  "category": {
+    "collapseAll": "Plegar todos los temas",
+    "expandAll": "Desplegar todos los temas"
+  },
   "selection": {
     "share": "Compartir",
     "pin": "Fijar",
