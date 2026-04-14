@@ -319,7 +319,7 @@
     .sel-note-card,
     .sel-deep-msg-card
   ) {
-  z-index: 8;
+  z-index: calc(10 + var(--category-stack-order, 0));
 }
 
 .category::before {

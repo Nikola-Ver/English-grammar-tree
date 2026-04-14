@@ -310,6 +310,7 @@ export function LevelBlock({
                 level={level}
                 cat={cat}
                 categoryIndex={ci}
+                categoryStackOrder={level.categories.length - 1 - ci}
                 done={done}
                 onToggleRule={onToggleRule}
                 ruleItems={ruleItems}

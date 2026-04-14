@@ -16,6 +16,8 @@ interface Props {
   level: Level;
   cat: Category;
   categoryIndex: number;
+  /** Same ordering as `--rule-stack-order` on rules: earlier categories get higher values */
+  categoryStackOrder: number;
   done: DoneMap;
   onToggleRule: (id: string) => void;
   ruleItems: RuleRow[];
@@ -30,6 +32,7 @@ export function CategorySection({
   level,
   cat,
   categoryIndex,
+  categoryStackOrder,
   done,
   onToggleRule,
   ruleItems,
@@ -50,6 +53,7 @@ export function CategorySection({
       style={
         {
           '--cat-stagger': `${categoryIndex * 0.055}s`,
+          '--category-stack-order': categoryStackOrder,
           animationDelay: `${0.02 + categoryIndex * 0.06}s`,
         } as React.CSSProperties
       }
