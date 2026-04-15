@@ -18,6 +18,8 @@ export interface MurphyRuleStrings {
   text: string;
   note: string;
   exp: string;
+  exc?: string;
+  mistakes?: string[];
   unitUrl: string;
 }
 
@@ -132,6 +134,8 @@ function mergeMurphyRule(base: Rule, bundle: RuleContentBundle | undefined, lang
           text: m.text || base.text,
           note: m.note || base.note,
           exp: m.exp || base.exp,
+          exc: m.exc || base.exc,
+          mistakes: m.mistakes?.length ? m.mistakes : base.mistakes,
         }
       : { ...base };
   // Only Russian keeps ok-english.ru Murphy lesson links; other locales had generic hubs, not book refs.

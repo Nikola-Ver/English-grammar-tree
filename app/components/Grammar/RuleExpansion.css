@@ -34,6 +34,19 @@
   font-style: normal;
 }
 
+.rule-exp ul,
+.rule-exp ol {
+  margin: 4px 0;
+  padding-left: 22px;
+  list-style: disc;
+}
+.rule-exp ol {
+  list-style: decimal;
+}
+.rule-exp li {
+  margin: 2px 0;
+}
+
 .rule-exp .ex-list {
   margin: 8px 0 0;
   padding: 0;
