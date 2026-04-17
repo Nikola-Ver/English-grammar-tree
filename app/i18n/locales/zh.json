@@ -77,7 +77,19 @@
   "tensesTab": {
     "introLead": "互动式时态选择。",
     "introRest": "回答问题即可获得对应时态的公式、例句和常见错误。",
-    "orPick": "— 或直接选择时态 —"
+    "orPick": "— 或直接选择时态 —",
+    "compareEnter": "⇄ 对比两个时态",
+    "compareExit": "× 退出对比模式",
+    "comparePickA": "从下方网格中选择第一个时态（A）。",
+    "comparePickB": "现在选择第二个时态（B）。",
+    "comparePickedBoth": "可以互换组合，或向下滚动查看对比结果。",
+    "comparePickFromGrid": "选择两个时态进行对比",
+    "compareHeading": "时态对比",
+    "compareSwap": "互换",
+    "compareClear": "清除",
+    "compareContexts": "相同语境 — 不同时态",
+    "compareNotes": "备注",
+    "compareAutoHint": "基于公式、时间标志词和例句的自动对比。该组合暂无详细解析。"
   },
   "timeline": {
     "title": "📊 时间轴 — 动作何时发生",

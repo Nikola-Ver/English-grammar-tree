@@ -77,7 +77,19 @@
   "tensesTab": {
     "introLead": "Interactive tense chooser.",
     "introRest": "Answer the questions to get the right tense with a formula, examples, and common mistakes.",
-    "orPick": "— or pick a tense directly —"
+    "orPick": "— or pick a tense directly —",
+    "compareEnter": "⇄ Compare two tenses",
+    "compareExit": "× Exit comparison",
+    "comparePickA": "Select the first tense (A) from the grid below.",
+    "comparePickB": "Now select the second tense (B).",
+    "comparePickedBoth": "Swap the pair or scroll down to see the comparison.",
+    "comparePickFromGrid": "Select two tenses to compare",
+    "compareHeading": "Tense comparison",
+    "compareSwap": "Swap",
+    "compareClear": "Clear",
+    "compareContexts": "Same context — different tenses",
+    "compareNotes": "Notes",
+    "compareAutoHint": "Auto-generated comparison based on formulas, markers and examples. No detailed breakdown available for this pair yet."
   },
   "timeline": {
     "title": "📊 Timeline — when the action happens",

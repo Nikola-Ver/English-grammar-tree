@@ -77,7 +77,19 @@
   "tensesTab": {
     "introLead": "Interaktive Zeitenwahl.",
     "introRest": "Beantworten Sie die Fragen — Sie erhalten die passende Zeitform mit Formel, Beispielen und typischen Fehlern.",
-    "orPick": "— oder direkt eine Zeit wählen —"
+    "orPick": "— oder direkt eine Zeit wählen —",
+    "compareEnter": "⇄ Zwei Zeiten vergleichen",
+    "compareExit": "× Vergleich beenden",
+    "comparePickA": "Wähle die erste Zeit (A) im Raster unten.",
+    "comparePickB": "Wähle jetzt die zweite Zeit (B).",
+    "comparePickedBoth": "Paar tauschen oder nach unten scrollen, um den Vergleich zu sehen.",
+    "comparePickFromGrid": "Zwei Zeiten zum Vergleich wählen",
+    "compareHeading": "Zeitenvergleich",
+    "compareSwap": "Tauschen",
+    "compareClear": "Zurücksetzen",
+    "compareContexts": "Gleicher Kontext — verschiedene Zeiten",
+    "compareNotes": "Hinweise",
+    "compareAutoHint": "Automatischer Vergleich anhand von Formeln, Markierern und Beispielen. Für dieses Paar ist noch keine ausführliche Erklärung verfügbar."
   },
   "timeline": {
     "title": "📊 Zeitachse — wann die Handlung stattfindet",

@@ -77,7 +77,19 @@
   "tensesTab": {
     "introLead": "Árbol interactivo para elegir el tiempo verbal.",
     "introRest": "Responde las preguntas para obtener el tiempo adecuado con fórmula, ejemplos y errores frecuentes.",
-    "orPick": "— o elige un tiempo directamente —"
+    "orPick": "— o elige un tiempo directamente —",
+    "compareEnter": "⇄ Comparar dos tiempos",
+    "compareExit": "× Salir de la comparación",
+    "comparePickA": "Selecciona el primer tiempo (A) en la cuadrícula de abajo.",
+    "comparePickB": "Ahora selecciona el segundo tiempo (B).",
+    "comparePickedBoth": "Intercambia el par o desplázate hacia abajo para ver la comparación.",
+    "comparePickFromGrid": "Selecciona dos tiempos para comparar",
+    "compareHeading": "Comparación de tiempos",
+    "compareSwap": "Intercambiar",
+    "compareClear": "Limpiar",
+    "compareContexts": "Mismo contexto — tiempos diferentes",
+    "compareNotes": "Notas",
+    "compareAutoHint": "Comparación automática basada en fórmulas, marcadores y ejemplos. Aún no hay un análisis detallado para este par."
   },
   "timeline": {
     "title": "📊 Línea temporal — cuándo ocurre la acción",

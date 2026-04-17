@@ -53,18 +53,13 @@
 
 /* Smooth topic open/close — rules stay mounted (grid 0fr / 1fr) */
 .category-section-body-wrap {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.42s cubic-bezier(0.4, 0, 0.18, 1);
-}
-
-.category-section-body-wrap.open {
-  grid-template-rows: 1fr;
+  display: flex;
 }
 
 .category-section-body {
   overflow: hidden;
   min-height: 0;
+  width: 100%;
   padding-left: 22px;
   opacity: 0;
   transform: translateY(-4px);

@@ -77,7 +77,19 @@
   "tensesTab": {
     "introLead": "Arbre interactif pour choisir le temps.",
     "introRest": "Répondez aux questions pour obtenir le bon temps avec la formule, des exemples et des erreurs fréquentes.",
-    "orPick": "— ou choisissez un temps directement —"
+    "orPick": "— ou choisissez un temps directement —",
+    "compareEnter": "⇄ Comparer deux temps",
+    "compareExit": "× Quitter la comparaison",
+    "comparePickA": "Sélectionne le premier temps (A) dans la grille ci-dessous.",
+    "comparePickB": "Sélectionne maintenant le deuxième temps (B).",
+    "comparePickedBoth": "Inverse la paire ou fais défiler vers le bas pour voir la comparaison.",
+    "comparePickFromGrid": "Sélectionne deux temps à comparer",
+    "compareHeading": "Comparaison des temps",
+    "compareSwap": "Inverser",
+    "compareClear": "Effacer",
+    "compareContexts": "Même contexte — temps différents",
+    "compareNotes": "Remarques",
+    "compareAutoHint": "Comparaison automatique basée sur les formules, les marqueurs et les exemples. Pas encore d'analyse détaillée pour cette paire."
   },
   "timeline": {
     "title": "📊 Frise — quand l'action se produit",

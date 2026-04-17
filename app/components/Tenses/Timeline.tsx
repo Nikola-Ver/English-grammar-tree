@@ -4,6 +4,8 @@ import { type TimelineEntry, TL_DATA } from '../../data/timelineData';
 
 interface Props {
   selectedKey: string | null;
+  /** When non-empty, these keys are highlighted (for multi-select / compare mode). */
+  highlightKeys?: string[];
   onSelectTense: (key: string) => void;
 }
 
@@ -67,7 +69,9 @@ function tooltipPosition(clientX: number, clientY: number) {
   return { left, top };
 }
 
-export function Timeline({ selectedKey, onSelectTense }: Props) {
+export function Timeline({ selectedKey, highlightKeys, onSelectTense }: Props) {
+  const multiKeys = highlightKeys ?? [];
+  const hasMulti = multiKeys.length > 0;
   const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -168,8 +172,8 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
       const x1 = xOf(d.start),
         x2 = xOf(d.end);
       const col = rowPaintColor(d.key, d.color);
-      const isSelected = selectedKey === d.key;
-      const isAnySelected = !!selectedKey;
+      const isSelected = hasMulti ? multiKeys.includes(d.key) : selectedKey === d.key;
+      const isAnySelected = hasMulti ? multiKeys.length > 0 : !!selectedKey;
       const dimmed = isAnySelected && !isSelected;
 
       if (isSelected) {
@@ -427,20 +431,24 @@ export function Timeline({ selectedKey, onSelectTense }: Props) {
           </div>
         </div>
         <div className="tt-timeline-legend">
-          {TL_DATA.map((d) => (
-            <div
-              key={d.key}
-              className="tt-tl-leg-item"
-              style={{
-                opacity: selectedKey && selectedKey !== d.key ? 0.35 : 1,
-                fontWeight: selectedKey === d.key ? 600 : 400,
-              }}
-              onClick={() => onSelectTense(d.key)}
-            >
-              <div className="tt-tl-leg-dot" style={{ background: `var(--tl-${d.key})` }} />
-              <span>{d.label}</span>
-            </div>
-          ))}
+          {TL_DATA.map((d) => {
+            const legSelected = hasMulti ? multiKeys.includes(d.key) : selectedKey === d.key;
+            const legAnySelected = hasMulti ? multiKeys.length > 0 : !!selectedKey;
+            return (
+              <div
+                key={d.key}
+                className="tt-tl-leg-item"
+                style={{
+                  opacity: legAnySelected && !legSelected ? 0.35 : 1,
+                  fontWeight: legSelected ? 600 : 400,
+                }}
+                onClick={() => onSelectTense(d.key)}
+              >
+                <div className="tt-tl-leg-dot" style={{ background: `var(--tl-${d.key})` }} />
+                <span>{d.label}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
       {hoverTip && tipPos && (
