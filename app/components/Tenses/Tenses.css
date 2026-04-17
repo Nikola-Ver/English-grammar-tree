@@ -598,6 +598,9 @@
   align-items: center;
   gap: 10px;
   margin-top: 1.5rem;
+}
+
+.tt-compare-bar.open {
   padding: 10px 12px;
   background: var(--bg2);
   border: 1px solid var(--border);

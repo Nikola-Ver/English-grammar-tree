@@ -99,7 +99,7 @@ export function TensesTab({ targetTenseKey }: Props) {
         <TenseTree onSelectTense={handleTreeSelect} />
       ) : null}
 
-      <div className="tt-compare-bar">
+      <div className={`tt-compare-bar${compareMode ? ' open' : ''}`}>
         <button
           type="button"
           className={`tt-compare-toggle${compareMode ? ' active' : ''}`}

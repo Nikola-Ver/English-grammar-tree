@@ -53,7 +53,13 @@
 
 /* Smooth topic open/close — rules stay mounted (grid 0fr / 1fr) */
 .category-section-body-wrap {
-  display: flex;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.32s cubic-bezier(0.4, 0, 0.18, 1);
+}
+
+.category-section-body-wrap.open {
+  grid-template-rows: 1fr;
 }
 
 .category-section-body {
