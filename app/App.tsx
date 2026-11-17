@@ -2,11 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './styles/base.css';
 import { Header } from './components/Header/Header';
-import {
-  ClaudeConnect,
-  type ConnectRequest,
-  parseConnectHash,
-} from './components/Practice/ClaudeConnect';
+import { type ConnectRequest, parseConnectHash } from './components/Practice/connectHash';
 import { PracticeProvider } from './components/Practice/PracticeProvider';
 import { Tabs } from './components/Tabs';
 import { AuthSyncProvider, useAuthSync } from './context/AuthSyncContext';
@@ -18,6 +14,10 @@ import { parseFriendHash } from './social/social';
 import { parseRuleHash, parseTenseHash } from './utils/deepLink';
 import { findRuleTab } from './utils/findRuleTab';
 
+// loaded only when the connector opens the app, together with the styles it needs
+const ClaudeConnect = lazy(() =>
+  import('./components/Practice/ClaudeConnect').then((m) => ({ default: m.ClaudeConnect })),
+);
 const PracticeTab = lazy(() =>
   import('./components/Practice/PracticeTab').then((m) => ({ default: m.PracticeTab })),
 );
@@ -193,11 +193,13 @@ function AppContent() {
         />
 
         {connectReq && view !== 'auth' && (
-          <ClaudeConnect
-            request={connectReq}
-            onClose={() => setConnectReq(null)}
-            onSignIn={() => setView('auth')}
-          />
+          <Suspense fallback={null}>
+            <ClaudeConnect
+              request={connectReq}
+              onClose={() => setConnectReq(null)}
+              onSignIn={() => setView('auth')}
+            />
+          </Suspense>
         )}
 
         {view === 'auth' && (
