@@ -183,7 +183,7 @@ function AppContent() {
   }
 
   return (
-    <PracticeProvider onOpenRule={openRule}>
+    <PracticeProvider>
       <div className="wrap">
         <Header
           theme={theme}

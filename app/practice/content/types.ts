@@ -163,6 +163,44 @@ export interface TranslateSeed extends SeedBase {
   why: L10n;
 }
 
+/**
+ * Quick pick: a sentence with one `___` gap and a few options that are NOT shuffled, so the
+ * same answer is always under the same finger (a / an / the / —, or the two sides of a duel).
+ * `answer` is the index of the right option. `labels` are optional captions under the options
+ * (e.g. the tense names).
+ */
+export interface QuickSeed extends SeedBase {
+  kind: 'quick';
+  prompt: string;
+  options: string[];
+  labels?: string[];
+  answer: number;
+  /** instruction key (practice.instr.*) for the game this item belongs to */
+  instr?: string;
+}
+
+/**
+ * Article repair: natural English with every article that the learner must put back in braces:
+ * "I bought {a} car. {The} car is red." Articles that are not in braces stay visible.
+ * Write the word after a sentence-initial article in lower case ("{The} car"), as usual.
+ */
+export interface InsertSeed extends SeedBase {
+  kind: 'insert';
+  text: string;
+}
+
+/**
+ * Story with a choice in every gap: "{go: went|was going|have gone}". The part before the
+ * colon is the hint shown in the empty gap (the base verb); the first option is correct.
+ * `notes[i]` explains gap i (one short line).
+ */
+export interface StorySeed extends SeedBase {
+  kind: 'story';
+  title: L10n;
+  text: string;
+  notes: L10n[];
+}
+
 export type Seed =
   | ChoiceSeed
   | TilesSeed
@@ -170,7 +208,10 @@ export type Seed =
   | MatchSeed
   | GapsSeed
   | TypeSeed
-  | TranslateSeed;
+  | TranslateSeed
+  | QuickSeed
+  | InsertSeed
+  | StorySeed;
 
 /**
  * "Почему по-русски иначе" note shown on a grammar rule card.

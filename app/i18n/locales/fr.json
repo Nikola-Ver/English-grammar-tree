@@ -368,7 +368,12 @@
       "markerSort": "Classez les marqueurs de temps par temps verbal",
       "sameScene": "Quelle phrase a ce sens ?",
       "numbers": "Écoutez et saisissez le nombre en chiffres",
-      "translate": "Traduisez en anglais"
+      "translate": "Traduisez en anglais",
+      "quick": "Choisissez ce qui convient",
+      "articleBlitz": "a, an, the — ou rien (∅) ?",
+      "tenseDuel": "Quelle forme convient ? Touchez, glissez ou ← →",
+      "insert": "Les articles ont disparu. Touchez un mot pour placer un article devant",
+      "story": "Choisissez la bonne forme pour chaque trou"
     },
     "tapTiles": "Touchez les mots ci-dessous…",
     "clear": "Effacer",
@@ -404,7 +409,8 @@
       "practiseRule": "Travaillez d'abord cette règle",
       "challenge": "Défier un ami",
       "again": "Rejouer",
-      "done": "Terminé"
+      "done": "Terminé",
+      "review": "À revoir"
     },
     "stage": {
       "icon0": "🌰",
@@ -752,6 +758,22 @@
       "polite": {
         "title": "Ne soyez pas impoli",
         "desc": "Transformez des demandes directes en anglais poli"
+      },
+      "article-blitz": {
+        "title": "Articles éclair",
+        "desc": "a, an, the ou rien : 60 secondes, quatre touches"
+      },
+      "article-repair": {
+        "title": "Atelier des articles",
+        "desc": "Un message sans articles. Remettez-les en place"
+      },
+      "tense-duel": {
+        "title": "Duel des temps",
+        "desc": "Une phrase, deux formes. Choisissez vite"
+      },
+      "story-time": {
+        "title": "Histoires",
+        "desc": "De courtes histoires où chaque verbe demande le bon temps"
       }
     },
     "progress": {
@@ -929,6 +951,17 @@
       "connectCancel": "Annuler",
       "connectSignIn": "Connectez-vous d’abord à votre compte, puis autorisez la connexion.",
       "signIn": "Se connecter"
+    },
+    "insert": {
+      "count": "Articles ajoutés : {{n}} sur {{total}}",
+      "hint": "touchez encore pour changer : a → an → the → aucun"
+    },
+    "story": {
+      "gap": "Trou {{i}} sur {{n}}"
+    },
+    "peek": {
+      "back": "Retour au jeu",
+      "newTab": "Ouvrir dans un nouvel onglet"
     }
   },
   "social": {

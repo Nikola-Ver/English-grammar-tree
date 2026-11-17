@@ -95,6 +95,18 @@ function mergeGrammarRule(base: Rule, bundle: RuleContentBundle | undefined, lan
   };
 }
 
+/** One rule in the interface language (the same merge the Grammar and Murphy tabs use). */
+export function localizeRule(
+  base: Rule,
+  kind: 'grammar' | 'murphy',
+  bundle: RuleContentBundle | undefined,
+  lang: UiLang,
+): Rule {
+  return kind === 'grammar'
+    ? mergeGrammarRule(base, bundle, lang)
+    : mergeMurphyRule(base, bundle, lang);
+}
+
 export function localizeGrammarLevels(
   levels: Level[],
   bundle: RuleContentBundle | undefined,

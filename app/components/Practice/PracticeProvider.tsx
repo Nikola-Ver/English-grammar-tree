@@ -53,10 +53,9 @@ export function loadEngine(): Promise<Engine> {
 
 interface Props {
   children: ReactNode;
-  onOpenRule: (ruleId: string) => void;
 }
 
-export function PracticeProvider({ children, onOpenRule }: Props) {
+export function PracticeProvider({ children }: Props) {
   const { i18n } = useTranslation();
   const state = usePracticeState();
   const [engine, setEngine] = useState<Engine | null>(null);
@@ -131,14 +130,6 @@ export function PracticeProvider({ children, onOpenRule }: Props) {
     if (getSocialMe()) void publishProfile(profileStatsFrom(getState(), masteredRef.current), true);
   }, []);
 
-  const openRule = useCallback(
-    (ruleId: string) => {
-      setActive(null);
-      onOpenRule(ruleId);
-    },
-    [onOpenRule],
-  );
-
   const value = useMemo(() => ({ start, engine, mastery }), [start, engine, mastery]);
 
   return (
@@ -146,13 +137,7 @@ export function PracticeProvider({ children, onOpenRule }: Props) {
       {children}
       {active && (
         <Suspense fallback={null}>
-          <GameRunner
-            key={active.n}
-            request={active.req}
-            onClose={close}
-            onOpenRule={openRule}
-            onStart={start}
-          />
+          <GameRunner key={active.n} request={active.req} onClose={close} onStart={start} />
         </Suspense>
       )}
     </PracticeContext.Provider>

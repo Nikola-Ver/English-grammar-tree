@@ -516,6 +516,30 @@ export const genRightOrWrong: Generator = (ctx) => {
   return null;
 };
 
+const setQueues = new WeakMap<BuildCtx, string[]>();
+
+/**
+ * Endless rounds from one drill set, without repeats until the set runs out. Items above the
+ * learner's level are left out when enough remain.
+ */
+export function genFromSet(key: DrillSetKey): Generator {
+  return (ctx) => {
+    let queue = setQueues.get(ctx);
+    if (!queue || queue.length === 0) {
+      const all = ctx.index.bySet.get(key) ?? [];
+      const mine = all.filter(levelFilter(ctx, levelCap(ctx)));
+      queue = prioritize(mine.length >= 20 ? mine : all, ctx);
+      setQueues.set(ctx, queue);
+    }
+    for (let id = queue.shift(); id; id = queue.shift()) {
+      const item = ctx.index.items.get(id);
+      const ex = item ? variantFor(item, ctx) : null;
+      if (ex) return ex;
+    }
+    return null;
+  };
+}
+
 export const genVerbForge: Generator = (ctx) => {
   const id = pick(ctx.index.verbItems.slice(0, 60 + Math.floor(ctx.rng() * 90)), ctx.rng);
   const item = ctx.index.items.get(id);

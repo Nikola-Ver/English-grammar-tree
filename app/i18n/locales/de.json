@@ -368,7 +368,12 @@
       "markerSort": "Sortiere die Zeitsignale nach Zeitform",
       "sameScene": "Welcher Satz hat diese Bedeutung?",
       "numbers": "Hör zu und tippe die Zahl in Ziffern ein",
-      "translate": "Übersetze ins Englische"
+      "translate": "Übersetze ins Englische",
+      "quick": "Wähle die passende Variante",
+      "articleBlitz": "a, an, the — oder nichts (∅)?",
+      "tenseDuel": "Welche Form passt? Tippen, wischen oder ← →",
+      "insert": "Die Artikel fehlen. Tippe auf ein Wort, um einen Artikel davor zu setzen",
+      "story": "Wähle für jede Lücke die richtige Form"
     },
     "tapTiles": "Tippe unten auf die Wörter…",
     "clear": "Löschen",
@@ -404,7 +409,8 @@
       "practiseRule": "Übe zuerst diese Regel",
       "challenge": "Freund herausfordern",
       "again": "Nochmal spielen",
-      "done": "Fertig"
+      "done": "Fertig",
+      "review": "Noch einmal ansehen"
     },
     "stage": {
       "icon0": "🌰",
@@ -752,6 +758,22 @@
       "polite": {
         "title": "Nicht unhöflich klingen",
         "desc": "Mach aus direkten Bitten höfliches Englisch"
+      },
+      "article-blitz": {
+        "title": "Artikel-Blitz",
+        "desc": "a, an, the oder nichts: 60 Sekunden, vier Tasten"
+      },
+      "article-repair": {
+        "title": "Artikel-Reparatur",
+        "desc": "Eine Nachricht ohne Artikel. Setze sie wieder ein"
+      },
+      "tense-duel": {
+        "title": "Zeiten-Duell",
+        "desc": "Ein Satz, zwei Formen. Entscheide dich schnell"
+      },
+      "story-time": {
+        "title": "Geschichten",
+        "desc": "Kurze Geschichten, in denen jedes Verb die richtige Zeit braucht"
       }
     },
     "progress": {
@@ -929,6 +951,17 @@
       "connectCancel": "Abbrechen",
       "connectSignIn": "Melde dich zuerst in deinem Konto an und erlaube dann die Verbindung.",
       "signIn": "Anmelden"
+    },
+    "insert": {
+      "count": "Artikel eingesetzt: {{n}} von {{total}}",
+      "hint": "erneut tippen zum Ändern: a → an → the → keiner"
+    },
+    "story": {
+      "gap": "Lücke {{i}} von {{n}}"
+    },
+    "peek": {
+      "back": "Zurück zum Spiel",
+      "newTab": "In neuem Tab öffnen"
     }
   },
   "social": {

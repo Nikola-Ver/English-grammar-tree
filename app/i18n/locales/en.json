@@ -368,7 +368,12 @@
       "markerSort": "Sort the time markers by tense",
       "sameScene": "Which sentence has this meaning?",
       "numbers": "Listen and type the number in digits",
-      "translate": "Translate into English"
+      "translate": "Translate into English",
+      "quick": "Pick the one that fits",
+      "articleBlitz": "a, an, the — or nothing (∅)?",
+      "tenseDuel": "Which form fits? Tap, swipe or press ← →",
+      "insert": "The articles are missing. Tap a word to put an article before it",
+      "story": "Choose the right form for every gap"
     },
     "tapTiles": "Tap the words below…",
     "clear": "Clear",
@@ -404,7 +409,8 @@
       "practiseRule": "Practise this rule first",
       "challenge": "Challenge a friend",
       "again": "Play again",
-      "done": "Done"
+      "done": "Done",
+      "review": "Worth another look"
     },
     "stage": {
       "icon0": "🌰",
@@ -752,6 +758,22 @@
       "polite": {
         "title": "Don't sound rude",
         "desc": "Turn direct Russian-style requests into polite English"
+      },
+      "article-blitz": {
+        "title": "Article blitz",
+        "desc": "a, an, the or nothing: 60 seconds, four keys"
+      },
+      "article-repair": {
+        "title": "Article repair",
+        "desc": "A message with no articles. Put them back"
+      },
+      "tense-duel": {
+        "title": "Tense duel",
+        "desc": "One sentence, two forms. Pick a side, fast"
+      },
+      "story-time": {
+        "title": "Story time",
+        "desc": "Short stories where every verb needs the right tense"
       }
     },
     "progress": {
@@ -929,6 +951,17 @@
       "connectCancel": "Cancel",
       "connectSignIn": "Sign in to your account first, then allow the connection.",
       "signIn": "Sign in"
+    },
+    "insert": {
+      "count": "Articles added: {{n}} of {{total}}",
+      "hint": "tap again to change: a → an → the → none"
+    },
+    "story": {
+      "gap": "Gap {{i}} of {{n}}"
+    },
+    "peek": {
+      "back": "Back to the game",
+      "newTab": "Open in a new tab"
     }
   },
   "social": {

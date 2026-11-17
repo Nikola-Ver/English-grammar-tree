@@ -10,6 +10,9 @@ import { pathToFileURL } from 'node:url';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const contentDir = path.join(root, 'app/practice/content');
+const { parseInsert, parseStory, ARTICLES } = await import(
+  pathToFileURL(path.join(root, 'app/practice/gameText.ts')).href
+);
 const grammarSrc = fs.readFileSync(path.join(root, 'app/data/grammar.ts'), 'utf8');
 const RULE_IDS = new Set([...grammarSrc.matchAll(/id: '([abc][12]_\w+)'/g)].map((m) => m[1]));
 const TOPIC_IDS = new Set(['w_false_friends', 'w_collocations', 'w_phrasal', 'w_verb_prep', 'w_polite']);
@@ -186,6 +189,50 @@ function checkSeed(file, s) {
     case 'type': {
       checkEnglish(file, id, s.prompt, 'prompt');
       checkEnglish(file, id, s.answer, 'answer');
+      break;
+    }
+    case 'quick': {
+      checkEnglish(file, id, s.prompt, 'prompt');
+      if ((s.prompt.match(/___/g) ?? []).length !== 1) err(file, id, 'prompt needs exactly one ___ gap');
+      if (!Array.isArray(s.options) || s.options.length < 2 || s.options.length > 4)
+        err(file, id, 'options must have 2–4 entries');
+      else if (new Set(s.options).size !== s.options.length) err(file, id, 'options not distinct');
+      for (const o of s.options ?? []) checkEnglish(file, id, o, 'option');
+      if (!Number.isInteger(s.answer) || s.answer < 0 || s.answer >= (s.options?.length ?? 0))
+        err(file, id, 'answer must be an index into options');
+      if (s.labels && s.labels.length !== s.options.length) err(file, id, 'labels must match options');
+      if (!s.why) err(file, id, 'quick needs why (shown in the sprint)');
+      break;
+    }
+    case 'insert': {
+      checkEnglish(file, id, s.text, 'text');
+      const p = parseInsert(s.text);
+      const slots = p.need.filter(Boolean);
+      if (slots.length < 1 || slots.length > 5) err(file, id, `text has ${slots.length} missing articles (1–5)`);
+      for (const a of slots) if (!ARTICLES.includes(a)) err(file, id, `{${a}} is not an article`);
+      if (p.words.length < 6 || p.words.length > 24) err(file, id, `text has ${p.words.length} words (6–24)`);
+      if (/\{[^}]*\}\s*$/.test(s.text)) err(file, id, 'an article cannot end the text');
+      if (/\{[^}]*\}\S|\S\{[^}]*\}/.test(s.text)) err(file, id, 'braces must be separate words');
+      p.need.forEach((a, i) => {
+        const vowel = /^[aeiou]/i.test(p.words[i]);
+        if (a === 'an' && !vowel && !/^(hour|honest|MBA)/.test(p.words[i])) err(file, id, `"an ${p.words[i]}"?`);
+      });
+      if (!s.why) err(file, id, 'insert needs why');
+      break;
+    }
+    case 'story': {
+      if (!s.title) err(file, id, 'story needs title');
+      checkEnglish(file, id, s.text, 'text');
+      const st = parseStory(s.text);
+      if (st.gaps.length < 3 || st.gaps.length > 8) err(file, id, `story has ${st.gaps.length} gaps (3–8)`);
+      st.gaps.forEach((g, i) => {
+        if (g.options.length < 2 || g.options.length > 4) err(file, id, `gap ${i + 1} needs 2–4 options`);
+        if (new Set(g.options).size !== g.options.length) err(file, id, `gap ${i + 1} options not distinct`);
+        if (g.options.some((o) => !isStr(o))) err(file, id, `gap ${i + 1} has an empty option`);
+      });
+      if (!Array.isArray(s.notes) || s.notes.length !== st.gaps.length)
+        err(file, id, `notes must have one entry per gap (${st.gaps.length})`);
+      (s.notes ?? []).forEach((n, i) => checkL10n(file, id, n, `notes[${i}]`));
       break;
     }
     default:

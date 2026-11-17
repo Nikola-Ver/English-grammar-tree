@@ -2,10 +2,15 @@
  * Heavy practice entry point (rule data + drill content). Loaded lazily by the UI.
  */
 import type { i18n as I18nInstance } from 'i18next';
-import { DATA } from '../data/grammar';
+import { DATA, type Rule } from '../data/grammar';
 import { MURPHY_DATA } from '../data/murphy';
 import { readDoneMap } from '../hooks/useProgress';
-import { getRuleContentBundle, normalizeUiLang, type UiLang } from '../i18n/localizeRules';
+import {
+  getRuleContentBundle,
+  localizeRule,
+  normalizeUiLang,
+  type UiLang,
+} from '../i18n/localizeRules';
 import { shakyRuleIds } from './claude';
 import { getPracticeIndex, type PracticeIndex } from './items';
 import type { CtxBase } from './spec';
@@ -68,6 +73,21 @@ export function ruleTitle(i18n: I18nInstance, ruleId: string): string {
   }
   titleCache.set(key, title);
   return title;
+}
+
+/** A grammar rule or Murphy unit in the interface language; null for word topics. */
+export function findRule(i18n: I18nInstance, ruleId: string): Rule | null {
+  const lang = normalizeUiLang(i18n.language);
+  const bundle = lang === 'ru' ? undefined : getRuleContentBundle(i18n);
+  for (const [levels, kind] of [
+    [DATA, 'grammar'],
+    [MURPHY_DATA, 'murphy'],
+  ] as const) {
+    for (const lvl of levels)
+      for (const c of lvl.categories)
+        for (const r of c.rules) if (r.id === ruleId) return localizeRule(r, kind, bundle, lang);
+  }
+  return null;
 }
 
 /** Progress map a rule belongs to; null for word topics (they have no ✓ in Grammar/Murphy). */

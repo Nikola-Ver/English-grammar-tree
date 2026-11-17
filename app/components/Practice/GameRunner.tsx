@@ -34,26 +34,29 @@ import {
   streakView,
   todayStat,
 } from '../../practice/store';
-import type { Exercise } from '../../practice/types';
+import type { Exercise, QuickEx } from '../../practice/types';
 import { copyToClipboard } from '../../utils/clipboard';
 import { ChoiceExercise } from './exercises/ChoiceExercise';
-import { Html } from './exercises/common';
+import { displayOption, GapText, Html } from './exercises/common';
 import { GapsExercise } from './exercises/GapsExercise';
+import { InsertExercise } from './exercises/InsertExercise';
 import { MatchExercise } from './exercises/MatchExercise';
+import { QuickExercise } from './exercises/QuickExercise';
 import { SortExercise } from './exercises/SortExercise';
 import { SpotExercise } from './exercises/SpotExercise';
+import { StoryExercise } from './exercises/StoryExercise';
 import { TilesExercise } from './exercises/TilesExercise';
 import { TimelineExercise } from './exercises/TimelineExercise';
 import { TranslateExercise } from './exercises/TranslateExercise';
 import { TreeExercise } from './exercises/TreeExercise';
 import { TrueFalseExercise } from './exercises/TrueFalseExercise';
 import { TypeExercise } from './exercises/TypeExercise';
+import { RulePeek } from './RulePeek';
 import './Practice.css';
 
 interface Props {
   request: PracticeRequest;
   onClose: () => void;
-  onOpenRule: (ruleId: string) => void;
   /** start another request from the results screen (e.g. "practise this rule") */
   onStart: (req: PracticeRequest) => void;
 }
@@ -109,10 +112,16 @@ function renderExercise(
       return <TimelineExercise ex={ex} {...p} />;
     case 'translate':
       return <TranslateExercise ex={ex} {...p} />;
+    case 'quick':
+      return <QuickExercise ex={ex} {...p} />;
+    case 'insert':
+      return <InsertExercise ex={ex} {...p} />;
+    case 'story':
+      return <StoryExercise ex={ex} {...p} />;
   }
 }
 
-export default function GameRunner({ request, onClose, onOpenRule, onStart }: Props) {
+export default function GameRunner({ request, onClose, onStart }: Props) {
   const { t, i18n } = useTranslation();
   const lang = normalizeUiLang(i18n.language);
   const base = useMemo(() => makeCtxBase(i18n), [i18n]);
@@ -145,6 +154,8 @@ export default function GameRunner({ request, onClose, onOpenRule, onStart }: Pr
   const [done, setDone] = useState(queue.length === 0);
   const [retried] = useState(() => new Set<string>());
   const exStart = useRef(Date.now());
+  /** rule opened over the game (the round stays exactly where it was) */
+  const [peek, setPeek] = useState<string | null>(null);
   const praise = useRef(0);
 
   const current = queue[idx];
@@ -260,14 +271,16 @@ export default function GameRunner({ request, onClose, onOpenRule, onStart }: Pr
         }
       }
       if (correct) praise.current = (praise.current + 1) % PRAISE_COUNT;
-      if (sprint) setTimeout(() => advance(entry), correct ? 350 : 1100);
+      // a wrong quick pick shows its one-line reason, so it stays up a little longer
+      const pause = correct ? 350 : current.kind === 'quick' && current.why ? 2200 : 1100;
+      if (sprint) setTimeout(() => advance(entry), pause);
     },
     [answered, done, current, combo, sprint, spec, retried, advance],
   );
 
   // Enter = continue
   useEffect(() => {
-    if (!answered || sprint || done) return;
+    if (!answered || sprint || done || peek) return;
     function onKey(e: KeyboardEvent) {
       if (e.key === 'Enter') {
         e.preventDefault();
@@ -279,7 +292,20 @@ export default function GameRunner({ request, onClose, onOpenRule, onStart }: Pr
       clearTimeout(id);
       window.removeEventListener('keydown', onKey);
     };
-  }, [answered, sprint, done, advance, last]);
+  }, [answered, sprint, done, advance, last, peek]);
+
+  // Esc = the ✕ button: close the rule if one is open, otherwise leave the game
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key !== 'Escape') return;
+      e.preventDefault();
+      if (peek) setPeek(null);
+      else if (done) onClose();
+      else closeEarly();
+    }
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [peek, done, onClose, closeEarly]);
 
   if (done) {
     return createPortal(
@@ -294,9 +320,13 @@ export default function GameRunner({ request, onClose, onOpenRule, onStart }: Pr
             masteryBefore={masteryBefore}
             lang={lang}
             onClose={onClose}
-            onOpenRule={onOpenRule}
+            onOpenRule={(id) => {
+              // word topics have no rule page
+              if (base.index.rules.get(id)?.track !== 'words') setPeek(id);
+            }}
             onStart={onStart}
           />
+          {peek && <RulePeek ruleId={peek} onClose={() => setPeek(null)} />}
         </div>
       </div>,
       document.body,
@@ -390,7 +420,7 @@ export default function GameRunner({ request, onClose, onOpenRule, onStart }: Pr
               {ruleId &&
                 base.index.rules.get(ruleId) &&
                 base.index.rules.get(ruleId)?.track !== 'words' && (
-                  <button type="button" className="pr-rule-link" onClick={() => onOpenRule(ruleId)}>
+                  <button type="button" className="pr-rule-link" onClick={() => setPeek(ruleId)}>
                     📖 {ruleTitle(i18n, ruleId)}
                   </button>
                 )}
@@ -409,6 +439,7 @@ export default function GameRunner({ request, onClose, onOpenRule, onStart }: Pr
             {t('practice.score')}: <b>{correctCount}</b>
           </div>
         )}
+        {peek && <RulePeek ruleId={peek} onClose={() => setPeek(null)} />}
       </div>
     </div>,
     document.body,
@@ -573,6 +604,13 @@ function Results({
     setPlacementApplied(true);
   }
 
+  // quick-fire rounds leave no time to read: list what went wrong, once each
+  const review: QuickEx[] = [];
+  for (const l of log) {
+    if (l.correct || l.ex.kind !== 'quick' || review.length >= 6) continue;
+    if (!review.some((r) => r.itemId === l.ex.itemId)) review.push(l.ex);
+  }
+
   const beat = spec.challenge ? correct > spec.challenge.sc : undefined;
   const headline =
     req.type === 'placement'
@@ -648,6 +686,20 @@ function Results({
           ) : (
             <p className="pr-ok-note">✓ {t('practice.results.placementSaved')}</p>
           )}
+        </div>
+      )}
+
+      {review.length > 0 && (
+        <div className="pr-review">
+          <div className="pr-section-label">{t('practice.results.review')}</div>
+          {review.map((ex) => (
+            <div key={ex.itemId} className="pr-review-row">
+              <div className="pr-review-text">
+                <GapText text={ex.prompt} fill={displayOption(ex.options[ex.answer])} state="ok" />
+              </div>
+              {ex.why && <Html className="pr-review-why" html={ex.why} />}
+            </div>
+          ))}
         </div>
       )}
 

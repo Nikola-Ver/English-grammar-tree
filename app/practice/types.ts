@@ -15,7 +15,10 @@ export type Exercise =
   | TrueFalseEx
   | TreeEx
   | TimelineEx
-  | TranslateEx;
+  | TranslateEx
+  | QuickEx
+  | InsertEx
+  | StoryEx;
 
 export interface ExBase {
   /** SRS item this exercise exercises (several exercises can share one item). */
@@ -123,6 +126,33 @@ export interface TranslateEx extends ExBase {
   answer: string;
   alts?: string[];
   trap?: TrapKey;
+}
+
+/** One gap, a few options that always sit in the same place (article blitz, tense duel). */
+export interface QuickEx extends ExBase {
+  kind: 'quick';
+  prompt: string;
+  /** shown in this order, never shuffled */
+  options: string[];
+  /** small captions under the options */
+  labels?: string[];
+  /** index of the right option */
+  answer: number;
+}
+
+/** Put the missing articles back (see parseInsert in gameText.ts). */
+export interface InsertEx extends ExBase {
+  kind: 'insert';
+  text: string;
+}
+
+/** A story with a choice in every gap (see parseStory in gameText.ts). */
+export interface StoryEx extends ExBase {
+  kind: 'story';
+  title: string;
+  text: string;
+  /** one explanation per gap */
+  notes: string[];
 }
 
 /** A unit of spaced repetition with one or more ways to practise it. */

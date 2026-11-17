@@ -274,6 +274,15 @@ function drillFrom(item, ruleId) {
         answer: v.options[0],
         why,
       };
+    if (v.kind === 'quick')
+      return {
+        ...base,
+        task: 'Choose the right option',
+        prompt: v.prompt,
+        options: v.options.map((o) => (o === '—' ? '(no article)' : o)),
+        answer: v.options[v.answer] === '—' ? '(no article)' : v.options[v.answer],
+        why,
+      };
     if (v.kind === 'translate')
       return { ...base, task: 'Translate into English', prompt: v.source, answer: v.answer, why };
     if (v.kind === 'type' && !v.say && v.prompt)

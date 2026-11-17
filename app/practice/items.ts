@@ -294,6 +294,26 @@ export function seedToExercise(seed: Seed, lang: UiLang): Exercise {
       };
     case 'type':
       return { ...base, kind: 'type', prompt: seed.prompt, answer: seed.answer, alts: seed.alts };
+    case 'quick':
+      return {
+        ...base,
+        ...(seed.instr ? { instr: seed.instr } : {}),
+        kind: 'quick',
+        prompt: seed.prompt,
+        options: seed.options,
+        labels: seed.labels,
+        answer: seed.answer,
+      };
+    case 'insert':
+      return { ...base, kind: 'insert', text: seed.text };
+    case 'story':
+      return {
+        ...base,
+        kind: 'story',
+        title: pickL10n(seed.title, lang) ?? '',
+        text: seed.text,
+        notes: seed.notes.map((n) => pickL10n(n, lang) ?? ''),
+      };
   }
 }
 

@@ -1,5 +1,7 @@
 import { ADJECTIVE_DRILLS } from './adjectives';
 import { ADVANCED_DRILLS } from './advanced';
+import { ARTICLE_BLITZ } from './articleBlitz';
+import { ARTICLE_REPAIR } from './articleRepair';
 import { ARTICLE_DRILLS } from './articles';
 import { CLEFT_DRILLS } from './cleft';
 import { CONDITIONAL_DRILLS } from './conditionals';
@@ -15,6 +17,8 @@ import { QUESTION_DRILLS } from './questions';
 import { REGISTER_DRILLS } from './register';
 import { RELATIVE_DRILLS } from './relatives';
 import { REPORTED_DRILLS } from './reported';
+import { TENSE_STORIES } from './stories';
+import { TENSE_DUEL } from './tenseDuel';
 import { TENSE_DRILLS } from './tenses';
 import { TRANSLATE_DRILLS } from './translate';
 import type { Seed } from './types';
@@ -52,6 +56,10 @@ export const DRILL_SETS = {
   phrasal: PHRASAL_DRILLS,
   verbPrep: VERB_PREP_DRILLS,
   politeness: POLITENESS_DRILLS,
+  articleBlitz: ARTICLE_BLITZ,
+  articleRepair: ARTICLE_REPAIR,
+  tenseDuel: TENSE_DUEL,
+  stories: TENSE_STORIES,
 } satisfies Record<string, Seed[]>;
 
 export type DrillSetKey = keyof typeof DRILL_SETS;

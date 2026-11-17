@@ -753,14 +753,22 @@
 }
 .pr-game-meta {
   grid-column: 2;
+  /* cards in a row share one height: keep the labels their own size instead of stretching */
+  align-self: start;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 5px;
   margin-top: 7px;
-  font-size: 10px;
+  font-size: 11px;
 }
 .pr-game-meta > span {
-  padding: 1px 7px;
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  line-height: 1;
+  white-space: nowrap;
   border-radius: 6px;
   background: var(--bg3);
   color: var(--muted2);
@@ -1110,6 +1118,7 @@
   animation: pr-fade 0.2s ease;
 }
 .pr-runner {
+  position: relative;
   width: 100%;
   max-width: 720px;
   background: var(--bg);
@@ -2312,4 +2321,373 @@
   border-radius: 10px;
   background: rgba(var(--rgb-amber), 0.1);
   border: 1px solid rgba(var(--rgb-amber), 0.35);
+}
+
+/* ---------- quick pick: article blitz, tense duel ---------- */
+
+.pr-quick {
+  gap: 18px;
+}
+.pr-quick-card {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 16px;
+  padding: 26px 18px;
+  text-align: center;
+  min-height: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  transition:
+    transform 0.18s ease,
+    border-color 0.15s,
+    background 0.15s;
+  touch-action: pan-y;
+}
+.pr-quick.duel .pr-quick-card {
+  cursor: grab;
+  user-select: none;
+}
+.pr-quick-card.ok {
+  border-color: var(--pr-ok);
+  background: var(--pr-ok-bg);
+  animation: pr-pop 0.3s;
+}
+.pr-quick-card.bad {
+  border-color: var(--pr-bad);
+  background: var(--pr-bad-bg);
+  animation: pr-shake 0.35s;
+}
+.pr-quick-why {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text);
+  animation: pr-fade 0.2s ease;
+}
+.pr-quick-keys {
+  display: grid;
+  gap: 10px;
+}
+.pr-quick-key {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-height: 74px;
+  padding: 12px 8px 14px;
+  font-family: "Outfit", sans-serif;
+  border-radius: 14px;
+  border: 1px solid var(--border2);
+  border-bottom-width: 4px;
+  background: var(--bg2);
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    transform 0.1s,
+    border-color 0.15s,
+    background 0.15s;
+}
+.pr-quick-key:hover:not(:disabled),
+.pr-quick-key.lean {
+  border-color: var(--b2);
+  background: rgba(var(--rgb-b2), 0.1);
+}
+.pr-quick-key:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+.pr-quick-key:disabled {
+  cursor: default;
+}
+.pr-quick-key.ok {
+  border-color: var(--pr-ok);
+  background: var(--pr-ok-bg);
+}
+.pr-quick-key.bad {
+  border-color: var(--pr-bad);
+  background: var(--pr-bad-bg);
+}
+.pr-quick-key.dim {
+  opacity: 0.45;
+}
+.pr-quick-form {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.pr-quick.duel .pr-quick-form {
+  font-size: 18px;
+}
+.pr-quick-label {
+  font-size: 11px;
+  color: var(--muted2);
+  letter-spacing: 0.02em;
+}
+.pr-quick-key .pr-key {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  min-width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
+@media (max-width: 480px) {
+  .pr-quick.duel .pr-quick-form {
+    font-size: 16px;
+  }
+  .pr-quick-key .pr-key {
+    display: none;
+  }
+}
+
+/* ---------- article repair ---------- */
+
+.pr-ins-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+}
+.pr-ins-count {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--bg3);
+}
+.pr-ins-text {
+  font-size: 20px;
+  line-height: 2.3;
+}
+.pr-ins-word {
+  font: inherit;
+  color: var(--text);
+  background: none;
+  border: none;
+  border-bottom: 2px dotted var(--border2);
+  border-radius: 6px 6px 0 0;
+  padding: 2px 3px;
+  margin: 0 2px;
+  cursor: pointer;
+  transition:
+    background 0.12s,
+    border-color 0.12s;
+}
+.pr-ins-word:hover:not(:disabled) {
+  background: rgba(var(--rgb-b2), 0.1);
+  border-color: var(--b2);
+}
+.pr-ins-word:disabled {
+  cursor: default;
+  border-bottom-color: transparent;
+}
+.pr-ins-art {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0 7px;
+  margin-right: 5px;
+  border-radius: 7px;
+  color: var(--b2);
+  background: rgba(var(--rgb-b2), 0.14);
+  border: 1.5px solid var(--b2);
+  line-height: 1.5;
+  animation: pr-pop 0.2s;
+}
+.pr-ins-word.ok .pr-ins-art {
+  color: var(--pr-ok);
+  background: var(--pr-ok-bg);
+  border-color: var(--pr-ok);
+}
+.pr-ins-word.missed .pr-ins-art {
+  color: var(--pr-ok);
+  background: none;
+  border: 1.5px dashed var(--pr-ok);
+}
+.pr-ins-wrong {
+  color: var(--pr-bad);
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+/* ---------- story time ---------- */
+
+.pr-story-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pr-story-text {
+  font-size: 17px;
+  line-height: 2.25;
+}
+.pr-story-gap {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  padding: 1px 9px;
+  margin: 0 2px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border2);
+  background: var(--bg2);
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.pr-story-gap.empty {
+  color: var(--muted2);
+  font-style: italic;
+  border-style: dashed;
+}
+.pr-story-gap.active {
+  border-color: var(--b2);
+  background: rgba(var(--rgb-b2), 0.14);
+  box-shadow: 0 0 0 3px rgba(var(--rgb-b2), 0.18);
+}
+.pr-story-gap.ok {
+  border-color: var(--pr-ok);
+  background: var(--pr-ok-bg);
+}
+.pr-story-gap.bad {
+  border-color: var(--pr-bad);
+  background: var(--pr-bad-bg);
+  white-space: normal;
+}
+.pr-story-gap.bad s {
+  color: var(--pr-bad);
+  margin-right: 6px;
+}
+.pr-story-gap:disabled {
+  cursor: default;
+}
+.pr-story-bar {
+  position: sticky;
+  bottom: 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 10px 0 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pr-story-bar-label {
+  font-size: 12px;
+  color: var(--muted2);
+}
+.pr-story-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+.pr-story-options .pr-option {
+  padding: 11px 12px;
+  font-size: 15px;
+}
+.pr-option.picked {
+  border-color: var(--b2);
+  background: rgba(var(--rgb-b2), 0.12);
+}
+.pr-story-notes {
+  margin: 0;
+  padding: 10px 14px 10px 30px;
+  border-radius: 10px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ---------- results: what went wrong in a quick-fire round ---------- */
+
+.pr-review {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pr-review-row {
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+}
+.pr-review-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+.pr-review-text .pr-blank {
+  min-width: 0;
+  padding: 0 4px;
+}
+.pr-review-why {
+  display: block;
+  font-size: 13px;
+  color: var(--muted2);
+  margin-top: 2px;
+}
+
+/* ---------- the rule, opened over a game ---------- */
+
+.pr-peek {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  animation: pr-up 0.22s ease;
+}
+.pr-peek-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.pr-peek-tab {
+  font-size: 13px;
+  color: var(--b2);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pr-peek-tab:hover {
+  text-decoration: underline;
+}
+.pr-peek-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px 18px calc(24px + env(safe-area-inset-bottom));
+}
+.pr-peek-title {
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  margin: 0;
+}
+.pr-peek-note {
+  font-size: 14px;
+  color: var(--muted2);
+  margin: 6px 0 0;
+}
+/* the Grammar tab animates this box open; here it is simply shown */
+.rule-exp.pr-peek-exp {
+  max-height: none;
+  opacity: 1;
+  overflow: visible;
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+.pr-peek .ru-contrast {
+  margin: 14px 0 0;
+}
+/* starting another session from here would end the game in progress */
+.pr-peek .ru-contrast-train {
+  display: none;
 }

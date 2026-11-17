@@ -368,7 +368,12 @@
       "markerSort": "按时态分类时间标志词",
       "sameScene": "哪个句子意思相同？",
       "numbers": "听音并用数字输入",
-      "translate": "翻译成英语"
+      "translate": "翻译成英语",
+      "quick": "选出合适的一项",
+      "articleBlitz": "a、an、the — 还是不用 (∅)？",
+      "tenseDuel": "哪种形式合适？点击、滑动或按 ← →",
+      "insert": "冠词不见了。点击单词，在它前面加上冠词",
+      "story": "为每个空选择正确的形式"
     },
     "tapTiles": "点击下方的单词…",
     "clear": "清除",
@@ -404,7 +409,8 @@
       "practiseRule": "先练习这条规则",
       "challenge": "挑战好友",
       "again": "再玩一次",
-      "done": "完成"
+      "done": "完成",
+      "review": "值得再看一遍"
     },
     "stage": {
       "icon0": "🌰",
@@ -751,6 +757,22 @@
       "polite": {
         "title": "别说得无礼",
         "desc": "把直接的请求改成礼貌的英语"
+      },
+      "article-blitz": {
+        "title": "冠词闪电战",
+        "desc": "a、an、the 还是不用：60 秒，四个按键"
+      },
+      "article-repair": {
+        "title": "冠词修理站",
+        "desc": "一段没有冠词的文字，把它们放回去"
+      },
+      "tense-duel": {
+        "title": "时态对决",
+        "desc": "一个句子，两种形式，快速选择"
+      },
+      "story-time": {
+        "title": "小故事",
+        "desc": "每个动词都要选对时态的短故事"
       }
     },
     "progress": {
@@ -928,6 +950,17 @@
       "connectCancel": "取消",
       "connectSignIn": "请先登录账号，然后允许连接。",
       "signIn": "登录"
+    },
+    "insert": {
+      "count": "已添加冠词：{{n}} / {{total}}",
+      "hint": "再点一次可更换：a → an → the → 不用"
+    },
+    "story": {
+      "gap": "第 {{i}} 空，共 {{n}} 空"
+    },
+    "peek": {
+      "back": "返回游戏",
+      "newTab": "在新标签页中打开"
     }
   },
   "social": {

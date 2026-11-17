@@ -34,7 +34,7 @@ Grammar textbooks are long. Apps are noisy. **English Grammar Tree** is a single
 <td width="50%">
 
 ### 🌳 Grow your grammar tree
-Daily 5-minute sessions with spaced repetition, 43 rule-linked games, streaks, badges and level exams. Your progress is a painted tree: bare at first, then every rule you learn puts leaves, blossom and finally an apple on its own twigs.
+Daily 5-minute sessions with spaced repetition, 47 rule-linked games, streaks, badges and level exams. Your progress is a painted tree: bare at first, then every rule you learn puts leaves, blossom and finally an apple on its own twigs.
 
 </td>
 <td width="50%">
@@ -142,9 +142,9 @@ Under the hood the tree is a painting cut into a trunk and six limbs, with leave
 - **Placement test** — a 5-minute adaptive test that finds your level and can mark lower levels as known.
 - **Streaks with freezes, a daily XP goal, levels** and **20 badges**.
 
-#### 🎮 Games — 43 ways to practise the same rules
+#### 🎮 Games — 47 ways to practise the same rules
 
-![Games: recommendations on top, then all 43 games with filters by group](screenshots/games.png)
+![Games: recommendations on top, then the games with filters by group](screenshots/games.png)
 
 Every game is tied to grammar rules, so playing is never separate from learning: each answer moves the same spaced-repetition schedule as the daily session, earns XP towards your daily goal, and grows the same tree.
 
@@ -154,6 +154,13 @@ Every game is tied to grammar rules, so playing is never separate from learning:
 - **Each card shows** the levels it covers, its mode and your best score.
 
 A round is deliberately small: one clear task at a time, instant feedback, and an explanation when you get it wrong.
+
+**Four games aim at the two things Russian has no equivalent for — articles and tenses:**
+
+- 🚀 **Article blitz** — a phrase and four keys that never move (*a · an · the · ∅*), 60 seconds on the clock. A wrong pick shows its one-line reason, and the results list everything worth another look.
+- 🔧 **Article repair** — a message written with no articles at all, the way a Russian speaker tends to write it. Tap a word to put an article in front of it, and leave alone the nouns that take none.
+- ⚔️ **Tense duel** — one sentence, two forms, always on the same sides: Past Simple vs Present Perfect, *I live here since…*, *will* after *when / if*, and more. Tap, swipe or use the arrow keys.
+- 🎬 **Story time** — short stories where every verb needs its tense chosen from the context, with a note for each gap you get wrong.
 
 ![A round of Error hunter: tap the word that is wrong](screenshots/game-round.png)
 

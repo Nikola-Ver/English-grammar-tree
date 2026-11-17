@@ -368,7 +368,12 @@
       "markerSort": "Clasifica los marcadores de tiempo por tiempo verbal",
       "sameScene": "¿Qué frase tiene este significado?",
       "numbers": "Escucha y escribe el número con cifras",
-      "translate": "Traduce al inglés"
+      "translate": "Traduce al inglés",
+      "quick": "Elige la opción que encaja",
+      "articleBlitz": "a, an, the — ¿o nada (∅)?",
+      "tenseDuel": "¿Qué forma encaja? Toca, desliza o pulsa ← →",
+      "insert": "Faltan los artículos. Toca una palabra para poner un artículo delante",
+      "story": "Elige la forma correcta para cada hueco"
     },
     "tapTiles": "Toca las palabras de abajo…",
     "clear": "Borrar",
@@ -404,7 +409,8 @@
       "practiseRule": "Practica primero esta regla",
       "challenge": "Retar a un amigo",
       "again": "Jugar otra vez",
-      "done": "Listo"
+      "done": "Listo",
+      "review": "Para repasar"
     },
     "stage": {
       "icon0": "🌰",
@@ -752,6 +758,22 @@
       "polite": {
         "title": "No suenes grosero",
         "desc": "Convierte peticiones directas en inglés educado"
+      },
+      "article-blitz": {
+        "title": "Artículos relámpago",
+        "desc": "a, an, the o nada: 60 segundos, cuatro teclas"
+      },
+      "article-repair": {
+        "title": "Taller de artículos",
+        "desc": "Un mensaje sin artículos. Ponlos en su sitio"
+      },
+      "tense-duel": {
+        "title": "Duelo de tiempos",
+        "desc": "Una frase, dos formas. Elige rápido"
+      },
+      "story-time": {
+        "title": "Historias",
+        "desc": "Historias cortas donde cada verbo necesita su tiempo"
       }
     },
     "progress": {
@@ -929,6 +951,17 @@
       "connectCancel": "Cancelar",
       "connectSignIn": "Primero inicia sesión en tu cuenta y luego permite la conexión.",
       "signIn": "Iniciar sesión"
+    },
+    "insert": {
+      "count": "Artículos añadidos: {{n}} de {{total}}",
+      "hint": "toca otra vez para cambiar: a → an → the → ninguno"
+    },
+    "story": {
+      "gap": "Hueco {{i}} de {{n}}"
+    },
+    "peek": {
+      "back": "Volver al juego",
+      "newTab": "Abrir en una pestaña nueva"
     }
   },
   "social": {
