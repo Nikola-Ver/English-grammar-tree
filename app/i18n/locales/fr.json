@@ -16,7 +16,8 @@
   "tabs": {
     "grammar": "📚 Grammaire",
     "murphy": "📖 Livres Murphy",
-    "tenses": "🕐 Arbre des temps"
+    "tenses": "🕐 Arbre des temps",
+    "practice": "🌳 Aujourd'hui"
   },
   "auth": {
     "title": "Connectez-vous pour synchroniser",
@@ -168,7 +169,9 @@
     "test": "✦ Quiz",
     "testCategory": "✦ Quiz thème",
     "testCategoryTitle": "Copier un prompt de quiz pour tout le thème",
-    "copyLinkTitle": "Copier le lien vers cette règle"
+    "copyLinkTitle": "Copier le lien vers cette règle",
+    "practice": "▶ S'entraîner",
+    "practiceTitle": "Travaillez cette règle avec des exercices rapides"
   },
   "category": {
     "collapseAll": "Tout replier",
@@ -302,5 +305,663 @@
       "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
       "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
     }
+  },
+  "practice": {
+    "close": "Fermer",
+    "combo": "Combo – réponses d'affilée",
+    "lives": "Il vous reste {{n}} vies",
+    "newRule": "Nouvelle règle",
+    "notQuite": "Pas tout à fait",
+    "partly": "Partiellement juste – {{pct}} %",
+    "continue": "Continuer",
+    "score": "Score",
+    "praise": {
+      "0": "Correct !",
+      "1": "Bien !",
+      "2": "Bravo !",
+      "3": "Exact !",
+      "4": "Excellent !",
+      "5": "Vous maîtrisez !"
+    },
+    "instr": {
+      "choice": "Choisissez la bonne réponse",
+      "gap": "Complétez le blanc",
+      "spot": "Touchez le mot incorrect",
+      "tiles": {
+        "build": "Traduisez : construisez la phrase anglaise",
+        "unscramble": "Remettez les mots dans l'ordre",
+        "question": "Transformez-la en question",
+        "negative": "Mettez-la à la forme négative",
+        "passive": "Réécrivez-la au passif",
+        "reported": "Rapportez ce qui a été dit",
+        "wish": "Exprimez-le comme un souhait",
+        "inversion": "Commencez par « {{start}} » et utilisez l'inversion",
+        "cleft": "Ajoutez de l'emphase avec une phrase clivée (cleft)",
+        "relative": "Reliez les phrases par une proposition relative",
+        "adjOrder": "Placez les adjectifs dans le bon ordre",
+        "conditional": "Réécrivez-la au conditionnel",
+        "tense": "Réécrivez-la au {{tense}}",
+        "formal": "Réécrivez-la dans un registre soutenu",
+        "polite": "Dites-le poliment"
+      },
+      "sort": "Touchez un élément, puis son groupe",
+      "match": "Associez les moitiés",
+      "gaps": "Complétez tous les blancs",
+      "type": "Saisissez la réponse",
+      "dictation": "Écoutez et saisissez ce que vous entendez",
+      "truefalse": "Cette phrase est-elle correcte ?",
+      "tree": "Trouvez le temps en répondant aux questions de l'arbre",
+      "timeline": "Quelle frise correspond à cette phrase ?",
+      "whichTense": "Quel est ce temps ?",
+      "pastSimple": "Choisissez la forme du Past Simple",
+      "markerSort": "Classez les marqueurs de temps par temps verbal",
+      "sameScene": "Quelle phrase a ce sens ?",
+      "numbers": "Écoutez et saisissez le nombre en chiffres",
+      "translate": "Traduisez en anglais"
+    },
+    "tapTiles": "Touchez les mots ci-dessous…",
+    "clear": "Effacer",
+    "check": "Vérifier",
+    "allPlaced": "Tout est placé – vérifiez votre réponse",
+    "tapToCycle": "touchez un blanc pour le changer",
+    "listen": "Écouter",
+    "listenSlow": "Écouter lentement",
+    "typeHere": "Saisissez ici…",
+    "correctSentence": "Correcte",
+    "hasMistake": "Contient une erreur",
+    "challengeShareText": "J'ai obtenu {{score}}/{{n}} dans English Grammar Tree. Pouvez-vous me battre ?",
+    "results": {
+      "placementTitle": "Votre niveau : {{level}}",
+      "examPassed": "Examen réussi !",
+      "testPassed": "Vous connaissez cette règle !",
+      "notPassed": "Pas cette fois",
+      "excellent": "Excellent travail !",
+      "good": "Bonne séance !",
+      "keepGoing": "Continuez, ça va rester !",
+      "correct": "correctes",
+      "bestCombo": "meilleur combo",
+      "challengeWon": "Vous avez battu les {{score}} de votre ami ! 🏆",
+      "challengeLost": "Votre ami a obtenu {{score}} – réessayez !",
+      "goalDone": "Objectif du jour atteint – série de {{n}} jours !",
+      "goalLeft": "Encore {{xp}} XP pour l'objectif du jour",
+      "placementText": "Les nouvelles règles commenceront à {{level}}. Vous pouvez marquer les niveaux inférieurs comme déjà connus.",
+      "placementMark": "Marquer les règles sous {{level}} comme connues",
+      "placementOnly": "Commencer simplement à {{level}}",
+      "placementSaved": "Enregistré. Vos séances quotidiennes partent désormais d'ici.",
+      "grown": "Votre arbre a grandi",
+      "newBadges": "Nouveaux badges",
+      "practiseRule": "Travaillez d'abord cette règle",
+      "challenge": "Défier un ami",
+      "again": "Rejouer",
+      "done": "Terminé"
+    },
+    "stage": {
+      "icon0": "🌰",
+      "icon1": "🌱",
+      "icon2": "🍃",
+      "icon3": "🌸",
+      "icon4": "🍎",
+      "name0": "Graine – non commencée",
+      "name1": "Pousse – commencée",
+      "name2": "Feuille – en apprentissage",
+      "name3": "Fleur – maîtrisée",
+      "name4": "Fruit – mémoire à long terme",
+      "nameClaimed": "Marquée comme connue",
+      "wilting": "à réviser"
+    },
+    "badges": {
+      "first_step": {
+        "title": "Premier pas",
+        "desc": "Répondez à votre premier exercice"
+      },
+      "first_session": {
+        "title": "En route",
+        "desc": "Terminez une séance"
+      },
+      "placement": {
+        "title": "Boussole",
+        "desc": "Passez le test de niveau"
+      },
+      "streak_3": {
+        "title": "Échauffement",
+        "desc": "Série de 3 jours"
+      },
+      "streak_7": {
+        "title": "En feu",
+        "desc": "Série de 7 jours"
+      },
+      "streak_30": {
+        "title": "Volcan",
+        "desc": "Série de 30 jours"
+      },
+      "correct_100": {
+        "title": "Cent",
+        "desc": "100 bonnes réponses"
+      },
+      "correct_1000": {
+        "title": "Mille",
+        "desc": "1 000 bonnes réponses"
+      },
+      "xp_1000": {
+        "title": "Étoile",
+        "desc": "Gagnez 1 000 XP"
+      },
+      "xp_10000": {
+        "title": "Superstar",
+        "desc": "Gagnez 10 000 XP"
+      },
+      "rules_5": {
+        "title": "Premières fleurs",
+        "desc": "Maîtrisez 5 règles"
+      },
+      "rules_25": {
+        "title": "Arbre qui grandit",
+        "desc": "Maîtrisez 25 règles"
+      },
+      "rules_100": {
+        "title": "Forêt",
+        "desc": "Maîtrisez 100 règles"
+      },
+      "fixer_10": {
+        "title": "Correcteur",
+        "desc": "Éliminez 10 éléments de votre paquet d'erreurs"
+      },
+      "explorer": {
+        "title": "Explorateur",
+        "desc": "Jouez à 10 jeux différents"
+      },
+      "perfect": {
+        "title": "Sans faute",
+        "desc": "Une séance parfaite de 10+ réponses"
+      },
+      "combo_15": {
+        "title": "Éclair",
+        "desc": "15 bonnes réponses d'affilée"
+      },
+      "sprinter": {
+        "title": "Sprinteur",
+        "desc": "Obtenez 25+ lors d'un sprint de 60 secondes"
+      },
+      "boss_1": {
+        "title": "Couronné",
+        "desc": "Réussissez un examen de niveau"
+      },
+      "boss_all": {
+        "title": "Grand maître",
+        "desc": "Réussissez les six examens de niveau"
+      }
+    },
+    "cert": {
+      "heading": "Certificat de réussite",
+      "line": "a réussi l'examen de niveau d'English Grammar Tree",
+      "score": "Score {{pct}} %",
+      "download": "Télécharger le certificat"
+    },
+    "levelName": {
+      "A1": "Débutant",
+      "A2": "Élémentaire",
+      "B1": "Intermédiaire",
+      "B2": "Intermédiaire supérieur",
+      "C1": "Avancé",
+      "C2": "Maîtrise"
+    },
+    "challenge": {
+      "title": "Vous êtes défié !",
+      "text": "Un ami a obtenu {{score}}/{{n}} dans « {{game}} ». Jouez la même manche et battez-le.",
+      "accept": "Relever le défi",
+      "dismiss": "Plus tard"
+    },
+    "streakDays_one": "jour de série",
+    "streakDays_other": "jours de série",
+    "freezeHint": "Gel de série : un jour manqué est couvert automatiquement. Vous en gagnez un tous les 7 jours de série.",
+    "goalHint": "Gagnez des XP pour atteindre votre objectif quotidien et garder la série",
+    "dailyGoal": "objectif du jour",
+    "level": "Niveau {{n}}",
+    "cta": {
+      "placement": "Trouvez votre niveau",
+      "placementSub": "Un test adaptatif de 5 minutes – passez ce que vous savez déjà",
+      "startFromZero": "Commencer depuis le début",
+      "dailySub": "12 exercices courts · environ 5 minutes",
+      "daily": "Arrosez votre arbre",
+      "dailyMore": "Encore une séance",
+      "dailyInfo": "{{due}} révisions à faire",
+      "newRule": "nouveau : {{rule}}",
+      "deck": "Corriger mes erreurs ({{n}})",
+      "deckSub": "Chacune disparaît après 3 bonnes réponses à des jours différents"
+    },
+    "tree": {
+      "title": "Votre arbre de grammaire",
+      "meta": "{{mastered}}/{{total}} règles en fleur",
+      "wilting": "{{n}} à réviser",
+      "aria": "Arbre de grammaire : une branche par niveau, une feuille par règle",
+      "hint": "Touchez une feuille pour voir la règle et la pratiquer"
+    },
+    "accuracy": "{{pct}} % de réussite",
+    "itemsSeen": "{{seen}}/{{total}} exercices essayés",
+    "practise": "S'entraîner",
+    "openRule": "Ouvrir la règle",
+    "exams": {
+      "title": "Examens de niveau",
+      "meta": "20 questions variées · 80 % pour réussir · gagnez une couronne et un certificat",
+      "best": "meilleur {{pct}} %",
+      "notTaken": "non passé"
+    },
+    "arcade": {
+      "title": "Jeux",
+      "meta": "{{n}} jeux, chacun lié à des règles de grammaire",
+      "groups": {
+        "core": "Essentiels – chaque règle",
+        "tenses": "Temps et verbes",
+        "words": "Mots et expressions",
+        "structures": "Structures de phrase",
+        "advanced": "Avancé (C1–C2)"
+      },
+      "noSpeech": "Votre navigateur n'a pas de synthèse vocale",
+      "mode": {
+        "sprint": "Sprint 60 s",
+        "survival": "3 vies"
+      },
+      "best": "meilleur {{score}}",
+      "recommended": "Recommandé pour vous",
+      "all": "Tous",
+      "new": "nouveau",
+      "noTranslation": "Disponible quand la langue de l'interface n'est pas l'anglais"
+    },
+    "games": {
+      "daily-challenge": {
+        "title": "Défi du jour",
+        "desc": "Les mêmes 15 questions pour tous aujourd'hui – comparez vos scores"
+      },
+      "error-hunter": {
+        "title": "Chasseur d'erreurs",
+        "desc": "Trouvez l'erreur que les apprenants font le plus"
+      },
+      "right-or-wrong": {
+        "title": "Juste ou faux ?",
+        "desc": "Jugez les phrases aussi vite que possible"
+      },
+      "gap-fill": {
+        "title": "Texte à trous",
+        "desc": "Choisissez le mot qui corrige la phrase"
+      },
+      "sentence-builder": {
+        "title": "Constructeur de phrases",
+        "desc": "Construisez des phrases avec des tuiles de mots"
+      },
+      "dictation": {
+        "title": "Dictée",
+        "desc": "Écoutez une phrase et saisissez-la"
+      },
+      "survival": {
+        "title": "Survie",
+        "desc": "Questions variées sans fin, de plus en plus difficiles"
+      },
+      "murphy-drill": {
+        "title": "Entraînement Murphy",
+        "desc": "Erreurs courantes des unités de Murphy"
+      },
+      "tense-detective": {
+        "title": "Détective des temps",
+        "desc": "Déduisez le temps étape par étape"
+      },
+      "timeline-match": {
+        "title": "Phrase et frise",
+        "desc": "Associez une phrase à sa frise chronologique"
+      },
+      "which-tense": {
+        "title": "Quel temps ?",
+        "desc": "Nommez le temps d'une phrase"
+      },
+      "marker-sort": {
+        "title": "Tri des marqueurs",
+        "desc": "Classez des mots de temps comme « since » et « yesterday »"
+      },
+      "same-scene": {
+        "title": "Même scène, deux temps",
+        "desc": "Sentez la différence entre des temps proches"
+      },
+      "tense-forms": {
+        "title": "Formes verbales",
+        "desc": "Choisissez la bonne forme du verbe en contexte"
+      },
+      "tense-chameleon": {
+        "title": "Caméléon des temps",
+        "desc": "Réécrivez une phrase à un autre temps"
+      },
+      "verb-forge": {
+        "title": "Forge des verbes",
+        "desc": "Verbes irréguliers : saisissez V2 et V3 contre la montre"
+      },
+      "verb-memory": {
+        "title": "Mémoire des verbes",
+        "desc": "Associez les verbes à leurs formes du passé"
+      },
+      "article-rush": {
+        "title": "Course aux articles",
+        "desc": "a, an, the ou rien – dans de vraies histoires"
+      },
+      "preposition-sort": {
+        "title": "Tri des prépositions",
+        "desc": "in, on, at et prépositions de mouvement"
+      },
+      "count-it": {
+        "title": "Comptez-le",
+        "desc": "Dénombrables, indénombrables, much, many, pluriels"
+      },
+      "adjective-stack": {
+        "title": "Pile d'adjectifs",
+        "desc": "Ordre des adjectifs, comparatifs, adverbes"
+      },
+      "number-dictation": {
+        "title": "Dictée de nombres",
+        "desc": "Écoutez nombres, années et prix – saisissez-les"
+      },
+      "question-maker": {
+        "title": "Faiseur de questions",
+        "desc": "Construisez questions et négations"
+      },
+      "consequence-match": {
+        "title": "Conséquences",
+        "desc": "Conditionnels : associez « if » au résultat"
+      },
+      "transformer": {
+        "title": "Transformateur",
+        "desc": "Transformez des phrases actives en phrases passives"
+      },
+      "gossip-chain": {
+        "title": "Chaîne de ragots",
+        "desc": "Rapportez ce que les gens ont dit"
+      },
+      "verb-patterns": {
+        "title": "Constructions verbales",
+        "desc": "-ing or to + verb?"
+      },
+      "detective": {
+        "title": "Détective",
+        "desc": "must, might, can't (have) – déduisez à partir d'indices"
+      },
+      "regret-machine": {
+        "title": "Machine à regrets",
+        "desc": "I wish, if only, it's time"
+      },
+      "sentence-welder": {
+        "title": "Soudeur de phrases",
+        "desc": "Reliez des phrases avec who, which, whose"
+      },
+      "formalizer": {
+        "title": "Formaliseur",
+        "desc": "Inversion : « Never have I… »"
+      },
+      "spotlight": {
+        "title": "Projecteur",
+        "desc": "Phrases clivées : « It was Tom who… »"
+      },
+      "connector-bridge": {
+        "title": "Pont des connecteurs",
+        "desc": "although, despite, however, therefore…"
+      },
+      "register-slider": {
+        "title": "Curseur de registre",
+        "desc": "Choisissez la version académique ; nuancez les affirmations"
+      },
+      "comma-tap": {
+        "title": "Touchez la virgule",
+        "desc": "Virgule, point-virgule ou rien ?"
+      },
+      "c-mix": {
+        "title": "Mix C1–C2",
+        "desc": "Participes, subjonctif, ellipse et plus"
+      },
+      "translate": {
+        "title": "Traduire en anglais",
+        "desc": "Saisissez l'anglais — les erreurs sont expliquées comme des pièges classiques"
+      },
+      "my-traps": {
+        "title": "Mes pièges",
+        "desc": "Une session ciblée sur les erreurs que vous faites le plus"
+      },
+      "false-friends": {
+        "title": "Faux amis",
+        "desc": "magazine, actual, sympathetic — pas ce qu'ils semblent"
+      },
+      "collocations": {
+        "title": "Mots associés",
+        "desc": "make ou do ? take ou make a photo ?"
+      },
+      "phrasal-verbs": {
+        "title": "Verbes à particule",
+        "desc": "give up, look after, find out…"
+      },
+      "verb-prep": {
+        "title": "Verbe + préposition",
+        "desc": "depend on, wait for, listen to"
+      },
+      "polite": {
+        "title": "Ne soyez pas impoli",
+        "desc": "Transformez des demandes directes en anglais poli"
+      }
+    },
+    "progress": {
+      "title": "Votre progression",
+      "answers": "réponses",
+      "accuracy": "réussite",
+      "minutes": "minutes d'entraînement",
+      "inReview": "en révision",
+      "bestStreak": "meilleure série",
+      "xpChart": "XP – 14 derniers jours",
+      "goal": "objectif {{xp}}",
+      "activity": "Activité – 16 dernières semaines",
+      "less": "moins",
+      "more": "plus",
+      "frozen": "gel de série",
+      "masteryChart": "Maîtrise par niveau",
+      "weakest": "Règles les plus faibles",
+      "wordsRow": "Mots"
+    },
+    "badgesTitle": "Badges",
+    "settings": {
+      "title": "Paramètres d'entraînement",
+      "goal": "Objectif quotidien",
+      "goal30": "Détendu 30",
+      "goal50": "Régulier 50",
+      "goal100": "Sérieux 100",
+      "goal150": "Intense 150",
+      "sound": "Effets sonores",
+      "on": "Activé",
+      "off": "Désactivé",
+      "placement": "Niveau de départ",
+      "retake": "repasser",
+      "reset": "Réinitialiser la progression",
+      "resetBtn": "Réinitialiser",
+      "resetConfirm": "Oui, tout réinitialiser",
+      "cancel": "Annuler"
+    },
+    "hero": {
+      "morning": "Bonjour",
+      "afternoon": "Bon après-midi",
+      "evening": "Bonsoir",
+      "night": "Vous veillez tard",
+      "nudgeStreak": "🔥 Pratiquez aujourd'hui pour garder votre série de {{n}} jours !",
+      "nudgeWilting": "🍂 {{n}} feuilles de votre arbre ont besoin d'eau.",
+      "nudgeGoal": "🎯 Encore {{xp}} XP pour l'objectif du jour – environ 5 minutes.",
+      "nudgeDone": "✅ Objectif atteint ! Chaque réponse en plus fait grandir votre arbre."
+    },
+    "sections": {
+      "label": "Sections du jour",
+      "tree": "Arbre",
+      "games": "Jeux",
+      "leaderboard": "Classement",
+      "progress": "Progression",
+      "badges": "Badges"
+    },
+    "translate": {
+      "placeholder": "Saisissez la phrase en anglais…",
+      "showAnswer": "Afficher la réponse",
+      "accepted": "Accepté ! Notre version :",
+      "diff": "Votre réponse comparée à la bonne",
+      "missing": "mot manquant",
+      "extra": "mot en trop"
+    },
+    "traps": {
+      "articles": {
+        "name": "Articles",
+        "desc": "a / an / the — ou aucun",
+        "hint": "Un nom dénombrable au singulier demande a/an (première mention, « one of ») ou the (nous savons tous deux lequel)."
+      },
+      "toBe": {
+        "name": "« to be » oublié",
+        "desc": "« I student » → I am a student",
+        "hint": "Une phrase anglaise a besoin d'un verbe : s'il n'y en a pas d'autre, utilisez am / is / are."
+      },
+      "tenses": {
+        "name": "Temps verbaux",
+        "desc": "Present Perfect vs Past Simple, Continuous",
+        "hint": "Vérifiez le moment : un moment terminé (yesterday, in 2020) → Past Simple ; jusqu'à maintenant (already, since, for) → Present Perfect."
+      },
+      "futureTime": {
+        "name": "will après when / if",
+        "desc": "« When he will come » → when he comes",
+        "hint": "Après when, if, as soon as, before, until, on utilise le présent, même pour parler du futur."
+      },
+      "wordOrder": {
+        "name": "Ordre des mots et questions",
+        "desc": "Les questions demandent do/does/did ; sujet avant le verbe",
+        "hint": "Les questions et les négations demandent un auxiliaire : Where does she live? I don't know. Dans les questions indirectes, gardez sujet + verbe."
+      },
+      "prepositions": {
+        "name": "Prépositions",
+        "desc": "depend on, wait for, at the weekend…",
+        "hint": "Les prépositions anglaises ne suivent pas toujours les françaises : apprenez-les avec le verbe : depend on, listen to, wait for."
+      },
+      "countable": {
+        "name": "Dénombrables et indénombrables",
+        "desc": "information, advice, news, much / many",
+        "hint": "Certains noms ne se comptent pas en anglais : information, advice, news, furniture — ni a/an, ni pluriel."
+      },
+      "conditionals": {
+        "name": "Conditionnels et souhaits",
+        "desc": "2e vs 3e conditionnel, wish",
+        "hint": "Pour le passé → had + V3 / would have + V3. Pour le présent ou un présent imaginaire → Past Simple / would + verbe."
+      },
+      "sequence": {
+        "name": "Discours rapporté",
+        "desc": "He said he was tired",
+        "hint": "Après said / told, le temps recule d'un cran : is → was, will → would, has done → had done."
+      },
+      "verbPatterns": {
+        "name": "-ing ou to + verbe",
+        "desc": "enjoy doing, decide to do",
+        "hint": "Certains verbes prennent -ing (enjoy, avoid, finish), d'autres to + verbe (decide, want, hope) : apprenez la construction avec le verbe."
+      },
+      "modals": {
+        "name": "Verbes modaux",
+        "desc": "must vs have to, can / could",
+        "hint": "Les verbes modaux se construisent avec le verbe nu (sans to, sans -s) : she can swim, you must go."
+      },
+      "falseFriends": {
+        "name": "Faux amis",
+        "desc": "actually ≠ actuellement",
+        "hint": "Les mots qui ressemblent aux mots français veulent souvent dire autre chose : magazine = revue (a shop = magasin)."
+      },
+      "collocations": {
+        "name": "Mots associés",
+        "desc": "make vs do, take a photo",
+        "hint": "Certains mots vont simplement ensemble en anglais : make a mistake, do homework, take a photo."
+      },
+      "phrasal": {
+        "name": "Verbes à particule",
+        "desc": "give up, look after, find out",
+        "hint": "Le petit mot change le sens : look for = chercher, look after = s'occuper de."
+      },
+      "politeness": {
+        "name": "Rester poli",
+        "desc": "Could I have…? plutôt que Give me…",
+        "hint": "Les ordres directs sonnent mal en anglais : utilisez Could you…? / Could I have…, please? / I'd like…"
+      }
+    },
+    "trapsCard": {
+      "title": "Vos pièges",
+      "meta": "Là où votre langue maternelle vous coûte des points",
+      "empty": "Répondez à environ 20 questions et l'application vous montrera les pièges qui vous piègent le plus. Vous pouvez dès maintenant vous entraîner sur n'importe lequel.",
+      "stats": "{{acc}} % de réussite · {{n}} réponses · {{deck}} dans le paquet d'erreurs",
+      "noData": "pas encore essayé",
+      "train": "S'entraîner",
+      "trainTop": "Travailler mes principaux pièges",
+      "showAll": "Tous les pièges",
+      "showTop": "Seulement mes principaux pièges"
+    },
+    "contrast": {
+      "title": "Pourquoi c'est différent ici",
+      "train": "S'entraîner sur ce piège"
+    },
+    "topics": {
+      "w_false_friends": "Faux amis",
+      "w_collocations": "Mots associés (collocations)",
+      "w_phrasal": "Verbes à particule",
+      "w_verb_prep": "Verbes et prépositions",
+      "w_polite": "Rester poli"
+    }
+  },
+  "social": {
+    "title": "Classement",
+    "meta": "Défiez vos amis et des apprenants du monde entier",
+    "signInTitle": "Défiez vos amis",
+    "signInText": "Connectez-vous pour apparaître au classement, ajouter des amis et comparer séries, XP et badges.",
+    "signIn": "Se connecter",
+    "board": {
+      "friends": "Amis",
+      "weekGlobal": "Cette semaine",
+      "xpGlobal": "Total"
+    },
+    "metric": {
+      "week": "Cette semaine",
+      "xp": "XP total",
+      "streak": "Série"
+    },
+    "unavailable": "Le classement est indisponible pour le moment. Vérifiez votre connexion et réessayez.",
+    "noFriends": "Pas encore d'amis. Ajoutez quelqu'un ci-dessous et défiez-vous chaque semaine !",
+    "you": "vous",
+    "badgesCount": "{{n}} badges",
+    "days": "jours",
+    "hiddenFromEveryone": "Votre carte n'est visible que par vos amis",
+    "notInTop": "Pas encore dans le top 50 – continuez !",
+    "weekResets": "Les XP hebdomadaires sont remis à zéro chaque lundi",
+    "refresh": "Actualiser",
+    "someone": "Quelqu'un",
+    "inviteText": "Apprends la grammaire anglaise avec moi sur English Grammar Tree ! Mon code ami : {{code}}",
+    "requests": "Demandes d'ami ({{n}})",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "addTitle": "Ajouter un ami",
+    "addPlaceholder": "Code ami ou nom",
+    "add": "Ajouter",
+    "codeHint": "Appuyez sur Ajouter pour envoyer une demande au code {{code}}",
+    "result": {
+      "sent": "Demande envoyée ! Elle apparaît tout de suite dans sa liste.",
+      "accepted": "Vous êtes maintenant amis !",
+      "already": "Vous êtes déjà amis.",
+      "pending": "Une demande attend déjà une réponse.",
+      "self": "C'est votre propre code 🙂",
+      "notFound": "Personne n'a ce code. Vérifiez-le et réessayez.",
+      "error": "Une erreur s'est produite. Réessayez dans un instant."
+    },
+    "friend": "ami",
+    "pending": "en attente",
+    "yourCode": "Votre code ami",
+    "invite": "Inviter",
+    "friendsTitle": "Amis ({{n}})",
+    "removeConfirm": "Retirer",
+    "remove": "Retirer l'ami",
+    "cancelRequest": "Annuler",
+    "yourCard": "Votre carte publique",
+    "nameLabel": "Nom public",
+    "save": "Enregistrer",
+    "rename": "Renommer",
+    "visibility": "Qui vous voit dans les classements",
+    "vis": {
+      "everyone": "Tout le monde",
+      "friends": "Amis uniquement"
+    },
+    "privacy": "Seuls votre nom public, photo, niveau, XP, série, badges et nombre de règles maîtrisées sont affichés. Votre e-mail et vos notes ne sont jamais partagés."
   }
 }

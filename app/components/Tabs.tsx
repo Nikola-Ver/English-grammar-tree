@@ -1,7 +1,7 @@
 import './Tabs.css';
 import { useTranslation } from 'react-i18next';
 
-type Tab = 'grammar' | 'murphy' | 'tenses';
+type Tab = 'practice' | 'grammar' | 'murphy' | 'tenses';
 
 interface Props {
   activeTab: Tab;
@@ -9,7 +9,8 @@ interface Props {
 }
 
 function prefetchTabPane(tab: Tab) {
-  if (tab === 'grammar') void import('./Grammar/GrammarTab');
+  if (tab === 'practice') void import('./Practice/PracticeTab');
+  else if (tab === 'grammar') void import('./Grammar/GrammarTab');
   else if (tab === 'murphy') void import('./Murphy/MurphyTab');
   else void import('./Tenses/TensesTab');
 }
@@ -18,6 +19,14 @@ export function Tabs({ activeTab, onSwitch }: Props) {
   const { t } = useTranslation();
   return (
     <div className="tabs">
+      <button
+        type="button"
+        className={`tab-btn tab-practice${activeTab === 'practice' ? ' active' : ''}`}
+        onClick={() => onSwitch('practice')}
+        onMouseEnter={() => prefetchTabPane('practice')}
+      >
+        {t('tabs.practice')}
+      </button>
       <button
         type="button"
         className={`tab-btn${activeTab === 'grammar' ? ' active' : ''}`}

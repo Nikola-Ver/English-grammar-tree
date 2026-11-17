@@ -33,6 +33,20 @@ Grammar textbooks are long. Apps are noisy. **English Grammar Tree** is a single
 <tr>
 <td width="50%">
 
+### 🌳 Grow your grammar tree
+Daily 5-minute sessions with spaced repetition, 43 rule-linked games, streaks, badges and level exams. Every rule is a leaf that buds, blossoms and bears fruit as you master it.
+
+</td>
+<td width="50%">
+
+### 🏆 Compete with friends
+Weekly and all-time leaderboards, friend codes and invite links, streak and XP races — with a public card you control.
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 ### 📚 Complete grammar map
 All CEFR levels — **A1 · A2 · B1 · B2 · C1 · C2** — with 143+ rules, examples, exceptions, common mistakes, and curated video/article links.
 
@@ -77,6 +91,50 @@ A polished **light/dark theme** (no flash on load), particle animations on rule 
 ---
 
 ## 🧩 Features in detail
+
+### 🌳 Today — practise every day and watch your tree grow
+
+The **Today** tab (the default) turns the reference into a daily habit. A greeting card shows your 🔥 streak, the daily XP ring and your level, nudges you with what matters most right now (a streak at risk, leaves to water, XP left to the goal) and puts **one big button** in front of you: the daily session. Everything else sits behind a sticky switcher — **Tree · Games · Leaderboard · Progress · Badges**.
+
+**🌳 Tree**
+- A real tree: a bark-textured trunk with roots, one branch per CEFR level, **one twig per topic** and **one leaf per rule** (143 leaves).
+- Leaves grow 🌰 bud → 🌱 sprout → 🍃 leaf → 🌸 blossom → 🍎 apple as you *prove* you know a rule, and curl up 🍂 when it's time to review. The foliage around each branch fills in as the level blooms, and branches sway gently (off when *reduce motion* is on).
+- Tap any leaf to open the rule or practise it. **Level exams** (20 mixed questions, 80% to pass) earn a 👑 on the branch and a downloadable certificate.
+
+**🎯 Learning loop**
+- **Daily session** — 12 short exercises (~5 min): due reviews first, your recent mistakes, then a few items from the next new rule. Spaced repetition (Leitner boxes: 1 → 3 → 7 → 14 → 30 → 60 → 120 days) decides what comes back and when.
+- **Earned mastery** — ticking a rule's ✓ starts a 5-question test-out; rules are marked done automatically once they reach 🌸.
+- **Mistake deck** — every wrong answer comes back until you get it right on 3 different days.
+- **Placement test** — a 5-minute adaptive test that finds your level and can mark lower levels as known.
+- **Streaks with freezes, a daily XP goal, levels** and **20 badges**.
+
+**🎮 Games** — 43 games, all tied to grammar rules, with **personal recommendations** (the daily challenge plus games at your level you haven't tried) and filters by group: error hunter, right-or-wrong sprint, gap fill, sentence builder, dictation, survival, Murphy drill, tense detective (walk the decision tree), timeline match, marker sort, same scene/two tenses, verb forge, verb memory, article rush, preposition sort, adjective stack, number dictation, question maker, consequence match, transformer (passive), gossip chain (reported speech), verb patterns, modal detective, regret machine (wish), sentence welder (relative clauses), formalizer (inversion), spotlight (cleft), connector bridge, register slider, comma tap and more. **Challenge links** let a friend replay your exact round; the **daily challenge** gives everyone the same 15 questions.
+
+**🏆 Leaderboard & friends** (signed-in users)
+- Boards: **Friends** (sort by this week's XP, all-time XP or streak), **This week** (everyone, resets every Monday) and **All time**.
+- Each row shows rank 🥇🥈🥉, avatar, name, level, live streak, mastered rules and the latest badges.
+- **Add friends** by their 8-character friend code, by searching names, or with an **invite link** (`…/#friend=CODE`); accept or decline incoming requests, cancel your own, remove friends.
+- **Your public card** — choose the name shown (defaults to your first name, never your email) and who sees you: **Everyone** or **Friends only**.
+
+**🇷🇺 Built for Russian speakers**
+- **Translate into English** — see a Russian sentence, type the English. Grading ignores case, punctuation, contractions and harmless synonym swaps, but not articles, auxiliaries, prepositions or word order. Mistakes are shown word by word and named as a *trap*: «В русском нет артикля…», «после when — настоящее время…». (In other UI languages the same game uses the rule examples' translations.)
+- **Your traps** — every exercise is tagged with the Russian interference it tests (articles, missing *to be*, Present Perfect vs Past Simple, *will* after *when/if*, questions without *do*, prepositions, uncountables, «бы» and conditionals, reported speech, -ing vs *to*, modals, false friends, word partners, phrasal verbs, politeness). Progress shows the traps that catch you most, with one-tap sessions; daily sessions also slip in two items from your weakest trap.
+- **«Почему по-русски иначе»** — on expanded rule cards: why Russian makes this rule hard, typical word-for-word mistakes (✗ *I live here since 2010* → ✓ *I have lived here since 2010*) with audio, and a button to train that trap.
+- **Word traps** — false friends (*magazine ≠ магазин*), word partners (*make* vs *do*, *take a photo*), phrasal verbs and verb + preposition (*depend on*, *wait for*).
+- **«Как не звучать грубо»** — turn direct Russian-style requests into natural, polite English.
+
+**📊 Progress** — XP per day, a 16-week activity heatmap, mastery by level (Grammar and Murphy books), your weakest rules, and practice settings (daily goal, sound, placement, reset).
+
+Exercises come from the existing rule content (≈1,100 common-mistake pairs and ≈300 example sentences are turned into exercises automatically) plus ≈970 hand-written drills in `app/practice/content/`.
+
+#### 💾 How practice is saved
+
+- **On the device:** instantly in `localStorage` (writes are coalesced per burst and flushed when the tab is hidden), so the app works fully offline.
+- **In the cloud** (when signed in), at `users/{uid}/practice/state` — tuned to keep Firestore usage tiny:
+  - **Reads:** one document read at sign-in, plus one when you come back to the tab after 3+ minutes (to pick up another device). No realtime listener, so your own writes never come back as reads.
+  - **Writes:** only the fields that changed since the last sync (single items, days, streak…) via a merge write, debounced to one write per burst of activity (≤ every 20 s while you play), flushed at the end of each session and when the tab is hidden. A full overwrite happens only on first upload or after a reset.
+  - **Merge:** per-item last-write-wins, so two devices can practise offline and sync later; a reset on one device wins over older data everywhere.
+- **Public profile** (`profiles/{uid}`) is rewritten only when a shown number changes, at most every 30 s (immediately at the end of a session). Leaderboards are cached for a minute; the only live listener is on your own friend requests.
 
 ### 📐 Grammar rules — organized, expandable, searchable
 
@@ -255,6 +313,8 @@ Translation bundles are **lazy-loaded** per language — no wasted bytes. The pi
 english-grammar-tree/
 ├── app/
 │   ├── components/
+│   │   ├── Practice/       # Today tab, tree, game runner, exercise renderers
+│   │   ├── Social/         # Leaderboard, friends, public card
 │   │   ├── Grammar/        # Grammar rules tab
 │   │   ├── Murphy/         # Murphy companion tab
 │   │   ├── Tenses/         # Tree, timeline, comparison, result
@@ -265,6 +325,8 @@ english-grammar-tree/
 │   ├── context/            # Auth + sync context providers
 │   ├── data/               # Grammar, tenses, tree & timeline data
 │   ├── hooks/              # useProgress, useNotes, useTheme
+│   ├── practice/           # Practice engine: item index, SRS, sessions, games, sync, drill content
+│   ├── social/             # Public profiles, friends, leaderboards (Firestore)
 │   ├── i18n/               # Locales, AI prompt templates, rule translations
 │   ├── services/           # Firestore service, sync registry
 │   └── utils/              # Deep links, selection, clipboard, particles
@@ -289,9 +351,17 @@ npm run dev
 # Build
 npm run build
 
-# Deploy to Firebase
+# Deploy to Firebase (hosting + Firestore rules and indexes)
 npm run deploy
 ```
+
+The leaderboard and friends need the Firestore **security rules** (`firestore.rules`) and **composite indexes** (`firestore.indexes.json`) from this repo. Deploy them on their own with:
+
+```bash
+firebase deploy --only firestore:rules,firestore:indexes
+```
+
+Data model: `profiles/{uid}` (public card), `friendCodes/{CODE}` (code → uid), `friendships/{uidA_uidB}` (`pending` / `accepted`), plus private `users/{uid}/…` (progress, notes, practice state).
 
 Other scripts:
 
@@ -300,6 +370,7 @@ npm run lint      # Biome lint check
 npm run format    # Auto-format
 npm run check     # Format + lint fix
 npm run preview   # Preview production build
+npm test          # Unit tests (SRS, sync diffing, social helpers, translation grading, traps) + content validator + translation check
 ```
 
 ---

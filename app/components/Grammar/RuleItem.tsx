@@ -8,7 +8,11 @@ import { copyToClipboard } from '../../utils/clipboard';
 import { buildRuleUrl } from '../../utils/deepLink';
 import { spawnParticles } from '../../utils/particles';
 import { buildRulePrompt } from '../../utils/prompts';
+import { usePractice } from '../Practice/PracticeProvider';
+import { RuContrastBox } from './RuContrastBox';
 import { RuleExpansion } from './RuleExpansion';
+
+const STAGE_ICONS = ['', '🌱', '🍃', '🌸', '🍎'];
 
 interface Props {
   rule: Rule;
@@ -40,6 +44,9 @@ export function RuleItem({
   const [shareCopied, setShareCopied] = useState(false);
   const [testCopied, setTestCopied] = useState(false);
   const checkRef = useRef<HTMLDivElement>(null);
+  const { start: startPractice, mastery } = usePractice();
+  const m = mastery?.get(rule.id);
+  const canPractise = !!m && m.total > 0;
   // Touch-handling refs for immediate-first-tap expansion on mobile
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const lastToggleTouchRef = useRef(0);
@@ -61,6 +68,11 @@ export function RuleItem({
     (e: React.MouseEvent) => {
       e.stopPropagation();
       e.preventDefault();
+      // Earned mastery: marking a rule as known takes a short test when exercises exist.
+      if (!isDone && m && m.total >= 3 && m.stage < 3) {
+        startPractice({ type: 'testout', ruleId: rule.id });
+        return;
+      }
       const el = checkRef.current;
       if (el && !isDone) {
         el.classList.add('anim-check');
@@ -74,7 +86,7 @@ export function RuleItem({
       setExpOpen(false);
       onToggle(rule.id);
     },
-    [isDone, level.color, onToggle, rule.id],
+    [isDone, level.color, onToggle, rule.id, m, startPractice],
   );
 
   // On mobile, fire the toggle immediately on touchend (first tap) and guard
@@ -179,6 +191,27 @@ export function RuleItem({
           {rule.note && <span className="rule-note">{rule.note}</span>}
         </div>
         <div className="rule-actions">
+          {m && (m.stage > 0 || m.wilting) && (
+            <span
+              className={`rule-stage${m.wilting ? ' wilting' : ''}`}
+              title={`${t(`practice.stage.name${m.stage}`)}${m.wilting ? ` · ${t('practice.stage.wilting')}` : ''}`}
+            >
+              {m.wilting ? '🍂' : STAGE_ICONS[m.stage]}
+            </span>
+          )}
+          {canPractise && (
+            <button
+              type="button"
+              className="practice-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                startPractice({ type: 'rule', ruleId: rule.id });
+              }}
+              title={t('rule.practiceTitle')}
+            >
+              {t('rule.practice')}
+            </button>
+          )}
           <button
             className={`share-btn${shareCopied ? ' copied' : ''}`}
             onClick={handleShare}
@@ -195,6 +228,7 @@ export function RuleItem({
         </div>
       </div>
       {rule.exp && <RuleExpansion rule={rule} isOpen={expOpen} />}
+      {expOpen && <RuContrastBox ruleId={rule.id} />}
     </div>
   );
 }

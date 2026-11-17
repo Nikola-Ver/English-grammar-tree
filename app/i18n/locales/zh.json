@@ -16,7 +16,8 @@
   "tabs": {
     "grammar": "📚 语法",
     "murphy": "📖 墨菲教材",
-    "tenses": "🕐 时态树"
+    "tenses": "🕐 时态树",
+    "practice": "🌳 今日"
   },
   "auth": {
     "title": "登录以同步",
@@ -168,7 +169,9 @@
     "test": "✦ 测验",
     "testCategory": "✦ 主题测验",
     "testCategoryTitle": "复制整主题的测验提示",
-    "copyLinkTitle": "复制此规则链接"
+    "copyLinkTitle": "复制此规则链接",
+    "practice": "▶ 练习",
+    "practiceTitle": "用快速练习巩固这条规则"
   },
   "category": {
     "collapseAll": "收起所有主题",
@@ -302,5 +305,662 @@
       "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
       "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
     }
+  },
+  "practice": {
+    "close": "关闭",
+    "combo": "连击——连续答对",
+    "lives": "剩余 {{n}} 条命",
+    "newRule": "新规则",
+    "notQuite": "不太对",
+    "partly": "部分正确——{{pct}}%",
+    "continue": "继续",
+    "score": "得分",
+    "praise": {
+      "0": "正确！",
+      "1": "不错！",
+      "2": "做得好！",
+      "3": "完全正确！",
+      "4": "太棒了！",
+      "5": "你掌握了！"
+    },
+    "instr": {
+      "choice": "选择正确答案",
+      "gap": "填空",
+      "spot": "点击错误的单词",
+      "tiles": {
+        "build": "翻译：组成英文句子",
+        "unscramble": "把单词排成正确顺序",
+        "question": "改成疑问句",
+        "negative": "改成否定句",
+        "passive": "改写为被动语态",
+        "reported": "转述所说的话",
+        "wish": "用愿望句表达",
+        "inversion": "以“{{start}}”开头并使用倒装",
+        "cleft": "用强调句（cleft sentence）加强语气",
+        "relative": "用关系从句连接句子",
+        "adjOrder": "把形容词排成正确顺序",
+        "conditional": "改写为条件句",
+        "tense": "改写为{{tense}}",
+        "formal": "改写为正式语体",
+        "polite": "用更礼貌的方式说"
+      },
+      "sort": "点击一项，再点击它所属的组",
+      "match": "配对两半",
+      "gaps": "填完所有空",
+      "type": "输入答案",
+      "dictation": "听音并输入听到的内容",
+      "truefalse": "这个句子正确吗？",
+      "tree": "回答语法树的问题，找出时态",
+      "timeline": "哪条时间线对应这个句子？",
+      "whichTense": "这是什么时态？",
+      "pastSimple": "选择 Past Simple 形式",
+      "markerSort": "按时态分类时间标志词",
+      "sameScene": "哪个句子意思相同？",
+      "numbers": "听音并用数字输入",
+      "translate": "翻译成英语"
+    },
+    "tapTiles": "点击下方的单词…",
+    "clear": "清除",
+    "check": "检查",
+    "allPlaced": "已全部放好——检查答案",
+    "tapToCycle": "点击空格可更换",
+    "listen": "听",
+    "listenSlow": "慢速听",
+    "typeHere": "在此输入…",
+    "correctSentence": "正确",
+    "hasMistake": "有错误",
+    "challengeShareText": "我在 English Grammar Tree 得了 {{score}}/{{n}}。你能超过我吗？",
+    "results": {
+      "placementTitle": "你的水平：{{level}}",
+      "examPassed": "考试通过！",
+      "testPassed": "你已掌握这条规则！",
+      "notPassed": "这次没通过",
+      "excellent": "太出色了！",
+      "good": "这次不错！",
+      "keepGoing": "继续加油，你会记住的！",
+      "correct": "答对",
+      "bestCombo": "最高连击",
+      "challengeWon": "你超过了好友的 {{score}} 分！🏆",
+      "challengeLost": "好友得了 {{score}} 分——再试一次！",
+      "goalDone": "已达成每日目标——连续 {{n}} 天！",
+      "goalLeft": "距今日目标还差 {{xp}} XP",
+      "placementText": "新规则将从 {{level}} 开始。你可以把更低级别标记为已掌握。",
+      "placementMark": "将 {{level}} 以下的规则标记为已掌握",
+      "placementOnly": "直接从 {{level}} 开始",
+      "placementSaved": "已保存。你的每日练习将从这里开始。",
+      "grown": "你的树长大了",
+      "newBadges": "新徽章",
+      "practiseRule": "先练习这条规则",
+      "challenge": "挑战好友",
+      "again": "再玩一次",
+      "done": "完成"
+    },
+    "stage": {
+      "icon0": "🌰",
+      "icon1": "🌱",
+      "icon2": "🍃",
+      "icon3": "🌸",
+      "icon4": "🍎",
+      "name0": "种子——未开始",
+      "name1": "嫩芽——已开始",
+      "name2": "绿叶——学习中",
+      "name3": "开花——已掌握",
+      "name4": "结果——长期记忆",
+      "nameClaimed": "已标记为掌握",
+      "wilting": "需要复习"
+    },
+    "badges": {
+      "first_step": {
+        "title": "第一步",
+        "desc": "回答第一道练习"
+      },
+      "first_session": {
+        "title": "上路了",
+        "desc": "完成一次练习"
+      },
+      "placement": {
+        "title": "指南针",
+        "desc": "完成分级测试"
+      },
+      "streak_3": {
+        "title": "热身",
+        "desc": "连续 3 天"
+      },
+      "streak_7": {
+        "title": "火力全开",
+        "desc": "连续 7 天"
+      },
+      "streak_30": {
+        "title": "火山",
+        "desc": "连续 30 天"
+      },
+      "correct_100": {
+        "title": "百题",
+        "desc": "答对 100 题"
+      },
+      "correct_1000": {
+        "title": "千题",
+        "desc": "答对 1,000 题"
+      },
+      "xp_1000": {
+        "title": "之星",
+        "desc": "获得 1,000 XP"
+      },
+      "xp_10000": {
+        "title": "超级巨星",
+        "desc": "获得 10,000 XP"
+      },
+      "rules_5": {
+        "title": "初绽",
+        "desc": "掌握 5 条规则"
+      },
+      "rules_25": {
+        "title": "成长之树",
+        "desc": "掌握 25 条规则"
+      },
+      "rules_100": {
+        "title": "森林",
+        "desc": "掌握 100 条规则"
+      },
+      "fixer_10": {
+        "title": "纠错能手",
+        "desc": "清除错题本中的 10 项"
+      },
+      "explorer": {
+        "title": "探索者",
+        "desc": "玩 10 种不同的游戏"
+      },
+      "perfect": {
+        "title": "完美无瑕",
+        "desc": "完成一次 10 题以上的全对练习"
+      },
+      "combo_15": {
+        "title": "闪电",
+        "desc": "连续答对 15 题"
+      },
+      "sprinter": {
+        "title": "冲刺手",
+        "desc": "在 60 秒冲刺中得 25 分以上"
+      },
+      "boss_1": {
+        "title": "加冕",
+        "desc": "通过一次级别考试"
+      },
+      "boss_all": {
+        "title": "大师",
+        "desc": "通过全部六次级别考试"
+      }
+    },
+    "cert": {
+      "heading": "成就证书",
+      "line": "已通过 English Grammar Tree 级别考试",
+      "score": "得分 {{pct}}%",
+      "download": "下载证书"
+    },
+    "levelName": {
+      "A1": "入门",
+      "A2": "初级",
+      "B1": "中级",
+      "B2": "中高级",
+      "C1": "高级",
+      "C2": "精通"
+    },
+    "challenge": {
+      "title": "你被挑战了！",
+      "text": "好友在“{{game}}”中得了 {{score}}/{{n}}。玩同一轮并超过他。",
+      "accept": "接受挑战",
+      "dismiss": "以后再说"
+    },
+    "streakDays_other": "天连续",
+    "freezeHint": "连续冻结：漏掉的一天会自动补上。每连续 7 天可获得一次。",
+    "goalHint": "赚取 XP 达成每日目标，保持连续记录",
+    "dailyGoal": "每日目标",
+    "level": "等级 {{n}}",
+    "cta": {
+      "placement": "测测你的水平",
+      "placementSub": "5 分钟自适应测试——跳过已会的内容",
+      "startFromZero": "从头开始",
+      "dailySub": "12 道短练习 · 约 5 分钟",
+      "daily": "给树浇水",
+      "dailyMore": "再来一次",
+      "dailyInfo": "{{due}} 项待复习",
+      "newRule": "新：{{rule}}",
+      "deck": "纠正我的错误（{{n}}）",
+      "deckSub": "在不同日期答对 3 次后清除"
+    },
+    "tree": {
+      "title": "你的语法树",
+      "meta": "{{mastered}}/{{total}} 条规则已开花",
+      "wilting": "{{n}} 条需复习",
+      "aria": "语法树：每个级别一根树枝，每条规则一片叶子",
+      "hint": "点击叶子查看规则并练习"
+    },
+    "accuracy": "正确率 {{pct}}%",
+    "itemsSeen": "已尝试 {{seen}}/{{total}} 道练习",
+    "practise": "练习",
+    "openRule": "打开规则",
+    "exams": {
+      "title": "级别考试",
+      "meta": "20 道混合题 · 80% 通过 · 赢得皇冠和证书",
+      "best": "最佳 {{pct}}%",
+      "notTaken": "未参加"
+    },
+    "arcade": {
+      "title": "游戏",
+      "meta": "{{n}} 个游戏，各对应语法规则",
+      "groups": {
+        "core": "核心——每条规则",
+        "tenses": "时态与动词",
+        "words": "词汇与短语",
+        "structures": "句子结构",
+        "advanced": "高级（C1–C2）"
+      },
+      "noSpeech": "你的浏览器不支持语音合成",
+      "mode": {
+        "sprint": "60 秒冲刺",
+        "survival": "3 条命"
+      },
+      "best": "最佳 {{score}}",
+      "recommended": "为你推荐",
+      "all": "全部",
+      "new": "新",
+      "noTranslation": "界面语言不是英语时可用"
+    },
+    "games": {
+      "daily-challenge": {
+        "title": "每日挑战",
+        "desc": "今天所有人都是同样的 15 道题——比比分数"
+      },
+      "error-hunter": {
+        "title": "找错猎人",
+        "desc": "找出学习者最常犯的错误"
+      },
+      "right-or-wrong": {
+        "title": "对还是错？",
+        "desc": "尽快判断句子对错"
+      },
+      "gap-fill": {
+        "title": "填空",
+        "desc": "选出能改正句子的词"
+      },
+      "sentence-builder": {
+        "title": "造句器",
+        "desc": "用单词块拼出句子"
+      },
+      "dictation": {
+        "title": "听写",
+        "desc": "听一个句子并输入"
+      },
+      "survival": {
+        "title": "生存模式",
+        "desc": "无尽混合题，越来越难"
+      },
+      "murphy-drill": {
+        "title": "Murphy 特训",
+        "desc": "Murphy 各单元的常见错误"
+      },
+      "tense-detective": {
+        "title": "时态侦探",
+        "desc": "一步步推理出时态"
+      },
+      "timeline-match": {
+        "title": "时间线配对",
+        "desc": "把句子与对应的时间线图配对"
+      },
+      "which-tense": {
+        "title": "什么时态？",
+        "desc": "说出句子的时态"
+      },
+      "marker-sort": {
+        "title": "标志词分类",
+        "desc": "给“since”“yesterday”等时间词分类"
+      },
+      "same-scene": {
+        "title": "同一场景，两种时态",
+        "desc": "体会相近时态的区别"
+      },
+      "tense-forms": {
+        "title": "时态形式",
+        "desc": "在语境中选出正确的动词形式"
+      },
+      "tense-chameleon": {
+        "title": "时态变色龙",
+        "desc": "把句子改写成另一种时态"
+      },
+      "verb-forge": {
+        "title": "动词熔炉",
+        "desc": "不规则动词：限时输入 V2 和 V3"
+      },
+      "verb-memory": {
+        "title": "动词记忆",
+        "desc": "把动词与其过去式配对"
+      },
+      "article-rush": {
+        "title": "冠词冲刺",
+        "desc": "a, an, the 或不用冠词——真实小故事"
+      },
+      "preposition-sort": {
+        "title": "介词分类",
+        "desc": "in, on, at 与表示移动的介词"
+      },
+      "count-it": {
+        "title": "数一数",
+        "desc": "可数、不可数、much、many、复数"
+      },
+      "adjective-stack": {
+        "title": "形容词叠叠乐",
+        "desc": "形容词顺序、比较级、副词"
+      },
+      "number-dictation": {
+        "title": "数字听写",
+        "desc": "听数字、年份和价格并输入"
+      },
+      "question-maker": {
+        "title": "造问句",
+        "desc": "构造疑问句和否定句"
+      },
+      "consequence-match": {
+        "title": "结果配对",
+        "desc": "条件句：把“if”与结果配对"
+      },
+      "transformer": {
+        "title": "变形金刚",
+        "desc": "把主动句改成被动句"
+      },
+      "gossip-chain": {
+        "title": "八卦传话",
+        "desc": "转述别人说的话"
+      },
+      "verb-patterns": {
+        "title": "动词搭配",
+        "desc": "-ing or to + verb?"
+      },
+      "detective": {
+        "title": "侦探",
+        "desc": "must, might, can't (have)——根据线索推断"
+      },
+      "regret-machine": {
+        "title": "后悔机",
+        "desc": "I wish, if only, it's time"
+      },
+      "sentence-welder": {
+        "title": "句子焊接",
+        "desc": "用 who, which, whose 连接句子"
+      },
+      "formalizer": {
+        "title": "正式化",
+        "desc": "倒装：“Never have I…”"
+      },
+      "spotlight": {
+        "title": "聚光灯",
+        "desc": "强调句：“It was Tom who…”"
+      },
+      "connector-bridge": {
+        "title": "连接词之桥",
+        "desc": "although, despite, however, therefore…"
+      },
+      "register-slider": {
+        "title": "语体滑块",
+        "desc": "选出学术版本；弱化断言"
+      },
+      "comma-tap": {
+        "title": "点逗号",
+        "desc": "逗号、分号，还是不加？"
+      },
+      "c-mix": {
+        "title": "C1–C2 混合",
+        "desc": "分词、虚拟语气、省略等"
+      },
+      "translate": {
+        "title": "翻译成英语",
+        "desc": "输入英文，错误会按常见易错点来讲解"
+      },
+      "my-traps": {
+        "title": "我的易错点",
+        "desc": "针对你最常犯的错误的一轮练习"
+      },
+      "false-friends": {
+        "title": "易混词",
+        "desc": "magazine, actual, sympathetic，并不是你以为的意思"
+      },
+      "collocations": {
+        "title": "词语搭配",
+        "desc": "用 make 还是 do？take a photo 还是 make a photo？"
+      },
+      "phrasal-verbs": {
+        "title": "短语动词",
+        "desc": "give up, look after, find out…"
+      },
+      "verb-prep": {
+        "title": "动词 + 介词",
+        "desc": "depend on, wait for, listen to"
+      },
+      "polite": {
+        "title": "别说得无礼",
+        "desc": "把直接的请求改成礼貌的英语"
+      }
+    },
+    "progress": {
+      "title": "你的进度",
+      "answers": "答题数",
+      "accuracy": "正确率",
+      "minutes": "练习分钟数",
+      "inReview": "复习中",
+      "bestStreak": "最长连续",
+      "xpChart": "XP——最近 14 天",
+      "goal": "目标 {{xp}}",
+      "activity": "活跃度——最近 16 周",
+      "less": "少",
+      "more": "多",
+      "frozen": "连续冻结",
+      "masteryChart": "各级别掌握度",
+      "weakest": "最薄弱的规则",
+      "wordsRow": "单词"
+    },
+    "badgesTitle": "徽章",
+    "settings": {
+      "title": "练习设置",
+      "goal": "每日目标",
+      "goal30": "轻松 30",
+      "goal50": "常规 50",
+      "goal100": "认真 100",
+      "goal150": "高强度 150",
+      "sound": "音效",
+      "on": "开",
+      "off": "关",
+      "placement": "分级水平",
+      "retake": "重测",
+      "reset": "重置练习进度",
+      "resetBtn": "重置",
+      "resetConfirm": "是，全部重置",
+      "cancel": "取消"
+    },
+    "hero": {
+      "morning": "早上好",
+      "afternoon": "下午好",
+      "evening": "晚上好",
+      "night": "夜深了还在学习",
+      "nudgeStreak": "🔥 今天练习一下，保住你的 {{n}} 天连续记录！",
+      "nudgeWilting": "🍂 你的树上有 {{n}} 片叶子需要浇水。",
+      "nudgeGoal": "🎯 距今日目标还差 {{xp}} XP——约 5 分钟。",
+      "nudgeDone": "✅ 目标达成！每多答一题，你的树就多长一点。"
+    },
+    "sections": {
+      "label": "今日板块",
+      "tree": "语法树",
+      "games": "游戏",
+      "leaderboard": "排行榜",
+      "progress": "进度",
+      "badges": "徽章"
+    },
+    "translate": {
+      "placeholder": "输入英文句子…",
+      "showAnswer": "显示答案",
+      "accepted": "已接受！我们的版本：",
+      "diff": "你的答案与正确答案对比",
+      "missing": "缺少的单词",
+      "extra": "多余的单词"
+    },
+    "traps": {
+      "articles": {
+        "name": "冠词",
+        "desc": "a / an / the，或不用冠词",
+        "hint": "可数名词单数需要 a/an（第一次提到、“one of”）或 the（双方都知道指哪个）。"
+      },
+      "toBe": {
+        "name": "漏掉 “to be”",
+        "desc": "“I student” → I am a student",
+        "hint": "英语句子必须有动词：没有其他动词时，用 am / is / are。"
+      },
+      "tenses": {
+        "name": "时态",
+        "desc": "现在完成时 vs 一般过去时、进行时",
+        "hint": "看时间：已结束的时间（yesterday, in 2020）→ Past Simple；持续到现在（already, since, for）→ Present Perfect。"
+      },
+      "futureTime": {
+        "name": "when / if 后用 will",
+        "desc": "“When he will come” → when he comes",
+        "hint": "在 when, if, as soon as, before, until 之后用一般现在时，即使说的是将来。"
+      },
+      "wordOrder": {
+        "name": "语序与疑问句",
+        "desc": "疑问句需要 do/does/did；主语在动词前",
+        "hint": "疑问句和否定句需要助动词：Where does she live? I don't know. 间接疑问句保持主语 + 动词的顺序。"
+      },
+      "prepositions": {
+        "name": "介词",
+        "desc": "depend on, wait for, at the weekend…",
+        "hint": "英语介词不一定与母语对应，要连同动词一起记：depend on, listen to, wait for。"
+      },
+      "countable": {
+        "name": "可数与不可数",
+        "desc": "information, advice, news, much / many",
+        "hint": "有些名词在英语里不可数：information, advice, news, furniture，不加 a/an，也没有复数。"
+      },
+      "conditionals": {
+        "name": "条件句与愿望",
+        "desc": "第二 vs 第三条件句、wish",
+        "hint": "谈过去 → had + V3 / would have + V3；谈现在或假想的现在 → Past Simple / would + 动词。"
+      },
+      "sequence": {
+        "name": "间接引语",
+        "desc": "He said he was tired",
+        "hint": "在 said / told 之后，时态往后退一步：is → was, will → would, has done → had done。"
+      },
+      "verbPatterns": {
+        "name": "-ing 还是 to + 动词",
+        "desc": "enjoy doing, decide to do",
+        "hint": "有些动词后接 -ing（enjoy, avoid, finish），有些接 to + 动词（decide, want, hope），连同动词一起记。"
+      },
+      "modals": {
+        "name": "情态动词",
+        "desc": "must vs have to、can / could",
+        "hint": "情态动词后接动词原形（不加 to，不加 -s）：she can swim, you must go。"
+      },
+      "falseFriends": {
+        "name": "易混词",
+        "desc": "magazine = 杂志（不是商店）",
+        "hint": "有些词看起来熟悉，意思却不同：magazine = 杂志，a shop = 商店。"
+      },
+      "collocations": {
+        "name": "词语搭配",
+        "desc": "make vs do、take a photo",
+        "hint": "有些词在英语里就是固定搭配：make a mistake, do homework, take a photo。"
+      },
+      "phrasal": {
+        "name": "短语动词",
+        "desc": "give up, look after, find out",
+        "hint": "小小的词会改变意思：look for = 寻找，look after = 照顾。"
+      },
+      "politeness": {
+        "name": "说得礼貌",
+        "desc": "用 Could I have…? 代替 Give me…",
+        "hint": "直接的命令在英语里显得无礼：用 Could you…? / Could I have…, please? / I'd like…"
+      }
+    },
+    "trapsCard": {
+      "title": "你的易错点",
+      "meta": "母语干扰让你丢分的地方",
+      "empty": "回答约 20 道题后，应用会显示你最常掉进哪些陷阱。你现在就可以练习任何一个。",
+      "stats": "正确率 {{acc}}% · {{n}} 次作答 · 错题库 {{deck}} 题",
+      "noData": "尚未尝试",
+      "train": "练习",
+      "trainTop": "练习我的主要易错点",
+      "showAll": "全部易错点",
+      "showTop": "仅显示我的主要易错点"
+    },
+    "contrast": {
+      "title": "为什么这里不一样",
+      "train": "练习这个易错点"
+    },
+    "topics": {
+      "w_false_friends": "易混词",
+      "w_collocations": "词语搭配",
+      "w_phrasal": "短语动词",
+      "w_verb_prep": "动词与介词",
+      "w_polite": "说得礼貌"
+    }
+  },
+  "social": {
+    "title": "排行榜",
+    "meta": "与好友和全球学习者一较高下",
+    "signInTitle": "与好友比拼",
+    "signInText": "登录后即可上榜、添加好友，并比较连续天数、XP 和徽章。",
+    "signIn": "登录",
+    "board": {
+      "friends": "好友",
+      "weekGlobal": "本周",
+      "xpGlobal": "总榜"
+    },
+    "metric": {
+      "week": "本周",
+      "xp": "总 XP",
+      "streak": "连续"
+    },
+    "unavailable": "排行榜暂时无法使用。请检查网络后重试。",
+    "noFriends": "还没有好友。在下方添加好友，每周一起比拼吧！",
+    "you": "你",
+    "badgesCount": "{{n}} 枚徽章",
+    "days": "天",
+    "hiddenFromEveryone": "你的名片仅好友可见",
+    "notInTop": "尚未进入前 50 名——继续加油！",
+    "weekResets": "每周 XP 在每周一重置",
+    "refresh": "刷新",
+    "someone": "某人",
+    "inviteText": "和我一起在 English Grammar Tree 学英语语法吧！我的好友码：{{code}}",
+    "requests": "好友请求（{{n}}）",
+    "accept": "接受",
+    "decline": "拒绝",
+    "addTitle": "添加好友",
+    "addPlaceholder": "好友码或名字",
+    "add": "添加",
+    "codeHint": "点击“添加”向好友码 {{code}} 发送请求",
+    "result": {
+      "sent": "请求已发送！对方列表中会立即显示。",
+      "accepted": "你们现在是好友了！",
+      "already": "你们已经是好友。",
+      "pending": "已有一个请求在等待回复。",
+      "self": "这是你自己的好友码 🙂",
+      "notFound": "没有人使用这个好友码。请检查后重试。",
+      "error": "出了点问题，请稍后重试。"
+    },
+    "friend": "好友",
+    "pending": "待处理",
+    "yourCode": "你的好友码",
+    "invite": "邀请",
+    "friendsTitle": "好友（{{n}}）",
+    "removeConfirm": "删除",
+    "remove": "删除好友",
+    "cancelRequest": "取消",
+    "yourCard": "你的公开名片",
+    "nameLabel": "公开名称",
+    "save": "保存",
+    "rename": "重命名",
+    "visibility": "谁能在排行榜上看到你",
+    "vis": {
+      "everyone": "所有人",
+      "friends": "仅好友"
+    },
+    "privacy": "仅显示你的公开名称、头像、等级、XP、连续天数、徽章和已掌握规则数。你的邮箱和笔记绝不会被分享。"
   }
 }

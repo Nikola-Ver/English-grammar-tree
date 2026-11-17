@@ -39,6 +39,36 @@ function saveTimestampMap(m: TombstoneMap, key: string): void {
   localStorage.setItem(key, JSON.stringify(m));
 }
 
+/** Read a progress map straight from storage (for code outside the React tree). */
+export function readDoneMap(sk: string = DEFAULT_SK): DoneMap {
+  return loadDone(sk);
+}
+
+/**
+ * Mark rules as done from outside the hook (practice mastery, test-out, placement).
+ * Writes the same timestamps as a manual check, then lets every useProgress instance reload
+ * and schedules a cloud push.
+ */
+export function markRulesDone(sk: string, ids: string[]): string[] {
+  const done = loadDone(sk);
+  const fresh = ids.filter((id) => !done[id]);
+  if (fresh.length === 0) return [];
+  const now = Date.now();
+  const checkedAt = loadTimestampMap(checkedAtKey(sk));
+  const tombstones = loadTimestampMap(tombstoneKey(sk));
+  for (const id of fresh) {
+    done[id] = true;
+    checkedAt[id] = now;
+    delete tombstones[id];
+  }
+  saveDone(done, sk);
+  saveTimestampMap(checkedAt, checkedAtKey(sk));
+  saveTimestampMap(tombstones, tombstoneKey(sk));
+  window.dispatchEvent(new CustomEvent(SYNC_APPLIED_EVENT));
+  notifyProgressChanged();
+  return fresh;
+}
+
 export function countLevel(lvl: Level, done: DoneMap) {
   let total = 0,
     checked = 0;

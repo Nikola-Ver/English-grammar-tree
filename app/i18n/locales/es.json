@@ -16,7 +16,8 @@
   "tabs": {
     "grammar": "📚 Gramática",
     "murphy": "📖 Libros Murphy",
-    "tenses": "🕐 Árbol de tiempos"
+    "tenses": "🕐 Árbol de tiempos",
+    "practice": "🌳 Hoy"
   },
   "auth": {
     "title": "Inicia sesión para sincronizar",
@@ -168,7 +169,9 @@
     "test": "✦ Test",
     "testCategory": "✦ Test del tema",
     "testCategoryTitle": "Copiar prompt de test para todo el tema",
-    "copyLinkTitle": "Copiar enlace a esta regla"
+    "copyLinkTitle": "Copiar enlace a esta regla",
+    "practice": "▶ Practicar",
+    "practiceTitle": "Practica esta regla con ejercicios rápidos"
   },
   "category": {
     "collapseAll": "Plegar todos los temas",
@@ -302,5 +305,663 @@
       "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
       "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
     }
+  },
+  "practice": {
+    "close": "Cerrar",
+    "combo": "Combo: respuestas seguidas",
+    "lives": "Te quedan {{n}} vidas",
+    "newRule": "Regla nueva",
+    "notQuite": "No del todo",
+    "partly": "Casi bien: {{pct}} %",
+    "continue": "Continuar",
+    "score": "Puntos",
+    "praise": {
+      "0": "¡Correcto!",
+      "1": "¡Bien!",
+      "2": "¡Buen trabajo!",
+      "3": "¡Justo!",
+      "4": "¡Excelente!",
+      "5": "¡Lo tienes!"
+    },
+    "instr": {
+      "choice": "Elige la respuesta correcta",
+      "gap": "Rellena el hueco",
+      "spot": "Toca la palabra incorrecta",
+      "tiles": {
+        "build": "Traduce: forma la frase en inglés",
+        "unscramble": "Ordena las palabras",
+        "question": "Conviértela en pregunta",
+        "negative": "Ponla en negativa",
+        "passive": "Reescríbela en pasiva",
+        "reported": "Cuenta lo que se dijo",
+        "wish": "Exprésalo como un deseo",
+        "inversion": "Empieza con «{{start}}» y usa la inversión",
+        "cleft": "Añade énfasis con una oración hendida (cleft)",
+        "relative": "Une las frases con una oración de relativo",
+        "adjOrder": "Ordena los adjetivos correctamente",
+        "conditional": "Reescríbela como condicional",
+        "tense": "Reescríbela en {{tense}}",
+        "formal": "Reescríbela en registro formal",
+        "polite": "Dilo de forma educada"
+      },
+      "sort": "Toca un elemento y luego su grupo",
+      "match": "Une las mitades",
+      "gaps": "Rellena todos los huecos",
+      "type": "Escribe la respuesta",
+      "dictation": "Escucha y escribe lo que oyes",
+      "truefalse": "¿Es correcta esta frase?",
+      "tree": "Halla el tiempo verbal respondiendo a las preguntas del árbol",
+      "timeline": "¿Qué línea de tiempo muestra esta frase?",
+      "whichTense": "¿Qué tiempo verbal es?",
+      "pastSimple": "Elige la forma del Past Simple",
+      "markerSort": "Clasifica los marcadores de tiempo por tiempo verbal",
+      "sameScene": "¿Qué frase tiene este significado?",
+      "numbers": "Escucha y escribe el número con cifras",
+      "translate": "Traduce al inglés"
+    },
+    "tapTiles": "Toca las palabras de abajo…",
+    "clear": "Borrar",
+    "check": "Comprobar",
+    "allPlaced": "Todo colocado: comprueba tu respuesta",
+    "tapToCycle": "toca un hueco para cambiarlo",
+    "listen": "Escuchar",
+    "listenSlow": "Escuchar despacio",
+    "typeHere": "Escribe aquí…",
+    "correctSentence": "Correcta",
+    "hasMistake": "Tiene un error",
+    "challengeShareText": "Conseguí {{score}}/{{n}} en English Grammar Tree. ¿Puedes superarme?",
+    "results": {
+      "placementTitle": "Tu nivel: {{level}}",
+      "examPassed": "¡Examen aprobado!",
+      "testPassed": "¡Te sabes esta regla!",
+      "notPassed": "Esta vez no",
+      "excellent": "¡Excelente trabajo!",
+      "good": "¡Buena sesión!",
+      "keepGoing": "¡Sigue así, se te quedará!",
+      "correct": "correctas",
+      "bestCombo": "mejor combo",
+      "challengeWon": "¡Superaste los {{score}} de tu amigo! 🏆",
+      "challengeLost": "Tu amigo hizo {{score}}: ¡inténtalo de nuevo!",
+      "goalDone": "Objetivo diario cumplido: ¡racha de {{n}} días!",
+      "goalLeft": "Faltan {{xp}} XP para el objetivo de hoy",
+      "placementText": "Las reglas nuevas empezarán desde {{level}}. Puedes marcar los niveles inferiores como ya conocidos.",
+      "placementMark": "Marcar las reglas por debajo de {{level}} como conocidas",
+      "placementOnly": "Empezar solo desde {{level}}",
+      "placementSaved": "Guardado. Tus sesiones diarias empiezan ahora desde aquí.",
+      "grown": "Tu árbol ha crecido",
+      "newBadges": "Insignias nuevas",
+      "practiseRule": "Practica primero esta regla",
+      "challenge": "Retar a un amigo",
+      "again": "Jugar otra vez",
+      "done": "Listo"
+    },
+    "stage": {
+      "icon0": "🌰",
+      "icon1": "🌱",
+      "icon2": "🍃",
+      "icon3": "🌸",
+      "icon4": "🍎",
+      "name0": "Semilla: sin empezar",
+      "name1": "Brote: empezada",
+      "name2": "Hoja: aprendiendo",
+      "name3": "Flor: dominada",
+      "name4": "Fruto: memoria a largo plazo",
+      "nameClaimed": "Marcada como conocida",
+      "wilting": "necesita repaso"
+    },
+    "badges": {
+      "first_step": {
+        "title": "Primer paso",
+        "desc": "Responde tu primer ejercicio"
+      },
+      "first_session": {
+        "title": "En camino",
+        "desc": "Termina una sesión"
+      },
+      "placement": {
+        "title": "Brújula",
+        "desc": "Haz la prueba de nivel"
+      },
+      "streak_3": {
+        "title": "Calentando",
+        "desc": "Racha de 3 días"
+      },
+      "streak_7": {
+        "title": "En llamas",
+        "desc": "Racha de 7 días"
+      },
+      "streak_30": {
+        "title": "Volcán",
+        "desc": "Racha de 30 días"
+      },
+      "correct_100": {
+        "title": "Cien",
+        "desc": "100 respuestas correctas"
+      },
+      "correct_1000": {
+        "title": "Mil",
+        "desc": "1.000 respuestas correctas"
+      },
+      "xp_1000": {
+        "title": "Estrella",
+        "desc": "Gana 1.000 XP"
+      },
+      "xp_10000": {
+        "title": "Superestrella",
+        "desc": "Gana 10.000 XP"
+      },
+      "rules_5": {
+        "title": "Primeras flores",
+        "desc": "Domina 5 reglas"
+      },
+      "rules_25": {
+        "title": "Árbol en crecimiento",
+        "desc": "Domina 25 reglas"
+      },
+      "rules_100": {
+        "title": "Bosque",
+        "desc": "Domina 100 reglas"
+      },
+      "fixer_10": {
+        "title": "Corrector",
+        "desc": "Elimina 10 elementos de tu mazo de errores"
+      },
+      "explorer": {
+        "title": "Explorador",
+        "desc": "Juega 10 juegos distintos"
+      },
+      "perfect": {
+        "title": "Impecable",
+        "desc": "Una sesión perfecta de 10+ respuestas"
+      },
+      "combo_15": {
+        "title": "Rayo",
+        "desc": "15 respuestas correctas seguidas"
+      },
+      "sprinter": {
+        "title": "Velocista",
+        "desc": "Consigue 25+ en un sprint de 60 segundos"
+      },
+      "boss_1": {
+        "title": "Coronado",
+        "desc": "Aprueba un examen de nivel"
+      },
+      "boss_all": {
+        "title": "Gran maestro",
+        "desc": "Aprueba los seis exámenes de nivel"
+      }
+    },
+    "cert": {
+      "heading": "Certificado de logro",
+      "line": "ha aprobado el examen de nivel de English Grammar Tree",
+      "score": "Puntuación {{pct}} %",
+      "download": "Descargar certificado"
+    },
+    "levelName": {
+      "A1": "Principiante",
+      "A2": "Elemental",
+      "B1": "Intermedio",
+      "B2": "Intermedio alto",
+      "C1": "Avanzado",
+      "C2": "Maestría"
+    },
+    "challenge": {
+      "title": "¡Te han retado!",
+      "text": "Un amigo consiguió {{score}}/{{n}} en «{{game}}». Juega la misma ronda y supéralo.",
+      "accept": "Aceptar reto",
+      "dismiss": "Ahora no"
+    },
+    "streakDays_one": "día de racha",
+    "streakDays_other": "días de racha",
+    "freezeHint": "Congelar racha: un día perdido se cubre automáticamente. Ganas una cada 7 días de racha.",
+    "goalHint": "Gana XP para alcanzar tu objetivo diario y mantener la racha",
+    "dailyGoal": "objetivo diario",
+    "level": "Nivel {{n}}",
+    "cta": {
+      "placement": "Descubre tu nivel",
+      "placementSub": "Una prueba adaptativa de 5 minutos: salta lo que ya sabes",
+      "startFromZero": "Empezar desde el principio",
+      "dailySub": "12 ejercicios cortos · unos 5 minutos",
+      "daily": "Riega tu árbol",
+      "dailyMore": "Una sesión más",
+      "dailyInfo": "{{due}} repasos pendientes",
+      "newRule": "nueva: {{rule}}",
+      "deck": "Corregir mis errores ({{n}})",
+      "deckSub": "Cada uno se elimina tras 3 respuestas correctas en días distintos"
+    },
+    "tree": {
+      "title": "Tu árbol de gramática",
+      "meta": "{{mastered}}/{{total}} reglas en flor",
+      "wilting": "{{n}} necesitan repaso",
+      "aria": "Árbol de gramática: una rama por nivel, una hoja por regla",
+      "hint": "Toca una hoja para ver la regla y practicarla"
+    },
+    "accuracy": "{{pct}} % de acierto",
+    "itemsSeen": "{{seen}}/{{total}} ejercicios probados",
+    "practise": "Practicar",
+    "openRule": "Abrir la regla",
+    "exams": {
+      "title": "Exámenes de nivel",
+      "meta": "20 preguntas variadas · 80 % para aprobar · gana una corona y un certificado",
+      "best": "mejor {{pct}} %",
+      "notTaken": "sin hacer"
+    },
+    "arcade": {
+      "title": "Juegos",
+      "meta": "{{n}} juegos, cada uno ligado a reglas de gramática",
+      "groups": {
+        "core": "Básicos: todas las reglas",
+        "tenses": "Tiempos y verbos",
+        "words": "Palabras y expresiones",
+        "structures": "Estructuras de la oración",
+        "advanced": "Avanzado (C1–C2)"
+      },
+      "noSpeech": "Tu navegador no tiene síntesis de voz",
+      "mode": {
+        "sprint": "Sprint de 60 s",
+        "survival": "3 vidas"
+      },
+      "best": "mejor {{score}}",
+      "recommended": "Recomendado para ti",
+      "all": "Todos",
+      "new": "nuevo",
+      "noTranslation": "Disponible cuando el idioma de la interfaz no es inglés"
+    },
+    "games": {
+      "daily-challenge": {
+        "title": "Reto diario",
+        "desc": "Las mismas 15 preguntas para todos hoy: compara tu puntuación"
+      },
+      "error-hunter": {
+        "title": "Cazaerrores",
+        "desc": "Encuentra el error que más cometen los estudiantes"
+      },
+      "right-or-wrong": {
+        "title": "¿Bien o mal?",
+        "desc": "Juzga frases lo más rápido que puedas"
+      },
+      "gap-fill": {
+        "title": "Rellenar huecos",
+        "desc": "Elige la palabra que corrige la frase"
+      },
+      "sentence-builder": {
+        "title": "Constructor de frases",
+        "desc": "Forma frases con fichas de palabras"
+      },
+      "dictation": {
+        "title": "Dictado",
+        "desc": "Escucha una frase y escríbela"
+      },
+      "survival": {
+        "title": "Supervivencia",
+        "desc": "Preguntas mixtas sin fin, cada vez más difíciles"
+      },
+      "murphy-drill": {
+        "title": "Práctica Murphy",
+        "desc": "Errores comunes de las unidades de Murphy"
+      },
+      "tense-detective": {
+        "title": "Detective de tiempos",
+        "desc": "Deduce el tiempo verbal paso a paso"
+      },
+      "timeline-match": {
+        "title": "Frase y línea de tiempo",
+        "desc": "Une una frase con su línea de tiempo"
+      },
+      "which-tense": {
+        "title": "¿Qué tiempo es?",
+        "desc": "Nombra el tiempo verbal de una frase"
+      },
+      "marker-sort": {
+        "title": "Clasificar marcadores",
+        "desc": "Clasifica palabras de tiempo como «since» y «yesterday»"
+      },
+      "same-scene": {
+        "title": "Misma escena, dos tiempos",
+        "desc": "Siente la diferencia entre tiempos cercanos"
+      },
+      "tense-forms": {
+        "title": "Formas verbales",
+        "desc": "Elige la forma verbal correcta en contexto"
+      },
+      "tense-chameleon": {
+        "title": "Camaleón de tiempos",
+        "desc": "Reescribe una frase en otro tiempo"
+      },
+      "verb-forge": {
+        "title": "Fragua de verbos",
+        "desc": "Verbos irregulares: escribe V2 y V3 contra el reloj"
+      },
+      "verb-memory": {
+        "title": "Memoria de verbos",
+        "desc": "Une los verbos con sus formas de pasado"
+      },
+      "article-rush": {
+        "title": "Carrera de artículos",
+        "desc": "a, an, the o nada, en historias reales"
+      },
+      "preposition-sort": {
+        "title": "Clasificar preposiciones",
+        "desc": "in, on, at y preposiciones de movimiento"
+      },
+      "count-it": {
+        "title": "Cuéntalo",
+        "desc": "Contables, incontables, much, many, plurales"
+      },
+      "adjective-stack": {
+        "title": "Pila de adjetivos",
+        "desc": "Orden de adjetivos, comparativos, adverbios"
+      },
+      "number-dictation": {
+        "title": "Dictado de números",
+        "desc": "Escucha números, años y precios y escríbelos"
+      },
+      "question-maker": {
+        "title": "Creador de preguntas",
+        "desc": "Forma preguntas y negaciones"
+      },
+      "consequence-match": {
+        "title": "Consecuencias",
+        "desc": "Condicionales: une «if» con el resultado"
+      },
+      "transformer": {
+        "title": "Transformador",
+        "desc": "Convierte frases activas en pasivas"
+      },
+      "gossip-chain": {
+        "title": "Cadena de cotilleos",
+        "desc": "Cuenta lo que dijo la gente"
+      },
+      "verb-patterns": {
+        "title": "Patrones verbales",
+        "desc": "-ing or to + verb?"
+      },
+      "detective": {
+        "title": "Detective",
+        "desc": "must, might, can't (have): deduce a partir de pistas"
+      },
+      "regret-machine": {
+        "title": "Máquina de lamentos",
+        "desc": "I wish, if only, it's time"
+      },
+      "sentence-welder": {
+        "title": "Soldador de frases",
+        "desc": "Une frases con who, which, whose"
+      },
+      "formalizer": {
+        "title": "Formalizador",
+        "desc": "Inversión: «Never have I…»"
+      },
+      "spotlight": {
+        "title": "Foco",
+        "desc": "Oraciones hendidas: «It was Tom who…»"
+      },
+      "connector-bridge": {
+        "title": "Puente de conectores",
+        "desc": "although, despite, however, therefore…"
+      },
+      "register-slider": {
+        "title": "Control de registro",
+        "desc": "Elige la versión académica; matiza las afirmaciones"
+      },
+      "comma-tap": {
+        "title": "Toca la coma",
+        "desc": "¿Coma, punto y coma o nada?"
+      },
+      "c-mix": {
+        "title": "Mezcla C1–C2",
+        "desc": "Participios, subjuntivo, elipsis y más"
+      },
+      "translate": {
+        "title": "Traduce al inglés",
+        "desc": "Escribe en inglés: los errores se explican como trampas típicas"
+      },
+      "my-traps": {
+        "title": "Mis trampas",
+        "desc": "Una sesión centrada en los errores que más cometes"
+      },
+      "false-friends": {
+        "title": "Falsos amigos",
+        "desc": "magazine, actual, sympathetic: no son lo que parecen"
+      },
+      "collocations": {
+        "title": "Compañeras de palabra",
+        "desc": "¿make o do? ¿take o make a photo?"
+      },
+      "phrasal-verbs": {
+        "title": "Phrasal verbs",
+        "desc": "give up, look after, find out…"
+      },
+      "verb-prep": {
+        "title": "Verbo + preposición",
+        "desc": "depend on, wait for, listen to"
+      },
+      "polite": {
+        "title": "No suenes grosero",
+        "desc": "Convierte peticiones directas en inglés educado"
+      }
+    },
+    "progress": {
+      "title": "Tu progreso",
+      "answers": "respuestas",
+      "accuracy": "acierto",
+      "minutes": "minutos practicados",
+      "inReview": "en repaso",
+      "bestStreak": "mejor racha",
+      "xpChart": "XP: últimos 14 días",
+      "goal": "objetivo {{xp}}",
+      "activity": "Actividad: últimas 16 semanas",
+      "less": "menos",
+      "more": "más",
+      "frozen": "racha congelada",
+      "masteryChart": "Dominio por nivel",
+      "weakest": "Reglas más débiles",
+      "wordsRow": "Palabras"
+    },
+    "badgesTitle": "Insignias",
+    "settings": {
+      "title": "Ajustes de práctica",
+      "goal": "Objetivo diario",
+      "goal30": "Relajado 30",
+      "goal50": "Regular 50",
+      "goal100": "Serio 100",
+      "goal150": "Intenso 150",
+      "sound": "Efectos de sonido",
+      "on": "Sí",
+      "off": "No",
+      "placement": "Nivel inicial",
+      "retake": "repetir",
+      "reset": "Reiniciar el progreso de práctica",
+      "resetBtn": "Reiniciar",
+      "resetConfirm": "Sí, reiniciar todo",
+      "cancel": "Cancelar"
+    },
+    "hero": {
+      "morning": "Buenos días",
+      "afternoon": "Buenas tardes",
+      "evening": "Buenas noches",
+      "night": "Estudiando hasta tarde",
+      "nudgeStreak": "🔥 ¡Practica hoy para mantener tu racha de {{n}} días!",
+      "nudgeWilting": "🍂 {{n}} hojas de tu árbol necesitan agua.",
+      "nudgeGoal": "🎯 Faltan {{xp}} XP para el objetivo de hoy: unos 5 minutos.",
+      "nudgeDone": "✅ ¡Objetivo cumplido! Cada respuesta extra hace crecer tu árbol."
+    },
+    "sections": {
+      "label": "Secciones de hoy",
+      "tree": "Árbol",
+      "games": "Juegos",
+      "leaderboard": "Clasificación",
+      "progress": "Progreso",
+      "badges": "Insignias"
+    },
+    "translate": {
+      "placeholder": "Escribe la frase en inglés…",
+      "showAnswer": "Mostrar respuesta",
+      "accepted": "¡Aceptada! Nuestra versión:",
+      "diff": "Tu respuesta comparada con la correcta",
+      "missing": "palabra que falta",
+      "extra": "palabra de más"
+    },
+    "traps": {
+      "articles": {
+        "name": "Artículos",
+        "desc": "a / an / the, o ninguno",
+        "hint": "Un sustantivo contable en singular necesita a/an (primera mención, “one of”) o the (los dos sabemos cuál)."
+      },
+      "toBe": {
+        "name": "Falta “to be”",
+        "desc": "“I student” → I am a student",
+        "hint": "Una oración en inglés necesita un verbo: si no hay otro, usa am / is / are."
+      },
+      "tenses": {
+        "name": "Tiempos verbales",
+        "desc": "Present Perfect vs Past Simple, Continuous",
+        "hint": "Fíjate en el tiempo: un momento terminado (yesterday, in 2020) → Past Simple; hasta ahora (already, since, for) → Present Perfect."
+      },
+      "futureTime": {
+        "name": "will tras when / if",
+        "desc": "“When he will come” → when he comes",
+        "hint": "Después de when, if, as soon as, before, until usa el presente, incluso para hablar del futuro."
+      },
+      "wordOrder": {
+        "name": "Orden de palabras y preguntas",
+        "desc": "Las preguntas necesitan do/does/did; sujeto antes del verbo",
+        "hint": "Las preguntas y negaciones necesitan un auxiliar: Where does she live? I don't know. En las preguntas indirectas se mantiene sujeto + verbo."
+      },
+      "prepositions": {
+        "name": "Preposiciones",
+        "desc": "depend on, wait for, at the weekend…",
+        "hint": "Las preposiciones inglesas no siempre coinciden con las españolas: apréndelas con el verbo: depend on, listen to, wait for."
+      },
+      "countable": {
+        "name": "Contables e incontables",
+        "desc": "information, advice, news, much / many",
+        "hint": "Algunos sustantivos no se pueden contar en inglés: information, advice, news, furniture; sin a/an y sin plural."
+      },
+      "conditionals": {
+        "name": "Condicionales y deseos",
+        "desc": "2º vs 3er condicional, wish",
+        "hint": "Sobre el pasado → had + V3 / would have + V3. Sobre el presente o un presente imaginario → Past Simple / would + verbo."
+      },
+      "sequence": {
+        "name": "Estilo indirecto",
+        "desc": "He said he was tired",
+        "hint": "Después de said / told, el tiempo retrocede un paso: is → was, will → would, has done → had done."
+      },
+      "verbPatterns": {
+        "name": "-ing o to + verbo",
+        "desc": "enjoy doing, decide to do",
+        "hint": "Algunos verbos llevan -ing (enjoy, avoid, finish) y otros to + verbo (decide, want, hope): aprende el patrón junto con el verbo."
+      },
+      "modals": {
+        "name": "Verbos modales",
+        "desc": "must vs have to, can / could",
+        "hint": "Los verbos modales van con el verbo base (sin to, sin -s): she can swim, you must go."
+      },
+      "falseFriends": {
+        "name": "Falsos amigos",
+        "desc": "actually ≠ actualmente",
+        "hint": "Las palabras que se parecen a las españolas a menudo significan otra cosa: magazine = revista, a shop = tienda."
+      },
+      "collocations": {
+        "name": "Compañeras de palabra",
+        "desc": "make vs do, take a photo",
+        "hint": "Algunas palabras simplemente van juntas en inglés: make a mistake, do homework, take a photo."
+      },
+      "phrasal": {
+        "name": "Phrasal verbs",
+        "desc": "give up, look after, find out",
+        "hint": "La palabra pequeña cambia el significado: look for = buscar, look after = cuidar."
+      },
+      "politeness": {
+        "name": "Sonar educado",
+        "desc": "Could I have…? en vez de Give me…",
+        "hint": "Las órdenes directas suenan groseras en inglés: usa Could you…? / Could I have…, please? / I'd like…"
+      }
+    },
+    "trapsCard": {
+      "title": "Tus trampas",
+      "meta": "Donde tu lengua materna te quita puntos",
+      "empty": "Responde unas 20 preguntas y la app mostrará qué trampas te atrapan más. Puedes entrenar cualquier trampa ahora mismo.",
+      "stats": "{{acc}} % correcto · {{n}} respuestas · {{deck}} en el mazo de errores",
+      "noData": "aún sin probar",
+      "train": "Entrenar",
+      "trainTop": "Entrenar mis trampas principales",
+      "showAll": "Todas las trampas",
+      "showTop": "Solo mis trampas principales"
+    },
+    "contrast": {
+      "title": "Por qué aquí es diferente",
+      "train": "Entrenar esta trampa"
+    },
+    "topics": {
+      "w_false_friends": "Falsos amigos",
+      "w_collocations": "Compañeras de palabra (colocaciones)",
+      "w_phrasal": "Phrasal verbs",
+      "w_verb_prep": "Verbos con preposiciones",
+      "w_polite": "Sonar educado"
+    }
+  },
+  "social": {
+    "title": "Clasificación",
+    "meta": "Compite con amigos y estudiantes de todo el mundo",
+    "signInTitle": "Compite con amigos",
+    "signInText": "Inicia sesión para aparecer en la clasificación, añadir amigos y comparar rachas, XP e insignias.",
+    "signIn": "Iniciar sesión",
+    "board": {
+      "friends": "Amigos",
+      "weekGlobal": "Esta semana",
+      "xpGlobal": "Histórico"
+    },
+    "metric": {
+      "week": "Esta semana",
+      "xp": "XP total",
+      "streak": "Racha"
+    },
+    "unavailable": "La clasificación no está disponible ahora. Revisa tu conexión e inténtalo de nuevo.",
+    "noFriends": "Aún no tienes amigos. ¡Añade a alguien abajo y competid cada semana!",
+    "you": "tú",
+    "badgesCount": "{{n}} insignias",
+    "days": "días",
+    "hiddenFromEveryone": "Tu tarjeta solo es visible para tus amigos",
+    "notInTop": "Aún no estás en el top 50: ¡sigue así!",
+    "weekResets": "Los XP semanales se reinician cada lunes",
+    "refresh": "Actualizar",
+    "someone": "Alguien",
+    "inviteText": "¡Aprende gramática inglesa conmigo en English Grammar Tree! Mi código de amigo: {{code}}",
+    "requests": "Solicitudes de amistad ({{n}})",
+    "accept": "Aceptar",
+    "decline": "Rechazar",
+    "addTitle": "Añadir un amigo",
+    "addPlaceholder": "Código de amigo o nombre",
+    "add": "Añadir",
+    "codeHint": "Pulsa Añadir para enviar una solicitud al código {{code}}",
+    "result": {
+      "sent": "¡Solicitud enviada! Aparece enseguida en su lista.",
+      "accepted": "¡Ya sois amigos!",
+      "already": "Ya sois amigos.",
+      "pending": "Ya hay una solicitud esperando respuesta.",
+      "self": "Ese es tu propio código 🙂",
+      "notFound": "Nadie tiene este código. Compruébalo e inténtalo de nuevo.",
+      "error": "Algo salió mal. Inténtalo de nuevo en un momento."
+    },
+    "friend": "amigo",
+    "pending": "pendiente",
+    "yourCode": "Tu código de amigo",
+    "invite": "Invitar",
+    "friendsTitle": "Amigos ({{n}})",
+    "removeConfirm": "Eliminar",
+    "remove": "Eliminar amigo",
+    "cancelRequest": "Cancelar",
+    "yourCard": "Tu tarjeta pública",
+    "nameLabel": "Nombre público",
+    "save": "Guardar",
+    "rename": "Cambiar nombre",
+    "visibility": "Quién te ve en las clasificaciones",
+    "vis": {
+      "everyone": "Todos",
+      "friends": "Solo amigos"
+    },
+    "privacy": "Solo se muestran tu nombre público, foto, nivel, XP, racha, insignias y número de reglas dominadas. Tu correo y tus notas nunca se comparten."
   }
 }

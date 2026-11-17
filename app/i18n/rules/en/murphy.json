@@ -6,7 +6,7 @@
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
     "exc": "<p>Stative verbs (<em>know, believe, belong, own, contain</em>) are usually not used in Continuous.</p><p>But <em>think, have, see, feel, taste</em> change meaning: <em>I'm thinking</em> (considering) vs. <em>I think</em> (believe).</p>",
     "mistakes": [
-      "<s>I am knowing him</s> → <em>I know him</em> — know is stative.",
+      "<s>I am knowing him</s> → <em>I know him</em> — know — stative.",
       "<s>I am having a car</s> → <em>I have a car</em> — ownership — simple.",
       "<s>This is tasting good</s> → <em>This tastes good</em> — perception — simple."
     ]
@@ -144,7 +144,7 @@
     ]
   },
   "adv_u12": {
-    "text": "Unit 12 - Be to + infinitive",
+    "text": "Unit 12 — Be to + infinitive",
     "note": "The Prime Minister is to visit France.",
     "exp": "<strong>Unit 12</strong> (Advanced) — the construction <em>be to + infinitive</em>.<br><br><strong>Formula:</strong> <em>am/is/are/was/were + to + V</em>. Primarily <strong>written, formal register</strong> (newspapers, official announcements, diplomacy, instructions).<br><br><strong>Meanings:</strong><ul><li><strong>Official plan/arrangement:</strong> <em>The Prime Minister is to visit Japan next week</em>.</li><li><strong>Order, instruction:</strong> <em>You are to report to security by 9 a.m.</em></li><li><strong>Prohibition:</strong> <em>No one is to enter the room</em>.</li><li><strong>Condition (in if-clauses):</strong> <em>If we are to succeed, we must act now</em>.</li><li><strong>Fate (literary):</strong> <em>He was to become a great artist</em>.</li></ul><br><strong>Past:</strong> <em>was/were to + V</em> can mean both a realised intention (was to and did) and an unrealised one (was going to, but). For \"should have done, but didn't\" use <em>was/were to have + V3</em>: <em>He was to have arrived yesterday</em> (was to, but did not arrive).<br><br>In conversational speech this form is almost never encountered — its niche is official style.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -168,7 +168,7 @@
     ]
   },
   "adv_u14": {
-    "text": "Unit 14 - Future in the Past",
+    "text": "Unit 14 — Future in the Past",
     "note": "She said she would come. He was going to resign.",
     "exp": "<strong>Unit 14</strong> (Advanced) — Future in the Past: looking from the past into the future.<br><br>When the narrative is led in the past but a future relative to that point must be indicated, special forms are used.<br><br><strong>Would + V</strong> — \"was destined/would turn out/happened later\": <em>In 1920 she published her first novel. It would become a bestseller.</em><br><br><strong>Was/were going to + V</strong> — intention in the past, often unrealised: <em>He was going to apologise, but he changed his mind.</em><br><br><strong>Was/were to + V</strong> — fateful, predetermined in advance: <em>He was to become president ten years later.</em> The perfect form <em>was to have + V3</em> emphasises non-realisation: <em>The meeting was to have taken place on Monday, but was cancelled.</em><br><br><strong>Past Continuous</strong> — for planned events: <em>He was leaving the next day.</em><br><br><strong>Was about to + V</strong> — was on the verge: <em>She was about to speak when the door opened.</em><br><br>The key area of application is <strong>reported speech</strong> (<em>He said he would come</em>), biographical narratives and fiction. Future in the Past distinguishes a mature narrator able to project a future perspective into the past.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -180,7 +180,7 @@
     ]
   },
   "adv_u15": {
-    "text": "Unit 15 – Can, could, be able to, be allowed to",
+    "text": "Unit 15 — Can, could, be able to, be allowed to",
     "note": "Capacity and Resolution: Subtle Differences",
     "exp": "<strong>Unit 15</strong> (Advanced) — ability and permission: <em>can, could, be able to, be allowed to, manage to</em>.<br><br><strong>Ability in the past:</strong> <em>could</em> — general ability overall (<em>She could read at the age of four</em>). For <strong>a single specific successful action</strong> prefer <em>was/were able to, managed to, succeeded in -ing</em>: <em>The door was locked, but I managed to open it</em> (NOT <em>could open</em>). Exception — negatives and with verbs of perception (<em>see, hear, smell, understand, remember</em>): <em>I couldn't see him in the dark</em> — perfectly correct.<br><br><strong>Permission:</strong> <em>can</em> — neutral-conversational; <em>may</em> — formal-polite; <em>be allowed to</em> — emphasises an external rule (<em>You're not allowed to smoke here</em>).<br><br><strong>Epistemic vs deontic:</strong> <em>can</em> simultaneously denotes ability (\"I can\"), permission (\"it is allowed\"), possibility (\"it happens\": <em>It can be cold here in winter</em>). <em>Could</em> also expresses mild probability (<em>That could be true</em>).<br><br><strong>Register:</strong> <em>be able to</em> is indispensable where modals don't work: before another modal (<em>I'd like to be able to swim</em>), in an infinitive/gerund (<em>being able to drive</em>), in the perfect (<em>I've been able to solve it</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -252,8 +252,8 @@
     ]
   },
   "adv_u21": {
-    "text": "Unit 21 - Linking verbs: be, appear, seem, become, get",
-    "note": "She seems tired. Didn't become angry. It got dark.",
+    "text": "Unit 21 — Linking verbs: be, appear, seem, become, get",
+    "note": "She seems tired. He became angry. It got dark.",
     "exp": "<strong>Unit 21</strong> (Advanced) — linking (copular) verbs.<br><br>A linking verb connects the subject with the nominal part of the predicate (adjective or noun), which describes the subject rather than an action. After a linking verb an <strong>adjective</strong> is placed, not an adverb.<br><br><strong>Static links:</strong> <em>be, seem, appear, look, feel, sound, smell, taste, remain, stay, keep</em>: <em>She seems happy. This cheese tastes odd. He remained silent.</em><br><br><strong>Change-of-state links:</strong><ul><li><em>become</em> — universal, often with a noun/adjective: <em>He became a doctor.</em></li><li><em>get</em> — colloquial, with an adjective: <em>It's getting dark; I got tired.</em></li><li><em>grow</em> — gradual: <em>grow old, grow tired.</em></li><li><em>turn</em> — sudden/colour: <em>The leaves turned yellow; He turned pale.</em></li><li><em>go</em> — negative/unnatural: <em>go bad, go blind, go mad.</em></li><li><em>come</em> — positive outcome: <em>dreams come true, wishes come true.</em></li><li><em>fall</em> — sudden: <em>fall ill, fall silent, fall asleep.</em></li></ul><br><strong>Context:</strong> <em>look good</em> (linking, looks good) ↔ <em>look carefully</em> (action, look attentively). The same verbs can be both linking and lexical — the distinction is by syntactic position.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
     "exc": "<p>After linking verbs — an adjective, not an adverb: <em>She looks tired</em>, not <s>tiredly</s>.</p><p><em>get</em> often = become: <em>It's getting dark</em>.</p>",
@@ -302,7 +302,7 @@
   "adv_u25": {
     "text": "Unit 25 – Reporting with Passive: It is said that…",
     "note": "It is believed / said / reported / thought that…",
-    "exp": "<strong>Unit 25</strong> (Advanced) — reporting with the passive: <em>It is said that… / He is said to…</em><br><br>For <strong>impersonal reporting of opinions and information</strong> — in news, academic texts, reviews — two synonymous constructions are used:<ol><li><strong>It + be + V3 + that-clause:</strong> <em>It is said that she's the best in her field.</em></li><li><strong>Subject + be + V3 + to-infinitive:</strong> <em>She is said to be the best in her field.</em></li></ol>Both carry the meaning \"it is generally known/asserted that…\", without naming the source.<br><br><strong>Verbs of this type:</strong> <em>say, believe, think, consider, know, report, claim, allege, suppose, understand, expect, find, rumour</em>.<br><br><strong>Infinitive tenses:</strong><ul><li>Present/general: <em>He is said to live in Paris</em> (lives now).</li><li>Past: <em>to have + V3</em>: <em>He is said to have lived in Paris</em> (lived earlier).</li><li>Duration: <em>to be + -ing</em>: <em>He is said to be living in Paris</em> (lives now, ongoing).</li><li>Perfect continuous: <em>to have been + -ing</em>: <em>He is said to have been living there for ten years.</em></li></ul><br><strong>Register and distance:</strong> the construction signals <strong>caution</strong> and <strong>detachment</strong> — the author does not confirm but retells. Indispensable in journalism: <em>The suspect is alleged to have entered through the window.</em>",
+    "exp": "<strong>Unit 25</strong> (Advanced) — reporting with the passive: It is said that… / He is said to…</em><br><br>For <strong>impersonal reporting of opinions and information</strong> — in news, academic texts, reviews — two synonymous constructions are used:<ol><li><strong>It + be + V3 + that-clause:</strong> <em>It is said that she's the best in her field.</em></li><li><strong>Subject + be + V3 + to-infinitive:</strong> <em>She is said to be the best in her field.</em></li></ol>Both carry the meaning \"it is generally known/asserted that…\", without naming the source.<br><br><strong>Verbs of this type:</strong> <em>say, believe, think, consider, know, report, claim, allege, suppose, understand, expect, find, rumour</em>.<br><br><strong>Infinitive tenses:</strong><ul><li>Present/general: <em>He is said to live in Paris</em> (lives now).</li><li>Past: <em>to have + V3</em>: <em>He is said to have lived in Paris</em> (lived earlier).</li><li>Duration: <em>to be + -ing</em>: <em>He is said to be living in Paris</em> (lives now, ongoing).</li><li>Perfect continuous: <em>to have been + -ing</em>: <em>He is said to have been living there for ten years.</em></li></ul><br><strong>Register and distance:</strong> the construction signals <strong>caution</strong> and <strong>detachment</strong> — the author does not confirm but retells. Indispensable in journalism: <em>The suspect is alleged to have entered through the window.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
     "exc": "<p>Two structures: <em>It is said that he is rich</em> = <em>He is said to be rich</em>.</p><p>For the past: <em>He is said to have left</em>.</p>",
     "mistakes": [
@@ -312,7 +312,7 @@
     ]
   },
   "adv_u26": {
-    "text": "Unit 26 – Wh-questions: who, whom, which, how, whose",
+    "text": "Unit 26 — Wh-questions: who, whom, which, how, whose",
     "note": "Complex questions with prepositions and who/whom choices",
     "exp": "<strong>Unit 26</strong> (Advanced) — complex wh-questions: <em>who/whom, which, how, whose, what</em>.<br><br><strong>Who vs whom:</strong> in modern English <em>who</em> dominates; <em>whom</em> is strictly formal, required only immediately after a preposition: <em>To whom should I address the complaint?</em> In conversation the preposition moves to the end: <em>Who should I address the complaint to?</em><br><br><strong>Which vs what:</strong> <em>which</em> — choice from a limited set (<em>Which of these books do you prefer?</em>); <em>what</em> — open question without a set (<em>What do you want to read?</em>).<br><br><strong>Whose</strong> — question about possession: <em>Whose bag is this?</em><br><br><strong>How + adj/adv</strong> for degree: <em>How tall is he? How often do you go there? How long have you lived here?</em><br><br><strong>Indirect/embedded questions</strong> use direct word order, without <em>do/does/did</em>: <em>Do you know where he lives?</em> (NOT <em>where does he live</em>). This rule is often broken even by advanced learners.<br><br><strong>What…like vs How:</strong> <em>What is she like?</em> — what is her character? <em>How is she?</em> — how is she (feeling)? <em>What does she look like?</em> — what does she look like? <em>How does it work?</em> — how does it work?<br><br><strong>Pragmatics:</strong> <em>whom</em> in written complaints and formal addresses preserves old-fashioned authority. In email correspondence <em>who</em> is more common.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -324,7 +324,7 @@
     ]
   },
   "adv_u27": {
-    "text": "Unit 27 - Negative questions; echo questions; questions with chat-clauses",
+    "text": "Unit 27 — Negative questions; echo questions; questions with chat-clauses",
     "note": "Isn't she lovely? She's leaving, is she?",
     "exp": "<strong>Unit 27</strong> (Advanced) — non-standard question types.<br><br><strong>Negative questions (<em>Isn't she lovely? Didn't you know?</em>)</strong> express <strong>not a request for information, but an emotion</strong>: surprise, annoyance, confirmation. <em>Haven't we met before?</em> — it seems we've met? <em>Why didn't you tell me?</em> — a reproach. In exclamatory intonation: <em>Isn't it beautiful!</em> — how beautiful!<br><br><strong>Echo questions</strong> repeat part of the preceding utterance with a rising intonation, expressing surprise or a request to repeat: <em>— I'm moving to Tokyo. — You're moving WHERE?</em> In the question — the usual word order of a statement with emphatic stress.<br><br><strong>Declarative questions</strong> — a form of statement, but with rising intonation and a question function: <em>You've finished already?</em> They express surprise or a request for confirmation.<br><br><strong>Tag questions:</strong> confirmation of an expected answer. Rules: positive statement + negative tag (<em>She's Russian, isn't she?</em>); negative + positive (<em>You don't smoke, do you?</em>). Special cases: <em>I am → aren't I?</em>; <em>Let's → shall we?</em>; <em>imperative → will/would/can you?</em><br><br><strong>Pragmatics:</strong> a falling intonation on the tag — \"I know, confirm it\"; rising — \"is it really so?\".",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -348,7 +348,7 @@
     ]
   },
   "adv_u29": {
-    "text": "Unit 29 - Verb + two objects",
+    "text": "Unit 29 — Verb + two objects",
     "note": "She gave me a book. / She gave a book to me.",
     "exp": "<strong>Unit 29</strong> (Advanced) — verbs with two objects (ditransitive).<br><br>Two objects are governed by verbs of giving, transfer, information: <em>give, send, offer, show, teach, tell, lend, buy, make, cook, get, pay, promise</em>.<br><br><strong>Two syntactic patterns:</strong><ol><li><em>Verb + Indirect Object (Recipient) + Direct Object (Thing):</em> <em>I gave Tom the book.</em></li><li><em>Verb + Direct Object + to/for + Recipient:</em> <em>I gave the book to Tom.</em></li></ol><br><strong>To vs for:</strong> <em>to</em> with <em>give, send, tell, show, pay, offer, lend, promise, hand, pass, read</em>; <em>for</em> with <em>buy, get, make, cook, find, order, save, leave</em> (recipient is a beneficiary, not a recipient proper).<br><br><strong>Information structure:</strong> order choice is tied to <strong>topic/focus</strong>: new information usually at the end. <em>I gave Tom the book</em> — new = the book. <em>I gave the book to Tom</em> — new = Tom. With pronouns the second order is often required: <em>Give it to me</em> (rather than <em>*give me it</em> in AmE).<br><br><strong>Exception verbs</strong> — only the <em>to</em>-pattern: <em>explain, describe, suggest, announce, mention, introduce, admit, confess, report</em>. Impossible <em>*explain me the rule</em> — only <em>explain the rule to me</em>. <em>Suggest</em> requires a <em>that</em>-clause or -ing: <em>She suggested that I go / She suggested going.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -432,7 +432,7 @@
     ]
   },
   "adv_u36": {
-    "text": "Unit 36 – Reporting: suggestions, orders, intentions",
+    "text": "Unit 36 — Reporting: suggestions, orders, intentions",
     "note": "She suggested going / She proposed that we go",
     "exp": "<strong>Unit 36</strong> — reporting suggestions, orders and intentions.<br><br><strong>Phenomenon:</strong> conveying the wishes and plans of a third party through special verbs with different complements.<br><br><strong>Structures:</strong><ul><li><em>suggest/recommend/propose + -ing</em> or <em>+ that-clause</em> (often with subjunctive/should): <em>She suggested going / She suggested (that) we go.</em></li><li><em>order/tell/urge/advise/warn/beg + obj + to-inf</em>: <em>He urged us to reconsider.</em></li><li><em>say/claim + to-inf</em> for intentions: <em>She said she intended to resign.</em></li></ul><strong>Register:</strong> a <em>that</em>-clause is more formal than the gerund. <em>Recommend, advise</em> allow both options. <strong>Contrast:</strong> <em>suggest</em> NEVER takes <em>obj + to-inf</em> (unlike <em>tell, advise</em>). At C1 it is important to see the difference between <em>advise sb to do</em> (a direct instruction to a person) and <em>advise doing</em> (a general recommendation).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -444,7 +444,7 @@
     ]
   },
   "adv_u37": {
-    "text": "Unit 37 - Modal verbs in reporting",
+    "text": "Unit 37 — Modal verbs in reporting",
     "note": "She said she could / would / might / should",
     "exp": "<strong>Unit 37</strong> — modal verbs in reported speech.<br><br><strong>Phenomenon:</strong> the backshift of modals in reported speech is not symmetrical: some verbs shift, others remain.<br><br><strong>Shifts:</strong> <em>will→would, can→could, may→might, shall→should, must (obligation)→had to</em>. <strong>No change:</strong> <em>would, could, should, might, ought to, used to, had better</em>.<br><br><strong>Examples:</strong><ul><li><em>\"I can help.\" → She said she could help.</em></li><li><em>\"You must leave.\" → He said I had to leave.</em></li><li><em>\"It must be true.\" → He said it must be true.</em> (epistemic must is preserved).</li></ul><strong>Contrast:</strong> <em>must</em> meaning logical deduction usually does not change; meaning obligation — <em>had to</em>. When speech and event are simultaneous the shift may be absent: <em>She says she will come</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -480,7 +480,7 @@
     ]
   },
   "adv_u40": {
-    "text": "Unit 40 – Agreement between subject and verb (1)",
+    "text": "Unit 40 — Agreement between subject and verb (1)",
     "note": "Problems of subject and predicate agreement",
     "exp": "<strong>Unit 40</strong> — subject-verb agreement (part 1).<br><br><strong>Phenomenon:</strong> choosing the number of the verb with complex or formally ambiguous subjects.<br><br><strong>Rules:</strong><ul><li>Collective nouns (<em>team, government, family, committee</em>): BrE — singular or plural depending on meaning (<em>the team are arguing</em> = individuals), AmE — only singular.</li><li><em>Neither…nor / Either…or</em>: agreement with the nearest subject: <em>Neither the students nor the teacher was aware.</em></li><li>Subject = infinitive/clause: singular: <em>To err is human. What matters is effort.</em></li><li>Distances, sums, time as a single whole: singular: <em>Ten miles is a long walk. £500 is enough.</em></li></ul><strong>Exceptions:</strong> <em>news, mathematics, physics, politics, economics</em> — formally plural but take a singular verb; <em>police, cattle, people</em> — always plural. <strong>Contrast:</strong> <em>a pair of trousers is / trousers are</em> — depends on the structure.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -492,7 +492,7 @@
     ]
   },
   "adv_u41": {
-    "text": "Unit 41 – Agreement between subject and verb (2)",
+    "text": "Unit 41 — Agreement between subject and verb (2)",
     "note": "Complex cases of approval (continued)",
     "exp": "<strong>Unit 41</strong> — subject-verb agreement (part 2).<br><br><strong>Phenomenon:</strong> continuation of the topic — quantitative expressions and indefinite pronouns.<br><br><strong>Rules:</strong><ul><li><em>A number of</em> + pl. noun = plural verb: <em>A number of students were absent.</em></li><li><em>The number of</em> + pl. noun = singular verb: <em>The number of applicants is rising.</em></li><li>Fractions and percentages: agreement by the reference noun: <em>Half of the cake is gone / Half of the students are here.</em></li><li>Indefinite <em>everyone, someone, nobody, each, either, neither</em> — singular: <em>Everyone is ready.</em></li></ul><strong>Register:</strong> formally <em>neither of them knows</em>; in colloquial speech <em>know</em> is found. <strong>Contrast:</strong> <em>a lot of</em> and <em>plenty of</em> — agreement by the noun (<em>a lot of water is / a lot of people are</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -504,7 +504,7 @@
     ]
   },
   "adv_u42": {
-    "text": "Unit 42 – Agreement between subject and verb (3)",
+    "text": "Unit 42 — Agreement between subject and verb (3)",
     "note": "Agreement with relative clauses and complex subjects",
     "exp": "<strong>Unit 42</strong> — subject-verb agreement (part 3).<br><br><strong>Phenomenon:</strong> agreement in relative clauses and with complex numerical/group subjects.<br><br><strong>Rules:</strong><ul><li>In <em>one of the X who/that + V</em>: the verb is plural because the antecedent is <em>X</em> (plural): <em>She is one of those people who care deeply.</em></li><li>In <em>the only one of the X who/that</em>: the verb is singular: <em>He's the only one of us who knows.</em></li><li>Numerals as a sum/measure: singular: <em>Three million pounds was raised.</em></li><li><em>The majority/minority of</em>: agreement by the noun: <em>The majority of voters support…</em></li></ul><strong>Contrast:</strong> <em>more than one</em> + singular verb (contrary to the meaning): <em>More than one student has complained.</em> Formal academic style requires a clear choice of reference.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -516,7 +516,7 @@
     ]
   },
   "adv_u43": {
-    "text": "Unit 43 – Compound nouns and noun phrases",
+    "text": "Unit 43 — Compound nouns and noun phrases",
     "note": "Car park / a two-hour delay / state-of-the-art",
     "exp": "<strong>Unit 43</strong> — compound nouns and noun phrases.<br><br><strong>Phenomenon:</strong> complex nominal formations in formal texts. A compact alternative to prepositional-attributive constructions.<br><br><strong>Structures:</strong><ul><li>Compounds: <em>car park, science fiction, bookshop</em> — spelling (one word/hyphen/separate) does not follow a general rule.</li><li>Attributive position: the first noun is singular, often hyphenated: <em>a ten-minute walk, a five-year-old child, a two-hour meeting.</em></li><li>Postmodification through <em>of</em>: <em>a walk of ten minutes</em> (less compact).</li></ul><strong>Examples:</strong><ul><li><em>A state-of-the-art facility.</em></li><li><em>Student accommodation problems.</em> (chain of three nouns)</li></ul><strong>Register:</strong> long chains are typical of newspapers and academic style. <strong>Contrast:</strong> <em>a woman doctor</em> (type) vs <em>a doctor's office</em> (possession) — different relations.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -600,7 +600,7 @@
     ]
   },
   "adv_u50": {
-    "text": "Unit 50 – Much (of), many (of), a lot of, lots (of)",
+    "text": "Unit 50 — Much (of), many (of), a lot of, lots (of)",
     "note": "Register differences and constructs",
     "exp": "<strong>Unit 50</strong> — <em>much (of), many (of), a lot of, lots (of)</em>.<br><br><strong>Phenomenon:</strong> quantitative expressions with major register differences.<br><br><strong>Register scale:</strong><ul><li><em>A great deal of / a large amount of / much</em> — formal (written style): <em>A great deal of effort was required.</em></li><li><em>A lot of / plenty of</em> — neutral, universal.</li><li><em>Lots of / loads of / tons of</em> — conversational: <em>We had loads of fun.</em></li></ul><strong>Rules:</strong> <em>much</em> in affirmatives is avoided — replaced by <em>a lot of</em>. In negatives and questions <em>much/many</em> are neutral: <em>Do you have much time? Not much.</em> <em>Many of</em> + def.: <em>Many of the problems remain unsolved.</em><br><br><strong>Agreement:</strong> <em>a lot of water is / a lot of people are</em> — by the noun.<br><br><strong>Contrast:</strong> <em>much</em> is acceptable in affirmatives with modifiers: <em>so much time, too much noise, as much as possible</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -612,7 +612,7 @@
     ]
   },
   "adv_u51": {
-    "text": "Unit 51 – All (of), whole, every, each",
+    "text": "Unit 51 — All (of), whole, every, each",
     "note": "Subtle differences, formal and colloquial contexts",
     "exp": "<strong>Unit 51</strong> — <em>all (of), whole, every, each</em>.<br><br><strong>Phenomenon:</strong> four \"all-encompassing\" quantifiers with different logic.<br><br><strong>Differences:</strong><ul><li><em>All</em> — the entire set, collectively: <em>All the students passed.</em></li><li><em>Whole</em> — wholeness, no exceptions, emphasis on unity: <em>The whole class passed.</em> / <em>the whole day</em>.</li><li><em>Every</em> — distributive, each without exception (3+ items): <em>Every student got a certificate.</em></li><li><em>Each</em> — individualises, often 2+ items with attention to differences: <em>Each student received a different task.</em></li></ul><strong>Postposition:</strong> <em>They all arrived / They each received a copy</em> (after a pronoun).<br><br><strong>Contrast:</strong> <em>all day</em> = <em>the whole day</em> (24 hours), but <em>every day</em> = each day in a series. <em>Each of them knows</em> (always singular). <em>Every</em> does not take <em>of</em> — you need <em>every one of</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -624,7 +624,7 @@
     ]
   },
   "adv_u52": {
-    "text": "Unit 52 - Few, little, less, fewer",
+    "text": "Unit 52 — Few, little, less, fewer",
     "note": "Fewer mistakes vs. less money (and the with fewer error)",
     "exp": "<strong>Unit 52</strong> — <em>few, little, less, fewer</em>.<br><br><strong>Phenomenon:</strong> quantitative opposition depending on noun type and connotation.<br><br><strong>Rules:</strong><ul><li><em>Few</em> — with countable plural: <em>few friends</em> (few, negative). <em>A few</em> — positive (some quantity): <em>a few friends</em>.</li><li><em>Little</em> — with uncountable: <em>little time</em> (little). <em>A little</em> — positive: <em>a little time</em>.</li><li><em>Fewer</em> — comparative of <em>few</em>: <em>fewer cars</em>.</li><li><em>Less</em> — comparative of <em>little</em>: <em>less traffic</em>.</li></ul><strong>Examples:</strong><ul><li><em>He has few real friends.</em></li><li><em>She has a little patience left.</em></li></ul><strong>Conversational usage:</strong> <em>less people</em> instead of <em>fewer people</em> is widespread but considered an error in the written norm. Formal equivalents of <em>few/little</em>: <em>scarcely any, hardly any</em>. <strong>Contrast:</strong> <em>quite a few</em> (unexpectedly many, positive) vs <em>few</em> (few).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -636,7 +636,7 @@
     ]
   },
   "adv_u53": {
-    "text": "Unit 53 - Relative pronouns",
+    "text": "Unit 53 — Relative pronouns",
     "note": "Who/which/that in restrictive and descriptive",
     "exp": "<strong>Unit 53</strong> — relative pronouns.<br><br><strong>Phenomenon:</strong> distinguishing defining and non-defining relative clauses and choosing the pronoun.<br><br><strong>Rules:</strong><ul><li>Defining (no commas, necessary information): <em>who/that/which/whom/whose</em>. Object <em>whom</em> is often dropped in speech.</li><li>Non-defining (with commas, additional information): only <em>who/whom/which/whose</em> — <em>that</em> is IMPOSSIBLE.</li><li>Object <em>who/that/which</em> is dropped in defining: <em>The book (which) I read.</em></li><li><em>Which</em> referring to a whole sentence (non-defining only): <em>She was late, which annoyed me.</em></li></ul><strong>Register:</strong> <em>whom</em> is formal; <em>who</em> is conversational as an object.<br><br><strong>Examples:</strong><ul><li><em>My sister, who lives in Paris, is a doctor.</em> (I have one sister, clarification)</li><li><em>The sister who lives in Paris is a doctor.</em> (one of several sisters, distinction)</li></ul><strong>Contrast:</strong> commas change the meaning of the statement.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -686,7 +686,7 @@
   "adv_u57": {
     "text": "Unit 57 – Noun phrases (lesson 2)",
     "note": "Postmodification of nouns",
-    "exp": "<strong>Unit 57</strong> — noun phrases (lesson 2): postmodification.<br><br><strong>Phenomenon:</strong> reduced forms of relative clauses are an economical academic tool.<br><br><strong>Types of postmodifiers:</strong><ul><li>Participial: <em>the woman standing there</em> = <em>who is standing there</em>; <em>the car parked outside</em> = <em>which is parked outside</em>.</li><li>Infinitival: <em>the first person to arrive</em>; <em>the only one to notice</em>.</li><li>Prepositional phrases: <em>the man in the blue shirt</em>.</li><li>Apposition: <em>my friend Anna, a talented pianist</em>.</li></ul><strong>Examples:</strong><ul><li><em>The issues discussed at the meeting remain unresolved.</em></li><li><em>Letters to be posted should be left here.</em></li></ul><strong>Contrast:</strong> <em>the man running</em> (active action now) vs <em>the man who runs</em> (regularly). A <em>to be</em>-infinitive postmodifier has a meaning of necessity/futurity.",
+    "exp": "<strong>Unit 57</strong> — noun phrases (lesson 2): postmodification.<br><br><strong>Phenomenon:</strong> reduced forms of relative clauses are an economical academic tool.<br><br><strong>Types of postmodifiers:</strong><ul><li>Participial: <em>the woman standing there</em> = <em>who is standing there</em>; <em>the car parked outside</em> = <em>which is parked outside</em>.</li><li>Infinitival: <em>the first person to arrive</em>; <em>the only one to notice</em>.</li><li>Prepositional phrases: <em>the man in the blue shirt</em>.</li><li>Apposition: <em>my friend Anna, a talented pianist</em>.</li></ul><strong>Examples:</strong><ul><li><em>The issues discussed at the meeting remain unresolved.</em></li><li><em>Letters to be posted should be left here.</em></li></ul><strong>Contrast:</strong> <em>the man running</em> (active action now) vs <em>the man who runs</em> (regularly). A <em>To be</em>-infinitive postmodifier has a meaning of necessity/futurity.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
     "exc": "Participial and infinitival postmodifiers: <em>the man standing there</em> / <em>the first to arrive</em>.",
     "mistakes": [
@@ -720,7 +720,7 @@
     ]
   },
   "adv_u60": {
-    "text": "Unit 60 - Reflexive pronouns",
+    "text": "Unit 60 — Reflexive pronouns",
     "note": "Herself / himself / themselves: special cases",
     "exp": "<strong>Unit 60</strong> — reflexive pronouns at C1.<br><br><strong>Phenomenon:</strong> reflexive pronouns have several functions and are often confused with <em>each other</em> and personal pronouns.<br><br><strong>Functions:</strong><ul><li>True reflexive (subject = object): <em>She hurt herself.</em></li><li>Emphatic (intensification): <em>I did it myself.</em></li><li>After the preposition <em>by</em> = \"alone/on one's own\": <em>She lives by herself.</em></li><li>Idiomatic: <em>help yourself, enjoy yourself, make yourself at home, behave yourself</em>.</li></ul><strong>When NOT used:</strong> with verbs of self-care (<em>wash, shave, dress, hide</em>) — the reflexive is usually dropped: <em>She dressed quickly.</em><br><br><strong>Contrast:</strong> <em>They love each other</em> (reciprocal, A→B and B→A) vs <em>They love themselves</em> (each himself). After <em>with</em>: <em>I took my keys with me</em>, not <s>with myself</s> (unless emphatic). <em>Between you and me</em>, not <s>myself</s> — a typical hypercorrection.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -756,7 +756,7 @@
     ]
   },
   "adv_u63": {
-    "text": "Unit 63 - Do so; such",
+    "text": "Unit 63 — Do so; such",
     "note": "She did so immediately. Such was his anger.",
     "exp": "<strong>Unit 63</strong> — <em>do so</em> and <em>such</em>.<br><br><strong>Phenomenon:</strong> <em>do so</em> is a formal substitute for the verb group; <em>such</em> is a means of intensification, especially in inversion.<br><br><strong>Do so / do it / do that:</strong><ul><li><em>Do so</em> — formal, exact replacement of a verb with complements: <em>She was asked to sign the document, which she did so willingly.</em></li><li><em>Do it</em> — neutral: <em>Did you tell him? — Yes, I did it yesterday.</em></li><li><em>Do that</em> — with emphasis on the action.</li></ul><strong>Such:</strong><ul><li><em>Such + a/an + adj + noun</em>: <em>It was such a beautiful day.</em></li><li>Inversion (very formal): <em>Such was his anger that he slammed the door.</em></li><li><em>Such as</em> = for example: <em>fruits such as apples</em>.</li></ul><strong>Register:</strong> <em>do so</em> and inverted <em>such</em> — academic and literary style. <strong>Contrast:</strong> <em>so + adj</em> (<em>so beautiful</em>) vs <em>such + a + adj + noun</em> (<em>such a beautiful day</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -829,7 +829,7 @@
   },
   "adv_u69": {
     "text": "Unit 69 – Participle adjectives and compound adjectives",
-    "note": "boring/bored/well-known/state-of-the-art",
+    "note": "boring/bored / well-known / state-of-the-art",
     "exp": "<strong>Unit 69</strong> — participial and compound adjectives.<br><br><strong>Phenomenon:</strong> a productive way of creating adjectival modifiers from verbs and word combinations.<br><br><strong>Participle adjectives:</strong><ul><li><em>-ing</em> — active property causing an emotion: <em>a boring lecture</em> (the lecture is boring — it causes boredom).</li><li><em>-ed</em> — passive/resulting state: <em>a bored audience</em>.</li></ul><strong>Compound adjectives:</strong><ul><li>Hyphenated before a noun: <em>a well-known writer, a ten-year-old girl, state-of-the-art technology</em>.</li><li>Without hyphen after a linking verb: <em>The writer is well known.</em></li><li>Productive patterns: <em>N + -ed</em> (<em>big-eyed, left-handed</em>); <em>adj + N + -ed</em> (<em>good-natured</em>); <em>adv + V3</em> (<em>air-conditioned, purpose-built</em>); <em>adj + V-ing</em> (<em>good-looking, slow-moving</em>).</li></ul><strong>Examples:</strong><ul><li><em>A thought-provoking book.</em></li><li><em>A soft-spoken diplomat.</em></li></ul><strong>Contrast:</strong> <em>-ing</em> vs <em>-ed</em> are regularly confused: <em>I'm interested</em> (I am interested) vs <em>it's interesting</em> (this is interesting).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
     "exc": "<em>-ing</em> describes the cause of the emotion; <em>-ed</em> — the experienced state: <em>boring film / bored viewer</em>.",
@@ -840,7 +840,7 @@
     ]
   },
   "adv_u70": {
-    "text": "Unit 70 – Adjectives + to-infinitive, -ing, that-clause",
+    "text": "Unit 70 — Adjectives + to-infinitive, -ing, that-clause",
     "note": "Eager to learn / capable of doing / certain that",
     "exp": "<strong>Unit 70</strong> — adjectives with <em>to</em>-inf, <em>-ing</em> and <em>that</em>-clause.<br><br><strong>Phenomenon:</strong> adjectives require specific complements; mixing them leads to errors.<br><br><strong>Patterns:</strong><ul><li>Adj + <em>to</em>-inf: <em>able, eager, reluctant, willing, likely, unlikely, due, liable, keen, happy, ready</em>: <em>She was eager to learn.</em></li><li>Adj + prep + <em>-ing</em>: <em>capable of doing, fond of reading, interested in learning, afraid of failing, tired of waiting, good at singing</em>.</li><li>Adj + <em>that</em>-clause: <em>sure that, certain that, aware that, convinced that, surprised that, sorry that, glad that</em>.</li><li>Evaluative with formal <em>it</em>: <em>It is kind of you to help. It is difficult for us to decide.</em></li></ul><strong>Examples:</strong><ul><li><em>I'm afraid of flying.</em></li><li><em>He's keen to start / keen on starting.</em> — double pattern for <em>keen</em>.</li></ul><strong>Contrast:</strong> <em>sorry to + inf</em> (about a future action) vs <em>sorry for -ing</em> (about a past action). <em>Good at</em>, not <s>good in</s>. Prepositions with adjectives are part of the C1 lexical minimum.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -948,7 +948,7 @@
     ]
   },
   "adv_u79": {
-    "text": "Unit 79 – Adverbial clauses of time",
+    "text": "Unit 79 — Adverbial clauses of time",
     "note": "When / as soon as / once / until / by the time",
     "exp": "<strong>Unit 79</strong> — adverbial clauses of time.<br><br><strong>Phenomenon:</strong> time conjunctions with different nuances and the iron rule — no future tense after them.<br><br><strong>Conjunctions and shades:</strong><ul><li><em>When</em> — general time relation.</li><li><em>As soon as / the moment (that) / immediately</em> — immediate sequence.</li><li><em>Once</em> — after completion (= once): <em>Once you finish, we can go.</em></li><li><em>Until / till</em> — up to what moment.</li><li><em>By the time</em> — by the time, often with Perfect: <em>By the time he arrived, we had eaten.</em></li><li><em>While / as</em> — simultaneity.</li><li><em>Before / after</em> — sequence.</li></ul><strong>Iron rule:</strong> Present instead of Future, Past Perfect instead of would-have: <em>I'll call when I arrive</em>, not <s>when I will arrive</s>.<br><br><strong>Examples:</strong><ul><li><em>By the time you read this, I will have left.</em></li><li><em>As soon as she heard the news, she called him.</em></li></ul><strong>Contrast:</strong> <em>when</em> in interrogatives — future is possible (<em>When will you come?</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -960,7 +960,7 @@
     ]
   },
   "adv_u80": {
-    "text": "Unit 80 - Giving reasons: as, because; for and with",
+    "text": "Unit 80 — Giving reasons: as, because; for and with",
     "note": "As / because / since / for / with - all methods of cause",
     "exp": "<strong>Unit 80</strong> — giving reasons: <em>as, because, since, for, with</em>.<br><br><strong>Phenomenon:</strong> five means with differences in register and position.<br><br><strong>Differences:</strong><ul><li><em>Because</em> — neutral, new information, answers \"why?\": <em>We stayed in because it was raining.</em></li><li><em>As / since</em> — a known/obvious reason, often at the beginning: <em>Since it's late, let's stop.</em></li><li><em>For</em> — formal-literary, new information, only after the main clause: <em>He was anxious, for she was late.</em></li><li><em>With</em> + noun / -ing — accompanying reason: <em>With everyone watching, I got nervous.</em></li><li><em>Because of / due to / owing to / on account of</em> + noun/-ing: prepositional.</li></ul><strong>Register:</strong> <em>for</em> as a reason is bookish, almost archaic; <em>due to</em> — formal; <em>because</em> — universal.<br><br><strong>Contrast:</strong> <em>because</em> + clause, <em>because of</em> + noun. <em>Due to</em> traditionally attributive (<em>delays due to fog</em>), but in modern style also acceptable adverbially.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -972,7 +972,7 @@
     ]
   },
   "adv_u81": {
-    "text": "Unit 81 – Purposes and results: in order to, so as",
+    "text": "Unit 81 — Purposes and results: in order to, so as",
     "note": "She left in order to avoid argument.",
     "exp": "<strong>Unit 81</strong> — purpose and result.<br><br><strong>Phenomenon:</strong> distinguishing purpose (intention) and result (consequence) constructions.<br><br><strong>Purpose:</strong><ul><li><em>To-inf</em> (same subject): <em>She left early to catch the train.</em></li><li><em>In order to / so as to</em> — more formal: <em>He worked hard in order to succeed.</em></li><li><em>So that / in order that</em> + clause (different subjects, often with <em>can/could/would</em>): <em>He whispered so that nobody could hear.</em></li><li>Negative purpose: <em>so as not to / in order not to</em>: <em>He left early so as not to be late.</em></li></ul><strong>Result:</strong><ul><li><em>So + adj/adv + that</em>: <em>It was so cold that we stayed in.</em></li><li><em>Such + (a/an) + adj + noun + that</em>: <em>It was such a shock that he fainted.</em></li><li><em>So much/many/little/few + noun + that</em>.</li></ul><strong>Contrast:</strong> <em>so that</em> = purpose or result depending on context: <em>He spoke clearly so that everyone could understand</em> (purpose) vs <em>He spoke so clearly that everyone understood</em> (result). <s>for + to-inf</s> is not allowed: <s>I came for to see you</s> → <em>to see you</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -984,7 +984,7 @@
     ]
   },
   "adv_u82": {
-    "text": "Unit 82 – Contrast clauses: although, while, while, whereas",
+    "text": "Unit 82 — Contrast clauses: although, while, whilst, whereas",
     "note": "Although / even though / while / whereas / despite",
     "exp": "<strong>Unit 82</strong> — contrast: <em>although, while, whilst, whereas, despite</em>.<br><br><strong>Phenomenon:</strong> two types: concessive (despite) and contrastive (in opposition).<br><br><strong>Concessive conjunctions:</strong><ul><li><em>Although / though / even though</em> + clause: <em>Although it was cold, we went out.</em> <em>Even though</em> — intensifier.</li><li><em>Despite / in spite of</em> + noun/-ing/<em>the fact that</em>: <em>Despite the cold, we went out / Despite being cold…</em></li></ul><strong>Contrastive:</strong><ul><li><em>While / whilst / whereas</em> — juxtaposing two ideas: <em>While he prefers tea, she likes coffee.</em> <em>Whilst</em> — BrE more formal.</li></ul><strong>Linking adverbs:</strong> <em>however, nevertheless, nonetheless, yet, still, on the other hand</em> — join two sentences: <em>It was cold; however, we went out.</em><br><br><strong>Register:</strong> <em>though</em> at the end of a sentence — conversational: <em>It's cold. I'll go, though.</em><br><br><strong>Contrast:</strong> <em>Although</em> and <em>but</em> do not combine: not <s>Although it rained, but we went</s>. <em>Despite</em> requires a noun phrase, not a clause.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -1000,7 +1000,7 @@
     "note": "Conditionals 0, 1, 2: a systematic review",
     "exp": "<strong>Unit 83</strong> — conditional sentences (lesson 1): types 0, 1, 2.<br><br><strong>Phenomenon:</strong> three basic types of real and hypothetical conditions.<br><br><strong>Types:</strong><ul><li><strong>Zero</strong> (always-true laws): <em>If + Present, Present</em>: <em>If you heat water to 100°C, it boils.</em></li><li><strong>First</strong> (real future): <em>If + Present, will/can/may…</em>: <em>If it rains, we'll stay in.</em></li><li><strong>Second</strong> (unreal present/unlikely future): <em>If + Past, would/could/might…</em>: <em>If I had more time, I'd travel more.</em></li></ul><strong>Variants in the main clause:</strong> <em>will, can, may, might, should, must, be going to</em> — express different modalities. <em>If you see him, tell him</em> (imperative).<br><br><strong>Rule:</strong> after <em>if</em> never <em>will</em> in standard conditions.<br><br><strong>Examples:</strong><ul><li><em>If I were you, I would apologize.</em></li><li><em>Should you need help, call me.</em> (formal inversion for Type 1.)</li></ul><strong>Contrast:</strong> <em>If you will</em> is possible in polite requests (<em>If you will excuse me</em>) — a separate meaning.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
-    "exc": "In Zero/First Conditional <em>will</em> is not allowed after <em>if</em>: <s>if you will come</s> → <em>if you come</em>.",
+    "exc": "In Zero/First Conditional <em>if</em> is not allowed after <em>will</em>: <s>if you will come</s> → <em>if you come</em>.",
     "mistakes": [
       "<s>If I will have time, I'll call.</s> → <em>If I have time, I'll call.</em>",
       "<s>If he comes, I tell him.</s> → <em>…I'll tell him.</em>",
@@ -1020,7 +1020,7 @@
     ]
   },
   "adv_u85": {
-    "text": "Unit 85 - If I were you; imagine he were...",
+    "text": "Unit 85 — If I were you; imagine he were…",
     "note": "Subjunctive were and formal conditions",
     "exp": "<strong>Unit 85</strong> — the <em>were</em>-subjunctive and inversion in conditionals.<br><br><strong>Phenomenon:</strong> formal alternatives to ordinary conditionals, characteristic of business, legal and literary style.<br><br><strong>Subjunctive <em>were</em>:</strong> in all persons in unreal conditions: <em>If I were you… If she were here… If he were to…</em> Colloquially <em>was</em> is allowed, except for the fixed <em>If I were you</em>.<br><br><strong>Inversion without <em>if</em>:</strong><ul><li>Type 2: <em>Were + subject + to-inf</em>: <em>Were she to call, I would answer.</em></li><li>Type 3: <em>Had + subject + V3</em>: <em>Had I known, I would have helped.</em></li><li>Polite condition: <em>Should + subject + inf</em>: <em>Should you require assistance, please contact us.</em></li></ul><strong>Fixed:</strong> <em>I wish I were… Imagine he were… As it were</em> (so to speak).<br><br><strong>Examples:</strong><ul><li><em>Should the weather deteriorate, the event will be postponed.</em> (business)</li><li><em>Were it not for your help, I would have failed.</em></li></ul><strong>Contrast:</strong> inverted forms are economical and prestigious in formal communication.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -1034,7 +1034,7 @@
   "adv_u86": {
     "text": "Unit 86 – If not and unless; if and whether",
     "note": "Unless it rains / I don't know whether",
-    "exp": "<strong>Unit 86</strong> — <em>if not, unless; if vs. whether</em>.<br><br><strong>Phenomenon:</strong> often-confused conjunctions with different semantic restrictions.<br><br><strong>Unless vs. if not:</strong><ul><li><em>Unless</em> = <em>except if</em>, advances the one possible exception: <em>I won't go unless you come.</em></li><li><em>Unless</em> cannot replace \"if X doesn't happen\" in the subjunctive: <em>I'd be upset if you didn't come</em>, not <s>unless you came</s>.</li></ul><strong>If vs. whether:</strong><ul><li><em>Whether</em> in indirect questions (alternative to <em>if</em>, more formal): <em>I don't know whether/if he'll come.</em></li><li>After a preposition — only <em>whether</em>: <em>It depends on whether…</em></li><li>Before a <em>to</em>-inf — only <em>whether</em>: <em>I'm not sure whether to go.</em></li><li>With <em>or not</em> adjacent — only <em>whether…or not</em>: <em>whether or not she comes</em>.</li><li>As subject — only <em>whether</em>: <em>Whether he comes is unclear.</em></li></ul><strong>Examples:</strong><ul><li><em>Unless it rains, we'll have a picnic.</em></li><li><em>The question is whether they will agree.</em></li></ul><strong>Contrast:</strong> double negation with <em>unless</em> is an error: <s>unless you don't come</s>.",
+    "exp": "<strong>Unit 86</strong> — <em>if not, unless; if vs. whether</em>.<br><br><strong>Phenomenon:</strong> often-confused conjunctions with different semantic restrictions.<br><br><strong>Unless vs. if not:</strong><ul><li><em>Unless</em> = <em>except if</em>, advances the one possible exception: <em>I won't go unless you come.</em></li><li><em>unless</em> cannot replace \"if X doesn't happen\" in the subjunctive: <em>I'd be upset if you didn't come</em>, not <s>unless you came</s>.</li></ul><strong>If vs. whether:</strong><ul><li><em>Whether</em> in indirect questions (alternative to <em>if</em>, more formal): <em>I don't know whether/if he'll come.</em></li><li>After a preposition — only <em>whether</em>: <em>It depends on whether…</em></li><li>Before a <em>to</em>-inf — only <em>whether</em>: <em>I'm not sure whether to go.</em></li><li>With <em>or not</em> adjacent — only <em>whether…or not</em>: <em>whether or not she comes</em>.</li><li>As subject — only <em>whether</em>: <em>Whether he comes is unclear.</em></li></ul><strong>Examples:</strong><ul><li><em>Unless it rains, we'll have a picnic.</em></li><li><em>The question is whether they will agree.</em></li></ul><strong>Contrast:</strong> double negation with <em>unless</em> is an error: <s>unless you don't come</s>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
     "exc": "<em>Unless</em> = <em>except if</em>; do not use it with unlikely/unreal conditions: <s>Unless I were you</s> → <em>If I weren't you</em>.",
     "mistakes": [
@@ -1100,11 +1100,11 @@
     "mistakes": [
       "<s>Everyone except of Tom</s> → <em>Everyone except (for) Tom.</em>",
       "<s>Except he is late, he is nice.</s> → <em>Apart from being late, he is nice.</em>",
-      "<s>Nobody but me knew.</s> (colloq. \"but me\" acceptable) — in formal speech <em>except (for) me</em>."
+      "<s>Nobody but me knew. (colloq. \"but me\" acceptable) — in formal speech <em>except (for) me</em>."
     ]
   },
   "adv_u92": {
-    "text": "Unit 92 - Prepositions after verbs",
+    "text": "Unit 92 — Prepositions after verbs",
     "note": "Verbs + prepositions: systematization",
     "exp": "<strong>Unit 92</strong> — prepositions after verbs.<br><br><strong>Phenomenon:</strong> verbs govern specific prepositions; changing the preposition changes the meaning.<br><br><strong>Verbs with a changing preposition:</strong><ul><li><em>Agree with</em> (someone) / <em>agree to</em> (a proposal) / <em>agree on</em> (something specific): <em>I agree with you / I agreed to the plan / We agreed on Friday.</em></li><li><em>Talk to</em> (whom) / <em>talk about</em> (what) / <em>talk over</em> (discuss).</li><li><em>Charge with</em> (accuse) / <em>charge for</em> (charge payment).</li><li><em>Apply to</em> (address) / <em>apply for</em> (apply for).</li><li><em>Consist of / in / with</em> — different meanings.</li></ul><strong>Verbs without a preposition</strong> (typical error — add an extra one): <em>discuss, enter, marry, approach, lack, reach, contact, answer, attack, attend, resemble</em>: <em>discuss the issue</em>, not <s>discuss about</s>.<br><br><strong>Examples:</strong><ul><li><em>She applied for the position.</em></li><li><em>The success depends on effort.</em></li></ul><strong>Contrast:</strong> <em>listen to</em> (needs a preposition), but <em>hear</em> (without a preposition). <em>Explain to me</em>, not <s>explain me</s> — obligatory <em>to</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -1116,7 +1116,7 @@
     ]
   },
   "adv_u93": {
-    "text": "Unit 93 - Prepositions after nouns",
+    "text": "Unit 93 — Prepositions after nouns",
     "note": "Effect on / cause of / exception to / attitude towards",
     "exp": "<strong>Unit 93</strong> — prepositions after nouns.<br><br><strong>Phenomenon:</strong> nouns form fixed collocations with prepositions, especially important for the written C1 level.<br><br><strong>Collocations:</strong><ul><li><em>Reason for, cause of, effect on, impact on, influence on</em>.</li><li><em>Solution to, answer to, response to, approach to, key to</em>.</li><li><em>Increase in, decrease in, change in, rise in, fall in</em>.</li><li><em>Attitude to(wards), reaction to, objection to</em>.</li><li><em>Lack of, shortage of, absence of, advantage of, disadvantage of</em>.</li><li><em>Exception to, alternative to, access to</em>.</li><li><em>Difference between, contrast between, connection between</em>.</li><li><em>Relationship with, connection with, problem with, trouble with</em>.</li></ul><strong>After the preposition:</strong> a noun or gerund: <em>the reason for postponing the meeting</em>.<br><br><strong>Examples:</strong><ul><li><em>There has been a significant increase in applications.</em></li><li><em>We need a solution to this problem.</em></li></ul><strong>Contrast:</strong> many L1 pairs translate with a single preposition, but in English they differ: Russian \"reason for X\" → <em>reason for X</em>, not <s>reason of X</s>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
@@ -1189,7 +1189,7 @@
   },
   "adv_u99": {
     "text": "Unit 99 - Inversion (Lesson 1)",
-    "note": "Never have I seen / Only then did I realize",
+    "note": "Never have I seen / Only then did I realise",
     "exp": "<strong>Unit 99</strong> — inversion (lesson 1).<br><br><strong>Phenomenon:</strong> reverse subject-aux order after a fronted negative or restrictive element — a marker of a high formal register.<br><br><strong>Inversion triggers:</strong><ul><li>Negative/semi-negative adverbs: <em>Never, Rarely, Seldom, Hardly, Scarcely, Little, Nowhere</em>.</li><li><em>Only + adverbial</em>: <em>Only then, only after, only by, only when, only if</em>.</li><li><em>Not only…(but also)</em>.</li><li><em>At no time, under no circumstances, in no way, on no account</em>.</li></ul><strong>Structure:</strong> <code>Triggering element + aux + subject + main verb</code> (as in a question): <em>Never have I seen such chaos.</em><br><br><strong>Examples:</strong><ul><li><em>Rarely does one find such dedication.</em></li><li><em>Only after the meeting did I understand.</em></li><li><em>Not only did he arrive late, but he also forgot the papers.</em></li></ul><strong>Register:</strong> literary, oratorical, academic. In speech it sounds archaic or emphatic.<br><br><strong>Contrast:</strong> <em>I have never seen it</em> (neutral) vs <em>Never have I seen it</em> (emphatic).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/c1-grammar",
     "exc": "Inversion with negative adverbs: <em>Never have I seen / Only then did I realise</em>. Question order.",
@@ -1226,14 +1226,14 @@
     ]
   },
   "el_u03": {
-    "text": "Unit 3 – I am doing (Present Continuous)",
+    "text": "Unit 3 — I am doing (Present Continuous)",
     "note": "She is reading. They are working.",
     "exp": "<strong>Unit 3</strong> — Present Continuous for actions happening at the moment of speaking or in the current period.<br><br><strong>Formula:</strong> <em>am/is/are + V-ing</em>.<br><strong>Markers:</strong> <em>now, at the moment, right now, Look!, Listen!</em><br><br><strong>Examples:</strong><ul><li>'I am reading a book now.'</li><li>'She is cooking dinner.'</li><li>'The children are playing in the garden.'</li><li>'Look! It is raining.'</li></ul>Spelling of <em>-ing</em>: <em>write→writing</em> (drop <em>e</em>), <em>sit→sitting</em> (double the consonant), <em>lie→lying</em> (<em>ie→y</em>). Also used for temporary situations: <em>I am staying with my aunt this week.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "Stative verbs (<em>know, like, want, love, understand, need, believe</em>) are usually not used in the Continuous. When adding <em>-ing</em>: <em>lie→lying, die→dying</em> (<em>ie→y</em>); <em>sit→sitting, run→running</em> (doubling the consonant); <em>write→writing</em> (<em>-e</em> is dropped).",
     "mistakes": [
       "<s>I am knowing the answer.</s> → <em>I know the answer.</em> — stative verbs are not used in the Continuous.",
-      "<s>She is writeing a letter.</s> → <em>She is writing a letter.</em> — <em>-e</em> is dropped before <em>-ing</em>.",
+      "<s>She is writeing a letter.</s> → <em>She is writing a letter.</em> — <em>-ing</em> is dropped before <em>-e</em>.",
       "<s>He running now.</s> → <em>He is running now.</em> — the auxiliary <em>is</em> is needed.",
       "<s>They are siting here.</s> → <em>They are sitting here.</em> — the final consonant is doubled."
     ]
@@ -1252,7 +1252,7 @@
     ]
   },
   "el_u05": {
-    "text": "Unit 5 - Present Simple",
+    "text": "Unit 5 — Present Simple",
     "note": "I work. She works. Do you work?",
     "exp": "<strong>Unit 5</strong> — Present Simple for regular actions, habits, general facts and schedules.<br><br><strong>Formula:</strong> <em>I/you/we/they + V1</em>; <em>he/she/it + V + -s/-es</em>.<br><strong>Markers:</strong> <em>always, usually, often, sometimes, never, every day, on Mondays</em>.<br><br><strong>Examples:</strong><ul><li>'I drink coffee every morning.'</li><li>'She works in a hospital.'</li><li>'Water boils at 100 °C.'</li><li>'The train leaves at 6 p.m.'</li></ul>Third-person spelling: after <em>-s/-sh/-ch/-x/-o</em> → <em>-es</em> (<em>watches, goes</em>); after consonant + <em>y</em> → <em>-ies</em> (<em>study→studies</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1266,7 +1266,7 @@
   },
   "el_u06": {
     "text": "Unit 6 - Negations in the Present Simple (I don't)",
-    "note": "I don't like it. She doesn't work.",
+    "note": "I don't like. She doesn't work.",
     "exp": "<strong>Unit 6</strong> — negatives in the Present Simple using <em>don't / doesn't</em>.<br><br><strong>Formula:</strong><ul><li><em>I/you/we/they + do not (don't) + V1</em></li><li><em>he/she/it + does not (doesn't) + V1</em></li></ul>After <em>doesn't</em> the main verb loses its <em>-s</em> ending.<br><br><strong>Examples:</strong><ul><li>'I don't like fish.'</li><li>'She doesn't speak Chinese.'</li><li>'They don't live here.'</li><li>'My brother doesn't work on Sundays.'</li></ul>Unlike <em>to be</em>, ordinary verbs require the auxiliary <em>do/does</em> in the negative.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "After <em>doesn't/don't</em> the main verb is in the bare infinitive only — without <em>-s</em> and without a past form. In speech we use contracted forms; the full <em>do not/does not</em> sounds formal or emphatic.",
@@ -1291,7 +1291,7 @@
     ]
   },
   "el_u08": {
-    "text": "Unit 8 - Present Simple vs Present Continuous",
+    "text": "Unit 8 — Present Simple vs Present Continuous",
     "note": "I work every day. I'm working now.",
     "exp": "<strong>Unit 8</strong> — comparison of Present Simple and Present Continuous.<br><br><strong>Simple</strong> — regular/permanent actions, facts: <em>always, usually, every day</em>.<br><strong>Continuous</strong> — at the moment of speaking or a temporary situation: <em>now, at the moment, today, this week</em>.<br><br><strong>Examples:</strong><ul><li>'I usually drive to work, but today I'm taking the bus.'</li><li>'She speaks three languages.' (fact)</li><li>'She is speaking to her boss.' (right now)</li></ul><strong>Stative verbs</strong> (<em>know, like, want, need, believe, love</em>) are used only in the Simple, even if the situation is \"now\".",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1382,7 +1382,7 @@
     ]
   },
   "el_u104": {
-    "text": "Unit 104 – From…to, until, since, for",
+    "text": "Unit 104 — From…to, until, since, for",
     "note": "from 9 to 5 / until Friday / since Monday / for 3 hours",
     "exp": "<strong>Unit 104</strong> — prepositions of time periods: <em>from … to, until, since, for</em>.<br><br><p><em>from A to/till B</em> — marking an interval:</p><ul><li><em>I work from 9 to 5.</em></li><li><em>The shop is open from Monday to Friday.</em></li></ul><p><em>until / till</em> — 'until a certain moment' (the action continues and ends):</p><ul><li><em>Wait until Friday.</em></li><li><em>I'll be here till 6.</em></li></ul><p><em>since</em> — 'from a certain moment' (starting point up to now); usually with Present Perfect:</p><ul><li><em>I've lived here since 2010.</em></li><li><em>She has been sick since Monday.</em></li></ul><p><em>for</em> — 'for, during' (duration); with any tenses:</p><ul><li><em>I lived there for five years.</em></li><li><em>We've been waiting for two hours.</em></li></ul><p>Key contrast <em>since</em> vs <em>for</em>: <em>since</em> + <strong>moment</strong> (<em>since Monday, since 2020, since I was a child</em>); <em>for</em> + <strong>period</strong> (<em>for two days, for a long time, for ages</em>).</p><p>Related: <em>by + moment</em> = 'not later than' (<em>by Friday</em>); <em>before + moment</em> = 'before' (<em>before lunch</em>).</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1395,7 +1395,7 @@
     ]
   },
   "el_u105": {
-    "text": "Unit 105 - Before, after, during, while",
+    "text": "Unit 105 — Before, after, during, while",
     "note": "before lunch / after work / during the film",
     "exp": "<strong>Unit 105</strong> — <em>before, after, during, while</em> linking events in time.<br><br><p><em>before / after</em> can be both prepositions and conjunctions:</p><ul><li>Preposition + noun/gerund: <em>after dinner, before leaving</em>.</li><li>Conjunction + clause: <em>before you leave, after we had finished</em>.</li><li>In time clauses — Present instead of Future: <em>Call me before you leave</em> (not <em>before you will leave</em>).</li></ul><p><em>during</em> — only a preposition, before a noun ('during something'):</p><ul><li><em>during the film, during the holidays, during lunch</em>.</li><li><em>I fell asleep during the lecture.</em></li></ul><p><em>while</em> — only a conjunction, before a clause with subject and verb:</p><ul><li><em>while I was watching TV, while she slept</em>.</li><li><em>He called while I was cooking.</em></li></ul><p>Key contrast: <em>during</em> + noun; <em>while</em> + full clause. You cannot say <em>during I slept</em> → only <em>while I slept</em> or <em>during my sleep</em>.</p><p>Difference <em>during / for</em>: <em>during</em> = when exactly (<em>during the war</em>), <em>for</em> = how long (<em>for five years</em>).</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1460,7 +1460,7 @@
     ]
   },
   "el_u11": {
-    "text": "Unit 11 - Past Simple",
+    "text": "Unit 11 — Past Simple",
     "note": "I worked. She went. They saw.",
     "exp": "<strong>Unit 11</strong> — Past Simple for finished actions in the past with a specified or implied time.<br><br><strong>Formula:</strong><ul><li>Regular: <em>V + -ed</em> (worked, played, lived)</li><li>Irregular: special V2 forms (<em>go→went, see→saw, buy→bought, have→had</em>)</li></ul><strong>Markers:</strong> <em>yesterday, last Monday, two hours ago, in 1999, when I was young</em>.<br><br><strong>Examples:</strong><ul><li>'I worked late yesterday.'</li><li>'She went to Paris last summer.'</li><li>'We saw a great film.'</li><li>'He bought a new phone.'</li></ul>Spelling: <em>stop→stopped, study→studied, like→liked</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1486,7 +1486,7 @@
     ]
   },
   "el_u111": {
-    "text": "Unit 111 - On, at, by, with, about",
+    "text": "Unit 111 — On, at, by, with, about",
     "note": "by car / with a pen / about the problem / on TV",
     "exp": "<strong>Unit 111</strong> — polysemous prepositions <em>on, at, by, with, about</em>.<br><br><p><strong>by</strong>:</p><ul><li>Means of transport (no article): <em>by car, by bus, by train, by plane, by taxi</em>. But: <em>on foot</em>, not <em>by foot</em>.</li><li>Agent of the passive voice: <em>written by Tolstoy</em>.</li><li>Manner: <em>by mistake, by accident, by chance, pay by credit card</em>.</li></ul><p><strong>with</strong> — instrument, accompaniment:</p><ul><li><em>write with a pen, cut with a knife, see with one's eyes</em>.</li><li>Accompaniment: <em>come with me, coffee with milk</em>.</li></ul><p><strong>about</strong> — topic:</p><ul><li><em>talk / think / read / know / worry about</em>: <em>She's thinking about her future.</em></li></ul><p><strong>on</strong> — channel / state:</p><ul><li><em>on TV, on the radio, on the phone, on the internet, on holiday, on business, on a diet, on purpose</em>.</li></ul><p>Contrasting pairs: <em>write with a pen</em> (instrument) vs <em>write by hand</em> (manner); <em>a book about history</em> (topic) vs <em>a book by a historian</em> (author).</p><p>Examples: <em>She paid for the taxi by credit card. He hit the ball with a bat. I heard it on the radio.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1563,7 +1563,7 @@
     ]
   },
   "el_u13": {
-    "text": "Unit 13 - Past Continuous",
+    "text": "Unit 13 — Past Continuous",
     "note": "I was reading when she called.",
     "exp": "<strong>Unit 13</strong> — Past Continuous for long actions at a specific moment or period in the past.<br><br><strong>Formula:</strong> <em>was/were + V-ing</em>.<br><br><strong>Examples:</strong><ul><li>'At 8 p.m. yesterday I was watching TV.'</li><li>'They were having dinner when I arrived.'</li><li>'What were you doing at 10?'</li><li>'She wasn't listening.'</li></ul>Often used as the background for another action in the Past Simple: a longer action (Continuous) is interrupted by a short one (Simple). Stative verbs are usually in the Past Simple.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1576,7 +1576,7 @@
     ]
   },
   "el_u14": {
-    "text": "Unit 14 - Past Simple vs Past Continuous",
+    "text": "Unit 14 — Past Simple vs Past Continuous",
     "note": "She was cooking when he arrived.",
     "exp": "<strong>Unit 14</strong> — Past Simple vs Past Continuous.<br><br><strong>Past Simple</strong> — a short completed action: <em>He called me.</em><br><strong>Past Continuous</strong> — an action in progress: <em>I was cooking.</em><br><br><strong>Conjunctions:</strong><ul><li><em>when</em> + Past Simple — the moment of interruption</li><li><em>while</em> + Past Continuous — a parallel or background long action</li></ul><strong>Examples:</strong><ul><li>'I was cooking when he called.'</li><li>'While she was reading, the baby was sleeping.'</li><li>'When he arrived, we started dinner.'</li></ul>Two Simples in a row = sequential actions; Continuous + Simple = interruption.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1589,7 +1589,7 @@
     ]
   },
   "el_u15": {
-    "text": "Unit 15 - Present Perfect",
+    "text": "Unit 15 — Present Perfect",
     "note": "I have done. She has gone.",
     "exp": "<strong>Unit 15</strong> — Present Perfect: connection of a past action with the present moment (result, experience, change).<br><br><strong>Formula:</strong> <em>have/has + V3 (past participle)</em>.<br><br><strong>Examples:</strong><ul><li>'I have lost my keys.' (and still haven't found them)</li><li>'She has broken her arm.' (and it still hurts)</li><li>'We have finished the project.'</li><li>'He has gone home.' (he isn't here)</li></ul>V3: <em>go→gone, see→seen, do→done, write→written, make→made</em>. The focus is on the current result, not exactly when it happened.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1602,7 +1602,7 @@
     ]
   },
   "el_u16": {
-    "text": "Unit 16 – Present Perfect: just, already, yet",
+    "text": "Unit 16 — Present Perfect: just, already, yet",
     "note": "I've just eaten. Have you finished yet?",
     "exp": "<strong>Unit 16</strong> — the adverbs <em>just, already, yet</em> with the Present Perfect.<br><br><ul><li><em>just</em> — just now (affirmative): <em>I've just seen him.</em></li><li><em>already</em> — already, sooner than expected (affirmative): <em>She has already left.</em></li><li><em>yet</em> — yet (in negatives) / already (in questions), at the end of the sentence: <em>Have you finished yet? / I haven't finished yet.</em></li></ul><strong>Examples:</strong><ul><li>'They've just arrived.'</li><li>'I've already eaten.'</li><li>'Has the postman come yet?'</li></ul><em>just/already</em> go between <em>have</em> and V3; <em>yet</em> goes at the end.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1615,7 +1615,7 @@
     ]
   },
   "el_u17": {
-    "text": "Unit 17 – Present Perfect: Have you ever...?",
+    "text": "Unit 17 — Present Perfect: Have you ever…?",
     "note": "Have you ever been to Paris?",
     "exp": "<strong>Unit 17</strong> — Present Perfect with <em>ever / never</em> to talk about life experience.<br><br><strong>Formula:</strong> <em>Have/Has + subject + ever + V3…?</em><br><br><strong>Examples:</strong><ul><li>'Have you ever been to Japan?'</li><li>'I have never tried sushi.'</li><li>'She has never flown on a plane.'</li><li>'It's the best film I've ever seen.'</li></ul><strong>been vs gone:</strong> <em>He has been to Rome</em> (went and came back) vs <em>He has gone to Rome</em> (left and is still there). <em>Never</em> is the only negation needed — a second <em>not</em> is not required.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1628,7 +1628,7 @@
     ]
   },
   "el_u18": {
-    "text": "Unit 18 - Present Perfect Continuous",
+    "text": "Unit 18 — Present Perfect Continuous",
     "note": "I have been working for 3 hours.",
     "exp": "<strong>Unit 18</strong> — Present Perfect Continuous for an action that started in the past and has been going on up to the present (or has just finished with a visible result).<br><br><strong>Formula:</strong> <em>have/has + been + V-ing</em>.<br><br><strong>Examples:</strong><ul><li>'I have been waiting for an hour.'</li><li>'She has been studying all day.'</li><li>'It has been raining since morning.'</li><li>'Your eyes are red — have you been crying?'</li></ul>Often used with <em>for, since, all day, how long</em>. Stative verbs use the Present Perfect Simple: <em>I have known him for years.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1654,11 +1654,11 @@
     ]
   },
   "el_u20": {
-    "text": "Unit 20 – Present Perfect vs Past Simple",
+    "text": "Unit 20 — Present Perfect vs Past Simple",
     "note": "I've seen it. / I saw it yesterday.",
-    "exp": "<strong>Unit 20</strong> — comparison of Present Perfect and Past Simple.<br><br><strong>Present Perfect</strong> — connection to the present, no specific time: <em>I have seen that film.</em><br><strong>Past Simple</strong> — completed action with a specified time: <em>I saw it yesterday.</em><br><br><strong>Examples:</strong><ul><li>'I have been to London.' (experience) vs 'I went to London in 2018.' (fact)</li><li>'She has just called.' (connection) vs 'She called an hour ago.' (past)</li><li>'Have you finished?' (relating to now) vs 'Did you finish on time?'</li></ul>With the markers <em>yesterday, last week, in 2020, ago, when</em> — only the Past Simple. With <em>today, this week, this morning</em> (period not yet over) — the Present Perfect.",
+    "exp": "<strong>Unit 20</strong> — comparison of Present Perfect and Past Simple.<br><br><strong>Present Perfect</strong> — connection to the present, no specific time: <em>I have seen that film.</em><br><strong>Past Simple</strong> — completed action with a specified time: <em>I saw it yesterday.</em><br><br><strong>Examples:</strong><ul><li>'I have been to London.' (experience) vs 'I went to London in 2018.' (fact)</li><li>'She has just called.' (connection) vs 'She called an hour ago.' (past)</li><li>'Have you finished?' (relating to now) vs 'Did you finish on time?'</li></ul>With the markers <em>yesterday, last week, in 2020, ago, when</em> — only the Past Simple. With <em>today, this week, this morning</em> (period not yet over) — Present Perfect.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
-    "exc": "With a specific past time (<em>yesterday, last year, in 1990, when I was young</em>) only the Past Simple is used. With <em>today, this week, this morning</em> (if the period is still going) — the Present Perfect.",
+    "exc": "With a specific past time (<em>yesterday, last year, in 1990, when I was young</em>) only the Past Simple is used. With <em>today, this week, this morning</em> (if the period is still going) — Present Perfect.",
     "mistakes": [
       "<s>I have seen this film last week.</s> → <em>I saw this film last week.</em>",
       "<s>She went to Paris. She loves it.</s> (if she returned recently and the connection matters) → <em>She has been to Paris.</em>",
@@ -1715,7 +1715,7 @@
       "<s>I goed to school.</s> → <em>I went to school.</em> — <em>go</em> is irregular.",
       "<s>She has eated dinner.</s> → <em>She has eaten dinner.</em> — V3 of <em>eat</em> is <em>eaten</em>.",
       "<s>They taked my bag.</s> → <em>They took my bag.</em> — V2 of <em>take</em> is <em>took</em>.",
-      "<s>He has writed a letter.</s> → <em>He has written a letter.</em> — V3 is <em>written</em>."
+      "<s>He has writed a letter.</s> → <em>He has written a letter.</em> — V3 — <em>written</em>."
     ]
   },
   "el_u25": {
@@ -1745,7 +1745,7 @@
     ]
   },
   "el_u27": {
-    "text": "Unit 27 - Future Simple (will)",
+    "text": "Unit 27 — Future Simple (will)",
     "note": "I'll help you. It will be sunny.",
     "exp": "<strong>Unit 27</strong> — Future Simple with <em>will</em> for spontaneous decisions, offers, promises, predictions and facts about the future.<br><br><strong>Formula:</strong> <em>will + V1</em> (without <em>to</em>). Negative: <em>won't</em>.<br><br><strong>Examples:</strong><ul><li>'I'll help you with the bags.' (a decision right now)</li><li>'I promise I'll call.'</li><li>'It will be sunny tomorrow.'</li><li>'She won't be late.'</li></ul>In time/condition clauses after <em>when, if, before, after, until</em> <em>will</em> is not used: <em>When I arrive, I'll call you.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1797,11 +1797,11 @@
     ]
   },
   "el_u31": {
-    "text": "Unit 31 - Must, mustn't, needn't",
+    "text": "Unit 31 — Must, mustn't, needn't",
     "note": "You must stop. You needn't worry.",
     "exp": "<strong>Unit 31</strong> — <em>must, mustn't, needn't</em>.<br><br><ul><li><em>must</em> — strong necessity/obligation: <em>You must stop at the red light.</em></li><li><em>mustn't</em> — prohibition: <em>You mustn't smoke here.</em></li><li><em>needn't</em> (= don't need to / don't have to) — lack of necessity: <em>You needn't come early.</em></li></ul><strong>Examples:</strong><ul><li>'I must finish this report today.'</li><li>'Children mustn't play with matches.'</li><li>'You needn't worry about it.'</li></ul>After <em>must/mustn't/needn't</em> — the bare infinitive. <em>Must</em> expresses a confident conclusion: <em>She must be tired.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
-    "exc": "<em>Mustn't</em> = prohibition (not allowed); <em>don't have to / needn't</em> = not necessary (you don't have to). <em>Must</em> has no past form — <em>had to</em> is used.",
+    "exc": "<em>Mustn't</em> = prohibition (not allowed); <em>don't have to / needn't</em> = not necessary (you don't have to). <em>must</em> has no past form — <em>had to</em> is used.",
     "mistakes": [
       "<s>You mustn't come — it's not necessary.</s> → <em>You don't have to come.</em>",
       "<s>She musts go.</s> → <em>She must go.</em> — modals take no <em>-s</em>.",
@@ -1810,7 +1810,7 @@
     ]
   },
   "el_u32": {
-    "text": "Unit 32 - Should",
+    "text": "Unit 32 — Should",
     "note": "You should see a doctor.",
     "exp": "<strong>Unit 32</strong> — <em>should</em> for advice, recommendations and opinions (ought to / it's a good idea).<br><br><strong>Formula:</strong> <em>should + V1</em>. Negative: <em>shouldn't</em>. Question: <em>Should I…?</em><br><br><strong>Examples:</strong><ul><li>'You should see a doctor.'</li><li>'He shouldn't drive so fast.'</li><li>'Should I call her?'</li><li>'We should leave now.'</li></ul><em>Should</em> is weaker than <em>must</em>: it's advice, not a command. Often used with <em>I think</em>: <em>I think you should apologize.</em> After <em>should</em> — the bare infinitive.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1823,7 +1823,7 @@
     ]
   },
   "el_u33": {
-    "text": "Unit 33 - Have to",
+    "text": "Unit 33 — Have to",
     "note": "I have to work. She has to leave.",
     "exp": "<strong>Unit 33</strong> — <em>have to</em> / <em>has to</em> for expressing obligation or necessity coming from outside (rules, circumstances).<br><br><strong>Formulas:</strong><ul><li>Present: <em>have to / has to + V1</em></li><li>Past: <em>had to + V1</em></li><li>? / — : using <em>do/does/did</em>: <em>Do you have to…? / I don't have to…</em></li></ul><strong>Examples:</strong><ul><li>'I have to work on Saturday.'</li><li>'She has to wear a uniform.'</li><li>'Did you have to pay?'</li><li>'I don't have to get up early tomorrow.'</li></ul><em>Don't have to</em> = not necessary (unlike <em>mustn't</em> = not allowed).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1836,7 +1836,7 @@
     ]
   },
   "el_u34": {
-    "text": "Unit 34 - Would",
+    "text": "Unit 34 — Would",
     "note": "Would you like tea? I'd like to go.",
     "exp": "<strong>Unit 34</strong> — <em>would</em> for polite requests, offers, hypothetical situations and past habits.<br><br><strong>Main meanings:</strong><ul><li>Polite request: <em>Would you pass me the salt?</em></li><li>Offer/wish: <em>I would like a coffee.</em></li><li>Hypothesis: <em>I would travel more if I had money.</em></li><li>Past habit: <em>When I was a child, I would play in the park.</em></li></ul><strong>Examples:</strong><ul><li>'Would you like some tea?'</li><li>'I'd love to come.'</li><li>'He would always help his friends.'</li></ul>Short form: <em>'d</em>. After <em>would</em> — the bare infinitive.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1862,7 +1862,7 @@
     ]
   },
   "el_u36": {
-    "text": "Unit 36 - Used to",
+    "text": "Unit 36 — Used to",
     "note": "I used to live there. She used to smoke.",
     "exp": "<strong>Unit 36</strong> — <em>used to</em> for describing habitual actions and states that existed in the past but no longer occur.<br><br><strong>Formula:</strong><ul><li>Affirmative: <em>used to + V1</em></li><li>Negative: <em>didn't use to + V1</em></li><li>Question: <em>Did + subject + use to + V1?</em></li></ul><strong>Examples:</strong><ul><li>'I used to smoke, but I quit.'</li><li>'She used to live in London.'</li><li>'Did you use to play football?'</li><li>'He didn't use to like coffee.'</li></ul>It only refers to the past; there is no modern equivalent <em>use to</em> — for present habits use the Present Simple with <em>usually</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1875,7 +1875,7 @@
     ]
   },
   "el_u37": {
-    "text": "Unit 37 - There is / there are",
+    "text": "Unit 37 — There is / there are",
     "note": "There is a book. There are two cats.",
     "exp": "<strong>Unit 37</strong> — the construction <em>there is / there are</em> to indicate the existence or presence of something.<br><br><strong>Formula:</strong><ul><li><em>there is + singular</em>: <em>There is a book on the table.</em></li><li><em>there are + plural</em>: <em>There are two chairs.</em></li><li>Negative: <em>there isn't / there aren't (any)</em></li><li>Question: <em>Is there…? / Are there…?</em></li></ul><strong>Examples:</strong><ul><li>'There is a cat in the garden.'</li><li>'There are many people here.'</li><li>'Is there a bank near here?'</li><li>'There isn't any milk.'</li></ul>Agreement with the first noun after the construction: <em>There is a book and two pens.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1888,8 +1888,8 @@
     ]
   },
   "el_u38": {
-    "text": "Unit 38 – There was / there will be / there has been",
-    "note": "There was a problem. Will there be...?",
+    "text": "Unit 38 — There was / there will be / there has been",
+    "note": "There was a problem. Will there be…?",
     "exp": "<strong>Unit 38</strong> — <em>there</em> in other tenses: <em>there was/were, there will be, there has/have been</em>.<br><br><strong>Forms:</strong><ul><li>Past: <em>there was / there were</em></li><li>Future: <em>there will be</em></li><li>Perfect: <em>there has been / there have been</em></li><li>With modals: <em>there might be, there must be</em></li></ul><strong>Examples:</strong><ul><li>'There was a party yesterday.'</li><li>'There were many guests.'</li><li>'There will be a meeting tomorrow.'</li><li>'There has been an accident.'</li></ul>Agreement with the noun: <em>was/has been</em> + singular; <em>were/have been</em> + plural.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "<em>There will be</em> (not <s>there will have</s>). After <em>there</em> modal verbs can follow: <em>there must be, there might be, there should be</em>.",
@@ -1940,7 +1940,7 @@
     ]
   },
   "el_u42": {
-    "text": "Unit 42 – Too, either, so, neither, nor",
+    "text": "Unit 42 — Too, either, so, neither, nor",
     "note": "I'm tired. So am I. / Me too.",
     "exp": "<strong>Unit 42</strong> — <em>too, either, so, neither/nor</em> for expressing agreement or similarity ('also / also not').<br><br><strong>Rules:</strong><ul><li>Affirmative + <em>too / so</em>: <em>I am tired. — Me too. / So am I.</em></li><li>Negative + <em>either / neither</em>: <em>I don't like it. — Me neither. / Neither do I.</em></li><li>Order: <em>So/Neither + auxiliary + subject</em>.</li></ul><strong>Examples:</strong><ul><li>'I can swim.' — 'So can I.'</li><li>'She isn't hungry.' — 'Neither am I.'</li><li>'He likes jazz, and I do too.'</li><li>'They haven't finished. — Nor have we.'</li></ul>The auxiliary in a <em>so/neither</em> answer must match the original.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -1979,7 +1979,7 @@
     ]
   },
   "el_u45": {
-    "text": "Unit 45 – Question to the subject (who/what)",
+    "text": "Unit 45 – Question to the subject (who / what)",
     "note": "Who called? What happened?",
     "exp": "<strong>Unit 45</strong> — a subject question with <em>who / what</em>. When the question word replaces the subject, the word order stays direct (as in a statement) and the auxiliary <em>do/did</em> is not needed.<br><br><strong>Formula:</strong> <em>Who/What + V (+ …)?</em><br><br><strong>Examples:</strong><ul><li>'Who lives here?'</li><li>'What happened?'</li><li>'Who called you?'</li><li>'What is in the box?'</li></ul><strong>Compare:</strong> <em>Who did you call?</em> (object — <em>did</em> is needed) vs <em>Who called you?</em> (subject — no <em>did</em>). The verb is usually in the third person singular.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2006,7 +2006,7 @@
   },
   "el_u47": {
     "text": "Unit 47 – Questions with what, which, how",
-    "note": "What color? Which one? How often?",
+    "note": "What colour? Which one? How often?",
     "exp": "<strong>Unit 47</strong> — the question words <em>what, which, how</em>.<br><br><ul><li><em>what</em> — open choice: <em>What is your name?</em></li><li><em>which</em> — choice from a limited set: <em>Which colour do you prefer, red or blue?</em></li><li><em>how</em> — way, state; with adjectives/adverbs: <em>how old, how far, how often</em></li></ul><strong>Examples:</strong><ul><li>'What time is it?'</li><li>'Which bus goes to the centre?'</li><li>'How are you?'</li><li>'How old is your brother?'</li></ul><em>What kind of…?</em> — about type; <em>How many / How much</em> — about quantity (countable/uncountable).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "<em>What</em> — open choice; <em>Which</em> — from a limited number. <em>How many</em> — with countables, <em>How much</em> — with uncountables and for price.",
@@ -2018,7 +2018,7 @@
     ]
   },
   "el_u48": {
-    "text": "Unit 48 – How long does it take?",
+    "text": "Unit 48 — How long does it take?",
     "note": "It takes 30 minutes to get there.",
     "exp": "<strong>Unit 48</strong> — the construction <em>How long does it take…?</em> for asking about the duration of an action.<br><br><strong>Formula:</strong> <em>How long does it take (+ someone) + to + V1?</em><br><br><strong>Examples:</strong><ul><li>'How long does it take to get to the airport?'</li><li>'It takes 20 minutes by bus.'</li><li>'How long did it take you to learn English?'</li><li>'It took me three years.'</li></ul>In the past — <em>How long did it take…?</em>; in the future — <em>How long will it take…?</em> Note: <em>it</em> is the formal subject.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2085,7 +2085,7 @@
   "el_u53": {
     "text": "Unit 53 - Infinitive after make and let",
     "note": "She made me cry. He let me go.",
-    "exp": "<strong>Unit 53</strong> — the bare infinitive (without <em>to</em>) after the verbs <em>make</em> and <em>let</em>.<br><br><strong>Formulas:</strong><ul><li><em>make somebody do</em> — force someone to do</li><li><em>let somebody do</em> — allow/permit someone to do</li></ul><strong>Examples:</strong><ul><li>'She made me wait.'</li><li>'My parents don't let me stay out late.'</li><li>'Let me help you.'</li><li>'The teacher made us work hard.'</li></ul>In the passive <em>make</em> takes <em>to</em>: <em>I was made to wait.</em> <em>Let</em> has no passive form — <em>allowed to</em> is used: <em>We were allowed to leave.</em>",
+    "exp": "<strong>Unit 53</strong> — the bare infinitive (without <em>to</em>) after the verbs <em>make</em> and <em>let</em>.<br><br><strong>Formulas:</strong><ul><li><em>make somebody do</em> — force someone to do</li><li><em>let somebody do</em> — allow/permit someone to do</li></ul><strong>Examples:</strong><ul><li>'She made me wait.'</li><li>'My parents don't let me stay out late.'</li><li>'Let me help you.'</li><li>'The teacher made us work hard.'</li></ul>In the passive <em>make</em> takes <em>to</em>: <em>I was made to wait.</em> <em>let</em> has no passive form — <em>allowed to</em> is used: <em>We were allowed to leave.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "After <em>make/let/hear/see/feel/watch</em> in the active — the bare infinitive. But in the passive with <em>make</em> <em>to</em> appears: <em>I was made to work</em>.",
     "mistakes": [
@@ -2174,7 +2174,7 @@
     ]
   },
   "el_u60": {
-    "text": "Unit 60 – Possessive Pronouns (my/mine)",
+    "text": "Unit 60 – Possessive Pronouns (my / mine)",
     "note": "my book / the book is mine",
     "exp": "<strong>Unit 60</strong> — possessive adjectives and pronouns: <em>my/mine, your/yours, his/his, her/hers, its/—, our/ours, their/theirs</em>.<br><br><strong>Difference:</strong><ul><li>A possessive adjective goes before the noun: <em>my book</em>.</li><li>A possessive pronoun replaces the phrase: <em>This book is mine.</em></li></ul><strong>Examples:</strong><ul><li>'This is my car. That car is yours.'</li><li>'Her dress is beautiful. Hers is blue.'</li><li>'Our house is big; theirs is small.'</li><li>'Is this pen yours or his?'</li></ul>Possessive case of nouns: <em>Mary's book, the children's toys.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2191,7 +2191,7 @@
     "note": "I / me / my / mine / myself",
     "exp": "<strong>Unit 61</strong> — summary table of all personal pronoun forms in English.<br><br><p>In English a pronoun has five forms: nominative (subject), objective (object), possessive adjective (before a noun), possessive pronoun (without a noun), and reflexive.</p><ul><li><em>I / me / my / mine / myself</em></li><li><em>he / him / his / his / himself</em>; <em>she / her / her / hers / herself</em></li><li><em>we / us / our / ours / ourselves</em>; <em>they / them / their / theirs / themselves</em></li><li><em>you / you / your / yours / yourself(ves)</em>; <em>it / it / its / — / itself</em></li></ul><p>Examples: <em>I gave him my pen; his is blue; he hurt himself.</em> The choice of form depends on the role in the sentence: subject → <em>I</em>, after a verb/preposition → <em>me</em>, before a noun → <em>my</em>, in place of a noun → <em>mine</em>, reflexive reference to the subject → <em>myself</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
-    "exc": "The form <em>his</em> is the same for both the possessive adjective and the possessive pronoun: <em>his book / This book is his</em>. <em>It</em> has no reflexive form <em>itselves</em> — only <em>itself</em>.",
+    "exc": "The form <em>his</em> is the same for both the possessive adjective and the possessive pronoun: <em>his book / This book is his</em>. <em>it</em> has no reflexive form <em>itselves</em> — only <em>itself</em>.",
     "mistakes": [
       "<s>This is mine book</s> → <em>This is my book</em> / <em>This book is mine</em> — <em>mine</em> without a noun.",
       "<s>Me and John went</s> → <em>John and I went</em> — the subject needs the nominative, and 'I' is mentioned last.",
@@ -2212,10 +2212,10 @@
   },
   "el_u63": {
     "text": "Unit 63 – Reflexive Pronouns (-self/-selves)",
-    "note": "myself, myself, myself, myself",
+    "note": "myself, yourself, himself, themselves",
     "exp": "<strong>Unit 63</strong> — reflexive pronouns <em>-self/-selves</em>, used when the action is directed at the doer.<br><br><p>Forms: <em>myself, yourself, himself, herself, itself, ourselves, yourselves, themselves</em>. Used when subject and object are the same person, and also for emphasis ('self').</p><p>Structures:</p><ul><li>Reflexive meaning: <em>She cut herself with a knife.</em></li><li>Emphasis: <em>I did it myself.</em></li><li>After a preposition: <em>He lives by himself.</em> (on his own).</li><li><em>Help yourself to some cake!</em></li></ul><p>Signal verbs often used with reflexives: <em>hurt, cut, enjoy, blame, teach, introduce, look at</em>. The set phrase <em>by myself/yourself…</em> = 'on one's own, alone'. Compare with <em>each other</em>: <em>They looked at themselves</em> (in the mirror — each at himself) vs <em>They looked at each other</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
-    "exc": "<em>You</em> has two forms: <em>yourself</em> (sing.) and <em>yourselves</em> (pl.). After prepositions of place the reflexive is usually NOT used: <em>She closed the door behind her</em> (not <s>herself</s>).",
+    "exc": "<em>you</em> has two forms: <em>yourself</em> (sing.) and <em>yourselves</em> (pl.). After prepositions of place the reflexive is usually NOT used: <em>She closed the door behind her</em> (not <s>herself</s>).",
     "mistakes": [
       "<s>I wash myself every morning</s> → <em>I wash every morning</em> — with <em>wash, shave, dress</em> a reflexive is usually not needed.",
       "<s>Themself</s> → <em>themselves</em> — the plural form always ends in <em>-selves</em>.",
@@ -2252,7 +2252,7 @@
   "el_u66": {
     "text": "Unit 66 - Plural",
     "note": "dogs, boxes, children, sheep",
-    "exp": "<strong>Unit 66</strong> — formation of the plural of nouns.<br><br><p>Basic rule: add <em>-s</em>. Ending variants depend on the word's final letters.</p><ul><li>Standard: <em>book → books, cat → cats</em>.</li><li>After <em>-s, -ss, -sh, -ch, -x, -o</em>: add <em>-es</em> — <em>bus → buses, box → boxes, tomato → tomatoes</em>.</li><li>Consonant + <em>-y</em> → <em>-ies</em>: <em>city → cities, story → stories</em>. Vowel + <em>-y</em> → just <em>-s</em>: <em>boy → boys</em>.</li><li><em>-f/-fe</em> → <em>-ves</em>: <em>leaf → leaves, knife → knives, wife → wives</em>.</li></ul><p>Irregular forms (to memorise): <em>man → men, woman → women, child → children, foot → feet, tooth → teeth, mouse → mice, person → people</em>.</p><p>Identical singular and plural forms: <em>sheep, fish, deer, aircraft, series, species</em>. Example: <em>I saw three deer.</em> <em>Pluralia tantum</em> nouns (plural only): <em>trousers, jeans, scissors, glasses</em> — with a plural verb.</p>",
+    "exp": "<strong>Unit 66</strong> — formation of the plural of nouns.<br><br><p>Basic rule: add <em>-s</em>. Ending variants depend on the word's final letters.</p><ul><li>Standard: <em>book → books, cat → cats</em>.</li><li>After <em>-s, -ss, -sh, -ch, -x, -o</em>: add <em>-es</em> — <em>bus → buses, box → boxes, tomato → tomatoes</em>.</li><li>Consonant + <em>-y</em> → <em>-ies</em>: <em>city → cities, story → stories</em>. Vowel + <em>-y</em> → just <em>-s</em>: <em>boy → boys</em>.</li><li><em>-f/-fe</em> → <em>-ves</em>: <em>leaf → leaves, knife → knives, wife → wives</em>.</li></ul><p>Irregular forms (to memorise): <em>man → men, woman → women, child → children, foot → feet, tooth → teeth, mouse → mice, person → people</em>.</p><p>Identical singular and plural forms: <em>sheep, fish, deer, aircraft, series, species</em>. Example: <em>I saw three deer.</em> <em>pluralia tantum</em> nouns (plural only): <em>trousers, jeans, scissors, glasses</em> — with a plural verb.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "Unchanging: <em>sheep, fish, deer, aircraft, series</em>. Plural only: <em>trousers, jeans, scissors, glasses, clothes</em>. Latin: <em>analysis→analyses, crisis→crises, phenomenon→phenomena</em>.",
     "mistakes": [
@@ -2278,7 +2278,7 @@
   "el_u68": {
     "text": "Unit 68 – Some with uncountables",
     "note": "some water, some advice, some music",
-    "exp": "<strong>Unit 68</strong> — use of <em>some</em> with uncountables and plurals.<br><br><p><em>Some</em> means 'a certain amount, several' and corresponds to 'a little / some / a few' or zero in translation.</p><p>Main rules:</p><ul><li>In affirmative sentences: <em>I need some water. There are some apples on the table.</em></li><li>In polite offers and requests (expecting 'yes'): <em>Would you like some coffee? Can I have some sugar?</em></li><li>In neutral questions and negatives use <em>any</em> instead of <em>some</em>: <em>Is there any milk? I don't have any money.</em></li></ul><p>With a singular countable <em>some</em> is not used — there <em>a/an</em> applies. In the meaning 'some, a certain' <em>some</em> can also stand before a singular: <em>Some man called you.</em> Its pronunciation in this meaning is strong /sʌm/, while for 'a little' it is weak /səm/.</p>",
+    "exp": "<strong>Unit 68</strong> — use of <em>some</em> with uncountables and plurals.<br><br><p><em>Some</em> means 'a certain amount, several' and corresponds to 'a little / some / a few' or zero in translation.</p><p>Main rules:</p><ul><li>In affirmative sentences: <em>I need some water. There are some apples on the table.</em></li><li>In polite offers and requests (expecting 'yes'): <em>Would you like some coffee? Can I have some sugar?</em></li><li>In neutral questions and negatives use <em>some</em> instead of <em>any</em>: <em>Is there any milk? I don't have any money.</em></li></ul><p>With a singular countable <em>some</em> is not used — there <em>a/an</em> applies. In the meaning 'some, a certain' <em>some</em> can also stand before a singular: <em>Some man called you.</em> Its pronunciation in this meaning is strong /sʌm/, while for 'a little' it is weak /səm/.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "<em>Some</em> in questions — when expecting 'yes' or when offering/requesting: <em>Can I have some water?</em> In 'real' questions about existence use <em>any</em>: <em>Is there any water?</em>",
     "mistakes": [
@@ -2354,7 +2354,7 @@
     ]
   },
   "el_u74": {
-    "text": "Unit 74 - This, these, that, those",
+    "text": "Unit 74 — This, these, that, those",
     "note": "this book / these books / that car / those cars",
     "exp": "<strong>Unit 74</strong> — demonstrative pronouns <em>this, these, that, those</em>.<br><br><p>They point to an object by distance (physical or emotional) and by number.</p><ul><li><em>this</em> (sing.) / <em>these</em> (pl.) — close to the speaker, 'this / these': <em>This book is mine. These shoes are new.</em></li><li><em>that</em> (sing.) / <em>those</em> (pl.) — far away, 'that / those': <em>That car over there is fast. Those days were happy.</em></li></ul><p>Functions:</p><ul><li>As a modifier before a noun: <em>this pen, those people</em>.</li><li>Independently: <em>What is this? Who are those?</em></li><li>On the phone (BrE): <em>Hello, this is Anna. Is that Tom?</em> (AmE: <em>Is this Tom?</em>)</li><li>Reference to what has been said: <em>That's a good idea.</em></li></ul><p>Emotional tone: <em>that</em> may express distancing or disapproval — <em>I don't like that music.</em> In the pair <em>this and that</em> = 'this and that'.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2367,7 +2367,7 @@
     ]
   },
   "el_u75": {
-    "text": "Unit 75 - One/ones",
+    "text": "Unit 75 — One / ones",
     "note": "Which one? I want the blue one.",
     "exp": "<strong>Unit 75</strong> — substitute pronoun <em>one / ones</em> for countable nouns.<br><br><p>Replaces a previously mentioned noun to avoid repetition.</p><ul><li><em>one</em> — for singular: <em>I need a pen. Have you got one?</em></li><li><em>ones</em> — for plural: <em>These apples are bad. The red ones are better.</em></li></ul><p>Typical combinations:</p><ul><li>After an adjective: <em>the blue one, a big one, a new one</em>.</li><li>After <em>this/that/which</em>: <em>Which one do you want? I'll take this one.</em></li><li>After <em>the</em> with a modifier: <em>the one on the table, the ones I bought yesterday</em>.</li></ul><p>Examples: <em>My car is old. I want a new one.</em> <em>These cups are dirty; give me clean ones.</em></p><p>Not used with uncountables: you cannot say <em>I need water. Give me one.</em> → <em>Give me some.</em> After <em>my/his/her/your</em> without an adjective — no <em>one</em>: <em>That's mine</em>, not <em>my one</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2393,7 +2393,7 @@
     ]
   },
   "el_u77": {
-    "text": "Unit 77 - No, none, not any",
+    "text": "Unit 77 — No, none, not any",
     "note": "There is no milk. None of them came.",
     "exp": "<strong>Unit 77</strong> — negative quantifiers <em>no, none</em> and the <em>not … any</em> construction.<br><br><p>Three ways to express 'no / not any':</p><ul><li><em>no</em> + noun (emphatic): <em>There is no time. I have no idea.</em></li><li><em>not … any</em> + noun (neutral): <em>There isn't any time. I don't have any idea.</em></li><li><em>none</em> — without a noun, as a replacement: <em>How much money do you have? — None.</em></li></ul><p>Key rule: in English there is <strong>only one negative</strong> per clause. If the verb is already negative, only <em>any</em> (not <em>no/none</em>) may follow.</p><ul><li><em>I don't have any friends here.</em> = <em>I have no friends here.</em></li><li><em>There weren't any people in the shop.</em> = <em>There were no people in the shop.</em></li></ul><p><em>None of</em> + determiner + noun: <em>None of my friends came. None of the milk was fresh.</em> After <em>none of</em> + plural the verb may be singular (formally) or plural (colloquially).</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2406,7 +2406,7 @@
     ]
   },
   "el_u78": {
-    "text": "Unit 78 - Nobody, not anybody",
+    "text": "Unit 78 — Nobody, not anybody",
     "note": "Nobody came. I didn't see anybody.",
     "exp": "<strong>Unit 78</strong> — negative pronouns <em>nobody / no one, nothing, nowhere</em> and their relation to <em>not anybody</em> etc.<br><br><p>Equivalent forms:</p><ul><li><em>nobody / no one</em> = <em>not anybody / not anyone</em></li><li><em>nothing</em> = <em>not anything</em></li><li><em>nowhere</em> = <em>not anywhere</em></li></ul><p>One-negative rule: after <em>nobody/nothing/nowhere</em> the verb is <strong>affirmative</strong>.</p><ul><li><em>Nobody knows the answer.</em></li><li><em>Nothing happened yesterday.</em></li><li><em>There is nowhere to go.</em></li><li>Cf.: <em>I didn't see anybody.</em> = <em>I saw nobody.</em></li></ul><p>After <em>nobody/no one/nothing</em> the verb is singular, but the referring pronoun is usually <em>they/their/them</em> (gender-neutral): <em>Nobody brought their umbrella. Did anyone forget their ticket?</em></p><p>In tag questions after negative meaning — affirmative tag: <em>Nobody came, did they?</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2419,7 +2419,7 @@
     ]
   },
   "el_u79": {
-    "text": "Unit 79 - Somebody, anybody, nobody",
+    "text": "Unit 79 — Somebody, anybody, nobody",
     "note": "Is somebody there? Anybody can do this.",
     "exp": "<strong>Unit 79</strong> — the full system of indefinite pronouns with suffixes <em>-body / -one / -thing / -where</em>.<br><br><p>Form matrix:</p><ul><li>People: <em>somebody / someone, anybody / anyone, nobody / no one, everybody / everyone</em>.</li><li>Things: <em>something, anything, nothing, everything</em>.</li><li>Places: <em>somewhere, anywhere, nowhere, everywhere</em>.</li></ul><p><em>-body</em> and <em>-one</em> are interchangeable with the same meaning. The choice among <em>some-/any-/no-</em> follows the general rule: affirmative — <em>some-</em>, negative/question — <em>any-</em>, negative without the particle <em>not</em> — <em>no-</em>.</p><p>Examples:</p><ul><li><em>Someone is knocking at the door.</em></li><li><em>Is there anything to eat?</em></li><li><em>There's nothing in the box.</em></li><li><em>Everyone was happy at the party.</em></li></ul><p>After these words the verb is singular: <em>Everybody is here.</em> The meaning 'any' of <em>any-</em> in an affirmative: <em>Anyone can learn English.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2445,7 +2445,7 @@
     ]
   },
   "el_u81": {
-    "text": "Unit 81 - All, most, some, any, no",
+    "text": "Unit 81 — All, most, some, any, no",
     "note": "All cats / Most people / Some water / No idea",
     "exp": "<strong>Unit 81</strong> — quantifiers <em>all, most, some, any, no</em> with nouns and with <em>of</em>.<br><br><p>Two registers of use:</p><ul><li><strong>Without <em>of</em></strong> — general statements about a class: <em>All birds can fly. Most children like sweets. Some people are lucky. I have no money.</em></li><li><strong>With <em>of</em></strong> — before a pronoun or a noun with a determiner (<em>the, my, this</em>): <em>All of us agree. Most of the students passed. Some of my friends live abroad. None of them came.</em></li></ul><p>The form <em>no</em> before <em>of</em> is impossible — instead use <em>none</em>: <em>none of the books, none of us</em>.</p><p><em>All</em> before <em>the/my/this</em> allows <em>of</em> to be dropped: <em>all (of) my friends, all (of) the time</em>. With a personal pronoun <em>of</em> is required: <em>all of us</em>, not <em>all we</em>.</p><p>Examples: <em>Some people like tea; some of my friends drink it every day.</em> <em>Most animals sleep at night, but most of my cats sleep all day.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2458,7 +2458,7 @@
     ]
   },
   "el_u82": {
-    "text": "Unit 82 - Both, either, neither",
+    "text": "Unit 82 — Both, either, neither",
     "note": "Both sisters / Either day / Neither option",
     "exp": "<strong>Unit 82</strong> — paired quantifiers <em>both, either, neither</em> for <strong>two</strong> objects.<br><br><p>Meanings:</p><ul><li><em>both</em> — both / the one and the other (positive).</li><li><em>either</em> — any one of the two / one or the other.</li><li><em>neither</em> — neither one nor the other (negative without <em>not</em>).</li></ul><p>Forms:</p><ul><li>Before a noun: <em>both sisters, either day, neither answer</em>.</li><li>With <em>of</em> + determiner: <em>both of the girls, either of us, neither of them</em>.</li><li>Correlative conjunctions: <em>both … and</em>, <em>either … or</em>, <em>neither … nor</em>.</li></ul><p>Verb agreement:</p><ul><li>After <em>both</em> — always plural: <em>Both are correct.</em></li><li>After <em>either/neither</em> — usually singular (formally): <em>Neither of the answers is right.</em> In speech plural is acceptable.</li></ul><p>Examples: <em>Both of my parents are teachers.</em> <em>You can come on Monday or Tuesday — either day is fine.</em> <em>Neither book was interesting.</em> <em>She speaks neither French nor German.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2471,7 +2471,7 @@
     ]
   },
   "el_u83": {
-    "text": "Unit 83 – Much, many, a lot of",
+    "text": "Unit 83 — Much, many, a lot of",
     "note": "much water / many friends / a lot of work",
     "exp": "<strong>Unit 83</strong> — quantity expressions <em>much, many, a lot of / lots of</em>.<br><br><p>The choice depends on the countability of the noun and the type of sentence.</p><ul><li><em>many</em> + countable plural: <em>many books, many people, many problems</em>.</li><li><em>much</em> + uncountable: <em>much time, much money, much information</em>.</li><li><em>a lot of / lots of</em> + both types: <em>a lot of friends, a lot of water</em>.</li></ul><p>Stylistic rule:</p><ul><li>In <strong>affirmatives</strong> <em>a lot of</em> is preferred: <em>I have a lot of work.</em> (<em>much work</em> — formal.)</li><li>In <strong>negatives</strong> and <strong>questions</strong> — <em>much/many</em>: <em>Do you have many friends? I don't have much money.</em></li></ul><p>After <em>how, so, too, as</em> — always <em>much/many</em>, not <em>a lot of</em>: <em>How much is it? There are too many cars. I have so much work!</em></p><p>Without a noun: <em>He works a lot. Thanks a lot.</em> Examples: <em>How many languages do you speak? — I speak three. How much time do you need? — Not much.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2549,7 +2549,7 @@
     ]
   },
   "el_u89": {
-    "text": "Unit 89 - Not as... as",
+    "text": "Unit 89 — Not as … as",
     "note": "I'm not as tall as you.",
     "exp": "<strong>Unit 89</strong> — the <em>(not) as … as</em> construction for comparing equality.<br><br><p>Statement of equality — <em>as + adjective/adverb + as</em>:</p><ul><li><em>Tom is as tall as Jim.</em></li><li><em>She runs as fast as her brother.</em></li></ul><p>Denial of equality — <em>not as … as</em> (= softer than <em>than</em>):</p><ul><li><em>This hotel isn't as expensive as the other one.</em> = <em>The other hotel is more expensive.</em></li><li><em>Today isn't as cold as yesterday.</em></li></ul><p>Constructions with quantity:</p><ul><li><em>as much + uncount. + as</em>: <em>I have as much money as you.</em></li><li><em>as many + count. pl. + as</em>: <em>She has as many books as me.</em></li></ul><p>Related expressions:</p><ul><li><em>the same as</em> (the same as): <em>My bag is the same as yours.</em> (not <em>the same like</em>).</li><li><em>different from</em> (different from): <em>Her answer is different from mine.</em></li><li>Colloquial equivalent of <em>not as … as</em> — <em>not so … as</em>.</li></ul>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2575,7 +2575,7 @@
     ]
   },
   "el_u91": {
-    "text": "Unit 91 - Enough",
+    "text": "Unit 91 — Enough",
     "note": "good enough / enough money / old enough to drive",
     "exp": "<strong>Unit 91</strong> — the word <em>enough</em>.<br><br><p>Position depends on part of speech:</p><ul><li><strong>After</strong> an adjective/adverb: <em>fast enough, old enough, warm enough, well enough</em>.</li><li><strong>Before</strong> a noun: <em>enough money, enough time, enough people</em>.</li></ul><p>Construction <em>enough + to-infinitive</em>:</p><ul><li><em>She is old enough to drive.</em></li><li><em>Is it warm enough to swim?</em></li><li><em>I don't have enough money to buy it.</em></li></ul><p>Alternative construction with <em>for</em> + noun: <em>This box is big enough for all my books.</em> With an infinitive subject: <em>The coffee is hot enough for me to drink.</em></p><p>Negative: <em>not … enough</em> = 'not enough': <em>He isn't tall enough to reach the shelf.</em></p><p>Independently: <em>Have you got enough? — Yes, thanks, that's enough.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2588,7 +2588,7 @@
     ]
   },
   "el_u92": {
-    "text": "Unit 92 - Too",
+    "text": "Unit 92 — Too",
     "note": "too tired to work / too much / too many",
     "exp": "<strong>Unit 92</strong> — the word <em>too</em> (excessively).<br><br><p>Always carries a negative tone — the quality 'prevents' something from being done.</p><p>Structure <em>too + adj./adv. (+ to-infinitive)</em>:</p><ul><li><em>It's too cold to swim.</em></li><li><em>She's too young to drive.</em></li><li><em>He speaks too quickly for me to understand.</em></li></ul><p>With nouns — <em>too much / too many</em>:</p><ul><li><em>too much</em> + uncount.: <em>too much sugar, too much noise, too much work</em>.</li><li><em>too many</em> + count. pl.: <em>too many people, too many mistakes</em>.</li></ul><p>Contrast <em>too</em> vs <em>very</em>:</p><ul><li><em>very</em> — neutral: <em>The coffee is very hot</em> (but I drink it).</li><li><em>too</em> — excessively: <em>The coffee is too hot (to drink)</em> — I cannot drink it.</li></ul><p>Not to be confused with the homonym <em>too</em> = 'also' (at the end of a phrase): <em>I'm tired too.</em></p><p>With <em>for</em> + person: <em>These shoes are too small for me.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2627,7 +2627,7 @@
     ]
   },
   "el_u95": {
-    "text": "Unit 95 - Still, yet, already",
+    "text": "Unit 95 — Still, yet, already",
     "note": "I'm still waiting. She's already left.",
     "exp": "<strong>Unit 95</strong> — the adverbs <em>still, yet, already</em> and their position.<br><br><p><em>still</em> (still, until now) — the situation continues longer than expected:</p><ul><li>Position: before the main verb, after <em>be</em>/auxiliary: <em>I still live here. She is still waiting. He still hasn't called.</em></li></ul><p><em>yet</em> (yet? / not yet) — in questions and negatives, at the end of the phrase:</p><ul><li><em>Have you finished yet? I haven't finished yet.</em></li></ul><p><em>already</em> (already) — in affirmatives, earlier than expected; in the middle:</p><ul><li><em>She has already left.</em></li><li><em>I've already seen that film.</em></li></ul><p>Contrasting nuances:</p><ul><li><em>still</em> + negative expresses irritation: <em>He still hasn't answered.</em> (but he should have).</li><li><em>not yet</em> — neutral 'not yet': <em>Not yet, but soon.</em></li><li><em>already</em> in a question = surprise: <em>Have you finished already?</em></li></ul><p>With tenses: <em>yet / already</em> more often with Present Perfect (BrE); AmE allows Past Simple.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2653,7 +2653,7 @@
     ]
   },
   "el_u97": {
-    "text": "Unit 97 - And, but, or, so, because",
+    "text": "Unit 97 — And, but, or, so, because",
     "note": "I was tired, so I went to bed.",
     "exp": "<strong>Unit 97</strong> — the main coordinating and subordinating conjunctions: <em>and, but, or, so, because</em>.<br><br><ul><li><em>and</em> — addition: <em>I got up and had breakfast.</em></li><li><em>but</em> — contrast: <em>I'm tired but happy.</em></li><li><em>or</em> — alternative: <em>Tea or coffee?</em></li><li><em>so</em> — result: <em>It was late, so I went home.</em></li><li><em>because</em> — reason: <em>I went home because it was late.</em></li></ul><p>The logic of <em>so / because</em> is opposite — the order of cause and effect is mirrored:</p><ul><li>Cause + <em>so</em> + effect.</li><li>Effect + <em>because</em> + cause.</li></ul><p>Punctuation: before <em>and, but, or, so</em> in compound sentences a comma is usually placed. Before <em>because</em> no comma if it is in the middle; a comma is placed if the subordinate clause is initial: <em>Because it was raining, we stayed in.</em></p><p>Related connectors: <em>although / though</em> (concession): <em>Although it rained, we had fun.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
@@ -2672,7 +2672,7 @@
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/a1-a2-grammar",
     "exc": "<em>When</em> about the future = present tense: <em>When I see him, I'll tell him.</em> In Zero Conditional <em>if</em> and <em>when</em> are almost interchangeable for general truths.",
     "mistakes": [
-      "<s>When I will arrive, I'll call</s> → <em>When I arrive, I'll call</em> — no <em>will</em> after <em>when</em>.",
+      "<s>When I will arrive, I'll call</s> → <em>When I arrive, I'll call</em> — no <em>when</em> after <em>will</em>.",
       "<s>If water will boil</s> → <em>If water boils</em> — in Zero Conditional both tenses are Present.",
       "<s>When I'll be ready</s> → <em>When I'm ready</em>.",
       "<s>If it rains I will staying home</s> → <em>I'll stay home</em> — infinitive after <em>will</em>."
@@ -2687,12 +2687,12 @@
     "mistakes": [
       "<s>If it will rain, I stay</s> → <em>If it rains, I'll stay</em> — <em>will</em> only in the main clause.",
       "<s>If I will have time</s> → <em>If I have time</em>.",
-      "<s>If he comes, I will to help</s> → <em>I will help</em> — no <em>to</em> after <em>will</em>.",
+      "<s>If he comes, I will to help</s> → <em>I will help</em> — no <em>will</em> after <em>to</em>.",
       "<s>I'll go if it won't rain</s> → <em>if it doesn't rain</em> — Present after <em>if</em>."
     ]
   },
   "int_u01": {
-    "text": "Unit 1 - Present Continuous",
+    "text": "Unit 1 — Present Continuous",
     "note": "I am doing / She is working right now",
     "exp": "<strong>Unit 1</strong> — Present Continuous describes an action happening at the moment of speaking, a temporary situation, or a pre-arranged future plan.<br><br><strong>Formula:</strong> (+) <code>S + am/is/are + V-ing</code>; (−) <code>am/is/are + not</code>; (?) <code>Am/Is/Are + S + V-ing?</code><br><br><strong>Examples:</strong><ul><li><em>I'm writing an email now.</em> — I'm writing an email now.</li><li><em>She is staying with friends this week.</em> — She is staying with friends this week (temporarily).</li><li><em>We're flying to Rome on Friday.</em> — We're flying to Rome on Friday (plan).</li><li><em>The climate is changing rapidly.</em> — The climate is changing rapidly (ongoing process).</li></ul><strong>Signal words:</strong> <em>now, at the moment, currently, today, this week, Look!, Listen!</em><br><strong>Contrast:</strong> with Present Simple — permanent vs. temporary (<em>He works in a bank</em> vs. <em>He's working from home this month</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2704,7 +2704,7 @@
     ]
   },
   "int_u02": {
-    "text": "Unit 2 - Present Simple",
+    "text": "Unit 2 — Present Simple",
     "note": "I work / She works / general truths",
     "exp": "<strong>Unit 2</strong> — Present Simple expresses permanent truths, regular actions, schedules, and habits.<br><br><strong>Formula:</strong> (+) <code>S + V(-s/-es for 3rd person sg.)</code>; (−) <code>do/does + not + V</code>; (?) <code>Do/Does + S + V?</code><br><br><strong>Examples:</strong><ul><li><em>Water boils at 100°C.</em> — Water boils at 100°C (fact).</li><li><em>She teaches English at a university.</em> — She teaches English (permanently).</li><li><em>I usually have coffee for breakfast.</em> — I usually have coffee for breakfast (habit).</li><li><em>The museum opens at 10.</em> — The museum opens at 10 (schedule).</li></ul><strong>Signal words:</strong> <em>always, usually, often, sometimes, rarely, never, every day, twice a week</em>.<br><strong>Spelling:</strong> 3rd person sg. — <em>-es</em> after <em>-o, -s, -x, -ch, -sh</em>; <em>-y → -ies</em> (<em>study → studies</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2730,7 +2730,7 @@
   "int_u04": {
     "text": "Unit 4 - Stative verbs: verbs not in Continuous",
     "note": "I know / I understand / I want (not: I am knowing)",
-    "exp": "<strong>Unit 4</strong> — stative verbs are usually not used in Continuous.<br><br><strong>Groups of stative verbs:</strong><ul><li><strong>Thinking/opinion:</strong> <em>know, believe, think (=consider), understand, remember, suppose, mean</em></li><li><strong>Feelings:</strong> <em>like, love, hate, prefer, want, need, wish</em></li><li><strong>Perception:</strong> <em>see, hear, smell, taste, seem, appear</em></li><li><strong>Possession/relations:</strong> <em>have (=own), own, belong, contain, consist, depend</em></li></ul><strong>Examples:</strong><ul><li><em>I know what you mean.</em> — I understand what you mean.</li><li><em>This soup tastes great.</em> — This soup tastes great.</li></ul><strong>Double meanings:</strong> <em>think</em> — opinion (Simple) vs. process of thinking (Continuous); <em>have</em> — own (Simple) vs. 'having/taking' (<em>having lunch/a shower</em> — Continuous); <em>see</em> — see (Simple) vs. meet (<em>I'm seeing John tonight</em>).",
+    "exp": "<strong>Unit 4</strong> — stative verbs are usually not used in Continuous.<br><br><strong>Groups of stative verbs:</strong><ul><li><strong>Thinking/opinion:</strong> <em>know, believe, think (=consider), understand, remember, suppose, mean</em></li><li><strong>Feelings:</strong> <em>like, love, hate, prefer, want, need, wish</em></li><li><strong>Perception:</strong> <em>see, hear, smell, taste, seem, appear</em></li><li><strong>Possession/relations:</strong> <em>have (=owe), own, belong, contain, consist, depend</em></li></ul><strong>Examples:</strong><ul><li><em>I know what you mean.</em> — I understand what you mean.</li><li><em>This soup tastes great.</em> — This soup tastes great.</li></ul><strong>Double meanings:</strong> <em>think</em> — opinion (Simple) vs. process of thinking (Continuous); <em>have</em> — own (Simple) vs. 'having/taking' (<em>having lunch/a shower</em> — Continuous); <em>see</em> — see (Simple) vs. meet (<em>I'm seeing John tonight</em>).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
     "exc": "<em>Think</em>, <em>have</em>, <em>see</em> change meaning: <em>I'm thinking</em> (considering) vs. <em>I think</em> (believe). <em>I'm having a bath</em> (taking) vs. <em>I have a car</em> (own).<br><em>Feel</em> and <em>look</em> about well-being/appearance — allow both forms: <em>I feel / I'm feeling tired.</em>",
     "mistakes": [
@@ -2740,7 +2740,7 @@
     ]
   },
   "int_u05": {
-    "text": "Unit 5 - Past Simple",
+    "text": "Unit 5 — Past Simple",
     "note": "I worked / Did you go? / I didn't see",
     "exp": "<strong>Unit 5</strong> — Past Simple denotes a completed action at a specific moment in the past.<br><br><strong>Formula:</strong> (+) regular: <code>V+ed</code>, irregular: V2; (−) <code>did not (didn't) + V1</code>; (?) <code>Did + S + V1?</code><br><br><strong>Examples:</strong><ul><li><em>We met in 2015.</em> — We met in 2015.</li><li><em>She didn't call yesterday.</em> — She didn't call yesterday.</li><li><em>Did you enjoy the film?</em> — Did you enjoy the film?</li><li><em>Columbus discovered America in 1492.</em> — Columbus discovered America in 1492.</li></ul><strong>Signal words:</strong> <em>yesterday, last week/year, in 2010, ago, when I was young, then</em>.<br><strong>Spelling of <em>-ed</em>:</strong> <em>studied, stopped, liked</em> (doubling/softening). <strong>Important:</strong> after <em>did</em>, the verb is always in V1 form without <em>-ed</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2752,7 +2752,7 @@
     ]
   },
   "int_u06": {
-    "text": "Unit 6 - Past Continuous",
+    "text": "Unit 6 — Past Continuous",
     "note": "I was reading when you called.",
     "exp": "<strong>Unit 6</strong> — Past Continuous describes an ongoing action at a specific moment in the past, or a background action that was interrupted.<br><br><strong>Formula:</strong> <code>was/were + V-ing</code>.<br><br><strong>Uses:</strong><ul><li><strong>Ongoing at a moment:</strong> <em>At 8 p.m. I was having dinner.</em> — At 8 p.m. I was having dinner.</li><li><strong>Interrupted event:</strong> <em>I was reading when the lights went out.</em> — I was reading when the lights went out.</li><li><strong>Parallel processes:</strong> <em>While he was cooking, she was setting the table.</em> — While he was cooking, she was setting the table.</li><li><strong>Story background:</strong> <em>The sun was shining and birds were singing.</em></ul><strong>Contrast with Past Simple:</strong> Past Simple — brief completed event; Past Continuous — ongoing background (<em>when/while</em> + background, brief event — in Simple).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2764,7 +2764,7 @@
     ]
   },
   "int_u07": {
-    "text": "Unit 7 – Present Perfect (I have done)",
+    "text": "Unit 7 — Present Perfect (I have done)",
     "note": "I have finished. She has left.",
     "exp": "<strong>Unit 7</strong> — Present Perfect connects a past action with the present moment: the result matters, not exactly when it happened.<br><br><strong>Formula:</strong> <code>have/has + V3 (past participle)</code>.<br><br><strong>Three meanings:</strong><ul><li><strong>Present result:</strong> <em>I've lost my keys</em> (they are not here now).</li><li><strong>Life experience:</strong> <em>Have you ever been to Japan?</em> — Have you ever been to Japan?</li><li><strong>News/recent events:</strong> <em>The President has resigned.</em> — The President has resigned.</li></ul><strong>Examples:</strong><ul><li><em>She has written three books.</em> — She has written three books (up to now).</li><li><em>The price has gone up.</em> — The price has gone up.</li></ul><strong>Important:</strong> not combined with specific past time (<em>yesterday, ago, in 1990</em>). Compare: <em>I've seen this film</em> (experience) vs. <em>I saw it last night</em> (fact).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2788,7 +2788,7 @@
     ]
   },
   "int_u09": {
-    "text": "Unit 9 - Present Perfect Continuous",
+    "text": "Unit 9 — Present Perfect Continuous",
     "note": "I've been working all day.",
     "exp": "<strong>Unit 9</strong> — Present Perfect Continuous emphasizes the duration of an action that started in the past and continues now (or has just finished with a visible result).<br><br><strong>Formula:</strong> <code>have/has + been + V-ing</code>.<br><br><strong>Meanings:</strong><ul><li><strong>Process up to now:</strong> <em>She has been studying for three hours.</em> — She has been studying for three hours.</li><li><strong>Visible result:</strong> <em>You look tired — have you been running?</em> — You look tired — have you been running?</li><li><strong>Recently finished:</strong> <em>It's been raining</em> (the ground is wet).</li></ul><strong>Signals:</strong> <em>for, since, all day/morning, how long, recently, lately</em>.<br><strong>Important:</strong> stative verbs (<em>know, love, have</em>=own) are not used in Continuous — use Present Perfect: <em>I've known him for years.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2800,7 +2800,7 @@
     ]
   },
   "int_u10": {
-    "text": "Unit 10 – Present Perfect vs Present Perfect Continuous",
+    "text": "Unit 10 — Present Perfect vs Present Perfect Continuous",
     "note": "I've written / I've been writing",
     "exp": "<strong>Unit 10</strong> — choosing between Present Perfect and Present Perfect Continuous: result vs. process.<br><br><strong>Present Perfect</strong> (<code>have+V3</code>) — <strong>how much done / what result</strong>, action completed: <em>I've read 50 pages.</em> — I've read 50 pages.<br><strong>Present Perfect Continuous</strong> (<code>have been+V-ing</code>) — <strong>how long the process has been going</strong>, emphasis on duration: <em>I've been reading all morning.</em> — I've been reading all morning.<br><br><strong>Contrast examples:</strong><ul><li><em>She's painted the kitchen</em> (done) vs. <em>She's been painting the kitchen</em> (process, may not be finished).</li><li><em>I've written three emails</em> (quantity) vs. <em>I've been writing emails</em> (being busy with the process).</li></ul><strong>With verbs <em>live, work, teach, study</em>:</strong> both forms are often interchangeable without difference in meaning: <em>I've lived / I've been living here for 5 years.</em><br><strong>With quantity (how many, three times)</strong> — only Perfect.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2860,7 +2860,7 @@
     ]
   },
   "int_u104": {
-    "text": "Unit 104 – Quite, rather, pretty, fairly",
+    "text": "Unit 104 — Quite, rather, pretty, fairly",
     "note": "quite good / rather difficult / fairly easy",
     "exp": "<strong>Unit 104</strong> — adverbs of moderate degree: <em>quite, rather, pretty, fairly</em>.<br><br><strong>Quite</strong> (fairly) — neutrally-positive: <em>quite good, quite nice</em>. With some adjectives = <em>completely</em>: <em>quite right, quite wrong, quite sure, quite impossible</em>.<br><strong>Rather</strong> — stronger than <em>quite</em>, often with a negative tone: <em>rather difficult, rather cold</em>. With positive adjectives means 'pleasantly surprised': <em>It was rather good!</em><br><strong>Pretty</strong> — colloquial = <em>quite</em>: <em>pretty good, pretty difficult</em>.<br><strong>Fairly</strong> — weaker than <em>quite</em>, neutral: <em>fairly easy, fairly good</em>.<br><strong>Position before a noun:</strong><ul><li><em>quite/rather</em> stand BEFORE the article: <em>quite a good film, rather a nice day</em>;</li><li><em>fairly/pretty</em> — after: <em>a fairly good film, a pretty nice day</em>.</li></ul><strong>Intensity scale:</strong> <em>fairly < quite/pretty < rather < very</em>.<p><em>Rather</em> often implies a contrast with expectation.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2888,7 +2888,7 @@
     "note": "much better / a bit warmer / any better?",
     "exp": "<strong>Unit 106</strong> — modification of the comparative degree.<br><br><strong>Intensifiers</strong> (significantly more/less):<ul><li><em>much, far, a lot, considerably</em> + comparative: <em>much better, far more expensive, a lot cheaper</em>.</li></ul><strong>Softeners</strong> (a little):<ul><li><em>a bit, a little, slightly</em>: <em>a bit warmer, slightly more difficult</em>.</li></ul><strong>Any / no</strong> in questions and negatives:<ul><li><em>Is it any better?</em></li><li><em>It's no better.</em></li></ul><strong>Progression:</strong> <em>comparative and comparative</em> = more and more: <em>getting better and better, more and more expensive</em>.<br><strong>The … the … :</strong> <em>The more you practise, the better you get. The sooner, the better.</em><br><strong>Ban on very</strong>: <em>very</em> is NOT used with comparative: not <s>very better</s> → <em>much better</em>.<p>One form at a time: <s>more cheaper</s> → <em>cheaper</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
-    "exc": "You cannot use <em>very</em> + comparative. <em>Much, far, a lot, a bit, slightly</em> are used.",
+    "exc": "You cannot use <em>very</em> + comparative. <em>much, far, a lot, a bit, slightly</em> are used.",
     "mistakes": [
       "<s>Very better</s> → <em>much better / far better</em> — the comparative is strengthened by <em>much</em>.",
       "<s>It's a bit more cheaper.</s> → <em>a bit cheaper</em> — only one comparative form.",
@@ -2932,7 +2932,7 @@
     ]
   },
   "int_u11": {
-    "text": "Unit 11 – How long have you been...?",
+    "text": "Unit 11 — How long have you been…?",
     "note": "How long have you been waiting?",
     "exp": "<strong>Unit 11</strong> — the question <em>How long…?</em> about the duration of a situation that started in the past and continues now.<br><br><strong>Structures:</strong><ul><li><code>How long have you + V3/been V-ing?</code></li><li>Answer: <code>for + period</code> or <code>since + moment</code>.</li></ul><strong>Examples:</strong><ul><li><em>How long have you lived in Paris? — For ten years.</em> — How long have you lived in Paris? — Ten years.</li><li><em>How long has she been waiting? — Since 8 o'clock.</em> — Since when has she been waiting? — Since 8 o'clock.</li><li><em>How long have you known him?</em> (stative — Perfect, not Continuous).</li></ul><strong>Important:</strong> Russian Present ('how long have you lived?') → English Perfect. <em>How long are you…?</em> — is a mistake. With stative verbs — only Perfect, not Perfect Continuous. <em>For</em> = period of time, <em>since</em> = starting point.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2956,7 +2956,7 @@
     ]
   },
   "int_u111": {
-    "text": "Unit 111 – Still, yet, already; any more / no longer",
+    "text": "Unit 111 — Still, yet, already; any more / no longer",
     "note": "I'm still waiting. He no longer works here.",
     "exp": "<strong>Unit 111</strong> — adverbs of a continuing/completed situation.<br><br><strong>Still</strong> — the situation continues contrary to expectation of ending:<ul><li><em>I'm still waiting for him.</em></li><li><em>She still lives with her parents.</em></li><li>Position: before the main verb, after <em>be</em>: <em>He is still here.</em></li></ul><strong>Yet</strong> — 'so far (not)/already' in questions and negatives, often at the end:<ul><li><em>Have you finished yet?</em></li><li><em>I haven't seen him yet.</em></li></ul><strong>Already</strong> — 'already', in statements, usually between parts of the verb or at the end:<ul><li><em>She has already left.</em></li></ul><strong>Any more / any longer / no longer</strong> — cessation:<ul><li><em>He doesn't work here any more / any longer.</em></li><li><em>He no longer works here.</em> (more formal, <em>no longer</em> before the main verb)</li></ul><p>Contrast: <em>still</em> — continues; <em>any more/no longer</em> — stopped; <em>yet</em> — has not happened yet; <em>already</em> — earlier than expected.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2980,7 +2980,7 @@
     ]
   },
   "int_u113": {
-    "text": "Unit 113 – Although, though, even though, in spite of, despite",
+    "text": "Unit 113 — Although, though, even though, in spite of, despite",
     "note": "Although she was tired, she worked.",
     "exp": "<strong>Unit 113</strong> — ways of expressing concession (contrast, 'in spite of').<br><br><strong>Conjunctions</strong> (before a subordinate clause):<ul><li><em>although, though, even though</em> — synonyms; <em>even though</em> is stronger;</li><li><em>Although it was cold, she went out.</em></li><li><em>Even though he was tired, he kept working.</em></li><li><em>though</em> often at the end of a sentence as an adverb: <em>It was cold. I went out, though.</em></li></ul><strong>Prepositions</strong> (before a noun, pronoun or <em>-ing</em>):<ul><li><em>in spite of, despite</em> — the same meaning;</li><li><em>Despite the rain, we continued.</em></li><li><em>In spite of being tired, she worked.</em></li><li><em>Despite the fact that it was cold, we went out.</em> (<em>the fact that</em> adds a clause)</li></ul><strong>Key prohibitions:</strong><ul><li><s>despite of</s> — without <em>of</em>;</li><li>after <em>although</em> — only a clause, not a noun.</li></ul><p>Contrast: <em>although + clause</em>, <em>despite/in spite of + noun/-ing</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -2992,7 +2992,7 @@
     ]
   },
   "int_u114": {
-    "text": "Unit 114 - In case",
+    "text": "Unit 114 — In case",
     "note": "Take an umbrella in case it rains.",
     "exp": "<strong>Unit 114</strong> — <em>in case</em> (in case) — precautions taken in advance.<br><br><strong>Meaning:</strong> <em>in case</em> means an action done <em>in advance</em> to prepare for a possible situation.<ul><li><em>Take an umbrella in case it rains.</em></li><li><em>I'll write down the address in case I forget.</em></li></ul><strong>Difference from if:</strong><ul><li><em>I'll call you if I'm late.</em> — I'll call only if I'm late (condition).</li><li><em>I'll call you in case I'm late.</em> — I'll call in advance (just in case).</li></ul><strong>Grammar:</strong> after <em>in case</em> — Present Simple/Past Simple, NOT <em>will/would</em>, even about the future:<ul><li><em>Take water in case you get thirsty.</em></li><li><em>I took a map in case we got lost.</em></li></ul><strong>Just in case</strong> — the colloquial phrase 'just in case': <em>Take your phone just in case.</em><p><em>In case of + noun</em> (formal, signs) — 'in case of something': <em>In case of fire, break glass.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3017,7 +3017,7 @@
   },
   "int_u116": {
     "text": "Unit 116 - As: reason and time",
-    "note": "As I was leaving, the phone rank.",
+    "note": "As I was leaving, the phone rang.",
     "exp": "<strong>Unit 116</strong> — the polysemous conjunction <em>as</em>.<br><br><strong>Meaning 1: 'because'</strong> (= <em>because, since</em>):<ul><li><em>As it was late, I went home.</em></li><li><em>As she knew French, she translated.</em></li></ul><strong>Meaning 2: 'when/while'</strong> — simultaneous ongoing actions:<ul><li><em>As I was walking home, I saw an accident.</em></li><li><em>She sang as she cooked.</em></li></ul><strong>Just as</strong> — 'at the very moment when':<ul><li><em>Just as I was leaving, the phone rang.</em></li></ul><strong>Choice between as / when / while:</strong><ul><li><em>as</em> — simultaneous ongoing actions or gradual development;</li><li><em>when</em> — for brief, instantaneous events: <em>When I opened the door, I saw him.</em>;</li><li><em>while</em> — emphasises duration: <em>While I was cooking, he called.</em></li></ul><p>Other meanings of <em>as</em>: role (<em>work as a teacher</em>), comparison (<em>as tall as</em>) — discussed in other units.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
     "exc": "<em>As</em> meaning 'while' is used with ongoing actions (often Past Continuous). For brief ones — <em>when</em>.",
@@ -3076,7 +3076,7 @@
     ]
   },
   "int_u120": {
-    "text": "Unit 120 - By, until, by the time",
+    "text": "Unit 120 — By, until, by the time",
     "note": "I'll finish by Friday. By the time she arrived…",
     "exp": "<strong>Unit 120</strong> — <em>by, until, by the time</em> for denoting an end point.<br><br><strong>Until (till)</strong> — a continuous action up to a moment:<ul><li><em>I waited until 9 pm.</em></li><li><em>She slept until noon.</em></li><li><em>We can't leave until he arrives.</em></li></ul><strong>By</strong> — 'no later than'; the action will be completed by this deadline (not necessarily ongoing):<ul><li><em>I'll finish the report by Friday.</em></li><li><em>Be home by 10.</em></li></ul><strong>By the time + clause</strong> — 'by the time when':<ul><li><em>By the time she arrived, I had already left.</em> — Past Perfect in the main clause.</li><li><em>By the time you read this, I'll be in Paris.</em> — Future in the main.</li></ul><strong>Contrast until vs. by:</strong><ul><li><em>I'll wait until 9.</em> (continuous waiting)</li><li><em>I'll call you by 9.</em> (a call by that moment)</li></ul><p>You cannot say: <s>I'll finish until Friday</s> → <em>by Friday</em>; <s>I'll wait by 9</s> → <em>until 9</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3418,7 +3418,7 @@
     ]
   },
   "int_u15": {
-    "text": "Unit 15 – Past Perfect (I had done)",
+    "text": "Unit 15 — Past Perfect (I had done)",
     "note": "She had already left when I arrived.",
     "exp": "<strong>Unit 15</strong> — Past Perfect ('past in the past') shows that an action happened BEFORE another past action or moment.<br><br><strong>Formula:</strong> <code>had + V3</code> (same for all persons). Contraction: <em>'d</em>.<br><br><strong>Cases:</strong><ul><li><strong>Sequence:</strong> <em>When I arrived, the film had already started.</em> — When I arrived, the film had already started.</li><li><strong>Cause/state:</strong> <em>She was tired because she hadn't slept.</em> — She was tired because she hadn't slept.</li><li><strong>Reported speech:</strong> <em>He said he had seen it.</em></li></ul><strong>Signals:</strong> <em>already, just, never, by the time, before, after, when</em>.<br><strong>Contrast with Past Simple:</strong> no shift to the past is needed if the sequence is already clear (<em>I woke up and had breakfast</em>). Past Perfect is needed when the order of events matters and is not obvious.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3430,7 +3430,7 @@
     ]
   },
   "int_u16": {
-    "text": "Unit 16 - Past Perfect Continuous",
+    "text": "Unit 16 — Past Perfect Continuous",
     "note": "I had been waiting for an hour before she arrived.",
     "exp": "<strong>Unit 16</strong> — Past Perfect Continuous denotes an ongoing process that was happening BEFORE a specific moment in the past (sometimes — with a result at that moment).<br><br><strong>Formula:</strong> <code>had been + V-ing</code>.<br><br><strong>Meanings:</strong><ul><li><strong>Duration up to past moment:</strong> <em>By 2020, she had been teaching for 15 years.</em> — By 2020, she had been teaching for 15 years.</li><li><strong>Cause of past state:</strong> <em>His eyes were red because he had been crying.</em> — His eyes were red because he had been crying.</li><li><strong>Interrupted process:</strong> <em>I had been waiting for an hour when the bus finally came.</em></li></ul><strong>Signals:</strong> <em>for, since, how long, all day, before</em>.<br><strong>Stative verbs</strong> are not used in Continuous — we use Past Perfect: <em>I had known him for years before he told me.</em><br><strong>Contrast:</strong> Past Perfect — fact/result; Past Perfect Continuous — process/duration.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3442,7 +3442,7 @@
     ]
   },
   "int_u17": {
-    "text": "Unit 17 - Have got vs have",
+    "text": "Unit 17 — Have got vs have",
     "note": "Have you got a car? / Do you have a car?",
     "exp": "<strong>Unit 17</strong> — <em>have got</em> (BrE) and <em>have</em> (AmE/universal) for possession.<br><br><strong>Meanings are identical:</strong> <em>I've got a brother = I have a brother.</em><br><br><strong>Forms:</strong><ul><li><strong>have got:</strong> (+) <em>I've got / She's got</em>; (−) <em>I haven't got / She hasn't got</em>; (?) <em>Have you got…? Has she got…?</em></li><li><strong>have:</strong> (+) <em>I have / She has</em>; (−) <em>I don't have / She doesn't have</em>; (?) <em>Do you have…? Does she have…?</em></li></ul><strong>Important restriction:</strong> <em>have got</em> — only in the present tense. In the past — only <em>had</em> (without <em>got</em>): <em>I had a bike when I was 10.</em> Question: <em>Did you have…?</em><br><br><strong>Actions</strong> (not ownership) — only <em>have</em> without <em>got</em>: <em>have breakfast/a shower/a party/a good time</em>. Here <em>have</em> = 'perform/spend'.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3454,7 +3454,7 @@
     ]
   },
   "int_u18": {
-    "text": "Unit 18 - Used to",
+    "text": "Unit 18 — Used to",
     "note": "I used to smoke but I stopped.",
     "exp": "<strong>Unit 18</strong> — <em>used to + infinitive</em> describes regular habits or states in the past that no longer exist.<br><br><strong>Formula:</strong> (+) <code>used to + V1</code>; (−) <code>didn't use to + V1</code>; (?) <code>Did + S + use to + V1?</code><br><br><strong>Examples:</strong><ul><li><em>I used to play the guitar.</em> — I used to play the guitar (not anymore).</li><li><em>She used to have long hair.</em> — She used to have long hair (state).</li><li><em>Didn't you use to smoke?</em> — Didn't you use to smoke?</li><li><em>We didn't use to have internet.</em> — We didn't use to have internet.</li></ul><strong>Important:</strong><ul><li>There is no present tense form: for current habits — Present Simple (<em>I play tennis</em>).</li><li>After <em>did</em> — <em>use to</em> (without <em>-d</em>).</li></ul><strong>Don't confuse!</strong> <em>used to do</em> (past habit) vs. <em>be used to doing</em> (be accustomed to something, see Unit 61).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3478,7 +3478,7 @@
     ]
   },
   "int_u20": {
-    "text": "Unit 20 - Be going to",
+    "text": "Unit 20 — Be going to",
     "note": "I'm going to study harder. It's going to snow.",
     "exp": "<strong>Unit 20</strong> — <em>be going to</em> for intentions and predictions with obvious signs.<br><br><strong>Formula:</strong> <code>am/is/are + going to + V1</code>.<br><br><strong>Two meanings:</strong><ul><li><strong>Intention (decision already made):</strong> <em>I'm going to quit my job next month.</em> — I'm going to quit.</li><li><strong>Prediction with visible evidence:</strong> <em>Look at those clouds — it's going to rain!</em> — Look at the clouds — it's going to rain!</li></ul><strong>Past — was/were going to</strong> (planned but didn't do): <em>I was going to call you, but I forgot.</em> — I was going to call you, but I forgot.<br><br><strong>Examples:</strong><ul><li><em>She's going to have a baby.</em> — She's expecting a baby (visibly/planned).</li><li><em>We're going to visit Spain this summer.</em></li></ul><strong>Style:</strong> instead of <em>be going to go/come</em> people often just say Present Continuous: <em>I'm going to the cinema</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3490,7 +3490,7 @@
     ]
   },
   "int_u21": {
-    "text": "Unit 21 - Future Simple (Will, Shall)",
+    "text": "Unit 21 — Future Simple (Will, Shall)",
     "note": "I'll help you. It will be cold tomorrow.",
     "exp": "<strong>Unit 21</strong> — <em>will/shall</em> for spontaneous decisions, promises, requests, and predictions without obvious signs.<br><br><strong>Formula:</strong> <code>will/'ll + V1</code>; negation <em>won't</em>; question <em>Will + S + V1?</em><br><br><strong>Meanings:</strong><ul><li><strong>Spontaneous decision:</strong> <em>The phone's ringing — I'll get it!</em> — I'll get it!</li><li><strong>Promise:</strong> <em>I'll call you tomorrow. I promise.</em></li><li><strong>Prediction (opinion):</strong> <em>I think Brazil will win.</em></li><li><strong>Offer/refusal:</strong> <em>I'll help you / The door won't open.</em></li></ul><strong>Important rule:</strong> after <em>if, when, as soon as, before, after, until</em> — never <em>will</em>, use Present: <em>When he arrives, I'll tell him.</em><br><strong>Shall</strong> (BrE, rare in AmE) — with <em>I/we</em> for offers: <em>Shall I open the window? Shall we dance?</em><br><strong>Contrast:</strong> <em>will</em> = decision now; <em>going to</em> = decision made earlier.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3514,7 +3514,7 @@
     ]
   },
   "int_u23": {
-    "text": "Unit 23 – Will vs going to",
+    "text": "Unit 23 — Will vs going to",
     "note": "I'll do it. / I'm going to do it.",
     "exp": "<strong>Unit 23</strong> — key difference <em>will</em> vs. <em>going to</em>.<br><br><strong>will — decision AT THE MOMENT of speech:</strong><ul><li><em>A: We need milk. B: OK, I'll buy some.</em> — Decided right now.</li></ul><strong>going to — decision made BEFORE the moment of speech:</strong><ul><li><em>A: Why are you going to the shop? B: I'm going to buy milk.</em> — Already planned.</li></ul><strong>Predictions:</strong><ul><li><strong>will</strong> — opinion/feeling without evidence: <em>I think she'll like the gift.</em></li><li><strong>going to</strong> — there is visible evidence: <em>She's going to have a baby</em> (visible) / <em>The sky is dark — it's going to rain.</em></li></ul><strong>Test question:</strong> 'Did I decide this just now?' — <em>will</em>. 'Was I already thinking about it?' — <em>going to</em>.<br><strong>Weather forecast by announcer:</strong> <em>will</em> (official forecast) or <em>going to</em> (visible signs).",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3550,7 +3550,7 @@
     ]
   },
   "int_u26": {
-    "text": "Unit 26 - Can, could, be able to",
+    "text": "Unit 26 — Can, could, be able to",
     "note": "I can swim. I was able to escape. I'll be able to come.",
     "exp": "<strong>Unit 26</strong> — expressing ability: <em>can, could, be able to</em>.<br><br><strong>can</strong> — ability/possibility in the present: <em>I can speak French.</em> Form <em>can't/cannot</em>.<br><strong>could</strong> — general ability in the past (what you could do regularly): <em>I could swim when I was 5.</em><br><strong>was/were able to</strong> — a single success in a specific past situation: <em>The door was locked but I was able to open it.</em> — The door was locked, but I managed to open it.<br><br><strong>be able to</strong> — the only form for:<ul><li>Future: <em>I'll be able to help tomorrow.</em></li><li>Perfect: <em>I haven't been able to contact her.</em></li><li>After modals: <em>You must be able to drive.</em></li><li>Infinitive: <em>I want to be able to speak Spanish.</em></li></ul><strong>In the negative</strong> <em>couldn't</em> can also be used for single cases: <em>I couldn't open the door.</em> = <em>I wasn't able to.</em>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3622,7 +3622,7 @@
     ]
   },
   "int_u32": {
-    "text": "Unit 32 - Must, mustn't, needn't",
+    "text": "Unit 32 — Must, mustn't, needn't",
     "note": "You must stop. You needn't worry.",
     "exp": "<strong>Unit 32</strong> — <em>must, mustn't, needn't / don't need to</em>.<br><br><strong>must</strong> — obligation/necessity: <em>You must wear a helmet.</em><br><strong>mustn't</strong> — <strong>prohibition</strong>, 'must not': <em>You mustn't smoke here.</em><br><strong>needn't / don't need to / don't have to</strong> — <strong>absence of necessity</strong>, 'not required': <em>You needn't come early — we'll wait.</em><br><br><strong>⚠️ Main difference:</strong> <em>mustn't</em> vs. <em>needn't</em> — these are opposites in meaning:<ul><li><em>You mustn't tell anyone.</em> — You must not tell anyone.</li><li><em>You needn't tell anyone.</em> — You don't have to tell anyone (not required).</li></ul><strong>Past:</strong><ul><li><strong>needn't have + V3</strong> — didn't need to, but did (in vain): <em>You needn't have cooked — we ate.</em></li><li><strong>didn't need to + V1</strong> — didn't have to (and didn't do it): <em>I didn't need to cook — we ordered pizza.</em></li></ul><strong>needn't</strong> — modal, without <em>to</em>; <em>need to</em> — regular verb, with <em>to</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3670,8 +3670,8 @@
     ]
   },
   "int_u36": {
-    "text": "Unit 36 - Would",
-    "note": "Would you like...? I'd like to go. I would...",
+    "text": "Unit 36 — Would",
+    "note": "Would you like…? I'd like to go. I would…",
     "exp": "<strong>Unit 36</strong> — multiple functions of <em>would</em>.<br><br><strong>1. Polite offers and wishes:</strong><ul><li><em>Would you like some coffee?</em> — Would you like some coffee?</li><li><em>I'd like to book a table.</em> — I'd like to book a table.</li></ul><strong>2. Hypothetical/imaginary (Type 2):</strong><ul><li><em>If I had money, I would travel more.</em></li><li><em>What would you do?</em> — What would you do?</li></ul><strong>3. Regular actions in the past (= used to, but only about actions):</strong><ul><li><em>As a child, I would spend hours reading.</em> — As a child, I would read for hours.</li></ul><strong>4. Refusal in the past (won't in the past):</strong> <em>The car wouldn't start.</em> — The car wouldn't start.<br><br><strong>Formulas:</strong> <em>would + V1</em>; <em>would have + V3</em> (Type 3 and hypothetical past).<br><strong>⚠️</strong> For past STATES — only <em>used to</em> or Past Simple: <em>I had a dog</em> (not <em>I would have</em>). After <em>would like</em> — infinitive with <em>to</em>.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
     "exc": "<em>Would like + to-infinitive</em> (not <em>-ing</em>): <em>I'd like to go.</em><br><em>Would</em> for past habits — only about actions (not states): <em>I had a bike</em> (not <s>I would have</s>).",
@@ -3778,7 +3778,7 @@
     ]
   },
   "int_u45": {
-    "text": "Unit 45 – It is said… / He is said to be…",
+    "text": "Unit 45 — It is said… / He is said to be…",
     "note": "It is said that he is rich. He is said to be rich.",
     "exp": "<strong>Unit 45</strong> — passive reportive constructions: <em>It is said that… / He is said to…</em>.<br><br>Verbs of opinion/reporting: <em>say, think, believe, report, know, expect, consider, understand, assume</em>. Used in impersonal constructions when we convey general opinion, rumors, news.<br><br><strong>Two ways of translating the same meaning:</strong><ul><li><em>It is said that he is very rich.</em> (impersonal)</li><li><em>He is said to be very rich.</em> (personal with infinitive)</li></ul><strong>Formulas:</strong><ul><li><code>It + is/was + said + that + clause</code></li><li><code>Subject + is/was + said + to-infinitive</code></li></ul><strong>Present vs. past:</strong><ul><li>Present: <em>He is believed to live in Spain.</em></li><li>Past: <em>He is believed to have lived in Spain.</em> (perfect infinitive)</li></ul><strong>Examples:</strong><ul><li><em>The painting is thought to be genuine.</em></li><li><em>She is known to have been a spy.</em></li></ul>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3790,7 +3790,7 @@
     ]
   },
   "int_u46": {
-    "text": "Unit 46 - Have something done",
+    "text": "Unit 46 — Have something done",
     "note": "I'm having my car repaired.",
     "exp": "<strong>Unit 46</strong> — causative construction <em>have/get something done</em>: hire someone to do the work.<br><br><strong>Formula:</strong> <code>have/get + object + V3</code>.<br><br><strong>Meaning:</strong> we don't do it ourselves — we arranged for someone to do it for us (or something happened to us).<br><br><strong>Examples:</strong><ul><li><em>I had my hair cut.</em> — I had my hair cut (I went to the hairdresser).</li><li><em>She's having her house painted.</em> — She's having her house painted (hired someone).</li><li><em>Where do you get your car serviced?</em> — Where do you get your car serviced?</li><li><em>I need to get my eyes tested.</em> — I need to get my eyes tested.</li></ul><strong>have vs. get:</strong> meanings are identical; <em>get</em> is more informal.<br><br><strong>Second meaning — unpleasant event:</strong> <em>He had his wallet stolen.</em> — His wallet was stolen.<br><br><strong>Contrast:</strong><ul><li><em>I repaired my car</em> — I fixed it myself.</li><li><em>I had my car repaired</em> — I had it fixed.</li></ul><strong>⚠️ Order:</strong> <em>object</em> strictly before V3.",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -3970,7 +3970,7 @@
     ]
   },
   "int_u61": {
-    "text": "Unit 61 - Be used to do",
+    "text": "Unit 61 — Be used to doing",
     "note": "I'm used to waking up early.",
     "exp": "<strong>Unit 61</strong> — the construction <em>be/get used to + -ing</em> describes a habit formed through practice: the action no longer feels difficult or strange.<br><br><strong>Formula:</strong> <em>be/get used to + noun / pronoun / -ing</em>.<br><ul><li><em>I'm used to waking up early.</em></li><li><em>She isn't used to the cold weather.</em></li><li><em>He's getting used to living alone.</em></li></ul><p><strong>It is important to distinguish</strong> from <em>used to + infinitive</em> (a past regular habit that no longer exists): <em>I used to smoke</em> = I smoked in the past. But <em>I'm used to smoking</em> = I am accustomed to being around smoking. In the first case <em>used</em> is a past-tense verb; in the second, an adjective after <em>be</em>. Signals: <em>get used to</em> = the process of becoming accustomed; <em>be used to</em> = the state of being accustomed.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -4234,7 +4234,7 @@
     ]
   },
   "int_u83": {
-    "text": "Unit 83 - Mine, yours; own",
+    "text": "Unit 83 — Mine, yours; own",
     "note": "Is this yours? my own room",
     "exp": "<strong>Unit 83</strong> — absolute possessive pronouns and the expression <em>own</em>.<br><br><strong>Absolute forms</strong> (without a noun): <em>mine, yours, his, hers, ours, theirs</em>.<ul><li><em>Is this your book? — Yes, it's mine.</em></li><li><em>Their house is bigger than ours.</em></li></ul><strong>A friend of mine</strong> — one of my friends (double possessive): not <s>a friend of me</s>.<br><strong>My own + noun</strong> emphasises that it is precisely mine, not someone else's:<ul><li><em>I want my own room.</em></li><li><em>She has her own business.</em></li></ul><strong>On my own</strong> = <em>by myself</em> = alone, independently:<ul><li><em>She lives on her own.</em></li><li><em>I did it on my own.</em></li></ul><p>After <em>own</em> there is no preposition <em>of</em>: <s>my own of car</s> → <em>my own car</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -4270,7 +4270,7 @@
     ]
   },
   "int_u86": {
-    "text": "Unit 86 - Nobody, no-one, nothing, nowhere, none",
+    "text": "Unit 86 — Nobody, no-one, nothing, nowhere, none",
     "note": "Nobody knows. Nothing happened.",
     "exp": "<strong>Unit 86</strong> — negative pronouns with <em>no-</em>.<br><br><strong>Forms:</strong> <em>nobody / no one, nothing, nowhere, none</em>.<br><strong>Main rule:</strong> the verb is always <strong>affirmative</strong>, since the negation is already in the pronoun.<ul><li><em>Nobody came to the party.</em></li><li><em>Nothing happened.</em></li><li><em>There was nowhere to sit.</em></li></ul><strong>No + noun</strong> vs. <em>none</em>:<ul><li><em>no</em> + noun: <em>I have no money. No cars were parked here.</em></li><li><em>none</em> without a noun (alone or with <em>of</em>): <em>How much? — None. None of us knew.</em></li></ul><strong>Double negation is forbidden:</strong> <s>Nobody didn't come.</s> → <em>Nobody came</em> or <em>Anybody didn't come</em> (but the first is better).<p>After <em>nobody/nothing</em> further <em>any-</em> is used: <em>Nobody said anything.</em></p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -4282,7 +4282,7 @@
     ]
   },
   "int_u87": {
-    "text": "Unit 87 – Much, many, little, few",
+    "text": "Unit 87 — Much, many, little, few",
     "note": "much water / many people / little time / few friends",
     "exp": "<strong>Unit 87</strong> — quantifiers <em>much, many, little, few</em> and the nuance of <em>a little / a few</em>.<br><br><strong>Distribution by countability:</strong><ul><li><em>many, few, a few</em> — with plural countables;</li><li><em>much, little, a little</em> — with uncountables.</li></ul><strong>Key nuance — tone:</strong><ul><li><em>little/few</em> (without <em>a</em>) = little, almost none (negative tone): <em>I have little time. Few people came.</em></li><li><em>a little / a few</em> = some, but enough (positive): <em>I have a little time. A few friends helped.</em></li></ul><strong>Much in statements</strong> sounds formal; in speech <em>a lot of / lots of</em> is preferred: <em>I have a lot of money</em>. In questions and negatives <em>much</em> is fine: <em>Do you have much time? Not much.</em><p>Compare: <em>I have a few friends</em> (some, good) vs. <em>I have few friends</em> (few, sad).</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -4306,7 +4306,7 @@
     ]
   },
   "int_u89": {
-    "text": "Unit 89 - Both, either, neither",
+    "text": "Unit 89 — Both, either, neither",
     "note": "Both of them / Either road / Neither is correct.",
     "exp": "<strong>Unit 89</strong> — pronouns for denoting two objects.<br><br><strong>Both</strong> — affirmative:<ul><li><em>Both sisters are tall.</em></li><li><em>Both of them came.</em> / <em>They both came.</em></li></ul><strong>Either</strong> (any of two; either... or):<ul><li><em>Either road leads to town.</em></li><li><em>You can take either.</em></li></ul><strong>Neither</strong> (neither one nor the other):<ul><li><em>Neither answer is correct.</em></li><li><em>Neither of them came.</em></li></ul><strong>Paired conjunctions:</strong><ul><li><em>both… and</em>: <em>Both Tom and Anna were there.</em></li><li><em>either… or</em>: <em>You can have either tea or coffee.</em></li><li><em>neither… nor</em>: <em>Neither Tom nor Anna came.</em></li></ul><strong>Agreement:</strong> <em>either/neither</em> formally require singular (<em>Neither of them knows</em>), in speech plural is allowed.<p><em>Both</em> — only for two; for three and more — <em>all</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -4318,7 +4318,7 @@
     ]
   },
   "int_u90": {
-    "text": "Unit 90 - All, whole, every",
+    "text": "Unit 90 — All, whole, every",
     "note": "all day / the whole day / every day",
     "exp": "<strong>Unit 90</strong> — distinguishing <em>all, whole, every</em>.<br><br><strong>All + noun</strong> (all):<ul><li><em>all day, all the time, all students</em>;</li><li>with a determiner: <em>all my friends, all the books</em>.</li></ul><strong>Whole</strong> (entire, completely): <em>the whole day = all the day</em>. Usually with <em>the/my/a</em>:<ul><li><em>She ate the whole cake.</em></li><li><em>a whole week</em>.</li></ul><strong>Every</strong> — each individually, with singular:<ul><li><em>every day, every student, every time</em>;</li><li><em>Every student has a book.</em> (verb in singular)</li></ul><strong>Contrast:</strong> <em>all day</em> (all day, continuously) vs. <em>every day</em> (each day, regularly).<br><strong>Everybody/everyone/everything/everywhere</strong> — singular verb: <em>Everybody is ready.</em><p><em>Whole</em> does not combine with uncountables: not <s>the whole water</s> → <em>all the water</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
@@ -4415,7 +4415,7 @@
   },
   "int_u98": {
     "text": "Unit 98 - -ing and -ed adjectives",
-    "note": "boring/bored/interesting/interested",
+    "note": "boring/bored / interesting/interested",
     "exp": "<strong>Unit 98</strong> — pairs of adjectives with the suffixes <em>-ing</em> and <em>-ed</em>.<br><br><strong>-ing</strong> — describes the source of the sensation (what causes the emotion):<ul><li><em>The film is boring.</em></li><li><em>The news was shocking.</em></li></ul><strong>-ed</strong> — describes the one who experiences the sensation:<ul><li><em>I'm bored.</em></li><li><em>She was shocked by the news.</em></li></ul><strong>Common pairs:</strong> <em>interesting/interested, exciting/excited, tiring/tired, surprising/surprised, amazing/amazed, annoying/annoyed, confusing/confused, embarrassing/embarrassed, disappointing/disappointed, frightening/frightened</em>.<br><strong>Memory aid:</strong> <em>-ed</em> is me (I feel), <em>-ing</em> is it (it causes).<ul><li><em>The teacher is interesting; the students are interested.</em></li></ul><p>After <em>-ed</em> typically follow <em>in/by/with/at/about</em>: <em>interested in, surprised by, bored with, shocked at</em>.</p>",
     "unitUrl": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar",
     "exc": "The pairs work for almost all emotional verbs: <em>surprising/surprised, shocking/shocked, amazing/amazed, annoying/annoyed</em>.",

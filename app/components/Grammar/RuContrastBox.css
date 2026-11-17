@@ -1,0 +1,113 @@
+.ru-contrast {
+  margin: 0 14px 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(var(--rgb-b1), 0.09), rgba(var(--rgb-pink), 0.06)), var(--bg2);
+  border: 1px solid rgba(var(--rgb-b1), 0.3);
+  font-size: 13px;
+  line-height: 1.55;
+  animation: ru-contrast-in 0.25s ease;
+}
+@keyframes ru-contrast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.ru-contrast-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.ru-contrast-title {
+  font-weight: 600;
+  color: var(--b1);
+}
+.ru-contrast-trap {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--bg3);
+  color: var(--muted2);
+}
+.ru-contrast-text {
+  margin: 0 0 8px;
+  color: var(--text);
+}
+.ru-contrast-text em {
+  color: var(--b1);
+  font-style: normal;
+  font-weight: 600;
+}
+.ru-contrast-pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ru-contrast-pair {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+.ru-contrast-ru {
+  color: var(--muted2);
+}
+.ru-contrast-bad {
+  color: var(--c1);
+}
+.ru-contrast-bad s {
+  text-decoration-thickness: 1.5px;
+}
+.ru-contrast-good {
+  color: var(--a1);
+  font-weight: 500;
+}
+.ru-contrast-speak {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 0 0 4px;
+  opacity: 0.7;
+}
+.ru-contrast-speak:hover {
+  opacity: 1;
+}
+.ru-contrast-train {
+  margin-top: 10px;
+  border: 1px solid rgba(var(--rgb-b1), 0.4);
+  background: transparent;
+  color: var(--b1);
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.ru-contrast-train:hover {
+  background: rgba(var(--rgb-b1), 0.1);
+}
+
+@media (max-width: 640px) {
+  .ru-contrast {
+    margin: 0 8px 10px;
+  }
+  .ru-contrast-pair {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

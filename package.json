@@ -10,6 +10,7 @@
     "format": "biome format --write app",
     "check": "biome check --write app",
     "preview": "vite preview",
+    "test": "node --test scripts/tests/practice.test.mjs scripts/tests/sync-social.test.mjs scripts/tests/russian.test.mjs && node scripts/validate-practice-content.mjs && node scripts/repair-localized-rules.mjs --check",
     "deploy": "npm run build && firebase deploy",
     "prepare": "husky"
   },

@@ -30,6 +30,13 @@ import {
   readStoredUiLanguage,
 } from '../i18n/languagePreference';
 import {
+  deletePracticeData,
+  flushPracticeSync,
+  startPracticeSync,
+  stopPracticeSync,
+} from '../practice/practiceSync';
+import { resetPractice } from '../practice/store';
+import {
   deleteAllUserData,
   deleteNoteFromFirestore,
   getNotesCollection,
@@ -44,6 +51,7 @@ import {
   SYNC_APPLIED_EVENT,
   unregisterSyncCallbacks,
 } from '../services/syncRegistry';
+import { deleteSocialData, startSocial, stopSocial } from '../social/social';
 import type { StoredNote } from '../utils/notesStorage';
 
 export type SyncStatus = 'idle' | 'syncing' | 'synced' | 'offline' | 'error';
@@ -724,8 +732,12 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
           onNoteChanged: handleNoteChanged,
           onNoteDeleted: handleNoteDeleted,
         });
+        startPracticeSync(firebaseUser.uid);
+        void startSocial(firebaseUser);
         await handleUserSignedIn(firebaseUser);
       } else {
+        stopPracticeSync();
+        stopSocial();
         unregisterSyncCallbacks();
         setSyncStatus('idle');
         setLastSyncAt(null);
@@ -755,6 +767,9 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signOut = useCallback(async (): Promise<void> => {
+    await flushPracticeSync().catch(() => {});
+    stopPracticeSync();
+    stopSocial();
     unregisterSyncCallbacks();
     if (syncDebounceRef.current) clearTimeout(syncDebounceRef.current);
     if (snapshotUnsubRef.current) {
@@ -770,13 +785,18 @@ export function AuthSyncProvider({ children }: { children: ReactNode }) {
     if (!userRef.current) return;
     const uid = userRef.current.uid;
     unregisterSyncCallbacks();
+    stopPracticeSync();
+    stopSocial();
     if (syncDebounceRef.current) clearTimeout(syncDebounceRef.current);
     if (snapshotUnsubRef.current) {
       snapshotUnsubRef.current();
       snapshotUnsubRef.current = null;
     }
+    await deleteSocialData(uid).catch(() => {});
+    await deletePracticeData(uid).catch(() => {});
     await deleteAllUserData(uid);
     clearSyncProgressLocalStorage();
+    resetPractice();
     await deleteUser(userRef.current);
     setSyncStatus('idle');
     setLastSyncAt(null);

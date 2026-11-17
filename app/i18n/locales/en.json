@@ -16,7 +16,8 @@
   "tabs": {
     "grammar": "📚 Grammar",
     "murphy": "📖 Murphy books",
-    "tenses": "🕐 Tense tree"
+    "tenses": "🕐 Tense tree",
+    "practice": "🌳 Today"
   },
   "auth": {
     "title": "Sign in to sync",
@@ -168,7 +169,9 @@
     "test": "✦ Quiz",
     "testCategory": "✦ Topic quiz",
     "testCategoryTitle": "Copy a quiz prompt for this whole topic",
-    "copyLinkTitle": "Copy link to this rule"
+    "copyLinkTitle": "Copy link to this rule",
+    "practice": "▶ Practise",
+    "practiceTitle": "Practise this rule with quick exercises"
   },
   "category": {
     "collapseAll": "Collapse all topics",
@@ -302,5 +305,663 @@
       "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
       "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
     }
+  },
+  "practice": {
+    "close": "Close",
+    "combo": "Combo — answers in a row",
+    "lives": "{{n}} lives left",
+    "newRule": "New rule",
+    "notQuite": "Not quite",
+    "partly": "Partly right — {{pct}}%",
+    "continue": "Continue",
+    "score": "Score",
+    "praise": {
+      "0": "Correct!",
+      "1": "Nice!",
+      "2": "Great job!",
+      "3": "Spot on!",
+      "4": "Excellent!",
+      "5": "You've got it!"
+    },
+    "instr": {
+      "choice": "Choose the right answer",
+      "gap": "Fill the gap",
+      "spot": "Tap the word that is wrong",
+      "tiles": {
+        "build": "Translate: build the English sentence",
+        "unscramble": "Put the words in the right order",
+        "question": "Turn it into a question",
+        "negative": "Make it negative",
+        "passive": "Rewrite it in the passive",
+        "reported": "Report what was said",
+        "wish": "Express it as a wish",
+        "inversion": "Start with “{{start}}” and use inversion",
+        "cleft": "Add emphasis with a cleft sentence",
+        "relative": "Join the sentences with a relative clause",
+        "adjOrder": "Put the adjectives in the right order",
+        "conditional": "Rewrite as a conditional",
+        "tense": "Rewrite it in {{tense}}",
+        "formal": "Rewrite it in a formal register",
+        "polite": "Say it politely"
+      },
+      "sort": "Tap an item, then tap its group",
+      "match": "Match the halves",
+      "gaps": "Fill every gap",
+      "type": "Type the answer",
+      "dictation": "Listen and type what you hear",
+      "truefalse": "Is this sentence correct?",
+      "tree": "Find the tense by answering the tree's questions",
+      "timeline": "Which timeline shows this sentence?",
+      "whichTense": "Which tense is this?",
+      "pastSimple": "Choose the Past Simple form",
+      "markerSort": "Sort the time markers by tense",
+      "sameScene": "Which sentence has this meaning?",
+      "numbers": "Listen and type the number in digits",
+      "translate": "Translate into English"
+    },
+    "tapTiles": "Tap the words below…",
+    "clear": "Clear",
+    "check": "Check",
+    "allPlaced": "All placed — check your answer",
+    "tapToCycle": "tap a gap to change it",
+    "listen": "Listen",
+    "listenSlow": "Listen slowly",
+    "typeHere": "Type here…",
+    "correctSentence": "Correct",
+    "hasMistake": "Has a mistake",
+    "challengeShareText": "I scored {{score}}/{{n}} in English Grammar Tree. Can you beat me?",
+    "results": {
+      "placementTitle": "Your level: {{level}}",
+      "examPassed": "Exam passed!",
+      "testPassed": "You know this rule!",
+      "notPassed": "Not this time",
+      "excellent": "Excellent work!",
+      "good": "Good session!",
+      "keepGoing": "Keep going — it will stick!",
+      "correct": "correct",
+      "bestCombo": "best combo",
+      "challengeWon": "You beat your friend's {{score}}! 🏆",
+      "challengeLost": "Your friend scored {{score}} — try again!",
+      "goalDone": "Daily goal reached — {{n}}-day streak!",
+      "goalLeft": "{{xp}} XP left to today's goal",
+      "placementText": "New rules will start from {{level}}. You can mark the levels below it as already known.",
+      "placementMark": "Mark rules below {{level}} as known",
+      "placementOnly": "Just start from {{level}}",
+      "placementSaved": "Saved. Your daily sessions now start from here.",
+      "grown": "Your tree grew",
+      "newBadges": "New badges",
+      "practiseRule": "Practise this rule first",
+      "challenge": "Challenge a friend",
+      "again": "Play again",
+      "done": "Done"
+    },
+    "stage": {
+      "icon0": "🌰",
+      "icon1": "🌱",
+      "icon2": "🍃",
+      "icon3": "🌸",
+      "icon4": "🍎",
+      "name0": "Seed — not started",
+      "name1": "Sprout — started",
+      "name2": "Leaf — learning",
+      "name3": "Blossom — mastered",
+      "name4": "Fruit — long-term memory",
+      "nameClaimed": "Marked as known",
+      "wilting": "needs review"
+    },
+    "badges": {
+      "first_step": {
+        "title": "First step",
+        "desc": "Answer your first exercise"
+      },
+      "first_session": {
+        "title": "On your way",
+        "desc": "Finish a session"
+      },
+      "placement": {
+        "title": "Compass",
+        "desc": "Take the placement test"
+      },
+      "streak_3": {
+        "title": "Warming up",
+        "desc": "3-day streak"
+      },
+      "streak_7": {
+        "title": "On fire",
+        "desc": "7-day streak"
+      },
+      "streak_30": {
+        "title": "Volcano",
+        "desc": "30-day streak"
+      },
+      "correct_100": {
+        "title": "Hundred",
+        "desc": "100 correct answers"
+      },
+      "correct_1000": {
+        "title": "Thousand",
+        "desc": "1,000 correct answers"
+      },
+      "xp_1000": {
+        "title": "Star",
+        "desc": "Earn 1,000 XP"
+      },
+      "xp_10000": {
+        "title": "Superstar",
+        "desc": "Earn 10,000 XP"
+      },
+      "rules_5": {
+        "title": "First blossoms",
+        "desc": "Master 5 rules"
+      },
+      "rules_25": {
+        "title": "Growing tree",
+        "desc": "Master 25 rules"
+      },
+      "rules_100": {
+        "title": "Forest",
+        "desc": "Master 100 rules"
+      },
+      "fixer_10": {
+        "title": "Fixer",
+        "desc": "Clear 10 items from your mistake deck"
+      },
+      "explorer": {
+        "title": "Explorer",
+        "desc": "Play 10 different games"
+      },
+      "perfect": {
+        "title": "Flawless",
+        "desc": "A perfect session of 10+ answers"
+      },
+      "combo_15": {
+        "title": "Lightning",
+        "desc": "15 correct answers in a row"
+      },
+      "sprinter": {
+        "title": "Sprinter",
+        "desc": "Score 25+ in a 60-second sprint"
+      },
+      "boss_1": {
+        "title": "Crowned",
+        "desc": "Pass a level exam"
+      },
+      "boss_all": {
+        "title": "Grandmaster",
+        "desc": "Pass all six level exams"
+      }
+    },
+    "cert": {
+      "heading": "Certificate of Achievement",
+      "line": "has passed the English Grammar Tree level exam",
+      "score": "Score {{pct}}%",
+      "download": "Download certificate"
+    },
+    "levelName": {
+      "A1": "Beginner",
+      "A2": "Elementary",
+      "B1": "Intermediate",
+      "B2": "Upper-Intermediate",
+      "C1": "Advanced",
+      "C2": "Proficiency"
+    },
+    "challenge": {
+      "title": "You've been challenged!",
+      "text": "A friend scored {{score}}/{{n}} in “{{game}}”. Play the same round and beat it.",
+      "accept": "Accept challenge",
+      "dismiss": "Not now"
+    },
+    "streakDays_one": "day streak",
+    "streakDays_other": "day streak",
+    "freezeHint": "Streak freezes: a missed day is covered automatically. Earn one every 7 days of streak.",
+    "goalHint": "Earn XP to reach your daily goal and keep the streak alive",
+    "dailyGoal": "daily goal",
+    "level": "Level {{n}}",
+    "cta": {
+      "placement": "Find your level",
+      "placementSub": "A 5-minute adaptive test — skip what you already know",
+      "startFromZero": "Start from the beginning",
+      "dailySub": "12 short exercises · about 5 minutes",
+      "daily": "Water your tree",
+      "dailyMore": "One more session",
+      "dailyInfo": "{{due}} reviews due",
+      "newRule": "new: {{rule}}",
+      "deck": "Fix my mistakes ({{n}})",
+      "deckSub": "Each one clears after 3 right answers on different days"
+    },
+    "tree": {
+      "title": "Your grammar tree",
+      "meta": "{{mastered}}/{{total}} rules in bloom",
+      "wilting": "{{n}} need review",
+      "aria": "Grammar tree: one branch per level, one leaf per rule",
+      "hint": "Tap a leaf to see the rule and practise it"
+    },
+    "accuracy": "{{pct}}% accuracy",
+    "itemsSeen": "{{seen}}/{{total}} exercises tried",
+    "practise": "Practise",
+    "openRule": "Open the rule",
+    "exams": {
+      "title": "Level exams",
+      "meta": "20 mixed questions · 80% to pass · earn a crown and a certificate",
+      "best": "best {{pct}}%",
+      "notTaken": "not taken"
+    },
+    "arcade": {
+      "title": "Games",
+      "meta": "{{n}} games, each tied to grammar rules",
+      "groups": {
+        "core": "Core — every rule",
+        "tenses": "Tenses & verbs",
+        "words": "Words & phrases",
+        "structures": "Sentence structures",
+        "advanced": "Advanced (C1–C2)"
+      },
+      "noSpeech": "Your browser has no speech synthesis",
+      "mode": {
+        "sprint": "60-sec sprint",
+        "survival": "3 lives"
+      },
+      "best": "best {{score}}",
+      "recommended": "Recommended for you",
+      "all": "All",
+      "new": "new",
+      "noTranslation": "Available when the interface language is not English"
+    },
+    "games": {
+      "daily-challenge": {
+        "title": "Daily challenge",
+        "desc": "Same 15 questions for everyone today — compare scores"
+      },
+      "error-hunter": {
+        "title": "Error hunter",
+        "desc": "Find the mistake learners make most"
+      },
+      "right-or-wrong": {
+        "title": "Right or wrong?",
+        "desc": "Judge sentences as fast as you can"
+      },
+      "gap-fill": {
+        "title": "Gap fill",
+        "desc": "Pick the word that fixes the sentence"
+      },
+      "sentence-builder": {
+        "title": "Sentence builder",
+        "desc": "Build sentences from word tiles"
+      },
+      "dictation": {
+        "title": "Dictation",
+        "desc": "Listen to a sentence and type it"
+      },
+      "survival": {
+        "title": "Survival",
+        "desc": "Endless mixed questions, harder and harder"
+      },
+      "murphy-drill": {
+        "title": "Murphy drill",
+        "desc": "Common mistakes from the Murphy units"
+      },
+      "tense-detective": {
+        "title": "Tense detective",
+        "desc": "Reason your way to the tense step by step"
+      },
+      "timeline-match": {
+        "title": "Timeline match",
+        "desc": "Match a sentence to its timeline picture"
+      },
+      "which-tense": {
+        "title": "Which tense?",
+        "desc": "Name the tense of a sentence"
+      },
+      "marker-sort": {
+        "title": "Marker sort",
+        "desc": "Sort time words like “since” and “yesterday”"
+      },
+      "same-scene": {
+        "title": "Same scene, two tenses",
+        "desc": "Feel the difference between close tenses"
+      },
+      "tense-forms": {
+        "title": "Tense forms",
+        "desc": "Choose the right verb form in context"
+      },
+      "tense-chameleon": {
+        "title": "Tense chameleon",
+        "desc": "Rewrite a sentence in another tense"
+      },
+      "verb-forge": {
+        "title": "Verb forge",
+        "desc": "Irregular verbs: type V2 and V3 against the clock"
+      },
+      "verb-memory": {
+        "title": "Verb memory",
+        "desc": "Match verbs with their past forms"
+      },
+      "article-rush": {
+        "title": "Article rush",
+        "desc": "a, an, the or nothing — in real stories"
+      },
+      "preposition-sort": {
+        "title": "Preposition sort",
+        "desc": "in, on, at and prepositions of movement"
+      },
+      "count-it": {
+        "title": "Count it",
+        "desc": "Countable, uncountable, much, many, plurals"
+      },
+      "adjective-stack": {
+        "title": "Adjective stack",
+        "desc": "Adjective order, comparatives, adverbs"
+      },
+      "number-dictation": {
+        "title": "Number dictation",
+        "desc": "Hear numbers, years and prices — type them"
+      },
+      "question-maker": {
+        "title": "Question maker",
+        "desc": "Build questions and negatives"
+      },
+      "consequence-match": {
+        "title": "Consequence match",
+        "desc": "Conditionals: match “if” with the result"
+      },
+      "transformer": {
+        "title": "Transformer",
+        "desc": "Turn active sentences into passive"
+      },
+      "gossip-chain": {
+        "title": "Gossip chain",
+        "desc": "Report what people said"
+      },
+      "verb-patterns": {
+        "title": "Verb patterns",
+        "desc": "-ing or to + verb?"
+      },
+      "detective": {
+        "title": "Detective",
+        "desc": "Must, might, can't (have) — deduce from clues"
+      },
+      "regret-machine": {
+        "title": "Regret machine",
+        "desc": "I wish, if only, it's time"
+      },
+      "sentence-welder": {
+        "title": "Sentence welder",
+        "desc": "Join sentences with who, which, whose"
+      },
+      "formalizer": {
+        "title": "Formalizer",
+        "desc": "Inversion: “Never have I…”"
+      },
+      "spotlight": {
+        "title": "Spotlight",
+        "desc": "Cleft sentences: “It was Tom who…”"
+      },
+      "connector-bridge": {
+        "title": "Connector bridge",
+        "desc": "although, despite, however, therefore…"
+      },
+      "register-slider": {
+        "title": "Register slider",
+        "desc": "Pick the academic version; hedge claims"
+      },
+      "comma-tap": {
+        "title": "Comma tap",
+        "desc": "Comma, semicolon or nothing?"
+      },
+      "c-mix": {
+        "title": "C1–C2 mix",
+        "desc": "Participles, subjunctive, ellipsis and more"
+      },
+      "translate": {
+        "title": "Translate into English",
+        "desc": "Type the English — mistakes are explained as Russian traps"
+      },
+      "my-traps": {
+        "title": "My traps",
+        "desc": "A session aimed at the mistakes you make most"
+      },
+      "false-friends": {
+        "title": "False friends",
+        "desc": "magazine, actual, sympathetic — not what they seem"
+      },
+      "collocations": {
+        "title": "Word partners",
+        "desc": "make or do? take or make a photo?"
+      },
+      "phrasal-verbs": {
+        "title": "Phrasal verbs",
+        "desc": "give up, look after, find out…"
+      },
+      "verb-prep": {
+        "title": "Verb + preposition",
+        "desc": "depend on, wait for, listen to"
+      },
+      "polite": {
+        "title": "Don't sound rude",
+        "desc": "Turn direct Russian-style requests into polite English"
+      }
+    },
+    "progress": {
+      "title": "Your progress",
+      "answers": "answers",
+      "accuracy": "accuracy",
+      "minutes": "minutes practised",
+      "inReview": "in review",
+      "bestStreak": "best streak",
+      "xpChart": "XP — last 14 days",
+      "goal": "goal {{xp}}",
+      "activity": "Activity — last 16 weeks",
+      "less": "less",
+      "more": "more",
+      "frozen": "streak freeze",
+      "masteryChart": "Mastery by level",
+      "weakest": "Weakest rules",
+      "wordsRow": "Words"
+    },
+    "badgesTitle": "Badges",
+    "settings": {
+      "title": "Practice settings",
+      "goal": "Daily goal",
+      "goal30": "Casual 30",
+      "goal50": "Regular 50",
+      "goal100": "Serious 100",
+      "goal150": "Intense 150",
+      "sound": "Sound effects",
+      "on": "On",
+      "off": "Off",
+      "placement": "Placement level",
+      "retake": "retake",
+      "reset": "Reset practice progress",
+      "resetBtn": "Reset",
+      "resetConfirm": "Yes, reset everything",
+      "cancel": "Cancel"
+    },
+    "hero": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening",
+      "night": "Burning the midnight oil",
+      "nudgeStreak": "🔥 Practise today to keep your {{n}}-day streak alive!",
+      "nudgeWilting": "🍂 {{n}} leaves on your tree need water.",
+      "nudgeGoal": "🎯 {{xp}} XP to today's goal — about 5 minutes.",
+      "nudgeDone": "✅ Goal done! Every extra answer grows your tree."
+    },
+    "sections": {
+      "label": "Today sections",
+      "tree": "Tree",
+      "games": "Games",
+      "leaderboard": "Leaderboard",
+      "progress": "Progress",
+      "badges": "Badges"
+    },
+    "translate": {
+      "placeholder": "Type the English sentence…",
+      "showAnswer": "Show answer",
+      "accepted": "Accepted! Our version:",
+      "diff": "Your answer compared with the correct one",
+      "missing": "missing word",
+      "extra": "extra word"
+    },
+    "traps": {
+      "articles": {
+        "name": "Articles",
+        "desc": "a / an / the — or none",
+        "hint": "A singular countable noun needs a/an (first mention, “one of”) or the (we both know which)."
+      },
+      "toBe": {
+        "name": "Missing “to be”",
+        "desc": "“I student” → I am a student",
+        "hint": "An English sentence needs a verb: when there is no other verb, use am / is / are."
+      },
+      "tenses": {
+        "name": "Tenses",
+        "desc": "Present Perfect vs Past Simple, Continuous",
+        "hint": "Check the time: a finished time (yesterday, in 2020) → Past Simple; up to now (already, since, for) → Present Perfect."
+      },
+      "futureTime": {
+        "name": "will after when / if",
+        "desc": "“When he will come” → when he comes",
+        "hint": "After when, if, as soon as, before, until use the present tense — even about the future."
+      },
+      "wordOrder": {
+        "name": "Word order & questions",
+        "desc": "Questions need do/does/did; subject before verb",
+        "hint": "Questions and negatives need an auxiliary: Where does she live? I don't know. Keep subject + verb in reported questions."
+      },
+      "prepositions": {
+        "name": "Prepositions",
+        "desc": "depend on, wait for, at the weekend…",
+        "hint": "English prepositions don't follow Russian ones — learn them with the verb: depend on, listen to, wait for."
+      },
+      "countable": {
+        "name": "Countable & uncountable",
+        "desc": "information, advice, news, much / many",
+        "hint": "Some nouns can't be counted in English: information, advice, news, furniture — no a/an, no plural."
+      },
+      "conditionals": {
+        "name": "Conditionals & “бы”",
+        "desc": "2nd vs 3rd conditional, wish",
+        "hint": "About the past → had + V3 / would have + V3. About now or an imaginary present → Past Simple / would + verb."
+      },
+      "sequence": {
+        "name": "Reported speech",
+        "desc": "He said he was tired",
+        "hint": "After said / told, move the tense one step back: is → was, will → would, has done → had done."
+      },
+      "verbPatterns": {
+        "name": "-ing or to + verb",
+        "desc": "enjoy doing, decide to do",
+        "hint": "Some verbs take -ing (enjoy, avoid, finish), others to + verb (decide, want, hope) — learn the pattern with the verb."
+      },
+      "modals": {
+        "name": "Modal verbs",
+        "desc": "must vs have to, can / could",
+        "hint": "Modal verbs take the bare verb (no to, no -s): she can swim, you must go."
+      },
+      "falseFriends": {
+        "name": "False friends",
+        "desc": "magazine ≠ магазин",
+        "hint": "Words that look like Russian ones often mean something else: magazine = журнал, a shop = магазин."
+      },
+      "collocations": {
+        "name": "Word partners",
+        "desc": "make vs do, take a photo",
+        "hint": "Some words simply go together in English: make a mistake, do homework, take a photo."
+      },
+      "phrasal": {
+        "name": "Phrasal verbs",
+        "desc": "give up, look after, find out",
+        "hint": "The small word changes the meaning: look for = искать, look after = заботиться."
+      },
+      "politeness": {
+        "name": "Sounding polite",
+        "desc": "Could I have…? instead of Give me…",
+        "hint": "Direct orders sound rude in English: use Could you…? / Could I have…, please? / I'd like…"
+      }
+    },
+    "trapsCard": {
+      "title": "Your traps",
+      "meta": "Where interference from Russian costs you points",
+      "empty": "Answer about 20 questions and the app will show which traps catch you most. You can train any trap right now.",
+      "stats": "{{acc}}% correct · {{n}} answers · {{deck}} in mistake deck",
+      "noData": "not tried yet",
+      "train": "Train",
+      "trainTop": "Train my top traps",
+      "showAll": "All traps",
+      "showTop": "Only my top traps"
+    },
+    "contrast": {
+      "title": "Why it's different in Russian",
+      "train": "Train this trap"
+    },
+    "topics": {
+      "w_false_friends": "False friends",
+      "w_collocations": "Word partners (collocations)",
+      "w_phrasal": "Phrasal verbs",
+      "w_verb_prep": "Verbs with prepositions",
+      "w_polite": "Sounding polite"
+    }
+  },
+  "social": {
+    "title": "Leaderboard",
+    "meta": "Compete with friends and learners worldwide",
+    "signInTitle": "Compete with friends",
+    "signInText": "Sign in to appear on the leaderboard, add friends and compare streaks, XP and badges.",
+    "signIn": "Sign in",
+    "board": {
+      "friends": "Friends",
+      "weekGlobal": "This week",
+      "xpGlobal": "All time"
+    },
+    "metric": {
+      "week": "This week",
+      "xp": "All-time XP",
+      "streak": "Streak"
+    },
+    "unavailable": "The leaderboard is unavailable right now. Check your connection and try again.",
+    "noFriends": "No friends yet. Add someone below and race each other every week!",
+    "you": "you",
+    "badgesCount": "{{n}} badges",
+    "days": "days",
+    "hiddenFromEveryone": "Your card is visible to friends only",
+    "notInTop": "Not in the top 50 yet — keep going!",
+    "weekResets": "Weekly XP resets every Monday",
+    "refresh": "Refresh",
+    "someone": "Someone",
+    "inviteText": "Learn English grammar with me on English Grammar Tree! My friend code: {{code}}",
+    "requests": "Friend requests ({{n}})",
+    "accept": "Accept",
+    "decline": "Decline",
+    "addTitle": "Add a friend",
+    "addPlaceholder": "Friend code or name",
+    "add": "Add",
+    "codeHint": "Press Add to send a request to code {{code}}",
+    "result": {
+      "sent": "Request sent! It appears in their list right away.",
+      "accepted": "You are now friends!",
+      "already": "You are already friends.",
+      "pending": "A request is already waiting for an answer.",
+      "self": "That's your own code 🙂",
+      "notFound": "No one has this code. Check it and try again.",
+      "error": "Something went wrong. Try again in a moment."
+    },
+    "friend": "friend",
+    "pending": "pending",
+    "yourCode": "Your friend code",
+    "invite": "Invite",
+    "friendsTitle": "Friends ({{n}})",
+    "removeConfirm": "Remove",
+    "remove": "Remove friend",
+    "cancelRequest": "Cancel",
+    "yourCard": "Your public card",
+    "nameLabel": "Public name",
+    "save": "Save",
+    "rename": "Rename",
+    "visibility": "Who sees you on leaderboards",
+    "vis": {
+      "everyone": "Everyone",
+      "friends": "Friends only"
+    },
+    "privacy": "Only your public name, photo, level, XP, streak, badges and mastered-rule count are shown. Your email and notes are never shared."
   }
 }

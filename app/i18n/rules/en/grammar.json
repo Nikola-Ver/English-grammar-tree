@@ -7,7 +7,7 @@
     "tip": "",
     "mistakes": [
       "<s>She be a teacher</s> → She <em>is</em> a teacher",
-      "<s>I am hungry</s> → I <em>am</em> hungry",
+      "<s>I is hungry</s> → I <em>am</em> hungry",
       "Skip to be: <s>I student</s> → I <em>am</em> a student"
     ],
     "markers": null,
@@ -60,7 +60,7 @@
   "a1_03": {
     "text": "Questions with to be: Am I? / Is she? / Are they?",
     "note": "Is she a teacher? Are you cold? Am I late?",
-    "exp": "In questions, the verb <em>to be</em> is placed <strong>before the subject</strong>: <em>She is → Is she?</em><br><br>Special questions: question word + to be + subject: <em>Where is he? What is this?</em><br><br>Short answers: <em>Yes, I am. / No, she isn't</em>",
+    "exp": "In questions, the verb <em>to be</em> is placed <strong>before the subject</strong>: <em>She is → Is she?</em><br><br>Special questions: question word + to be + subject: <em>Where is he? What is this?</em><br><br>Short answers: <em>Yes, I am. / No, she isn't.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -87,7 +87,7 @@
   "a1_04": {
     "text": "Short answers: Yes, I am. / No, she isn't.",
     "note": "Only full form - not allowed: \"Yes, I'm\"",
-    "exp": "In short answers the pronoun + <em>to be</em>. <strong>You cannot shorten</strong> the form of the verb in an affirmative answer.<br><em>Are you tired? — Yes, I am.</em>✓ &nbsp;&nbsp; <em>Yes, I'm.</em> ✗",
+    "exp": "In short answers the pronoun + <em>to be</em>. <strong>You cannot shorten</strong> the form of the verb in an affirmative answer.<br><em>Are you tired? — Yes, I am.</em> ✓ &nbsp;&nbsp; <em>Yes, I'm.</em> ✗",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -188,7 +188,7 @@
     "mistakes": [
       "<s>She work</s> → She <em>works</em> (forgot -s for 3rd person)",
       "<s>He go</s> → He <em>goes</em> (go → goes)",
-      "<s>She studies</s> → She <em>studies</em> (consonant + y → ies)"
+      "<s>She studys</s> → She <em>studies</em> (consonant + y → ies)"
     ],
     "markers": {
       "tags": [
@@ -198,7 +198,7 @@
         "sometimes",
         "occasionally",
         "rarely",
-        "rarely",
+        "seldom",
         "never",
         "every day",
         "every week",
@@ -233,14 +233,14 @@
   },
   "a1_09": {
     "text": "Present Simple - negation: don't / doesn't",
-    "note": "I don't like it. He doesn't like it. (not: he don't)",
+    "note": "I don't like. He doesn't like. (not: he don't)",
     "exp": "Negation is constructed using the auxiliary verb <em>do/does</em> + <em>not</em>:<br>• I/you/we/they + <em>don't</em> + infinitive<br>• he/she/it + <em>doesn't</em> + infinitive<br><br>⚠️ After <em>doesn't</em> the main verb <strong>without -s</strong>! <em>She doesn't like</em> (not <s>likes</s>).",
     "exc": "\n",
     "tip": "",
     "mistakes": [
       "<s>She doesn't likes</s> → She doesn't <em>like</em> (after doesn't - the base form!)",
       "<s>He don't work</s> → He <em>doesn't</em> work",
-      "<s>I don't like</s> → I <em>don't</em> like"
+      "<s>I not like</s> → I <em>don't</em> like"
     ],
     "markers": {
       "tags": [
@@ -279,9 +279,9 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>Does she like?</s> → Does she <em>like?</em>",
+      "<s>Does she likes?</s> → Does she <em>like?</em>",
       "<s>Do he work?</s> → <em>Does</em> he work?",
-      "<s>Where does she live?</s> → Where does she live?"
+      "<s>Where she lives?</s> → Where does she live?"
     ],
     "markers": {
       "tags": [
@@ -371,7 +371,7 @@
     "mistakes": [
       "<s>Its a big house</s> → <em>It's</em> a big house (it's = it is)",
       "<s>The cat hurt it's paw</s> → hurt <em>its</em> paw (its = belonging)",
-      "<s>Their friends are nice</s> → Their friends <em>are</em> nice"
+      "<s>Their friends is nice</s> → Their friends <em>are</em> nice"
     ],
     "markers": null,
     "ex": [
@@ -396,8 +396,8 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>two childrens</s> → two <em>children</em>",
-      "<s>three men</s> → three <em>men</em>",
+      "<s>two childs</s> → two <em>children</em>",
+      "<s>three mans</s> → three <em>men</em>",
       "<s>boxs</s> → <em>boxes</em> (add -es)"
     ],
     "markers": null,
@@ -513,7 +513,7 @@
     "mistakes": [
       "<s>Can you to help me?</s> → Can you <em>help</em> (without to)",
       "<s>She cans do it</s> → She <em>can</em> do it (can does not change)",
-      "<s>I can speak French</s> → I can speak French"
+      "<s>I can to speak French</s> → I can speak French"
     ],
     "markers": null,
     "ex": [
@@ -690,9 +690,9 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>She went</s> → She <em>went</em>",
-      "<s>I bought</s> → I <em>bought</em>",
-      "<s>They didn't go</s> → They didn't <em>go</em> (after did - basic form)"
+      "<s>She goed</s> → She <em>went</em>",
+      "<s>I buyed</s> → I <em>bought</em>",
+      "<s>They didn't went</s> → They didn't <em>go</em> (after did - basic form)"
     ],
     "markers": {
       "tags": [
@@ -723,16 +723,16 @@
   },
   "a2_03": {
     "text": "Past Simple - negation: didn't + infinitive",
-    "note": "She didn't go (not: didn't go). I didn't see him.",
+    "note": "She didn't go (not: didn't went). I didn't see him.",
     "exp": "Negation: <em>didn't</em> (= did not) + infinitive for <strong>all persons</strong>.<br>⚠️ After <em>didn't</em> - <strong>base form</strong> of the verb (not past tense!): <em>She didn't go</em> (not <s>went</s>).",
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>I didn't go</s> → I didn't <em>go</em>",
-      "<s>She didn't come</s> → She didn't <em>come</em>",
+      "<s>I didn't went</s> → I didn't <em>go</em>",
+      "<s>She didn't came</s> → She didn't <em>come</em>",
       "<s>Did she played?</s> → Did she <em>play</em>?",
-      "<s>She didn't come</s> → She didn't <em>come</em>",
-      "<s>What did he do?</s> → What <em>did he do?</em>"
+      "<s>She didn't came</s> → She didn't <em>come</em>",
+      "<s>What he did?</s> → What <em>did he do?</em>"
     ],
     "markers": null,
     "ex": [
@@ -776,7 +776,7 @@
         "I expect...",
         "I'm sure...",
         "certainly",
-        "definitely definitely"
+        "definitely"
       ],
       "note": "will is used for spontaneous decisions, promises, predictions without evidence."
     },
@@ -858,8 +858,8 @@
   },
   "a2_07": {
     "text": "going to - intentions and obvious predictions",
-    "note": "I'm going to visit Paris. Look out - you're going to fall!",
-    "exp": "<em>going to</em> is used for:<br>1. <strong>Pre-made decisions and intentions</strong>: <em>I'm going to start a diet next week.</em><br>2. <strong>Predictions with visible signs</strong>: <em>Look at those clouds - it's going to rain!</em><br><br>Form: <em>am/is/are + going to + infinitive</em>",
+    "note": "I'm going to visit Paris. Look out — you're going to fall!",
+    "exp": "<em>going to</em> is used for:<br>1. <strong>Pre-made decisions and intentions</strong>: <em>I'm going to start a diet next week.</em><br>2. <strong>Predictions with visible signs</strong>: <em>Look at those clouds — it's going to rain!</em><br><br>Form: <em>am/is/are + going to + infinitive</em>",
     "exc": "<em>will vs going to</em>: <em>\"I'll have coffee\"</em> - I’m deciding right now; <em>\"I'm going to have coffee\"</em> - I already decided earlier.\n",
     "tip": "",
     "mistakes": [
@@ -995,8 +995,8 @@
     "tip": "",
     "mistakes": [
       "<s>You should to see a doctor</s> → should <em>see</em> (without to)",
-      "<s>She should go</s> → She should <em>go</em>",
-      "<s>I should have gone</s> → I should have <em>gone</em>"
+      "<s>She should goes</s> → She should <em>go</em>",
+      "<s>I should have went</s> → I should have <em>gone</em>"
     ],
     "markers": null,
     "ex": [
@@ -1042,7 +1042,7 @@
     "mistakes": [
       "<s>I have to can do this</s> - you can’t have two modals in a row",
       "<s>She doesn't have to don't come</s> → She <em>doesn't have to</em> come",
-      "<s>You must not come</s> → mustn't come"
+      "<s>You must not to come</s> → mustn't come"
     ],
     "markers": null,
     "ex": [
@@ -1065,7 +1065,7 @@
     "mistakes": [
       "<s>She could to swim</s> → She could <em>swim</em> (without to)",
       "<s>Can I when I was a child</s> → <em>I could</em> when I was a child",
-      "<s>Could you speak slowly?</s> → Could you speak slowly?"
+      "<s>Could you to speak slowly?</s> → Could you speak slowly?"
     ],
     "markers": null,
     "ex": [
@@ -1111,7 +1111,7 @@
     "mistakes": [
       "<s>He is most clever</s> → He is <em>the most</em> clever / <em>the cleverest</em>",
       "<s>She is the most best</s> → She is <em>the best</em>",
-      "<s>This is the most interesting film</s> → <em>the most interesting</em> film (need the)"
+      "<s>This is most interesting film</s> → <em>the most interesting</em> film (need the)"
     ],
     "markers": null,
     "ex": [
@@ -1204,7 +1204,7 @@
   },
   "a2_20": {
     "text": "Prepositions in / on / at for time",
-    "note": "in March, in 2024, in winter; on Monday, on June 5; at 3pm, at night",
+    "note": "in March, in 2024, in winter; on Monday, on 5 June; at 3pm, at night",
     "exp": "<em>at</em> → exact time: <em>at 6 o'clock, at noon, at midnight, at night, at the weekend (BrE)</em><br><em>on</em> → days and dates: <em>on Monday, on 5 March, on my birthday, on New Year's Day</em><br><em>in</em> → periods: <em>in July, in 2023, in the morning/afternoon/evening, in summer, in the 21st century</em><br><br>Without preposition: <em>this/last/next + time: this morning, last week, next year</em>",
     "exc": "\n",
     "tip": "",
@@ -1340,7 +1340,7 @@
   "a2_25": {
     "text": "Adverbs of frequency and their place in a sentence",
     "note": "always, usually, often, sometimes, rarely, never - before the main verb",
-    "exp": "Adverbs of frequency: <em>always, usually, often, sometimes, occasionally, rarely, rarely, never</em>.<br><br>Place in a sentence:<br>• Before the main verb: <em>She always drinks tea.</em><br>• After the verb <em>to be</em>: <em>He is always late.</em><br>• After the auxiliary verb: <em>She has never been to Italy.</em><br><br>Also: <em>every day/week, once a week, twice a month</em> - at the end of the sentence.",
+    "exp": "Adverbs of frequency: <em>always, usually, often, sometimes, occasionally, rarely, seldom, never</em>.<br><br>Place in a sentence:<br>• Before the main verb: <em>She always drinks tea.</em><br>• After the verb <em>to be</em>: <em>He is always late.</em><br>• After the auxiliary verb: <em>She has never been to Italy.</em><br><br>Also: <em>every day/week, once a week, twice a month</em> - at the end of the sentence.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1367,7 +1367,7 @@
   "a2_26": {
     "text": "Order of adjectives before nouns",
     "note": "a lovely small old red Italian leather bag",
-    "exp": "When several adjectives appear before a noun, a strict order is observed: Opinion → Size → Age → Shape → Color → Origin → Material → Purpose</strong><br>(Opinion → Size → Age → Shape → Color → Origin → Material → Purpose)<br><br>Example: <em>a small beautiful old square brown French wooden writing desk</em>",
+    "exp": "When several adjectives appear before a noun, a strict order is observed: Opinion → Size → Age → Shape → Color → Origin → Material → Purpose</strong><br>(Opinion → Size → Age → Shape → Color → Origin → Material → Purpose)<br><br>Example: <em>a beautiful small old square brown French wooden writing desk</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1394,7 +1394,7 @@
     "tip": "Markers: ever, never, already, yet, just, recently, lately, so far.",
     "mistakes": [
       "<s>I have seen him yesterday</s> → I <em>saw</em> him yesterday (yesterday = Past Simple!)",
-      "<s>She has gone</s> → She has <em>gone</em>",
+      "<s>She has went</s> → She has <em>gone</em>",
       "<s>I have been to Rome last year</s> → I <em>went</em> to Rome last year"
     ],
     "markers": {
@@ -1405,7 +1405,7 @@
         "yet",
         "just",
         "recently",
-        "late",
+        "lately",
         "so far",
         "up to now",
         "until now",
@@ -1459,7 +1459,7 @@
         "yet",
         "just",
         "recently",
-        "late",
+        "lately",
         "so far",
         "up to now",
         "still (not yet)"
@@ -1493,7 +1493,7 @@
     "tip": "",
     "mistakes": [
       "<s>I have seen him last week</s> → I <em>saw</em> him last week (specific time = Past Simple)",
-      "<s>Did you ever eat sushi?</s> → <em>Have</em> did you ever eat sushi?",
+      "<s>Did you ever eat sushi?</s> → <em>Have</em> you ever eaten sushi?",
       "<s>I met him and he has told me</s> → he <em>told</em> me (in one context of the past)"
     ],
     "markers": {
@@ -1559,7 +1559,7 @@
   "b1_05": {
     "text": "Present Perfect Continuous: have been + V-ing",
     "note": "I have been waiting for an hour. She has been studying all day.",
-    "exp": "<strong>Present Perfect Continuous</strong> = have/has been + V-ing\n<br><br>Emphasis on <strong>duration</strong> or incompleteness of action. Answers the question “How long?”\n<br>Often explains the visible result in the present: <em>You look tired - have you been running?</em>\n<br><br>Difference with Present Perfect Simple:\n<br>• <em>I've read 50 pages.</em> - result, completeness\n<br>• <em>I've been reading all evening.</em> - emphasis on the process",
+    "exp": "<strong>Present Perfect Continuous</strong> = have/has been + V-ing\n<br><br>Emphasis on <strong>duration</strong> or incompleteness of action. Answers the question “How long?”\n<br>Often explains the visible result in the present: <em>You look tired — have you been running?</em>\n<br><br>Difference with Present Perfect Simple:\n<br>• <em>I've read 50 pages.</em> - result, completeness\n<br>• <em>I've been reading all evening.</em> - emphasis on the process",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1576,7 +1576,7 @@
         "all morning",
         "all evening",
         "all week",
-        "late",
+        "lately",
         "recently",
         "these days",
         "still"
@@ -1602,7 +1602,7 @@
     "tip": "",
     "mistakes": [
       "<s>She was walk</s> → She was <em>walking</em>",
-      "<s>They were talking</s> → They <em>were</em> talking",
+      "<s>They was talking</s> → They <em>were</em> talking",
       "<s>I was work at 9pm</s> → I was <em>working</em>"
     ],
     "markers": {
@@ -1754,14 +1754,14 @@
     ]
   },
   "b1_12": {
-    "text": "Passive Voice - Present Simple: is/are + V3",
+    "text": "Passive Voice — Present Simple: is/are + V3",
     "note": "Coffee is grown in Brazil. The car is made in Germany.",
     "exp": "<strong>Passive voice</strong> is used when:\n<br>• The action itself is important, not the person who performs it\n<br>• Performer unknown or obvious\n<br><br>Form Present Simple Passive: <em>am/is/are + V3</em>\n<br>The performer (if needed) is added with <em>by</em>: <em>The window was broken by the ball.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>Coffee is grown in Brazil</s> → Coffee is <em>grown</em>",
-      "<s>The letter written in French</s> → The letter <em>is written</em>",
+      "<s>Coffee is grew in Brazil</s> → Coffee is <em>grown</em>",
+      "<s>The letter wrote in French</s> → The letter <em>is written</em>",
       "<s>English spoke here</s> → English <em>is spoken</em>"
     ],
     "markers": null,
@@ -1777,14 +1777,14 @@
     ]
   },
   "b1_13": {
-    "text": "Passive Voice - Past Simple: was/were + V3",
+    "text": "Passive Voice — Past Simple: was/were + V3",
     "note": "The bridge was built in 1890. They were arrested.",
     "exp": "Past Simple Passive: <em>was/were + V3</em>\n<br>• <em>was</em> - units. number\n<br>• <em>were</em> - plural. number\n<br><br>Active → Passive: <em>Someone stole my car.</em> → <em>My car was stolen.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>The bridge was built in 1890</s> → was <em>built</em>",
-      "<s>They were arrested</s> → They <em>were</em> arrested",
+      "<s>The bridge was build in 1890</s> → was <em>built</em>",
+      "<s>They was arrested</s> → They <em>were</em> arrested",
       "<s>The car stolen</s> → The car <em>was</em> stolen"
     ],
     "markers": null,
@@ -1800,7 +1800,7 @@
     ]
   },
   "b1_14": {
-    "text": "Passive Voice - Present Perfect: has/have been + V3",
+    "text": "Passive Voice — Present Perfect: has/have been + V3",
     "note": "The car has been repaired. All invitations have been sent.",
     "exp": "Present Perfect Passive: <em>has/have been + V3</em>\n<br><br>Used when the result in the present is important, and not when exactly it happened.",
     "exc": "\n",
@@ -1808,7 +1808,7 @@
     "mistakes": [
       "<s>The project has been complete</s> → has been <em>completed</em>",
       "<s>It have been sent</s> → It <em>has</em> been sent",
-      "<s>All guests have been informed</s> → have been <em>informed</em>"
+      "<s>All guests have been inform</s> → have been <em>informed</em>"
     ],
     "markers": null,
     "ex": [
@@ -1824,7 +1824,7 @@
   },
   "b1_15": {
     "text": "Reported Speech - time shift",
-    "note": "\"I'm tired.\" → He said he was tired.",
+    "note": "\"I am tired.\" → He said he was tired.",
     "exp": "When translated into indirect speech, the tenses are “shifted” back:\n<br>• Present Simple → Past Simple: <em>\"I work\" → he said he worked</em>\n<br>• Past Simple → Past Perfect: <em>\"I went\" → she said she had gone</em>\n<br>• Present Perfect → Past Perfect: <em>\"I've seen\" → he said he had seen</em>\n<br>• will → would; can → could; is → was; am going → was going",
     "exc": "\n",
     "tip": "",
@@ -1894,7 +1894,7 @@
   "b1_18": {
     "text": "Verbs + gerund (V-ing)",
     "note": "I enjoy reading. She finished writing. He avoided making mistakes.",
-    "exp": "These verbs require a gerund (V-ing) after them:\n<br><em>enjoy, finish, avoid, mind, suggest, keep, consider, deny, imagine, miss, practice, risk, admit, delay, dislike, fancy, give up, involve, put off, recommend, resist</em>\n<br><br>Memorization trick: if you can replace it with “process”, it’s most likely a gerund.",
+    "exp": "These verbs require a gerund (V-ing) after them:\n<br><em>enjoy, finish, avoid, mind, suggest, keep, consider, deny, imagine, miss, practise, risk, admit, delay, dislike, fancy, give up, involve, put off, recommend, resist</em>\n<br><br>Memorization trick: if you can replace it with “process”, it’s most likely a gerund.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1975,7 +1975,7 @@
     "tip": "",
     "mistakes": [
       "<s>I use to play football</s> → I <em>used to</em> play",
-      "<s>Did you use to...?</s> → Did you <em>use to</em>...? (after did - base form)",
+      "<s>Did you used to...?</s> → Did you <em>use to</em>...? (after did - base form)",
       "<s>I used to living there</s> → I used to <em>live</em> (infinitive without to+ing)"
     ],
     "markers": null,
@@ -2081,7 +2081,7 @@
     "tip": "",
     "mistakes": [
       "<s>By Friday I will finish</s> → I <em>will have finished</em> (will be completed by the deadline = Future Perfect)",
-      "<s>I'll have finished by Sunday</s> → I'll have <em>finished</em>"
+      "<s>I'll have finish by Sunday</s> → I'll have <em>finished</em>"
     ],
     "markers": {
       "tags": [
@@ -2207,7 +2207,7 @@
     "tip": "",
     "mistakes": [
       "<s>She was exhausted — she had been work</s> → she had been <em>working</em>",
-      "<s>How long had you waited?</s> → How long had you <em>been waiting</em>?"
+      "<s>How long had you waiting?</s> → How long had you <em>been waiting</em>?"
     ],
     "markers": {
       "tags": [
@@ -2242,7 +2242,7 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>She must forget</s> → She must <em>have forgotten</em>",
+      "<s>She must forgot</s> → She must <em>have forgotten</em>",
       "<s>He must have leave early</s> → He must have <em>left</em>",
       "<s>You must be exhausted yesterday</s> - for the past: <em>must have been</em>"
     ],
@@ -2265,7 +2265,7 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>She can't forget that</s> → She can't <em>have forgotten</em>",
+      "<s>She can't forgot that</s> → She can't <em>have forgotten</em>",
       "<s>He couldn't have been there</s> - that's right! can't have = impossibility; couldn't have = opportunity"
     ],
     "markers": null,
@@ -2372,8 +2372,8 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>The report will be published</s> → will <em>be</em> published",
-      "<s>It must be done</s> → It must <em>be done</em>",
+      "<s>The report will published</s> → will <em>be</em> published",
+      "<s>It must done</s> → It must <em>be done</em>",
       "<s>It should be do</s> → It should be <em>done</em>"
     ],
     "markers": null,
@@ -2418,7 +2418,7 @@
     "tip": "",
     "mistakes": [
       "<s>It is said that prices will risen</s> → will <em>rise</em>",
-      "<s>He is believed to be honest</s> → He is believed <em>to be</em> honest"
+      "<s>He is believed to being honest</s> → He is believed <em>to be</em> honest"
     ],
     "markers": null,
     "ex": [
@@ -2666,7 +2666,7 @@
     "tip": "",
     "mistakes": [
       "<s>You be to submit</s> → You <em>are</em> to submit",
-      "<s>She was never to meet</s> → She was <em>never</em> to meet"
+      "<s>She was be never to meet</s> → She was <em>never</em> to meet"
     ],
     "markers": null,
     "ex": [
@@ -2688,7 +2688,7 @@
     "tip": "",
     "mistakes": [
       "<s>You ought apologise</s> → You ought <em>to</em> apologise (ought always with to!)",
-      "<s>She ought to have told us</s> → She ought <em>to have</em> told us"
+      "<s>She ought have told us</s> → She ought <em>to have</em> told us"
     ],
     "markers": null,
     "ex": [
@@ -2749,7 +2749,7 @@
   "b2_26": {
     "text": "Reflexive pronouns: myself, yourself, himself...",
     "note": "I hurt myself. She did it herself. They enjoyed themselves.",
-    "exp": "<em>myself, yourself, yourself, yourself, yourself, yourself, yourselves, yourself</em>.\n<br><br>1. The action is directed towards the subject: <em>He cut himself.</em>\n<br>2. Emphase (by yourself, without help): <em>I did it myself.</em>\n<br><br>Stable: <em>by myself</em> = alone; <em>help yourself</em> = help yourself.",
+    "exp": "<em>myself, yourself, himself, herself, itself, ourselves, yourselves, themselves</em>.\n<br><br>1. The action is directed towards the subject: <em>He cut himself.</em>\n<br>2. Emphase (by yourself, without help): <em>I did it myself.</em>\n<br><br>Stable: <em>by myself</em> = alone; <em>help yourself</em> = help yourself.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2840,7 +2840,7 @@
   "c1_01": {
     "text": "Inversion with negative adverbs",
     "note": "Never have I seen this. Rarely does she complain.",
-    "exp": "For emphasis, the negative adverb/expression is placed at the beginning → auxiliary verb before the subject (word order as in a question).\n<br><br>Words that trigger inversion: <em>never, rarely, rarely, little, hardly, scarcely, barely, not only, only, no sooner</em>",
+    "exp": "For emphasis, the negative adverb/expression is placed at the beginning → auxiliary verb before the subject (word order as in a question).\n<br><br>Words that trigger inversion: <em>never, rarely, seldom, little, hardly, scarcely, barely, not only, only, no sooner</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -3029,7 +3029,7 @@
     "tip": "",
     "mistakes": [
       "<s>She talks as if she knows everything</s> (unreal situation) → as if she <em>knew</em>",
-      "<s>He looked as if he saw a ghost</s> → as if he <em>had seen</em>"
+      "<s>He looked as if he seen a ghost</s> → as if he <em>had seen</em>"
     ],
     "markers": null,
     "ex": [
@@ -3068,7 +3068,7 @@
   },
   "c1_11": {
     "text": "I think so / I hope so / I'm afraid so",
-    "note": "Will it rain? - I think so. / I hope not.",
+    "note": "Will it rain? — I think so. / I hope not.",
     "exp": "<em>so</em> replaces the subordinate clause after: <em>think, hope, suppose, expect, believe, imagine, be afraid</em>.\n<br>Negative form: <em>not</em> (not <em>so not</em>!).",
     "exc": "\n",
     "tip": "",
@@ -3169,7 +3169,7 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>There was a significant increase</s> → a <em>significant</em> increase (adjective before a noun)",
+      "<s>There was a significantly increase</s> → a <em>significant</em> increase (adjective before a noun)",
       "<s>The prices' increase</s> → <em>The increase in prices</em>"
     ],
     "markers": null,
@@ -3252,7 +3252,7 @@
   },
   "c2_02": {
     "text": "Suppose / supposing / what if",
-    "note": "Suppose you won the lottery - what would you do?",
+    "note": "Suppose you won the lottery — what would you do?",
     "exp": "<em>Suppose/Supposing</em> - used as <em>if</em> in hypothetical questions.\n<br><em>What if</em> is an informal analogue.\n<br><br>With Past Simple - a situation is unlikely or imaginary.",
     "exc": "\n",
     "tip": "",
@@ -3273,12 +3273,12 @@
   },
   "c2_03": {
     "text": "Only + circumstance + inversion",
-    "note": "Only when I left did I realize. Only then did he understand.",
+    "note": "Only when I left did I realise. Only then did he understand.",
     "exp": "<em>Only + when/after/if/then/by/in/on</em> - the entire group is moved to the beginning → inversion.\n<br><br>This is one of the most powerful rhetorical devices in writing and public speaking.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>Only when I left, I realized</s> → Only when I left <em>did I</em> realise (inversion!)",
+      "<s>Only when I left, I realised</s> → Only when I left <em>did I</em> realise (inversion!)",
       "<s>Only after years of practice, she mastered</s> → ... <em>did she master</em>"
     ],
     "markers": null,
@@ -3340,7 +3340,7 @@
   "c2_06": {
     "text": "Discourse markers in academic text",
     "note": "Furthermore, Nevertheless, Conversely, In light of, With regard to",
-    "exp": "Markers structure and connect academic text:\n<br><br>• <strong>Addition</strong>: Moreover, Furthermore, In addition, Additionally\n<br>• <strong>Contrast</strong>: However, nevertheless, nevertheless, Conversely, On the other hand\n<br>• <strong>Result</strong>: Therefore, Consequently, As a result, Hence, Thus\n<br>• <strong>Explanation</strong>: In other words, That is to say, Namely\n<br>• <strong>Concession</strong>: Admittedly, While it is true that, Despite this",
+    "exp": "Markers structure and connect academic text:\n<br><br>• <strong>Addition</strong>: Moreover, Furthermore, In addition, Additionally\n<br>• <strong>Contrast</strong>: However, Nevertheless, Nonetheless, Conversely, On the other hand\n<br>• <strong>Result</strong>: Therefore, Consequently, As a result, Hence, Thus\n<br>• <strong>Explanation</strong>: In other words, That is to say, Namely\n<br>• <strong>Concession</strong>: Admittedly, While it is true that, Despite this",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -3473,7 +3473,7 @@
   "c2_12": {
     "text": "Ellipsis and substitution in connected text",
     "note": "I wanted to go but didn't (want to). She said she'd call and she did.",
-    "exp": "Ellipsis is the omission of already known elements.\n<br>Substitution - using <em>do/so/one/it</em> instead of repeating.\n<br><br>Ellipse types:\n<br>• <em>A: Are you coming? B: Might (do).</em>\n<br>• <em>She speaks French and he does too / so does he.</em>\n<br>• <em>I wanted to leave, but wasn't allowed to.</em> (<em>leave</em> omitted)\n<br><br>Substitution: <em>I thought he'd pass. He did.</em> / <em>The big one? I prefer the small one</em>",
+    "exp": "Ellipsis is the omission of already known elements.\n<br>Substitution - using <em>do/so/one/it</em> instead of repeating.\n<br><br>Ellipse types:\n<br>• <em>A: Are you coming? B: Might (do).</em>\n<br>• <em>She speaks French and he does too / so does he.</em>\n<br>• <em>I wanted to leave, but wasn't allowed to.</em> (<em>leave</em> omitted)\n<br><br>Substitution: <em>I thought he'd pass. He did.</em> / <em>The big one? I prefer the small one.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -3494,7 +3494,7 @@
   },
   "c2_13": {
     "text": "Infinitive phrases instead of subordinate clauses",
-    "note": "I want you to explain. She asked me to help. He doesn't seem to be happy.",
+    "note": "I want you to explain. She asked me to help. He seems to be happy.",
     "exp": "Complex infinitive (Complex Object) replaces the subordinate clause:\n<br><em>I want + object + to-infinitive</em>: <em>I want her to stay.</em>\n<br><br>After <em>see, hear, watch, let, make, have</em> - infinitive without <em>to</em>:\n<br><em>I saw her leave. / She made him cry. / Let me help.</em>\n<br>In the passive - with <em>to</em>: <em>He was made to pay.</em>\n<br><br>Constructions with <em>seem, appear, happen, prove + to-inf</em>:\n<br><em>She seems to know. / He happened to be there.</em>",
     "exc": "\n",
     "tip": "",
@@ -3526,7 +3526,7 @@
     "exc": "\n",
     "tip": "",
     "mistakes": [
-      "<s>By next year I will be studying</s> → I will <em>have been</em> studying",
+      "<s>By next year I will been studying</s> → I will <em>have been</em> studying",
       "<s>She will have been work</s> → She will have been <em>working</em>"
     ],
     "markers": null,
@@ -3549,7 +3549,7 @@
     "tip": "",
     "mistakes": [
       "<s>She said that water is boiling</s> (fact) → water <em>boils</em>",
-      "<s>He said he saw it</s> → He said he <em>had seen</em> it"
+      "<s>He said he seen it</s> → He said he <em>had seen</em> it"
     ],
     "markers": null,
     "ex": [
@@ -3588,7 +3588,7 @@
   "c2_17": {
     "text": "Subordinating conjunctions: although, whereas, provided, unless...",
     "note": "although, as though, whereas, provided that, unless, given that, in case",
-    "exp": "Subordinating conjunctions introduce subordinate clauses.\n<br><br>By value:\n<br>• <strong>Time</strong>: <em>when, while, as, after, before, until, once, as soon as, whenever</em>\n<br>• <strong>Reasons</strong>: <em>because, since, as, given that, seeing that</em>\n<br>• <strong>Conditions</strong>: <em>if, unless, provided, as long as, in case, supposing</em>\n<br>• <strong>Goals</strong>: <em>so that, in order that, best</em>\n<br>• <strong>Concessions</strong>: <em>although, even though, whereas, while, however</em>",
+    "exp": "Subordinating conjunctions introduce subordinate clauses.\n<br><br>By value:\n<br>• <strong>Time</strong>: <em>when, while, as, after, before, until, once, as soon as, whenever</em>\n<br>• <strong>Reasons</strong>: <em>because, since, as, given that, seeing that</em>\n<br>• <strong>Conditions</strong>: <em>if, unless, provided, as long as, in case, supposing</em>\n<br>• <strong>Goals</strong>: <em>so that, in order that, lest</em>\n<br>• <strong>Concessions</strong>: <em>although, even though, whereas, while, however</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -3610,12 +3610,12 @@
   "c2_18": {
     "text": "Comma, semicolon and colon",
     "note": "Use a comma before FANBOYS. Use a semicolon to link related clauses.",
-    "exp": "<strong>Comma</strong>:\n<br>• Before coordinating conjunctions FANBOYS between independent clauses.\n<br>• After introductory words/turns of phrase: <em>However, she decided to stay.</em>\n<br>• In the enumerations (Oxford comma - before the last and): <em>apples, oranges, and bananas</em>.\n<br><br><strong>Semicolon (;)</strong>: connects two independent clauses without a conjunction.\n<br><em>She was tired; she went to bed</em>\n<br><br><strong>Colon (:)</strong>: introduces a list, explanation, quotation.",
+    "exp": "<strong>Comma</strong>:\n<br>• Before coordinating conjunctions FANBOYS between independent clauses.\n<br>• After introductory words/turns of phrase: <em>However, she decided to stay.</em>\n<br>• In the enumerations (Oxford comma - before the last and): <em>apples, oranges, and bananas</em>.\n<br><br><strong>Semicolon (;)</strong>: connects two independent clauses without a conjunction.\n<br><em>She was tired; she went to bed.</em>\n<br><br><strong>Colon (:)</strong>: introduces a list, explanation, quotation.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
       "<s>However she decided to stay</s> → However<em>,</em> she decided",
-      "<s>She was tired; and she went to bed</s> → without a conjunction after the semicolon: <em>She was tired; she went to bed</em>"
+      "<s>She was tired; and she went to bed</s> → without a conjunction after the semicolon: <em>She was tired; she went to bed.</em>"
     ],
     "markers": null,
     "ex": [
@@ -3631,8 +3631,8 @@
   },
   "c2_19": {
     "text": "Dash, apostrophe and quotation marks",
-    "note": "Em dash - for emphasis - sets off a phrase. It's vs its. \"Direct speech\"",
-    "exp": "<strong>Dash (—)</strong>: highlights a plug-in construction (stronger than a comma): <em>The solution - though expensive - proven effective.</em>\n<br><br><strong>Apostrophe</strong>:\n<br>• Abbreviations: <em>it's = it is; don't; they're</em>\n<br>• Possessive case: <em>John's book; the students' results</em>\n<br>• ⚠️ <em>its</em> (belonging) vs <em>it's</em> (it is)\n<br><br><strong>Quotes</strong>: AmE - double (\"<em>text</em>\"), BrE - single ('<em>text</em>').",
+    "note": "Em dash — for emphasis — sets off a phrase. It's vs its. \"Direct speech\"",
+    "exp": "<strong>Dash (—)</strong>: highlights a plug-in construction (stronger than a comma): <em>The solution — though expensive — proved effective.</em>\n<br><br><strong>Apostrophe</strong>:\n<br>• Abbreviations: <em>it's = it is; don't; they're</em>\n<br>• Possessive case: <em>John's book; the students' results</em>\n<br>• ⚠️ <em>its</em> (belonging) vs <em>it's</em> (it is)\n<br><br><strong>Quotes</strong>: AmE - double (\"<em>text</em>\"), BrE - single ('<em>text</em>').",
     "exc": "\n",
     "tip": "",
     "mistakes": [

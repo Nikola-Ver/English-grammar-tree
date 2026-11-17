@@ -760,6 +760,14 @@ export function getTenseComparison(
   return buildAutoComparison(keyA, keyB, tRu);
 }
 
+/** All curated pairs as [tenseA, tenseB, comparison] (column a = tenseA). Used by practice games. */
+export function listCuratedComparisons(): [string, string, TenseComparison][] {
+  return Object.entries(CURATED_RU).map(([key, cmp]) => {
+    const [a, b] = key.split('__');
+    return [a, b, cmp];
+  });
+}
+
 export function hasCuratedComparison(keyA: string, keyB: string): boolean {
   return Boolean(CURATED_RU[pairKey(keyA, keyB)]);
 }

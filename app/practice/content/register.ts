@@ -1,0 +1,402 @@
+import type { Seed } from './types';
+
+export const REGISTER_DRILLS: Seed[] = [
+  // ── Choice: pick the formal academic version ───────────────────────────────
+  {
+    id: 'reg_01',
+    kind: 'choice',
+    rules: ['c2_07', 'c2_10'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: prices went up a lot during that period.',
+    options: [
+      'Prices rose considerably over the period in question.',
+      'Prices went up a lot during that time.',
+      'Prices shot up loads back then.',
+    ],
+    why: {
+      en: 'Academic style prefers precise verbs (rose) and adverbs (considerably) to phrasal verbs and vague "a lot".',
+      ru: 'Академический стиль — точные глаголы (rose) и наречия (considerably) вместо фразовых глаголов и размытого a lot.',
+    },
+  },
+  {
+    id: 'reg_02',
+    kind: 'choice',
+    rules: ['c2_07', 'b1_14'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: many researchers have studied this problem.',
+    options: [
+      'This problem has been investigated extensively.',
+      'Researchers have looked into this problem a lot.',
+      'Loads of researchers have checked this problem out.',
+    ],
+    why: {
+      en: 'Formal: a passive focused on the problem, a single verb (investigate) and a precise adverb instead of "looked into a lot".',
+      ru: 'Формально: пассив с фокусом на проблеме, глагол investigate и точное наречие вместо looked into a lot.',
+    },
+  },
+  {
+    id: 'reg_03',
+    kind: 'choice',
+    rules: ['c2_07', 'b2_11'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: people often think money brings happiness.',
+    options: [
+      'It is often assumed that wealth leads to happiness.',
+      "You'd probably think money makes you happy.",
+      'Everyone thinks money makes you happy, right?',
+    ],
+    why: {
+      en: 'Impersonal "It is assumed that…" avoids "you", contractions and question tags, which are informal.',
+      ru: 'Безличное It is assumed that… позволяет избежать you, сокращений и вопросов-хвостиков — примет разговорной речи.',
+    },
+  },
+  {
+    id: 'reg_04',
+    kind: 'choice',
+    rules: ['c2_07', 'c2_06'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: but the evidence is still not clear.',
+    options: [
+      'Nevertheless, the evidence remains inconclusive.',
+      "But the evidence still isn't totally clear.",
+      'Still, the evidence is kind of unclear.',
+    ],
+    why: {
+      en: 'Formal: the marker Nevertheless, no contractions, and a precise word (inconclusive) instead of kind of / totally.',
+      ru: 'Формально: связка Nevertheless, без сокращений, точное слово (inconclusive) вместо kind of / totally.',
+    },
+  },
+  {
+    id: 'reg_05',
+    kind: 'choice',
+    rules: ['c2_07', 'c2_20'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: asking whether the policy works.',
+    options: [
+      'The question that arises is whether this policy is effective.',
+      'So, does this policy actually work?',
+      'Does this policy work or what?',
+    ],
+    why: {
+      en: 'Academic texts avoid direct questions: use an indirect question with normal word order (whether this policy is…).',
+      ru: 'В академическом тексте избегают прямых вопросов: косвенный вопрос с прямым порядком слов (whether this policy is…).',
+    },
+  },
+  {
+    id: 'reg_06',
+    kind: 'choice',
+    rules: ['c1_15', 'c2_07'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: they cut the funding, so departments closed.',
+    options: [
+      'The reduction in funding led to the closure of several departments.',
+      'Because they cut the funding, several departments closed down.',
+      'They cut the money, so loads of departments shut.',
+    ],
+    why: {
+      en: 'Nominalisation (reduction, closure) turns actions into nouns, giving the dense, impersonal style of academic writing.',
+      ru: 'Номинализация (reduction, closure) превращает действия в существительные — плотный безличный академический стиль.',
+    },
+  },
+  {
+    id: 'reg_07',
+    kind: 'choice',
+    rules: ['c2_05', 'c2_07'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: this interpretation is wrong.',
+    options: [
+      'This interpretation appears to be flawed.',
+      'I think this interpretation is just wrong.',
+      'This interpretation is totally wrong, in my opinion.',
+    ],
+    why: {
+      en: 'Academic writing is cautious and impersonal: "appears to be flawed" rather than I think / totally wrong.',
+      ru: 'Академический стиль осторожен и безличен: appears to be flawed вместо I think / totally wrong.',
+    },
+  },
+  {
+    id: 'reg_08',
+    kind: 'choice',
+    rules: ['c2_07', 'b1_13'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: the people in the study got detailed instructions.',
+    options: [
+      'The participants were given detailed instructions.',
+      'The people who took part got lots of instructions.',
+      'We gave the guys taking part tons of instructions.',
+    ],
+    why: {
+      en: 'Formal: the precise term participants, the passive were given, and no informal got / lots of / tons of.',
+      ru: 'Формально: точный термин participants, пассив were given, без разговорных got / lots of / tons of.',
+    },
+  },
+  {
+    id: 'reg_09',
+    kind: 'choice',
+    rules: ['c2_07', 'c2_10'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: diet, exercise and sleep affect health.',
+    options: [
+      'Factors such as diet, exercise and sleep all affect health.',
+      'Things like diet, exercise and stuff all affect health.',
+      'Diet, exercise, sleep and so on all affect your health.',
+    ],
+    why: {
+      en: 'Avoid vague language (things, stuff, and so on) and "your"; such as introduces precise examples.',
+      ru: 'Избегайте размытых слов (things, stuff, and so on) и your; such as вводит конкретные примеры.',
+    },
+  },
+  {
+    id: 'reg_10',
+    kind: 'choice',
+    rules: ['c2_07'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: the committee delayed its decision.',
+    options: [
+      'The committee postponed its decision until further data became available.',
+      'The committee put off its decision until they got more data.',
+      'The committee kind of held off deciding till more data came in.',
+    ],
+    why: {
+      en: 'Single verbs of Latin origin (postpone) replace phrasal verbs (put off); till and kind of are colloquial.',
+      ru: 'Книжные глаголы латинского происхождения (postpone) заменяют фразовые (put off); till и kind of — разговорные.',
+    },
+  },
+  {
+    id: 'reg_11',
+    kind: 'choice',
+    rules: ['c2_07', 'c2_06'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: concluding that the evidence supports the hypothesis.',
+    options: [
+      'In conclusion, the evidence strongly supports the hypothesis.',
+      'So, all in all, the evidence pretty much backs up the hypothesis.',
+      'To sum up, I reckon the evidence backs up the hypothesis.',
+    ],
+    why: {
+      en: 'In conclusion is the standard formal marker; pretty much, I reckon and back up are conversational.',
+      ru: 'In conclusion — стандартный формальный маркер; pretty much, I reckon и back up — разговорные.',
+    },
+  },
+  {
+    id: 'reg_12',
+    kind: 'choice',
+    rules: ['c2_07', 'c2_10'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: not many studies have looked at this issue.',
+    options: [
+      'Few studies have addressed this issue.',
+      'Not a lot of studies have dealt with this.',
+      'Hardly anybody has bothered to study this.',
+    ],
+    why: {
+      en: 'Few + plural noun is concise and formal; "address an issue" is a typical academic collocation.',
+      ru: 'Few + существительное во мн. ч. — кратко и формально; address an issue — типичная академическая коллокация.',
+    },
+  },
+  {
+    id: 'reg_13',
+    kind: 'choice',
+    rules: ['c2_07'],
+    context: 'Which version is most appropriate for a formal academic essay?',
+    prompt: 'Idea: the problem is very big.',
+    options: [
+      'The scale of the problem is considerable.',
+      'The problem is absolutely huge!',
+      "It's a really, really big problem.",
+    ],
+    why: {
+      en: 'Formal writing avoids exclamation marks, intensifiers (really, absolutely) and contractions.',
+      ru: 'В формальном тексте нет восклицательных знаков, усилителей (really, absolutely) и сокращений.',
+    },
+  },
+
+  // ── Tiles: rewrite in a formal register ────────────────────────────────────
+  {
+    id: 'reg_14',
+    kind: 'tiles',
+    task: 'formal',
+    rules: ['c2_07', 'b1_13'],
+    source: 'We got lots of complaints.',
+    answer: 'A large number of complaints were received.',
+    extra: ['was'],
+    why: {
+      en: 'The passive (were received) removes "we"; a large number of replaces lots of and takes a plural verb.',
+      ru: 'Пассив (were received) убирает we; a large number of заменяет lots of и требует глагола во мн. ч.',
+    },
+  },
+  {
+    id: 'reg_15',
+    kind: 'tiles',
+    task: 'formal',
+    rules: ['c2_07', 'b1_13'],
+    source: 'They looked into the matter carefully.',
+    answer: 'The matter was carefully investigated.',
+    extra: ['into'],
+    why: {
+      en: 'Formal: the passive focuses on the matter, and the single verb investigate replaces the phrasal verb look into.',
+      ru: 'Формально: пассив делает акцент на вопросе, а глагол investigate заменяет фразовый look into.',
+    },
+  },
+  {
+    id: 'reg_16',
+    kind: 'tiles',
+    task: 'formal',
+    rules: ['c2_07', 'b2_11'],
+    source: 'Lots of people think that the law is unfair.',
+    answer: 'It is widely believed that the law is unfair.',
+    extra: ['believes'],
+    why: {
+      en: '"It is widely believed that…" is an impersonal passive reporting structure typical of formal writing.',
+      ru: 'It is widely believed that… — безличная пассивная конструкция, типичная для формального стиля.',
+    },
+  },
+  {
+    id: 'reg_17',
+    kind: 'tiles',
+    task: 'formal',
+    rules: ['c1_15', 'c2_07'],
+    source: 'Prices went up a lot because of the war.',
+    answer: 'The war resulted in a sharp rise in prices.',
+    extra: ['from'],
+    why: {
+      en: 'Nominalisation (a sharp rise) + result in (cause → effect). Result from would reverse the direction.',
+      ru: 'Номинализация (a sharp rise) + result in (причина → следствие). Result from поменяло бы направление.',
+    },
+  },
+  {
+    id: 'reg_18',
+    kind: 'tiles',
+    task: 'formal',
+    rules: ['c2_07', 'b2_09'],
+    source: "You can't use your phone in the exam room.",
+    answer: 'Mobile phones may not be used in the examination room.',
+    extra: ["can't"],
+    why: {
+      en: 'Formal rules use passive modals (may not be used), full forms and full terms (examination) instead of "you can’t".',
+      ru: 'В формальных правилах — пассив с модальным (may not be used), полные формы и термины (examination).',
+    },
+  },
+  {
+    id: 'reg_19',
+    kind: 'tiles',
+    task: 'formal',
+    rules: ['c1_15', 'c2_07'],
+    source: "We didn't have enough money, so we had to stop the project.",
+    answer: 'Owing to a lack of funding, the project was discontinued.',
+    extra: ['discontinue'],
+    why: {
+      en: 'Owing to + noun phrase (a lack of funding) replaces a clause, and the passive removes "we".',
+      ru: 'Owing to + именная группа (a lack of funding) заменяет придаточное, а пассив убирает we.',
+    },
+  },
+  {
+    id: 'reg_20',
+    kind: 'tiles',
+    task: 'formal',
+    rules: ['c2_07'],
+    source: 'We need to find out why this happens.',
+    answer: 'It is necessary to determine why this occurs.',
+    extra: ['out'],
+    why: {
+      en: 'Impersonal "It is necessary to…" replaces "we need to"; determine and occur are more formal than find out and happen.',
+      ru: 'Безличное It is necessary to… вместо we need to; determine и occur формальнее, чем find out и happen.',
+    },
+  },
+
+  // ── Choice: academic hedging ───────────────────────────────────────────────
+  {
+    id: 'reg_21',
+    kind: 'choice',
+    rules: ['c2_05'],
+    prompt: 'Older adults ___ sleep less than younger people.',
+    options: ['tend to', 'tends to', 'are tend to', 'tending to'],
+    why: {
+      en: 'Tend to + base verb softens a generalisation; with a plural subject it is tend to, not tends to.',
+      ru: 'Tend to + инфинитив смягчает обобщение; с подлежащим во мн. ч. — tend to, а не tends to.',
+    },
+  },
+  {
+    id: 'reg_22',
+    kind: 'choice',
+    rules: ['c2_05'],
+    prompt: '___ that the policy has had little effect.',
+    options: ['It would appear', 'It would appears', 'It appears to', 'It is appearing'],
+    why: {
+      en: '"It would appear that…" is a cautious academic opener; would takes the base form (appear).',
+      ru: 'It would appear that… — осторожное академическое начало; после would — инфинитив (appear).',
+    },
+  },
+  {
+    id: 'reg_23',
+    kind: 'choice',
+    rules: ['c2_05'],
+    context: 'Choose the most appropriately cautious claim for an academic essay.',
+    prompt: 'These findings ___ that stress affects long-term memory.',
+    options: ['suggest', 'prove beyond doubt', 'are suggesting to'],
+    why: {
+      en: 'A single study rarely proves anything; suggest presents the finding cautiously. Suggest takes a that-clause, not to.',
+      ru: 'Одно исследование редко что-то доказывает; suggest подаёт вывод осторожно. После suggest — that, а не to.',
+    },
+  },
+  {
+    id: 'reg_24',
+    kind: 'choice',
+    rules: ['c2_05'],
+    prompt: 'Unemployment ___ rise further next year.',
+    options: ['is likely to', 'is likely', 'is likely that', 'likely will to'],
+    why: {
+      en: 'Subject + be likely to + base verb is a hedged prediction. "Likely that" needs It as the subject.',
+      ru: 'Подлежащее + be likely to + инфинитив — осторожный прогноз. Конструкция likely that требует подлежащего It.',
+    },
+  },
+  {
+    id: 'reg_25',
+    kind: 'choice',
+    rules: ['c2_05'],
+    prompt: 'The results ___ to confirm the original hypothesis.',
+    options: ['seem', 'seem that', 'are seeming', 'seemingly'],
+    why: {
+      en: 'Seem to + verb hedges a claim. Seem is a state verb, so no continuous form; "seem that" needs It as subject.',
+      ru: 'Seem to + глагол смягчает утверждение. Seem — глагол состояния, без Continuous; seem that требует подлежащего It.',
+    },
+  },
+  {
+    id: 'reg_26',
+    kind: 'choice',
+    rules: ['c2_05'],
+    context: 'Which claim is most appropriate for an academic essay?',
+    prompt: 'Idea: bilingualism and dementia.',
+    options: [
+      'The evidence suggests that bilingualism may delay the onset of dementia.',
+      'Bilingualism definitely stops people getting dementia.',
+      'Everyone knows that bilingualism prevents dementia.',
+    ],
+    why: {
+      en: 'A good academic claim is hedged (suggests, may) and precise (delay the onset), not absolute (definitely, everyone knows).',
+      ru: 'Академическое утверждение осторожно (suggests, may) и точно (delay the onset), без категоричности (definitely, everyone knows).',
+    },
+  },
+  {
+    id: 'reg_27',
+    kind: 'choice',
+    rules: ['c2_05'],
+    prompt: 'The difference ___ be due to the small sample size.',
+    options: ['may', 'maybe', 'is maybe', 'can maybe'],
+    why: {
+      en: 'The modal may + be hedges an explanation. Maybe is an adverb (= perhaps) and cannot replace the modal.',
+      ru: 'Модальный may + be смягчает объяснение. Maybe — наречие (= perhaps), оно не заменяет модальный глагол.',
+    },
+  },
+  {
+    id: 'reg_28',
+    kind: 'choice',
+    rules: ['c2_05'],
+    prompt: 'There ___ to be a correlation between income and life expectancy.',
+    options: ['appears', 'appear', 'is appearing', 'appears that'],
+    why: {
+      en: 'There appears to be + singular noun hedges a claim. The verb agrees with "a correlation" (singular).',
+      ru: 'There appears to be + существительное в ед. ч. — осторожное утверждение. Глагол согласуется с a correlation.',
+    },
+  },
+];

@@ -1,8 +1,85 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function pairId(a, b) {
+      return a < b ? a + '_' + b : b + '_' + a;
+    }
+
+    // Private data: progress, notes, practice state — owner only.
     match /users/{uid}/{document=**} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+      allow read, write: if signedIn() && request.auth.uid == uid;
+    }
+
+    // Public leaderboard profile. Readable by everyone signed in when visibility == 'everyone',
+    // otherwise only by the owner and by people connected through a friendship (pending or accepted).
+    match /profiles/{uid} {
+      allow read: if signedIn() && (
+        resource.data.visibility == 'everyone'
+        || request.auth.uid == uid
+        || exists(/databases/$(database)/documents/friendships/$(pairId(request.auth.uid, uid)))
+      );
+      allow create, update: if signedIn() && request.auth.uid == uid && validProfile(request.resource.data)
+        && (resource == null || request.resource.data.code == resource.data.code);
+      allow delete: if signedIn() && request.auth.uid == uid;
+    }
+
+    function validProfile(d) {
+      return d.keys().hasOnly(['name', 'nameLower', 'photo', 'xp', 'level', 'streak', 'bestStreak',
+          'lastDay', 'week', 'weekXp', 'badges', 'topBadges', 'mastered', 'visibility', 'code', 'updatedAt'])
+        && d.name is string && d.name.size() >= 1 && d.name.size() <= 24
+        && d.nameLower == d.name.lower()
+        && (d.photo == null || (d.photo is string && d.photo.size() <= 600 && d.photo.matches('https://.*')))
+        && d.xp is int && d.xp >= 0 && d.xp <= 50000000
+        && d.level is int && d.level >= 1 && d.level <= 2000
+        && d.streak is int && d.streak >= 0 && d.streak <= 100000
+        && d.bestStreak is int && d.bestStreak >= d.streak
+        && d.lastDay is int
+        && d.week is string && d.week.size() <= 10
+        && d.weekXp is int && d.weekXp >= 0 && d.weekXp <= d.xp
+        && d.badges is int && d.badges >= 0 && d.badges <= 100
+        && d.topBadges is list && d.topBadges.size() <= 6
+        && d.mastered is int && d.mastered >= 0 && d.mastered <= 1000
+        && d.visibility in ['everyone', 'friends']
+        && d.code is string && d.code.matches('[A-Z2-9]{8}')
+        && d.updatedAt == request.time;
+    }
+
+    // Friend code → uid lookup (codes are random, so they can't be enumerated by name).
+    match /friendCodes/{code} {
+      allow get: if signedIn();
+      allow create: if signedIn() && code.matches('[A-Z2-9]{8}')
+        && request.resource.data.keys().hasOnly(['uid'])
+        && request.resource.data.uid == request.auth.uid;
+      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+    }
+
+    // One document per pair of users, id = "<smallerUid>_<largerUid>".
+    match /friendships/{pid} {
+      allow read: if signedIn() && request.auth.uid in resource.data.users;
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(['users', 'from', 'to', 'status', 'createdAt', 'updatedAt'])
+        && request.resource.data.from == request.auth.uid
+        && request.resource.data.to is string
+        && request.resource.data.to != request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.users == [request.resource.data.from, request.resource.data.to]
+        && pid == pairId(request.resource.data.from, request.resource.data.to)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+      // Only the invited person can accept.
+      allow update: if signedIn()
+        && resource.data.status == 'pending'
+        && request.auth.uid == resource.data.to
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'updatedAt'])
+        && request.resource.data.status == 'accepted'
+        && request.resource.data.updatedAt == request.time;
+      // Either side can decline, cancel or unfriend.
+      allow delete: if signedIn() && request.auth.uid in resource.data.users;
     }
   }
 }
