@@ -110,7 +110,8 @@
       "future_will": "对未来的决定或预测",
       "future_going_to": "事先计划好的打算",
       "future_continuous": "将来某一时刻正在进行的动作",
-      "future_perfect": "在将来某时点之前将已完成"
+      "future_perfect": "在将来某时点之前将已完成",
+      "future_perfect_continuous": "到将来某时点为止已持续多久"
     }
   },
   "tenseTree": {
@@ -152,7 +153,8 @@
       "c0": "临时决定 / 承诺 / 预测",
       "c1": "事先计划 / 有明显迹象",
       "c2": "将来某刻正在进行",
-      "c3": "在将来某刻之前将完成"
+      "c3": "在将来某刻之前将完成",
+      "c4": "持续到将来某刻（已持续多久）"
     }
   },
   "tenseUi": {
@@ -248,7 +250,7 @@
       "ex0tr": "我学英语已经两年了。",
       "ex1": "Why are you tired? — I've been running.",
       "ex1tr": "你为什么累？——我一直在跑步。",
-      "m0": "<s>I've been know</s> → 状态动词不用进行时",
+      "m0": "<s>I've been knowing him for years</s> → I've <em>known</em> him for years",
       "m1": "<s>I've been learning since two years</s> → <em>for</em> two years"
     },
     "past_perfect": {
@@ -304,6 +306,15 @@
       "ex1tr": "到2030年他们会建好这座桥。",
       "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
       "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
+    },
+    "future_perfect_continuous": {
+      "desc": "到将来某一时刻为止，动作已经持续了多长时间。强调持续的时长，而不是结果。",
+      "ex0": "By next year, I'll have been studying English for five years.",
+      "ex0tr": "到明年，我学英语就满五年了。",
+      "ex1": "By the time you arrive, we'll have been waiting for two hours.",
+      "ex1tr": "等你到的时候，我们就已经等了两个小时了。",
+      "m0": "<s>By June I will have been work here</s> → I will have been <em>working</em> here",
+      "m1": "<s>I will have been knowing him for years</s> → I will <em>have known</em> him for years"
     }
   },
   "practice": {

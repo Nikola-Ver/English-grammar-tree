@@ -275,7 +275,7 @@
   "a1_10": {
     "text": "Present Simple - questions: Do you? /Does she?",
     "note": "Do you like pizza? Does he work here? Where do they live?",
-    "exp": "Questions: <em>Do/Does</em> + subject + infinitive?<br>• I/you/we/they: <em>Do you...?</em><br>• he/she/it: <em>Does she...?</em><br><br>Special questions: question word + do/does + subject + infinitive:<br><em>Where does she live? What do they do?</em><br><br>⚠️ Exception: the question “Who?” without <em>do</em>: <em>Who likes ice cream?</em>",
+    "exp": "Questions: <em>Do/Does</em> + subject + infinitive?<br>• I/you/we/they: <em>Do you...?</em><br>• he/she/it: <em>Does she...?</em><br><br>Wh- questions: question word + do/does + subject + infinitive:<br><em>Where does she live? What do they do?</em><br><br>⚠️ Exception: the question “Who?” without <em>do</em>: <em>Who likes ice cream?</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -637,13 +637,14 @@
   "a2_01": {
     "text": "Past Simple - regular verbs: +ed",
     "note": "work→worked, play→played, stop→stopped, study→studied",
-    "exp": "<strong>Past Simple</strong> - a completed action in the past with or without a specific tense.<br><br>Rules for writing the ending <em>-ed</em>:<br>• Most verbs: + <em>ed</em> → <em>worked, played</em><br>• End in -e: + <em>d</em> → <em>loved, used</em><br>• Consonant + -y: -y → <em>ied</em> → <em>studied, tried</em><br>• One vowel + one consonant (short stressed syllable): double the consonant → <em>stopped, planned</em>",
+    "exp": "<strong>Past Simple</strong> - a completed action in the past with or without a specific time.<br><br>Rules for writing the ending <em>-ed</em>:<br>• Most verbs: + <em>ed</em> → <em>worked, played</em><br>• End in -e: + <em>d</em> → <em>loved, used</em><br>• Consonant + -y: -y → <em>ied</em> → <em>studied, tried</em><br>• One vowel + one consonant (short stressed syllable): double the consonant → <em>stopped, planned</em>",
     "exc": "",
     "tip": "Markers: yesterday, last week/year, ago, in 2010, at 5 o'clock.",
     "mistakes": [
-      "<s>She is going to school every day</s> → She <em>goes</em> (habit = Present Simple)",
-      "<s>I am going to the cinema tomorrow</s> - perhaps, but <em>I'm going to see a film</em> more precisely with intention",
-      "<s>He is wanting</s> → He <em>wants</em> (stative verb)"
+      "<s>She studyed</s> → She <em>studied</em>",
+      "<s>He stoped</s> → He <em>stopped</em>",
+      "<s>I work yesterday</s> → I <em>worked</em> yesterday",
+      "<s>She didn't worked</s> → She didn't <em>work</em>"
     ],
     "markers": {
       "tags": [
@@ -692,7 +693,7 @@
     "mistakes": [
       "<s>She goed</s> → She <em>went</em>",
       "<s>I buyed</s> → I <em>bought</em>",
-      "<s>They didn't went</s> → They didn't <em>go</em> (after did - basic form)"
+      "<s>They didn't went</s> → They didn't <em>go</em> (after did - base form)"
     ],
     "markers": {
       "tags": [
@@ -730,9 +731,7 @@
     "mistakes": [
       "<s>I didn't went</s> → I didn't <em>go</em>",
       "<s>She didn't came</s> → She didn't <em>come</em>",
-      "<s>Did she played?</s> → Did she <em>play</em>?",
-      "<s>She didn't came</s> → She didn't <em>come</em>",
-      "<s>What he did?</s> → What <em>did he do?</em>"
+      "<s>He not went</s> → He <em>didn't go</em>"
     ],
     "markers": null,
     "ex": [
@@ -749,7 +748,63 @@
   "a2_04": {
     "text": "Past Simple - questions: Did you? Where did she go?",
     "note": "Did they arrive? What did he say?",
-    "exp": "Question: <em>Did + subject + infinitive?</em><br>Special questions: <em>Where/When/What + did + subject + infinitive?</em><br><br>⚠️ Exception: the question “Who performed the action?” is built without did: <em>Who called? Who broke the vase?</em>",
+    "exp": "Question: <em>Did + subject + infinitive?</em><br>Wh- questions: <em>Where/When/What + did + subject + infinitive?</em><br><br>⚠️ Exception: the question “Who performed the action?” is built without did: <em>Who called? Who broke the vase?</em>",
+    "exc": "\n",
+    "tip": "",
+    "mistakes": [
+      "<s>Did she played?</s> → Did she <em>play</em>?",
+      "<s>What he did?</s> → What <em>did he do</em>?",
+      "<s>Where did she went?</s> → Where did she <em>go</em>?",
+      "<s>Who did call?</s> → Who <em>called</em>?"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Did you enjoy the film?",
+        "Did you like the movie?"
+      ],
+      [
+        "Where did they go?",
+        "Where did they go?"
+      ],
+      [
+        "Who told you that?",
+        "Who told you this?"
+      ]
+    ]
+  },
+  "a2_05": {
+    "text": "was / were - verb to be in the past",
+    "note": "I/he/she/it was. You/we/they were.",
+    "exp": "Past tense of the verb <em>to be</em>:<br>• <em>was</em> - with I, he, she, it<br>• <em>were</em> - with you, we, they<br><br>Negation: <em>wasn't / weren't</em><br>Question: <em>Was she...? Were they...?</em>",
+    "exc": "\n",
+    "tip": "",
+    "mistakes": [
+      "<s>I were tired</s> → I <em>was</em> tired",
+      "<s>They was late</s> → They <em>were</em> late",
+      "<s>Did you was at home?</s> → <em>Were</em> you at home?",
+      "<s>She didn't was there</s> → She <em>wasn't</em> there"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I was very tired last night.",
+        "I was very tired last night."
+      ],
+      [
+        "They were at home all day.",
+        "They were at home all day."
+      ],
+      [
+        "Was it expensive?",
+        "Was it expensive?"
+      ]
+    ]
+  },
+  "a2_06": {
+    "text": "will - predictions and spontaneous decisions",
+    "note": "I'll call you back. It will rain tomorrow. I'll have the pasta.",
+    "exp": "<em>will</em> is used for:<br>1. <strong>Spontaneous decisions</strong> (made at the time of speech): <em>I'll help you with that.</em><br>2. <strong>Predictions</strong> without a specific plan: <em>I think it will rain.</em><br>3. <strong>Promises</strong>: <em>I won't tell anyone.</em><br>4. <strong>Requests</strong>: <em>Will you open the window?</em><br><br>Short form: <em>'ll</em>. Negation: <em>won't</em> (= will not).",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -782,24 +837,20 @@
     },
     "ex": [
       [
-        "Did you enjoy the film?",
-        "Did you like the movie?"
+        "The phone is ringing. — I'll get it!",
+        "The phone is ringing. - I will answer!"
       ],
       [
-        "Where did they go?",
-        "Where did they go?"
-      ],
-      [
-        "Who told you that?",
-        "Who told you this?"
+        "It will be cold tomorrow.",
+        "It will be cold tomorrow."
       ]
     ]
   },
-  "a2_05": {
-    "text": "was / were - verb to be in the past",
-    "note": "I/he/she/it was. You/we/they were.",
-    "exp": "Past tense of the verb <em>to be</em>:<br>• <em>was</em> - with I, he, she, it<br>• <em>were</em> - with you, we, they<br><br>Negation: <em>wasn't / weren't</em><br>Question: <em>Was she...? Were they...?</em>",
-    "exc": "\n",
+  "a2_07": {
+    "text": "going to - intentions and obvious predictions",
+    "note": "I'm going to visit Paris. Look out — you're going to fall!",
+    "exp": "<em>going to</em> is used for:<br>1. <strong>Pre-made decisions and intentions</strong>: <em>I'm going to start a diet next week.</em><br>2. <strong>Predictions with visible signs</strong>: <em>Look at those clouds — it's going to rain!</em><br><br>Form: <em>am/is/are + going to + infinitive</em>",
+    "exc": "<em>will vs going to</em>: <em>\"I'll have coffee\"</em> - I’m deciding right now; <em>\"I'm going to have coffee\"</em> - I already decided earlier.\n",
     "tip": "",
     "mistakes": [
       "<s>I am going to will do</s> - only one thing: <em>I'm going to do</em>",
@@ -821,54 +872,6 @@
     },
     "ex": [
       [
-        "I was very tired last night.",
-        "I was very tired last night."
-      ],
-      [
-        "They were at home all day.",
-        "They were at home all day."
-      ],
-      [
-        "Was it expensive?",
-        "Was it expensive?"
-      ]
-    ]
-  },
-  "a2_06": {
-    "text": "will - predictions and spontaneous decisions",
-    "note": "I'll call you back. It will rain tomorrow. I'll have the pasta.",
-    "exp": "<em>will</em> is used for:<br>1. <strong>Spontaneous decisions</strong> (made at the time of speech): <em>I'll help you with that.</em><br>2. <strong>Predictions</strong> without a specific plan: <em>I think it will rain.</em><br>3. <strong>Promises</strong>: <em>I won't tell anyone.</em><br>4. <strong>Requests</strong>: <em>Will you open the window?</em><br><br>Abbreviation: <em>'ll</em>. Negation: <em>won't</em> (= will not).",
-    "exc": "\n",
-    "tip": "",
-    "mistakes": [
-      "<s>I will to go</s> → I <em>will go</em> (without to)",
-      "<s>She wills come</s> → She will come (will does not change)"
-    ],
-    "markers": null,
-    "ex": [
-      [
-        "The phone is ringing. — I'll get it!",
-        "The phone is ringing. - I will answer!"
-      ],
-      [
-        "It will be cold tomorrow.",
-        "It will be cold tomorrow."
-      ]
-    ]
-  },
-  "a2_07": {
-    "text": "going to - intentions and obvious predictions",
-    "note": "I'm going to visit Paris. Look out — you're going to fall!",
-    "exp": "<em>going to</em> is used for:<br>1. <strong>Pre-made decisions and intentions</strong>: <em>I'm going to start a diet next week.</em><br>2. <strong>Predictions with visible signs</strong>: <em>Look at those clouds — it's going to rain!</em><br><br>Form: <em>am/is/are + going to + infinitive</em>",
-    "exc": "<em>will vs going to</em>: <em>\"I'll have coffee\"</em> - I’m deciding right now; <em>\"I'm going to have coffee\"</em> - I already decided earlier.\n",
-    "tip": "",
-    "mistakes": [
-      "<s>She is going to does</s> → She is going to <em>do</em>",
-      "<s>I am going to will do</s> - you can’t have two futures"
-    ],
-    "markers": null,
-    "ex": [
-      [
         "I'm going to study medicine.",
         "I'm going to study medicine."
       ],
@@ -885,9 +888,10 @@
     "exc": "",
     "tip": "Markers: now, at the moment, currently, this week/month.",
     "mistakes": [
-      "<s>I was visit</s> → I was <em>visiting</em>",
-      "<s>She were working</s> → She <em>was</em> working (she/he/it → was)",
-      "<s>At 8 I was work</s> → I was <em>working</em>"
+      "<s>I am work now</s> → I am <em>working</em> now",
+      "<s>She working now</s> → She <em>is</em> working now",
+      "<s>She is going to school every day</s> → She <em>goes</em> (habit = Present Simple)",
+      "<s>He is wanting</s> → He <em>wants</em> (stative verb)"
     ],
     "markers": {
       "tags": [
@@ -1057,9 +1061,9 @@
     ]
   },
   "a2_14": {
-    "text": "could - past skill and polite requests",
+    "text": "could - past ability and polite requests",
     "note": "She could swim when she was 5. Could you help me?",
-    "exp": "<em>could</em> is the past tense of <em>can</em>. Two main meanings:<br>1. <strong>Skill in the past</strong>: <em>I could read at 4 years old.</em><br>2. <strong>Polite requests</strong> (more polite than <em>can</em>): <em>Could you pass the salt, please?</em><br><br>Also for present possibility: <em>It could be true.</em>",
+    "exp": "<em>could</em> is the past tense of <em>can</em>. Two main meanings:<br>1. <strong>Ability in the past</strong>: <em>I could read at 4 years old.</em><br>2. <strong>Polite requests</strong> (more polite than <em>can</em>): <em>Could you pass the salt, please?</em><br><br>Also for present possibility: <em>It could be true.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1389,7 +1393,7 @@
   "b1_01": {
     "text": "Present Perfect - form and meaning",
     "note": "I have seen it. She has gone. They have arrived.",
-    "exp": "<strong>Present Perfect</strong> = have/has + V3 (third form of the verb).\n<br><br>Three main meanings:\n<br>1. <strong>Life Experience</strong> (no time specified): <em>I have visited Tokyo.</em>\n<br>2. <strong>Result in the present</strong>: <em>I have lost my keys.</em> (there are no keys now)\n<br>3. <strong>Unfinished action</strong>, ongoing now: <em>She has lived here for 5 years.</em>\n<br><br>V3 regular verbs = Past Simple (worked, played). Incorrect ones need to be known separately.",
+    "exp": "<strong>Present Perfect</strong> = have/has + V3 (third form of the verb).\n<br><br>Three main meanings:\n<br>1. <strong>Life Experience</strong> (no time specified): <em>I have visited Tokyo.</em>\n<br>2. <strong>Result in the present</strong>: <em>I have lost my keys.</em> (there are no keys now)\n<br>3. <strong>Unfinished action</strong>, ongoing now: <em>She has lived here for 5 years.</em>\n<br><br>V3 regular verbs = Past Simple (worked, played). Irregular ones have to be learned separately.",
     "exc": "",
     "tip": "Markers: ever, never, already, yet, just, recently, lately, so far.",
     "mistakes": [
@@ -1494,7 +1498,7 @@
     "mistakes": [
       "<s>I have seen him last week</s> → I <em>saw</em> him last week (specific time = Past Simple)",
       "<s>Did you ever eat sushi?</s> → <em>Have</em> you ever eaten sushi?",
-      "<s>I met him and he has told me</s> → he <em>told</em> me (in one context of the past)"
+      "<s>I met him and he has told me</s> → he <em>told</em> me (the same past context)"
     ],
     "markers": {
       "tags": [
@@ -1577,9 +1581,7 @@
         "all evening",
         "all week",
         "lately",
-        "recently",
-        "these days",
-        "still"
+        "recently"
       ],
       "note": "The Present Perfect Continuous emphasizes the duration rather than the result."
     },
@@ -1597,7 +1599,7 @@
   "b1_06": {
     "text": "Past Continuous: was/were + V-ing",
     "note": "I was reading at 8pm. They were talking all evening.",
-    "exp": "<strong>Past Continuous</strong> = was/were + V-ing\n<br><br>Values:\n<br>1. Action in <strong>process</strong> at a specific moment in the past: <em>At 9pm I was having dinner.</em>\n<br>2. <strong>Background activity</strong> interrupted by another: <em>I was walking when it started to rain.</em>\n<br>3. Parallel actions: <em>While she was cooking, he was watching TV.</em>",
+    "exp": "<strong>Past Continuous</strong> = was/were + V-ing\n<br><br>Uses:\n<br>1. Action in <strong>process</strong> at a specific moment in the past: <em>At 9pm I was having dinner.</em>\n<br>2. <strong>Background activity</strong> interrupted by another: <em>I was walking when it started to rain.</em>\n<br>3. Parallel actions: <em>While she was cooking, he was watching TV.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1616,8 +1618,7 @@
         "when (+ Past Simple)",
         "as",
         "at that moment",
-        "in the middle of",
-        "during"
+        "in the middle of"
       ],
       "note": "while/as → background (Past Continuous); when → event (Past Simple)."
     },
@@ -1635,7 +1636,7 @@
   "b1_07": {
     "text": "Past Simple vs Past Continuous - background and event",
     "note": "While I was cooking, he called. I was walking when it started to rain.",
-    "exp": "Typical design: long background action (Past Continuous) + short event (Past Simple).\n<br><br>Unions:\n<br>• <em>when</em> - used with the Past Simple for the event: <em>She was sleeping when the alarm went off.</em>\n<br>• <em>while/as</em> - used with Past Continuous for background: <em>While I was watching TV, the power went out.</em>",
+    "exp": "Typical pattern: long background action (Past Continuous) + short event (Past Simple).\n<br><br>Conjunctions:\n<br>• <em>when</em> - used with the Past Simple for the event: <em>She was sleeping when the alarm went off.</em>\n<br>• <em>while/as</em> - used with Past Continuous for background: <em>While I was watching TV, the power went out.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1648,8 +1649,7 @@
         "as",
         "when",
         "at the moment when",
-        "just as",
-        "during"
+        "just as"
       ],
       "note": "while + Past Continuous (background) + when + Past Simple (event)."
     },
@@ -1667,7 +1667,7 @@
   "b1_08": {
     "text": "Type 0: If + Present, Present - facts and laws",
     "note": "If you heat water to 100°C, it boils.",
-    "exp": "Type zero - for scientific facts, laws of nature, general truths. Both actions always happen together.\n<br><br>Form: <em>If + Present Simple, Present Simple</em>\n<br>Instead of <em>if</em> you can use <em>when</em>: <em>When you mix red and blue, you get purple.</em>",
+    "exp": "Type zero - for scientific facts, laws of nature, general truths. Both actions always happen together.\n<br><br>Form: <em>If + Present Simple, Present Simple</em>\n<br>In place of <em>if</em> you can also use <em>when</em>: <em>When you mix red and blue, you get purple.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1687,9 +1687,9 @@
     ]
   },
   "b1_09": {
-    "text": "1st type: If + Present Simple, will - real future",
+    "text": "Type 1: If + Present Simple, will - real future",
     "note": "If it rains tomorrow, I'll stay home.",
-    "exp": "A real, probable situation in the future.\n<br><br>Form: <em>If + Present Simple, will + infinitive</em>\n<br>⚠️ In the <em>if</em>-part - NEVER Future! Only Present Simple.\n<br><br>Instead of <em>will</em> in the main part you can: <em>can, may, might, should</em>.\n<br>Parts can be changed: <em>I'll stay home if it rains.</em> (without comma)",
+    "exp": "A real, probable situation in the future.\n<br><br>Form: <em>If + Present Simple, will + infinitive</em>\n<br>⚠️ In the <em>if</em>-part - NEVER Future! Only Present Simple.\n<br><br>Instead of <em>will</em>, the main part can use: <em>can, may, might, should</em>.\n<br>The two parts can be swapped: <em>I'll stay home if it rains.</em> (without comma)",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1779,7 +1779,7 @@
   "b1_13": {
     "text": "Passive Voice — Past Simple: was/were + V3",
     "note": "The bridge was built in 1890. They were arrested.",
-    "exp": "Past Simple Passive: <em>was/were + V3</em>\n<br>• <em>was</em> - units. number\n<br>• <em>were</em> - plural. number\n<br><br>Active → Passive: <em>Someone stole my car.</em> → <em>My car was stolen.</em>",
+    "exp": "Past Simple Passive: <em>was/were + V3</em>\n<br>• <em>was</em> - singular\n<br>• <em>were</em> - plural\n<br><br>Active → Passive: <em>Someone stole my car.</em> → <em>My car was stolen.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -1970,7 +1970,7 @@
   "b1_21": {
     "text": "used to - past habits and states",
     "note": "I used to play football. She used to have long hair.",
-    "exp": "<em>used to</em> - regular actions or conditions in the past that have already stopped.\n<br><br>Form: <em>used to + infinitive</em>\n<br>Denial: <em>didn't use to</em>\n<br>Question: <em>Did you use to...?</em>\n<br><br>⚠️ There is no present tense form! You can't: <s>I use to</s> for the present.\n<br>Difference from <em>be used to</em>: <em>I am used to waking up early</em> = I'm used to it (now).",
+    "exp": "<em>used to</em> - regular actions or conditions in the past that have already stopped.\n<br><br>Form: <em>used to + infinitive</em>\n<br>Negative: <em>didn't use to</em>\n<br>Question: <em>Did you use to...?</em>\n<br><br>⚠️ There is no present tense form! You can't say <s>I use to</s> for the present.\n<br>Difference from <em>be used to</em>: <em>I am used to waking up early</em> = it is normal for me now.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2042,7 +2042,7 @@
   "b1_24": {
     "text": "Future Continuous: will be + V-ing",
     "note": "I'll be working at 9 tomorrow. She'll be flying over the Atlantic.",
-    "exp": "<strong>Future Continuous</strong> = <em>will be + V-ing</em>\n<br><br>Values:\n<br>1. An action that will be <strong>in progress</strong> at a specific moment in the future: <em>At this time tomorrow, I'll be lying on the beach.</em>\n<br>2. Planned, expected action in the future (natural course of events): <em>I'll be seeing her tomorrow anyway.</em>\n<br>3. Polite questions about plans (no pressure): <em>Will you be coming to the party?</em>",
+    "exp": "<strong>Future Continuous</strong> = <em>will be + V-ing</em>\n<br><br>Uses:\n<br>1. An action that will be <strong>in progress</strong> at a specific moment in the future: <em>At this time tomorrow, I'll be lying on the beach.</em>\n<br>2. Planned, expected action in the future (natural course of events): <em>I'll be seeing her tomorrow anyway.</em>\n<br>3. Polite questions about plans (no pressure): <em>Will you be coming to the party?</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2160,7 +2160,7 @@
   "b2_01": {
     "text": "Past Perfect Simple: had + V3",
     "note": "By the time she arrived, he had already left.",
-    "exp": "<strong>Past Perfect</strong> - an action that completed <strong>before</strong> another moment or event in the past.\n<br><br>Form: <em>had + V3</em> for all faces.\n<br>Negation: <em>hadn't + V3</em>\n<br>Question: <em>Had + subject + V3?</em>\n<br><br>Typical conjunctions: <em>before, after, when, by the time, already, just, never</em>",
+    "exp": "<strong>Past Perfect</strong> - an action that completed <strong>before</strong> another moment or event in the past.\n<br><br>Form: <em>had + V3</em> for all persons.\n<br>Negation: <em>hadn't + V3</em>\n<br>Question: <em>Had + subject + V3?</em>\n<br><br>Typical markers: <em>before, after, when, by the time, already, just, never</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2222,7 +2222,7 @@
         "already for...",
         "for two hours when she arrived"
       ],
-      "note": "Emphasis on duration until a moment in the past. Often explains the cause of the condition."
+      "note": "Emphasis on duration until a moment in the past. Often explains the cause of a state."
     },
     "ex": [
       [
@@ -2238,7 +2238,7 @@
   "b2_03": {
     "text": "must have + V3 - confident conclusion about the past",
     "note": "She must have forgotten. - I'm sure this is the only explanation",
-    "exp": "<em>must have + V3</em> = I'm sure this happened (the only logical explanation).\n<br><br>Confidence scale:\n<br>• <em>must have done</em> - almost certainly happened\n<br>• <em>should have done</em> - it was expected to happen\n<br>• <em>may/might have done</em> - it may have happened\n<br>• <em>can't have done</em> - it probably didn't happen",
+    "exp": "<em>must have + V3</em> = I'm sure this happened (the only logical explanation).\n<br><br>Confidence scale:\n<br>• <em>must have done</em> - almost certainly happened\n<br>• <em>should have done</em> - it was expected to happen\n<br>• <em>may/might have done</em> - it may have happened\n<br>• <em>can't have done</em> - almost certainly didn't happen",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2306,7 +2306,7 @@
   "b2_06": {
     "text": "might / could have + V3 - possibility in the past",
     "note": "She might have forgotten. It could have been worse.",
-    "exp": "<em>might/could have + V3</em> = this may have happened (we don't know for sure).\n<br><br>Also: <em>could have done</em> = could have done (but didn’t): <em>I could have won if I had tried harder.</em>",
+    "exp": "<em>might/could have + V3</em> = this may have happened (we don't know for sure).\n<br><br>Also: <em>could have done</em> = it was possible, but it didn't happen: <em>I could have won if I had tried harder.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2326,7 +2326,7 @@
     ]
   },
   "b2_07": {
-    "text": "3rd type of conditional: If + Past Perfect, would have + V3",
+    "text": "Type 3: If + Past Perfect, would have + V3",
     "note": "If I had studied harder, I would have passed.",
     "exp": "An unreal situation in the past - we are talking about something that did not happen.\n<br><br>Form: <em>If + Past Perfect, would have + V3</em>\n<br><br>Both elements are unreal:\n<br>• Condition not met\n<br>• There was no result either",
     "exc": "\n",
@@ -2368,7 +2368,7 @@
   "b2_09": {
     "text": "Future Passive and Passive with modals",
     "note": "It will be done. It must be fixed. It should be checked.",
-    "exp": "Modal + Passive: <em>modal + be + V3</em>\n<br>• <em>will be done</em> - will be done\n<br>• <em>must be done</em> - must be done\n<br>• <em>should be done</em> - should be done\n<br>• <em>can be done</em> - can be done",
+    "exp": "Modal + Passive: <em>modal + be + V3</em>\n<br>• <em>will be done</em> - future\n<br>• <em>must be done</em> - obligation\n<br>• <em>should be done</em> - advice\n<br>• <em>can be done</em> - possibility",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2484,7 +2484,7 @@
   "b2_14": {
     "text": "wish + Past Simple - desire to change the present",
     "note": "I wish I knew the answer. I wish I had more time.",
-    "exp": "<em>wish + Past Simple</em> - about an unrealistic desire in the present.\n<br>The form is the same as in the 2nd type of conditional. For <em>to be</em> - <em>were</em> (formally), although <em>was</em> is also used.",
+    "exp": "<em>wish + Past Simple</em> - an unreal wish about the present.\n<br>The form is the same as in the 2nd type of conditional. For <em>to be</em> - <em>were</em> (formally), although <em>was</em> is also used.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2529,7 +2529,7 @@
   "b2_16": {
     "text": "wish + would - desire to change someone else's behavior",
     "note": "I wish you would stop talking. I wish it would warm up.",
-    "exp": "<em>wish + would</em> - irritation due to someone else's behavior or a desire to change the situation.\n<br>⚠️ You cannot use about yourself: <s>I wish I would</s> - only about other persons or the weather/situation.",
+    "exp": "<em>wish + would</em> - irritation due to someone else's behavior or a desire to change the situation.\n<br>⚠️ Not used about yourself: <s>I wish I would</s> - only about other persons or the weather/situation.",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -2617,7 +2617,7 @@
   "b2_20": {
     "text": "be used to / get used to + V-ing - habit (real)",
     "note": "I'm used to waking up early. She's getting used to the cold.",
-    "exp": "<em>be used to + V-ing / noun</em> = to be used to (already used to).\n<br><em>get used to + V-ing / noun</em> = get used to (the process of getting used to).\n<br><br>⚠️ Not to be confused with <em>used to + infinitive</em> (past habits).\n<br>• <em>I used to live in Paris.</em> - used to live (no longer)\n<br>• <em>I am used to living in big cities.</em> - used to living in big cities",
+    "exp": "<em>be used to + V-ing / noun</em> = to be accustomed to something (it is already normal).\n<br><em>get used to + V-ing / noun</em> = to become accustomed (the process).\n<br><br>⚠️ Not to be confused with <em>used to + infinitive</em> (past habits).\n<br>• <em>I used to live in Paris.</em> - I lived there in the past (no longer)\n<br>• <em>I am used to living in big cities.</em> - big cities are normal for me",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -3187,7 +3187,7 @@
   "c1_16": {
     "text": "Present participle: V-ing clause",
     "note": "Walking down the street, I saw an old friend. Having no money, he couldn't buy food.",
-    "exp": "The participial phrase with Present Participle (V-ing) replaces the subordinate clause:\n<br>• Simultaneity: <em>Walking home, I noticed something strange.</em> (= While I was walking home)\n<br>• Reason: <em>Knowing the answer, she raised her hand.</em> (= Because she knew)\n<br><br>⚠️ The subject of the participial phrase MUST coincide with the subject of the main sentence!\n<br>Error: <s>Walking down the street, the rain started.</s> (the rain did not fall on the street)",
+    "exp": "The participial phrase with Present Participle (V-ing) replaces the subordinate clause:\n<br>• Simultaneity: <em>Walking home, I noticed something strange.</em> (= While I was walking home)\n<br>• Reason: <em>Knowing the answer, she raised her hand.</em> (= Because she knew)\n<br><br>⚠️ The subject of the participial phrase MUST coincide with the subject of the main sentence!\n<br>Error: <s>Walking down the street, the rain started.</s> (the rain was not walking)",
     "exc": "\n",
     "tip": "",
     "mistakes": [
@@ -3542,9 +3542,9 @@
     ]
   },
   "c2_15": {
-    "text": "Coordination of tenses - sequence of tenses",
+    "text": "Sequence of tenses",
     "note": "She said she had been working. He thought it would be difficult.",
-    "exp": "In complex sentences, the verb of the subordinate clause agrees in time with the main one.\n<br><br>If the main verb is in the past:\n<br>• Present Simple → Past Simple: <em>he said it was true</em>\n<br>• Past Simple → Past Perfect: <em>she said she had seen it</em>\n<br>• Present Perfect → Past Perfect: <em>he said he had finished</em>\n<br>• will → would; can → could; may → might; is → was\n<br><br>⚠️ Exception: general truths and scientific facts do not change: <em>She said that water boils at 100°C.</em>",
+    "exp": "In complex sentences, the verb of the subordinate clause follows the tense of the main clause.\n<br><br>If the main verb is in the past:\n<br>• Present Simple → Past Simple: <em>he said it was true</em>\n<br>• Past Simple → Past Perfect: <em>she said she had seen it</em>\n<br>• Present Perfect → Past Perfect: <em>he said he had finished</em>\n<br>• will → would; can → could; may → might; is → was\n<br><br>⚠️ Exception: general truths and scientific facts do not change: <em>She said that water boils at 100°C.</em>",
     "exc": "\n",
     "tip": "",
     "mistakes": [

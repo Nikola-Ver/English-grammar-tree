@@ -71,6 +71,7 @@ export const TENSE_TREE: Record<string, TenseNode> = {
       { labelKey: 'tenseTree.future.c1', icon: '📝', result: 'future_going_to' },
       { labelKey: 'tenseTree.future.c2', icon: '⏱️', result: 'future_continuous' },
       { labelKey: 'tenseTree.future.c3', icon: '✅', result: 'future_perfect' },
+      { labelKey: 'tenseTree.future.c4', icon: '⏳', result: 'future_perfect_continuous' },
     ],
   },
 };

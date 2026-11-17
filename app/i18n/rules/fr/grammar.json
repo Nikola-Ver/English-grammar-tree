@@ -641,9 +641,10 @@
     "exc": "",
     "tip": "Marqueurs : yesterday, last week/year, ago, in 2010, at 5 o'clock.",
     "mistakes": [
-      "<s>She is going to school every day</s> → She <em>goes</em> (habitude = Present Simple)",
-      "<s>I am going to the cinema tomorrow</s> - peut-être, mais <em>I'm going to see a film</em> plus précisément avec intention",
-      "<s>He is wanting</s> → He <em>wants</em> (stative verb)"
+      "<s>She studyed</s> → She <em>studied</em>",
+      "<s>He stoped</s> → He <em>stopped</em>",
+      "<s>I work yesterday</s> → I <em>worked</em> yesterday",
+      "<s>She didn't worked</s> → She didn't <em>work</em>"
     ],
     "markers": {
       "tags": [
@@ -730,9 +731,7 @@
     "mistakes": [
       "<s>I didn't went</s> → I didn't <em>go</em>",
       "<s>She didn't came</s> → She didn't <em>come</em>",
-      "<s>Did she played?</s> → Did she <em>play</em>?",
-      "<s>She didn't came</s> → She didn't <em>come</em>",
-      "<s>What he did?</s> → What <em>did he do?</em>"
+      "<s>He not went</s> → He <em>didn't go</em>"
     ],
     "markers": null,
     "ex": [
@@ -750,6 +749,62 @@
     "text": "Passé simple - questions : l'avez-vous fait ? Où est-elle allée ?",
     "note": "Did they arrive? What did he say?",
     "exp": "Question : <em>A fait + sujet + infinitif ?</em><br>Questions spéciales : <em>Où/Quand/Quoi + a fait + sujet + infinitif ?</em><br><br>⚠️ Exception : la question « Qui a réalisé l'action ? est construit sans faire : <em>Who called? Who broke the vase?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Did she played?</s> → Did she <em>play</em>?",
+      "<s>What he did?</s> → What <em>did he do</em>?",
+      "<s>Where did she went?</s> → Where did she <em>go</em>?",
+      "<s>Who did call?</s> → Who <em>called</em>?"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Did you enjoy the film?",
+        "Avez-vous aimé le film ?"
+      ],
+      [
+        "Where did they go?",
+        "Où sont-ils allés ?"
+      ],
+      [
+        "Who told you that?",
+        "Qui t'a dit ça ?"
+      ]
+    ]
+  },
+  "a2_05": {
+    "text": "was / were - verbe être dans le passé",
+    "note": "I/he/she/it was. You/we/they were.",
+    "exp": "Passé du verbe <em>to be</em> :<br>• <em>was</em> - avec moi, il, elle, cela<br>• <em>were</em> - avec vous, nous, ils<br><br>Négation : <em>wasn't / weren't</em><br>Question : <em>Was she...? Were they...?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>I were tired</s> → I <em>was</em> tired",
+      "<s>They was late</s> → They <em>were</em> late",
+      "<s>Did you was at home?</s> → <em>Were</em> you at home?",
+      "<s>She didn't was there</s> → She <em>wasn't</em> there"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I was very tired last night.",
+        "J'étais très fatigué hier soir."
+      ],
+      [
+        "They were at home all day.",
+        "Ils étaient à la maison toute la journée."
+      ],
+      [
+        "Was it expensive?",
+        "Était-ce cher ?"
+      ]
+    ]
+  },
+  "a2_06": {
+    "text": "volonté - prédictions et décisions spontanées",
+    "note": "I'll call you back. It will rain tomorrow. I'll have the pasta.",
+    "exp": "<em>will</em> est utilisé pour :<br>1. <strong>Décisions spontanées</strong> (prises au moment du discours) : <em>I'll help you with that.</em><br>2. <strong>Prédictions</strong> sans plan précis : <em>I think it will rain.</em><br>3. <strong>Promesses</strong> : <em>I won't tell anyone.</em><br>4. <strong>Demandes</strong> : <em>Will you open the window?</em><br><br>Abréviation : <em>'ll</em>. Négation : <em>won't</em> (= will not).",
     "exc": "",
     "tip": "",
     "mistakes": [
@@ -782,24 +837,20 @@
     },
     "ex": [
       [
-        "Did you enjoy the film?",
-        "Avez-vous aimé le film ?"
+        "The phone is ringing. — I'll get it!",
+        "Le téléphone sonne. - Je vais répondre !"
       ],
       [
-        "Where did they go?",
-        "Où sont-ils allés ?"
-      ],
-      [
-        "Who told you that?",
-        "Qui t'a dit ça ?"
+        "It will be cold tomorrow.",
+        "Il fera froid demain."
       ]
     ]
   },
-  "a2_05": {
-    "text": "was / were - verbe être dans le passé",
-    "note": "I/he/she/it was. You/we/they were.",
-    "exp": "Passé du verbe <em>to be</em> :<br>• <em>was</em> - avec moi, il, elle, cela<br>• <em>were</em> - avec vous, nous, ils<br><br>Négation : <em>wasn't / weren't</em><br>Question : <em>Was she...? Were they...?</em>",
-    "exc": "",
+  "a2_07": {
+    "text": "aller à - intentions et prédictions évidentes",
+    "note": "I'm going to visit Paris. Look out — you're going to fall!",
+    "exp": "<em>going to</em> est utilisé pour :<br>1. <strong>Décisions et intentions prédéfinies</strong> : <em>I'm going to start a diet next week.</em><br>2. <strong>Prédictions avec signes visibles</strong> : <em>Look at those clouds: it's going to rain!</em><br><br>Forme : <em>suis/est/sommes + va à + infinitif</em>",
+    "exc": "<em>will vs going to</em> : <em>\"I'll have coffee\"</em> - Je prends ma décision maintenant ; <em>\"I'm going to have coffee\"</em> - J'ai déjà décidé plus tôt.",
     "tip": "",
     "mistakes": [
       "<s>I am going to will do</s> - une seule chose : <em>I'm going to do</em>",
@@ -821,54 +872,6 @@
     },
     "ex": [
       [
-        "I was very tired last night.",
-        "J'étais très fatigué hier soir."
-      ],
-      [
-        "They were at home all day.",
-        "Ils étaient à la maison toute la journée."
-      ],
-      [
-        "Was it expensive?",
-        "Était-ce cher ?"
-      ]
-    ]
-  },
-  "a2_06": {
-    "text": "volonté - prédictions et décisions spontanées",
-    "note": "I'll call you back. It will rain tomorrow. I'll have the pasta.",
-    "exp": "<em>will</em> est utilisé pour :<br>1. <strong>Décisions spontanées</strong> (prises au moment du discours) : <em>I'll help you with that.</em><br>2. <strong>Prédictions</strong> sans plan précis : <em>I think it will rain.</em><br>3. <strong>Promesses</strong> : <em>I won't tell anyone.</em><br>4. <strong>Demandes</strong> : <em>Will you open the window?</em><br><br>Abréviation : <em>'ll</em>. Négation : <em>won't</em> (= will not).",
-    "exc": "",
-    "tip": "",
-    "mistakes": [
-      "<s>I will to go</s> → I <em>will go</em> (sans le faire)",
-      "<s>She wills come</s> → She will come (la volonté ne change pas)"
-    ],
-    "markers": null,
-    "ex": [
-      [
-        "The phone is ringing. — I'll get it!",
-        "Le téléphone sonne. - Je vais répondre !"
-      ],
-      [
-        "It will be cold tomorrow.",
-        "Il fera froid demain."
-      ]
-    ]
-  },
-  "a2_07": {
-    "text": "aller à - intentions et prédictions évidentes",
-    "note": "I'm going to visit Paris. Look out — you're going to fall!",
-    "exp": "<em>going to</em> est utilisé pour :<br>1. <strong>Décisions et intentions prédéfinies</strong> : <em>I'm going to start a diet next week.</em><br>2. <strong>Prédictions avec signes visibles</strong> : <em>Look at those clouds: it's going to rain!</em><br><br>Forme : <em>suis/est/sommes + va à + infinitif</em>",
-    "exc": "<em>will vs going to</em> : <em>\"I'll have coffee\"</em> - Je prends ma décision maintenant ; <em>\"I'm going to have coffee\"</em> - J'ai déjà décidé plus tôt.",
-    "tip": "",
-    "mistakes": [
-      "<s>She is going to does</s> → She is going to <em>do</em>",
-      "<s>I am going to will do</s> - vous ne pouvez pas avoir deux avenirs"
-    ],
-    "markers": null,
-    "ex": [
-      [
         "I'm going to study medicine.",
         "Je vais étudier la médecine."
       ],
@@ -885,9 +888,10 @@
     "exc": "",
     "tip": "Marqueurs : now, at the moment, currently, this week/month.",
     "mistakes": [
-      "<s>I was visit</s> → I was <em>visiting</em>",
-      "<s>She were working</s> → She <em>was</em> working (she/he/it → was)",
-      "<s>At 8 I was work</s> → I was <em>working</em>"
+      "<s>I am work now</s> → I am <em>working</em> now",
+      "<s>She working now</s> → She <em>is</em> working now",
+      "<s>She is going to school every day</s> → She <em>goes</em> (habitude = Present Simple)",
+      "<s>He is wanting</s> → He <em>wants</em> (stative verb)"
     ],
     "markers": {
       "tags": [
@@ -1577,9 +1581,7 @@
         "all evening",
         "all week",
         "lately",
-        "recently",
-        "these days",
-        "still"
+        "recently"
       ],
       "note": "Le Present Perfect Continu met l’accent sur la durée plutôt que sur le résultat."
     },
@@ -1616,8 +1618,7 @@
         "when (+ Past Simple)",
         "as",
         "at that moment",
-        "in the middle of",
-        "during"
+        "in the middle of"
       ],
       "note": "while/as → arrière-plan (Past Continuous) ; when → événement (Past Simple)."
     },
@@ -1648,8 +1649,7 @@
         "as",
         "when",
         "at the moment when",
-        "just as",
-        "during"
+        "just as"
       ],
       "note": "while + Past Continuous (arrière-plan) + when + Past Simple (événement)."
     },

@@ -434,6 +434,38 @@ const CURATED_RU: Record<string, TenseComparison> = {
     ],
   },
 
+  // future_perfect vs future_perfect_continuous
+  future_perfect__future_perfect_continuous: {
+    summary:
+      'Future Perfect — к моменту в будущем действие будет завершено (важен результат). Future Perfect Continuous — к этому моменту действие будет длиться уже какое-то время (важна длительность).',
+    rows: [
+      {
+        label: 'Фокус',
+        a: 'Результат: что будет сделано к моменту.',
+        b: 'Длительность: сколько времени это уже будет продолжаться.',
+      },
+      {
+        label: 'Маркер',
+        a: 'by Friday, by 2030, by the time you arrive.',
+        b: 'by + момент и for + срок: by June … for ten years.',
+      },
+      {
+        label: 'Глаголы состояния',
+        a: 'Используются свободно: will have known, will have been.',
+        b: 'Не используются: вместо will have been knowing — will have known.',
+      },
+    ],
+    sharedContexts: [
+      {
+        context: 'К концу года',
+        a: "By December I'll have written three chapters.",
+        aTr: 'К декабрю я напишу три главы (они будут готовы).',
+        b: "By December I'll have been writing this book for two years.",
+        bTr: 'К декабрю я буду писать эту книгу уже два года (процесс ещё идёт).',
+      },
+    ],
+  },
+
   // future_will vs present_continuous → not directly comparable via key; need future_will with present_continuous
   future_will__present_continuous: {
     summary:
@@ -441,22 +473,22 @@ const CURATED_RU: Record<string, TenseComparison> = {
     rows: [
       {
         label: 'Будущее',
-        a: 'Процесс сейчас ИЛИ договорённость на будущее (есть план, с кем-то согласовано).',
-        b: 'Предсказание, обещание, спонтанное решение.',
+        a: 'Предсказание, обещание, спонтанное решение.',
+        b: 'Процесс сейчас ИЛИ договорённость на будущее (есть план, с кем-то согласовано).',
       },
       {
         label: 'Когда выбирать',
-        a: "Когда время/место оговорено: «I'm meeting Tom at 5».",
-        b: 'Когда ещё не решено или это просто мнение о будущем.',
+        a: 'Когда ещё не решено или это просто мнение о будущем.',
+        b: "Когда время/место оговорено: «I'm meeting Tom at 5».",
       },
     ],
     sharedContexts: [
       {
         context: 'Встреча',
-        a: "I'm meeting Tom tomorrow at 5.",
-        aTr: 'Я встречаюсь с Томом завтра в 5 (договорились).',
-        b: "I'll meet Tom tomorrow.",
-        bTr: 'Я встречусь с Томом завтра (просто намерение/предположение).',
+        a: "I'll meet Tom tomorrow.",
+        aTr: 'Я встречусь с Томом завтра (просто намерение/предположение).',
+        b: "I'm meeting Tom tomorrow at 5.",
+        bTr: 'Я встречаюсь с Томом завтра в 5 (договорились).',
       },
     ],
   },
@@ -468,22 +500,22 @@ const CURATED_RU: Record<string, TenseComparison> = {
     rows: [
       {
         label: 'Время процесса',
-        a: 'Шёл ДО определённого момента в прошлом (и, возможно, продолжался).',
-        b: 'Идёт одновременно с другим прошлым действием.',
+        a: 'Идёт одновременно с другим прошлым действием.',
+        b: 'Шёл ДО определённого момента в прошлом (и, возможно, продолжался).',
       },
       {
         label: 'Маркеры',
-        a: 'for two hours before, since morning, by the time.',
-        b: 'at 8pm, while, when (+ Past Simple), as.',
+        a: 'at 8pm, while, when (+ Past Simple), as.',
+        b: 'for two hours before, since morning, by the time.',
       },
     ],
     sharedContexts: [
       {
         context: 'Когда он пришёл',
-        a: 'She had been waiting for two hours when he arrived.',
-        aTr: 'Она ждала уже два часа, когда он пришёл (процесс до момента).',
-        b: 'She was waiting when he arrived.',
-        bTr: 'Она ждала, когда он пришёл (фон в момент прихода).',
+        a: 'She was waiting when he arrived.',
+        aTr: 'Она ждала, когда он пришёл (фон в момент прихода).',
+        b: 'She had been waiting for two hours when he arrived.',
+        bTr: 'Она ждала уже два часа, когда он пришёл (процесс до момента).',
       },
     ],
   },
@@ -517,22 +549,22 @@ const CURATED_RU: Record<string, TenseComparison> = {
     rows: [
       {
         label: 'Начало',
-        a: 'Началось в прошлом (for/since) и продолжается сейчас.',
-        b: 'Происходит прямо в момент речи, без акцента на длительность.',
+        a: 'Происходит прямо в момент речи, без акцента на длительность.',
+        b: 'Началось в прошлом (for/since) и продолжается сейчас.',
       },
       {
         label: 'Маркеры',
-        a: 'for two hours, since morning, all day, how long.',
-        b: 'now, right now, at the moment.',
+        a: 'now, right now, at the moment.',
+        b: 'for two hours, since morning, all day, how long.',
       },
     ],
     sharedContexts: [
       {
         context: 'Английский',
-        a: "I've been learning English for two years.",
-        aTr: 'Я учу английский уже два года (начал тогда, продолжаю).',
-        b: "I'm learning English right now.",
-        bTr: 'Я учу английский прямо сейчас (момент речи).',
+        a: "I'm learning English right now.",
+        aTr: 'Я учу английский прямо сейчас (момент речи).',
+        b: "I've been learning English for two years.",
+        bTr: 'Я учу английский уже два года (начал тогда, продолжаю).',
       },
     ],
   },
@@ -624,10 +656,10 @@ const CURATED_RU: Record<string, TenseComparison> = {
     sharedContexts: [
       {
         context: 'Работа',
-        a: "I'll finish the report on Friday.",
-        aTr: 'Я закончу отчёт в пятницу (в этот день).',
-        b: "I'll have finished the report by Friday.",
-        bTr: 'К пятнице я уже закончу отчёт (до пятницы).',
+        a: "I'll have finished the report by Friday.",
+        aTr: 'К пятнице я уже закончу отчёт (до пятницы).',
+        b: "I'll finish the report on Friday.",
+        bTr: 'Я закончу отчёт в пятницу (в этот день).',
       },
     ],
   },
@@ -652,17 +684,17 @@ const CURATED_RU: Record<string, TenseComparison> = {
     rows: [
       {
         label: 'Оттенок',
-        a: 'Запланированное намерение.',
-        b: 'Часто «так и так будет происходить», без явного «я собираюсь».',
+        a: 'Часто «так и так будет происходить», без явного «я собираюсь».',
+        b: 'Запланированное намерение.',
       },
     ],
     sharedContexts: [
       {
         context: 'Мимо магазина',
-        a: "I'm going to buy milk later.",
-        aTr: 'Я собираюсь купить молоко позже (план).',
-        b: "I'll be passing the shop — I can get milk.",
-        bTr: 'Я всё равно буду проходить мимо — могу купить молоко.',
+        a: "I'll be passing the shop — I can get milk.",
+        aTr: 'Я всё равно буду проходить мимо — могу купить молоко.',
+        b: "I'm going to buy milk later.",
+        bTr: 'Я собираюсь купить молоко позже (план).',
       },
     ],
   },

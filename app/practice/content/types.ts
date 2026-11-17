@@ -200,7 +200,8 @@ export type TenseKey =
   | 'future_will'
   | 'future_going_to'
   | 'future_continuous'
-  | 'future_perfect';
+  | 'future_perfect'
+  | 'future_perfect_continuous';
 
 /**
  * A sentence whose tense is unambiguous from the sentence alone.

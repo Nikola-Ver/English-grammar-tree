@@ -51,6 +51,7 @@
   --tl-future_going_to: #818cf8;
   --tl-future_continuous: #f472b6;
   --tl-future_perfect: #fb923c;
+  --tl-future_perfect_continuous: #4ade80;
 }
 
 [data-theme="light"] {
@@ -110,6 +111,7 @@
   --tl-future_going_to: #4f46e5;
   --tl-future_continuous: #db2777;
   --tl-future_perfect: #ea580c;
+  --tl-future_perfect_continuous: #16a34a;
 }
 
 * {

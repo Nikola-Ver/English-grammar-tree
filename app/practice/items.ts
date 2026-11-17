@@ -43,6 +43,7 @@ export const TENSE_RULES: Record<TenseKey, string[]> = {
   future_going_to: ['a2_07'],
   future_continuous: ['b1_24'],
   future_perfect: ['b1_25'],
+  future_perfect_continuous: ['c2_14'],
 };
 
 export const VERB_RULES = ['a2_02'];

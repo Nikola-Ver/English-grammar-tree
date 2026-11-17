@@ -41,7 +41,7 @@ export const TENSES: Record<string, Tense> = {
     formula: 'was/were + V-ing',
     color: '#818cf8',
     markers:
-      'at 8pm yesterday, at this time last week, all morning, all day, all evening, while, when (+ Past Simple), as, just as, at that moment, in the middle of, during',
+      'at 8pm yesterday, at this time last week, all morning, all day, all evening, while, when (+ Past Simple), as, just as, at that moment, in the middle of',
     examplesEn: ['I was reading when she called.', 'While he was cooking, she was working.'],
     mistakeCount: 2,
   },
@@ -59,7 +59,7 @@ export const TENSES: Record<string, Tense> = {
     formula: 'have/has been + V-ing',
     color: '#fb923c',
     markers:
-      'for, since, How long...?, all day, all morning, all evening, all week, all month, lately, recently, these days, still, the whole time',
+      'for, since, How long...?, all day, all morning, all evening, all week, all month, lately, recently, the whole time',
     examplesEn: [
       "I've been learning English for two years.",
       "Why are you tired? — I've been running.",
@@ -127,6 +127,18 @@ export const TENSES: Record<string, Tense> = {
     markers:
       'by tomorrow, by Friday, by the end of the week, by the end of the year, by 2030, by the time you arrive, before you get here, before midnight, by then',
     examplesEn: ["I'll have finished by Sunday.", 'By 2030 they will have built the bridge.'],
+    mistakeCount: 2,
+  },
+  future_perfect_continuous: {
+    name: 'Future Perfect Continuous',
+    formula: 'will have been + V-ing',
+    color: '#4ade80',
+    markers:
+      'by next year … for five years, by then … for two hours, by the time you arrive … for a long time, by the end of the month … for six weeks, for + duration',
+    examplesEn: [
+      "By next year, I'll have been studying English for five years.",
+      "By the time you arrive, we'll have been waiting for two hours.",
+    ],
     mistakeCount: 2,
   },
 };

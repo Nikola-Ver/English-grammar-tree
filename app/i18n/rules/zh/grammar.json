@@ -641,9 +641,10 @@
     "exc": "",
     "tip": "标记：昨天、上周/去年、前、2010 年 5 点。",
     "mistakes": [
-      "<s>She is going to school every day</s> → 她<em>goes</em>（习惯=简单现在时）",
-      "<s>I am going to the cinema tomorrow</s> - 也许吧，但是<em>I'm going to see a film</em>",
-      "<s>He is wanting</s> → He <em>wants</em> (stative verb)"
+      "<s>She studyed</s> → She <em>studied</em>",
+      "<s>He stoped</s> → He <em>stopped</em>",
+      "<s>I work yesterday</s> → I <em>worked</em> yesterday",
+      "<s>She didn't worked</s> → She didn't <em>work</em>"
     ],
     "markers": {
       "tags": [
@@ -730,9 +731,7 @@
     "mistakes": [
       "<s>I didn't went</s> → I didn't <em>go</em>",
       "<s>She didn't came</s> → She didn't <em>come</em>",
-      "<s>Did she played?</s> → Did she <em>play</em>?",
-      "<s>She didn't came</s> → She didn't <em>come</em>",
-      "<s>What he did?</s> → What <em>did he do?</em>"
+      "<s>He not went</s> → He <em>didn't go</em>"
     ],
     "markers": null,
     "ex": [
@@ -750,6 +749,62 @@
     "text": "一般过去时 - 问题：你是吗？她去哪儿了？",
     "note": "Did they arrive? What did he say?",
     "exp": "问题：<em>Did + 主语 + 不定式？</em><br>特殊问题：<em>地点/时间/什么 + did + 主语 + 不定式？</em><br><br>⚠️ 例外：问题“谁执行了该操作？”是在没有 did 的情况下构建的：<em>Who called? Who broke the vase?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>Did she played?</s> → Did she <em>play</em>?",
+      "<s>What he did?</s> → What <em>did he do</em>?",
+      "<s>Where did she went?</s> → Where did she <em>go</em>?",
+      "<s>Who did call?</s> → Who <em>called</em>?"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "Did you enjoy the film?",
+        "你喜欢这部电影吗？"
+      ],
+      [
+        "Where did they go?",
+        "他们去哪儿了？"
+      ],
+      [
+        "Who told you that?",
+        "谁告诉你这个的？"
+      ]
+    ]
+  },
+  "a2_05": {
+    "text": "was / were - 动词过去式",
+    "note": "I/he/she/it was. You/we/they were.",
+    "exp": "动词<em>to be</em>的过去式：<br>• <em>was</em> - 与我、他、她、它<br>• <em>were</em> - 与你、我们、他们<br><br>否定：<em>wasn't / weren't</em><br>问题：<em>Was she...? Were they...?</em>",
+    "exc": "",
+    "tip": "",
+    "mistakes": [
+      "<s>I were tired</s> → I <em>was</em> tired",
+      "<s>They was late</s> → They <em>were</em> late",
+      "<s>Did you was at home?</s> → <em>Were</em> you at home?",
+      "<s>She didn't was there</s> → She <em>wasn't</em> there"
+    ],
+    "markers": null,
+    "ex": [
+      [
+        "I was very tired last night.",
+        "昨晚我很累。"
+      ],
+      [
+        "They were at home all day.",
+        "他们一整天都待在家里。"
+      ],
+      [
+        "Was it expensive?",
+        "贵吗？"
+      ]
+    ]
+  },
+  "a2_06": {
+    "text": "意志——预测和自发决定",
+    "note": "I'll call you back. It will rain tomorrow. I'll have the pasta.",
+    "exp": "<em>will</em> 用于：<br>1。 <strong>自发决定</strong>（在演讲时做出）：<em>I'll help you with that.</em><br>2.没有具体计划的<strong>预测</strong>：<em>I think it will rain.</em><br>3. <strong>承诺</strong>：<em>I won't tell anyone.</em><br>4. <strong>请求</strong>：<em>Will you open the window?</em><br><br>缩写：<em>'ll</em>。否定：<em>won't</em>（=不会）。",
     "exc": "",
     "tip": "",
     "mistakes": [
@@ -782,24 +837,20 @@
     },
     "ex": [
       [
-        "Did you enjoy the film?",
-        "你喜欢这部电影吗？"
+        "The phone is ringing. — I'll get it!",
+        "电话响了。 - 我会回答！"
       ],
       [
-        "Where did they go?",
-        "他们去哪儿了？"
-      ],
-      [
-        "Who told you that?",
-        "谁告诉你这个的？"
+        "It will be cold tomorrow.",
+        "明天会很冷。"
       ]
     ]
   },
-  "a2_05": {
-    "text": "was / were - 动词过去式",
-    "note": "I/he/she/it was. You/we/they were.",
-    "exp": "动词<em>to be</em>的过去式：<br>• <em>was</em> - 与我、他、她、它<br>• <em>were</em> - 与你、我们、他们<br><br>否定：<em>wasn't / weren't</em><br>问题：<em>Was she...? Were they...?</em>",
-    "exc": "",
+  "a2_07": {
+    "text": "去 - 意图和明显的预测",
+    "note": "I'm going to visit Paris. Look out — you're going to fall!",
+    "exp": "<em>going to</em>用于：<br>1. <strong>预先制定的决定和意图</strong>：<em>I'm going to start a diet next week.</em><br>2. <strong>有明显迹象的预测</strong>：<em>Look at those clouds — it's going to rain!</em><br><br>形式：<em>am/is/are + getting to + 不定式</em>",
+    "exc": "<em>will vs going to</em>：<em>\"I'll have coffee\"</em> - 我现在就决定； <em>\"I'm going to have coffee\"</em> - 我早就决定了。",
     "tip": "",
     "mistakes": [
       "<s>I am going to will do</s> - 只有一件事：<em>I'm going to do</em>",
@@ -821,54 +872,6 @@
     },
     "ex": [
       [
-        "I was very tired last night.",
-        "昨晚我很累。"
-      ],
-      [
-        "They were at home all day.",
-        "他们一整天都待在家里。"
-      ],
-      [
-        "Was it expensive?",
-        "贵吗？"
-      ]
-    ]
-  },
-  "a2_06": {
-    "text": "意志——预测和自发决定",
-    "note": "I'll call you back. It will rain tomorrow. I'll have the pasta.",
-    "exp": "<em>will</em> 用于：<br>1。 <strong>自发决定</strong>（在演讲时做出）：<em>I'll help you with that.</em><br>2.没有具体计划的<strong>预测</strong>：<em>I think it will rain.</em><br>3. <strong>承诺</strong>：<em>I won't tell anyone.</em><br>4. <strong>请求</strong>：<em>Will you open the window?</em><br><br>缩写：<em>'ll</em>。否定：<em>won't</em>（=不会）。",
-    "exc": "",
-    "tip": "",
-    "mistakes": [
-      "<s>I will to go</s> → 我<em>will go</em>（不带to）",
-      "<s>She wills come</s> → 她会来（意愿不会改变）"
-    ],
-    "markers": null,
-    "ex": [
-      [
-        "The phone is ringing. — I'll get it!",
-        "电话响了。 - 我会回答！"
-      ],
-      [
-        "It will be cold tomorrow.",
-        "明天会很冷。"
-      ]
-    ]
-  },
-  "a2_07": {
-    "text": "去 - 意图和明显的预测",
-    "note": "I'm going to visit Paris. Look out — you're going to fall!",
-    "exp": "<em>going to</em>用于：<br>1. <strong>预先制定的决定和意图</strong>：<em>I'm going to start a diet next week.</em><br>2. <strong>有明显迹象的预测</strong>：<em>Look at those clouds — it's going to rain!</em><br><br>形式：<em>am/is/are + getting to + 不定式</em>",
-    "exc": "<em>will vs going to</em>：<em>\"I'll have coffee\"</em> - 我现在就决定； <em>\"I'm going to have coffee\"</em> - 我早就决定了。",
-    "tip": "",
-    "mistakes": [
-      "<s>She is going to does</s> → She is going to <em>do</em>",
-      "<s>I am going to will do</s> - 你不能有两个未来"
-    ],
-    "markers": null,
-    "ex": [
-      [
         "I'm going to study medicine.",
         "我要去学医。"
       ],
@@ -885,9 +888,10 @@
     "exc": "",
     "tip": "标记：现在、此刻、目前、本周/本月。",
     "mistakes": [
-      "<s>I was visit</s> → I was <em>visiting</em>",
-      "<s>She were working</s> → She <em>was</em> working (she/he/it → was)",
-      "<s>At 8 I was work</s> → I was <em>working</em>"
+      "<s>I am work now</s> → I am <em>working</em> now",
+      "<s>She working now</s> → She <em>is</em> working now",
+      "<s>She is going to school every day</s> → 她<em>goes</em>（习惯=简单现在时）",
+      "<s>He is wanting</s> → He <em>wants</em> (stative verb)"
     ],
     "markers": {
       "tags": [
@@ -1577,9 +1581,7 @@
         "all evening",
         "all week",
         "lately",
-        "recently",
-        "these days",
-        "still"
+        "recently"
       ],
       "note": "现在完成进行时强调持续时间而不是结果。"
     },
@@ -1616,8 +1618,7 @@
         "when (+ Past Simple)",
         "as",
         "at that moment",
-        "in the middle of",
-        "during"
+        "in the middle of"
       ],
       "note": "while/as → 背景（过去进行时）；当→事件（过去简单）。"
     },
@@ -1648,8 +1649,7 @@
         "as",
         "when",
         "at the moment when",
-        "just as",
-        "during"
+        "just as"
       ],
       "note": "while +过去进行时（背景）+when +过去简单（事件）。"
     },

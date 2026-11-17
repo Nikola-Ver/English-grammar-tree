@@ -34,7 +34,7 @@ Grammar textbooks are long. Apps are noisy. **English Grammar Tree** is a single
 <td width="50%">
 
 ### 🌳 Grow your grammar tree
-Daily 5-minute sessions with spaced repetition, 43 rule-linked games, streaks, badges and level exams. Every rule is a leaf that buds, blossoms and bears fruit as you master it.
+Daily 5-minute sessions with spaced repetition, 43 rule-linked games, streaks, badges and level exams. Your progress is a painted tree: bare at first, then every rule you learn puts leaves, blossom and finally an apple on its own twigs.
 
 </td>
 <td width="50%">
@@ -53,7 +53,7 @@ All CEFR levels — **A1 · A2 · B1 · B2 · C1 · C2** — with 143+ rules, ex
 </td>
 <td width="50%">
 
-### 🕰 All 12 tenses, one clear tree
+### 🕰 All 13 tenses, one clear tree
 A decision tree guides you from "what are you trying to say?" to the right tense, backed by a visual timeline and side-by-side **tense comparisons**.
 
 </td>
@@ -97,9 +97,12 @@ A polished **light/dark theme** (no flash on load), particle animations on rule 
 The **Today** tab (the default) turns the reference into a daily habit. A greeting card shows your 🔥 streak, the daily XP ring and your level, nudges you with what matters most right now (a streak at risk, leaves to water, XP left to the goal) and puts **one big button** in front of you: the daily session. Everything else sits behind a sticky switcher — **Tree · Games · Leaderboard · Progress · Badges**.
 
 **🌳 Tree**
-- A real tree: a bark-textured trunk with roots, one branch per CEFR level, **one twig per topic** and **one leaf per rule** (143 leaves).
-- Leaves grow 🌰 bud → 🌱 sprout → 🍃 leaf → 🌸 blossom → 🍎 apple as you *prove* you know a rule, and curl up 🍂 when it's time to review. The foliage around each branch fills in as the level blooms, and branches sway gently (off when *reduce motion* is on).
-- Tap any leaf to open the rule or practise it. **Level exams** (20 mixed questions, 80% to pass) earn a 👑 on the branch and a downloadable certificate.
+- A painted tree in a meadow: one limb per CEFR level, and every one of the 143 rules owns its own twigs and its own area of the crown.
+- The tree starts bare. A rule grows 🌰 bud → 🌱 young leaves → 🍃 full leaves → 🌸 blossom → 🍎 apple as you *prove* you know it. Leaves yellow 🍂 at the tips when it's time to review, and a rule you keep getting wrong in real use turns fully yellow with a red ring.
+- Each limb carries a wooden sign with its level and count. A level in full bloom gets extra blossom and a gold sign.
+- Point at the crown to see a rule's area and name; tap it to open the rule or practise it. Every rule is also reachable by keyboard and screen reader.
+- The meadow follows your clock — night, sunrise, afternoon, sunset — and the limbs sway in the wind while leaves drift down (off when *reduce motion* is on, paused when the tree is off-screen).
+- **Level exams** (20 mixed questions, 80% to pass) earn a 👑 on the level's sign and a downloadable certificate.
 
 **🎯 Learning loop**
 - **Daily session** — 12 short exercises (~5 min): due reviews first, your recent mistakes, then a few items from the next new rule. Spaced repetition (Leitner boxes: 1 → 3 → 7 → 14 → 30 → 60 → 120 days) decides what comes back and when.
@@ -123,7 +126,11 @@ The **Today** tab (the default) turns the reference into a daily habit. A greeti
 - **Word traps** — false friends (*magazine ≠ магазин*), word partners (*make* vs *do*, *take a photo*), phrasal verbs and verb + preposition (*depend on*, *wait for*).
 - **«Как не звучать грубо»** — turn direct Russian-style requests into natural, polite English.
 
-**🤖 Claude connector** — connect Claude (Desktop or Claude Code) to your account with a small local program: Claude reads your progress, corrects your English in real conversations and reports each mistake against a rule. A rule you keep breaking is marked **shaky** — even if it is ticked as done — and returns to your daily session until you get its exercises right on 3 different days. Runs on your computer, syncs once a day or on request; see [mcp/README.md](mcp/README.md).
+**🤖 Claude connector** — connect Claude (Desktop or Claude Code) to your account with a small local program. No server and no paid plan: it runs on your computer and syncs once a day or on request. See [mcp/README.md](mcp/README.md).
+- **Reads your progress** — level, streak, the stage of every rule, weakest rules and traps.
+- **Corrects you in real conversations** and logs each mistake against a rule. A rule you keep breaking is marked **shaky** — even if it is ticked as done — and returns to your daily session until you get its exercises right on 3 different days.
+- **Flags a rule as shaky itself** when it sees you don't really command it, with a one-line reason shown in the app.
+- **Drills count as real practice** — Claude asks the app's own exercises in chat: correct answers move the rule forward on your tree, wrong ones come back for review, and a finished round counts as a session towards your daily goal and streak.
 
 **📊 Progress** — XP per day, a 16-week activity heatmap, mastery by level (Grammar and Murphy books), your weakest rules, and practice settings (daily goal, sound, placement, reset).
 
@@ -176,7 +183,7 @@ Each rule card contains everything you need in one place:
 
 ![Tenses timeline + decision tree](screenshots/tense-tree.png)
 
-- **Timeline visualization** — see at a glance how all 12 tenses line up across past, present, and future
+- **Timeline visualization** — see at a glance how all 13 tenses line up across past, present, and future — from Present Simple to Future Perfect Continuous
 - **Interactive decision tree** — a few guided questions and you land on the right tense, with formula, examples, and pitfalls
 - **Formulas, markers, examples, common mistakes** — always one tap away
 
@@ -332,8 +339,9 @@ english-grammar-tree/
 │   ├── i18n/               # Locales, AI prompt templates, rule translations
 │   ├── services/           # Firestore service, sync registry
 │   └── utils/              # Deep links, selection, clipboard, particles
-├── public/                 # PWA assets
-├── scripts/                # Build / maintenance scripts
+├── mcp/                    # Local Claude connector (MCP server) — see mcp/README.md
+├── public/                 # PWA assets and the tree artwork (public/tree)
+├── scripts/                # Build / maintenance scripts and tests
 └── screenshots/
 ```
 
@@ -355,6 +363,9 @@ npm run build
 
 # Deploy to Firebase (hosting + Firestore rules and indexes)
 npm run deploy
+
+# Build the local Claude connector (mcp/dist/index.js)
+npm run build:mcp
 ```
 
 The leaderboard and friends need the Firestore **security rules** (`firestore.rules`) and **composite indexes** (`firestore.indexes.json`) from this repo. Deploy them on their own with:
@@ -372,7 +383,7 @@ npm run lint      # Biome lint check
 npm run format    # Auto-format
 npm run check     # Format + lint fix
 npm run preview   # Preview production build
-npm test          # Unit tests (SRS, sync diffing, social helpers, translation grading, traps) + content validator + translation check
+npm test          # Unit tests (SRS, sync diffing, social helpers, translation grading, traps, Claude connector, tree layout) + content validator + translation check
 ```
 
 ---

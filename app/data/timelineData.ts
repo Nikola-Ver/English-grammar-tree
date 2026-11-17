@@ -137,4 +137,15 @@ export const TL_DATA: TimelineEntry[] = [
     dotEnd: true,
     descKey: 'timeline.row.future_perfect',
   },
+  {
+    key: 'future_perfect_continuous',
+    label: 'FP Cont.',
+    color: '#4ade80',
+    row: 12,
+    start: -2,
+    end: 5,
+    type: 'bar',
+    dotEnd: true,
+    descKey: 'timeline.row.future_perfect_continuous',
+  },
 ];

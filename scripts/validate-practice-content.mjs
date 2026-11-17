@@ -43,6 +43,7 @@ const TENSES = new Set([
   'future_going_to',
   'future_continuous',
   'future_perfect',
+  'future_perfect_continuous',
 ]);
 const TASKS = new Set([
   'build',

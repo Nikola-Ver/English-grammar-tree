@@ -596,6 +596,56 @@ export const TENSE_SENTENCES: TenseSentence[] = [
     tense: 'future_perfect',
     rules: ['b1_25'],
   },
+
+  // ── Future Perfect Continuous ──────────────────────────────────────────────
+  {
+    id: 'ts_097',
+    text: 'By next June, I will have been living in this city for ten years.',
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
+  {
+    id: 'ts_098',
+    text: 'By the time the film starts, we will have been queuing for an hour.',
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
+  {
+    id: 'ts_099',
+    text: 'How long will you have been working here by the end of the year?',
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
+  {
+    id: 'ts_100',
+    text: "By six o'clock, she will have been driving for eight hours without a break.",
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
+  {
+    id: 'ts_101',
+    text: 'Next month, they will have been building that bridge for three years.',
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
+  {
+    id: 'ts_102',
+    text: "He won't have been studying long enough to pass the exam by May.",
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
+  {
+    id: 'ts_103',
+    text: 'By the time he retires, he will have been teaching for forty years.',
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
+  {
+    id: 'ts_104',
+    text: 'At midnight, the band will have been playing for five hours.',
+    tense: 'future_perfect_continuous',
+    rules: ['c2_14'],
+  },
 ];
 
 export const TENSE_DRILLS: Seed[] = [

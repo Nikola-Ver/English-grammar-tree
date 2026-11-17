@@ -110,7 +110,8 @@
       "future_will": "Решение/предсказание о будущем",
       "future_going_to": "Запланированное намерение",
       "future_continuous": "Действие будет в процессе в момент будущего",
-      "future_perfect": "Завершится ДО момента в будущем"
+      "future_perfect": "Завершится ДО момента в будущем",
+      "future_perfect_continuous": "Сколько будет длиться К моменту в будущем"
     }
   },
   "tenseTree": {
@@ -152,7 +153,8 @@
       "c0": "Спонтанное решение / обещание / предсказание",
       "c1": "Заранее запланировано / есть признаки",
       "c2": "Будет в процессе в момент будущего",
-      "c3": "Завершится до момента в будущем"
+      "c3": "Завершится до момента в будущем",
+      "c4": "Будет длиться к моменту в будущем (как долго)"
     }
   },
   "tenseUi": {
@@ -248,7 +250,7 @@
       "ex0tr": "Я учу английский уже два года.",
       "ex1": "Why are you tired? — I've been running.",
       "ex1tr": "Почему ты устал? — Бегал.",
-      "m0": "<s>I've been know</s> → stative verbs не в Continuous",
+      "m0": "<s>I've been knowing him for years</s> → I've <em>known</em> him for years",
       "m1": "<s>I've been learning since two years</s> → <em>for</em> two years"
     },
     "past_perfect": {
@@ -304,6 +306,15 @@
       "ex1tr": "К 2030 году они построят мост.",
       "m0": "<s>By Friday I will finish</s> → I will <em>have finished</em>",
       "m1": "<s>I'll have finish</s> → I'll have <em>finished</em>"
+    },
+    "future_perfect_continuous": {
+      "desc": "Сколько времени действие будет продолжаться к определённому моменту в будущем. Важна длительность, а не результат.",
+      "ex0": "By next year, I'll have been studying English for five years.",
+      "ex0tr": "К следующему году я буду учить английский уже пять лет.",
+      "ex1": "By the time you arrive, we'll have been waiting for two hours.",
+      "ex1tr": "К твоему приходу мы будем ждать уже два часа.",
+      "m0": "<s>By June I will have been work here</s> → I will have been <em>working</em> here",
+      "m1": "<s>I will have been knowing him for years</s> → I will <em>have known</em> him for years"
     }
   },
   "practice": {

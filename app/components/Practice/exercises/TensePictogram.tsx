@@ -94,6 +94,12 @@ export function TensePictogram({ tense, size = 1 }: { tense: TenseKey; size?: nu
         {dot(110, true)}
       </g>
     ),
+    future_perfect_continuous: (
+      <g>
+        {wave(70, 104)}
+        {dot(110, true)}
+      </g>
+    ),
   };
 
   return (
