@@ -11,9 +11,9 @@
 [![Firebase](https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![PWA](https://img.shields.io/badge/PWA-ready-5a0fc8?style=for-the-badge&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
 
-![Grammar rules page](screenshots/main-page-dark.png)
+![Your grammar tree: every rule you learn grows leaves, blossom and apples](screenshots/grammar-tree.jpg)
 
-<sub><em>☀️ Light theme · 🌙 Dark theme — switch any time, stays in sync across devices.</em></sub>
+<sub><em>Your progress is a tree. It starts bare; every rule you learn puts leaves, blossom and finally an apple on its own twigs.</em></sub>
 
 </div>
 
@@ -96,13 +96,44 @@ A polished **light/dark theme** (no flash on load), particle animations on rule 
 
 The **Today** tab (the default) turns the reference into a daily habit. A greeting card shows your 🔥 streak, the daily XP ring and your level, nudges you with what matters most right now (a streak at risk, leaves to water, XP left to the goal) and puts **one big button** in front of you: the daily session. Everything else sits behind a sticky switcher — **Tree · Games · Leaderboard · Progress · Badges**.
 
-**🌳 Tree**
+![Today tab: streak, daily goal, the session button and the tree](screenshots/today.jpg)
+
+#### 🌳 The tree — your progress, painted
+
+The tree is the heart of the app. It is not a decoration with a progress bar next to it: **the foliage itself is your progress**. A brand-new learner sees a bare winter tree; a learner who has mastered everything sees a crown heavy with apples.
+
+![The same tree on day one, a few weeks in, and with everything mastered](screenshots/tree-growth.jpg)
+
+**How to read it**
+
+| On the tree | Means |
+|---|---|
+| 🌰 A bud on a bare twig | You haven't started this rule |
+| 🌱 A few pale young leaves | Your first correct answers |
+| 🍃 A full green spray | You're learning the rule |
+| 🌸 Blossom | You know it — it counts as "in bloom" |
+| 🍎 An apple | Long-term memory: mastered |
+| 🍂 Yellow tips | It's due for review |
+| 🟡 A fully yellow spray with a red ring | A **shaky** rule: you keep getting it wrong in real use |
+
+**How it is organised**
+
 - A painted tree in a meadow: one limb per CEFR level, and every one of the 143 rules owns its own twigs and its own area of the crown.
-- The tree starts bare. A rule grows 🌰 bud → 🌱 young leaves → 🍃 full leaves → 🌸 blossom → 🍎 apple as you *prove* you know it. Leaves yellow 🍂 at the tips when it's time to review, and a rule you keep getting wrong in real use turns fully yellow with a red ring.
+- Rules follow the branch in curriculum order, so a topic fills in one sub-branch at a time and you can see where you are in a level.
 - Each limb carries a wooden sign with its level and count. A level in full bloom gets extra blossom and a gold sign.
 - Point at the crown to see a rule's area and name; tap it to open the rule or practise it. Every rule is also reachable by keyboard and screen reader.
 - The meadow follows your clock — night, sunrise, afternoon, sunset — and the limbs sway in the wind while leaves drift down (off when *reduce motion* is on, paused when the tree is off-screen).
 - **Level exams** (20 mixed questions, 80% to pass) earn a 👑 on the level's sign and a downloadable certificate.
+
+![Pointing at the crown shows a rule's area and name; tapping it opens its card](screenshots/tree-rule-card.jpg)
+
+<sub><em>Tap a rule's area to see its stage, your accuracy, and buttons to practise it or open the rule.</em></sub>
+
+The scene follows the time on your device, cross-fading over an hour at each change:
+
+![The meadow at night, sunrise, afternoon and sunset](screenshots/tree-day-cycle.jpg)
+
+Under the hood the tree is a painting cut into a trunk and six limbs, with leaves, blossom and fruit added from painted sprites on mapped twig points. The layout is computed for however many rules a level has, so adding rules never needs new artwork.
 
 **🎯 Learning loop**
 - **Daily session** — 12 short exercises (~5 min): due reviews first, your recent mistakes, then a few items from the next new rule. Spaced repetition (Leitner boxes: 1 → 3 → 7 → 14 → 30 → 60 → 120 days) decides what comes back and when.
@@ -111,7 +142,22 @@ The **Today** tab (the default) turns the reference into a daily habit. A greeti
 - **Placement test** — a 5-minute adaptive test that finds your level and can mark lower levels as known.
 - **Streaks with freezes, a daily XP goal, levels** and **20 badges**.
 
-**🎮 Games** — 43 games, all tied to grammar rules, with **personal recommendations** (the daily challenge plus games at your level you haven't tried) and filters by group: error hunter, right-or-wrong sprint, gap fill, sentence builder, dictation, survival, Murphy drill, tense detective (walk the decision tree), timeline match, marker sort, same scene/two tenses, verb forge, verb memory, article rush, preposition sort, adjective stack, number dictation, question maker, consequence match, transformer (passive), gossip chain (reported speech), verb patterns, modal detective, regret machine (wish), sentence welder (relative clauses), formalizer (inversion), spotlight (cleft), connector bridge, register slider, comma tap and more. **Challenge links** let a friend replay your exact round; the **daily challenge** gives everyone the same 15 questions.
+#### 🎮 Games — 43 ways to practise the same rules
+
+![Games: recommendations on top, then all 43 games with filters by group](screenshots/games.png)
+
+Every game is tied to grammar rules, so playing is never separate from learning: each answer moves the same spaced-repetition schedule as the daily session, earns XP towards your daily goal, and grows the same tree.
+
+- **Recommended for you** — the daily challenge plus games at your level that you haven't tried yet.
+- **Groups** — *Core* (work with every rule), *Tenses & verbs*, *Words & phrases*, *Sentence structures* and *Advanced (C1–C2)*.
+- **Modes** — relaxed rounds, 60-second sprints, and survival with three lives.
+- **Each card shows** the levels it covers, its mode and your best score.
+
+A round is deliberately small: one clear task at a time, instant feedback, and an explanation when you get it wrong.
+
+![A round of Error hunter: tap the word that is wrong](screenshots/game-round.png)
+
+The full list: error hunter, right-or-wrong sprint, gap fill, sentence builder, dictation, survival, Murphy drill, tense detective (walk the decision tree), timeline match, marker sort, same scene/two tenses, verb forge, verb memory, article rush, preposition sort, adjective stack, number dictation, question maker, consequence match, transformer (passive), gossip chain (reported speech), verb patterns, modal detective, regret machine (wish), sentence welder (relative clauses), formalizer (inversion), spotlight (cleft), connector bridge, register slider, comma tap and more. **Challenge links** let a friend replay your exact round; the **daily challenge** gives everyone the same 15 questions.
 
 **🏆 Leaderboard & friends** (signed-in users)
 - Boards: **Friends** (sort by this week's XP, all-time XP or streak), **This week** (everyone, resets every Monday) and **All time**.
@@ -134,6 +180,8 @@ The **Today** tab (the default) turns the reference into a daily habit. A greeti
 
 **📊 Progress** — XP per day, a 16-week activity heatmap, mastery by level (Grammar and Murphy books), your weakest rules, and practice settings (daily goal, sound, placement, reset).
 
+![Progress: XP per day, activity heatmap and mastery by level](screenshots/practice-progress.png)
+
 Exercises come from the existing rule content (≈1,100 common-mistake pairs and ≈300 example sentences are turned into exercises automatically) plus ≈970 hand-written drills in `app/practice/content/`.
 
 #### 💾 How practice is saved
@@ -146,6 +194,10 @@ Exercises come from the existing rule content (≈1,100 common-mistake pairs and
 - **Public profile** (`profiles/{uid}`) is rewritten only when a shown number changes, at most every 30 s (immediately at the end of a session). Leaderboards are cached for a minute; the only live listener is on your own friend requests.
 
 ### 📐 Grammar rules — organized, expandable, searchable
+
+![Grammar rules page](screenshots/main-page-dark.png)
+
+<sub><em>☀️ Light theme · 🌙 Dark theme — switch any time, stays in sync across devices.</em></sub>
 
 ![Opened rule card](screenshots/rules.png)
 
@@ -186,6 +238,10 @@ Each rule card contains everything you need in one place:
 - **Timeline visualization** — see at a glance how all 13 tenses line up across past, present, and future — from Present Simple to Future Perfect Continuous
 - **Interactive decision tree** — a few guided questions and you land on the right tense, with formula, examples, and pitfalls
 - **Formulas, markers, examples, common mistakes** — always one tap away
+
+![Result card for Future Perfect Continuous: formula, time markers, examples and common mistakes](screenshots/tense-future-perfect-continuous.png)
+
+<sub><em>Every tense — including Future Perfect Continuous — ends in a card with its formula, time markers, examples and the mistakes learners make most.</em></sub>
 
 And when two tenses feel confusingly similar, compare them side-by-side:
 
