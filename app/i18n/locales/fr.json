@@ -407,7 +407,8 @@
       "name3": "Fleur – maîtrisée",
       "name4": "Fruit – mémoire à long terme",
       "nameClaimed": "Marquée comme connue",
-      "wilting": "à réviser"
+      "wilting": "à réviser",
+      "shaky": "fragile"
     },
     "badges": {
       "first_step": {
@@ -534,7 +535,8 @@
       "meta": "{{mastered}}/{{total}} règles en fleur",
       "wilting": "{{n}} à réviser",
       "aria": "Arbre de grammaire : une branche par niveau, une feuille par règle",
-      "hint": "Touchez une feuille pour voir la règle et la pratiquer"
+      "hint": "Touchez une feuille pour voir la règle et la pratiquer",
+      "failed": "L’arbre n’a pas pu être chargé. Vérifiez la connexion et rechargez."
     },
     "accuracy": "{{pct}} % de réussite",
     "itemsSeen": "{{seen}}/{{total}} exercices essayés",
@@ -900,6 +902,22 @@
       "w_phrasal": "Verbes à particule",
       "w_verb_prep": "Verbes et prépositions",
       "w_polite": "Rester poli"
+    },
+    "claude": {
+      "title": "Claude a remarqué",
+      "meta": "erreurs de vos vraies conversations",
+      "shakyHint": "Vous continuez à faire des erreurs sur cette règle en écrivant pour de vrai. Elle reste signalée jusqu’à ce que vous répondiez correctement à ses exercices 3 jours différents.",
+      "remove": "Retirer cette erreur",
+      "showAll": "Tout afficher ({{n}})",
+      "clear": "Tout supprimer",
+      "clearConfirm": "Supprimer toutes les erreurs signalées par Claude ?",
+      "connectTitle": "Connecter Claude sur cet ordinateur",
+      "connectBody": "Le connecteur Claude lancé sur cet ordinateur demande à lire votre progression et à ajouter les erreurs qu’il remarque quand vous écrivez en anglais.",
+      "connectWarn": "N’autorisez que si vous venez de lancer vous-même la connexion depuis Claude. Votre session est transmise au programme sur cet ordinateur et nulle part ailleurs.",
+      "connectAllow": "Autoriser",
+      "connectCancel": "Annuler",
+      "connectSignIn": "Connectez-vous d’abord à votre compte, puis autorisez la connexion.",
+      "signIn": "Se connecter"
     }
   },
   "social": {

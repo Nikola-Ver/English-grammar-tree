@@ -407,7 +407,8 @@
       "name3": "Blüte – beherrscht",
       "name4": "Frucht – Langzeitgedächtnis",
       "nameClaimed": "Als bekannt markiert",
-      "wilting": "muss wiederholt werden"
+      "wilting": "muss wiederholt werden",
+      "shaky": "wackelig"
     },
     "badges": {
       "first_step": {
@@ -534,7 +535,8 @@
       "meta": "{{mastered}}/{{total}} Regeln in Blüte",
       "wilting": "{{n}} zu wiederholen",
       "aria": "Grammatikbaum: ein Ast pro Niveau, ein Blatt pro Regel",
-      "hint": "Tippe auf ein Blatt, um die Regel zu sehen und zu üben"
+      "hint": "Tippe auf ein Blatt, um die Regel zu sehen und zu üben",
+      "failed": "Der Baum konnte nicht geladen werden. Prüfe die Verbindung und lade neu."
     },
     "accuracy": "{{pct}} % Genauigkeit",
     "itemsSeen": "{{seen}}/{{total}} Übungen probiert",
@@ -900,6 +902,22 @@
       "w_phrasal": "Phrasal Verbs",
       "w_verb_prep": "Verben mit Präpositionen",
       "w_polite": "Höflich klingen"
+    },
+    "claude": {
+      "title": "Claude hat bemerkt",
+      "meta": "Fehler aus deinen echten Gesprächen",
+      "shakyHint": "Du machst bei dieser Regel im echten Schreiben immer wieder Fehler. Die Markierung bleibt, bis du ihre Übungen an 3 verschiedenen Tagen richtig beantwortest.",
+      "remove": "Diesen Fehler entfernen",
+      "showAll": "Alle {{n}} anzeigen",
+      "clear": "Alle löschen",
+      "clearConfirm": "Alle von Claude gemeldeten Fehler löschen?",
+      "connectTitle": "Claude auf diesem Computer verbinden",
+      "connectBody": "Der Claude-Connector auf diesem Computer möchte deinen Übungsfortschritt lesen und Fehler hinzufügen, die er bemerkt, wenn du auf Englisch schreibst.",
+      "connectWarn": "Erlaube das nur, wenn du die Verbindung gerade selbst in Claude gestartet hast. Deine Anmeldung wird nur an das Programm auf diesem Computer übergeben.",
+      "connectAllow": "Erlauben",
+      "connectCancel": "Abbrechen",
+      "connectSignIn": "Melde dich zuerst in deinem Konto an und erlaube dann die Verbindung.",
+      "signIn": "Anmelden"
     }
   },
   "social": {

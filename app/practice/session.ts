@@ -6,6 +6,7 @@ import { listCuratedComparisons } from '../data/tenseComparisons';
 import { TENSES } from '../data/tenses';
 import type { DoneMap } from '../hooks/useProgress';
 import type { UiLang } from '../i18n/localizeRules';
+import { shakyRuleIds } from './claude';
 import type { DrillSetKey } from './content';
 import { IRREGULAR_VERBS } from './content';
 import type { TenseKey, TrapKey } from './content/types';
@@ -229,6 +230,15 @@ export function buildDaily(ctx: BuildCtx): DailyPlan {
       }
     }
   };
+  // rules Claude keeps catching the learner on come first
+  const today = dayNumber();
+  const shaky = shakyRuleIds(ctx.state)
+    .flatMap((r) => ctx.state.shaky[r].items)
+    .filter((id) => {
+      const st = ctx.state.items[id];
+      return inMistakeDeck(st) && st.d <= today && ctx.index.items.has(id);
+    });
+  take(shuffle(shaky, ctx.rng), 4);
   take(due, 7);
   take(deck, 2);
   // two items aimed at the learner's weakest Russian-speaker trap

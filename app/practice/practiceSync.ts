@@ -12,6 +12,7 @@
  */
 import { deleteDoc, doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { pullClaudeLog, stopClaudeLog } from './claudeLog';
 import {
   applyRemote,
   getState,
@@ -91,6 +92,8 @@ async function pull(): Promise<void> {
       lastSynced = null;
     }
     ready = true;
+    // Mistakes reported by the Claude connector (applied on top of the merged state).
+    void pullClaudeLog(uid);
     // Upload whatever this device has that the server lacks.
     if (practicePatch(getState(), lastSynced)) await pushNow();
   } catch {
@@ -137,6 +140,7 @@ export function stopPracticeSync() {
   lastSynced = null;
   ready = false;
   setLocalChangeHook(null);
+  stopClaudeLog();
   document.removeEventListener('visibilitychange', onVisibility);
   window.removeEventListener('pagehide', onPageHide);
   window.removeEventListener('online', onOnline);
@@ -149,4 +153,5 @@ export function flushPracticeSync(): Promise<void> {
 
 export async function deletePracticeData(uid: string) {
   await deleteDoc(ref(uid));
+  await deleteDoc(doc(db, 'users', uid, 'practice', 'claude'));
 }

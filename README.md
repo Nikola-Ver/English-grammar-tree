@@ -123,6 +123,8 @@ The **Today** tab (the default) turns the reference into a daily habit. A greeti
 - **Word traps** — false friends (*magazine ≠ магазин*), word partners (*make* vs *do*, *take a photo*), phrasal verbs and verb + preposition (*depend on*, *wait for*).
 - **«Как не звучать грубо»** — turn direct Russian-style requests into natural, polite English.
 
+**🤖 Claude connector** — connect Claude (Desktop or Claude Code) to your account with a small local program: Claude reads your progress, corrects your English in real conversations and reports each mistake against a rule. A rule you keep breaking is marked **shaky** — even if it is ticked as done — and returns to your daily session until you get its exercises right on 3 different days. Runs on your computer, syncs once a day or on request; see [mcp/README.md](mcp/README.md).
+
 **📊 Progress** — XP per day, a 16-week activity heatmap, mastery by level (Grammar and Murphy books), your weakest rules, and practice settings (daily goal, sound, placement, reset).
 
 Exercises come from the existing rule content (≈1,100 common-mistake pairs and ≈300 example sentences are turned into exercises automatically) plus ≈970 hand-written drills in `app/practice/content/`.

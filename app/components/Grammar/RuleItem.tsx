@@ -191,13 +191,20 @@ export function RuleItem({
           {rule.note && <span className="rule-note">{rule.note}</span>}
         </div>
         <div className="rule-actions">
-          {m && (m.stage > 0 || m.wilting) && (
-            <span
-              className={`rule-stage${m.wilting ? ' wilting' : ''}`}
-              title={`${t(`practice.stage.name${m.stage}`)}${m.wilting ? ` · ${t('practice.stage.wilting')}` : ''}`}
-            >
-              {m.wilting ? '🍂' : STAGE_ICONS[m.stage]}
+          {m?.shaky ? (
+            <span className="rule-stage shaky" title={t('practice.claude.shakyHint')}>
+              ⚠️ {t('practice.stage.shaky')}
             </span>
+          ) : (
+            m &&
+            (m.stage > 0 || m.wilting) && (
+              <span
+                className={`rule-stage${m.wilting ? ' wilting' : ''}`}
+                title={`${t(`practice.stage.name${m.stage}`)}${m.wilting ? ` · ${t('practice.stage.wilting')}` : ''}`}
+              >
+                {m.wilting ? '🍂' : STAGE_ICONS[m.stage]}
+              </span>
+            )
           )}
           {canPractise && (
             <button

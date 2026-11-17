@@ -2,6 +2,13 @@
  * Practice state: SRS item states, daily activity, streak, XP, scores and badges.
  * Local-first (localStorage), merged with Firestore by practiceSync when signed in.
  */
+import {
+  applyClaudeMistakes,
+  type ClaudeAnswer,
+  type ClaudeMistake,
+  isShaky,
+  type ShakyEntry,
+} from './claude.ts';
 import { dayKey, dayNumber, type ItemState, markKnown, review } from './srs.ts';
 
 export interface DayStat {
@@ -46,6 +53,10 @@ export interface PracticeState {
   bosses: Record<string, { best: number; passedAt?: number }>;
   games: Record<string, { best: number; plays: number }>;
   xp: number;
+  /** rules flagged by repeated real-world mistakes reported through the Claude connector */
+  shaky: Record<string, ShakyEntry>;
+  /** upload time of the newest connector mistake already applied to `items` */
+  claudeAt: number;
   updatedAt: number;
   /** set by "reset practice progress"; data older than this is discarded on merge */
   resetAt?: number;
@@ -69,6 +80,8 @@ export function emptyState(): PracticeState {
     bosses: {},
     games: {},
     xp: 0,
+    shaky: {},
+    claudeAt: 0,
     updatedAt: 0,
   };
 }
@@ -318,9 +331,64 @@ export function awardBadges(ids: string[]): string[] {
   return fresh;
 }
 
+/**
+ * Apply mistakes reported by the Claude connector that this state has not seen yet.
+ * Returns true when something changed.
+ */
+export function ingestClaudeMistakes(
+  mistakes: ClaudeMistake[],
+  itemsOfRule: (ruleId: string) => string[] | undefined,
+): boolean {
+  const now = Date.now();
+  const next = applyClaudeMistakes(state, mistakes, itemsOfRule, now);
+  if (!next) return false;
+  const { answers, sessions, ...slice } = next;
+  commit({ ...state, ...slice, ...creditClaudePractice(state, answers, sessions), updatedAt: now });
+  return true;
+}
+
+/**
+ * Count answers given in Claude drills like answers given in the app, on the day they were
+ * given: XP, the daily goal and the streak. Finished rounds count as sessions.
+ */
+export function creditClaudePractice(
+  s: PracticeState,
+  answers: ClaudeAnswer[],
+  sessions: number[],
+): Pick<PracticeState, 'days' | 'streak' | 'xp' | 'games'> {
+  const days = { ...s.days };
+  let { streak, xp } = s;
+  const dayOf = (t: number) => {
+    const key = dayKey(dayNumber(t));
+    days[key] = { ...(days[key] ?? { xp: 0, n: 0, c: 0, s: 0, ms: 0 }) };
+    return days[key];
+  };
+  for (const a of answers) {
+    const day = dayOf(a.t);
+    const gained = a.correct ? XP_CORRECT : XP_WRONG;
+    const before = day.xp;
+    day.xp += gained;
+    day.n += 1;
+    if (a.correct) day.c += 1;
+    xp += gained;
+    const dayNo = dayNumber(a.t);
+    if (before < s.settings.goal && day.xp >= s.settings.goal && dayNo > streak.last) {
+      streak = applyGoalMet(streak, dayNo);
+    }
+  }
+  let games = s.games;
+  if (sessions.length) {
+    for (const t of sessions) dayOf(t).s += 1;
+    const prev = games.claude ?? { best: 0, plays: 0 };
+    games = { ...games, claude: { best: prev.best, plays: prev.plays + sessions.length } };
+  }
+  return { days, streak, xp, games };
+}
+
 export function resetPractice() {
   const now = Date.now();
-  commit({ ...emptyState(), resetAt: now, updatedAt: now });
+  // keep the connector high-water mark so old Claude mistakes are not applied again
+  commit({ ...emptyState(), claudeAt: state.claudeAt, resetAt: now, updatedAt: now });
 }
 
 // ---------------------------------------------------------------------------
@@ -376,6 +444,18 @@ export function mergeStates(a0: PracticeState, b0: PracticeState): PracticeState
     const cur = games[k];
     games[k] = cur ? { best: Math.max(cur.best, v.best), plays: Math.max(cur.plays, v.plays) } : v;
   }
+  const shaky: Record<string, ShakyEntry> = { ...(a.shaky ?? {}) };
+  for (const [r, e] of Object.entries(b.shaky ?? {})) {
+    const cur = shaky[r];
+    if (!cur) shaky[r] = e;
+    else {
+      // an entry that has recovered is superseded by a newer flag; otherwise keep both item lists
+      const [old, fresh] = e.t >= cur.t ? [cur, e] : [e, cur];
+      shaky[r] = isShaky(old, items)
+        ? { t: fresh.t, items: [...new Set([...old.items, ...fresh.items])] }
+        : fresh;
+    }
+  }
   return {
     v: 1,
     items,
@@ -386,6 +466,8 @@ export function mergeStates(a0: PracticeState, b0: PracticeState): PracticeState
     bosses,
     games,
     xp: Math.max(a.xp, b.xp ?? 0),
+    shaky,
+    claudeAt: Math.max(a.claudeAt ?? 0, b.claudeAt ?? 0),
     updatedAt: Math.max(a.updatedAt, b.updatedAt ?? 0),
     ...(Math.max(ra, rb) ? { resetAt: Math.max(ra, rb) } : {}),
   };
@@ -405,10 +487,12 @@ export function normalizeState(raw: Partial<PracticeState> | undefined): Practic
     badges: raw.badges ?? {},
     bosses: raw.bosses ?? {},
     games: raw.games ?? {},
+    shaky: raw.shaky ?? {},
+    claudeAt: raw.claudeAt ?? 0,
   };
 }
 
-const TOP_LEVEL_MAPS = ['streak', 'settings', 'badges', 'bosses', 'games'] as const;
+const TOP_LEVEL_MAPS = ['streak', 'settings', 'badges', 'bosses', 'games', 'shaky'] as const;
 
 /**
  * Smallest Firestore update that brings `base` (what the server has) up to `cur`.
@@ -438,6 +522,7 @@ export function practicePatch(
     if (JSON.stringify(cur[key]) !== JSON.stringify(base[key])) patch[key] = cur[key];
   }
   if (cur.xp !== base.xp) patch.xp = cur.xp;
+  if (cur.claudeAt !== base.claudeAt) patch.claudeAt = cur.claudeAt;
   if (Object.keys(patch).length === 0) return null;
   patch.updatedAt = cur.updatedAt;
   patch.v = 1;

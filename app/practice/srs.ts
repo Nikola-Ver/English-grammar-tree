@@ -111,6 +111,8 @@ export interface RuleMastery {
   stage: Stage;
   /** 0..1 progress within the mastery scale */
   score: number;
+  /** flagged by repeated real-world mistakes (Claude connector) and not retrained yet */
+  shaky?: boolean;
   /** some practised item is overdue → the leaf is wilting */
   wilting: boolean;
   dueCount: number;

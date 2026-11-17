@@ -2,6 +2,11 @@ import { lazy, Suspense, useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './styles/base.css';
 import { Header } from './components/Header/Header';
+import {
+  ClaudeConnect,
+  type ConnectRequest,
+  parseConnectHash,
+} from './components/Practice/ClaudeConnect';
 import { PracticeProvider } from './components/Practice/PracticeProvider';
 import { Tabs } from './components/Tabs';
 import { AuthSyncProvider, useAuthSync } from './context/AuthSyncContext';
@@ -61,6 +66,7 @@ function AppContent() {
   const [activeTab, setActiveTab] = useState<Tab>(initialTab);
   const [challenge, setChallenge] = useState<Challenge | null>(null);
   const [inviteCode, setInviteCode] = useState<string | null>(null);
+  const [connectReq, setConnectReq] = useState<ConnectRequest | null>(null);
   /** bumps when a rule is opened from practice so the tab remounts and scrolls to it */
   const [ruleNav, setRuleNav] = useState(0);
   const [view, setView] = useState<View>('main');
@@ -92,6 +98,12 @@ function AppContent() {
   }, [activeTab]);
 
   useEffect(() => {
+    const connect = parseConnectHash();
+    if (connect) {
+      setConnectReq(connect);
+      history.replaceState(null, '', location.pathname + location.search);
+      return;
+    }
     const friendCode = parseFriendHash();
     if (friendCode) {
       setInviteCode(friendCode);
@@ -179,6 +191,14 @@ function AppContent() {
           onAvatarClick={handleAvatarClick}
           onTitleClick={handleBackToMain}
         />
+
+        {connectReq && view !== 'auth' && (
+          <ClaudeConnect
+            request={connectReq}
+            onClose={() => setConnectReq(null)}
+            onSignIn={() => setView('auth')}
+          />
+        )}
 
         {view === 'auth' && (
           <Suspense fallback={<TabSuspenseFallback />}>

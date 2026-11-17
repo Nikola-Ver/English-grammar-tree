@@ -1,0 +1,16 @@
+{
+  "name": "english-grammar-tree-mcp",
+  "version": "0.1.0",
+  "description": "Local Claude connector for English Grammar Tree: Claude reads your progress, corrects your English and sends your real mistakes back to the app.",
+  "type": "module",
+  "bin": {
+    "english-grammar-tree-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

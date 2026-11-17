@@ -6,6 +6,7 @@ import { DATA } from '../data/grammar';
 import { MURPHY_DATA } from '../data/murphy';
 import { readDoneMap } from '../hooks/useProgress';
 import { getRuleContentBundle, normalizeUiLang, type UiLang } from '../i18n/localizeRules';
+import { shakyRuleIds } from './claude';
 import { getPracticeIndex, type PracticeIndex } from './items';
 import type { CtxBase } from './spec';
 import { canSpeak } from './speech';
@@ -36,6 +37,10 @@ export function masteryMap(index: PracticeIndex, state: PracticeState): Map<stri
   const map = new Map<string, RuleMastery>();
   for (const id of index.rules.keys())
     map.set(id, ruleMastery(index.byRule.get(id), state.items, today));
+  for (const id of shakyRuleIds(state)) {
+    const m = map.get(id);
+    if (m) m.shaky = true;
+  }
   return map;
 }
 
@@ -73,6 +78,7 @@ export function trackStorageKey(index: PracticeIndex, ruleId: string): string | 
 
 export * from './achievements';
 export * from './challenge';
+export * from './claude';
 export * from './games';
 export * from './items';
 export * from './session';

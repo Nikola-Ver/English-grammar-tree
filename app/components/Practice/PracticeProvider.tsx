@@ -9,12 +9,14 @@ import {
   useMemo,
   useRef,
   useState,
+  useSyncExternalStore,
 } from 'react';
 import { useTranslation } from 'react-i18next';
+import { getClaudeLog, subscribeClaudeLog } from '../../practice/claudeLog';
 import { flushPracticeSync } from '../../practice/practiceSync';
 import type { PracticeRequest } from '../../practice/spec';
 import type { RuleMastery } from '../../practice/srs';
-import { getState } from '../../practice/store';
+import { getState, ingestClaudeMistakes } from '../../practice/store';
 import { usePracticeState } from '../../practice/usePracticeState';
 import { getSocialState, publishProfile } from '../../social/social';
 
@@ -80,6 +82,12 @@ export function PracticeProvider({ children, onOpenRule }: Props) {
     [engine, index, state],
   );
 
+  // Mistakes reported by the Claude connector send items of that rule back to training.
+  const claudeLog = useSyncExternalStore(subscribeClaudeLog, getClaudeLog, getClaudeLog);
+  useEffect(() => {
+    if (index && claudeLog.length) ingestClaudeMistakes(claudeLog, (r) => index.byRule.get(r));
+  }, [index, claudeLog]);
+
   // Installed-PWA icon badge: number of wilting rules.
   useEffect(() => {
     if (!mastery) return;
@@ -88,7 +96,7 @@ export function PracticeProvider({ children, onOpenRule }: Props) {
       clearAppBadge?: () => Promise<void>;
     };
     let wilting = 0;
-    for (const m of mastery.values()) if (m.wilting) wilting++;
+    for (const m of mastery.values()) if (m.wilting || m.shaky) wilting++;
     try {
       if (wilting > 0) void nav.setAppBadge?.(wilting).catch(() => {});
       else void nav.clearAppBadge?.().catch(() => {});

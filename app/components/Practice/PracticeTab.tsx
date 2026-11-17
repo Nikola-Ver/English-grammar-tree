@@ -28,6 +28,7 @@ import { usePracticeState } from '../../practice/usePracticeState';
 import { SYNC_APPLIED_EVENT } from '../../services/syncRegistry';
 import { useSocial } from '../../social/stats';
 import { LeaderboardPanel } from '../Social/LeaderboardPanel';
+import { ClaudeCard } from './ClaudeCard';
 import { GamesSection } from './GamesSection';
 import { usePractice } from './PracticeProvider';
 import { ProgressPanel } from './ProgressPanel';
@@ -457,6 +458,7 @@ export function PracticeTab({
 
       {section === 'progress' && (
         <>
+          <ClaudeCard state={state} ruleTitle={title} />
           <TrapsCard index={index} state={state} />
           <section className="pr-card">
             <div className="pr-card-head">

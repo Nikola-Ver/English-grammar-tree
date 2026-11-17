@@ -20,13 +20,8 @@
   --pr-h3: #6da7ec;
   --pr-h4: #b7d3f6;
   --pr-overlay: rgba(6, 8, 12, 0.72);
-  --pr-bark-dark: #4a3020;
-  --pr-bark-light: #8a5d3b;
-  --pr-foliage: #22c55e;
-  --pr-grass: rgba(74, 222, 128, 0.22);
   --pr-bud: #b08968;
   --pr-sprout: #a3e635;
-  --pr-leafc: #22c55e;
 }
 
 [data-theme="light"] {
@@ -44,13 +39,8 @@
   --pr-h3: #1c5cab;
   --pr-h4: #104281;
   --pr-overlay: rgba(20, 23, 43, 0.45);
-  --pr-bark-dark: #6b4429;
-  --pr-bark-light: #a87a52;
-  --pr-foliage: #16a34a;
-  --pr-grass: rgba(22, 163, 74, 0.25);
   --pr-bud: #9c6b45;
   --pr-sprout: #65a30d;
-  --pr-leafc: #15803d;
 }
 
 /* ---------- shared buttons ---------- */
@@ -491,151 +481,59 @@
 .pr-tree-card {
   position: relative;
 }
+.pr-tree-wrap {
+  position: relative;
+  max-width: 760px;
+  margin: 4px auto 0;
+}
 .pr-tree {
   width: 100%;
-  max-width: 600px;
+  aspect-ratio: 1448 / 1086;
   display: block;
-  margin: 4px auto 0;
-  overflow: visible;
+  border-radius: 14px;
+  background: #8fb7e8;
+  touch-action: manipulation;
+}
+.pr-tree-cover {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  color: #1b2a3a;
+}
+/* keyboard and screen-reader twin of the canvas: off-screen until a button takes focus */
+.pr-tree-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pr-tree-list button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+}
+.pr-tree-list button:focus-visible {
+  left: 8px;
+  bottom: 8px;
+  width: auto;
+  height: auto;
+  clip-path: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(20, 24, 20, 0.9);
+  color: #fff;
+  font-size: 13px;
+  outline: 2px solid #ffe27a;
 }
 .pr-tree-loading {
   height: 320px;
   display: grid;
   place-items: center;
   color: var(--muted);
-}
-.pr-crown {
-  fill: var(--pr-foliage);
-  opacity: 0.05;
-}
-.pr-root {
-  fill: none;
-  stroke: var(--pr-bark-dark);
-  stroke-linecap: round;
-}
-.pr-trunk,
-.pr-limb {
-  stroke: var(--pr-bark-dark);
-  stroke-width: 0.6;
-}
-.pr-bark-line {
-  fill: none;
-  stroke: var(--pr-bark-dark);
-  stroke-width: 1.4;
-  stroke-linecap: round;
-  opacity: 0.55;
-}
-.pr-twig {
-  fill: none;
-  stroke: var(--pr-bark-light);
-  stroke-width: 2.2;
-  stroke-linecap: round;
-}
-.pr-branch {
-  transform-box: view-box;
-  animation: pr-sway 7s ease-in-out infinite;
-}
-@keyframes pr-sway {
-  0%,
-  100% {
-    transform: rotate(-0.7deg);
-  }
-  50% {
-    transform: rotate(0.7deg);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .pr-branch {
-    animation: none;
-  }
-}
-.pr-leaf {
-  cursor: pointer;
-  outline: none;
-}
-.pr-leaf-hit {
-  fill: transparent;
-}
-.pr-leaf-art,
-.pr-apple {
-  transition: transform 0.2s;
-}
-.pr-bud {
-  fill: var(--pr-bud);
-}
-.pr-leaf .pr-leaf-shape {
-  transition: fill 0.4s;
-}
-.pr-leaf.s1 .pr-leaf-shape {
-  fill: var(--pr-sprout);
-}
-.pr-leaf.s2 .pr-leaf-shape {
-  fill: var(--pr-leafc);
-}
-.pr-leaf-vein {
-  stroke: rgba(0, 0, 0, 0.28);
-  stroke-width: 0.7;
-  fill: none;
-}
-.pr-leaf.claimed .pr-leaf-shape {
-  fill: none;
-  stroke: var(--pr-leafc);
-  stroke-width: 1.2;
-  stroke-dasharray: 2 1.5;
-}
-.pr-leaf.claimed .pr-leaf-vein {
-  stroke: var(--pr-leafc);
-}
-.pr-leaf.wilt .pr-leaf-shape {
-  fill: #c2841a;
-}
-.pr-petal {
-  fill: #f9a8d4;
-  stroke: #ec4899;
-  stroke-width: 0.4;
-}
-.pr-flower-center {
-  fill: #fde047;
-}
-.pr-apple-stem {
-  fill: none;
-  stroke: #78350f;
-  stroke-width: 1.2;
-  stroke-linecap: round;
-}
-.pr-apple-leaf {
-  fill: var(--pr-leafc);
-}
-.pr-apple-shine {
-  fill: rgba(255, 255, 255, 0.7);
-}
-.pr-leaf:hover .pr-leaf-art,
-.pr-leaf:hover .pr-apple,
-.pr-leaf:focus-visible .pr-leaf-art,
-.pr-leaf.sel .pr-leaf-art,
-.pr-leaf.sel .pr-apple {
-  transform: scale(1.6);
-}
-.pr-leaf.sel .pr-leaf-hit,
-.pr-leaf:focus-visible .pr-leaf-hit {
-  fill: rgba(var(--rgb-b2), 0.2);
-  stroke: var(--b2);
-  stroke-width: 1;
-}
-.pr-branch-sign rect {
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
-}
-.pr-sign-level {
-  font-size: 12px;
-  font-weight: 700;
-  fill: #0d0f14;
-  font-family: "Outfit", sans-serif;
-}
-.pr-sign-count {
-  font-size: 10.5px;
-  font-weight: 600;
-  fill: var(--muted2);
-  font-family: "Outfit", sans-serif;
 }
 .pr-tree-legend {
   display: flex;
@@ -2099,6 +1997,74 @@
   padding-top: 16px;
 }
 
+/* ---------- Claude connector ---------- */
+.pr-claude-flag {
+  font-size: 11px;
+  font-weight: 600;
+  color: #dc2626;
+  white-space: nowrap;
+}
+.pr-claude-reason {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted2);
+}
+.pr-claude-hint {
+  margin: 8px 0;
+  font-size: 12px;
+  color: var(--muted2);
+}
+.pr-claude-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+.pr-claude-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-wrap: anywhere;
+}
+.pr-claude-text s {
+  color: var(--pr-bad);
+}
+.pr-claude-text em {
+  font-style: normal;
+  color: var(--pr-ok);
+}
+.pr-claude-text small {
+  color: var(--muted2);
+}
+.pr-connect {
+  align-items: center;
+  padding: 16px;
+}
+.pr-connect-box {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  font-family: "Outfit", sans-serif;
+  color: var(--text);
+}
+.pr-connect-box h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+.pr-connect-box p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 /* ---------- rule card integration ---------- */
 .rule-stage {
   font-size: 13px;
@@ -2108,6 +2074,16 @@
 }
 .rule-stage.wilting {
   filter: sepia(0.6);
+}
+.rule-stage.shaky {
+  font-size: 10px;
+  font-weight: 600;
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.45);
+  border-radius: 5px;
+  padding: 2px 6px;
+  white-space: nowrap;
+  cursor: help;
 }
 .practice-btn {
   background: none;

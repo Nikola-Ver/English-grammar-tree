@@ -407,7 +407,8 @@
       "name3": "Flor: dominada",
       "name4": "Fruto: memoria a largo plazo",
       "nameClaimed": "Marcada como conocida",
-      "wilting": "necesita repaso"
+      "wilting": "necesita repaso",
+      "shaky": "inestable"
     },
     "badges": {
       "first_step": {
@@ -534,7 +535,8 @@
       "meta": "{{mastered}}/{{total}} reglas en flor",
       "wilting": "{{n}} necesitan repaso",
       "aria": "Árbol de gramática: una rama por nivel, una hoja por regla",
-      "hint": "Toca una hoja para ver la regla y practicarla"
+      "hint": "Toca una hoja para ver la regla y practicarla",
+      "failed": "No se pudo cargar el árbol. Comprueba la conexión y recarga."
     },
     "accuracy": "{{pct}} % de acierto",
     "itemsSeen": "{{seen}}/{{total}} ejercicios probados",
@@ -900,6 +902,22 @@
       "w_phrasal": "Phrasal verbs",
       "w_verb_prep": "Verbos con preposiciones",
       "w_polite": "Sonar educado"
+    },
+    "claude": {
+      "title": "Claude ha notado",
+      "meta": "errores de tus conversaciones reales",
+      "shakyHint": "Sigues cometiendo errores con esta regla al escribir de verdad. Seguirá marcada hasta que respondas bien sus ejercicios en 3 días distintos.",
+      "remove": "Quitar este error",
+      "showAll": "Mostrar los {{n}}",
+      "clear": "Borrar todo",
+      "clearConfirm": "¿Borrar todos los errores que ha comunicado Claude?",
+      "connectTitle": "Conectar Claude en este ordenador",
+      "connectBody": "El conector de Claude que se ejecuta en este ordenador pide leer tu progreso y añadir los errores que detecta cuando escribes en inglés.",
+      "connectWarn": "Permítelo solo si acabas de iniciar la conexión tú mismo desde Claude. Tu sesión se entrega al programa de este ordenador y a ningún otro sitio.",
+      "connectAllow": "Permitir",
+      "connectCancel": "Cancelar",
+      "connectSignIn": "Primero inicia sesión en tu cuenta y luego permite la conexión.",
+      "signIn": "Iniciar sesión"
     }
   },
   "social": {

@@ -407,7 +407,8 @@
       "name3": "开花——已掌握",
       "name4": "结果——长期记忆",
       "nameClaimed": "已标记为掌握",
-      "wilting": "需要复习"
+      "wilting": "需要复习",
+      "shaky": "掌握不牢"
     },
     "badges": {
       "first_step": {
@@ -533,7 +534,8 @@
       "meta": "{{mastered}}/{{total}} 条规则已开花",
       "wilting": "{{n}} 条需复习",
       "aria": "语法树：每个级别一根树枝，每条规则一片叶子",
-      "hint": "点击叶子查看规则并练习"
+      "hint": "点击叶子查看规则并练习",
+      "failed": "无法加载这棵树。请检查网络后刷新。"
     },
     "accuracy": "正确率 {{pct}}%",
     "itemsSeen": "已尝试 {{seen}}/{{total}} 道练习",
@@ -899,6 +901,22 @@
       "w_phrasal": "短语动词",
       "w_verb_prep": "动词与介词",
       "w_polite": "说得礼貌"
+    },
+    "claude": {
+      "title": "Claude 注意到",
+      "meta": "来自你真实对话的错误",
+      "shakyHint": "你在实际写作中反复在这条规则上出错。在 3 个不同的日子答对相关练习后，标记才会取消。",
+      "remove": "删除这条错误",
+      "showAll": "显示全部 {{n}} 条",
+      "clear": "全部删除",
+      "clearConfirm": "删除 Claude 报告的所有错误？",
+      "connectTitle": "在这台电脑上连接 Claude",
+      "connectBody": "这台电脑上运行的 Claude 连接器请求读取你的练习进度，并添加它在你用英语写作时发现的错误。",
+      "connectWarn": "只有在你刚刚亲自从 Claude 发起连接时才允许。你的登录信息只会交给这台电脑上的程序。",
+      "connectAllow": "允许",
+      "connectCancel": "取消",
+      "connectSignIn": "请先登录账号，然后允许连接。",
+      "signIn": "登录"
     }
   },
   "social": {

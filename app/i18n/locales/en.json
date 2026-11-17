@@ -407,7 +407,8 @@
       "name3": "Blossom — mastered",
       "name4": "Fruit — long-term memory",
       "nameClaimed": "Marked as known",
-      "wilting": "needs review"
+      "wilting": "needs review",
+      "shaky": "shaky"
     },
     "badges": {
       "first_step": {
@@ -534,7 +535,8 @@
       "meta": "{{mastered}}/{{total}} rules in bloom",
       "wilting": "{{n}} need review",
       "aria": "Grammar tree: one branch per level, one leaf per rule",
-      "hint": "Tap a leaf to see the rule and practise it"
+      "hint": "Tap a leaf to see the rule and practise it",
+      "failed": "The tree could not be loaded. Check your connection and reload."
     },
     "accuracy": "{{pct}}% accuracy",
     "itemsSeen": "{{seen}}/{{total}} exercises tried",
@@ -900,6 +902,22 @@
       "w_phrasal": "Phrasal verbs",
       "w_verb_prep": "Verbs with prepositions",
       "w_polite": "Sounding polite"
+    },
+    "claude": {
+      "title": "Claude noticed",
+      "meta": "mistakes from your real conversations",
+      "shakyHint": "You keep making mistakes with this rule in real writing. It stays flagged until you answer its exercises correctly on 3 different days.",
+      "remove": "Remove this mistake",
+      "showAll": "Show all {{n}}",
+      "clear": "Delete all",
+      "clearConfirm": "Delete every mistake Claude has reported?",
+      "connectTitle": "Connect Claude on this computer",
+      "connectBody": "The Claude connector running on this computer is asking to read your practice progress and to add the mistakes it notices when you write in English.",
+      "connectWarn": "Only allow this if you have just started the connection from Claude yourself. Your sign-in is handed to the program on this computer and nowhere else.",
+      "connectAllow": "Allow",
+      "connectCancel": "Cancel",
+      "connectSignIn": "Sign in to your account first, then allow the connection.",
+      "signIn": "Sign in"
     }
   },
   "social": {
